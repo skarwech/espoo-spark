@@ -1,0 +1,17 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Vedin yrityksen kierrätyshanketta ja perustin lajittelupisteet 4 taukotilaan.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

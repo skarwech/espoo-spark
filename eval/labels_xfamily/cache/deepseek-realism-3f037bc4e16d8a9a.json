@@ -1,0 +1,120 @@
+{
+ "model": "deepseek-4-1-flash-1017",
+ "task": "realism",
+ "usage": {
+  "prompt_tokens": 6700,
+  "total_tokens": 7325,
+  "completion_tokens": 625,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "reasoning_tokens": 0,
+  "completion_tokens_details": null
+ },
+ "usd_estimate": 0.00138,
+ "seconds": 1.7,
+ "output": {
+  "realism": [
+   {
+    "story_id": "R01",
+    "plausible": true,
+    "reason": "Entry-level office admin tasks typical; Finnish tone natural."
+   },
+   {
+    "story_id": "R02",
+    "plausible": true,
+    "reason": "Junior dev supporting partner integration; realistic setup despite buzzwords."
+   },
+   {
+    "story_id": "R03",
+    "plausible": true,
+    "reason": "Finance assistant arranging move and meeting logistics; realistic."
+   },
+   {
+    "story_id": "R04",
+    "plausible": true,
+    "reason": "Manufacturing operator SPC and maintenance work; concrete and realistic."
+   },
+   {
+    "story_id": "R05",
+    "plausible": true,
+    "reason": "Arabic-speaking dev doing cloud migration and API work; plausible."
+   },
+   {
+    "story_id": "R06",
+    "plausible": true,
+    "reason": "Intranet updates and data merge at building supplier; realistic."
+   },
+   {
+    "story_id": "R07",
+    "plausible": true,
+    "reason": "Controller automating bank reconciliation with Python; plausible."
+   },
+   {
+    "story_id": "R08",
+    "plausible": true,
+    "reason": "Maintenance vibration monitoring and quality criteria; realistic factory work."
+   },
+   {
+    "story_id": "R09",
+    "plausible": true,
+    "reason": "Warehouse/logistics SAP and routing improvements; concrete and plausible."
+   },
+   {
+    "story_id": "R10",
+    "plausible": true,
+    "reason": "Event organizing and procurement support; plausible though thin."
+   },
+   {
+    "story_id": "R11",
+    "plausible": true,
+    "reason": "Student IoT project; generic buzzwords but situation credible."
+   },
+   {
+    "story_id": "R12",
+    "plausible": true,
+    "reason": "Cloud migration, API build, party planning; plausible mix."
+   },
+   {
+    "story_id": "R13",
+    "plausible": true,
+    "reason": "Home care scheduling and mobile documentation; realistic."
+   },
+   {
+    "story_id": "R14",
+    "plausible": true,
+    "reason": "Warehouse-ERP integration and route analysis; plausible."
+   },
+   {
+    "story_id": "R15",
+    "plausible": true,
+    "reason": "Building automation alarm analysis; concrete and realistic."
+   },
+   {
+    "story_id": "R16",
+    "plausible": true,
+    "reason": "Junior finance support during budgeting; plausible."
+   },
+   {
+    "story_id": "R17",
+    "plausible": true,
+    "reason": "CRM data dedup with Python plus intranet tasks; realistic."
+   },
+   {
+    "story_id": "R18",
+    "plausible": true,
+    "reason": "Buzzword-heavy but support company scenario credible for jobseeker."
+   },
+   {
+    "story_id": "R19",
+    "plausible": true,
+    "reason": "Office admin tasks; realistic entry-level content."
+   },
+   {
+    "story_id": "R20",
+    "plausible": true,
+    "reason": "Finance automation of reconciliation; concrete and plausible."
+   }
+  ]
+ }
+}

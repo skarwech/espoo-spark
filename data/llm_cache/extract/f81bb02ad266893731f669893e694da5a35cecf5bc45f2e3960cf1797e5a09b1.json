@@ -1,0 +1,41 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I set up signed firmware images and a staged rollout plan, starting with 10 test devices and widening to 50 before the full fleet. All 400 sensors were updated remotely without any site visits.",
+    "skills": [
+     "S43",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I organised the annual safety training day for 60 employees, booking the trainers and arranging lunch for everyone.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I built an hourly Python check that compared expected and received readings for each device.",
+    "skills": [
+     "S39",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "It revealed 3 gateways with wrong clock settings, and after I fixed them, lost readings stayed below 0.5%.",
+    "skills": [
+     "S30",
+     "S21"
+    ]
+   }
+  ]
+ }
+}

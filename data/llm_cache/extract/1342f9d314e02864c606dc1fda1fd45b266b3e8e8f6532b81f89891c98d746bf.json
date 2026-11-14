@@ -1,0 +1,37 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Lisäsin kausivaihtelun huomioivaan ARIMA-malliin R:llä pyhäpäivä- ja säämuuttujat, ja 12 viikon jälkitestauksessa malli voitti myyntitiimin arvion 10 viikkona.",
+    "skills": [
+     "S02",
+     "S41",
+     "S05",
+     "S08"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "ERP:n, CRM:n ja verkkokaupan asiakastiedot puhdistettiin OpenRefinellä ja yhdistettiin yhteiseksi rekisteriksi, mikä vähensi palautuneita laskuja 30 %.",
+    "skills": [
+     "S32",
+     "S25",
+     "S18"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Yhdistin 6 manuaalista Excel-raporttia itsepalvelukäyttöiseksi Power BI -kojelaudaksi, jota esihenkilöt suodattavat itse, ja kuukausiraportointiin kuluva työ lyheni 4 päivästä 3 tuntiin.",
+    "skills": [
+     "S04",
+     "S10"
+    ]
+   }
+  ]
+ }
+}

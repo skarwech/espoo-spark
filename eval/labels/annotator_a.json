@@ -1,0 +1,467 @@
+{
+ "annotator": "a",
+ "labels": [
+  {
+   "pair_id": "G01",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Only generic passion for data quality; no customer data cleaning or merging described."
+  },
+  {
+   "pair_id": "G01",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(a) Team replaced PDF reports with Power BI dashboard; personal role not stated."
+  },
+  {
+   "pair_id": "G01",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally added holiday/weather variables to seasonal ARIMA in R; beat sales estimate 10 of 12 weeks."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "(a) Customer data cleaned with OpenRefine and merged, passive voice; personal role not stated."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(b) Helped with dashboard and attended meetings; no method or result."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally added holiday/weather variables to seasonal ARIMA in R; backtest beat sales estimate 10/12 weeks."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "(b) Helped briefly with reporting dashboard and attended meetings; no method or result."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o2",
+   "label": "supported",
+   "reason": "Personally fuzzy-matched records from CRM, webshop, invoicing in Python; removed 870 duplicates, unified register in 10 weeks."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Customer-record matching is not bank/ledger reconciliation; skill adjacency only, no reconciliation work."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Office move and labelling unrelated to growing business-customer sales."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Office move unrelated to knowledge base or reducing support requests."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No support case handling described; only office move logistics."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Bank reconciliation script and team budget calendar are not reporting dashboards; adjacency only."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No customer data cleaning or merging described."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally wrote nightly Python script comparing bank file to ledger; replaced 6 hours/week manual reconciliation."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Device data checks and alert thresholds are not partner API work."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No cloud migration described; work is device data monitoring."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer support case handling; only device monitoring and fascination statement."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally added Pydantic validation, error codes, integration guide to partner API; partner errors fell 25 to 6."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(a) 'We' moved portal to Google Cloud in 3 months without outages; personal role not stated."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No support case resolution described; fewer partner error reports is API quality, not case handling."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "No false-alert work; only generic passion statements."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(a) 'Our team worked with' sensor data pipelines; no personal role, method or loss result."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No Finnish-language or technical support work described."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally compared alarms with work orders, set per-model thresholds; weekly false alarms fell 140 to 45."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(b) Helped keep field-device data flowing and checked losses; no method or result."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Vague edge-pipeline help and firmware rollout; no warehouse or ERP integration described."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "(a) Data flow moved to MQTT with queue, passive voice; lost readings under 0.8%, role unstated."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(b) Was part of false-alarm work, gave feedback on alarms; no method or result."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer data cleaning or merging described."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Forecasting, dashboard and customer dedup work; nothing on sensor alerts."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Customer-data merge is a one-off dedup, not an ongoing edge-device data flow."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "One-off customer dedup, not warehouse-ERP integration; skill adjacency only."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Route planning and ERP integration; nothing on sensor alerts."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(c) Personally built nightly warehouse-ERP integration; related data-flow work in a different context than edge devices."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No Finnish-language support work described."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Only enthusiasm statement and recycling project; no firmware work."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Belief in edge-to-cloud value is generic; no pipeline work."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Recycling sorting points unrelated to PLC packing automation."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally rebuilt pump sensor alert rules; false alerts fell 40 to 12 daily, verified against weekly logs."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o2",
+   "label": "supported",
+   "reason": "Personally added edge-gateway buffering and Python missing-reading counter; lost data fell from 5% to under 1%."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Learning Finnish appears only in 'next' box, which is aspiration, not evidence."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Generic results-driven self-description; office move and access cards unrelated to sales growth."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No knowledge base or support request work; only office admin."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No support case handling; only office move, parking permits and access cards."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "(b) Supported partner interface work and attended integration meetings; no method or result."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Only generic 'cloud-native thinker' belief; no migration work described."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Vague partner-interface support; no warehouse or ERP integration described."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally designed and built FastAPI REST API with versioned endpoints, OpenAPI; 4 partners joined without breaking changes."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No cloud migration described; API, book circle and Playwright tests only."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Partner API shares skills only; no warehouse-ERP data flow work, adjacency not labelled."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Recycling project, office move and motivation statements; no firmware work."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Belief in data-driven monitoring is generic; no pipeline work."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Recycling stations and office move unrelated to PLC packing automation."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Recycling initiative, office move and motivation statements; no edge data flow work."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No false-alert work; only generic belief in sensor monitoring."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer data cleaning or merging described."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally automated 15 Playwright end-to-end flows gating releases; weekly releases 5 months without rollback."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "(b) Took part in cloud move doing small tasks; no method or result."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No edge-device data flow work; only generic API belief."
+  }
+ ],
+ "realism": [
+  {
+   "story_id": "R01",
+   "plausible": true,
+   "reason": "Office admin at software firm aiming for customer success; boxes loosely matched but believable."
+  },
+  {
+   "story_id": "R02",
+   "plausible": true,
+   "reason": "Junior developer mixing team result, buzzwords and minor support role; common real pattern."
+  },
+  {
+   "story_id": "R03",
+   "plausible": true,
+   "reason": "Finance-department assistant describing admin tasks and aiming for accounting; coherent situation."
+  },
+  {
+   "story_id": "R04",
+   "plausible": true,
+   "reason": "Production worker with SPC and maintenance improvements; coherent factory situation and goals."
+  },
+  {
+   "story_id": "R05",
+   "plausible": true,
+   "reason": "Developer at software firm with cloud migration and partner API work; coherent and concrete."
+  },
+  {
+   "story_id": "R06",
+   "plausible": true,
+   "reason": "Admin/communications person involved in data cleanup aiming at analytics; minor system-list mismatch, believable."
+  },
+  {
+   "story_id": "R07",
+   "plausible": true,
+   "reason": "Accounting staff with reconciliation script at wholesale company; coherent and realistic."
+  },
+  {
+   "story_id": "R08",
+   "plausible": true,
+   "reason": "Factory maintenance worker with vibration monitoring results; coherent situation and goals."
+  },
+  {
+   "story_id": "R09",
+   "plausible": true,
+   "reason": "Logistics worker integrating scanners with SAP and redrawing van routes; realistic and coherent."
+  },
+  {
+   "story_id": "R10",
+   "plausible": true,
+   "reason": "Admin/purchasing support at distributor aiming for logistics planning; modest but believable."
+  },
+  {
+   "story_id": "R11",
+   "plausible": true,
+   "reason": "Graduate with university IoT project and buzzword-heavy text; very common real pattern."
+  },
+  {
+   "story_id": "R12",
+   "plausible": true,
+   "reason": "Developer with cloud migration and partner API; party-poster aside is odd but believable."
+  },
+  {
+   "story_id": "R13",
+   "plausible": true,
+   "reason": "Home-care worker changing careers to customer service; concrete, coherent care situation."
+  },
+  {
+   "story_id": "R14",
+   "plausible": true,
+   "reason": "Wholesale analyst with WMS-ERP integration and route analysis; realistic and coherent."
+  },
+  {
+   "story_id": "R15",
+   "plausible": true,
+   "reason": "Building-automation employee with concrete alarm analysis plus buzzwords; believable mix."
+  },
+  {
+   "story_id": "R16",
+   "plausible": true,
+   "reason": "Junior finance staff supporting budgets and month-end close; vague but realistic."
+  },
+  {
+   "story_id": "R17",
+   "plausible": true,
+   "reason": "Mixed communications and data role at small supplier; plausible combination."
+  },
+  {
+   "story_id": "R18",
+   "plausible": true,
+   "reason": "Purely generic self-promotion with no actions; weak evidence, but real applicants write this."
+  },
+  {
+   "story_id": "R19",
+   "plausible": true,
+   "reason": "Office-admin career changer; boxes loosely connected, but one person could plausibly write all four."
+  },
+  {
+   "story_id": "R20",
+   "plausible": true,
+   "reason": "Finance staff with reconciliation script and generic opener; coherent and realistic."
+  }
+ ]
+}

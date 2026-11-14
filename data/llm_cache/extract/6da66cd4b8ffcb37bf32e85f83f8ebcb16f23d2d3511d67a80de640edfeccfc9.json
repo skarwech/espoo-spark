@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I organised my daily route for 11 home care clients and verified the medication dispenser at every visit; over 6 months, I missed no visits.",
+    "skills": [
+     "S20",
+     "S19"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I led a weekly 15-minute meeting where both units aligned their care plans and shared staff, and I tracked open shifts in a shared Excel sheet.",
+    "skills": [
+     "S07",
+     "S34"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "The unit's documentation was moved from paper to the electronic record system in 10 weeks, with structured templates introduced for every type of entry.",
+    "skills": [
+     "S45"
+    ]
+   }
+  ]
+ }
+}

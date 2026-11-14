@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-001/o1",
+    "label": "partial",
+    "unit_id": "J-067~ar.u3",
+    "quote": "نفّذنا حملة بيع متقاطع للعملاء الحاليين من الشركات",
+    "reason": "Relevant cross-sell result of 16%, but described as team work (\"we\")."
+   },
+   {
+    "key": "N-001/o2",
+    "label": "partial",
+    "unit_id": "J-067~ar.u1",
+    "quote": "وأنشأتُ قوالب ردود جاهزة للطلبات الأكثر شيوعًا",
+    "reason": "Reply templates are related, but no knowledge base or repeat-ticket reduction is shown."
+   },
+   {
+    "key": "N-001/o3",
+    "label": "supported",
+    "unit_id": "J-067~ar.u1",
+    "quote": "فانخفض وسيط زمن الحل لديّ من 48 ساعة إلى 6 ساعات",
+    "reason": "Personally cut median resolution time to 6 hours using Zendesk templates."
+   },
+   {
+    "key": "N-005/o1",
+    "label": "partial",
+    "unit_id": "J-067~ar.u3",
+    "quote": "نفّذنا حملة بيع متقاطع للعملاء الحاليين من الشركات",
+    "reason": "Relevant cross-sell result of 16%, but described as team work (\"we\")."
+   },
+   {
+    "key": "N-005/o2",
+    "label": "supported",
+    "unit_id": "J-067~ar.u1",
+    "quote": "فانخفض وسيط زمن الحل لديّ من 48 ساعة إلى 6 ساعات",
+    "reason": "Personally cut median resolution time to 6 hours using Zendesk templates."
+   },
+   {
+    "key": "N-005/o3",
+    "label": "partial",
+    "unit_id": "J-067~ar.u1",
+    "quote": "وأنشأتُ قوالب ردود جاهزة للطلبات الأكثر شيوعًا",
+    "reason": "Reply templates are related, but no knowledge base or repeat-ticket reduction is shown."
+   },
+   {
+    "key": "N-020/o1",
+    "label": "partial",
+    "unit_id": "J-067~ar.u3",
+    "quote": "نفّذنا حملة بيع متقاطع للعملاء الحاليين من الشركات",
+    "reason": "Relevant cross-sell result of 16%, but described as team work (\"we\")."
+   },
+   {
+    "key": "N-020/o2",
+    "label": "partial",
+    "unit_id": "J-067~ar.u1",
+    "quote": "وأنشأتُ قوالب ردود جاهزة للطلبات الأكثر شيوعًا",
+    "reason": "Reply templates are related, but no knowledge base or repeat-ticket reduction is shown."
+   },
+   {
+    "key": "N-020/o3",
+    "label": "supported",
+    "unit_id": "J-067~ar.u1",
+    "quote": "فانخفض وسيط زمن الحل لديّ من 48 ساعة إلى 6 ساعات",
+    "reason": "Personally cut median resolution time to 6 hours using Zendesk templates."
+   }
+  ]
+ }
+}

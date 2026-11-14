@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Suunnittelin joka päivä mun reitin 11 kotihoidon asiakkaan luo ja tarkistin lääkeannostelijan joka käynnillä. En jättänyt 6 kuukaudessa käyntejä väliin.",
+    "skills": [
+     "S20",
+     "S07",
+     "S35"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Me suunniteltiin molempien yksiköiden vuorot yhdessä ja tehtiin yhteinen sijaispooli. Ylityöpiikit loppu 3 kuukaudessa.",
+    "skills": [
+     "S07"
+    ]
+   }
+  ]
+ }
+}

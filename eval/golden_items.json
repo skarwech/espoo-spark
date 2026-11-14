@@ -1,0 +1,542 @@
+[
+ {
+  "pair_id": "G01",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Puhdistaa ja yhdistää asiakasdata kolmesta järjestelmästä 90 päivässä",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Korvata manuaaliset kuukausiraportit itsepalvelukojelaudalla 3 kuukaudessa",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Rakentaa kysyntäennuste, joka on nykyistä arviota tarkempi vuosineljänneksessä",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "fi",
+   "problem": "Keskikokoisessa tukkukaupassa joka osastolla oli omat taulukot. Myynnin, talouden ja asiakaspalvelun kuun lopun luvut ei melkein ikinä täsmänneet, joten palavereissa riideltiin kenen luvut on oikein, eikä kukaan luottanut suunnitelmiin.",
+   "did": "Olen tarkka tiimipelaaja. Mulla on vahva intohimo datan laatuun ja jatkuvan parantamisen asenne. Laitoin pyhäpäivä- ja säämuuttujat kausittaiseen ARIMA-malliin R:llä. 12 viikon jälkitestissä se oli parempi kuin myyntitiimin arvio 10 viikkona. Meidän tiimi vaihtoi kuukauden PDF-raportit Power BI -kojelautaan 8 viikossa. Ylimääräisiä lukupyyntöjä tuli 40 % vähemmän.",
+   "differently": "Sopisin pomon kanssa alussa selkeät prioriteetit ja realistisen aikataulun. Ja kertoisin ongelmista aikaisemmin, enkä yrittäisi korjata kaikkea omin päin.",
+   "next": "Haluaisin tiimiin joka tekee verkkoon kytkettyjä laitteita. Haluan ottaa vastuun selkeästä osasta työtä ja kasvaa rooliin jossa on enemmän omistajuutta. Hybridi sopii parhaiten, välillä toimisto välillä koti."
+  }
+ },
+ {
+  "pair_id": "G02",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Puhdistaa ja yhdistää asiakasdata kolmesta järjestelmästä 90 päivässä",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Korvata manuaaliset kuukausiraportit itsepalvelukojelaudalla 3 kuukaudessa",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Rakentaa kysyntäennuste, joka on nykyistä arviota tarkempi vuosineljänneksessä",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "ar",
+   "problem": "عند مورّد مواد بناء، بيانات العملاء والمبيعات كانت في نظام CRM قديم ونظام الفواتير وملفات Excel خاصة بالموظفين. عمل أي ملخص أو تقدير كان يأخذ أيامًا من النسخ باليد.",
+   "did": "كنتُ أساعد في لوحة التقارير الجديدة بعض الوقت، وحضرتُ عدة اجتماعات عنها. تم تنظيف بيانات العملاء من ERP و CRM والمتجر الإلكتروني بـ OpenRefine وجمعها في سجل مشترك. الفواتير المرتجعة نزلت 30%. أضفتُ متغيرات العطل والطقس لنموذج ARIMA موسمي في R. في اختبار رجعي لمدة 12 أسبوعًا كان أفضل من تقدير فريق المبيعات في 10 منها.",
+   "differently": "كنتُ سأتفق مع مديري على أولويات واضحة وجدول واقعي في البداية. وأخبر عن المشاكل أبكر، ولا أحاول أن أصلح كل شيء وحدي.",
+   "next": "أريد العمل في تحليل البيانات وأساعد الفرق في الإجابة على أسئلة عملها اليومية بالبيانات. وأبني مهاراتي في SQL والتمثيل المرئي للبيانات. العمل عن بعد أفضل، أستطيع الحضور للمكتب أحيانًا."
+  }
+ },
+ {
+  "pair_id": "G03",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Replace manual monthly reports with a self-service dashboard within 3 months",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Clean and merge customer data from three systems within 90 days",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Automate bank and ledger reconciliation reports within 3 months",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "fi",
+   "problem": "Keskikokoisessa tukkukaupassa joka osastolla oli omat taulukot. Myynnin, talouden ja asiakaspalvelun kuun lopun luvut ei melkein ikinä täsmänneet, joten palavereissa riideltiin kenen luvut on oikein, eikä kukaan luottanut suunnitelmiin.",
+   "did": "Täsmäytin asiakastietueet CRM:stä, verkkokaupasta ja laskutusjärjestelmästä sumealla täsmäytyksellä Pythonissa. Poistin 870 duplikaattia ja tein yhtenäisen asiakasrekisterin 10 viikossa. Autoin vähän aikaa uuden raporttikojelaudan kanssa ja olin monessa palaverissa siitä.",
+   "differently": "Ottaisin käyttäjät mukaan heti alusta ja juttelisin niiden kanssa usein. En vaan olettaisi että tiedän jo mitä ne tarvii.",
+   "next": "Seuraavaksi haluan tiimiin, jossa datan laatu ja hyvä dokumentointi on tärkeitä. Haluan oppia kokeneilta kollegoilta ja saada pikkuhiljaa enemmän vastuuta. Hybridi sopii parhaiten, välillä toimisto välillä koti."
+  }
+ },
+ {
+  "pair_id": "G04",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Kasvattaa nykyisten yritysasiakkaiden myyntiä 15 % tänä vuonna",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Vähentää toistuvia tukipyyntöjä 20 % paremmalla tietopankilla 6 kuukaudessa",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Ratkaista asiakastukitapaukset yhden työpäivän kuluessa",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "en",
+   "problem": "At a business services company customer requests came by email, phone and chat and nobody saw the whole picture. Cases waited, answers was different between agents and long-time customers felt forgotten.",
+   "did": "I organised our office move and put labels on all boxes and cables for 30 employees.",
+   "differently": "",
+   "next": "Next I want a job where I learn how business customers decide what they buy, and grow into customer success or sales. I want work at the office, every day is ok."
+  }
+ },
+ {
+  "pair_id": "G05",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Replace manual monthly reports with a self-service dashboard within 3 months",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Clean and merge customer data from three systems within 90 days",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Automate bank and ledger reconciliation reports within 3 months",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "fi",
+   "problem": "Kasvavan tukkukaupan kirjanpitorutiinit eivät enää riittäneet. 4 tytäryhtiön laskut kirjattiin eri tavoin, täsmäytyserot siirtyivät eteenpäin kuukausittain, kuukausikatko venyi, eivätkä esihenkilöt enää luottaneet budjettiensa taustalla oleviin lukuihin.",
+   "did": "Controller-tiimi otti käyttöön yhteisen budjettikalenterin, jossa oli kiinteät läpikäyntipäivät kaikille 5 osastolle, ja vuosibudjetti valmistui aikataulussa. Kirjoitin Python-skriptin, joka vertaa pankin tapahtumatiedostoa pääkirjan kirjauksiin joka yö ja listaa erot. Se korvasi käsin tehdyn pankkitäsmäytyksen, joka vei 6 tuntia viikossa.",
+   "differently": "Sopisin aikatauluista muiden osastojen kanssa heti alussa sen sijaan, että jahtaisin niitä viime hetkellä. Selkeät odotukset alusta asti olisivat vähentäneet kaikkien stressiä.",
+   "next": "Haluan liittyä taloustiimiin, jossa voin auttaa tekemään rutiinikirjanpidosta nopeampaa ja luotettavampaa, ja oppia kokeneilta controllereilta. Haen ensisijaisesti etätyötä, ja voin tarvittaessa käydä paikan päällä."
+  }
+ },
+ {
+  "pair_id": "G06",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Deliver a stable API for partner integrations by the end of Q2",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Resolve customer support cases within one working day",
+    "priority": "learnable"
+   }
+  ],
+  "story": {
+   "lang": "sv",
+   "problem": "I ett medelstort företag som säljer utrustning för fastighetsautomation skickade cirka 900 enheter hos kunderna data tillbaka till kontoret. Kunderna märkte oftast problemen först, och det lilla teamet ägnade de flesta dagar åt att reagera i stället för att planera.",
+   "did": "Jag byggde en timvis kontroll i Python som jämförde förväntade och mottagna mätvärden för varje enhet. Den avslöjade 3 gatewayer med fel klockinställningar, och efter att jag rättat dem höll sig de förlorade mätvärdena under 0,5 %. Vi gick igenom larmhistoriken i Grafana, grupperade sensorer med liknande brusnivå och satte nya gränsvärden för varje grupp. Det ledde till att de falska sensorfellarmen minskade med 40 %. Jag fascineras av inbyggda system och tror att väldesignad firmware är den osynliga ryggraden i varje smart enhet.",
+   "differently": "Jag skulle komma överens med operatörerna tidigare om hur ett bra resultat ser ut och dokumentera besluten så att ingen behöver lita på minnet.",
+   "next": "Jag vill gärna gå med i ett team som bygger uppkopplad utrustning, ta ansvar för en tydlig del av arbetet och växa in i en roll med mer ägarskap. Jag söker en roll där jag arbetar på plats med teamet varje dag."
+  }
+ },
+ {
+  "pair_id": "G07",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Deliver a stable API for partner integrations by the end of Q2",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Resolve customer support cases within one working day",
+    "priority": "learnable"
+   }
+  ],
+  "story": {
+   "lang": "fi",
+   "problem": "Ohjelmistofirma, noin 60 ihmistä. Päätuote kasvoi nopeasti, julkaisuprosessi ei pysynyt mukana. Joka muutos tuntui riskiltä ja kumppanit pyysi asioita joita systeemi ei helposti pystynyt tarjoamaan.",
+   "did": "Tiimi teki öiset regressioajot Cypressillä. Julkaisujen peruutukset laski 9:stä 3:een per neljännes. Siirsimme asiakasportaalin omilta servereiltä Google Cloudiin lift-and-shift-tyylillä. Saimme siirron valmiiksi 3 kuukaudessa ilman katkoja. Lisäsin kumppani-API:in pyyntöjen validoinnin Pydanticilla ja selkeät virhekoodit. Kirjoitin myös integraatio-ohjeen. Kumppaneiden virheilmoitukset laski 25:stä 6:een kuukaudessa.",
+   "differently": "Sopisin laajuuden tuoteomistajan kanssa alussa. Ja sanoisin selvemmin ei, kun uusia toiveita tuli kesken työn.",
+   "next": "Haluan tehdä softaa jota oikeat ihmiset käyttää joka päivä. Tiimissä jossa opin koodikatselmoinneista ja saan pikkuhiljaa enemmän vastuuta. Haluan tehdä töitä toimistolla, joka päivä käy."
+  }
+ },
+ {
+  "pair_id": "G08",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Cut false sensor-fault alerts by half within 90 days",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Support Finnish-speaking customers in technical support cases",
+    "priority": "learnable"
+   }
+  ],
+  "story": {
+   "lang": "en",
+   "problem": "During my studies, our university IoT project aimed to help a property company understand energy use in its buildings, but the sensor data was scattered across several systems.",
+   "did": "I am passionate about leveraging AI to drive impactful IoT solutions. Our team worked with data pipelines that collected readings from building sensors into a cloud dashboard. I thrive in collaborative, fast-paced environments and am eager to create value.",
+   "differently": "Looking back, I would have aligned stakeholder expectations earlier and established clearer communication channels from the outset.",
+   "next": "I am seeking an opportunity to grow as a data professional in an innovative IoT company. I would prefer a hybrid arrangement, with a few days a week on site."
+  }
+ },
+ {
+  "pair_id": "G09",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Cut false sensor-fault alerts by half within 90 days",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "ar",
+   "problem": "في مرفق للمياه، كان نحو 400 مستشعر ميداني يرسل بياناته إلى نظام مركزي. وقد توسّع هذا النظام على مر السنين دون مسؤول واضح، ولم يعد المشغّلون يثقون بما تعرضه شاشاتهم.",
+   "did": "ساعدتُ في الحفاظ على استمرار تدفق البيانات من الأجهزة الميدانية، وكنتُ أتحقق من الأمر كلما فُقدت بيانات. قارنتُ إنذارات الأعطال الصادرة خلال 3 أشهر بأوامر عمل الصيانة لمعرفة الإنذارات الحقيقية منها. وحدّدتُ عتبات منفصلة لكل طراز من المستشعرات، فانخفضت الإنذارات الكاذبة الأسبوعية من 140 إلى 45. أعددتُ صور برامج ثابتة موقّعة وخطة نشر على مراحل، بدأت بـ 10 أجهزة اختبار ثم توسّعت إلى 50 قبل الأسطول الكامل. وحُدّثت جميع المستشعرات البالغ عددها 400 عن بُعد دون أي زيارة ميدانية.",
+   "differently": "كنتُ سأقضي وقتًا في المواقع مع الفنيين الميدانيين منذ البداية بدلًا من العمل من المكتب فقط، وأطرح المزيد من الأسئلة مبكرًا.",
+   "next": "أودّ الانضمام إلى فريق يبني معدات متصلة، وأن أتحمّل مسؤولية جزء واضح من العمل، وأن أنمو نحو دور يمنحني مسؤولية أكبر. أبحث عن دور أعمل فيه في موقع العمل مع الفريق يوميًا."
+  }
+ },
+ {
+  "pair_id": "G10",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Ylläpitää reunalaitteiden datavirtoja niin, että alle 1 % mittauksista katoaa",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Puolittaa väärät anturivikahälytykset 90 päivässä",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Puhdistaa ja yhdistää asiakasdata kolmesta järjestelmästä 90 päivässä",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "ar",
+   "problem": "مرفق مياه، حوالي 400 مستشعر في الميدان، كلها ترسل إلى نظام مركزي. النظام كبر خلال سنوات ولا أحد كان مسؤولًا عنه فعلًا. المشغّلون لم يعودوا يثقون بما تعرضه الشاشات.",
+   "did": "كنتُ جزءًا من العمل لتقليل الإنذارات الكاذبة. أعطيتُ ملاحظات عن الإنذارات التي بدت غير لازمة. تم تغيير تدفق بيانات المستشعرات من نقل الملفات في الليل إلى MQTT مع طابور رسائل. القراءات المفقودة نزلت تحت 0.8%.",
+   "differently": "في البداية كنتُ سأذهب إلى المواقع مع الفنيين الميدانيين، وليس فقط أعمل من المكتب. وأسأل أكثر مبكرًا.",
+   "next": "أحب أن أعمل على أنظمة تعتمد عليها شركات أخرى. أريد أن أفهم كيف البرمجيات الجيدة تُخطَّط وتُبنى وتبقى تعمل. الهجين أفضل لي، أيام في المكتب وأيام في البيت."
+  }
+ },
+ {
+  "pair_id": "G11",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Cut false sensor-fault alerts by half within 90 days",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "sv",
+   "problem": "Hos en leverantör av byggmaterial låg kund- och försäljningsdata utspridda i ett gammalt CRM-system, faktureringssystemet och personliga Excel-filer, så varje översikt eller uppskattning krävde dagar av manuell kopiering.",
+   "did": "Jag lade till helgdags- och vädervariabler i en säsongsbaserad ARIMA-modell i R, och under 12 veckors backtestning slog den säljteamets uppskattning 10 av veckorna. Jag byggde en självbetjäningsdashboard för försäljningen på SQL-vyer och Tableau på 10 veckor, så att teamledarna slutade beställa det månatliga Excel-paketet och nu hämtar sina siffror själva. Jag matchade kundposter från CRM-systemet, webbutiken och faktureringssystemet med fuzzy matching i Python, tog bort 870 dubbletter och levererade ett enhetligt kundregister inom 10 veckor.",
+   "differently": "Jag skulle komma överens med min chef om tydliga prioriteringar och en realistisk tidsplan redan från början, och lyfta problem tidigare i stället för att försöka lösa allt själv.",
+   "next": "Jag vill växa in i en analytikerroll där jag hjälper team att besvara vardagliga affärsfrågor med data, och bygga upp mina färdigheter i SQL och visualisering. Jag föredrar ett hybridupplägg med några dagar i veckan på plats."
+  }
+ },
+ {
+  "pair_id": "G12",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Cut false sensor-fault alerts by half within 90 days",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Support Finnish-speaking customers in technical support cases",
+    "priority": "learnable"
+   }
+  ],
+  "story": {
+   "lang": "en",
+   "problem": "In a mid-size logistics company, delivery routes were planned by hand every morning, and drivers often crossed each other's areas while customers waited.",
+   "did": "I led the work of re-planning routes for 120 trucks with a routing tool and historical delivery data, and I compared the new plan with the old one for 4 weeks: driven kilometres fell by 9%. I also connected our warehouse system to the ERP with a nightly integration job, so order data moved automatically and manual re-typing stopped.",
+   "differently": "I would involve the drivers earlier. Their local knowledge would have saved us 2 rounds of corrections.",
+   "next": "I want to move into data analysis, where I can use what I learned from planning and measuring routes. I would prefer a hybrid arrangement, with a few days a week on site."
+  }
+ },
+ {
+  "pair_id": "G13",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Ship a remote firmware update for field sensors within 6 months",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Automate a manual packing step with PLC control by year end",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "ar",
+   "problem": "مرفق مياه، حوالي 400 مستشعر في الميدان، كلها ترسل إلى نظام مركزي. النظام كبر خلال سنوات ولا أحد كان مسؤولًا عنه فعلًا. المشغّلون لم يعودوا يثقون بما تعرضه الشاشات.",
+   "did": "أرى نفسي من عشّاق البيانات المتصلة. أؤمن أن التكامل السلس من الحافة إلى السحابة يعطي قيمة تجارية حقيقية. أدرتُ مشروع إعادة التدوير في الشركة. وضعتُ نقاط فرز في 4 غرف استراحة.",
+   "differently": "في البداية كنتُ سأذهب إلى المواقع مع الفنيين الميدانيين، وليس فقط أعمل من المكتب. وأسأل أكثر مبكرًا.",
+   "next": "أحب أن أنضم إلى فريق يبني معدات متصلة. أريد أن آخذ مسؤولية جزء واضح من العمل وأتطور نحو دور فيه مسؤولية أكثر. الهجين أفضل لي، أيام في المكتب وأيام في البيت."
+  }
+ },
+ {
+  "pair_id": "G14",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Cut false sensor-fault alerts by half within 90 days",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Support Finnish-speaking customers in technical support cases",
+    "priority": "learnable"
+   }
+  ],
+  "story": {
+   "lang": "en",
+   "problem": "At a water utility we had 300 pump stations sending sensor data. Operators got so many false alerts they started to ignore them, and sometimes data from the stations was just missing.",
+   "did": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day, checked by comparing weekly logs. I also took care of the data pipeline from the stations: I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%.",
+   "differently": "I would talk with the operators earlier. I changed rules first and explained after, and some of them did not trust the new alerts for weeks.",
+   "next": "I want to work with sensor data in a product company and learn Finnish properly. Hybrid is best for me, some days office some days home."
+  }
+ },
+ {
+  "pair_id": "G15",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Kasvattaa nykyisten yritysasiakkaiden myyntiä 15 % tänä vuonna",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Vähentää toistuvia tukipyyntöjä 20 % paremmalla tietopankilla 6 kuukaudessa",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Ratkaista asiakastukitapaukset yhden työpäivän kuluessa",
+    "priority": "learnable"
+   }
+  ],
+  "story": {
+   "lang": "fi",
+   "problem": "Keskikokoisessa ohjelmistofirmassa tukijono kasvoi koko ajan, samat kysymykset tuli aina uudestaan ja asiakkuuspäälliköillä ei ollut paljon aikaa pitää yhteyttä nykyisiin yritysasiakkaisiin.",
+   "did": "Oon tuloshakuinen ja tykkään rakentaa suhteita. Mulla on kasvun asenne ja rakastan win-win-kumppanuuksia. Hoidin meidän toimiston muuton ja laitoin tarrat kaikkiin laatikoihin ja kaapeleihin 30 työntekijälle. Hoidin meidän toimistolla uusien työntekijöiden parkkiluvat ja kulkukortit.",
+   "differently": "Kirjoittaisin mun päätökset ja sovitut asiat ylös heti, ettei lomalla sijaistavien kollegoiden tarvitse soittaa mulle ja kysyä.",
+   "next": "Seuraavaksi haluan työn, jossa opin miten yritysasiakkaat päättää mitä ne ostaa, ja pääsen asiakasmenestyksen tai myynnin tehtäviin. Haluan tehdä töitä toimistolla, joka päivä käy."
+  }
+ },
+ {
+  "pair_id": "G16",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Deliver a stable API for partner integrations by the end of Q2",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "en",
+   "problem": "At a software company of about 60 people, the main product had grown fast and the release process had not kept up. Every change felt risky, and partners asked for things the system could not easily offer.",
+   "did": "The team set up nightly regression runs with Cypress, and release rollbacks dropped from 9 to 3 per quarter. I am a cloud-native thinker who believes digital transformation and modern infrastructure create endless opportunities for innovation. I supported the partner interface work for a period and took part in some of the integration meetings.",
+   "differently": "I would write down the decisions from each meeting and share them the same day, so nobody had to guess later what was agreed.",
+   "next": "I would like to work on systems that other companies depend on, and understand how good software is planned, built and kept running. I prefer working on site with the team every day."
+  }
+ },
+ {
+  "pair_id": "G17",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Deliver a stable API for partner integrations by the end of Q2",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "sv",
+   "problem": "På ett mjukvaruföretag med cirka 60 anställda hade huvudprodukten vuxit snabbt, men releaseprocessen hade inte hängt med. Varje ändring kändes riskabel, och partner bad om saker som systemet inte enkelt kunde erbjuda.",
+   "did": "Jag designade och byggde ett REST API i Python med FastAPI för partnerintegrationer, med versionerade endpoints och en OpenAPI-specifikation. Inom 3 månader hade 4 partner anslutit sig utan bakåtinkompatibla ändringar. Jag startade en bokcirkel på lunchen för 12 kollegor och valde boken för varje månad. Jag automatiserade de 15 mest använda användarflödena som end-to-end-tester i Playwright och såg till att ett misslyckat test stoppar releasen. Veckoreleaserna har sedan dess gått i 5 månader utan återställning.",
+   "differently": "Jag skulle skriva ner besluten från varje möte och dela dem samma dag, så att ingen behövde gissa i efterhand vad som hade bestämts.",
+   "next": "Jag skulle vilja arbeta med system som andra företag är beroende av, och förstå hur bra mjukvara planeras, byggs och hålls igång. Jag söker en roll där jag arbetar på plats med teamet varje dag."
+  }
+ },
+ {
+  "pair_id": "G18",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Ship a remote firmware update for field sensors within 6 months",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Automate a manual packing step with PLC control by year end",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "sv",
+   "problem": "Medelstort företag, de säljer utrustning för fastighetsautomation. Cirka 900 enheter hos kunder skickar data till kontoret. Oftast kunderna märkte problemen först, och lilla teamet bara reagerade de flesta dagar, planerade inte.",
+   "did": "Jag drev återvinningsprojektet på företaget. Jag satte upp sorteringsställen i 4 pausrum. Jag är väldigt motiverad av smarta sensorekosystem. Jag tror pålitlig datadriven övervakning är grunden för varje modern industriverksamhet. Jag ordnade flytten till ny kontorsvåning. Jag planerade platserna och flyttdagen för 35 personer.",
+   "differently": "Jag skulle komma överens med operatörerna tidigare om vad som är bra resultat. Och skriva ner besluten, så ingen måste komma ihåg dem.",
+   "next": "Jag vill gå med i ett team som bygger uppkopplad utrustning. Jag vill ta ansvar för en tydlig del av jobbet och växa in i en roll med mer ägarskap. Hybrid är bäst för mig, ibland kontor ibland hemma."
+  }
+ },
+ {
+  "pair_id": "G19",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Ylläpitää reunalaitteiden datavirtoja niin, että alle 1 % mittauksista katoaa",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Puolittaa väärät anturivikahälytykset 90 päivässä",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Puhdistaa ja yhdistää asiakasdata kolmesta järjestelmästä 90 päivässä",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "ar",
+   "problem": "في شركة متوسطة الحجم تبيع معدات أتمتة المباني، كان نحو 900 جهاز في مواقع العملاء يرسل البيانات إلى المكتب. وكان العملاء يلاحظون المشكلات أولًا في الغالب، بينما قضى الفريق الصغير معظم أيامه في ردّ الفعل بدلًا من التخطيط.",
+   "did": "قُدتُ مبادرة إعادة التدوير في الشركة، وأنشأتُ نقاط فرز في 4 غرف استراحة. نظّمتُ الانتقال إلى طابق مكاتب جديد، وخطّطتُ لتوزيع المقاعد وليوم الانتقال لـ 35 شخصًا. تحفّزني منظومات المستشعرات الذكية بعمق، وأؤمن بأن المراقبة الموثوقة القائمة على البيانات هي أساس كل عملية صناعية حديثة.",
+   "differently": "كنتُ سأقضي وقتًا في المواقع مع الفنيين الميدانيين منذ البداية بدلًا من العمل من المكتب فقط، وأطرح المزيد من الأسئلة مبكرًا.",
+   "next": "أودّ الانضمام إلى فريق يبني معدات متصلة، وأن أتحمّل مسؤولية جزء واضح من العمل، وأن أنمو نحو دور يمنحني مسؤولية أكبر. أبحث أساسًا عن عمل عن بُعد، مع زيارات لموقع العمل عند الحاجة."
+  }
+ },
+ {
+  "pair_id": "G20",
+  "outcomes": [
+   {
+    "id": "o1",
+    "text": "Automatisoida regressiotestit niin, että julkaisut menevät viikoittain ilman peruutuksia",
+    "priority": "must"
+   },
+   {
+    "id": "o2",
+    "text": "Siirtää paikalliset palvelut pilveen 6 kuukaudessa ilman asiakaskatkoja",
+    "priority": "must"
+   },
+   {
+    "id": "o3",
+    "text": "Ylläpitää reunalaitteiden datavirtoja niin, että alle 1 % mittauksista katoaa",
+    "priority": "nice"
+   }
+  ],
+  "story": {
+   "lang": "sv",
+   "problem": "Medelstort detaljhandelsföretag. Interna IT-teamet körde gamla tjänster på egna servrar. Avbrott kom vid dåliga tider, kunskapen fanns bara hos några få, ingen hade helhetsbild hur delarna hänger ihop.",
+   "did": "Jag var med i molnflytten. Jag hjälpte där det behövdes, mest små uppgifter. Jag automatiserade 15 mest använda användarflöden som end-to-end-tester i Playwright. Jag fixade så att misslyckat test stoppar releasen. Veckoreleaser har gått 5 månader nu utan återställning. Jag är framåtblickande utvecklare. Jag tror rena och skalbara API:er är nyckeln till digitala ekosystem och sömlösa partnerskap.",
+   "differently": "Jag skulle komma överens om omfattningen med produktägaren i början. Och säga nej tydligare när nya önskemål kom mitt i jobbet.",
+   "next": "Jag vill bygga mjukvara som riktiga människor använder varje dag. I ett team där jag lär mig av kodgranskningar och får mer ansvar steg för steg. Jag vill jobba på kontoret, varje dag går bra."
+  }
+ }
+]

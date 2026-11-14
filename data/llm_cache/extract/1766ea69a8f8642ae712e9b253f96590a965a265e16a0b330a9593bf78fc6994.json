@@ -1,0 +1,24 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "نظّمتُ حفل الصيف لمكان عملنا، بما في ذلك حجز المكان وترتيب الطعام لـ 40 ضيفًا.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "جدّدتُ غرفة استراحة الموظفين واخترتُ أثاثًا جديدًا بالتعاون مع عمّال النظافة.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

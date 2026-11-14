@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-001/o1",
+    "label": "supported",
+    "unit_id": "J-059.u2",
+    "quote": "إيرادات هذه الحسابات زادت 18% في سنة",
+    "reason": "Personal quarterly CRM usage reviews and upsell grew account revenue 18%."
+   },
+   {
+    "key": "N-001/o2",
+    "label": "partial",
+    "unit_id": "J-059.u3",
+    "quote": "حدّثت بعض التعليمات في قاعدة المعرفة",
+    "reason": "Occasionally updated knowledge base; no method or ticket reduction result."
+   },
+   {
+    "key": "N-001/o3",
+    "label": "partial",
+    "unit_id": "J-059.u1",
+    "quote": "أنا ساعدت في حالات الدعم",
+    "reason": "Helped with support cases; no method or resolution time stated."
+   },
+   {
+    "key": "N-005/o1",
+    "label": "supported",
+    "unit_id": "J-059.u2",
+    "quote": "إيرادات هذه الحسابات زادت 18% في سنة",
+    "reason": "Personal quarterly CRM usage reviews and upsell grew account revenue 18%."
+   },
+   {
+    "key": "N-005/o2",
+    "label": "partial",
+    "unit_id": "J-059.u1",
+    "quote": "أنا ساعدت في حالات الدعم",
+    "reason": "Helped with support cases; no method or resolution time stated."
+   },
+   {
+    "key": "N-005/o3",
+    "label": "partial",
+    "unit_id": "J-059.u3",
+    "quote": "حدّثت بعض التعليمات في قاعدة المعرفة",
+    "reason": "Occasionally updated knowledge base; no method or ticket reduction result."
+   },
+   {
+    "key": "N-020/o1",
+    "label": "supported",
+    "unit_id": "J-059.u2",
+    "quote": "إيرادات هذه الحسابات زادت 18% في سنة",
+    "reason": "Personal quarterly CRM usage reviews and upsell grew account revenue 18%."
+   },
+   {
+    "key": "N-020/o2",
+    "label": "partial",
+    "unit_id": "J-059.u3",
+    "quote": "حدّثت بعض التعليمات في قاعدة المعرفة",
+    "reason": "Occasionally updated knowledge base; no method or ticket reduction result."
+   },
+   {
+    "key": "N-020/o3",
+    "label": "partial",
+    "unit_id": "J-059.u1",
+    "quote": "أنا ساعدت في حالات الدعم",
+    "reason": "Helped with support cases; no method or resolution time stated."
+   }
+  ]
+ }
+}

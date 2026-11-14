@@ -1,0 +1,37 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag gjorde en kontroll i Python som körs varje timme, den jämför förväntade och mottagna mätvärden per enhet. Den visade att 3 gatewayer hade fel klockinställning. Jag fixade dem och förlorade mätvärden stannade under 0,5 %.",
+    "skills": [
+     "S39",
+     "S30",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag jämförde 3 månader fellarm med arbetsordrar från underhåll, för att se vilka var riktiga. Jag satte egna gränsvärden för varje sensormodell. Falska larm per vecka sjönk från 140 till 45.",
+    "skills": [
+     "S31",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag gjorde OTA-firmwareuppdateringar i C för FreeRTOS-sensornoder. Jag använde A/B-partitioner så misslyckad uppdatering rullas tillbaka automatiskt. Jag rullade ut det till 300 fältsensorer på 5 månader.",
+    "skills": [
+     "S43",
+     "S11",
+     "S13",
+     "S21"
+    ]
+   }
+  ]
+ }
+}

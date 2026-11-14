@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark Match Lens</title>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f6f5f2; --surface: #fcfcfb; --line: #e4e2dc; --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #6f6d68;
+  --series-1: #1f66bd; --good: #0f7b3e; --good-bg: #e3f3e8; --bad: #b42318; --bad-bg: #fde7e4;
+  --proxy: #7a5b00; --proxy-bg: #fbf1d0; --mark: #fff3bf;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+    --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+    --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+  --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+  --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 12px; }
+h3 { font-size: 15px; margin: 0 0 8px; }
+.sub { color: var(--ink-2); margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid3 { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.pass { color: var(--good); background: var(--good-bg); }
+.fail { color: var(--bad); background: var(--bad-bg); }
+.proxy, .pending { color: var(--proxy); background: var(--proxy-bg); }
+.kind { color: var(--ink-3); font-size: 12px; }
+.stat { font-size: 28px; font-weight: 650; line-height: 1.1; }
+.stat-l { color: var(--ink-2); font-size: 13px; }
+.bar-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; }
+.bar-track { display: flex; align-items: center; gap: 8px; }
+.bar { height: 14px; background: var(--series-1); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bar-v { color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.story p { margin: 0 0 8px; }
+.story .box { color: var(--ink-3); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; display: block; }
+.lbl { font-size: 12px; font-weight: 600; }
+.lbl.supported { color: var(--good); } .lbl.partial { color: var(--proxy); } .lbl.none { color: var(--ink-3); }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+tr.disagree td, tr.diffplanted td { background: var(--mark); }
+.muted { color: var(--ink-2); font-size: 13px; }
+.scroll { overflow-x: auto; }
+details summary { cursor: pointer; color: var(--ink-2); }
+
+mark { background: var(--mark); color: inherit; padding: 0 2px; border-radius: 3px; }
+.tier { font-size: 13px; font-weight: 650; padding: 2px 10px; border-radius: 999px; background: var(--line); white-space: nowrap; }
+.tier.strong { color: var(--good); background: var(--good-bg); } .tier.worth { color: var(--series-1); background: var(--bg); border: 1px solid var(--series-1); }
+.tier.stretch { color: var(--proxy); background: var(--proxy-bg); } .tier.none { color: var(--ink-2); }
+.lbl.adjacent { color: var(--series-1); }
+.unit { font-size: 13px; color: var(--ink-2); }
+.note { display: block; color: var(--ink-3); font-size: 12px; margin-top: 2px; }
+.tiers { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin: 4px 0 8px; font-size: 13px; color: var(--ink-2); }
+.flag { font-weight: 650; color: var(--bad); }
+</style>
+</head>
+<body>
+<main>
+<h1>Spark · Step 2 · Match Lens engine (F4–F7)</h1>
+<p class="sub">Evidence units → multilingual retrieval → structured judge → fixed tier rules. No match score is shown to anyone; retrieval
+similarity is used internally only to pick each outcome's top 3 units. Every tier is explained by quotes or a stated reason. Method
+pre-registered in <span class="mono">docs/method.md §6</span>; changes made after results are listed in its dated note.</p>
+
+
+<div class="card" style="margin-bottom:8px"><h3>Amendment A1: attempted, not completed</h3>
+<p class="muted" style="margin:0 0 6px">not completed: Anthropic credit ran out after extraction and 154 of 156 judge runs (J-142@all, J-150@all missing); lens, stability and injection not run. The registered run v1 remains the step-2 result. Preliminary pool-wide results, reported as they came out (no golden-set or F7
+result exists for A1):</p>
+<div class="scroll"><table><tr><th>Measure</th><th>Registered v1</th><th>A1 (partial)</th><th>Threshold</th></tr>
+<tr><td>F4 tag precision (planted reference)</td><td>76%</td><td>78% <span class="flag">below</span></td><td class="kind">≥ 80%</td></tr><tr><td>F4 tag recall (planted reference)</td><td>75%</td><td>63% <span class="flag">below</span></td><td class="kind">≥ 70%</td></tr><tr><td>F4 cross-language skill Jaccard (mean)</td><td>90%</td><td>92%</td><td class="kind">≥ 80%</td></tr><tr><td>F6 language invariance</td><td>98%</td><td>98%</td><td class="kind">≥ 90%</td></tr><tr><td>F6 style invariance</td><td>96%</td><td>97%</td><td class="kind">≥ 90%</td></tr>
+</table></div>
+<p class="muted" style="margin:6px 0 0">A1.1 (ESCO descriptions in the extraction prompt) raised precision a little and cost recall more. Hub skills under A1 tags: Internet of Things.</p></div>
+
+<h2>Hard gates</h2>
+
+<div class="card scroll"><table>
+<tr><th>Check</th><th>Status</th></tr>
+<tr><td>F4 units are exact substrings of an evidence box, offsets in range, every story present</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F4 skill URIs exist in the ESCO cache</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F4 5 planted thin stories flagged, none dropped; thin rule holds for all</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F5 embeddings deterministic, version matches; all 156 stored retrieval runs recompute to the same units in the same order</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F5 embedded inputs carry no identity (names incl. Finnish case forms, nationality in en/fi/sv/ar, school)</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F6 every quote is exact, ≥ 3 words, from a unit retrieved for that outcome</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F6 injection, story level: no label raised (extraction kept 0 of 10 injected sentences)</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F6 injection, judge level: injected sentence inside a unit shown for every outcome, no label raised, none rejected (all clean labels were none: tests none → raised only)</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F7 determinism over 100 rebuilds, all 500 pairs present</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F7 no numeric score or rank in the payload (key allowlist, fixed vocabularies)</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F7 no auto-exclusion: every pair addable, also when all are none</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F7 every tier carries a cited unit or a stated reason</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F7 no Strong where consensus is Stretch or none</td><td><span class="pill pass">PASS</span></td></tr><tr><td>This page carries no candidate identity</td><td><span class="pill pass">PASS</span></td></tr>
+</table></div>
+
+<h2>Targets</h2>
+<div class="card scroll"><table>
+<tr><th>Target</th><th>Kind</th><th>Status</th><th>Value</th></tr>
+<tr><td>F4 tag precision (planted reference)</td><td class="kind">proxy</td>
+  <td><span class="pill fail">MISSED</span>
+      </td>
+  <td class="muted">76% (&gt;= 80%), n = 30, 95% CI 69–83% · proxy, human labels pending
+    <span class="note">tp 95 / fp 30 / fn 31 over 125 predicted tags; CI resamples the 30 stories</span></td>
+  </tr><tr><td>F4 tag recall (planted reference)</td><td class="kind">proxy</td>
+  <td><span class="pill proxy">PROXY · HUMAN PENDING</span>
+      </td>
+  <td class="muted">75% (&gt;= 70%), n = 30, 95% CI 67–83% · meets threshold on proxy labels
+    </td>
+  </tr><tr><td>F4 cross-language skill Jaccard (mean)</td><td class="kind">target</td>
+  <td><span class="pill pass">MET</span></td>
+  <td class="muted">90% (&gt;= 80%), n = 60, 95% CI 85–94%
+    <span class="note">6 pairs have no tags on either side and count as 1.0; mean over the other 54: 0.889 (added 2026-11-14 after results; context only, not a registered measure)</span></td>
+  </tr><tr><td>F5 Recall@3 on golden supported/partial</td><td class="kind">proxy</td>
+  <td><span class="pill proxy">PROXY · HUMAN PENDING</span>
+      </td>
+  <td class="muted">100% (&gt;= 90%), n = 22, 95% CI 100–100% · meets threshold on proxy labels
+    <span class="note">0 extraction misses excluded; in 21 of 22 cases any 3 of the story&#39;s units include an evidence unit; random-3 baseline 0.989 (added 2026-11-14 after results; context only, not a registered measure)</span></td>
+  </tr><tr><td>F5 cross-language correct unit in top 3 (English outcome, translated story)</td><td class="kind">proxy</td>
+  <td><span class="pill proxy">PROXY · HUMAN PENDING</span>
+      </td>
+  <td class="muted">100% (&gt;= 90%), n = 222, 95% CI 100–100% · meets threshold on proxy labels
+    <span class="note">0 extraction misses excluded; in 216 of 222 cases any 3 of the story&#39;s units include an evidence unit; random-3 baseline 0.995 (added 2026-11-14 after results; context only, not a registered measure)</span></td>
+  </tr><tr><td>F6 accuracy vs consensus (3-class)</td><td class="kind">proxy</td>
+  <td><span class="pill proxy">PROXY · HUMAN PENDING</span>
+      </td>
+  <td class="muted">95% (&gt;= 80%), n = 60, 95% CI 88–100% · meets threshold on proxy labels
+    </td>
+  </tr><tr><td>F6 false-supported rate</td><td class="kind">proxy</td>
+  <td><span class="pill proxy">PROXY · HUMAN PENDING</span>
+      </td>
+  <td class="muted">0% (&lt;= 10%), n = 10, 95% CI 0–0% · meets threshold on proxy labels
+    </td>
+  </tr><tr><td>F6 language invariance</td><td class="kind">target</td>
+  <td><span class="pill pass">MET</span></td>
+  <td class="muted">98% (&gt;= 90%), n = 639, 95% CI 97–99%
+    <span class="note">agreement where either label is non-none: 0.970 (n = 367; added 2026-11-14 after results; context only, not a registered measure)</span></td>
+  </tr><tr><td>F6 style invariance</td><td class="kind">target</td>
+  <td><span class="pill pass">MET</span></td>
+  <td class="muted">96% (&gt;= 90%), n = 204, 95% CI 93–99%
+    <span class="note">agreement where either label is non-none: 0.933 (n = 119; added 2026-11-14 after results; context only, not a registered measure)</span></td>
+  </tr><tr><td>F6 stability (uncached re-run)</td><td class="kind">target</td>
+  <td><span class="pill pass">MET</span></td>
+  <td class="muted">99% (&gt;= 95%), n = 1500, 95% CI 98–99%
+    <span class="note">agreement where either label is non-none: 0.902 (n = 153; added 2026-11-14 after results; context only, not a registered measure)</span></td>
+  </tr><tr><td>F7 tier agreement exact (with adjacency, registered)</td><td class="kind">proxy</td>
+  <td><span class="pill fail">MISSED</span>
+      </td>
+  <td class="muted">65% (&gt;= 80%), n = 20, 95% CI 45–85% · proxy, human labels pending
+    <span class="note">7 of 20 pairs disagree; engine above consensus in 7; adjacency changed the tier in 7; judge labels equal consensus on every outcome in 6. Adjacent paths in the disagreeing pairs (all priorities) start from: ICT system integration ×5 (tagged on 56 pool units), perform data analysis ×2 (tagged on 35 pool units), create data models ×1 (tagged on 3 pool units), Python (computer programming) ×1 (tagged on 35 pool units), Internet of Things ×1 (tagged on 50 pool units), manage data ×1 (tagged on 22 pool units) (added 2026-11-14 after results; context only, not a registered measure)</span></td>
+  </tr><tr><td>F7 tier agreement within one (with adjacency, registered)</td><td class="kind">proxy</td>
+  <td><span class="pill proxy">PROXY · HUMAN PENDING</span>
+      </td>
+  <td class="muted">95% (&gt;= 95%), n = 20, 95% CI 85–100% · meets threshold on proxy labels
+    </td>
+  </tr><tr><td>F7 tier agreement exact (direct labels only)</td><td class="kind">sensitivity</td>
+  <td><span class="kind">no threshold</span>
+      </td>
+  <td class="muted">95%, n = 20, 95% CI 85–100%
+    <span class="note">registered as also reported without adjacency (method.md §6); no threshold</span></td>
+  </tr><tr><td>F7 tier agreement within one (direct labels only)</td><td class="kind">sensitivity</td>
+  <td><span class="kind">no threshold</span>
+      </td>
+  <td class="muted">100%, n = 20, 95% CI 100–100%
+    <span class="note">registered as also reported without adjacency (method.md §6); no threshold</span></td>
+  </tr><tr><td>F7 tier agreement exact (adjacency incl. shared occupation)</td><td class="kind">sensitivity</td>
+  <td><span class="kind">no threshold</span>
+      </td>
+  <td class="muted">65%, n = 20, 95% CI 45–85%
+    <span class="note">registered sensitivity analysis (method.md §6: shared-occupation links are not adjacency); no threshold</span></td>
+  </tr><tr><td>F7 tier agreement within one (adjacency incl. shared occupation)</td><td class="kind">sensitivity</td>
+  <td><span class="kind">no threshold</span>
+      </td>
+  <td class="muted">90%, n = 20, 95% CI 75–100%
+    <span class="note">registered sensitivity analysis (method.md §6: shared-occupation links are not adjacency); no threshold</span></td>
+  </tr>
+</table>
+<p class="muted">Kind <b>proxy</b>: the reference is AI-proxy annotator consensus or planted labels, so the result is never shown as green
+(method.md, condition kinds). Kind <b>sensitivity</b>: reported for context, without a threshold. 95% CIs: bootstrap, 2,000 resamples,
+seed 11 (method.md §3), items resampled independently.</p></div>
+<p class="muted">240 stories → 576 evidence units · 817 uncached LLM calls, $16.85 spent · served by claude-opus-5-5 · 0 refusals · 0 non-verbatim units dropped · 0 judge items rejected · embeddings BAAI/bge-m3@9a0624b896d81da7492a910ffa53731274b6cf3d · tokens: 926223 input, 624931 output, 1483161 cache read, 69807 cache write</p>
+
+<h2>Missed targets and mitigation</h2>
+<div class="card" style="margin-bottom:12px">
+  <h3>F4 tag precision (planted reference) · <span class="flag">missed</span>: 76% against &gt;= 80% (n = 30, 95% CI 69–83%)</h3>
+  <p class="muted" style="margin:0 0 6px">tp 95 / fp 30 / fn 31 over 125 predicted tags; CI resamples the 30 stories</p>
+  <p style="margin:0">Diagnosis (added 2026-11-14 after results; reviewer judgement, not a registered measure): every false positive sits on a did-box unit that overlaps a supported or partial planted claim. About 23 of 30 are skills the unit text does state but the 2–3-skill archetype reference omits (for example Python, data analysis), so precision against the planted reference is a lower bound. The remaining ~7 are over-broad or wrong tags, for example ICT system integration (×3) on work that only uses a system as a data source. Mitigation: proposed extraction amendment (ESCO scope notes in the prompt&#39;s skill list; a system only named as a data source is not evidence of integrating it), pending approval and a full disclosed re-run. Threshold unchanged.</p>
+</div><div class="card" style="margin-bottom:12px">
+  <h3>F7 tier agreement exact (with adjacency, registered) · <span class="flag">missed</span>: 65% against &gt;= 80% (n = 20, 95% CI 45–85%)</h3>
+  <p class="muted" style="margin:0 0 6px">7 of 20 pairs disagree; engine above consensus in 7; adjacency changed the tier in 7; judge labels equal consensus on every outcome in 6. Adjacent paths in the disagreeing pairs (all priorities) start from: ICT system integration ×5 (tagged on 56 pool units), perform data analysis ×2 (tagged on 35 pool units), create data models ×1 (tagged on 3 pool units), Python (computer programming) ×1 (tagged on 35 pool units), Internet of Things ×1 (tagged on 50 pool units), manage data ×1 (tagged on 22 pool units) (added 2026-11-14 after results; context only, not a registered measure)</p>
+  <p style="margin:0">Consensus labels exclude adjacency by design (method.md §1). Adjacency can only raise the engine tier, never lower it, so where the judge matches consensus (6 of the 7 disagreements) every adjacent path puts the engine above consensus; this target partly measures that design choice. Mitigation: proposed adjacency amendment (no same-skill adjacency on hub skills tagged across many outcomes; an adjacent path alone cannot lift a pair from none to worth), pending approval and a full disclosed re-run. Threshold unchanged.</p>
+</div>
+
+<h2>Match Lens · NordSense (N-014) × the three running-example candidates</h2>
+<p class="muted">Candidates are shown by id and a persona from the challenge's running example; no name, nationality or school is shown.</p>
+
+<div class="card" style="margin-bottom:16px">
+  <h3>J-002 · rough but concrete story</h3>
+  <div class="tiers">
+    <span>Engine: <span class="tier strong">Strong</span></span>
+    
+    <span>Spec expects: <span class="tier strong">Strong</span></span>
+    <span>Annotator consensus: <span class="tier strong">Strong</span></span>
+  </div>
+  <p class="muted" style="margin:0 0 8px">Strong: o1 supported; o2 supported · 3 evidence units</p>
+  <div class="scroll"><table>
+    <tr><th>Outcome</th><th>Prio</th><th>Engine</th><th>Consensus</th><th>Evidence (quote highlighted inside its unit)</th><th>Why</th></tr>
+    <tr><td>Cut false sensor-fault alerts by half within 90 days</td><td class="kind">must</td><td><span class="lbl supported">supported</span></td>
+      <td><span class="lbl supported">supported</span></td>
+      <td class="unit" dir="auto"><mark>I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day</mark>, checked by comparing weekly logs.</td>
+      <td class="muted">Personally rebuilt alert rules; false alerts cut by over half.</td></tr><tr><td>Maintain data pipelines from edge devices with under 1% lost readings</td><td class="kind">must</td><td><span class="lbl supported">supported</span></td>
+      <td><span class="lbl supported">supported</span></td>
+      <td class="unit" dir="auto">I also took care of the data pipeline from the stations: <mark>I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%</mark>.</td>
+      <td class="muted">Personally reduced lost edge readings to under 1% with buffering.</td></tr><tr><td>Support Finnish-speaking customers in technical support cases</td><td class="kind">learnable</td><td><span class="lbl none">none</span></td>
+      <td><span class="lbl none">none</span></td>
+      <td class="unit" dir="auto">—</td>
+      <td class="muted">No customer support or Finnish language mentioned.</td></tr>
+  </table></div>
+  <p class="muted" style="margin:8px 0 0">≠ marks an engine label that differs from consensus. Annotators do not label adjacency, so <i>adjacent</i> next to consensus <i>none</i> is expected, not flagged.</p>
+</div>
+
+<div class="card" style="margin-bottom:16px">
+  <h3>J-003 · career changer from logistics</h3>
+  <div class="tiers">
+    <span>Engine: <span class="tier worth">Worth a conversation</span></span>
+    
+    <span>Spec expects: <span class="tier worth">Worth a conversation</span></span>
+    <span>Annotator consensus: <span class="tier stretch">Stretch</span> <span class="flag">≠ engine 1 tier higher</span></span>
+  </div>
+  <p class="muted" style="margin:0 0 8px">Worth a conversation: o1 adjacent; o2 adjacent · 2 evidence units</p>
+  <div class="scroll"><table>
+    <tr><th>Outcome</th><th>Prio</th><th>Engine</th><th>Consensus</th><th>Evidence (quote highlighted inside its unit)</th><th>Why</th></tr>
+    <tr><td>Cut false sensor-fault alerts by half within 90 days</td><td class="kind">must</td><td><span class="lbl adjacent">adjacent</span></td>
+      <td><span class="lbl none">none</span></td>
+      <td class="unit" dir="auto">I led the work of re-planning routes for 120 trucks with a routing tool and historical delivery data, and I compared the new plan with the old one for 4 weeks: driven kilometres fell by 9%.</td>
+      <td class="muted">Judge: No sensor alert work described.<span class="note">Adjacent skill path: perform data analysis (same skill) perform data analysis, from unit J-003.u1</span></td></tr><tr><td>Maintain data pipelines from edge devices with under 1% lost readings</td><td class="kind">must</td><td><span class="lbl adjacent">adjacent</span></td>
+      <td><span class="lbl partial">partial</span> <span class="flag">≠</span></td>
+      <td class="unit" dir="auto">I also connected our warehouse system to the ERP with a nightly integration job, so order data moved automatically and manual re-typing stopped.</td>
+      <td class="muted">Judge: Warehouse-ERP integration, not edge device pipelines.<span class="note">Adjacent skill path: ICT system integration (same skill) ICT system integration, from unit J-003.u2</span></td></tr><tr><td>Support Finnish-speaking customers in technical support cases</td><td class="kind">learnable</td><td><span class="lbl none">none</span></td>
+      <td><span class="lbl none">none</span></td>
+      <td class="unit" dir="auto">—</td>
+      <td class="muted">No customer support or language evidence.</td></tr>
+  </table></div>
+  <p class="muted" style="margin:8px 0 0">≠ marks an engine label that differs from consensus. Annotators do not label adjacency, so <i>adjacent</i> next to consensus <i>none</i> is expected, not flagged.</p>
+</div>
+
+<div class="card" style="margin-bottom:16px">
+  <h3>J-001 · polished, generic story <span class="pill pending">thin story: human follow-up</span></h3>
+  <div class="tiers">
+    <span>Engine: <span class="tier worth">Worth a conversation</span></span>
+    
+    <span>Spec expects: <span class="tier stretch">Stretch</span> <span class="flag">≠ engine 1 tier higher</span></span>
+    <span>Annotator consensus: <span class="tier stretch">Stretch</span> <span class="flag">≠ engine 1 tier higher</span></span>
+  </div>
+  <p class="muted" style="margin:0 0 8px">Worth a conversation: o1 adjacent; o2 partial · 1 evidence unit</p>
+  <div class="scroll"><table>
+    <tr><th>Outcome</th><th>Prio</th><th>Engine</th><th>Consensus</th><th>Evidence (quote highlighted inside its unit)</th><th>Why</th></tr>
+    <tr><td>Cut false sensor-fault alerts by half within 90 days</td><td class="kind">must</td><td><span class="lbl adjacent">adjacent</span></td>
+      <td><span class="lbl none">none</span></td>
+      <td class="unit" dir="auto">Our team worked with data pipelines that collected readings from building sensors into a cloud dashboard.</td>
+      <td class="muted">Judge: No alert reduction work.<span class="note">Adjacent skill path: Internet of Things (same skill) Internet of Things, from unit J-001.u1</span></td></tr><tr><td>Maintain data pipelines from edge devices with under 1% lost readings</td><td class="kind">must</td><td><span class="lbl partial">partial</span></td>
+      <td><span class="lbl partial">partial</span></td>
+      <td class="unit" dir="auto">Our team <mark>worked with data pipelines that collected readings from building sensors</mark> into a cloud dashboard.</td>
+      <td class="muted">Relevant sensor pipelines, but team role only, no result.</td></tr><tr><td>Support Finnish-speaking customers in technical support cases</td><td class="kind">learnable</td><td><span class="lbl none">none</span></td>
+      <td><span class="lbl none">none</span></td>
+      <td class="unit" dir="auto">—</td>
+      <td class="muted">No Finnish support work.</td></tr>
+  </table></div>
+  <p class="muted" style="margin:8px 0 0">≠ marks an engine label that differs from consensus. Annotators do not label adjacency, so <i>adjacent</i> next to consensus <i>none</i> is expected, not flagged.</p>
+</div>
+
+
+<h2>Golden set: engine tier vs annotator-consensus tier</h2>
+<div class="card scroll"><table>
+<tr><th>Pair</th><th>Need</th><th>Cand.</th><th>Lang</th><th>Style</th><th>Consensus tier</th><th>Engine tier</th><th>Agreement</th></tr>
+<tr class="disagree"><td class="mono">G01</td><td class="mono">N-002</td><td class="mono">J-107</td>
+<td class="mono">fi</td><td class="kind">rough</td><td><span class="tier stretch">Stretch</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td><span class="flag">≠ engine 1 tier higher</span></td></tr><tr class=""><td class="mono">G02</td><td class="mono">N-002</td><td class="mono">J-150</td>
+<td class="mono">ar</td><td class="kind">rough</td><td><span class="tier worth">Worth a conversation</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td>agrees</td></tr><tr class=""><td class="mono">G03</td><td class="mono">N-017</td><td class="mono">J-118</td>
+<td class="mono">fi</td><td class="kind">rough</td><td><span class="tier strong">Strong</span></td>
+<td><span class="tier strong">Strong</span></td><td>agrees</td></tr><tr class=""><td class="mono">G04</td><td class="mono">N-020</td><td class="mono">J-053</td>
+<td class="mono">en</td><td class="kind">rough</td><td><span class="tier none">No evidence yet</span></td>
+<td><span class="tier none">No evidence yet</span></td><td>agrees</td></tr><tr class=""><td class="mono">G05</td><td class="mono">N-017</td><td class="mono">J-042</td>
+<td class="mono">fi</td><td class="kind">polished</td><td><span class="tier stretch">Stretch</span></td>
+<td><span class="tier stretch">Stretch</span></td><td>agrees</td></tr><tr class="disagree"><td class="mono">G06</td><td class="mono">N-009</td><td class="mono">J-142</td>
+<td class="mono">sv</td><td class="kind">polished</td><td><span class="tier none">No evidence yet</span></td>
+<td><span class="tier stretch">Stretch</span></td><td><span class="flag">≠ engine 1 tier higher</span></td></tr><tr class=""><td class="mono">G07</td><td class="mono">N-009</td><td class="mono">J-111</td>
+<td class="mono">fi</td><td class="kind">rough</td><td><span class="tier strong">Strong</span></td>
+<td><span class="tier strong">Strong</span></td><td>agrees</td></tr><tr class="disagree"><td class="mono">G08</td><td class="mono">N-014</td><td class="mono">J-001</td>
+<td class="mono">en</td><td class="kind">polished</td><td><span class="tier stretch">Stretch</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td><span class="flag">≠ engine 1 tier higher</span></td></tr><tr class=""><td class="mono">G09</td><td class="mono">N-022</td><td class="mono">J-032</td>
+<td class="mono">ar</td><td class="kind">polished</td><td><span class="tier strong">Strong</span></td>
+<td><span class="tier strong">Strong</span></td><td>agrees</td></tr><tr class=""><td class="mono">G10</td><td class="mono">N-018</td><td class="mono">J-134</td>
+<td class="mono">ar</td><td class="kind">rough</td><td><span class="tier worth">Worth a conversation</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td>agrees</td></tr><tr class="disagree"><td class="mono">G11</td><td class="mono">N-022</td><td class="mono">J-084</td>
+<td class="mono">sv</td><td class="kind">polished</td><td><span class="tier none">No evidence yet</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td><span class="flag">≠ engine 2 tiers higher</span></td></tr><tr class="disagree"><td class="mono">G12</td><td class="mono">N-014</td><td class="mono">J-003</td>
+<td class="mono">en</td><td class="kind">polished</td><td><span class="tier stretch">Stretch</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td><span class="flag">≠ engine 1 tier higher</span></td></tr><tr class=""><td class="mono">G13</td><td class="mono">N-006</td><td class="mono">J-016</td>
+<td class="mono">ar</td><td class="kind">rough</td><td><span class="tier none">No evidence yet</span></td>
+<td><span class="tier none">No evidence yet</span></td><td>agrees</td></tr><tr class=""><td class="mono">G14</td><td class="mono">N-014</td><td class="mono">J-002</td>
+<td class="mono">en</td><td class="kind">rough</td><td><span class="tier strong">Strong</span></td>
+<td><span class="tier strong">Strong</span></td><td>agrees</td></tr><tr class=""><td class="mono">G15</td><td class="mono">N-001</td><td class="mono">J-039</td>
+<td class="mono">fi</td><td class="kind">rough</td><td><span class="tier none">No evidence yet</span></td>
+<td><span class="tier none">No evidence yet</span></td><td>agrees</td></tr><tr class="disagree"><td class="mono">G16</td><td class="mono">N-013</td><td class="mono">J-072</td>
+<td class="mono">en</td><td class="kind">polished</td><td><span class="tier stretch">Stretch</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td><span class="flag">≠ engine 1 tier higher</span></td></tr><tr class="disagree"><td class="mono">G17</td><td class="mono">N-013</td><td class="mono">J-006</td>
+<td class="mono">sv</td><td class="kind">polished</td><td><span class="tier stretch">Stretch</span></td>
+<td><span class="tier worth">Worth a conversation</span></td><td><span class="flag">≠ engine 1 tier higher</span></td></tr><tr class=""><td class="mono">G18</td><td class="mono">N-006</td><td class="mono">J-136</td>
+<td class="mono">sv</td><td class="kind">rough</td><td><span class="tier none">No evidence yet</span></td>
+<td><span class="tier none">No evidence yet</span></td><td>agrees</td></tr><tr class=""><td class="mono">G19</td><td class="mono">N-018</td><td class="mono">J-099</td>
+<td class="mono">ar</td><td class="kind">polished</td><td><span class="tier none">No evidence yet</span></td>
+<td><span class="tier none">No evidence yet</span></td><td>agrees</td></tr><tr class=""><td class="mono">G20</td><td class="mono">N-025</td><td class="mono">J-013</td>
+<td class="mono">sv</td><td class="kind">rough</td><td><span class="tier strong">Strong</span></td>
+<td><span class="tier strong">Strong</span></td><td>agrees</td></tr>
+</table><p class="muted">Consensus tiers use direct labels only (annotators do not label adjacency, method.md §1); the engine adds ESCO adjacency.</p></div>
+
+
+<h2>Sensitivity X1: non-Claude annotators</h2>
+<div class="card">
+<p class="muted" style="margin:0 0 8px">Both golden annotators and the judge are Claude models. Two other model families blind-labelled the frozen
+golden set with the original instructions: kimi-k3-1-pro and deepseek-4-1-flash-1017 (Verda Inference). Nothing frozen changed;
+no thresholds apply. These are still AI annotators, not humans.</p>
+<div class="grid">
+<div><h3>Agreement between annotators (Cohen's κ, 60 labels)</h3><table>
+<tr><td>consensus vs A (Claude)</td><td class="mono">1.00</td></tr><tr><td>consensus vs B (Claude)</td><td class="mono">1.00</td></tr><tr><td>consensus vs Kimi</td><td class="mono">0.97</td></tr><tr><td>consensus vs DeepSeek</td><td class="mono">0.87</td></tr><tr><td>A (Claude) vs B (Claude)</td><td class="mono">1.00</td></tr><tr><td>A (Claude) vs Kimi</td><td class="mono">0.97</td></tr><tr><td>A (Claude) vs DeepSeek</td><td class="mono">0.87</td></tr><tr><td>B (Claude) vs Kimi</td><td class="mono">0.97</td></tr><tr><td>B (Claude) vs DeepSeek</td><td class="mono">0.87</td></tr><tr><td>Kimi vs DeepSeek</td><td class="mono">0.84</td></tr></table></div>
+<div><h3>Judge (registered v1) label accuracy by reference</h3><table>
+<tr><td>A (Claude)</td><td class="mono">95% (n = 60)</td></tr><tr><td>B (Claude)</td><td class="mono">95% (n = 60)</td></tr><tr><td>Kimi</td><td class="mono">93% (n = 60)</td></tr><tr><td>DeepSeek</td><td class="mono">92% (n = 60)</td></tr><tr><td>cross-family reference</td><td class="mono">96% (n = 55)</td></tr>
+
+<tr><td>F7 tier agreement vs cross-family tiers</td><td class="mono">exact 69%, within one 100% (n = 16 pairs)</td></tr>
+<tr><td>False "supported" vs cross-family reference</td><td class="mono">0% (n = 10)</td></tr>
+</table></div></div>
+<p class="muted" style="margin:8px 0 0">Cross-family reference = the 55 labels where Kimi and DeepSeek agree (5 excluded).
+Realism: Kimi rated 100% and DeepSeek 100% of the 20 stories plausible.
+4 calls, about $0.353 (Verda list prices).
+Reading: the judge agrees about as well with the non-Claude annotators as with the Claude ones, so F6 is not mainly a same-family effect;
+the F7 miss stays, because it comes from adjacency, not from who labelled.</p>
+</div>
+</main>
+</body>
+</html>

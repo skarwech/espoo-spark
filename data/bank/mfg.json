@@ -1,0 +1,556 @@
+{
+  "domain": "mfg",
+  "contexts": [
+    {
+      "id": "mfg.ctx.1",
+      "text": {
+        "en": {
+          "polished": "At a plant making components for industrial customers, the main line kept missing its weekly output targets. Stoppages, rejects at final inspection and slow manual packing all contributed, but nobody knew where the time was really lost.",
+          "rough": "In a factory making components for industrial customers, the main line did not reach the weekly output targets. There were stoppages, rejects in final inspection and slow manual packing, but nobody knew where the time really goes."
+        },
+        "fi": {
+          "polished": "Teollisuusasiakkaille komponentteja valmistavalla tehtaalla päälinja jäi toistuvasti jälkeen viikoittaisista tuotantotavoitteista. Seisokit, lopputarkastuksen hylkäykset ja hidas käsin pakkaaminen vaikuttivat kaikki, mutta kukaan ei tiennyt, mihin aika todella kului.",
+          "rough": "Tehtaalla, joka tekee komponentteja teollisuusasiakkaille, päälinja ei päässyt viikon tuotantotavoitteisiin. Oli seisokkeja, hylkäyksiä lopputarkastuksessa ja hidas käsipakkaus, mutta kukaan ei tiennyt mihin aika oikeasti menee."
+        },
+        "sv": {
+          "polished": "På en fabrik som tillverkar komponenter för industrikunder missade huvudlinjen gång på gång sina veckomål för produktionen. Stopp, kassationer i slutkontrollen och långsam manuell packning bidrog alla, men ingen visste var tiden egentligen gick förlorad.",
+          "rough": "På en fabrik som gör komponenter för industrikunder nådde huvudlinjen inte veckans produktionsmål. Det var stopp, kassationer i slutkontrollen och långsam manuell packning, men ingen visste vart tiden egentligen går."
+        },
+        "ar": {
+          "polished": "في مصنع ينتج مكونات للعملاء الصناعيين، كان خط الإنتاج الرئيسي يخفق باستمرار في بلوغ أهدافه الأسبوعية. أسهمت التوقفات والرفض في الفحص النهائي وبطء التعبئة اليدوية في ذلك، لكن لم يكن أحد يعرف أين يضيع الوقت فعلًا.",
+          "rough": "في مصنع يصنع مكونات لعملاء صناعيين، الخط الرئيسي لم يصل إلى هدف الإنتاج الأسبوعي. كانت هناك توقفات ورفض في الفحص النهائي وتعبئة يدوية بطيئة، لكن لا أحد يعرف أين يذهب الوقت حقًا."
+        }
+      }
+    },
+    {
+      "id": "mfg.ctx.2",
+      "text": {
+        "en": {
+          "polished": "A mid-size factory running 3 shifts had rising customer complaints, frequent short stops on its lines and a packing step still done by hand. Each team kept its own spreadsheet, so problems surfaced only after products were packed.",
+          "rough": "A mid-size factory with 3 shifts. Customer complaints was growing, the lines had many short stops and a packing step was still done by hand. Every team had own spreadsheet, so problems were seen only after products were packed."
+        },
+        "fi": {
+          "polished": "Keskikokoisella, 3 vuorossa toimivalla tehtaalla asiakasreklamaatiot lisääntyivät, linjoilla oli toistuvia lyhyitä pysähdyksiä ja eräs pakkausvaihe tehtiin yhä käsin. Jokainen tiimi piti omaa taulukkoaan, joten ongelmat huomattiin vasta, kun tuotteet oli jo pakattu.",
+          "rough": "Keskikokoinen tehdas, 3 vuoroa. Asiakasreklamaatioita tuli koko ajan enemmän, linjoilla oli paljon lyhyitä pysähdyksiä ja eräs pakkausvaihe tehtiin vielä käsin. Jokaisella tiimillä oli oma taulukko, joten ongelmat nähtiin vasta kun tuotteet oli pakattu."
+        },
+        "sv": {
+          "polished": "En medelstor fabrik i 3 skift hade allt fler kundreklamationer, täta korta stopp på linjerna och ett packningsmoment som fortfarande gjordes för hand. Varje team hade sitt eget kalkylark, så problemen upptäcktes först när produkterna redan var packade.",
+          "rough": "En medelstor fabrik med 3 skift. Kundreklamationerna blev fler, linjerna hade många korta stopp och ett packningsmoment gjordes ännu för hand. Varje team hade eget kalkylark, så problem syntes bara efter att produkterna var packade."
+        },
+        "ar": {
+          "polished": "شهد مصنع متوسط الحجم يعمل بنظام 3 نوبات تزايدًا في شكاوى العملاء وتوقفات قصيرة متكررة على خطوطه، بينما ظلت مرحلة من مراحل التعبئة تُنجز يدويًا. واحتفظ كل فريق بجدول بيانات خاص به، فلم تُكتشف المشكلات إلا بعد تعبئة المنتجات.",
+          "rough": "مصنع متوسط يعمل 3 نوبات. شكاوى العملاء كانت تزيد، والخطوط تتوقف كثيرًا لوقت قصير، ومرحلة في التعبئة ما زالت يدوية. كل فريق عنده جدول خاص، فالمشاكل تظهر فقط بعد تعبئة المنتجات."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "mfg_maintenance.supported.1",
+      "archetype": "mfg_maintenance",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I introduced vibration measurements on the 12 most critical conveyor motors and set replacement limits for their bearings. Unplanned stoppages on the line fell by 30% over the following 6 months.",
+          "rough": "I started vibration measuring on the 12 most critical conveyor motors and I set limits when the bearings must be changed. Unplanned stops on the line went down 30% in next 6 months."
+        },
+        "fi": {
+          "polished": "Otin käyttöön värähtelymittaukset 12 kriittisimmässä kuljetinmoottorissa ja määritin laakereille vaihtorajat. Linjan suunnittelemattomat seisokit vähenivät 30 % seuraavien 6 kuukauden aikana.",
+          "rough": "Aloitin värähtelymittauksen 12 kriittisimmälle kuljetinmoottorille ja tein rajat, milloin laakerit pitää vaihtaa. Linjan suunnittelemattomat seisokit väheni 30 % seuraavassa 6 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag införde vibrationsmätningar på de 12 mest kritiska transportörmotorerna och fastställde bytesgränser för deras lager. De oplanerade stoppen på linjen minskade med 30 % under de följande 6 månaderna.",
+          "rough": "Jag började mäta vibrationer på de 12 mest kritiska transportörmotorerna och jag satte gränser när lagren måste bytas. Oplanerade stopp på linjen gick ner 30 % på nästa 6 månader."
+        },
+        "ar": {
+          "polished": "أدخلتُ قياسات الاهتزاز على 12 محركًا من أهم محركات السيور الناقلة، وحددتُ حدودًا لاستبدال محامِلها. فانخفضت التوقفات غير المخطط لها على الخط بنسبة 30% خلال 6 أشهر بعد ذلك.",
+          "rough": "بدأتُ قياس الاهتزاز على أهم 12 محرك للسيور الناقلة، ووضعتُ حدودًا لمتى يجب تغيير المحامل. التوقفات غير المخططة على الخط نزلت 30% في 6 أشهر بعدها."
+        }
+      }
+    },
+    {
+      "id": "mfg_maintenance.supported.2",
+      "archetype": "mfg_maintenance",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I analysed 9 months of stoppage logs in the CMMS, found that 3 recurring faults caused most breakdowns and rebuilt the preventive maintenance schedule around them, cutting unplanned downtime by 22%.",
+          "rough": "I checked 9 months of stop logs in the CMMS. 3 repeating faults caused most breakdowns, so I made new preventive maintenance schedule around them. Unplanned downtime went down 22%."
+        },
+        "fi": {
+          "polished": "Analysoin CMMS-kunnossapitojärjestelmän 9 kuukauden seisokkilokit, havaitsin, että 3 toistuvaa vikaa aiheutti suurimman osan konerikoista, ja rakensin ennakkohuolto-ohjelman uudelleen niiden ympärille. Suunnittelemattomat seisokit vähenivät 22 %.",
+          "rough": "Kävin läpi 9 kuukauden seisokkilokit CMMS:stä. 3 toistuvaa vikaa aiheutti suurimman osan rikoista, joten tein uuden ennakkohuolto-ohjelman niiden mukaan. Suunnittelemattomat seisokit väheni 22 %."
+        },
+        "sv": {
+          "polished": "Jag analyserade 9 månaders stopploggar i CMMS-systemet, konstaterade att 3 återkommande fel orsakade de flesta haverierna och byggde om det förebyggande underhållsschemat kring dem, vilket minskade de oplanerade stoppen med 22 %.",
+          "rough": "Jag gick igenom 9 månaders stopploggar i CMMS. 3 fel som kom igen och igen orsakade de flesta haverier, så jag gjorde nytt förebyggande underhållsschema kring dem. Oplanerade stopp gick ner 22 %."
+        },
+        "ar": {
+          "polished": "حللتُ سجلات التوقف لـ 9 أشهر في نظام CMMS، ووجدتُ أن 3 أعطال متكررة تقف وراء معظم حالات تعطل الآلات، فأعدتُ بناء جدول الصيانة الوقائية حولها، مما خفّض التوقفات غير المخطط لها بنسبة 22%.",
+          "rough": "راجعتُ سجلات التوقف لـ 9 أشهر في CMMS. 3 أعطال تتكرر كانت سبب أغلب التعطلات، فأعددتُ جدول صيانة وقائية جديدًا حولها. التوقفات غير المخططة نزلت 22%."
+        }
+      }
+    },
+    {
+      "id": "mfg_maintenance.partial.1",
+      "archetype": "mfg_maintenance",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We moved the packing line from fixed-interval servicing to condition-based checks using oil analysis, and unplanned downtime dropped by 18% within 6 months.",
+          "rough": "We changed the packing line from fixed interval service to checks by condition, with oil analysis. Unplanned downtime dropped 18% in 6 months."
+        },
+        "fi": {
+          "polished": "Siirsimme pakkauslinjan kiinteävälisestä huollosta kuntoon perustuviin tarkastuksiin öljyanalyysin avulla, ja suunnittelemattomat seisokit vähenivät 18 % 6 kuukaudessa.",
+          "rough": "Me vaihdettiin pakkauslinja kiinteän välin huollosta kunnon mukaan tehtäviin tarkastuksiin, öljyanalyysillä. Suunnittelemattomat seisokit väheni 18 % 6 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Vi ställde om packningslinjen från service med fasta intervall till tillståndsbaserade kontroller med hjälp av oljeanalys, och de oplanerade stoppen minskade med 18 % inom 6 månader.",
+          "rough": "Vi bytte packningslinjen från service med fast intervall till kontroller efter skick, med oljeanalys. Oplanerade stopp gick ner 18 % på 6 månader."
+        },
+        "ar": {
+          "polished": "نقلنا خط التعبئة من الصيانة بفترات ثابتة إلى فحوصات مبنية على حالة المعدات باستخدام تحليل الزيت، فانخفضت التوقفات غير المخطط لها بنسبة 18% خلال 6 أشهر.",
+          "rough": "غيّرنا خط التعبئة من صيانة بفترات ثابتة إلى فحوصات حسب الحالة، مع تحليل الزيت. التوقفات غير المخططة نزلت 18% في 6 أشهر."
+        }
+      }
+    },
+    {
+      "id": "mfg_maintenance.partial.2",
+      "archetype": "mfg_maintenance",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I supported the maintenance crew with preventive checks on the press line for some time.",
+          "rough": "I helped the maintenance guys with preventive checks on the press line for some time."
+        },
+        "fi": {
+          "polished": "Avustin kunnossapitotiimiä puristinlinjan ennakkohuoltotarkastuksissa jonkin aikaa.",
+          "rough": "Autoin huoltomiehiä puristinlinjan ennakkotarkastuksissa jonkun aikaa."
+        },
+        "sv": {
+          "polished": "Jag stödde underhållsteamet med förebyggande kontroller på presslinjen under en tid.",
+          "rough": "Jag hjälpte underhållskillarna med förebyggande kontroller på presslinjen ett tag."
+        },
+        "ar": {
+          "polished": "دعمتُ فريق الصيانة في الفحوصات الوقائية على خط المكابس لفترة من الوقت.",
+          "rough": "ساعدتُ عمّال الصيانة في الفحوصات الوقائية على خط المكابس لبعض الوقت."
+        }
+      }
+    },
+    {
+      "id": "mfg_maintenance.none.1",
+      "archetype": "mfg_maintenance",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "Reliability is close to my heart, and I believe a proactive maintenance mindset is the foundation of world-class manufacturing.",
+          "rough": "Reliability is very important for me. I believe proactive maintenance mindset is the base of world class manufacturing."
+        },
+        "fi": {
+          "polished": "Luotettavuus on minulle sydämen asia, ja uskon, että ennakoiva kunnossapitoajattelu on maailmanluokan valmistuksen perusta.",
+          "rough": "Luotettavuus on mulle tosi tärkeää. Uskon että ennakoiva kunnossapitoajattelu on maailmanluokan tuotannon pohja."
+        },
+        "sv": {
+          "polished": "Driftsäkerhet ligger mig varmt om hjärtat, och jag tror att ett proaktivt underhållstänk är grunden för tillverkning i världsklass.",
+          "rough": "Driftsäkerhet är väldigt viktigt för mig. Jag tror proaktivt underhållstänk är basen för tillverkning i världsklass."
+        },
+        "ar": {
+          "polished": "الموثوقية قريبة إلى قلبي، وأؤمن بأن عقلية الصيانة الاستباقية هي أساس التصنيع بمستوى عالمي.",
+          "rough": "الموثوقية مهمة جدًا لي. أؤمن أن عقلية الصيانة الاستباقية هي أساس تصنيع بمستوى عالمي."
+        }
+      }
+    },
+    {
+      "id": "mfg_maintenance.none.2",
+      "archetype": "mfg_maintenance",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the staff summer event at the plant, arranging the programme, catering and bus transport for 80 people.",
+          "rough": "I organised the summer event for the plant staff. I arranged programme, food and bus transport for 80 people."
+        },
+        "fi": {
+          "polished": "Järjestin tehtaan henkilöstön kesätapahtuman ja hoidin ohjelman, tarjoilun sekä bussikuljetukset 80 hengelle.",
+          "rough": "Järjestin tehtaan porukalle kesätapahtuman. Hoidin ohjelman, ruoat ja bussikuljetuksen 80 hengelle."
+        },
+        "sv": {
+          "polished": "Jag organiserade personalens sommarevenemang vid fabriken och ordnade program, catering och busstransport för 80 personer.",
+          "rough": "Jag ordnade sommarevenemanget för fabrikens personal. Jag fixade program, mat och busstransport för 80 personer."
+        },
+        "ar": {
+          "polished": "نظّمتُ الفعالية الصيفية لموظفي المصنع، وتوليتُ إعداد البرنامج والضيافة والنقل بالحافلات لـ 80 شخصًا.",
+          "rough": "نظّمتُ فعالية الصيف لموظفي المصنع. رتّبتُ البرنامج والأكل والنقل بالباص لـ 80 شخصًا."
+        }
+      }
+    },
+    {
+      "id": "mfg_quality.supported.1",
+      "archetype": "mfg_quality",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I introduced SPC charts for the 4 critical dimensions in the machining cell and trained operators to stop the line on out-of-control signals. Rejects at final inspection fell from 6% to 2.5%.",
+          "rough": "I started SPC charts for the 4 critical dimensions in the machining cell. I trained operators to stop the line when chart shows out of control. Rejects in final inspection went from 6% to 2.5%."
+        },
+        "fi": {
+          "polished": "Otin koneistussolussa käyttöön SPC-kortit 4 kriittiselle mitalle ja koulutin operaattorit pysäyttämään linjan, kun prosessi karkaa hallinnasta. Lopputarkastuksen hylkäykset laskivat 6 %:sta 2,5 %:iin.",
+          "rough": "Aloitin SPC-kortit koneistussolussa 4 kriittiselle mitalle. Koulutin operaattorit pysäyttää linjan, kun kortti näyttää että prosessi ei ole hallinnassa. Hylkäykset lopputarkastuksessa meni 6 %:sta 2,5 %:iin."
+        },
+        "sv": {
+          "polished": "Jag införde SPC-diagram för de 4 kritiska måtten i bearbetningscellen och utbildade operatörerna att stoppa linjen vid signaler om att processen är ur kontroll. Kassationerna i slutkontrollen sjönk från 6 % till 2,5 %.",
+          "rough": "Jag startade SPC-diagram för de 4 kritiska måtten i bearbetningscellen. Jag lärde operatörerna att stoppa linjen när diagrammet visar ur kontroll. Kassationer i slutkontrollen gick från 6 % till 2,5 %."
+        },
+        "ar": {
+          "polished": "طبّقتُ مخططات SPC على 4 أبعاد حرجة في خلية التشغيل الميكانيكي، ودرّبتُ المشغّلين على إيقاف الخط عند إشارات خروج العملية عن السيطرة. فانخفضت المرفوضات في الفحص النهائي من 6% إلى 2.5%.",
+          "rough": "بدأتُ مخططات SPC لـ 4 أبعاد حرجة في خلية التشغيل الميكانيكي. درّبتُ المشغّلين أن يوقفوا الخط عندما يُظهر المخطط خروجًا عن السيطرة. المرفوضات في الفحص النهائي نزلت من 6% إلى 2.5%."
+        }
+      }
+    },
+    {
+      "id": "mfg_quality.supported.2",
+      "archetype": "mfg_quality",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I traced recurring paint defects at final inspection to humidity in the drying booth using a fishbone analysis, then added a humidity check to the start-up routine. Paint rejects fell by 55%.",
+          "rough": "With fishbone analysis I found the repeating paint defects in final inspection came from humidity in the drying booth. I added humidity check to the start-up routine. Paint rejects went down 55%."
+        },
+        "fi": {
+          "polished": "Jäljitin lopputarkastuksessa toistuvat maalausvirheet kalanruotoanalyysillä kuivauskopin kosteuteen ja lisäsin kosteuden tarkistuksen käynnistysrutiiniin. Maalaushylkäykset vähenivät 55 %.",
+          "rough": "Kalanruotoanalyysillä löysin, että toistuvat maalivirheet lopputarkastuksessa tuli kuivauskopin kosteudesta. Lisäsin kosteustarkistuksen käynnistysrutiiniin. Maalihylkäykset väheni 55 %."
+        },
+        "sv": {
+          "polished": "Med hjälp av en fiskbensanalys spårade jag återkommande lackfel i slutkontrollen till luftfuktigheten i torkboxen och lade sedan till en fuktkontroll i startrutinen. Lackkassationerna minskade med 55 %.",
+          "rough": "Med fiskbensanalys hittade jag att de återkommande lackfelen i slutkontrollen kom från fukten i torkboxen. Jag lade till fuktkontroll i startrutinen. Lackkassationer gick ner 55 %."
+        },
+        "ar": {
+          "polished": "تتبّعتُ عيوب الطلاء المتكررة في الفحص النهائي باستخدام مخطط عظم السمكة حتى وصلتُ إلى الرطوبة في كابينة التجفيف، ثم أضفتُ فحصًا للرطوبة إلى إجراءات بدء التشغيل. فانخفضت مرفوضات الطلاء بنسبة 55%.",
+          "rough": "بتحليل عظم السمكة وجدتُ أن عيوب الطلاء المتكررة في الفحص النهائي سببها الرطوبة في كابينة التجفيف. أضفتُ فحص الرطوبة إلى روتين بدء التشغيل. مرفوضات الطلاء نزلت 55%."
+        }
+      }
+    },
+    {
+      "id": "mfg_quality.partial.1",
+      "archetype": "mfg_quality",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The quality team rewrote the final inspection criteria with photo examples of acceptable and rejected welds, and the defect rate at final inspection fell by 40% within 6 months.",
+          "rough": "The quality team wrote new final inspection criteria, with photos of OK and not OK welds. Defect rate in final inspection went down 40% in 6 months."
+        },
+        "fi": {
+          "polished": "Laatutiimi kirjoitti lopputarkastuksen kriteerit uudelleen ja lisäsi niihin valokuvaesimerkit hyväksytyistä ja hylätyistä hitsisaumoista, ja virheprosentti lopputarkastuksessa laski 40 % 6 kuukaudessa.",
+          "rough": "Laatutiimi teki uudet lopputarkastuksen kriteerit, joissa on kuvat OK ja ei-OK hitseistä. Virheprosentti lopputarkastuksessa laski 40 % 6 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Kvalitetsteamet skrev om kriterierna för slutkontrollen med fotoexempel på godkända och underkända svetsfogar, och felprocenten i slutkontrollen sjönk med 40 % inom 6 månader.",
+          "rough": "Kvalitetsteamet gjorde nya kriterier för slutkontrollen, med foton på OK och inte OK svetsar. Felprocenten i slutkontrollen gick ner 40 % på 6 månader."
+        },
+        "ar": {
+          "polished": "أعاد فريق الجودة صياغة معايير الفحص النهائي مع أمثلة مصوّرة للحامات المقبولة والمرفوضة، فانخفضت نسبة العيوب في الفحص النهائي بنسبة 40% خلال 6 أشهر.",
+          "rough": "فريق الجودة كتب معايير جديدة للفحص النهائي، مع صور للحامات المقبولة وغير المقبولة. نسبة العيوب في الفحص النهائي نزلت 40% في 6 أشهر."
+        }
+      }
+    },
+    {
+      "id": "mfg_quality.partial.2",
+      "archetype": "mfg_quality",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I took part in end-of-line quality inspections and flagged issues to the team whenever something looked off.",
+          "rough": "I was part of the quality checks at the end of the line and told the team if something looked wrong."
+        },
+        "fi": {
+          "polished": "Osallistuin linjan lopun laatutarkastuksiin ja nostin ongelmat tiimin tietoon aina, kun jokin näytti poikkeavalta.",
+          "rough": "Olin mukana laatutarkastuksissa linjan lopussa ja sanoin tiimille jos joku näytti väärältä."
+        },
+        "sv": {
+          "polished": "Jag deltog i kvalitetskontrollerna i slutet av linjen och flaggade avvikelser till teamet när något såg fel ut.",
+          "rough": "Jag var med på kvalitetskontrollerna i slutet av linjen och sa till teamet om något såg fel ut."
+        },
+        "ar": {
+          "polished": "شاركتُ في فحوصات الجودة في نهاية الخط، ونبّهتُ الفريق إلى المشكلات كلما بدا شيء غير طبيعي.",
+          "rough": "كنتُ أشارك في فحوصات الجودة في آخر الخط، وكنتُ أخبر الفريق إذا بدا شيء خطأ."
+        }
+      }
+    },
+    {
+      "id": "mfg_quality.none.1",
+      "archetype": "mfg_quality",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I bring a strong quality mindset and a genuine commitment to excellence and continuous improvement in everything I do.",
+          "rough": "I have strong quality mindset. I am really committed to excellence and continuous improvement in all what I do."
+        },
+        "fi": {
+          "polished": "Minulla on vahva laatuajattelu ja aito sitoutuminen erinomaisuuteen ja jatkuvaan parantamiseen kaikessa, mitä teen.",
+          "rough": "Mulla on vahva laatuajattelu. Olen tosi sitoutunut erinomaisuuteen ja jatkuvaan parantamiseen kaikessa mitä teen."
+        },
+        "sv": {
+          "polished": "Jag har ett starkt kvalitetstänk och ett genuint engagemang för excellens och ständiga förbättringar i allt jag gör.",
+          "rough": "Jag har starkt kvalitetstänk. Jag är verkligen engagerad i excellens och ständiga förbättringar i allt som jag gör."
+        },
+        "ar": {
+          "polished": "أمتلك عقلية قوية تجاه الجودة والتزامًا حقيقيًا بالتميّز والتحسين المستمر في كل ما أقوم به.",
+          "rough": "عندي عقلية جودة قوية. عندي التزام كبير بالتميّز والتحسين المستمر في كل شيء أعمله."
+        }
+      }
+    },
+    {
+      "id": "mfg_quality.none.2",
+      "archetype": "mfg_quality",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I managed the reception desk at the plant, registering visitors and handing out badges and safety vests.",
+          "rough": "I took care of the reception desk at the plant. I registered visitors and gave out badges and safety vests."
+        },
+        "fi": {
+          "polished": "Hoidin tehtaan vastaanottoa, rekisteröin vierailijat ja jaoin kulkukortit sekä turvaliivit.",
+          "rough": "Hoidin tehtaan vastaanottoa. Kirjasin vieraat ja annoin niille kulkukortit ja turvaliivit."
+        },
+        "sv": {
+          "polished": "Jag skötte receptionen vid fabriken, registrerade besökare och delade ut passerkort och varselvästar.",
+          "rough": "Jag tog hand om receptionen på fabriken. Jag registrerade besökare och gav ut passerkort och varselvästar."
+        },
+        "ar": {
+          "polished": "أدرتُ مكتب الاستقبال في المصنع، فسجّلتُ الزوار ووزّعتُ عليهم البطاقات التعريفية وسترات السلامة.",
+          "rough": "اهتممتُ بمكتب الاستقبال في المصنع. سجّلتُ الزوار وأعطيتُهم البطاقات وسترات السلامة."
+        }
+      }
+    },
+    {
+      "id": "mfg_automation.supported.1",
+      "archetype": "mfg_automation",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I programmed the PLC and HMI screens for a new box erector on the packing line, including light-curtain safety interlocks. It replaced manual folding and now runs at 12 boxes per minute.",
+          "rough": "I programmed the PLC and HMI screens for new box erector in the packing line, with the light curtain safety interlocks. It replaced the manual folding and now it runs 12 boxes per minute."
+        },
+        "fi": {
+          "polished": "Ohjelmoin pakkauslinjan uuden laatikonpystyttäjän PLC-logiikan ja HMI-näytöt valoverhon turvalukituksineen. Kone korvasi käsin taittelun ja pystyttää nyt 12 laatikkoa minuutissa.",
+          "rough": "Ohjelmoin PLC:n ja HMI-näytöt uudelle laatikonpystyttäjälle pakkauslinjalla, valoverhon turvalukitukset mukana. Se korvasi käsin taittelun ja nyt se tekee 12 laatikkoa minuutissa."
+        },
+        "sv": {
+          "polished": "Jag programmerade PLC:n och HMI-skärmarna för en ny kartongresare på packningslinjen, inklusive säkerhetsförreglingar med ljusridåer. Den ersatte den manuella vikningen och klarar nu 12 kartonger per minut.",
+          "rough": "Jag programmerade PLC och HMI-skärmar för en ny kartongresare på packningslinjen, med säkerhetsförreglingar för ljusridån. Den ersatte manuella vikningen och nu går den 12 kartonger per minut."
+        },
+        "ar": {
+          "polished": "برمجتُ وحدة PLC وشاشات HMI لآلة جديدة لتشكيل الصناديق على خط التعبئة، بما في ذلك أقفال الأمان المرتبطة بالستائر الضوئية. وقد حلّت محل الطي اليدوي وتعمل الآن بمعدل 12 صندوقًا في الدقيقة.",
+          "rough": "برمجتُ PLC وشاشات HMI لآلة تشكيل صناديق جديدة في خط التعبئة، مع أقفال الأمان للستارة الضوئية. حلّت محل الطي اليدوي والآن تعمل 12 صندوقًا في الدقيقة."
+        }
+      }
+    },
+    {
+      "id": "mfg_automation.supported.2",
+      "archetype": "mfg_automation",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I added a pneumatic pusher and a stacking table at the end of the filling line and wrote the PLC sequence that groups packs into cartons, removing a manual step that took 45 minutes per shift.",
+          "rough": "I put a pneumatic pusher and stacking table at end of the filling line and wrote the PLC sequence that groups packs into cartons. Manual step of 45 minutes per shift is gone."
+        },
+        "fi": {
+          "polished": "Lisäsin täyttölinjan loppuun pneumaattisen työntimen ja pinoamispöydän sekä kirjoitin PLC-sekvenssin, joka ryhmittelee pakkaukset laatikoihin. Näin poistui käsin tehty työvaihe, joka vei 45 minuuttia vuorossa.",
+          "rough": "Laitoin täyttölinjan loppuun pneumaattisen työntimen ja pinoamispöydän ja kirjoitin PLC-sekvenssin, joka laittaa pakkaukset ryhmissä laatikoihin. Käsin työvaihe 45 minuuttia per vuoro jäi pois."
+        },
+        "sv": {
+          "polished": "Jag kompletterade slutet av fyllningslinjen med en pneumatisk skjutare och ett staplingsbord och skrev PLC-sekvensen som grupperar förpackningarna i kartonger. Det tog bort ett manuellt moment som tog 45 minuter per skift.",
+          "rough": "Jag satte en pneumatisk skjutare och staplingsbord i slutet av fyllningslinjen och skrev PLC-sekvensen som grupperar paketen i kartonger. Manuella momentet på 45 minuter per skift är borta."
+        },
+        "ar": {
+          "polished": "أضفتُ دافعًا هوائيًا وطاولة تكديس في نهاية خط الملء، وكتبتُ تسلسل PLC الذي يجمّع العبوات في كراتين، مما ألغى خطوة يدوية كانت تستغرق 45 دقيقة في كل نوبة.",
+          "rough": "ركّبتُ دافعًا هوائيًا وطاولة تكديس في نهاية خط الملء وكتبتُ تسلسل PLC يجمّع العبوات في كراتين. الخطوة اليدوية التي كانت تأخذ 45 دقيقة في كل نوبة انتهت."
+        }
+      }
+    },
+    {
+      "id": "mfg_automation.partial.1",
+      "archetype": "mfg_automation",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We automated the pallet wrapping step with a PLC-controlled turntable and photo sensors, which cut wrapping time per pallet by 60%.",
+          "rough": "We automated the pallet wrapping with a turntable controlled by PLC and photo sensors. Wrapping time per pallet went down 60%."
+        },
+        "fi": {
+          "polished": "Automatisoimme lavojen käärintävaiheen PLC-ohjatulla kääntöpöydällä ja valokennoilla, mikä lyhensi käärintäaikaa lavaa kohden 60 %.",
+          "rough": "Me automatisoitiin lavojen käärintä kääntöpöydällä, jota PLC ohjaa, ja valokennoilla. Käärintäaika per lava laski 60 %."
+        },
+        "sv": {
+          "polished": "Vi automatiserade momentet för pallinplastning med ett PLC-styrt vridbord och fotoceller, vilket minskade inplastningstiden per pall med 60 %.",
+          "rough": "Vi automatiserade pallinplastningen med ett vridbord som PLC styr och fotoceller. Inplastningstiden per pall gick ner 60 %."
+        },
+        "ar": {
+          "polished": "أتمتنا مرحلة تغليف المنصات بطاولة دوّارة يتحكم فيها PLC وحساسات ضوئية، مما خفّض زمن تغليف كل منصة بنسبة 60%.",
+          "rough": "أتمتنا تغليف المنصات بطاولة دوّارة يتحكم فيها PLC وحساسات ضوئية. زمن التغليف لكل منصة نزل 60%."
+        }
+      }
+    },
+    {
+      "id": "mfg_automation.partial.2",
+      "archetype": "mfg_automation",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I assisted the automation engineer during the packing line upgrade and helped with testing when needed.",
+          "rough": "I helped the automation engineer when the packing line was upgraded, and I helped with testing when they asked."
+        },
+        "fi": {
+          "polished": "Avustin automaatioinsinööriä pakkauslinjan uudistuksessa ja autoin testauksessa tarvittaessa.",
+          "rough": "Autoin automaatioinsinööriä kun pakkauslinjaa uusittiin, ja autoin testauksessa kun pyydettiin."
+        },
+        "sv": {
+          "polished": "Jag assisterade automationsingenjören vid uppgraderingen av packningslinjen och hjälpte till med testning vid behov.",
+          "rough": "Jag hjälpte automationsingenjören när packningslinjen uppgraderades, och jag hjälpte till med tester när de bad."
+        },
+        "ar": {
+          "polished": "ساعدتُ مهندس الأتمتة خلال تحديث خط التعبئة، وشاركتُ في الاختبارات عند الحاجة.",
+          "rough": "ساعدتُ مهندس الأتمتة عندما تم تحديث خط التعبئة، وكنتُ أساعد في الاختبارات عندما يطلبون مني."
+        }
+      }
+    },
+    {
+      "id": "mfg_automation.none.1",
+      "archetype": "mfg_automation",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am driven by the vision of smart, highly automated factories and love exploring cutting-edge robotics and automation trends.",
+          "rough": "I am driven by the vision of smart and very automated factories. I love to explore newest robotics and automation trends."
+        },
+        "fi": {
+          "polished": "Minua motivoi visio älykkäistä, pitkälle automatisoiduista tehtaista, ja tutkin mielelläni robotiikan ja automaation uusimpia trendejä.",
+          "rough": "Mua motivoi visio älykkäistä ja tosi automatisoiduista tehtaista. Tykkään tutkia uusimpia robotiikan ja automaation trendejä."
+        },
+        "sv": {
+          "polished": "Jag drivs av visionen om smarta, högautomatiserade fabriker och älskar att utforska de senaste trenderna inom robotik och automation.",
+          "rough": "Jag drivs av visionen om smarta och väldigt automatiserade fabriker. Jag älskar att utforska nyaste trender i robotik och automation."
+        },
+        "ar": {
+          "polished": "تحفّزني رؤية المصانع الذكية عالية الأتمتة، وأحب استكشاف أحدث توجهات الروبوتات والأتمتة.",
+          "rough": "رؤية المصانع الذكية والمؤتمتة جدًا تحفّزني. أحب أن أستكشف أحدث توجهات الروبوتات والأتمتة."
+        }
+      }
+    },
+    {
+      "id": "mfg_automation.none.2",
+      "archetype": "mfg_automation",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I ran the plant's internal newsletter, interviewing colleagues and publishing 10 issues a year.",
+          "rough": "I made the internal newsletter of the plant. I interviewed colleagues and I published 10 issues per year."
+        },
+        "fi": {
+          "polished": "Toimitin tehtaan sisäistä uutiskirjettä, haastattelin työkavereita ja julkaisin 10 numeroa vuodessa.",
+          "rough": "Tein tehtaan sisäistä uutiskirjettä. Haastattelin työkavereita ja julkaisin 10 numeroa vuodessa."
+        },
+        "sv": {
+          "polished": "Jag ansvarade för fabrikens interna nyhetsbrev, intervjuade kolleger och gav ut 10 nummer per år.",
+          "rough": "Jag gjorde fabrikens interna nyhetsbrev. Jag intervjuade kolleger och jag publicerade 10 nummer per år."
+        },
+        "ar": {
+          "polished": "أدرتُ النشرة الداخلية للمصنع، فأجريتُ مقابلات مع الزملاء ونشرتُ 10 أعداد في السنة.",
+          "rough": "كنتُ أعدّ النشرة الداخلية للمصنع. قابلتُ الزملاء ونشرتُ 10 أعداد كل سنة."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "mfg.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would agree on the plan with the shift supervisors before starting rather than midway. Involving the night shift from the outset would have saved weeks of back-and-forth.",
+          "rough": "I would talk about the plan with shift supervisors before starting, not in the middle. If the night shift was involved from start, it saves weeks of back and forth."
+        },
+        "fi": {
+          "polished": "Sopisin suunnitelmasta vuoroesimiesten kanssa ennen aloitusta enkä vasta kesken kaiken. Yövuoron ottaminen mukaan heti alusta olisi säästänyt viikkoja edestakaista selvittelyä.",
+          "rough": "Puhuisin suunnitelmasta vuoroesimiesten kanssa ennen aloitusta, en keskellä. Jos yövuoro ois ollut mukana alusta asti, se säästää viikkoja edestakaista selvittelyä."
+        },
+        "sv": {
+          "polished": "Jag skulle förankra planen hos skiftledarna innan start i stället för mitt i arbetet. Att involvera nattskiftet från början hade sparat veckor av fram och tillbaka.",
+          "rough": "Jag skulle prata om planen med skiftledarna innan start, inte i mitten. Om nattskiftet var med från början, det sparar veckor av fram och tillbaka."
+        },
+        "ar": {
+          "polished": "كنتُ سأتفق على الخطة مع مشرفي النوبات قبل البدء لا في منتصف العمل. فإشراك النوبة الليلية منذ البداية كان سيوفّر أسابيع من الأخذ والرد.",
+          "rough": "كنتُ سأتكلم عن الخطة مع مشرفي النوبات قبل البدء، ليس في الوسط. لو كانت النوبة الليلية معنا من البداية، نوفّر أسابيع من الأخذ والرد."
+        }
+      }
+    },
+    {
+      "id": "mfg.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would write down the decisions after each meeting and share them with everyone on the floor. Too much depended on what people remembered, which caused avoidable confusion.",
+          "rough": "I would write the decisions after every meeting and share to everybody on the floor. Too much was only in people's memory and it made confusion we could avoid."
+        },
+        "fi": {
+          "polished": "Kirjaisin päätökset jokaisen palaverin jälkeen ja jakaisin ne kaikille tuotannossa. Liian paljon jäi ihmisten muistin varaan, mikä aiheutti turhaa sekaannusta.",
+          "rough": "Kirjoittaisin päätökset ylös joka palaverin jälkeen ja jakaisin kaikille hallissa. Liikaa oli vain ihmisten muistissa ja siitä tuli sekaannusta, joka olisi voitu välttää."
+        },
+        "sv": {
+          "polished": "Jag skulle skriva ner besluten efter varje möte och dela dem med alla på golvet. För mycket hängde på vad folk kom ihåg, vilket ledde till onödig förvirring.",
+          "rough": "Jag skulle skriva besluten efter varje möte och dela till alla på golvet. För mycket var bara i folks minne och det gjorde förvirring som vi kunde undvika."
+        },
+        "ar": {
+          "polished": "كنتُ سأدوّن القرارات بعد كل اجتماع وأشاركها مع الجميع في أرض المصنع. فقد اعتمد الكثير على ما يتذكره الناس، مما سبّب ارتباكًا كان يمكن تجنبه.",
+          "rough": "كنتُ سأكتب القرارات بعد كل اجتماع وأرسلها للجميع في المصنع. أشياء كثيرة كانت فقط في ذاكرة الناس، وهذا سبّب ارتباكًا كان يمكن أن نتجنبه."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "mfg.next.1",
+      "text": {
+        "en": {
+          "polished": "I want to work on a production floor where I can help reduce stoppages and waste, learning from experienced maintenance and quality colleagues along the way.",
+          "rough": "I want to work in production and help to make less stoppages and waste. I want to learn from experienced maintenance and quality people."
+        },
+        "fi": {
+          "polished": "Haluan työskennellä tuotannossa, jossa voin auttaa vähentämään seisokkeja ja hukkaa ja oppia samalla kokeneilta kunnossapidon ja laadun ammattilaisilta.",
+          "rough": "Haluan tehdä töitä tuotannossa ja auttaa vähentää seisokkeja ja hukkaa. Haluan oppia kokeneilta kunnossapito- ja laatuihmisiltä."
+        },
+        "sv": {
+          "polished": "Jag vill arbeta i produktionen där jag kan bidra till färre stopp och mindre spill och samtidigt lära mig av erfarna kolleger inom underhåll och kvalitet.",
+          "rough": "Jag vill jobba i produktion och hjälpa till att få mindre stopp och spill. Jag vill lära mig av erfarna underhålls- och kvalitetsfolk."
+        },
+        "ar": {
+          "polished": "أريد العمل في بيئة إنتاج أستطيع فيها المساهمة في تقليل التوقفات والهدر، وأتعلم في الوقت نفسه من زملاء ذوي خبرة في الصيانة والجودة.",
+          "rough": "أريد أن أعمل في الإنتاج وأساعد في تقليل التوقفات والهدر. أريد أن أتعلم من أشخاص عندهم خبرة في الصيانة والجودة."
+        }
+      }
+    },
+    {
+      "id": "mfg.next.2",
+      "text": {
+        "en": {
+          "polished": "Next, I would like to grow into automation and production development, ideally in a team that gives me room to try improvements on a real line.",
+          "rough": "Next I want to grow into automation and production development. Best is a team where I can try improvements on a real line."
+        },
+        "fi": {
+          "polished": "Seuraavaksi haluaisin kasvaa automaation ja tuotannon kehittämisen tehtäviin, mieluiten tiimissä, joka antaa tilaa kokeilla parannuksia oikealla linjalla.",
+          "rough": "Seuraavaksi haluan kasvaa automaatioon ja tuotannon kehitykseen. Paras olisi tiimi, jossa voin kokeilla parannuksia oikealla linjalla."
+        },
+        "sv": {
+          "polished": "Härnäst vill jag växa in i automation och produktionsutveckling, helst i ett team som ger mig utrymme att prova förbättringar på en riktig linje.",
+          "rough": "Nästa steg vill jag växa in i automation och produktionsutveckling. Bäst är ett team där jag kan testa förbättringar på en riktig linje."
+        },
+        "ar": {
+          "polished": "أودّ بعد ذلك أن أتطور نحو الأتمتة وتطوير الإنتاج، ويفضَّل في فريق يمنحني مساحة لتجربة التحسينات على خط إنتاج حقيقي.",
+          "rough": "الخطوة القادمة أريد أن أتطور في الأتمتة وتطوير الإنتاج. الأفضل فريق أستطيع فيه تجربة تحسينات على خط حقيقي."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "Our previous maintenance planner had strong technical skills but struggled to get operators on every shift to log stoppages consistently, so the data never showed the real causes.",
+    "A quality engineer we hired tightened the inspection criteria without involving production, and the line pushed back until the changes were quietly dropped.",
+    "An automation technician we hired knew PLC programming well but underestimated how carefully changes must be tested on a running packing line, which caused unplanned stops in the early weeks."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "supported",
+    "unit_id": "J-071~sv.u2",
+    "quote": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan",
+    "reason": "Trained colleagues in digital app documentation; late notes fell from 40% to 10%."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "supported",
+    "unit_id": "J-071~sv.u1",
+    "quote": "under 6 månader missade jag inga besök",
+    "reason": "Personally served 11 home care clients with zero missed visits over 6 months."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "supported",
+    "unit_id": "J-071~sv.u2",
+    "quote": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan",
+    "reason": "Trained colleagues in digital app documentation; late notes fell from 40% to 10%."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "supported",
+    "unit_id": "J-071~sv.u3",
+    "quote": "Jag ledde ett veckomöte på 15 minuter där båda enheterna samordnade sina vårdplaner och delade personal",
+    "reason": "Led cross-unit care plan meetings and tracked open shifts in shared Excel."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "supported",
+    "unit_id": "J-071~sv.u1",
+    "quote": "under 6 månader missade jag inga besök",
+    "reason": "Personally served 11 home care clients with zero missed visits over 6 months."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "supported",
+    "unit_id": "J-071~sv.u2",
+    "quote": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan",
+    "reason": "Trained colleagues in digital app documentation; late notes fell from 40% to 10%."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "supported",
+    "unit_id": "J-071~sv.u1",
+    "quote": "under 6 månader missade jag inga besök",
+    "reason": "Personally served 11 home care clients with zero missed visits over 6 months."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "supported",
+    "unit_id": "J-071~sv.u3",
+    "quote": "Jag ledde ett veckomöte på 15 minuter där båda enheterna samordnade sina vårdplaner och delade personal",
+    "reason": "Led cross-unit care plan meetings and tracked open shifts in shared Excel."
+   }
+  ]
+ }
+}

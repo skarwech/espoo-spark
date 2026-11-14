@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag ordnade den årliga rekreationsdagen för 40 arbetare. Jag gjorde programmet, maten och bokade stället.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Vi gjorde en efterfrågeprognos med Prophet för 200 mest sålda produkter. Den var 15 % noggrannare än inköparnas egna uppskattningar.",
+    "skills": [
+     "S02",
+     "S31",
+     "S05"
+    ]
+   }
+  ]
+ }
+}

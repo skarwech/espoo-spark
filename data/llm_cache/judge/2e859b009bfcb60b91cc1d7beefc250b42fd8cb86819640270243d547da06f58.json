@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "supported",
+    "unit_id": "J-057~fi.u3",
+    "quote": "Väärät hälytykset viikossa laski 140:stä 45:een.",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "supported",
+    "unit_id": "J-057~fi.u4",
+    "quote": "Tein C:llä OTA-laiteohjelmistopäivitykset FreeRTOS-anturisolmuille.",
+    "reason": "Built OTA firmware updates in C with A/B partition rollback."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "supported",
+    "unit_id": "J-057~fi.u4",
+    "quote": "Tein C:llä OTA-laiteohjelmistopäivitykset FreeRTOS-anturisolmuille.",
+    "reason": "Built OTA firmware updates in C with A/B partition rollback."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "supported",
+    "unit_id": "J-057~fi.u2",
+    "quote": "Korjasin ne ja kadonneet mittaukset pysyi alle 0,5 %:n.",
+    "reason": "Fixed gateway issues; lost readings kept below 0.5%."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work mentioned."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "supported",
+    "unit_id": "J-057~fi.u3",
+    "quote": "Väärät hälytykset viikossa laski 140:stä 45:een.",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "supported",
+    "unit_id": "J-057~fi.u2",
+    "quote": "Korjasin ne ja kadonneet mittaukset pysyi alle 0,5 %:n.",
+    "reason": "Fixed gateway issues; lost readings kept below 0.5%."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described in listed units."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "supported",
+    "unit_id": "J-057~fi.u2",
+    "quote": "Korjasin ne ja kadonneet mittaukset pysyi alle 0,5 %:n.",
+    "reason": "Fixed gateway issues; lost readings kept below 0.5%."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "supported",
+    "unit_id": "J-057~fi.u3",
+    "quote": "Väärät hälytykset viikossa laski 140:stä 45:een.",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "supported",
+    "unit_id": "J-057~fi.u3",
+    "quote": "Väärät hälytykset viikossa laski 140:stä 45:een.",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "supported",
+    "unit_id": "J-057~fi.u2",
+    "quote": "Korjasin ne ja kadonneet mittaukset pysyi alle 0,5 %:n.",
+    "reason": "Fixed gateway issues; lost readings kept below 0.5%."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work mentioned."
+   }
+  ]
+ }
+}

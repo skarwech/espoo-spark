@@ -1,0 +1,28 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Laitoin pyhäpäivä- ja säämuuttujat kausittaiseen ARIMA-malliin R:llä. 12 viikon jälkitestissä se oli parempi kuin myyntitiimin arvio 10 viikkona.",
+    "skills": [
+     "S02",
+     "S41",
+     "S05",
+     "S08"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Meidän tiimi vaihtoi kuukauden PDF-raportit Power BI -kojelautaan 8 viikossa. Ylimääräisiä lukupyyntöjä tuli 40 % vähemmän.",
+    "skills": [
+     "S04",
+     "S10"
+    ]
+   }
+  ]
+ }
+}

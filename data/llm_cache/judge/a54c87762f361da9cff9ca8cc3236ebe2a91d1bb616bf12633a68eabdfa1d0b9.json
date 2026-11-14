@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "partial",
+    "unit_id": "J-051~sv.u2",
+    "quote": "Så falska sensorfellarm minskade 40 %",
+    "reason": "Relevant method and result, but team effort ('vi'), no personal role."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "partial",
+    "unit_id": "J-051~sv.u1",
+    "quote": "Vi byggde bootloader som kan ta emot ny firmware via LoRaWAN",
+    "reason": "Remote firmware update built, but described as team work."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "partial",
+    "unit_id": "J-051~sv.u1",
+    "quote": "Vi byggde bootloader som kan ta emot ny firmware via LoRaWAN",
+    "reason": "Remote firmware update built, but described as team work."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "partial",
+    "unit_id": "J-051~sv.u3",
+    "quote": "Förlorade mätvärden sjönk under 0,8 %",
+    "reason": "Pipeline with under 1% loss, but passive voice, no personal role."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation mentioned."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "partial",
+    "unit_id": "J-051~sv.u2",
+    "quote": "Så falska sensorfellarm minskade 40 %",
+    "reason": "Relevant method and result, but team effort, no personal role."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "partial",
+    "unit_id": "J-051~sv.u3",
+    "quote": "Förlorade mätvärden sjönk under 0,8 %",
+    "reason": "Pipeline with under 1% loss, but passive voice, no personal role."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support or Finnish language evidence."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "partial",
+    "unit_id": "J-051~sv.u3",
+    "quote": "Förlorade mätvärden sjönk under 0,8 %",
+    "reason": "Pipeline with under 1% loss, but passive voice, no personal role."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "partial",
+    "unit_id": "J-051~sv.u2",
+    "quote": "Så falska sensorfellarm minskade 40 %",
+    "reason": "Relevant method and result, but team effort, no personal role."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "partial",
+    "unit_id": "J-051~sv.u2",
+    "quote": "Så falska sensorfellarm minskade 40 %",
+    "reason": "Relevant method and result, but team effort, no personal role."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "partial",
+    "unit_id": "J-051~sv.u3",
+    "quote": "Förlorade mätvärden sjönk under 0,8 %",
+    "reason": "Pipeline with under 1% loss, but passive voice, no personal role."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration described."
+   }
+  ]
+ }
+}

@@ -1,0 +1,469 @@
+{
+ "annotator": "deepseek",
+ "model": "deepseek-4-1-flash-1017",
+ "labels": [
+  {
+   "pair_id": "G01",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "No first-person customer-data cleaning/merging across systems; only generic passion statement."
+  },
+  {
+   "pair_id": "G01",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Dashboard switch by 'our team' (no personal role), with result fewer requests."
+  },
+  {
+   "pair_id": "G01",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally added weather/holiday variables to ARIMA in R, beat estimate 10 weeks."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Cleaned customer data from ERP/CRM/shop with OpenRefine into shared register, personally."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Only 'helped/in meetings' for reports dashboard; no personal dashboard build or result."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally added fault and weather variables to seasonal ARIMA in R, beat estimate."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "Only 'helped a little' with dashboard and attended meetings; no method or result."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o2",
+   "label": "supported",
+   "reason": "Personally matched CRM/shop/billing records with fuzzy matching in Python, removed 870 duplicates."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No bank or ledger reconciliation work mentioned at all."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Office move labelling unrelated to growing customer sales."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No knowledge base or repeated support ticket reduction work."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Office move unrelated to resolving support cases within a day."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Budget calendar and reconciliation work; no self-service dashboard built."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No customer data cleaning or merging across three systems."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally wrote Python script comparing bank and ledger nightly, replacing manual reconciliation."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Device monitoring and alert tuning; no partner API work."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No cloud migration mentioned; only on-premise device data work."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer support case handling described."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally added Pydantic validation and error codes to partner API, reduced errors 25→6."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Cloud migration described as 'we' lift-and-shift, no personal role, though no downtime."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer support case resolution work."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Only generic passion and team pipeline mention; no false alert reduction action."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Team worked with sensor data pipelines (no personal role, no result)."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No Finnish-speaking technical support evidence."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally compared alerts to work orders, set per-model thresholds, cut false alerts 140→45."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Helped keep field data flowing and checked lost data, but no concrete method or result for <1%."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No warehouse-to-ERP real-time order integration."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "MQTT pipeline change by passive 'was changed'; lost readings result but no personal role."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Part of work reducing false alerts, gave feedback only; no own method or result."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer data cleaning or merging from three systems."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Sales/forecast/dashboard work; no false sensor alert reduction."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No edge device data pipeline work."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Customer data merge, not warehouse-to-ERP real-time order integration."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Route planning and warehouse-ERP integration; no false sensor alerts."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No edge device pipeline or lost readings work."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No Finnish technical support evidence; no language skill stated."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Generic passion and recycling project; no firmware update work."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No data pipeline maintenance action described."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No PLC or packing automation work."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally rebuilt pump sensor alert rules, false alerts 40→12 daily, checked logs."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o2",
+   "label": "supported",
+   "reason": "Personally added edge buffering and missing-readings script, lost data 5%→under 1%."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o3",
+   "label": "partial",
+   "reason": "Wants to learn Finnish properly; no current Finnish support experience."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Generic sales traits and office admin tasks; no customer sales growth."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No knowledge base or repeated support ticket reduction."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No support case resolution work."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "Supported partner interface work for a period, took part in meetings; no personal build/result."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Generic cloud-native statement; no migration action."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No warehouse-ERP integration mentioned."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally designed/built FastAPI REST API with versioned endpoints, 4 partners onboarded in 3 months."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No cloud migration of on-premise services."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No warehouse-to-ERP integration; API is partner-facing."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Generic sensor motivation and office move; no firmware update work."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No data pipeline maintenance action."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No PLC or packing automation work."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Recycling and office move tasks; no edge device pipeline maintenance."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No sensor fault alert reduction work."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer data cleaning or merging mentioned."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Personally automated Playwright end-to-end tests making failed test block releases, 5 months no rollback."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Was 'with' the cloud migration, helped with small tasks; no personal role or no-downtime result."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No edge device data pipeline work."
+  }
+ ],
+ "missing": [],
+ "realism": [
+  {
+   "story_id": "R01",
+   "plausible": true,
+   "reason": "Entry-level office admin tasks typical; Finnish tone natural."
+  },
+  {
+   "story_id": "R02",
+   "plausible": true,
+   "reason": "Junior dev supporting partner integration; realistic setup despite buzzwords."
+  },
+  {
+   "story_id": "R03",
+   "plausible": true,
+   "reason": "Finance assistant arranging move and meeting logistics; realistic."
+  },
+  {
+   "story_id": "R04",
+   "plausible": true,
+   "reason": "Manufacturing operator SPC and maintenance work; concrete and realistic."
+  },
+  {
+   "story_id": "R05",
+   "plausible": true,
+   "reason": "Arabic-speaking dev doing cloud migration and API work; plausible."
+  },
+  {
+   "story_id": "R06",
+   "plausible": true,
+   "reason": "Intranet updates and data merge at building supplier; realistic."
+  },
+  {
+   "story_id": "R07",
+   "plausible": true,
+   "reason": "Controller automating bank reconciliation with Python; plausible."
+  },
+  {
+   "story_id": "R08",
+   "plausible": true,
+   "reason": "Maintenance vibration monitoring and quality criteria; realistic factory work."
+  },
+  {
+   "story_id": "R09",
+   "plausible": true,
+   "reason": "Warehouse/logistics SAP and routing improvements; concrete and plausible."
+  },
+  {
+   "story_id": "R10",
+   "plausible": true,
+   "reason": "Event organizing and procurement support; plausible though thin."
+  },
+  {
+   "story_id": "R11",
+   "plausible": true,
+   "reason": "Student IoT project; generic buzzwords but situation credible."
+  },
+  {
+   "story_id": "R12",
+   "plausible": true,
+   "reason": "Cloud migration, API build, party planning; plausible mix."
+  },
+  {
+   "story_id": "R13",
+   "plausible": true,
+   "reason": "Home care scheduling and mobile documentation; realistic."
+  },
+  {
+   "story_id": "R14",
+   "plausible": true,
+   "reason": "Warehouse-ERP integration and route analysis; plausible."
+  },
+  {
+   "story_id": "R15",
+   "plausible": true,
+   "reason": "Building automation alarm analysis; concrete and realistic."
+  },
+  {
+   "story_id": "R16",
+   "plausible": true,
+   "reason": "Junior finance support during budgeting; plausible."
+  },
+  {
+   "story_id": "R17",
+   "plausible": true,
+   "reason": "CRM data dedup with Python plus intranet tasks; realistic."
+  },
+  {
+   "story_id": "R18",
+   "plausible": true,
+   "reason": "Buzzword-heavy but support company scenario credible for jobseeker."
+  },
+  {
+   "story_id": "R19",
+   "plausible": true,
+   "reason": "Office admin tasks; realistic entry-level content."
+  },
+  {
+   "story_id": "R20",
+   "plausible": true,
+   "reason": "Finance automation of reconciliation; concrete and plausible."
+  }
+ ]
+}

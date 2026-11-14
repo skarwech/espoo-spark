@@ -1,0 +1,262 @@
+[
+ {
+  "pair_id": "G01",
+  "need_id": "N-002",
+  "candidate_id": "J-107",
+  "story_lang": "fi",
+  "style": "rough",
+  "planted_tier": "stretch",
+  "planted": {
+   "o1": "none",
+   "o2": "partial",
+   "o3": "supported"
+  }
+ },
+ {
+  "pair_id": "G02",
+  "need_id": "N-002",
+  "candidate_id": "J-150",
+  "story_lang": "ar",
+  "style": "rough",
+  "planted_tier": "worth",
+  "planted": {
+   "o1": "partial",
+   "o2": "partial",
+   "o3": "supported"
+  }
+ },
+ {
+  "pair_id": "G03",
+  "need_id": "N-017",
+  "candidate_id": "J-118",
+  "story_lang": "fi",
+  "style": "rough",
+  "planted_tier": "strong",
+  "planted": {
+   "o1": "partial",
+   "o2": "supported",
+   "o3": "partial"
+  }
+ },
+ {
+  "pair_id": "G04",
+  "need_id": "N-020",
+  "candidate_id": "J-053",
+  "story_lang": "en",
+  "style": "rough",
+  "planted_tier": "none",
+  "planted": {
+   "o1": "none",
+   "o2": "none",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G05",
+  "need_id": "N-017",
+  "candidate_id": "J-042",
+  "story_lang": "fi",
+  "style": "polished",
+  "planted_tier": "worth",
+  "planted": {
+   "o1": "partial",
+   "o2": "partial",
+   "o3": "supported"
+  }
+ },
+ {
+  "pair_id": "G06",
+  "need_id": "N-009",
+  "candidate_id": "J-142",
+  "story_lang": "sv",
+  "style": "polished",
+  "planted_tier": "worth",
+  "planted": {
+   "o1": "partial",
+   "o2": "partial",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G07",
+  "need_id": "N-009",
+  "candidate_id": "J-111",
+  "story_lang": "fi",
+  "style": "rough",
+  "planted_tier": "strong",
+  "planted": {
+   "o1": "supported",
+   "o2": "partial",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G08",
+  "need_id": "N-014",
+  "candidate_id": "J-001",
+  "story_lang": "en",
+  "style": "polished",
+  "planted_tier": "stretch",
+  "planted": {
+   "o1": "none",
+   "o2": "partial",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G09",
+  "need_id": "N-022",
+  "candidate_id": "J-032",
+  "story_lang": "ar",
+  "style": "polished",
+  "planted_tier": "strong",
+  "planted": {
+   "o1": "supported",
+   "o2": "partial",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G10",
+  "need_id": "N-018",
+  "candidate_id": "J-134",
+  "story_lang": "ar",
+  "style": "rough",
+  "planted_tier": "worth",
+  "planted": {
+   "o1": "partial",
+   "o2": "partial",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G11",
+  "need_id": "N-022",
+  "candidate_id": "J-084",
+  "story_lang": "sv",
+  "style": "polished",
+  "planted_tier": "worth",
+  "planted": {
+   "o1": "partial",
+   "o2": "partial",
+   "o3": "partial"
+  }
+ },
+ {
+  "pair_id": "G12",
+  "need_id": "N-014",
+  "candidate_id": "J-003",
+  "story_lang": "en",
+  "style": "polished",
+  "planted_tier": "stretch",
+  "planted": {
+   "o1": "none",
+   "o2": "partial",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G13",
+  "need_id": "N-006",
+  "candidate_id": "J-016",
+  "story_lang": "ar",
+  "style": "rough",
+  "planted_tier": "none",
+  "planted": {
+   "o1": "none",
+   "o2": "none",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G14",
+  "need_id": "N-014",
+  "candidate_id": "J-002",
+  "story_lang": "en",
+  "style": "rough",
+  "planted_tier": "strong",
+  "planted": {
+   "o1": "supported",
+   "o2": "supported",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G15",
+  "need_id": "N-001",
+  "candidate_id": "J-039",
+  "story_lang": "fi",
+  "style": "rough",
+  "planted_tier": "none",
+  "planted": {
+   "o1": "none",
+   "o2": "none",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G16",
+  "need_id": "N-013",
+  "candidate_id": "J-072",
+  "story_lang": "en",
+  "style": "polished",
+  "planted_tier": "stretch",
+  "planted": {
+   "o1": "partial",
+   "o2": "none",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G17",
+  "need_id": "N-013",
+  "candidate_id": "J-006",
+  "story_lang": "sv",
+  "style": "polished",
+  "planted_tier": "stretch",
+  "planted": {
+   "o1": "supported",
+   "o2": "none",
+   "o3": "partial"
+  }
+ },
+ {
+  "pair_id": "G18",
+  "need_id": "N-006",
+  "candidate_id": "J-136",
+  "story_lang": "sv",
+  "style": "rough",
+  "planted_tier": "none",
+  "planted": {
+   "o1": "none",
+   "o2": "none",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G19",
+  "need_id": "N-018",
+  "candidate_id": "J-099",
+  "story_lang": "ar",
+  "style": "polished",
+  "planted_tier": "none",
+  "planted": {
+   "o1": "none",
+   "o2": "none",
+   "o3": "none"
+  }
+ },
+ {
+  "pair_id": "G20",
+  "need_id": "N-025",
+  "candidate_id": "J-013",
+  "story_lang": "sv",
+  "style": "rough",
+  "planted_tier": "strong",
+  "planted": {
+   "o1": "supported",
+   "o2": "partial",
+   "o3": "none"
+  }
+ }
+]

@@ -1,0 +1,42 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Vedin firman kierrätysprojektia. Laitoin lajittelupisteet 4 taukotilaan.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Vertasin 3 kuukauden vikahälytykset huollon työtilauksiin, että näen mitkä oli oikeita.",
+    "skills": [
+     "S31",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Laitoin jokaiselle anturimallille omat raja-arvot. Väärät hälytykset viikossa laski 140:stä 45:een.",
+    "skills": [
+     "S30",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Autoin pitämään kenttälaitteiden datavirran pystyssä. Kun dataa puuttui, katsoin asiaa.",
+    "skills": [
+     "S21",
+     "S30",
+     "S25"
+    ]
+   }
+  ]
+ }
+}

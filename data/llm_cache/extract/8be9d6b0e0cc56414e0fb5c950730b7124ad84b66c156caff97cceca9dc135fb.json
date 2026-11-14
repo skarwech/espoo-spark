@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag fixade parkeringstillstånd och passerkort åt nya anställda på vårt kontor.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Vi körde en korsförsäljningskampanj till befintliga företagskunder med mejlsekvenser i HubSpot. Intäkterna från de kunderna växte 16 % det året.",
+    "skills": [
+     "S23"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag tog hand om ungefär 25 supportärenden per dag i Zendesk och gjorde makron för de vanligaste frågorna. Min mediantid för lösning gick från 48 timmar till 6 timmar.",
+    "skills": [
+     "S38",
+     "S17"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "supported",
+    "unit_id": "J-071~fi.u2",
+    "quote": "Koulutin 14 kollegaa kirjaamaan käynnit tabletin mobiilisovellukseen",
+    "reason": "Personally trained staff in mobile documentation; late entries fell from 40% to 10%."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "supported",
+    "unit_id": "J-071~fi.u1",
+    "quote": "6 kuukauden aikana en jättänyt käyntejä väliin",
+    "reason": "Planned routes for 11 home care clients with no missed visits."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "supported",
+    "unit_id": "J-071~fi.u2",
+    "quote": "Koulutin 14 kollegaa kirjaamaan käynnit tabletin mobiilisovellukseen",
+    "reason": "Personally trained staff in mobile documentation; late entries fell from 40% to 10%."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "supported",
+    "unit_id": "J-071~fi.u3",
+    "quote": "Vedin viikoittaisen 15 minuutin palaverin, jossa molemmat yksiköt sovittivat yhteen hoitosuunnitelmansa ja jakoivat henkilöstöä",
+    "reason": "Led weekly cross-unit coordination meetings and tracked open shifts in Excel."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "supported",
+    "unit_id": "J-071~fi.u1",
+    "quote": "6 kuukauden aikana en jättänyt käyntejä väliin",
+    "reason": "Planned routes for 11 home care clients with no missed visits."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "supported",
+    "unit_id": "J-071~fi.u2",
+    "quote": "Koulutin 14 kollegaa kirjaamaan käynnit tabletin mobiilisovellukseen",
+    "reason": "Personally trained staff in mobile documentation; late entries fell from 40% to 10%."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "supported",
+    "unit_id": "J-071~fi.u1",
+    "quote": "6 kuukauden aikana en jättänyt käyntejä väliin",
+    "reason": "Planned routes for 11 home care clients with no missed visits."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "supported",
+    "unit_id": "J-071~fi.u3",
+    "quote": "Vedin viikoittaisen 15 minuutin palaverin, jossa molemmat yksiköt sovittivat yhteen hoitosuunnitelmansa ja jakoivat henkilöstöä",
+    "reason": "Led weekly cross-unit coordination meetings and tracked open shifts in Excel."
+   }
+  ]
+ }
+}

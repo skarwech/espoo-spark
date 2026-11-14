@@ -1,0 +1,17 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag samordnade vår kontorsflytt och märkte alla lådor och kablar för 30 anställda.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

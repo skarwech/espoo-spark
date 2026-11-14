@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "supported",
+    "unit_id": "J-057~sv.u2",
+    "quote": "Falska larm per vecka sjönk från 140 till 45.",
+    "reason": "Personally set per-model thresholds; false alarms dropped 140 to 45."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "supported",
+    "unit_id": "J-057~sv.u3",
+    "quote": "Jag gjorde OTA-firmwareuppdateringar i C för FreeRTOS-sensornoder.",
+    "reason": "Built OTA firmware with A/B rollback, deployed to 300 sensors."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "supported",
+    "unit_id": "J-057~sv.u3",
+    "quote": "Jag gjorde OTA-firmwareuppdateringar i C för FreeRTOS-sensornoder.",
+    "reason": "Built OTA firmware with A/B rollback, deployed to 300 sensors."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "supported",
+    "unit_id": "J-057~sv.u1",
+    "quote": "förlorade mätvärden stannade under 0,5 %",
+    "reason": "Python hourly check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation mentioned."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "supported",
+    "unit_id": "J-057~sv.u2",
+    "quote": "Falska larm per vecka sjönk från 140 till 45.",
+    "reason": "Personally set per-model thresholds; false alarms dropped 140 to 45."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "supported",
+    "unit_id": "J-057~sv.u1",
+    "quote": "förlorade mätvärden stannade under 0,5 %",
+    "reason": "Python hourly check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support or Finnish language evidence."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "supported",
+    "unit_id": "J-057~sv.u1",
+    "quote": "förlorade mätvärden stannade under 0,5 %",
+    "reason": "Python hourly check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "supported",
+    "unit_id": "J-057~sv.u2",
+    "quote": "Falska larm per vecka sjönk från 140 till 45.",
+    "reason": "Personally set per-model thresholds; false alarms dropped 140 to 45."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "supported",
+    "unit_id": "J-057~sv.u2",
+    "quote": "Falska larm per vecka sjönk från 140 till 45.",
+    "reason": "Personally set per-model thresholds; false alarms dropped 140 to 45."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "supported",
+    "unit_id": "J-057~sv.u1",
+    "quote": "förlorade mätvärden stannade under 0,5 %",
+    "reason": "Python hourly check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work described."
+   }
+  ]
+ }
+}

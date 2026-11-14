@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag var med i molnflytten. Jag hjälpte där det behövdes, mest små uppgifter.",
+    "skills": [
+     "S06"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag automatiserade 15 mest använda användarflöden som end-to-end-tester i Playwright.",
+    "skills": [
+     "S12"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag fixade så att misslyckat test stoppar releasen. Veckoreleaser har gått 5 månader nu utan återställning.",
+    "skills": [
+     "S14",
+     "S03"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Tiimi teki öiset regressioajot Cypressillä. Julkaisujen peruutukset laski 9:stä 3:een per neljännes.",
+    "skills": [
+     "S12",
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Siirsimme asiakasportaalin omilta servereiltä Google Cloudiin lift-and-shift-tyylillä. Saimme siirron valmiiksi 3 kuukaudessa ilman katkoja.",
+    "skills": [
+     "S06"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Lisäsin kumppani-API:in pyyntöjen validoinnin Pydanticilla ja selkeät virhekoodit. Kirjoitin myös integraatio-ohjeen. Kumppaneiden virheilmoitukset laski 25:stä 6:een kuukaudessa.",
+    "skills": [
+     "S39",
+     "S18",
+     "S46"
+    ]
+   }
+  ]
+ }
+}

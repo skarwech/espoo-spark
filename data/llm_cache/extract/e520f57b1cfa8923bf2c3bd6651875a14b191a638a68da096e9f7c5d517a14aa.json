@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Med hjälp av en fiskbensanalys spårade jag återkommande lackfel i slutkontrollen till luftfuktigheten i torkboxen och lade sedan till en fuktkontroll i startrutinen. Lackkassationerna minskade med 55 %.",
+    "skills": [
+     "S29",
+     "S09"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Vi automatiserade momentet för pallinplastning med ett PLC-styrt vridbord och fotoceller, vilket minskade inplastningstiden per pall med 60 %.",
+    "skills": [
+     "S37",
+     "S03"
+    ]
+   }
+  ]
+ }
+}

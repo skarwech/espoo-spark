@@ -1,0 +1,245 @@
+{
+ "targets": {
+  "F4 tag precision (planted reference)": {
+   "value": 0.76,
+   "threshold": 0.8,
+   "op": ">=",
+   "n": 30,
+   "pass": false,
+   "note": "tp 95 / fp 30 / fn 31 over 125 predicted tags; CI resamples the 30 stories",
+   "kind": "proxy",
+   "mitigation": "Diagnosis (added 2026-11-14 after results; reviewer judgement, not a registered measure): every false positive sits on a did-box unit that overlaps a supported or partial planted claim. About 23 of 30 are skills the unit text does state but the 2–3-skill archetype reference omits (for example Python, data analysis), so precision against the planted reference is a lower bound. The remaining ~7 are over-broad or wrong tags, for example ICT system integration (×3) on work that only uses a system as a data source. Mitigation: proposed extraction amendment (ESCO scope notes in the prompt's skill list; a system only named as a data source is not evidence of integrating it), pending approval and a full disclosed re-run. Threshold unchanged.",
+   "ci": [
+    0.6889,
+    0.8333
+   ]
+  },
+  "F4 tag recall (planted reference)": {
+   "value": 0.753968253968254,
+   "threshold": 0.7,
+   "op": ">=",
+   "n": 30,
+   "pass": true,
+   "note": "",
+   "kind": "proxy",
+   "mitigation": "",
+   "ci": [
+    0.6692,
+    0.8333
+   ]
+  },
+  "F4 cross-language skill Jaccard (mean)": {
+   "value": 0.8997023809523809,
+   "threshold": 0.8,
+   "op": ">=",
+   "n": 60,
+   "pass": true,
+   "note": "6 pairs have no tags on either side and count as 1.0; mean over the other 54: 0.889 (added 2026-11-14 after results; context only, not a registered measure)",
+   "kind": "target",
+   "mitigation": "",
+   "ci": [
+    0.8545,
+    0.9413
+   ]
+  },
+  "F5 Recall@3 on golden supported/partial": {
+   "value": 1.0,
+   "threshold": 0.9,
+   "op": ">=",
+   "n": 22,
+   "pass": true,
+   "note": "0 extraction misses excluded; in 21 of 22 cases any 3 of the story's units include an evidence unit; random-3 baseline 0.989 (added 2026-11-14 after results; context only, not a registered measure)",
+   "kind": "proxy",
+   "mitigation": "",
+   "ci": [
+    1.0,
+    1.0
+   ]
+  },
+  "F5 cross-language correct unit in top 3 (English outcome, translated story)": {
+   "value": 1.0,
+   "threshold": 0.9,
+   "op": ">=",
+   "n": 222,
+   "pass": true,
+   "note": "0 extraction misses excluded; in 216 of 222 cases any 3 of the story's units include an evidence unit; random-3 baseline 0.995 (added 2026-11-14 after results; context only, not a registered measure)",
+   "kind": "proxy",
+   "mitigation": "",
+   "ci": [
+    1.0,
+    1.0
+   ]
+  },
+  "F6 accuracy vs consensus (3-class)": {
+   "value": 0.95,
+   "threshold": 0.8,
+   "op": ">=",
+   "n": 60,
+   "pass": true,
+   "note": "",
+   "kind": "proxy",
+   "mitigation": "",
+   "ci": [
+    0.8833,
+    1.0
+   ]
+  },
+  "F6 false-supported rate": {
+   "value": 0.0,
+   "threshold": 0.1,
+   "op": "<=",
+   "n": 10,
+   "pass": true,
+   "note": "",
+   "kind": "proxy",
+   "mitigation": "",
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "F6 language invariance": {
+   "value": 0.9827856025039123,
+   "threshold": 0.9,
+   "op": ">=",
+   "n": 639,
+   "pass": true,
+   "note": "agreement where either label is non-none: 0.970 (n = 367; added 2026-11-14 after results; context only, not a registered measure)",
+   "kind": "target",
+   "mitigation": "",
+   "ci": [
+    0.9718,
+    0.9922
+   ]
+  },
+  "F6 style invariance": {
+   "value": 0.9607843137254902,
+   "threshold": 0.9,
+   "op": ">=",
+   "n": 204,
+   "pass": true,
+   "note": "agreement where either label is non-none: 0.933 (n = 119; added 2026-11-14 after results; context only, not a registered measure)",
+   "kind": "target",
+   "mitigation": "",
+   "ci": [
+    0.9314,
+    0.9853
+   ]
+  },
+  "F6 stability (uncached re-run)": {
+   "value": 0.99,
+   "threshold": 0.95,
+   "op": ">=",
+   "n": 1500,
+   "pass": true,
+   "note": "agreement where either label is non-none: 0.902 (n = 153; added 2026-11-14 after results; context only, not a registered measure)",
+   "kind": "target",
+   "mitigation": "",
+   "ci": [
+    0.9847,
+    0.9947
+   ]
+  },
+  "F7 tier agreement exact (with adjacency, registered)": {
+   "value": 0.65,
+   "threshold": 0.8,
+   "op": ">=",
+   "n": 20,
+   "pass": false,
+   "note": "7 of 20 pairs disagree; engine above consensus in 7; adjacency changed the tier in 7; judge labels equal consensus on every outcome in 6. Adjacent paths in the disagreeing pairs (all priorities) start from: ICT system integration ×5 (tagged on 56 pool units), perform data analysis ×2 (tagged on 35 pool units), create data models ×1 (tagged on 3 pool units), Python (computer programming) ×1 (tagged on 35 pool units), Internet of Things ×1 (tagged on 50 pool units), manage data ×1 (tagged on 22 pool units) (added 2026-11-14 after results; context only, not a registered measure)",
+   "kind": "proxy",
+   "mitigation": "Consensus labels exclude adjacency by design (method.md §1). Adjacency can only raise the engine tier, never lower it, so where the judge matches consensus (6 of the 7 disagreements) every adjacent path puts the engine above consensus; this target partly measures that design choice. Mitigation: proposed adjacency amendment (no same-skill adjacency on hub skills tagged across many outcomes; an adjacent path alone cannot lift a pair from none to worth), pending approval and a full disclosed re-run. Threshold unchanged.",
+   "ci": [
+    0.45,
+    0.85
+   ]
+  },
+  "F7 tier agreement within one (with adjacency, registered)": {
+   "value": 0.95,
+   "threshold": 0.95,
+   "op": ">=",
+   "n": 20,
+   "pass": true,
+   "note": "",
+   "kind": "proxy",
+   "mitigation": "",
+   "ci": [
+    0.85,
+    1.0
+   ]
+  },
+  "F7 tier agreement exact (direct labels only)": {
+   "value": 0.95,
+   "threshold": null,
+   "op": ">=",
+   "n": 20,
+   "pass": null,
+   "note": "registered as also reported without adjacency (method.md §6); no threshold",
+   "kind": "sensitivity",
+   "mitigation": "",
+   "ci": [
+    0.85,
+    1.0
+   ]
+  },
+  "F7 tier agreement within one (direct labels only)": {
+   "value": 1.0,
+   "threshold": null,
+   "op": ">=",
+   "n": 20,
+   "pass": null,
+   "note": "registered as also reported without adjacency (method.md §6); no threshold",
+   "kind": "sensitivity",
+   "mitigation": "",
+   "ci": [
+    1.0,
+    1.0
+   ]
+  },
+  "F7 tier agreement exact (adjacency incl. shared occupation)": {
+   "value": 0.65,
+   "threshold": null,
+   "op": ">=",
+   "n": 20,
+   "pass": null,
+   "note": "registered sensitivity analysis (method.md §6: shared-occupation links are not adjacency); no threshold",
+   "kind": "sensitivity",
+   "mitigation": "",
+   "ci": [
+    0.45,
+    0.85
+   ]
+  },
+  "F7 tier agreement within one (adjacency incl. shared occupation)": {
+   "value": 0.9,
+   "threshold": null,
+   "op": ">=",
+   "n": 20,
+   "pass": null,
+   "note": "registered sensitivity analysis (method.md §6: shared-occupation links are not adjacency); no threshold",
+   "kind": "sensitivity",
+   "mitigation": "",
+   "ci": [
+    0.75,
+    1.0
+   ]
+  }
+ },
+ "meta": {
+  "llm_calls": 427,
+  "llm_usd": 9.56,
+  "served_by": [
+   "claude-opus-5-5"
+  ],
+  "refusals": 0,
+  "units_invalid_dropped": 0,
+  "judge_rejected": 0,
+  "embedding": "BAAI/bge-m3@9a0624b896d81da7492a910ffa53731274b6cf3d",
+  "tokens": {
+   "input_tokens": 546246,
+   "output_tokens": 352296,
+   "cache_read_input_tokens": 526174,
+   "cache_creation_input_tokens": 44864
+  }
+ }
+}

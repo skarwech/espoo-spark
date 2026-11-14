@@ -1,0 +1,31 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "بدأتُ نادي قراءة وقت الغداء لـ 12 زميلًا. اخترتُ الكتاب كل شهر.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "نظّمتُ نادي جري أسبوعي للزملاء. اهتممتُ بقائمة التسجيل، حوالي 20 شخصًا.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "صنعتُ الملصقات وخطّطتُ قائمة الغداء لحفل ذكرى الشركة، 45 ضيفًا.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

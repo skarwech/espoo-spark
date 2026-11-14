@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-008/o1",
+    "label": "partial",
+    "unit_id": "J-034~sv.u2",
+    "quote": "Jag hjälpte automationsingenjören när packningslinjen uppgraderades",
+    "reason": "Assisted on packing line upgrade; supporting role, no PLC method or result."
+   },
+   {
+    "key": "N-008/o2",
+    "label": "supported",
+    "unit_id": "J-034~sv.u1",
+    "quote": "Oplanerade stopp på linjen gick ner 30 % på nästa 6 månader",
+    "reason": "Personally set up vibration monitoring; unplanned stops fell 30% in 6 months."
+   },
+   {
+    "key": "N-008/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing false sensor-fault alerts."
+   },
+   {
+    "key": "N-015/o1",
+    "label": "supported",
+    "unit_id": "J-034~sv.u1",
+    "quote": "Oplanerade stopp på linjen gick ner 30 % på nästa 6 månader",
+    "reason": "Personally set up vibration monitoring; unplanned stops fell 30% in 6 months."
+   },
+   {
+    "key": "N-015/o2",
+    "label": "partial",
+    "unit_id": "J-034~sv.u2",
+    "quote": "Jag hjälpte automationsingenjören när packningslinjen uppgraderades",
+    "reason": "Assisted on packing line upgrade; supporting role, no PLC method or result."
+   },
+   {
+    "key": "N-015/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   }
+  ]
+ }
+}

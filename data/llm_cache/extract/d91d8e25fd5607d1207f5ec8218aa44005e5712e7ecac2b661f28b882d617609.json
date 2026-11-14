@@ -1,0 +1,27 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Lisäsin tikettilomakkeeseen juurisyytunnisteet ja rakensin toistuvista ongelmista kuukausittaisen Excel-raportin, jonka avulla päätin, mitä tietopankin artikkeleita päivitetään.",
+    "skills": [
+     "S22",
+     "S31",
+     "S10"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Käsittelin noin 25 tukitapausta päivässä Zendeskissä ja tein makroja yleisimpiin pyyntöihin, mikä lyhensi ratkaisuaikani mediaanin 48 tunnista 6 tuntiin.",
+    "skills": [
+     "S17",
+     "S23"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark F0 Proof</title>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f6f5f2; --surface: #fcfcfb; --line: #e4e2dc; --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #6f6d68;
+  --series-1: #1f66bd; --good: #0f7b3e; --good-bg: #e3f3e8; --bad: #b42318; --bad-bg: #fde7e4;
+  --proxy: #7a5b00; --proxy-bg: #fbf1d0; --mark: #fff3bf;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+    --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+    --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+  --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+  --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 12px; }
+h3 { font-size: 15px; margin: 0 0 8px; }
+.sub { color: var(--ink-2); margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid3 { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.pass { color: var(--good); background: var(--good-bg); }
+.fail { color: var(--bad); background: var(--bad-bg); }
+.proxy, .pending { color: var(--proxy); background: var(--proxy-bg); }
+.kind { color: var(--ink-3); font-size: 12px; }
+.stat { font-size: 28px; font-weight: 650; line-height: 1.1; }
+.stat-l { color: var(--ink-2); font-size: 13px; }
+.bar-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; }
+.bar-track { display: flex; align-items: center; gap: 8px; }
+.bar { height: 14px; background: var(--series-1); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bar-v { color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.story p { margin: 0 0 8px; }
+.story .box { color: var(--ink-3); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; display: block; }
+.lbl { font-size: 12px; font-weight: 600; }
+.lbl.supported { color: var(--good); } .lbl.partial { color: var(--proxy); } .lbl.none { color: var(--ink-3); }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+tr.disagree td, tr.diffplanted td { background: var(--mark); }
+.muted { color: var(--ink-2); font-size: 13px; }
+.scroll { overflow-x: auto; }
+details summary { cursor: pointer; color: var(--ink-2); }
+</style>
+</head>
+<body>
+<main>
+<h1>Spark · Step 1 · F0 synthetic data and golden set</h1>
+<p class="sub">Every number on this page is computed from <span class="mono">data/out/</span>, <span class="mono">eval/</span> and the pytest JUnit file. Seed 42. Thresholds pre-registered in <span class="mono">docs/method.md</span>.</p>
+
+<h2>Gates</h2>
+<div class="card scroll">
+<table>
+<tr><th>Check</th><th>Kind</th><th>Status</th><th>Detail</th></tr>
+<tr><td>Schema validity of all records</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">5/5 tests green</td></tr><tr><td>Story boxes ≤ 120 words</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>ESCO URIs exist in cache</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>PII scanner positive control (7 planted: email, 4 phone formats, ID, IBAN)</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>No real PII anywhere (0 hits)</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>Identity-leak detector positive control</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>No identity in matching records</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>Reproducibility: regenerate twice, byte-identical</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>Quotas match pre-registration</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>Planted cases exist and are labelled</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>Golden set complete (20 pairs, all labels)</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr><tr><td>Golden set frozen to its items (sha256)</td><td class="kind">hard</td><td><span class="pill pass">PASS</span></td><td class="muted">1/1 tests green</td></tr>
+<tr><td>Diversity: no language/background &lt; 10%</td><td class="kind">target</td><td><span class="pill pass">PASS</span></td><td class="muted">smallest: lang ar = 14.7%</td></tr><tr><td>Label reliability: Cohen&#39;s κ ≥ 0.6</td><td class="kind">target</td><td><span class="pill proxy">PROXY · HUMAN PENDING</span></td><td class="muted">κ = 1.00 between two AI proxies sharing one rubric; says little about human reliability. Human labels pending.</td></tr><tr><td>Realism: ≥ 90% of 20 stories plausible</td><td class="kind">target</td><td><span class="pill proxy">PROXY · HUMAN PENDING</span></td><td class="muted">98% (AI proxy raters; human rating pending)</td></tr>
+</table>
+</div>
+
+<h2>The synthetic world</h2>
+<div class="grid">
+  <div class="card"><div class="stat">25</div><div class="stat-l">companies, 25 confirmed Need Cards</div></div>
+  <div class="card"><div class="stat">150</div><div class="stat-l">jobseekers (75 polished, 75 rough; 13 generic, 5 thin planted)</div></div>
+  <div class="card"><div class="stat">1152</div><div class="stat-l">unique bank texts from 144 claims × 4 languages × 2 styles; 135 claims used. Effective sample size is bounded by this, not by 150.</div></div>
+  <div class="card"><div class="stat">311</div><div class="stat-l">company slots (need ≥ 300 for 2 per jobseeker)</div></div>
+</div>
+<div class="grid" style="margin-top:16px">
+  
+  <div class="card"><h3>Story language</h3>
+    <div class="bar-row" title="en: 60 (40.0%)"><span>en</span>
+      <span class="bar-track"><span class="bar" style="width:70.0%"></span><span class="bar-v">60 · 40%</span></span></div><div class="bar-row" title="fi: 45 (30.0%)"><span>fi</span>
+      <span class="bar-track"><span class="bar" style="width:52.5%"></span><span class="bar-v">45 · 30%</span></span></div><div class="bar-row" title="sv: 23 (15.3%)"><span>sv</span>
+      <span class="bar-track"><span class="bar" style="width:26.833333333333332%"></span><span class="bar-v">23 · 15%</span></span></div><div class="bar-row" title="ar: 22 (14.7%)"><span>ar</span>
+      <span class="bar-track"><span class="bar" style="width:25.666666666666664%"></span><span class="bar-v">22 · 15%</span></span></div>
+  </div>
+  <div class="card"><h3>Background</h3>
+    <div class="bar-row" title="international_professional: 45 (30.0%)"><span>international professional</span>
+      <span class="bar-track"><span class="bar" style="width:70.0%"></span><span class="bar-v">45 · 30%</span></span></div><div class="bar-row" title="local_graduate: 30 (20.0%)"><span>local graduate</span>
+      <span class="bar-track"><span class="bar" style="width:46.666666666666664%"></span><span class="bar-v">30 · 20%</span></span></div><div class="bar-row" title="career_changer: 30 (20.0%)"><span>career changer</span>
+      <span class="bar-track"><span class="bar" style="width:46.666666666666664%"></span><span class="bar-v">30 · 20%</span></span></div><div class="bar-row" title="returner: 23 (15.3%)"><span>returner</span>
+      <span class="bar-track"><span class="bar" style="width:35.77777777777778%"></span><span class="bar-v">23 · 15%</span></span></div><div class="bar-row" title="vocational: 22 (14.7%)"><span>vocational</span>
+      <span class="bar-track"><span class="bar" style="width:34.222222222222214%"></span><span class="bar-v">22 · 15%</span></span></div>
+  </div>
+  <div class="card"><h3>Planted claim level</h3>
+    <div class="bar-row" title="supported: 152 (39.1%)"><span>supported</span>
+      <span class="bar-track"><span class="bar" style="width:70.0%"></span><span class="bar-v">152 · 39%</span></span></div><div class="bar-row" title="partial: 129 (33.2%)"><span>partial</span>
+      <span class="bar-track"><span class="bar" style="width:59.407894736842096%"></span><span class="bar-v">129 · 33%</span></span></div><div class="bar-row" title="none: 108 (27.8%)"><span>none</span>
+      <span class="bar-track"><span class="bar" style="width:49.73684210526316%"></span><span class="bar-v">108 · 28%</span></span></div>
+  </div>
+  <div class="card"><h3>Planted tier, all 3,750 pairs (with related rule)</h3>
+    <div class="bar-row" title="Strong: 191 (5.1%)"><span>Strong</span>
+      <span class="bar-track"><span class="bar" style="width:4.992531740104555%"></span><span class="bar-v">191 · 5%</span></span></div><div class="bar-row" title="Worth a conversation: 106 (2.8%)"><span>Worth a conversation</span>
+      <span class="bar-track"><span class="bar" style="width:2.770724421209858%"></span><span class="bar-v">106 · 3%</span></span></div><div class="bar-row" title="Stretch: 775 (20.7%)"><span>Stretch</span>
+      <span class="bar-track"><span class="bar" style="width:20.257654966392828%"></span><span class="bar-v">775 · 21%</span></span></div><div class="bar-row" title="No evidence yet: 2678 (71.4%)"><span>No evidence yet</span>
+      <span class="bar-track"><span class="bar" style="width:70.0%"></span><span class="bar-v">2678 · 71%</span></span></div>
+  </div>
+  <div class="card"><h3>Planted tier, direct evidence only</h3>
+    <div class="bar-row" title="Strong: 187 (5.0%)"><span>Strong</span>
+      <span class="bar-track"><span class="bar" style="width:4.17277653809372%"></span><span class="bar-v">187 · 5%</span></span></div><div class="bar-row" title="Worth a conversation: 48 (1.3%)"><span>Worth a conversation</span>
+      <span class="bar-track"><span class="bar" style="width:1.0710870258208478%"></span><span class="bar-v">48 · 1%</span></span></div><div class="bar-row" title="Stretch: 378 (10.1%)"><span>Stretch</span>
+      <span class="bar-track"><span class="bar" style="width:8.434810328339177%"></span><span class="bar-v">378 · 10%</span></span></div><div class="bar-row" title="No evidence yet: 3137 (83.7%)"><span>No evidence yet</span>
+      <span class="bar-track"><span class="bar" style="width:70.0%"></span><span class="bar-v">3137 · 84%</span></span></div>
+  </div>
+  <div class="card"><h3>Education path (descriptive)</h3>
+    <div class="bar-row" title="university: 58 (38.7%)"><span>university</span>
+      <span class="bar-track"><span class="bar" style="width:70.0%"></span><span class="bar-v">58 · 39%</span></span></div><div class="bar-row" title="vocational: 41 (27.3%)"><span>vocational</span>
+      <span class="bar-track"><span class="bar" style="width:49.48275862068965%"></span><span class="bar-v">41 · 27%</span></span></div><div class="bar-row" title="applied_sciences: 36 (24.0%)"><span>applied sciences</span>
+      <span class="bar-track"><span class="bar" style="width:43.44827586206896%"></span><span class="bar-v">36 · 24%</span></span></div><div class="bar-row" title="self_taught: 15 (10.0%)"><span>self taught</span>
+      <span class="bar-track"><span class="bar" style="width:18.103448275862068%"></span><span class="bar-v">15 · 10%</span></span></div>
+  </div>
+  <div class="card"><h3>Career gap (descriptive)</h3>
+    <div class="bar-row" title="no gap: 113 (75.3%)"><span>no gap</span>
+      <span class="bar-track"><span class="bar" style="width:70.0%"></span><span class="bar-v">113 · 75%</span></span></div><div class="bar-row" title="career gap: 37 (24.7%)"><span>career gap</span>
+      <span class="bar-track"><span class="bar" style="width:22.92035398230088%"></span><span class="bar-v">37 · 25%</span></span></div>
+  </div>
+</div>
+<div class="grid" style="margin-top:16px">
+  <div class="card"><div class="stat">14 / 12</div><div class="stat-l">jobseekers Strong or Worth for NordSense (with related rule / direct only; before ESCO adjacency). Pool Preview rounds this.</div></div>
+  <div class="card"><div class="stat">129 / 127</div><div class="stat-l">jobseekers with ≥ 2 viable pairs (with related / direct only). 21 have none: they rely on self-add or the organiser.</div></div>
+  <div class="card"><div class="stat">25/25</div><div class="stat-l">needs with at least one Stretch pair, direct evidence only (for the 20% reservation)</div></div>
+</div>
+
+<h2>Hero cases · NordSense (N-014)</h2>
+<div class="card">
+  <h3>Need Card (confirmed)</h3>
+  <table>
+    <tr><td class="mono">o1</td><td>Cut false sensor-fault alerts by half within 90 days</td><td class="kind">must</td></tr><tr><td class="mono">o2</td><td>Maintain data pipelines from edge devices with under 1% lost readings</td><td class="kind">must</td></tr><tr><td class="mono">o3</td><td>Support Finnish-speaking customers in technical support cases</td><td class="kind">learnable</td></tr>
+  </table>
+  <p class="muted">hybrid · start 2027-02 · languages: en (required) fi (optional) · reality note: “The last hire struggled with noisy field data and unclear ownership of the data pipeline.”</p>
+</div>
+<div class="grid3" style="margin-top:16px">
+
+  <div class="card story">
+    <h3>J-001 · local graduate · polished</h3>
+    <p class="muted">Planted tier: <strong>Stretch</strong> ·
+      o1 <span class="lbl none">none</span>, o2 <span class="lbl partial">partial</span>, o3 <span class="lbl none">none</span></p>
+    <p dir="auto"><span class="box">problem</span>During my studies, our university IoT project aimed to help a property company understand energy use in its buildings, but the sensor data was scattered across several systems.</p><p dir="auto"><span class="box">did</span>I am passionate about leveraging AI to drive impactful IoT solutions. Our team worked with data pipelines that collected readings from building sensors into a cloud dashboard. I thrive in collaborative, fast-paced environments and am eager to create value.</p><p dir="auto"><span class="box">differently</span>Looking back, I would have aligned stakeholder expectations earlier and established clearer communication channels from the outset.</p><p dir="auto"><span class="box">next</span>I am seeking an opportunity to grow as a data professional in an innovative IoT company. I would prefer a hybrid arrangement, with a few days a week on site.</p>
+  </div>
+
+  <div class="card story">
+    <h3>J-002 · international professional · rough</h3>
+    <p class="muted">Planted tier: <strong>Strong</strong> ·
+      o1 <span class="lbl supported">supported</span>, o2 <span class="lbl supported">supported</span>, o3 <span class="lbl none">none</span></p>
+    <p dir="auto"><span class="box">problem</span>At a water utility we had 300 pump stations sending sensor data. Operators got so many false alerts they started to ignore them, and sometimes data from the stations was just missing.</p><p dir="auto"><span class="box">did</span>I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day, checked by comparing weekly logs. I also took care of the data pipeline from the stations: I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%.</p><p dir="auto"><span class="box">differently</span>I would talk with the operators earlier. I changed rules first and explained after, and some of them did not trust the new alerts for weeks.</p><p dir="auto"><span class="box">next</span>I want to work with sensor data in a product company and learn Finnish properly. Hybrid is best for me, some days office some days home.</p>
+  </div>
+
+  <div class="card story">
+    <h3>J-003 · career changer · polished</h3>
+    <p class="muted">Planted tier: <strong>Stretch</strong> ·
+      o1 <span class="lbl none">none</span>, o2 <span class="lbl partial">partial</span>, o3 <span class="lbl none">none</span></p>
+    <p dir="auto"><span class="box">problem</span>In a mid-size logistics company, delivery routes were planned by hand every morning, and drivers often crossed each other&#39;s areas while customers waited.</p><p dir="auto"><span class="box">did</span>I led the work of re-planning routes for 120 trucks with a routing tool and historical delivery data, and I compared the new plan with the old one for 4 weeks: driven kilometres fell by 9%. I also connected our warehouse system to the ERP with a nightly integration job, so order data moved automatically and manual re-typing stopped.</p><p dir="auto"><span class="box">differently</span>I would involve the drivers earlier. Their local knowledge would have saved us 2 rounds of corrections.</p><p dir="auto"><span class="box">next</span>I want to move into data analysis, where I can use what I learned from planning and measuring routes. I would prefer a hybrid arrangement, with a few days a week on site.</p>
+  </div>
+
+</div>
+<p class="muted">Elena is <em>Stretch</em> here; the spec expects <em>Worth a conversation</em> via an ESCO adjacency path for o1. Checked in the frozen ESCO cache: <em>plan transport operations</em> and <em>perform data analysis</em> share exactly one occupation (<em>ship planner</em>: essential vs optional), no broader skill and no direct skill link. The path exists but is weak; whether it counts as adjacency is a step-2 design decision, not yet verified.</p>
+
+<h2>One claim, four languages, two styles (twin source)</h2>
+<div class="card scroll">
+  <p class="muted mono">iot_alerts.supported.1 · level supported — same facts, numbers and grammatical person in all 8 versions</p>
+  <table>
+    <tr><th>Lang</th><th>Polished</th><th>Rough</th></tr>
+    <tr><td class="mono">en</td><td dir="auto">I analysed 6 months of alarm history in Python and found that short temperature spikes caused most of the false fault alerts. I added a 5-minute persistence rule, which cut false alerts by 60%.</td><td dir="auto">I analysed 6 months alarm history with Python. Most false fault alerts was coming from short temperature spikes. I added 5-minute persistence rule and false alerts went down 60%.</td></tr><tr><td class="mono">fi</td><td dir="auto">Analysoin Pythonilla 6 kuukauden hälytyshistorian ja havaitsin, että lyhyet lämpötilapiikit aiheuttivat suurimman osan vääristä vikahälytyksistä. Lisäsin 5 minuutin pysyvyysehdon, joka vähensi vääriä hälytyksiä 60 %.</td><td dir="auto">Analysoin Pythonilla 6 kuukauden hälytyshistorian. Suurin osa vääristä vikahälytyksistä tuli lyhyistä lämpötilapiikeistä. Lisäsin 5 minuutin pysyvyysehdon ja väärät hälytykset väheni 60 %.</td></tr><tr><td class="mono">sv</td><td dir="auto">Jag analyserade 6 månaders larmhistorik i Python och såg att korta temperaturtoppar orsakade de flesta falska fellarmen. Jag lade till en persistensregel på 5 minuter, vilket minskade de falska larmen med 60 %.</td><td dir="auto">Jag analyserade 6 månaders larmhistorik med Python. De flesta falska fellarm kom från korta temperaturtoppar. Jag lade till persistensregel på 5 minuter och falska larmen gick ner 60 %.</td></tr><tr><td class="mono">ar</td><td dir="auto">حلّلتُ باستخدام Python سجلَّ إنذارات يغطي 6 أشهر، ووجدتُ أن الارتفاعات القصيرة في درجة الحرارة كانت سبب معظم إنذارات الأعطال الكاذبة. وأضفتُ قاعدة استمرارية مدتها 5 دقائق، فانخفضت الإنذارات الكاذبة بنسبة 60%.</td><td dir="auto">حلّلتُ سجل إنذارات 6 أشهر بـ Python. معظم إنذارات الأعطال الكاذبة جاءت من ارتفاعات قصيرة في الحرارة. أضفتُ قاعدة استمرارية 5 دقائق، والإنذارات الكاذبة نزلت 60%.</td></tr>
+  </table>
+</div>
+
+<h2>Golden set</h2>
+
+<div class="grid">
+  <div class="card"><div class="stat">20 pairs</div><div class="stat-l">60 outcome labels</div></div>
+  <div class="card"><div class="stat">κ = 1.00</div><div class="stat-l">Cohen's kappa, annotator A vs B (AI proxies, blinded)</div></div>
+  <div class="card"><div class="stat">85%</div><div class="stat-l">consensus agrees with the planted label (reported, not forced)</div></div>
+  <div class="card"><h3>Pairs per tier</h3><table><tr><td>Strong</td><td class="mono">planted 5</td><td class="mono">consensus 5</td></tr><tr><td>Worth a conversation</td><td class="mono">planted 5</td><td class="mono">consensus 2</td></tr><tr><td>Stretch</td><td class="mono">planted 5</td><td class="mono">consensus 6</td></tr><tr><td>No evidence yet</td><td class="mono">planted 5</td><td class="mono">consensus 7</td></tr></table><p class="muted" style="margin:6px 0 0">Selected on planted tiers; consensus tiers are the F7 reference. Thin strata make the F7 tier target underpowered.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>Finding</h3><p class="muted" style="margin:0">9 of 60 consensus labels differ from the planted label; 9 of them come from the planting rule “a supported claim gives <em>partial</em> to a related archetype”. The golden set holds 10 labels planted by that rule; annotators kept 1 (Elena's ERP integration → edge pipelines) and read the rest as skill adjacency, not evidence. Step 2 consequence: cross-archetype relatedness belongs to the engine's <em>adjacent</em> path; the consensus, not the planted label, is the reference for F6/F7 targets. κ = 1.00 between two AI proxies with one rubric is not evidence of human label reliability.</p></div>
+<div class="card scroll" style="margin-top:16px">
+<table>
+  <tr><th>Pair</th><th>Need</th><th>Cand.</th><th>Out.</th><th>Prio</th><th>Lang</th><th>Style</th><th>Planted tier</th><th>Planted</th><th>A</th><th>B</th><th>Consensus</th></tr>
+  <tr class=" " >
+    <td class="mono">G01</td><td class="mono">N-002</td><td class="mono">J-107</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G01</td><td class="mono">N-002</td><td class="mono">J-107</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Stretch</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G01</td><td class="mono">N-002</td><td class="mono">J-107</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Stretch</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G02</td><td class="mono">N-002</td><td class="mono">J-150</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G02</td><td class="mono">N-002</td><td class="mono">J-150</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G02</td><td class="mono">N-002</td><td class="mono">J-150</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G03</td><td class="mono">N-017</td><td class="mono">J-118</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G03</td><td class="mono">N-017</td><td class="mono">J-118</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G03</td><td class="mono">N-017</td><td class="mono">J-118</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G04</td><td class="mono">N-020</td><td class="mono">J-053</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G04</td><td class="mono">N-020</td><td class="mono">J-053</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G04</td><td class="mono">N-020</td><td class="mono">J-053</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">en</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G05</td><td class="mono">N-017</td><td class="mono">J-042</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G05</td><td class="mono">N-017</td><td class="mono">J-042</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G05</td><td class="mono">N-017</td><td class="mono">J-042</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">fi</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G06</td><td class="mono">N-009</td><td class="mono">J-142</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G06</td><td class="mono">N-009</td><td class="mono">J-142</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G06</td><td class="mono">N-009</td><td class="mono">J-142</td><td class="mono">o3</td>
+    <td class="kind">learnable</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G07</td><td class="mono">N-009</td><td class="mono">J-111</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G07</td><td class="mono">N-009</td><td class="mono">J-111</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G07</td><td class="mono">N-009</td><td class="mono">J-111</td><td class="mono">o3</td>
+    <td class="kind">learnable</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G08</td><td class="mono">N-014</td><td class="mono">J-001</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G08</td><td class="mono">N-014</td><td class="mono">J-001</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G08</td><td class="mono">N-014</td><td class="mono">J-001</td><td class="mono">o3</td>
+    <td class="kind">learnable</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G09</td><td class="mono">N-022</td><td class="mono">J-032</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">polished</td><td class="kind">Strong</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G09</td><td class="mono">N-022</td><td class="mono">J-032</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">polished</td><td class="kind">Strong</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G09</td><td class="mono">N-022</td><td class="mono">J-032</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">ar</td><td class="kind">polished</td><td class="kind">Strong</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G10</td><td class="mono">N-018</td><td class="mono">J-134</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G10</td><td class="mono">N-018</td><td class="mono">J-134</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G10</td><td class="mono">N-018</td><td class="mono">J-134</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G11</td><td class="mono">N-022</td><td class="mono">J-084</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G11</td><td class="mono">N-022</td><td class="mono">J-084</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G11</td><td class="mono">N-022</td><td class="mono">J-084</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Worth a conversation</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G12</td><td class="mono">N-014</td><td class="mono">J-003</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G12</td><td class="mono">N-014</td><td class="mono">J-003</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G12</td><td class="mono">N-014</td><td class="mono">J-003</td><td class="mono">o3</td>
+    <td class="kind">learnable</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G13</td><td class="mono">N-006</td><td class="mono">J-016</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G13</td><td class="mono">N-006</td><td class="mono">J-016</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G13</td><td class="mono">N-006</td><td class="mono">J-016</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">ar</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G14</td><td class="mono">N-014</td><td class="mono">J-002</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G14</td><td class="mono">N-014</td><td class="mono">J-002</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G14</td><td class="mono">N-014</td><td class="mono">J-002</td><td class="mono">o3</td>
+    <td class="kind">learnable</td><td class="mono">en</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G15</td><td class="mono">N-001</td><td class="mono">J-039</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G15</td><td class="mono">N-001</td><td class="mono">J-039</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G15</td><td class="mono">N-001</td><td class="mono">J-039</td><td class="mono">o3</td>
+    <td class="kind">learnable</td><td class="mono">fi</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G16</td><td class="mono">N-013</td><td class="mono">J-072</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G16</td><td class="mono">N-013</td><td class="mono">J-072</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G16</td><td class="mono">N-013</td><td class="mono">J-072</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">en</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G17</td><td class="mono">N-013</td><td class="mono">J-006</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G17</td><td class="mono">N-013</td><td class="mono">J-006</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" diffplanted" >
+    <td class="mono">G17</td><td class="mono">N-013</td><td class="mono">J-006</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">sv</td><td class="kind">polished</td><td class="kind">Stretch</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G18</td><td class="mono">N-006</td><td class="mono">J-136</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G18</td><td class="mono">N-006</td><td class="mono">J-136</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G18</td><td class="mono">N-006</td><td class="mono">J-136</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">sv</td><td class="kind">rough</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G19</td><td class="mono">N-018</td><td class="mono">J-099</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">polished</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G19</td><td class="mono">N-018</td><td class="mono">J-099</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">ar</td><td class="kind">polished</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G19</td><td class="mono">N-018</td><td class="mono">J-099</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">ar</td><td class="kind">polished</td><td class="kind">No evidence yet</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr><tr class=" " >
+    <td class="mono">G20</td><td class="mono">N-025</td><td class="mono">J-013</td><td class="mono">o1</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td><td><span class="lbl supported">supported</span></td></tr><tr class=" " >
+    <td class="mono">G20</td><td class="mono">N-025</td><td class="mono">J-013</td><td class="mono">o2</td>
+    <td class="kind">must</td><td class="mono">sv</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td><td><span class="lbl partial">partial</span></td></tr><tr class=" " >
+    <td class="mono">G20</td><td class="mono">N-025</td><td class="mono">J-013</td><td class="mono">o3</td>
+    <td class="kind">nice</td><td class="mono">sv</td><td class="kind">rough</td><td class="kind">Strong</td>
+    <td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td><td><span class="lbl none">none</span></td></tr>
+</table>
+<p class="muted">Highlighted rows: consensus differs from the planted label (or A and B disagreed; hover for the adjudicator's reason).</p>
+</div>
+
+
+<h2>Realism sample (20 random stories)</h2>
+<div class="card">
+
+
+<details><summary><span class="mono">R01</span> · fi ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Keskikokoisessa ohjelmistofirmassa tukijono kasvoi koko ajan, samat kysymykset tuli aina uudestaan ja asiakkuuspäälliköillä ei ollut paljon aikaa pitää yhteyttä nykyisiin yritysasiakkaisiin.</p><p dir="auto"><span class="box">did</span>Oon tuloshakuinen ja tykkään rakentaa suhteita. Mulla on kasvun asenne ja rakastan win-win-kumppanuuksia. Hoidin meidän toimiston muuton ja laitoin tarrat kaikkiin laatikoihin ja kaapeleihin 30 työntekijälle. Hoidin meidän toimistolla uusien työntekijöiden parkkiluvat ja kulkukortit.</p><p dir="auto"><span class="box">differently</span>Kirjoittaisin mun päätökset ja sovitut asiat ylös heti, ettei lomalla sijaistavien kollegoiden tarvitse soittaa mulle ja kysyä.</p><p dir="auto"><span class="box">next</span>Seuraavaksi haluan työn, jossa opin miten yritysasiakkaat päättää mitä ne ostaa, ja pääsen asiakasmenestyksen tai myynnin tehtäviin. Haluan tehdä töitä toimistolla, joka päivä käy.</p>
+  <p class="muted">annotator_a: Office admin at software firm aiming for customer success; boxes loosely matched but believable.</p><p class="muted">annotator_b: Office coordinator with buzzword intro wanting to move into customer success or sales; realistic thin story.</p></div>
+</details>
+
+<details><summary><span class="mono">R02</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>At a software company of about 60 people, the main product had grown fast and the release process had not kept up. Every change felt risky, and partners asked for things the system could not easily offer.</p><p dir="auto"><span class="box">did</span>The team set up nightly regression runs with Cypress, and release rollbacks dropped from 9 to 3 per quarter. I am a cloud-native thinker who believes digital transformation and modern infrastructure create endless opportunities for innovation. I supported the partner interface work for a period and took part in some of the integration meetings.</p><p dir="auto"><span class="box">differently</span>I would write down the decisions from each meeting and share them the same day, so nobody had to guess later what was agreed.</p><p dir="auto"><span class="box">next</span>I would like to work on systems that other companies depend on, and understand how good software is planned, built and kept running. I prefer working on site with the team every day.</p>
+  <p class="muted">annotator_a: Junior developer mixing team result, buzzwords and minor support role; common real pattern.</p><p class="muted">annotator_b: Junior developer with partly team-level contributions and generic self-branding; common for real applicants.</p></div>
+</details>
+
+<details><summary><span class="mono">R03</span> · fi ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Keskikokoisen palveluyrityksen taloustiimissä kuukauden vaihteen työt kasautuivat jatkuvasti. Pankkitapahtumat täsmäytettiin käsin Excelissä, osastojen budjetit saapuivat myöhässä ja kuukausikatkon raportit valmistuivat usein viikon myöhässä.</p><p dir="auto"><span class="box">did</span>Järjestin talousosaston toimistomuuton, tilasin muuttofirman ja suunnittelin uuden istumajärjestyksen. Hoidin talousosaston toimiston neuvotteluhuonevaraukset ja järjestin tarjoilut asiakasvierailuille.</p><p dir="auto"><span class="box">differently</span>Dokumentoisin jokaisen uuden rutiinin heti, kun siitä on sovittu, jotta kollegat voivat tuurata minua lomien aikana. Luotin liikaa siihen, että selitän asiat kasvokkain.</p><p dir="auto"><span class="box">next</span>Haluan liittyä taloustiimiin, jossa voin auttaa tekemään rutiinikirjanpidosta nopeampaa ja luotettavampaa, ja oppia kokeneilta controllereilta. Haen ensisijaisesti etätyötä, ja voin tarvittaessa käydä paikan päällä.</p>
+  <p class="muted">annotator_a: Finance-department assistant describing admin tasks and aiming for accounting; coherent situation.</p><p class="muted">annotator_b: Finance-team assistant doing office logistics and aiming for accounting work; coherent and ordinary.</p></div>
+</details>
+
+<details><summary><span class="mono">R04</span> · fi ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Keskikokoinen tehdas, 3 vuoroa. Asiakasreklamaatioita tuli koko ajan enemmän, linjoilla oli paljon lyhyitä pysähdyksiä ja eräs pakkausvaihe tehtiin vielä käsin. Jokaisella tiimillä oli oma taulukko, joten ongelmat nähtiin vasta kun tuotteet oli pakattu.</p><p dir="auto"><span class="box">did</span>Aloitin SPC-kortit koneistussolussa 4 kriittiselle mitalle. Koulutin operaattorit pysäyttää linjan, kun kortti näyttää että prosessi ei ole hallinnassa. Hylkäykset lopputarkastuksessa meni 6 %:sta 2,5 %:iin. Me vaihdettiin pakkauslinja kiinteän välin huollosta kunnon mukaan tehtäviin tarkastuksiin, öljyanalyysillä. Suunnittelemattomat seisokit väheni 18 % 6 kuukaudessa. Autoin automaatioinsinööriä kun pakkauslinjaa uusittiin, ja autoin testauksessa kun pyydettiin.</p><p dir="auto"><span class="box">differently</span>Kirjoittaisin päätökset ylös joka palaverin jälkeen ja jakaisin kaikille hallissa. Liikaa oli vain ihmisten muistissa ja siitä tuli sekaannusta, joka olisi voitu välttää.</p><p dir="auto"><span class="box">next</span>Seuraavaksi haluan kasvaa automaatioon ja tuotannon kehitykseen. Paras olisi tiimi, jossa voin kokeilla parannuksia oikealla linjalla. Hybridi sopii parhaiten, välillä toimisto välillä koti.</p>
+  <p class="muted">annotator_a: Production worker with SPC and maintenance improvements; coherent factory situation and goals.</p><p class="muted">annotator_b: Production technician with SPC, condition-based maintenance and believable defect and downtime figures.</p></div>
+</details>
+
+<details><summary><span class="mono">R05</span> · ar ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>في شركة برمجيات تضم نحو 60 موظفًا، نما المنتج الرئيسي بسرعة ولم تواكبه عملية الإصدار. كان كل تغيير يبدو محفوفًا بالمخاطر، وكان الشركاء يطلبون أمورًا لا يستطيع النظام تقديمها بسهولة.</p><p dir="auto"><span class="box">did</span>نقلنا بوابة العملاء من خوادمنا الخاصة إلى Google Cloud بأسلوب lift-and-shift، وأنجزنا التحويل خلال 3 أشهر دون أي انقطاع. أضفتُ إلى واجهة API الخاصة بالشركاء التحقق من صحة الطلبات باستخدام Pydantic ورموز أخطاء واضحة، وكتبتُ دليل التكامل بنفسي. وانخفضت بلاغات الأخطاء من الشركاء من 25 إلى 6 شهريًا.</p><p dir="auto"><span class="box">differently</span>كنتُ سأدوّن القرارات المتخذة في كل اجتماع وأشاركها في اليوم نفسه، حتى لا يضطر أحد لاحقًا إلى تخمين ما تم الاتفاق عليه.</p><p dir="auto"><span class="box">next</span>أريد أن أبني برمجيات يستخدمها أناس حقيقيون كل يوم، ضمن فريق أتعلم فيه من مراجعات الشيفرة وأتحمل مسؤولية أكبر خطوة بخطوة. أفضّل نظام عمل هجينًا مع بضعة أيام أسبوعيًا في موقع العمل.</p>
+  <p class="muted">annotator_a: Developer at software firm with cloud migration and partner API work; coherent and concrete.</p><p class="muted">annotator_b: Developer&#39;s cloud migration and API work with specific tools and metrics; Arabic-speaking IT professional in Finland is realistic.</p></div>
+</details>
+
+<details><summary><span class="mono">R06</span> · sv ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Hos en leverantör av byggmaterial låg kund- och försäljningsdata utspridda i ett gammalt CRM-system, faktureringssystemet och personliga Excel-filer, så varje översikt eller uppskattning krävde dagar av manuell kopiering.</p><p dir="auto"><span class="box">did</span>Jag uppdaterade personalens nyhetssida på intranätet varje vecka och samlade in bilder och berättelser från olika avdelningar. Jag är en datadriven yrkesperson som tror att riktigt bra dashboards ger varje intressent möjlighet att hitta handlingsbara insikter. Kunddata från ERP-systemet, CRM-systemet och webbutiken rensades med OpenRefine och slogs ihop till ett gemensamt register, vilket minskade antalet returnerade fakturor med 30 %.</p><p dir="auto"><span class="box">differently</span>Jag skulle komma överens med min chef om tydliga prioriteringar och en realistisk tidsplan redan från början, och lyfta problem tidigare i stället för att försöka lösa allt själv.</p><p dir="auto"><span class="box">next</span>Jag vill växa in i en analytikerroll där jag hjälper team att besvara vardagliga affärsfrågor med data, och bygga upp mina färdigheter i SQL och visualisering. Jag föredrar ett hybridupplägg med några dagar i veckan på plats.</p>
+  <p class="muted">annotator_a: Admin/communications person involved in data cleanup aiming at analytics; minor system-list mismatch, believable.</p><p class="muted">annotator_b: Mix of intranet duties, buzzwords and passive data-cleaning claim fits an analyst-aspirant.</p></div>
+</details>
+
+<details><summary><span class="mono">R07</span> · fi ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Kasvavan tukkukaupan kirjanpitorutiinit eivät enää riittäneet. 4 tytäryhtiön laskut kirjattiin eri tavoin, täsmäytyserot siirtyivät eteenpäin kuukausittain, kuukausikatko venyi, eivätkä esihenkilöt enää luottaneet budjettiensa taustalla oleviin lukuihin.</p><p dir="auto"><span class="box">did</span>Controller-tiimi otti käyttöön yhteisen budjettikalenterin, jossa oli kiinteät läpikäyntipäivät kaikille 5 osastolle, ja vuosibudjetti valmistui aikataulussa. Kirjoitin Python-skriptin, joka vertaa pankin tapahtumatiedostoa pääkirjan kirjauksiin joka yö ja listaa erot. Se korvasi käsin tehdyn pankkitäsmäytyksen, joka vei 6 tuntia viikossa.</p><p dir="auto"><span class="box">differently</span>Sopisin aikatauluista muiden osastojen kanssa heti alussa sen sijaan, että jahtaisin niitä viime hetkellä. Selkeät odotukset alusta asti olisivat vähentäneet kaikkien stressiä.</p><p dir="auto"><span class="box">next</span>Haluan liittyä taloustiimiin, jossa voin auttaa tekemään rutiinikirjanpidosta nopeampaa ja luotettavampaa, ja oppia kokeneilta controllereilta. Haen ensisijaisesti etätyötä, ja voin tarvittaessa käydä paikan päällä.</p>
+  <p class="muted">annotator_a: Accounting staff with reconciliation script at wholesale company; coherent and realistic.</p><p class="muted">annotator_b: Controller-team member automating bank reconciliation with Python; coherent, specific and typical.</p></div>
+</details>
+
+<details><summary><span class="mono">R08</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>A mid-size factory with 3 shifts. Customer complaints was growing, the lines had many short stops and a packing step was still done by hand. Every team had own spreadsheet, so problems were seen only after products were packed.</p><p dir="auto"><span class="box">did</span>I started vibration measuring on the 12 most critical conveyor motors and I set limits when the bearings must be changed. Unplanned stops on the line went down 30% in next 6 months. I helped the automation engineer when the packing line was upgraded, and I helped with testing when they asked. The quality team wrote new final inspection criteria, with photos of OK and not OK welds. Defect rate in final inspection went down 40% in 6 months.</p><p dir="auto"><span class="box">differently</span>I would talk about the plan with shift supervisors before starting, not in the middle. If the night shift was involved from start, it saves weeks of back and forth.</p><p dir="auto"><span class="box">next</span>I want to work in production and help to make less stoppages and waste. I want to learn from experienced maintenance and quality people. I want work at the office, every day is ok.</p>
+  <p class="muted">annotator_a: Factory maintenance worker with vibration monitoring results; coherent situation and goals.</p><p class="muted">annotator_b: Maintenance or quality technician with specific vibration monitoring and inspection improvements; realistic figures.</p></div>
+</details>
+
+<details><summary><span class="mono">R09</span> · fi ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Keskikokoisessa logistiikkafirmassa kiireisenä syksynä toimitukset oli myöhässä, suositut tuotteet oli koko ajan loppu ja asiakkaat soitti asiakaspalveluun joka päivä ja kysyi missä tilaus on.</p><p dir="auto"><span class="box">did</span>Määritin viivakoodilukijat lähettämään tavaraliikkeet SAP:iin IDoc-rajapinnalla, joten tilauksen tila muuttuu kun tuote skannataan. Testasin 300 oikealla tilauksella. Tein 14 pakettiautolle uudet jakelualueet reittisuunnitteluohjelmassa, asiakkaiden sijainnit ja aikaikkunat pohjana. Päivän kilometrit väheni 12 % 4 kuukaudessa.</p><p dir="auto"><span class="box">differently</span>Kertoisin asioista aikaisemmin ja pienemmissä paloissa. Sit ihmisillä on aikaa sopeutua, eikä ne kuule kaikkea viime hetkellä.</p><p dir="auto"><span class="box">next</span>Seuraavaksi haluan varasto- tai kuljetustiimiin, joka kehittää tapaa tehdä töitä, ja kasvaa rooliin jossa on enemmän suunnitteluvastuuta. Hybridi sopii parhaiten, välillä toimisto välillä koti.</p>
+  <p class="muted">annotator_a: Logistics worker integrating scanners with SAP and redrawing van routes; realistic and coherent.</p><p class="muted">annotator_b: Logistics coordinator with SAP scanner integration and route redesign; plausible scope and results.</p></div>
+</details>
+
+<details><summary><span class="mono">R10</span> · ar ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>لدى موزّع جملة إقليمي، كانت الطلبات ومستويات المخزون وخطط التوصيل في أنظمة منفصلة، فلم تظهر المشكلات إلا عندما يكون الرف فارغًا بالفعل أو تنتظر شاحنة صغيرة بضائع لم تصل.</p><p dir="auto"><span class="box">did</span>نظّمتُ الحفل الصيفي للموظفين لـ 60 شخصًا، وحجزتُ المكان والموسيقى. دعمتُ فريق المشتريات لفترة في مستويات المخزون، وتابعتُ قوائم النواقص. كنتُ ضمن مشروع ERP في مكان عملي السابق، واختبرتُ بعض الشاشات قبل الإطلاق.</p><p dir="auto"><span class="box">differently</span>كنتُ سأتواصل في وقت أبكر وعلى خطوات أصغر، حتى يجد الناس وقتًا للتكيّف بدلًا من سماع كل شيء في اللحظة الأخيرة.</p><p dir="auto"><span class="box">next</span>أودّ في الخطوة التالية الانضمام إلى فريق مستودع أو نقل يطوّر أساليب عمله، والتقدّم نحو دور يحمل مسؤولية أكبر في التخطيط. أفضّل نظام عمل هجينًا مع بضعة أيام أسبوعيًا في موقع العمل.</p>
+  <p class="muted">annotator_a: Admin/purchasing support at distributor aiming for logistics planning; modest but believable.</p><p class="muted">annotator_b: Administrative assistant with event organising, procurement support and ERP testing; ordinary and modest.</p></div>
+</details>
+
+<details><summary><span class="mono">R11</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>During my studies, our university IoT project aimed to help a property company understand energy use in its buildings, but the sensor data was scattered across several systems.</p><p dir="auto"><span class="box">did</span>I am passionate about leveraging AI to drive impactful IoT solutions. Our team worked with data pipelines that collected readings from building sensors into a cloud dashboard. I thrive in collaborative, fast-paced environments and am eager to create value.</p><p dir="auto"><span class="box">differently</span>Looking back, I would have aligned stakeholder expectations earlier and established clearer communication channels from the outset.</p><p dir="auto"><span class="box">next</span>I am seeking an opportunity to grow as a data professional in an innovative IoT company. I would prefer a hybrid arrangement, with a few days a week on site.</p>
+  <p class="muted">annotator_a: Graduate with university IoT project and buzzword-heavy text; very common real pattern.</p><p class="muted">annotator_b: Student with team project and generic buzzwords, no personal achievements; very common among real graduates.</p></div>
+</details>
+
+<details><summary><span class="mono">R12</span> · fi ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Noin 60 hengen ohjelmistoyrityksessä päätuote oli kasvanut nopeasti, eikä julkaisuprosessi ollut pysynyt perässä. Jokainen muutos tuntui riskiltä, ja kumppanit pyysivät asioita, joita järjestelmä ei helposti pystynyt tarjoamaan.</p><p dir="auto"><span class="box">did</span>Siirsimme asiakasportaalin omilta palvelimiltamme Google Cloudiin lift-and-shift-menetelmällä ja saimme siirron valmiiksi 3 kuukaudessa ilman katkoja. Suunnittelin julisteet ja lounasmenun yrityksen vuosijuhlaan, johon osallistui 45 vierasta. Suunnittelin ja rakensin Pythonilla ja FastAPI:lla REST API:n kumppani-integraatioita varten, versioiduin päätepistein ja OpenAPI-kuvauksella. Rajapintaan liittyi 3 kuukauden aikana 4 kumppania ilman yhteensopivuutta rikkovia muutoksia.</p><p dir="auto"><span class="box">differently</span>Sopisin laajuudesta tuoteomistajan kanssa heti alussa ja sanoisin selkeämmin ei, kun uusia toiveita tuli kesken työn.</p><p dir="auto"><span class="box">next</span>Haluaisin työskennellä järjestelmien parissa, joista muut yritykset ovat riippuvaisia, ja ymmärtää, miten hyvä ohjelmisto suunnitellaan, rakennetaan ja pidetään käynnissä. Haen ensisijaisesti etätyötä, ja voin tarvittaessa käydä paikan päällä.</p>
+  <p class="muted">annotator_a: Developer with cloud migration and partner API; party-poster aside is odd but believable.</p><p class="muted">annotator_b: Boxes cohere around one developer; poster and menu duty is a plausible side task in a 60-person firm.</p></div>
+</details>
+
+<details><summary><span class="mono">R13</span> · fi ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Vanhuspalveluissa oli jatkuva paine: henkilöstöpula, viime hetken sairauspoissaolot ja paperikansioiden ja sähköisen järjestelmän välillä hajallaan oleva hoitotieto vaikeuttivat käyntien, hoitosuunnitelmien ja työvuorojen pitämistä aikataulussa.</p><p dir="auto"><span class="box">did</span>Koulutin 14 kollegaa kirjaamaan käynnit tabletin mobiilisovellukseen jo käynnin aikana ja tarkistin heidän kirjauksensa viikoittain; myöhästyneet kirjaukset vähenivät 40 %:sta 10 %:iin. Suunnittelin päivittäisen reittini 11 kotihoidon asiakkaan luo ja tarkistin lääkeannostelijan jokaisella käynnillä; 6 kuukauden aikana en jättänyt käyntejä väliin. Suunnittelimme molempien yksiköiden työvuorot yhdessä ja perustimme yhteisen sijaispoolin, minkä ansiosta ylityöpiikit loppuivat 3 kuukaudessa.</p><p dir="auto"><span class="box">differently</span>Sopisin esihenkilöni kanssa selkeät prioriteetit heti alussa ja kirjaisin ylös, kuka päättää mistäkin, sen sijaan että yrittäisin kiireisinä viikkoina ratkaista kaiken itse.</p><p dir="auto"><span class="box">next</span>Haluan työskennellä asiakaspalvelussa tai asiakkuudenhallinnassa, jossa voin ratkaista asiakkaiden ongelmia ja rakentaa heihin pitkäaikaisia suhteita. Haen ensisijaisesti etätyötä, ja voin tarvittaessa käydä paikan päällä.</p>
+  <p class="muted">annotator_a: Home-care worker changing careers to customer service; concrete, coherent care situation.</p><p class="muted">annotator_b: Home-care worker with coordinator duties moving to customer service; Finnish elder-care details are realistic.</p></div>
+</details>
+
+<details><summary><span class="mono">R14</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>At a regional wholesale distributor, orders, stock levels and delivery plans lived in separate systems, so problems surfaced only when a shelf was already empty or a van was waiting for goods that had not arrived.</p><p dir="auto"><span class="box">did</span>I built a REST integration between the warehouse management system and the ERP, so picked and shipped quantities update orders within 3 minutes instead of in a nightly batch. I analysed truck GPS data in Excel, found that 4 morning routes overlapped and redrew them as 3, saving about 90 km of driving per day.</p><p dir="auto"><span class="box">differently</span>I would communicate earlier and in smaller steps, so that people have time to adjust instead of hearing about everything at the last minute.</p><p dir="auto"><span class="box">next</span>I want to grow into an analyst role where I help teams answer everyday business questions with data, and build my skills in SQL and visualisation. I would prefer a hybrid arrangement, with a few days a week on site.</p>
+  <p class="muted">annotator_a: Wholesale analyst with WMS-ERP integration and route analysis; realistic and coherent.</p><p class="muted">annotator_b: Logistics analyst with WMS-ERP integration and GPS route analysis in Excel; believable and coherent.</p></div>
+</details>
+
+<details><summary><span class="mono">R15</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Mid-size company, they sell building automation equipment. About 900 devices on customer sites send data back to office. Usually customers noticed problems first, and small team was just reacting most days, not planning.</p><p dir="auto"><span class="box">did</span>Embedded systems fascinate me a lot. I think good designed firmware is invisible backbone of every smart device. I analysed 6 months alarm history with Python. Most false fault alerts was coming from short temperature spikes. I added 5-minute persistence rule and false alerts went down 60%. I see myself as connected data enthusiast. I believe seamless edge to cloud integration unlock real business value.</p><p dir="auto"><span class="box">differently</span>At start I would go on site with field technicians, not only work from office. And ask more questions early.</p><p dir="auto"><span class="box">next</span>I like to work on systems that other companies depend. I want understand how good software is planned, built and kept running. Hybrid is best for me, some days office some days home.</p>
+  <p class="muted">annotator_a: Building-automation employee with concrete alarm analysis plus buzzwords; believable mix.</p><p class="muted">annotator_b: Technician-type applicant mixing buzzwords with a concrete alert-rule fix and result; realistic.</p></div>
+</details>
+
+<details><summary><span class="mono">R16</span> · sv ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>Ett växande grossistföretag hade vuxit ur sina redovisningsrutiner. Fakturor från 4 dotterbolag bokfördes på olika sätt, avstämningsdifferenser fördes vidare månad efter månad, månadsbokslutet drog ut på tiden och cheferna litade inte längre på siffrorna bakom sina budgetar.</p><p dir="auto"><span class="box">did</span>Jag fascineras av automation och tror att digital ekonomiförvaltning kommer att förändra hur företag skapar värde. Jag stöttade avdelningscheferna med deras budgetsiffror under planeringsperioden. Jag deltog i månadsbokslutet och tog fram flera av bokslutsrapporterna.</p><p dir="auto"><span class="box">differently</span>Jag skulle dokumentera varje ny rutin så snart den är överenskommen, så att kolleger kan täcka upp för mig under semestrar. Jag förlitade mig för mycket på att förklara saker muntligt.</p><p dir="auto"><span class="box">next</span>Härnäst vill jag gå vidare mot ekonomisk planering och rapportering, helst i en roll som kombinerar arbete med siffror och nära samarbete med olika avdelningar. Jag söker en roll där jag arbetar på plats med teamet varje dag.</p>
+  <p class="muted">annotator_a: Junior finance staff supporting budgets and month-end close; vague but realistic.</p><p class="muted">annotator_b: Finance assistant with modest contributions and some buzzwords, aiming at planning; typical.</p></div>
+</details>
+
+<details><summary><span class="mono">R17</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>At a building-materials supplier, customer and sales data were scattered across an old CRM, the invoicing system and personal Excel files, so preparing any overview or estimate took days of manual copying.</p><p dir="auto"><span class="box">did</span>I updated the staff intranet news page every week and collected photos and stories from different departments. I matched customer records from the CRM, the webshop and the invoicing system using fuzzy matching in Python, removing 870 duplicates and delivering a unified customer register within 10 weeks. I helped with the new reporting dashboard for a while and took part in several meetings about it.</p><p dir="auto"><span class="box">differently</span>I would agree on clear priorities and a realistic schedule with my manager at the start, and raise problems sooner instead of trying to fix everything alone.</p><p dir="auto"><span class="box">next</span>Next, I would like to join a team that values data quality and good documentation, where I can learn from experienced colleagues and gradually take on more responsibility. I would prefer a hybrid arrangement, with a few days a week on site.</p>
+  <p class="muted">annotator_a: Mixed communications and data role at small supplier; plausible combination.</p><p class="muted">annotator_b: Data-quality contribution plus intranet and helper duties; plausible mixed workload.</p></div>
+</details>
+
+<details><summary><span class="mono">R18</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>In a mid-size software company, the support queue kept growing, the same questions arrived again and again, and account managers had little time left to follow up with existing business customers.</p><p dir="auto"><span class="box">did</span>I believe knowledge is power, and I am passionate about empowering customers through seamless self-service experiences. I am a customer-obsessed, solution-oriented professional who thrives on creating exceptional experiences and lasting value. I am a results-driven relationship builder with a growth mindset, passionate about creating win-win partnerships.</p><p dir="auto"><span class="box">differently</span>I would document my decisions and agreements as I go, so that colleagues covering for me during holidays would not need to call me with questions.</p><p dir="auto"><span class="box">next</span>I want to work in customer service or account management, where I can solve customers&#39; problems and build long-term relationships with them. I prefer working on site with the team every day.</p>
+  <p class="muted">annotator_a: Purely generic self-promotion with no actions; weak evidence, but real applicants write this.</p><p class="muted">annotator_b: Pure self-branding with no concrete action is weak but common in real applications, especially with AI help.</p></div>
+</details>
+
+<details><summary><span class="mono">R19</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill fail">B: implausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>At a business services company, customer requests came in by email, phone and chat with no shared view, so cases sat waiting, answers varied between agents and long-standing customers felt forgotten.</p><p dir="auto"><span class="box">did</span>I managed parking permits and access cards for new employees at our office. I coordinated our office move and labelled all boxes and cables for 30 employees.</p><p dir="auto"><span class="box">differently</span>I would ask customers for feedback earlier and share it with the whole team every week, instead of collecting everything and presenting it only at the end.</p><p dir="auto"><span class="box">next</span>Next, I would like to join a team that values data quality and good documentation, where I can learn from experienced colleagues and gradually take on more responsibility. I would prefer a hybrid arrangement, with a few days a week on site.</p>
+  <p class="muted">annotator_a: Office-admin career changer; boxes loosely connected, but one person could plausibly write all four.</p><p class="muted">annotator_b: Office-move tasks, a customer-feedback reflection and a data-quality goal describe unrelated roles; the four boxes do not cohere.</p></div>
+</details>
+
+<details><summary><span class="mono">R20</span> · en ·
+  <span class="pill pass">A: plausible</span> <span class="pill pass">B: plausible</span> </summary>
+  <div class="story" style="padding:8px 0 12px"><p dir="auto"><span class="box">problem</span>In finance team of a mid-size service company, the month-end work was piling up all the time. Bank lines were matched by hand in Excel, department budgets came late and closing reports were often a week late.</p><p dir="auto"><span class="box">did</span>I am finance enthusiast and very detail oriented. I like to give value with accuracy, integrity and strategic thinking. The controlling team made a shared budget calendar with fixed review dates for all 5 departments. The yearly budget was ready on time. I wrote a Python script, it compares the bank transaction file with ledger postings every night and lists the differences. It replaced the manual bank reconciliation which took 6 hours every week.</p><p dir="auto"><span class="box">differently</span>I would write down every new routine when it is agreed, so colleagues can cover me in holidays. I explained too much just face to face.</p><p dir="auto"><span class="box">next</span>Next I want to go towards financial planning and reporting. Best is a role where I work with numbers and also close with different departments. Hybrid is best for me, some days office some days home.</p>
+  <p class="muted">annotator_a: Finance staff with reconciliation script and generic opener; coherent and realistic.</p><p class="muted">annotator_b: Finance enthusiast statements plus a specific Python reconciliation script with measurable time saving; realistic.</p></div>
+</details>
+
+
+</div>
+
+<h2>pytest -m hard</h2>
+<div class="card">
+<div class="mono"><span class="pill pass">PASS</span> test_schema_validity[companies.json-company]</div><div class="mono"><span class="pill pass">PASS</span> test_schema_validity[needs.json-need_card]</div><div class="mono"><span class="pill pass">PASS</span> test_schema_validity[jobseekers.json-jobseeker]</div><div class="mono"><span class="pill pass">PASS</span> test_schema_validity[identities.json-identity]</div><div class="mono"><span class="pill pass">PASS</span> test_schema_validity[attributes.json-attributes]</div><div class="mono"><span class="pill pass">PASS</span> test_story_boxes_within_120_words</div><div class="mono"><span class="pill pass">PASS</span> test_need_skill_uris_exist_in_esco_cache</div><div class="mono"><span class="pill pass">PASS</span> test_pii_scanner_positive_control</div><div class="mono"><span class="pill pass">PASS</span> test_no_real_pii_anywhere</div><div class="mono"><span class="pill pass">PASS</span> test_identity_leak_detector_positive_control</div><div class="mono"><span class="pill pass">PASS</span> test_matching_records_carry_no_identity</div><div class="mono"><span class="pill pass">PASS</span> test_reproducible</div><div class="mono"><span class="pill pass">PASS</span> test_quotas_match_preregistration</div><div class="mono"><span class="pill pass">PASS</span> test_planted_cases_exist</div><div class="mono"><span class="pill pass">PASS</span> test_golden_set_complete</div><div class="mono"><span class="pill pass">PASS</span> test_golden_set_frozen_to_its_items</div><div class="mono"><span class="pill pass">PASS</span> test_units_are_exact_substrings_with_offsets</div><div class="mono"><span class="pill pass">PASS</span> test_unit_skill_uris_exist_in_esco_cache</div><div class="mono"><span class="pill pass">PASS</span> test_every_pool_story_extracted_and_planted_thin_flagged</div><div class="mono"><span class="pill pass">PASS</span> test_embedding_deterministic_and_version_logged</div><div class="mono"><span class="pill pass">PASS</span> test_embedded_inputs_carry_no_identity</div><div class="mono"><span class="pill pass">PASS</span> test_judge_quotes_are_exact_substrings_of_their_unit</div><div class="mono"><span class="pill pass">PASS</span> test_injection_never_raises_a_label</div><div class="mono"><span class="pill pass">PASS</span> test_injection_at_judge_level_never_raises_a_label</div><div class="mono"><span class="pill pass">PASS</span> test_lens_deterministic_over_100_rebuilds</div><div class="mono"><span class="pill pass">PASS</span> test_no_numeric_score_or_rank_in_lens_payload</div><div class="mono"><span class="pill pass">PASS</span> test_no_auto_exclusion_when_everything_is_none</div><div class="mono"><span class="pill pass">PASS</span> test_every_tier_is_explained</div><div class="mono"><span class="pill pass">PASS</span> test_no_strong_where_consensus_is_stretch_or_none</div><div class="mono"><span class="pill pass">PASS</span> test_proof_page_carries_no_candidate_identity</div>
+</div>
+</main>
+</body>
+</html>

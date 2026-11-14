@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I started vibration measuring on the 12 most critical conveyor motors and I set limits when the bearings must be changed. Unplanned stops on the line went down 30% in next 6 months.",
+    "skills": [
+     "S33",
+     "S40",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I helped the automation engineer when the packing line was upgraded, and I helped with testing when they asked.",
+    "skills": [
+     "S03"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "The quality team wrote new final inspection criteria, with photos of OK and not OK welds. Defect rate in final inspection went down 40% in 6 months.",
+    "skills": [
+     "S09",
+     "S29"
+    ]
+   }
+  ]
+ }
+}

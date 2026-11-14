@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-002/o1",
+    "label": "supported",
+    "unit_id": "J-118~polished.u1",
+    "quote": "Täsmäytin CRM:n, verkkokaupan ja laskutusjärjestelmän asiakastietueet Pythonilla sumealla täsmäytyksellä, poistin 870 duplikaattia",
+    "reason": "Personally merged three systems' customer data with Python, removing 870 duplicates."
+   },
+   {
+    "key": "N-002/o2",
+    "label": "partial",
+    "unit_id": "J-118~polished.u2",
+    "quote": "Autoin jonkin aikaa uuden raportointikojelaudan kanssa",
+    "reason": "Helped with a dashboard, but no method or result given."
+   },
+   {
+    "key": "N-002/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No forecasting work mentioned."
+   },
+   {
+    "key": "N-017/o1",
+    "label": "partial",
+    "unit_id": "J-118~polished.u2",
+    "quote": "Autoin jonkin aikaa uuden raportointikojelaudan kanssa",
+    "reason": "Helped with a dashboard, but no method or result given."
+   },
+   {
+    "key": "N-017/o2",
+    "label": "supported",
+    "unit_id": "J-118~polished.u1",
+    "quote": "Täsmäytin CRM:n, verkkokaupan ja laskutusjärjestelmän asiakastietueet Pythonilla sumealla täsmäytyksellä, poistin 870 duplikaattia",
+    "reason": "Personally merged three systems' customer data with Python, removing 870 duplicates."
+   },
+   {
+    "key": "N-017/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Customer record matching is not bank or ledger reconciliation."
+   },
+   {
+    "key": "N-024/o1",
+    "label": "supported",
+    "unit_id": "J-118~polished.u1",
+    "quote": "Täsmäytin CRM:n, verkkokaupan ja laskutusjärjestelmän asiakastietueet Pythonilla sumealla täsmäytyksellä, poistin 870 duplikaattia",
+    "reason": "Personally merged three systems' customer data with Python, removing 870 duplicates."
+   },
+   {
+    "key": "N-024/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No forecasting work mentioned."
+   },
+   {
+    "key": "N-024/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling mentioned."
+   }
+  ]
+ }
+}

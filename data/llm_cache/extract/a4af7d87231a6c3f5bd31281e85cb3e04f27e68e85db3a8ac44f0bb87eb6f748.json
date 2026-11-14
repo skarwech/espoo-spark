@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Tein WMS:ään ABC-analyysin ja päivittäisen puuteraportin, ja sovin viikkotoimitukset 6 tärkeimmän toimittajan kanssa. Puuttuvat rivit meni 90:stä 55:een viikossa.",
+    "skills": [
+     "S27",
+     "S31",
+     "S42"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Olin ERP-projektissa edellisessä työpaikassa ja testasin vähän näkymiä ennen käyttöönottoa.",
+    "skills": [
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jakelureitit suunniteltiin uusiksi uudessa kuljetusjärjestelmässä. Autot ajoi ensimmäisen 6 kuukauden aikana 8 % vähemmän kilometrejä.",
+    "skills": [
+     "S35",
+     "S26"
+    ]
+   }
+  ]
+ }
+}

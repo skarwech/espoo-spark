@@ -1,0 +1,35 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Tein C:llä OTA-laiteohjelmistopäivitykset FreeRTOS-anturisolmuille. Käytin A/B-osioita, niin epäonnistunut päivitys palautuu automaattisesti.",
+    "skills": [
+     "S43",
+     "S11",
+     "S13"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Otin sen käyttöön 300 kenttäanturiin 5 kuukaudessa.",
+    "skills": [
+     "S43",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Lisäsin reunayhdyskäytäviin paikallisen puskurin, niin mittaukset tallentuu kun verkko on poikki ja lähtee MQTT:llä uudestaan jälkeenpäin. Kadonneet mittaukset laski 4 %:sta 0,3 %:iin.",
+    "skills": [
+     "S21",
+     "S18"
+    ]
+   }
+  ]
+ }
+}

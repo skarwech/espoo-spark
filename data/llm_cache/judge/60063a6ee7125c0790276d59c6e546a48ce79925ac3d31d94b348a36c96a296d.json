@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-004/o1",
+    "label": "partial",
+    "unit_id": "J-004~ar.u1",
+    "quote": "تولّيتُ التسويات البنكية لفترة من الوقت وبحثتُ عن طرق لتسريعها",
+    "reason": "Handled bank reconciliations and sought speed-ups; no automation method or result."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "partial",
+    "unit_id": "J-004~ar.u3",
+    "quote": "دعمتُ رؤساء الأقسام فيما يخص أرقام موازناتهم",
+    "reason": "Supported department budgets, but did not run the process; no method or result."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "partial",
+    "unit_id": "J-004~ar.u2",
+    "quote": "أعددتُ عددًا من تقارير الإقفال",
+    "reason": "Prepared closing reports manually; no dashboard or self-service work."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "partial",
+    "unit_id": "J-004~ar.u2",
+    "quote": "شاركتُ في إقفال نهاية الشهر",
+    "reason": "Participated in month-end close; no shortening method or result."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "partial",
+    "unit_id": "J-004~ar.u3",
+    "quote": "دعمتُ رؤساء الأقسام فيما يخص أرقام موازناتهم",
+    "reason": "Supported department budgets, but did not run the process; no method or result."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "partial",
+    "unit_id": "J-004~ar.u1",
+    "quote": "تولّيتُ التسويات البنكية لفترة من الوقت وبحثتُ عن طرق لتسريعها",
+    "reason": "Handled bank reconciliations and sought speed-ups; no automation method or result."
+   }
+  ]
+ }
+}

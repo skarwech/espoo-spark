@@ -1,0 +1,25 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Vedin viikoittaisen 15 minuutin palaverin, jossa molemmat yksiköt sovittivat yhteen hoitosuunnitelmansa ja jakoivat henkilöstöä, ja seurasin avoimia vuoroja jaetussa Excel-taulukossa.",
+    "skills": [
+     "S07",
+     "S34"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Tuin kollegoita uuden sähköisen potilastietojärjestelmän käytössä sen käyttöönoton aikana.",
+    "skills": [
+     "S45"
+    ]
+   }
+  ]
+ }
+}

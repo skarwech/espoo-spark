@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-004/o1",
+    "label": "partial",
+    "unit_id": "J-004.u1",
+    "quote": "I handled bank reconciliations for some time and looked for ways to make them quicker",
+    "reason": "Did reconciliations personally, but no automation method or result given."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "partial",
+    "unit_id": "J-004.u3",
+    "quote": "I supported department heads with their budget figures",
+    "reason": "Supported budgeting, but did not run the process; no method or result."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "partial",
+    "unit_id": "J-004.u2",
+    "quote": "prepared several of the closing reports",
+    "reason": "Prepared reports, but no dashboard or self-service replacement mentioned."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "partial",
+    "unit_id": "J-004.u2",
+    "quote": "I took part in the month-end close",
+    "reason": "Took part in the close, but no shortening effort or result."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "partial",
+    "unit_id": "J-004.u3",
+    "quote": "I supported department heads with their budget figures",
+    "reason": "Supported budgeting, but did not run the process; no method or result."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "partial",
+    "unit_id": "J-004.u1",
+    "quote": "I handled bank reconciliations for some time and looked for ways to make them quicker",
+    "reason": "Did reconciliations personally, but no automation method or result given."
+   }
+  ]
+ }
+}

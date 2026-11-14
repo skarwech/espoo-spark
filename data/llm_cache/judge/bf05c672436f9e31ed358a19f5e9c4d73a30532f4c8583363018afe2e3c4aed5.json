@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "partial",
+    "unit_id": "J-051.u2",
+    "quote": "So false sensor fault alerts dropped 40%",
+    "reason": "Team ('we') tuned thresholds and cut false alerts; no personal role stated."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "partial",
+    "unit_id": "J-051.u1",
+    "quote": "Our remote update reached 150 field sensors",
+    "reason": "Team-built remote firmware update for field sensors; no personal role stated."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case work described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "partial",
+    "unit_id": "J-051.u1",
+    "quote": "Our remote update reached 150 field sensors",
+    "reason": "Remote firmware update shipped by the team; individual role unclear."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "partial",
+    "unit_id": "J-051.u3",
+    "quote": "Lost readings dropped under 0.8%",
+    "reason": "Pipeline met loss target, but passive voice gives no personal role."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work described."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "partial",
+    "unit_id": "J-051.u2",
+    "quote": "So false sensor fault alerts dropped 40%",
+    "reason": "Team reduced false alerts with new thresholds; no personal role stated."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "partial",
+    "unit_id": "J-051.u3",
+    "quote": "Lost readings dropped under 0.8%",
+    "reason": "Loss under 1% achieved, but passive voice gives no personal role."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support or Finnish language evidence."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "partial",
+    "unit_id": "J-051.u3",
+    "quote": "Lost readings dropped under 0.8%",
+    "reason": "Data flow met loss target; no personal role stated."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "partial",
+    "unit_id": "J-051.u2",
+    "quote": "So false sensor fault alerts dropped 40%",
+    "reason": "Team cut false alerts 40%; no personal role stated."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "partial",
+    "unit_id": "J-051.u2",
+    "quote": "So false sensor fault alerts dropped 40%",
+    "reason": "Team reduced false alerts via grouping and thresholds; no personal role."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "partial",
+    "unit_id": "J-051.u3",
+    "quote": "Lost readings dropped under 0.8%",
+    "reason": "MQTT pipeline under 1% loss; passive voice, no personal role."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work described."
+   }
+  ]
+ }
+}

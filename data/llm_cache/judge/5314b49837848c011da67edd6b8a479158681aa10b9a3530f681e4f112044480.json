@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "partial",
+    "unit_id": "J-090.u2",
+    "quote": "ساعدت زملائي في نظام السجلات الإلكتروني الجديد",
+    "reason": "Helped colleagues with new electronic records system; no method or result."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "partial",
+    "unit_id": "J-090.u1",
+    "quote": "ساعدت في زيارات الرعاية المنزلية",
+    "reason": "Assisted with home care visits; no method or result given."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case work described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "partial",
+    "unit_id": "J-090.u2",
+    "quote": "ساعدت زملائي في نظام السجلات الإلكتروني الجديد",
+    "reason": "Helped colleagues with new electronic records system; no method or result."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "supported",
+    "unit_id": "J-090.u3",
+    "quote": "جهزت جدول المناوبات لـ 6 أسابيع للوحدتين",
+    "reason": "Personally planned shifts for two units; overtime dropped 35%."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "partial",
+    "unit_id": "J-090.u1",
+    "quote": "ساعدت في زيارات الرعاية المنزلية",
+    "reason": "Assisted with home care visits; no method or result given."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "partial",
+    "unit_id": "J-090.u2",
+    "quote": "ساعدت زملائي في نظام السجلات الإلكتروني الجديد",
+    "reason": "Helped colleagues with new electronic records system; no method or result."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "partial",
+    "unit_id": "J-090.u1",
+    "quote": "ساعدت في زيارات الرعاية المنزلية",
+    "reason": "Assisted with home care visits; no method or result given."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "supported",
+    "unit_id": "J-090.u3",
+    "quote": "جهزت جدول المناوبات لـ 6 أسابيع للوحدتين",
+    "reason": "Personally planned shifts for two units; overtime dropped 35%."
+   }
+  ]
+ }
+}

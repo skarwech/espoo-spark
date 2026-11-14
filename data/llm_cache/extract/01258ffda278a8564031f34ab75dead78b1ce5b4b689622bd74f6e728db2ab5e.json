@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Otin käyttöön värähtelymittaukset 12 kriittisimmässä kuljetinmoottorissa ja määritin laakereille vaihtorajat. Linjan suunnittelemattomat seisokit vähenivät 30 % seuraavien 6 kuukauden aikana.",
+    "skills": [
+     "S33",
+     "S40"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Otin koneistussolussa käyttöön SPC-kortit 4 kriittiselle mitalle ja koulutin operaattorit pysäyttämään linjan, kun prosessi karkaa hallinnasta. Lopputarkastuksen hylkäykset laskivat 6 %:sta 2,5 %:iin.",
+    "skills": [
+     "S29",
+     "S41"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Avustin automaatioinsinööriä pakkauslinjan uudistuksessa ja autoin testauksessa tarvittaessa.",
+    "skills": [
+     "S03"
+    ]
+   }
+  ]
+ }
+}

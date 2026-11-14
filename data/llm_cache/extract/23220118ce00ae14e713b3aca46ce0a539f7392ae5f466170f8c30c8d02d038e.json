@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag jämförde 3 månaders fellarm med underhållets arbetsordrar för att se vilka som var äkta.",
+    "skills": [
+     "S31"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag satte separata gränsvärden för varje sensormodell, och de falska larmen per vecka sjönk från 140 till 45.",
+    "skills": [
+     "S30",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag införde signerade firmwareavbilder och en stegvis utrullningsplan som började med 10 testenheter och utökades till 50 före hela enhetsbeståndet. Alla 400 sensorer uppdaterades på distans utan några platsbesök.",
+    "skills": [
+     "S43",
+     "S21"
+    ]
+   }
+  ]
+ }
+}

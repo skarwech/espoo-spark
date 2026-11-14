@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-007/o1",
+    "label": "partial",
+    "unit_id": "J-091~ar.u1",
+    "quote": "بنينا REST API للشركاء مع تسجيل دخول OAuth",
+    "reason": "Partner API with OAuth and 99.8% uptime, but 'we' not personal role."
+   },
+   {
+    "key": "N-007/o2",
+    "label": "partial",
+    "unit_id": "J-091~ar.u2",
+    "quote": "الفريق أعدّ تشغيل ليلي لاختبارات الانحدار بـ Cypress",
+    "reason": "Team set up Cypress regression runs; no personal role stated."
+   },
+   {
+    "key": "N-007/o3",
+    "label": "supported",
+    "unit_id": "J-091~ar.u3",
+    "quote": "نقلتُ 8 خدمات محلية إلى Azure بـ Terraform",
+    "reason": "Personally migrated 8 services to Azure, 5 months, no downtime."
+   },
+   {
+    "key": "N-009/o1",
+    "label": "partial",
+    "unit_id": "J-091~ar.u1",
+    "quote": "بنينا REST API للشركاء مع تسجيل دخول OAuth",
+    "reason": "Partner API with OAuth and 99.8% uptime, but 'we' not personal role."
+   },
+   {
+    "key": "N-009/o2",
+    "label": "supported",
+    "unit_id": "J-091~ar.u3",
+    "quote": "نقلتُ 8 خدمات محلية إلى Azure بـ Terraform",
+    "reason": "Personally migrated 8 services to Azure, 5 months, no downtime."
+   },
+   {
+    "key": "N-009/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about resolving customer support cases."
+   },
+   {
+    "key": "N-013/o1",
+    "label": "partial",
+    "unit_id": "J-091~ar.u1",
+    "quote": "بنينا REST API للشركاء مع تسجيل دخول OAuth",
+    "reason": "Partner API with OAuth and 99.8% uptime, but 'we' not personal role."
+   },
+   {
+    "key": "N-013/o2",
+    "label": "supported",
+    "unit_id": "J-091~ar.u3",
+    "quote": "نقلتُ 8 خدمات محلية إلى Azure بـ Terraform",
+    "reason": "Personally migrated 8 services to Azure, 5 months, no downtime."
+   },
+   {
+    "key": "N-013/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about warehouse-ERP data integration."
+   },
+   {
+    "key": "N-016/o1",
+    "label": "partial",
+    "unit_id": "J-091~ar.u2",
+    "quote": "الفريق أعدّ تشغيل ليلي لاختبارات الانحدار بـ Cypress",
+    "reason": "Team set up Cypress regression runs; no personal role stated."
+   },
+   {
+    "key": "N-016/o2",
+    "label": "partial",
+    "unit_id": "J-091~ar.u1",
+    "quote": "بنينا REST API للشركاء مع تسجيل دخول OAuth",
+    "reason": "Partner API with OAuth and 99.8% uptime, but 'we' not personal role."
+   },
+   {
+    "key": "N-016/o3",
+    "label": "supported",
+    "unit_id": "J-091~ar.u3",
+    "quote": "نقلتُ 8 خدمات محلية إلى Azure بـ Terraform",
+    "reason": "Personally migrated 8 services to Azure, 5 months, no downtime."
+   },
+   {
+    "key": "N-025/o1",
+    "label": "partial",
+    "unit_id": "J-091~ar.u2",
+    "quote": "الفريق أعدّ تشغيل ليلي لاختبارات الانحدار بـ Cypress",
+    "reason": "Team set up Cypress regression runs; no personal role stated."
+   },
+   {
+    "key": "N-025/o2",
+    "label": "supported",
+    "unit_id": "J-091~ar.u3",
+    "quote": "نقلتُ 8 خدمات محلية إلى Azure بـ Terraform",
+    "reason": "Personally migrated 8 services to Azure, 5 months, no downtime."
+   },
+   {
+    "key": "N-025/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about edge device data streams."
+   }
+  ]
+ }
+}

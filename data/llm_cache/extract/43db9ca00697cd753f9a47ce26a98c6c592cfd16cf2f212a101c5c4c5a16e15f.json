@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Kalanruotoanalyysillä löysin, että toistuvat maalivirheet lopputarkastuksessa tuli kuivauskopin kosteudesta. Lisäsin kosteustarkistuksen käynnistysrutiiniin. Maalihylkäykset väheni 55 %.",
+    "skills": [
+     "S29",
+     "S09"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Laitoin täyttölinjan loppuun pneumaattisen työntimen ja pinoamispöydän ja kirjoitin PLC-sekvenssin, joka laittaa pakkaukset ryhmissä laatikoihin. Käsin työvaihe 45 minuuttia per vuoro jäi pois.",
+    "skills": [
+     "S37",
+     "S03"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark Match Lens</title>
+<style>
+{{ css|safe }}
+mark { background: var(--mark); color: inherit; padding: 0 2px; border-radius: 3px; }
+.tier { font-size: 13px; font-weight: 650; padding: 2px 10px; border-radius: 999px; background: var(--line); white-space: nowrap; }
+.tier.strong { color: var(--good); background: var(--good-bg); } .tier.worth { color: var(--series-1); background: var(--bg); border: 1px solid var(--series-1); }
+.tier.stretch { color: var(--proxy); background: var(--proxy-bg); } .tier.none { color: var(--ink-2); }
+.lbl.adjacent { color: var(--series-1); }
+.unit { font-size: 13px; color: var(--ink-2); }
+.note { display: block; color: var(--ink-3); font-size: 12px; margin-top: 2px; }
+.tiers { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin: 4px 0 8px; font-size: 13px; color: var(--ink-2); }
+.flag { font-weight: 650; color: var(--bad); }
+</style>
+</head>
+<body>
+<main>
+<h1>Spark · Step 2 · Match Lens engine (F4–F7){% if v1 %} · amended run A1{% endif %}</h1>
+<p class="sub">Evidence units → multilingual retrieval → structured judge → fixed tier rules. No match score is shown to anyone; retrieval
+similarity is used internally only to pick each outcome's top 3 units. Every tier is explained by quotes or a stated reason. Method
+pre-registered in <span class="mono">docs/method.md §6</span>; changes made after results are listed in its dated note.</p>
+{% if v1 %}<div class="card" style="margin-bottom:8px"><h3>Registered run (v1) and amendment A1 (v2)</h3>
+<p class="muted" style="margin:0">This page shows the amended run v2: ESCO descriptions in the extraction prompt (A1.1), the §1 rule-(c)
+example in the judge prompt (A1.2), and no adjacency through hub skills (A1.3). The registered run v1 stays the registered result and is
+shown beside it. Thresholds did not move. A1 was motivated by v1's golden-set results, so v2 numbers on the golden set are optimistic.
+Hub skills under A1.3 (tagged on more than 1/8 of pool units): <b>{{ hubs|join(', ') if hubs else 'none' }}</b>.
+{% if v1_missed %}Missed in v1: {{ v1_missed|join('; ') }}.{% endif %}</p></div>{% endif %}
+
+{% if a1 and not v1 %}<div class="card" style="margin-bottom:8px"><h3>Amendment A1: attempted, not completed</h3>
+<p class="muted" style="margin:0 0 6px">{{ a1.status }} Preliminary pool-wide results, reported as they came out (no golden-set or F7
+result exists for A1):</p>
+<div class="scroll"><table><tr><th>Measure</th><th>Registered v1</th><th>A1 (partial)</th><th>Threshold</th></tr>
+{% for name, x in a1.measures.items() %}<tr><td>{{ name }}</td><td>{{ '%.0f'|format(100 * x.v1) }}%</td><td>{{ '%.0f'|format(100 * x.value) }}%{% if x.value < x.threshold %} <span class="flag">below</span>{% endif %}</td><td class="kind">≥ {{ '%.0f'|format(100 * x.threshold) }}%</td></tr>{% endfor %}
+</table></div>
+<p class="muted" style="margin:6px 0 0">A1.1 (ESCO descriptions in the extraction prompt) raised precision a little and cost recall more. Hub skills under A1 tags: {{ a1.hubs|join(', ') }}.</p></div>{% endif %}
+
+<h2>Hard gates</h2>
+{% if stale %}<div class="card" style="margin-bottom:12px"><span class="pill pending">STALE</span> Gate statuses predate the current engine outputs or tests; run <span class="mono">make verify</span>.</div>{% endif %}
+<div class="card scroll"><table>
+<tr><th>Check</th><th>Status</th></tr>
+{% for label, s in gates %}<tr><td>{{ label }}</td><td><span class="pill {{ s }}">{{ s|upper }}</span></td></tr>{% endfor %}
+</table></div>
+
+<h2>Targets</h2>
+<div class="card scroll"><table>
+<tr><th>Target</th><th>Kind</th><th>Status</th><th>Value</th>{% if v1 %}<th>Registered v1</th>{% endif %}</tr>
+{% for name, t in targets.items() %}<tr><td>{{ name }}</td><td class="kind">{{ t.kind }}</td>
+  <td>{% if t.kind == 'sensitivity' %}<span class="kind">no threshold</span>
+      {% elif t.pass is none %}<span class="pill pending">N/A</span>
+      {% elif not t.pass %}<span class="pill fail">MISSED</span>
+      {% elif t.kind == 'proxy' %}<span class="pill proxy">PROXY · HUMAN PENDING</span>
+      {% else %}<span class="pill pass">MET</span>{% endif %}</td>
+  <td class="muted">{% if t.value is not none %}{{ '%.0f'|format(100 * t.value) }}%{% else %}n/a{% endif %}{% if t.threshold is not none %} ({{ t.op }} {{ '%.0f'|format(100 * t.threshold) }}%){% endif %}, n = {{ t.n }}{% if t.ci %}, 95% CI {{ '%.0f'|format(100 * t.ci[0]) }}–{{ '%.0f'|format(100 * t.ci[1]) }}%{% endif %}{% if t.kind == 'proxy' %}{{ ' · meets threshold on proxy labels' if t.pass else ' · proxy, human labels pending' }}{% endif %}
+    {% if t.note %}<span class="note">{{ t.note }}</span>{% endif %}</td>
+  {% if v1 %}{% set o = v1.get(name) %}<td class="muted">{% if o and o.value is not none %}{{ '%.0f'|format(100 * o.value) }}%, n = {{ o.n }}{% if o.pass is false %} · <span class="flag">missed</span>{% endif %}{% else %}—{% endif %}</td>{% endif %}</tr>{% endfor %}
+</table>
+<p class="muted">Kind <b>proxy</b>: the reference is AI-proxy annotator consensus or planted labels, so the result is never shown as green
+(method.md, condition kinds). Kind <b>sensitivity</b>: reported for context, without a threshold. 95% CIs: bootstrap, 2,000 resamples,
+seed 11 (method.md §3), items resampled independently.</p></div>
+{% if meta %}<p class="muted">{{ n_stories }} stories → {{ n_units }} evidence units · {{ meta.llm_calls }} uncached LLM calls, ${{ meta.llm_usd }} spent · served by {{ meta.served_by|join(', ') }} · {{ meta.refusals }} refusals · {{ meta.units_invalid_dropped }} non-verbatim units dropped · {{ meta.judge_rejected }} judge items rejected · embeddings {{ meta.embedding }}{% if meta.tokens %} · tokens: {{ meta.tokens.input_tokens }} input, {{ meta.tokens.output_tokens }} output, {{ meta.tokens.cache_read_input_tokens }} cache read, {{ meta.tokens.cache_creation_input_tokens }} cache write{% endif %}</p>{% endif %}
+
+{% if missed %}<h2>Missed targets and mitigation</h2>
+{% for name, t in missed.items() %}<div class="card" style="margin-bottom:12px">
+  <h3>{{ name }} · <span class="flag">missed</span>: {{ '%.0f'|format(100 * t.value) }}% against {{ t.op }} {{ '%.0f'|format(100 * t.threshold) }}% (n = {{ t.n }}{% if t.ci %}, 95% CI {{ '%.0f'|format(100 * t.ci[0]) }}–{{ '%.0f'|format(100 * t.ci[1]) }}%{% endif %})</h3>
+  {% if t.note %}<p class="muted" style="margin:0 0 6px">{{ t.note }}</p>{% endif %}
+  <p style="margin:0">{{ t.mitigation }}</p>
+</div>{% endfor %}{% endif %}
+
+<h2>Match Lens · NordSense (N-014) × the three running-example candidates</h2>
+<p class="muted">Candidates are shown by id and a persona from the challenge's running example; no name, nationality or school is shown.</p>
+{% for h in heroes %}
+<div class="card" style="margin-bottom:16px">
+  <h3>{{ h.cid }} · {{ h.persona }}{% if h.thin %} <span class="pill pending">thin story: human follow-up</span>{% endif %}</h3>
+  <div class="tiers">
+    <span>Engine{% if v1 %} (v2){% endif %}: <span class="tier {{ h.pair.tier }}">{{ h.pair.tier_label }}</span></span>
+    {% if h.v1 %}<span>Registered v1: <span class="tier {{ h.v1 }}">{{ tier_text[h.v1] }}</span></span>{% endif %}
+    <span>Spec expects: <span class="tier {{ h.expected }}">{{ tier_text[h.expected] }}</span>{% if h.vs_spec != 'agrees' %} <span class="flag">≠ {{ h.vs_spec }}</span>{% endif %}</span>
+    {% if h.consensus %}<span>Annotator consensus: <span class="tier {{ h.consensus }}">{{ tier_text[h.consensus] }}</span>{% if h.vs_consensus != 'agrees' %} <span class="flag">≠ {{ h.vs_consensus }}</span>{% endif %}</span>{% endif %}
+  </div>
+  <p class="muted" style="margin:0 0 8px">{{ h.pair.why }} · {{ h.n_units }} evidence unit{{ 's' if h.n_units != 1 }}</p>
+  <div class="scroll"><table>
+    <tr><th>Outcome</th><th>Prio</th><th>Engine</th><th>Consensus</th><th>Evidence (quote highlighted inside its unit)</th><th>Why</th></tr>
+    {% for r in h.rows %}<tr><td>{{ r.outcome }}</td><td class="kind">{{ r.priority }}</td><td><span class="lbl {{ r.support }}">{{ r.support }}</span></td>
+      <td><span class="lbl {{ r.consensus }}">{{ r.consensus }}</span>{% if r.consensus != r.support and r.consensus != '—' and not (r.support == 'adjacent' and r.consensus == 'none') %} <span class="flag">≠</span>{% endif %}</td>
+      <td class="unit" dir="auto">{% if r.parts[1] %}{{ r.parts[0] }}<mark>{{ r.parts[1] }}</mark>{{ r.parts[2] }}{% elif r.path %}{{ r.parts[0] }}{% else %}—{% endif %}</td>
+      <td class="muted">{% if r.path %}Judge: {{ r.judge_reason }}<span class="note">Adjacent skill path: {{ r.path.from }} ({{ r.path.relation }}) {{ r.path.to }}, from unit {{ r.path.unit_id }}</span>{% else %}{{ r.reason }}{% endif %}</td></tr>{% endfor %}
+  </table></div>
+  <p class="muted" style="margin:8px 0 0">≠ marks an engine label that differs from consensus. Annotators do not label adjacency, so <i>adjacent</i> next to consensus <i>none</i> is expected, not flagged.</p>
+</div>
+{% else %}<div class="card"><span class="pill pending">PENDING</span> The engine has not run yet.</div>{% endfor %}
+
+<h2>Golden set: engine tier vs annotator-consensus tier</h2>
+{% if golden %}<div class="card scroll"><table>
+<tr><th>Pair</th><th>Need</th><th>Cand.</th><th>Lang</th><th>Style</th><th>Consensus tier</th><th>Engine tier</th><th>Agreement</th>{% if v1 %}<th>Registered v1</th>{% endif %}</tr>
+{% for g in golden %}<tr class="{{ 'disagree' if g.engine != g.consensus }}"><td class="mono">{{ g.pair_id }}</td><td class="mono">{{ g.need }}</td><td class="mono">{{ g.cand }}</td>
+<td class="mono">{{ g.lang }}</td><td class="kind">{{ g.style }}</td><td><span class="tier {{ g.consensus }}">{{ tier_text[g.consensus] }}</span></td>
+<td><span class="tier {{ g.engine }}">{{ tier_text[g.engine] }}</span></td><td>{% if g.agree == 'agrees' %}agrees{% else %}<span class="flag">≠ {{ g.agree }}</span>{% endif %}</td>{% if v1 %}<td>{% if g.v1 %}<span class="tier {{ g.v1 }}">{{ tier_text[g.v1] }}</span>{% endif %}</td>{% endif %}</tr>{% endfor %}
+</table><p class="muted">Consensus tiers use direct labels only (annotators do not label adjacency, method.md §1); the engine adds ESCO adjacency.</p></div>
+{% else %}<div class="card"><span class="pill pending">PENDING</span></div>{% endif %}
+
+{% if xf %}<h2>Sensitivity X1: non-Claude annotators</h2>
+<div class="card">
+<p class="muted" style="margin:0 0 8px">Both golden annotators and the judge are Claude models. Two other model families blind-labelled the frozen
+golden set with the original instructions: {{ xf.models.kimi }} and {{ xf.models.deepseek }} (Verda Inference). Nothing frozen changed;
+no thresholds apply. These are still AI annotators, not humans.</p>
+<div class="grid">
+<div><h3>Agreement between annotators (Cohen's κ, 60 labels)</h3><table>
+{% for name, x in xf.kappa.items() %}<tr><td>{{ name }}</td><td class="mono">{{ '%.2f'|format(x.kappa) }}</td></tr>{% endfor %}</table></div>
+<div><h3>Judge (registered v1) label accuracy by reference</h3><table>
+{% for name, x in xf['judge v1 (registered)'].items() if name != 'F7 vs cross-family tiers' %}<tr><td>{{ name }}</td><td class="mono">{{ '%.0f'|format(100 * x.accuracy) }}% (n = {{ x.n }})</td></tr>{% endfor %}
+{% set f7 = xf['judge v1 (registered)']['F7 vs cross-family tiers'] %}
+<tr><td>F7 tier agreement vs cross-family tiers</td><td class="mono">exact {{ '%.0f'|format(100 * f7.exact) }}%, within one {{ '%.0f'|format(100 * f7.within_one) }}% (n = {{ f7.n_pairs }} pairs)</td></tr>
+<tr><td>False "supported" vs cross-family reference</td><td class="mono">{{ '%.0f'|format(100 * xf['judge v1 (registered)']['cross-family reference'].false_supported) }}% (n = {{ xf['judge v1 (registered)']['cross-family reference'].false_supported_n }})</td></tr>
+</table></div></div>
+<p class="muted" style="margin:8px 0 0">Cross-family reference = the {{ xf.cross_family_reference.n }} labels where Kimi and DeepSeek agree ({{ xf.cross_family_reference.excluded_disagreements }} excluded).
+Realism: Kimi rated {{ '%.0f'|format(100 * xf.realism_plausible.kimi.share) }}% and DeepSeek {{ '%.0f'|format(100 * xf.realism_plausible.deepseek.share) }}% of the 20 stories plausible.
+{{ xf.cost.calls }} calls, about ${{ xf.cost.usd_estimate }} (Verda list prices).
+Reading: the judge agrees about as well with the non-Claude annotators as with the Claude ones, so F6 is not mainly a same-family effect;
+the F7 miss stays, because it comes from adjacency, not from who labelled.</p>
+</div>{% endif %}
+</main>
+</body>
+</html>

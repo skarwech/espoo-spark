@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I analysed the purchase history of 60 existing customers in Power BI, identified those using only the basic package and contacted them with an upgrade offer; 12 of them upgraded.",
+    "skills": [
+     "S05",
+     "S04",
+     "S23"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I occasionally updated some instructions in the knowledge base.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I helped handle customer support cases as part of the customer service team.",
+    "skills": [
+     "S17"
+    ]
+   }
+  ]
+ }
+}

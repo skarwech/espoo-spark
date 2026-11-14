@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-001/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about growing sales to existing business customers."
+   },
+   {
+    "key": "N-001/o2",
+    "label": "supported",
+    "unit_id": "J-020.u3",
+    "quote": "Kirjoitin niistä ohjeet Confluenceen ja niiden aiheiden toistuvat tiketit väheni 30 % 4 kuukaudessa",
+    "reason": "Personally wrote Confluence guides; repeat tickets fell 30% in 4 months."
+   },
+   {
+    "key": "N-001/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Nothing about how quickly support cases were resolved."
+   },
+   {
+    "key": "N-005/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about growing revenue from existing B2B accounts."
+   },
+   {
+    "key": "N-005/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Nothing about how quickly support cases were resolved."
+   },
+   {
+    "key": "N-005/o3",
+    "label": "supported",
+    "unit_id": "J-020.u3",
+    "quote": "Kirjoitin niistä ohjeet Confluenceen ja niiden aiheiden toistuvat tiketit väheni 30 % 4 kuukaudessa",
+    "reason": "Personally wrote Confluence guides; repeat tickets fell 30% in 4 months."
+   },
+   {
+    "key": "N-020/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about growing sales to existing business customers."
+   },
+   {
+    "key": "N-020/o2",
+    "label": "supported",
+    "unit_id": "J-020.u3",
+    "quote": "Kirjoitin niistä ohjeet Confluenceen ja niiden aiheiden toistuvat tiketit väheni 30 % 4 kuukaudessa",
+    "reason": "Personally wrote Confluence guides; repeat tickets fell 30% in 4 months."
+   },
+   {
+    "key": "N-020/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Nothing about how quickly support cases were resolved."
+   }
+  ]
+ }
+}

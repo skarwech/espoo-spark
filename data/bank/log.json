@@ -1,0 +1,556 @@
+{
+  "domain": "log",
+  "contexts": [
+    {
+      "id": "log.ctx.1",
+      "text": {
+        "en": {
+          "polished": "At a regional wholesale distributor, orders, stock levels and delivery plans lived in separate systems, so problems surfaced only when a shelf was already empty or a van was waiting for goods that had not arrived.",
+          "rough": "In a regional wholesale distributor the orders, stock and delivery plans were in separate systems. Problems came visible only when shelf was already empty or a van was waiting goods that did not come."
+        },
+        "fi": {
+          "polished": "Alueellisella tukkujakelijalla tilaukset, varastosaldot ja jakelusuunnitelmat olivat eri järjestelmissä, joten ongelmat huomattiin vasta, kun hylly oli jo tyhjä tai pakettiauto odotti tavaraa, joka ei ollut saapunut.",
+          "rough": "Alueellisella tukkujakelijalla tilaukset, saldot ja jakelusuunnitelmat oli eri järjestelmissä. Ongelmat näkyi vasta kun hylly oli jo tyhjä tai pakettiauto odotti tavaraa joka ei tullut."
+        },
+        "sv": {
+          "polished": "Hos en regional grossistdistributör fanns order, lagersaldon och leveransplaner i separata system, så problemen upptäcktes först när en hylla redan var tom eller en paketbil väntade på varor som inte hade kommit.",
+          "rough": "Hos en regional grossistdistributör var order, lager och leveransplaner i olika system. Problemen syntes först när hyllan redan var tom eller en paketbil väntade på varor som inte kom."
+        },
+        "ar": {
+          "polished": "لدى موزّع جملة إقليمي، كانت الطلبات ومستويات المخزون وخطط التوصيل في أنظمة منفصلة، فلم تظهر المشكلات إلا عندما يكون الرف فارغًا بالفعل أو تنتظر شاحنة صغيرة بضائع لم تصل.",
+          "rough": "عند موزّع جملة إقليمي، الطلبات والمخزون وخطط التوصيل كانت في أنظمة منفصلة. المشاكل ظهرت فقط عندما صار الرف فارغًا أو شاحنة صغيرة تنتظر بضاعة لم تأتِ."
+        }
+      }
+    },
+    {
+      "id": "log.ctx.2",
+      "text": {
+        "en": {
+          "polished": "During the busy autumn season at a mid-size logistics company, deliveries ran late, popular items kept running out and customer service took daily calls from customers asking where their orders were.",
+          "rough": "In the busy autumn season at a mid-size logistics company, deliveries was late, popular items was out all the time and customer service got calls every day from customers asking where is their order."
+        },
+        "fi": {
+          "polished": "Keskikokoisen logistiikkayrityksen kiireisenä syyskautena toimitukset myöhästyivät, suosituimmat tuotteet loppuivat jatkuvasti ja asiakkaat soittivat asiakaspalveluun päivittäin kysyäkseen, missä heidän tilauksensa olivat.",
+          "rough": "Keskikokoisessa logistiikkafirmassa kiireisenä syksynä toimitukset oli myöhässä, suositut tuotteet oli koko ajan loppu ja asiakkaat soitti asiakaspalveluun joka päivä ja kysyi missä tilaus on."
+        },
+        "sv": {
+          "polished": "Under den hektiska höstsäsongen på ett medelstort logistikföretag blev leveranserna försenade, populära artiklar tog ständigt slut och kundtjänsten fick dagligen samtal från kunder som undrade var deras beställningar var.",
+          "rough": "Under den stressiga hösten på ett medelstort logistikföretag var leveranserna sena, populära artiklar var slut hela tiden och kundtjänst fick samtal varje dag från kunder som frågade var är deras beställning."
+        },
+        "ar": {
+          "polished": "خلال موسم الخريف المزدحم في شركة لوجستية متوسطة الحجم، تأخرت عمليات التوصيل، ونفدت المنتجات الأكثر طلبًا مرارًا، وتلقّت خدمة العملاء يوميًا اتصالات من عملاء يسألون عن مكان طلباتهم.",
+          "rough": "في موسم الخريف المزدحم في شركة لوجستية متوسطة، التوصيل كان متأخرًا، والمنتجات المطلوبة كانت تنفد كل الوقت، وخدمة العملاء تتلقى مكالمات كل يوم من عملاء يسألون أين طلبهم."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "log_routes.supported.1",
+      "archetype": "log_routes",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I redrew the delivery areas for 14 vans in the route planning software using customer locations and time windows, which cut daily driven kilometres by 12% within 4 months.",
+          "rough": "I made new delivery areas for 14 vans in the route planning software, based on customer locations and time windows. Daily kilometres went down 12% in 4 months."
+        },
+        "fi": {
+          "polished": "Piirsin 14 pakettiauton jakelualueet uudelleen reittisuunnitteluohjelmistossa asiakkaiden sijaintien ja aikaikkunoiden perusteella, mikä vähensi päivittäisiä ajokilometrejä 12 % 4 kuukaudessa.",
+          "rough": "Tein 14 pakettiautolle uudet jakelualueet reittisuunnitteluohjelmassa, asiakkaiden sijainnit ja aikaikkunat pohjana. Päivän kilometrit väheni 12 % 4 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag ritade om leveransområdena för 14 paketbilar i ruttplaneringsprogrammet utifrån kundernas geografiska läge och tidsfönster, vilket minskade de dagliga körda kilometrarna med 12 % inom 4 månader.",
+          "rough": "Jag gjorde nya leveransområden för 14 paketbilar i ruttplaneringsprogrammet, enligt var kunderna finns och tidsfönster. Dagliga kilometrar gick ner 12 % på 4 månader."
+        },
+        "ar": {
+          "polished": "أعدتُ رسم مناطق التوصيل لـ 14 شاحنة صغيرة في برنامج تخطيط المسارات بناءً على مواقع العملاء والنوافذ الزمنية، مما خفّض الكيلومترات المقطوعة يوميًا بنسبة 12% خلال 4 أشهر.",
+          "rough": "عملتُ مناطق توصيل جديدة لـ 14 شاحنة صغيرة في برنامج تخطيط المسارات، حسب مواقع العملاء والنوافذ الزمنية. الكيلومترات اليومية نزلت 12% في 4 أشهر."
+        }
+      }
+    },
+    {
+      "id": "log_routes.supported.2",
+      "archetype": "log_routes",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I analysed truck GPS data in Excel, found that 4 morning routes overlapped and redrew them as 3, saving about 90 km of driving per day.",
+          "rough": "I analysed the GPS data of trucks in Excel. I found 4 morning routes was overlapping and made them to 3 routes, it saves about 90 km driving per day."
+        },
+        "fi": {
+          "polished": "Analysoin kuorma-autojen GPS-dataa Excelissä, havaitsin 4 aamureitin menevän päällekkäin ja suunnittelin ne uudelleen 3 reitiksi, mikä säästää noin 90 km ajoa päivässä.",
+          "rough": "Analysoin kuorma-autojen GPS-dataa Excelissä. Huomasin että 4 aamureittiä meni päällekkäin ja tein niistä 3 reittiä, se säästää noin 90 km ajoa päivässä."
+        },
+        "sv": {
+          "polished": "Jag analyserade lastbilarnas GPS-data i Excel, upptäckte att 4 morgonrutter överlappade och ritade om dem till 3, vilket sparar cirka 90 km körning per dag.",
+          "rough": "Jag analyserade GPS-data från lastbilarna i Excel. Jag såg att 4 morgonrutter överlappade och gjorde dem till 3 rutter, det sparar ungefär 90 km körning per dag."
+        },
+        "ar": {
+          "polished": "حلّلتُ بيانات GPS الخاصة بالشاحنات في Excel، واكتشفتُ أن 4 مسارات صباحية متداخلة، فأعدتُ تصميمها في 3 مسارات، مما يوفّر نحو 90 كم من القيادة يوميًا.",
+          "rough": "حلّلتُ بيانات GPS للشاحنات في Excel. وجدتُ أن 4 مسارات صباحية متداخلة وجعلتُها 3 مسارات، وهذا يوفّر تقريبًا 90 كم قيادة كل يوم."
+        }
+      }
+    },
+    {
+      "id": "log_routes.partial.1",
+      "archetype": "log_routes",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The delivery routes were redesigned in a new dispatch system, and the fleet drove 8% fewer kilometres in the first 6 months.",
+          "rough": "The delivery routes were redesigned in a new dispatch system. The fleet drove 8% less kilometres in the first 6 months."
+        },
+        "fi": {
+          "polished": "Jakelureitit suunniteltiin uudelleen uudessa kuljetusten ohjausjärjestelmässä, ja kalusto ajoi ensimmäisten 6 kuukauden aikana 8 % vähemmän kilometrejä.",
+          "rough": "Jakelureitit suunniteltiin uusiksi uudessa kuljetusjärjestelmässä. Autot ajoi ensimmäisen 6 kuukauden aikana 8 % vähemmän kilometrejä."
+        },
+        "sv": {
+          "polished": "Leveransrutterna planerades om i ett nytt dispatchsystem, och fordonsflottan körde 8 % färre kilometer under de första 6 månaderna.",
+          "rough": "Leveransrutterna gjordes om i ett nytt dispatchsystem. Bilarna körde 8 % mindre kilometer de första 6 månaderna."
+        },
+        "ar": {
+          "polished": "أُعيد تصميم مسارات التوصيل في نظام جديد لإدارة الإرسال، وقطع الأسطول كيلومترات أقل بنسبة 8% خلال أول 6 أشهر.",
+          "rough": "تمّ تغيير تصميم مسارات التوصيل في نظام إرسال جديد. الأسطول قطع كيلومترات أقل بـ 8% في أول 6 أشهر."
+        }
+      }
+    },
+    {
+      "id": "log_routes.partial.2",
+      "archetype": "log_routes",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "In my previous role I was involved in route planning and occasionally shared ideas with the dispatcher.",
+          "rough": "In my last job I was involved in route planning and sometimes I gave ideas to the dispatcher."
+        },
+        "fi": {
+          "polished": "Edellisessä roolissani olin mukana reittisuunnittelussa ja jaoin silloin tällöin ideoita ajojärjestelijälle.",
+          "rough": "Edellisessä työssä olin mukana reittisuunnittelussa ja annoin joskus ideoita ajojärjestelijälle."
+        },
+        "sv": {
+          "polished": "I min tidigare roll var jag involverad i ruttplaneringen och delade ibland idéer med transportledaren.",
+          "rough": "På mitt förra jobb var jag med i ruttplanering och ibland jag gav idéer till transportledaren."
+        },
+        "ar": {
+          "polished": "في دوري السابق شاركتُ في تخطيط المسارات، وكنتُ أطرح أفكارًا على مسؤول الإرسال من حين لآخر.",
+          "rough": "في عملي السابق شاركتُ في تخطيط المسارات، وأحيانًا كنتُ أعطي أفكارًا لمسؤول الإرسال."
+        }
+      }
+    },
+    {
+      "id": "log_routes.none.1",
+      "archetype": "log_routes",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a solution-oriented logistics enthusiast, driven by efficiency, sustainability and the future of smart mobility.",
+          "rough": "I am solution oriented logistics enthusiast. Efficiency, sustainability and future of smart mobility drives me."
+        },
+        "fi": {
+          "polished": "Olen ratkaisukeskeinen logistiikkaintoilija, jota motivoivat tehokkuus, kestävyys ja älykkään liikkumisen tulevaisuus.",
+          "rough": "Olen ratkaisukeskeinen logistiikasta innostunut tyyppi. Mua motivoi tehokkuus, kestävyys ja älykkään liikkumisen tulevaisuus."
+        },
+        "sv": {
+          "polished": "Jag är en lösningsorienterad logistikentusiast som drivs av effektivitet, hållbarhet och framtidens smarta mobilitet.",
+          "rough": "Jag är lösningsorienterad logistikentusiast. Effektivitet, hållbarhet och framtiden för smart mobilitet driver mig."
+        },
+        "ar": {
+          "polished": "أنا أركّز على الحلول ولديّ حماس كبير للوجستيات، وتحفّزني الكفاءة والاستدامة ومستقبل التنقل الذكي.",
+          "rough": "أركّز على الحلول وعندي حماس للوجستيات. الكفاءة والاستدامة ومستقبل التنقل الذكي تحفّزني."
+        }
+      }
+    },
+    {
+      "id": "log_routes.none.2",
+      "archetype": "log_routes",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the staff summer party for 60 people and booked the venue and the music.",
+          "rough": "I organized summer party of the staff for 60 people. I booked the place and music."
+        },
+        "fi": {
+          "polished": "Järjestin henkilöstön kesäjuhlat 60 hengelle ja varasin juhlapaikan ja musiikin.",
+          "rough": "Järjestin henkilökunnan kesäbileet 60 ihmiselle. Varasin paikan ja musiikin."
+        },
+        "sv": {
+          "polished": "Jag ordnade personalens sommarfest för 60 personer och bokade lokalen och musiken.",
+          "rough": "Jag ordnade sommarfest för personalen för 60 personer. Jag bokade stället och musik."
+        },
+        "ar": {
+          "polished": "نظّمتُ الحفل الصيفي للموظفين لـ 60 شخصًا، وحجزتُ المكان والموسيقى.",
+          "rough": "نظّمتُ حفلة الصيف للموظفين لـ 60 شخصًا. حجزتُ المكان والموسيقى."
+        }
+      }
+    },
+    {
+      "id": "log_inventory.supported.1",
+      "archetype": "log_inventory",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I recalculated safety stocks and reorder points for 450 fast-moving items using 3 years of demand data in Excel; central warehouse stock-outs fell by 35% in 5 months.",
+          "rough": "I calculated again safety stocks and reorder points for 450 fast moving items with 3 years demand data in Excel. Stock-outs in central warehouse went down 35% in 5 months."
+        },
+        "fi": {
+          "polished": "Laskin uudelleen varmuusvarastot ja tilauspisteet 450 nopeasti kiertävälle nimikkeelle 3 vuoden kysyntädatasta Excelissä; keskusvaraston puutetilanteet vähenivät 35 % 5 kuukaudessa.",
+          "rough": "Laskin uudestaan varmuusvarastot ja tilauspisteet 450 nopeasti kiertävälle nimikkeelle, 3 vuoden kysyntädata Excelissä. Keskusvaraston puutetilanteet väheni 35 % 5 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag räknade om säkerhetslager och beställningspunkter för 450 snabbrörliga artiklar utifrån 3 års efterfrågedata i Excel; bristsituationerna i centrallagret minskade med 35 % på 5 månader.",
+          "rough": "Jag räknade om säkerhetslager och beställningspunkter för 450 snabba artiklar med 3 års efterfrågedata i Excel. Brister i centrallagret gick ner 35 % på 5 månader."
+        },
+        "ar": {
+          "polished": "أعدتُ حساب مخزون الأمان ونقاط إعادة الطلب لـ 450 صنفًا سريع الدوران باستخدام بيانات الطلب لـ 3 سنوات في Excel، فانخفض نفاد المخزون في المستودع المركزي بنسبة 35% خلال 5 أشهر.",
+          "rough": "حسبتُ من جديد مخزون الأمان ونقاط إعادة الطلب لـ 450 صنفًا سريع الحركة ببيانات طلب 3 سنوات في Excel. نفاد المخزون في المستودع المركزي نزل 35% في 5 أشهر."
+        }
+      }
+    },
+    {
+      "id": "log_inventory.supported.2",
+      "archetype": "log_inventory",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I set up an ABC analysis in the WMS and a daily shortage report, and agreed weekly deliveries with 6 key suppliers; missing-item lines dropped from 90 to 55 per week.",
+          "rough": "I made ABC analysis in the WMS and a daily shortage report, and agreed weekly deliveries with 6 main suppliers. Missing item lines went from 90 to 55 per week."
+        },
+        "fi": {
+          "polished": "Rakensin WMS:ään ABC-analyysin ja päivittäisen puuteraportin sekä sovin viikoittaiset toimitukset 6 avaintoimittajan kanssa; puuttuvien rivien määrä laski 90:stä 55:een viikossa.",
+          "rough": "Tein WMS:ään ABC-analyysin ja päivittäisen puuteraportin, ja sovin viikkotoimitukset 6 tärkeimmän toimittajan kanssa. Puuttuvat rivit meni 90:stä 55:een viikossa."
+        },
+        "sv": {
+          "polished": "Jag satte upp en ABC-analys i WMS och en daglig bristrapport, och kom överens om veckoleveranser med 6 nyckelleverantörer; raderna med saknade artiklar minskade från 90 till 55 per vecka.",
+          "rough": "Jag gjorde ABC-analys i WMS och en daglig bristrapport, och kom överens om veckoleveranser med 6 viktiga leverantörer. Saknade rader gick från 90 till 55 per vecka."
+        },
+        "ar": {
+          "polished": "أعددتُ تحليل ABC في نظام WMS وتقريرًا يوميًا للنواقص، واتفقتُ على توريدات أسبوعية مع 6 موردين رئيسيين، فانخفضت بنود الأصناف الناقصة من 90 إلى 55 أسبوعيًا.",
+          "rough": "عملتُ تحليل ABC في WMS وتقرير نواقص يومي، واتفقتُ على توريد أسبوعي مع 6 موردين رئيسيين. بنود الأصناف الناقصة نزلت من 90 إلى 55 في الأسبوع."
+        }
+      }
+    },
+    {
+      "id": "log_inventory.partial.1",
+      "archetype": "log_inventory",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We introduced a min-max replenishment model in SAP, and stock-outs in the central warehouse went down by 30% over the spring.",
+          "rough": "We took in use a min-max replenishment model in SAP. Stock-outs in the central warehouse went down 30% during spring."
+        },
+        "fi": {
+          "polished": "Otimme SAP:ssa käyttöön min-max-täydennysmallin, ja keskusvaraston puutetilanteet vähenivät kevään aikana 30 %.",
+          "rough": "Me otettiin SAP:ssa käyttöön min-max-täydennysmalli. Keskusvaraston puutetilanteet väheni keväällä 30 %."
+        },
+        "sv": {
+          "polished": "Vi införde en min-max-modell för påfyllning i SAP, och bristsituationerna i centrallagret minskade med 30 % under våren.",
+          "rough": "Vi tog i bruk en min-max-modell för påfyllning i SAP. Brister i centrallagret gick ner 30 % på våren."
+        },
+        "ar": {
+          "polished": "طبّقنا نموذج تجديد المخزون بالحد الأدنى والأقصى في SAP، فانخفض نفاد المخزون في المستودع المركزي بنسبة 30% خلال فصل الربيع.",
+          "rough": "بدأنا نستخدم نموذج min-max لتجديد المخزون في SAP. نفاد المخزون في المستودع المركزي نزل 30% في الربيع."
+        }
+      }
+    },
+    {
+      "id": "log_inventory.partial.2",
+      "archetype": "log_inventory",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I supported the purchasing team with stock levels for a while and kept an eye on the shortage lists.",
+          "rough": "I helped the purchasing team with stock levels some time and I followed the shortage lists."
+        },
+        "fi": {
+          "polished": "Tuin jonkin aikaa ostotiimiä varastotasojen kanssa ja seurasin puutelistoja.",
+          "rough": "Autoin vähän aikaa ostotiimiä varastosaldoissa ja seurasin puutelistoja."
+        },
+        "sv": {
+          "polished": "Jag stöttade inköpsteamet med lagernivåerna en tid och höll koll på bristlistorna.",
+          "rough": "Jag hjälpte inköpsteamet med lagernivåer en tid och jag följde bristlistorna."
+        },
+        "ar": {
+          "polished": "دعمتُ فريق المشتريات لفترة في مستويات المخزون، وتابعتُ قوائم النواقص.",
+          "rough": "ساعدتُ فريق المشتريات في مستويات المخزون بعض الوقت، وكنتُ أتابع قوائم النواقص."
+        }
+      }
+    },
+    {
+      "id": "log_inventory.none.1",
+      "archetype": "log_inventory",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a proactive supply chain professional who believes in end-to-end visibility and truly customer-centric logistics.",
+          "rough": "I am proactive supply chain person. I believe in end-to-end visibility and logistics where customer is in center."
+        },
+        "fi": {
+          "polished": "Olen proaktiivinen toimitusketjun ammattilainen, joka uskoo päästä päähän -näkyvyyteen ja aidosti asiakaslähtöiseen logistiikkaan.",
+          "rough": "Olen proaktiivinen toimitusketjuihminen. Uskon päästä päähän näkyvyyteen ja logistiikkaan jossa asiakas on keskellä."
+        },
+        "sv": {
+          "polished": "Jag är en proaktiv yrkesperson inom försörjningskedjan som tror på synlighet hela vägen och verkligt kundfokuserad logistik.",
+          "rough": "Jag är proaktiv supply chain person. Jag tror på synlighet hela vägen och logistik där kunden är i centrum."
+        },
+        "ar": {
+          "polished": "أعمل بعقلية استباقية في مجال سلاسل الإمداد، وأؤمن بالرؤية الشاملة من البداية إلى النهاية وبلوجستيات تضع العميل في المركز حقًا.",
+          "rough": "عندي عقلية استباقية في سلاسل الإمداد. أؤمن بالرؤية الكاملة من البداية للنهاية وبلوجستيات يكون العميل فيها في المركز."
+        }
+      }
+    },
+    {
+      "id": "log_inventory.none.2",
+      "archetype": "log_inventory",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I redesigned the staff break room and set up a recycling corner with clear sorting signs.",
+          "rough": "I made the break room for staff new and set up a recycling corner with clear signs for sorting."
+        },
+        "fi": {
+          "polished": "Uudistin henkilöstön taukotilan ja perustin kierrätyspisteen selkeine lajittelukyltteineen.",
+          "rough": "Laitoin henkilökunnan taukotilan uusiksi ja tein kierrätyspisteen, jossa on selkeät lajittelukyltit."
+        },
+        "sv": {
+          "polished": "Jag gjorde om personalens pausrum och ordnade en återvinningshörna med tydliga sorteringsskyltar.",
+          "rough": "Jag fixade om pausrummet för personalen och satte upp en återvinningshörna med tydliga skyltar för sortering."
+        },
+        "ar": {
+          "polished": "أعدتُ تصميم غرفة استراحة الموظفين، وأنشأتُ ركنًا لإعادة التدوير مع لافتات فرز واضحة.",
+          "rough": "جدّدتُ غرفة الاستراحة للموظفين وعملتُ ركن إعادة تدوير مع لافتات واضحة للفرز."
+        }
+      }
+    },
+    {
+      "id": "log_erp.supported.1",
+      "archetype": "log_erp",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I built a REST integration between the warehouse management system and the ERP, so picked and shipped quantities update orders within 3 minutes instead of in a nightly batch.",
+          "rough": "I built REST integration between the warehouse management system and ERP. Now picked and shipped quantities update orders in 3 minutes, not in nightly batch."
+        },
+        "fi": {
+          "polished": "Rakensin REST-integraation varastonhallintajärjestelmän ja ERP:n välille, joten keräillyt ja lähetetyt määrät päivittyvät tilauksille 3 minuutissa yöajon sijaan.",
+          "rough": "Rakensin REST-integraation varastonhallintajärjestelmän ja ERP:n väliin. Nyt keräillyt ja lähetetyt määrät päivittyy tilauksiin 3 minuutissa, ei yöajossa."
+        },
+        "sv": {
+          "polished": "Jag byggde en REST-integration mellan lagerhanteringssystemet och ERP-systemet, så att plockade och skickade kvantiteter uppdaterar orderna inom 3 minuter i stället för i en nattlig batch.",
+          "rough": "Jag byggde REST-integration mellan lagerhanteringssystemet och ERP. Nu plockade och skickade mängder uppdaterar orderna på 3 minuter, inte i nattlig batch."
+        },
+        "ar": {
+          "polished": "بنيتُ تكاملًا عبر REST بين نظام إدارة المستودع ونظام ERP، فأصبحت الكميات المجهّزة والمشحونة تحدّث الطلبات خلال 3 دقائق بدلًا من معالجة ليلية مجمّعة.",
+          "rough": "بنيتُ تكامل REST بين نظام إدارة المستودع و ERP. الآن الكميات المجهّزة والمشحونة تحدّث الطلبات في 3 دقائق، وليس في دفعة ليلية."
+        }
+      }
+    },
+    {
+      "id": "log_erp.supported.2",
+      "archetype": "log_erp",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I configured the barcode scanners to post goods movements to SAP through an IDoc interface, so order status changes the moment an item is scanned; I tested it with 300 real orders.",
+          "rough": "I configured barcode scanners to send goods movements to SAP with an IDoc interface, so order status changes when item is scanned. I tested with 300 real orders."
+        },
+        "fi": {
+          "polished": "Määritin viivakoodilukijat kirjaamaan tavaraliikkeet SAP:iin IDoc-rajapinnan kautta, joten tilauksen tila muuttuu heti, kun tuote skannataan; testasin ratkaisun 300 oikealla tilauksella.",
+          "rough": "Määritin viivakoodilukijat lähettämään tavaraliikkeet SAP:iin IDoc-rajapinnalla, joten tilauksen tila muuttuu kun tuote skannataan. Testasin 300 oikealla tilauksella."
+        },
+        "sv": {
+          "polished": "Jag konfigurerade streckkodsläsarna att bokföra varurörelser i SAP via ett IDoc-gränssnitt, så att orderstatus ändras i samma stund som en artikel skannas; jag testade det med 300 riktiga order.",
+          "rough": "Jag konfigurerade streckkodsläsarna att skicka varurörelser till SAP med ett IDoc-gränssnitt, så orderstatus ändras när artikeln skannas. Jag testade med 300 riktiga order."
+        },
+        "ar": {
+          "polished": "هيّأتُ ماسحات الباركود لتسجيل حركات البضائع في SAP عبر واجهة IDoc، فتتغير حالة الطلب لحظة مسح الصنف، واختبرتُ ذلك على 300 طلب حقيقي.",
+          "rough": "ضبطتُ ماسحات الباركود لترسل حركات البضائع إلى SAP بواجهة IDoc، فتتغير حالة الطلب عند مسح الصنف. اختبرتُ مع 300 طلب حقيقي."
+        }
+      }
+    },
+    {
+      "id": "log_erp.partial.1",
+      "archetype": "log_erp",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The team connected the warehouse system to the ERP through API middleware, and the delay in order status shrank from overnight to 15 minutes.",
+          "rough": "The team connected warehouse system to the ERP with API middleware. Order status delay went from overnight to 15 minutes."
+        },
+        "fi": {
+          "polished": "Tiimi kytki varastojärjestelmän ERP:hen API-välikerroksen kautta, ja tilausten tilatietojen viive lyheni yön yli kestäneestä 15 minuuttiin.",
+          "rough": "Tiimi kytki varastojärjestelmän ERP:hen API-välikerroksella. Tilauksen tila päivittyi ennen vasta yön yli, nyt 15 minuutissa."
+        },
+        "sv": {
+          "polished": "Teamet kopplade lagersystemet till ERP-systemet via API-mellanprogram, och fördröjningen i orderstatus krympte från över natten till 15 minuter.",
+          "rough": "Teamet kopplade lagersystemet till ERP med API-mellanprogram. Fördröjningen i orderstatus gick från över natten till 15 minuter."
+        },
+        "ar": {
+          "polished": "ربط الفريق نظام المستودع بنظام ERP عبر طبقة وسيطة من واجهات API، فتقلّص تأخير تحديث حالة الطلب من ليلة كاملة إلى 15 دقيقة.",
+          "rough": "الفريق ربط نظام المستودع مع ERP بطبقة API وسيطة. تأخير حالة الطلب نزل من ليلة كاملة إلى 15 دقيقة."
+        }
+      }
+    },
+    {
+      "id": "log_erp.partial.2",
+      "archetype": "log_erp",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I was part of the ERP project at my last workplace and tested some screens before launch.",
+          "rough": "I was in the ERP project at my last work place and I tested some screens before launch."
+        },
+        "fi": {
+          "polished": "Olin mukana ERP-projektissa edellisellä työpaikallani ja testasin joitakin näkymiä ennen käyttöönottoa.",
+          "rough": "Olin ERP-projektissa edellisessä työpaikassa ja testasin vähän näkymiä ennen käyttöönottoa."
+        },
+        "sv": {
+          "polished": "Jag var med i ERP-projektet på min förra arbetsplats och testade några vyer före lanseringen.",
+          "rough": "Jag var i ERP-projektet på min förra jobbplats och jag testade några skärmar före lansering."
+        },
+        "ar": {
+          "polished": "كنتُ ضمن مشروع ERP في مكان عملي السابق، واختبرتُ بعض الشاشات قبل الإطلاق.",
+          "rough": "كنتُ في مشروع ERP في عملي السابق، واختبرتُ بعض الشاشات قبل الإطلاق."
+        }
+      }
+    },
+    {
+      "id": "log_erp.none.1",
+      "archetype": "log_erp",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a digitally minded professional who wants to be at the heart of seamless, data-driven supply chains.",
+          "rough": "I am digital minded person. I want to be in the heart of seamless supply chains that are data-driven."
+        },
+        "fi": {
+          "polished": "Olen digitaalisesti suuntautunut ammattilainen, joka haluaa olla saumattomien ja datalähtöisten toimitusketjujen ytimessä.",
+          "rough": "Olen digihenkinen tyyppi. Haluan olla saumattomien toimitusketjujen ytimessä, jotka on datalähtöisiä."
+        },
+        "sv": {
+          "polished": "Jag är en digitalt inriktad yrkesperson som vill stå i centrum för sömlösa, datadrivna försörjningskedjor.",
+          "rough": "Jag är digitalt tänkande person. Jag vill vara i hjärtat av sömlösa försörjningskedjor som är datadrivna."
+        },
+        "ar": {
+          "polished": "أعمل بعقلية رقمية، وأطمح إلى أن أكون في قلب سلاسل إمداد سلسة قائمة على البيانات.",
+          "rough": "عندي عقلية رقمية. أريد أن أكون في قلب سلاسل إمداد سلسة تعتمد على البيانات."
+        }
+      }
+    },
+    {
+      "id": "log_erp.none.2",
+      "archetype": "log_erp",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised weekly floorball evenings for the staff and booked the sports hall for the whole season.",
+          "rough": "I organized floorball evenings every week for staff and booked the sport hall for whole season."
+        },
+        "fi": {
+          "polished": "Järjestin henkilöstölle viikoittaiset salibandyillat ja varasin liikuntasalin koko kaudeksi.",
+          "rough": "Järjestin henkilökunnalle salibandyillat joka viikko ja varasin salin koko kaudeksi."
+        },
+        "sv": {
+          "polished": "Jag ordnade innebandykvällar varje vecka för personalen och bokade idrottshallen för hela säsongen.",
+          "rough": "Jag fixade innebandy varje vecka för personalen och bokade hallen för hela säsongen."
+        },
+        "ar": {
+          "polished": "نظّمتُ للموظفين أمسيات أسبوعية لرياضة الفلوربول، وحجزتُ القاعة الرياضية للموسم كاملًا.",
+          "rough": "نظّمتُ أمسيات فلوربول كل أسبوع للموظفين وحجزتُ الصالة الرياضية لكل الموسم."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "log.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would spend more time listening to drivers and warehouse staff early on, because they know practical problems that never show up in plans.",
+          "rough": "I would listen more to drivers and warehouse people already in the beginning. They know practical problems that never comes up in plans."
+        },
+        "fi": {
+          "polished": "Käyttäisin heti alussa enemmän aikaa kuljettajien ja varastohenkilöstön kuunteluun, koska he tuntevat käytännön ongelmat, jotka eivät koskaan näy suunnitelmissa.",
+          "rough": "Kuuntelisin kuskeja ja varaston porukkaa enemmän jo alussa. Ne tietää käytännön ongelmat, jotka ei ikinä näy suunnitelmissa."
+        },
+        "sv": {
+          "polished": "Jag skulle lägga mer tid på att lyssna på chaufförer och lagerpersonal redan i början, eftersom de känner till praktiska problem som aldrig syns i planerna.",
+          "rough": "Jag skulle lyssna mer på chaufförer och lagerfolk redan i början. De vet praktiska problem som aldrig kommer fram i planer."
+        },
+        "ar": {
+          "polished": "كنتُ سأخصص وقتًا أكبر للاستماع إلى السائقين وعمال المستودع منذ البداية، لأنهم يعرفون مشكلات عملية لا تظهر أبدًا في الخطط.",
+          "rough": "كنتُ سأستمع للسائقين وعمّال المستودع أكثر من البداية. هم يعرفون مشاكل عملية لا تظهر أبدًا في الخطط."
+        }
+      }
+    },
+    {
+      "id": "log.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would communicate earlier and in smaller steps, so that people have time to adjust instead of hearing about everything at the last minute.",
+          "rough": "I would tell things earlier and in smaller steps. Then people have time to adjust and dont hear everything in last minute."
+        },
+        "fi": {
+          "polished": "Viestisin aiemmin ja pienemmissä erissä, jotta ihmisillä olisi aikaa sopeutua eikä kaikki tulisi heille tiedoksi viime hetkellä.",
+          "rough": "Kertoisin asioista aikaisemmin ja pienemmissä paloissa. Sit ihmisillä on aikaa sopeutua, eikä ne kuule kaikkea viime hetkellä."
+        },
+        "sv": {
+          "polished": "Jag skulle kommunicera tidigare och i mindre steg, så att folk hinner anpassa sig i stället för att få höra allt i sista minuten.",
+          "rough": "Jag skulle berätta saker tidigare och i mindre steg. Då har folk tid att anpassa sig och hör inte allt i sista minuten."
+        },
+        "ar": {
+          "polished": "كنتُ سأتواصل في وقت أبكر وعلى خطوات أصغر، حتى يجد الناس وقتًا للتكيّف بدلًا من سماع كل شيء في اللحظة الأخيرة.",
+          "rough": "كنتُ سأخبر الناس بالأمور أبكر وبخطوات أصغر. هكذا يكون عندهم وقت للتأقلم ولا يسمعون كل شيء في آخر لحظة."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "log.next.1",
+      "text": {
+        "en": {
+          "polished": "I want to work in logistics planning, helping goods move smoothly from the warehouse to the customer, and learn how modern planning tools are used.",
+          "rough": "I want to work in logistics planning. Help goods to move smooth from warehouse to customer, and learn how modern planning tools are used."
+        },
+        "fi": {
+          "polished": "Haluan työskennellä logistiikan suunnittelussa, auttaa tavaraa liikkumaan sujuvasti varastolta asiakkaalle ja oppia, miten nykyaikaisia suunnittelutyökaluja käytetään.",
+          "rough": "Haluan logistiikan suunnitteluun. Auttaa että tavara liikkuu sujuvasti varastolta asiakkaalle, ja oppia miten moderneja suunnittelutyökaluja käytetään."
+        },
+        "sv": {
+          "polished": "Jag vill arbeta med logistikplanering, hjälpa varor att röra sig smidigt från lagret till kunden och lära mig hur moderna planeringsverktyg används.",
+          "rough": "Jag vill jobba med logistikplanering. Hjälpa varor att gå smidigt från lager till kund, och lära mig hur moderna planeringsverktyg används."
+        },
+        "ar": {
+          "polished": "أريد العمل في التخطيط اللوجستي، والمساعدة في انتقال البضائع بسلاسة من المستودع إلى العميل، وتعلّم كيفية استخدام أدوات التخطيط الحديثة.",
+          "rough": "أريد أن أعمل في التخطيط اللوجستي. أساعد البضاعة أن تتحرك بسلاسة من المستودع للعميل، وأتعلم كيف تُستخدم أدوات التخطيط الحديثة."
+        }
+      }
+    },
+    {
+      "id": "log.next.2",
+      "text": {
+        "en": {
+          "polished": "Next, I would like to join a warehouse or transport team that is developing its ways of working, and grow towards a role with more planning responsibility.",
+          "rough": "Next I want to join warehouse or transport team that develops how they work, and grow to a role with more planning responsibility."
+        },
+        "fi": {
+          "polished": "Seuraavaksi haluaisin liittyä varasto- tai kuljetustiimiin, joka kehittää toimintatapojaan, ja kasvaa kohti roolia, jossa minulla on enemmän suunnitteluvastuuta.",
+          "rough": "Seuraavaksi haluan varasto- tai kuljetustiimiin, joka kehittää tapaa tehdä töitä, ja kasvaa rooliin jossa on enemmän suunnitteluvastuuta."
+        },
+        "sv": {
+          "polished": "Härnäst vill jag gå med i ett lager- eller transportteam som utvecklar sina arbetssätt och växa mot en roll med mer planeringsansvar.",
+          "rough": "Nästa jag vill gå med i lager- eller transportteam som utvecklar hur de jobbar, och växa till en roll med mer ansvar för planering."
+        },
+        "ar": {
+          "polished": "أودّ في الخطوة التالية الانضمام إلى فريق مستودع أو نقل يطوّر أساليب عمله، والتقدّم نحو دور يحمل مسؤولية أكبر في التخطيط.",
+          "rough": "بعد ذلك أريد أن أنضم لفريق مستودع أو نقل يطوّر طريقة عمله، وأتطور لدور فيه مسؤولية أكثر في التخطيط."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "A previous planner rolled out a new route plan over a single weekend, and drivers ignored it because nobody had asked them about loading times and customer habits.",
+    "They also trusted the stock figures in the system, which were often wrong because returns and damaged goods were not recorded properly.",
+    "It worked much better once they spent time in the warehouse and on the routes before changing the plans."
+  ]
+}

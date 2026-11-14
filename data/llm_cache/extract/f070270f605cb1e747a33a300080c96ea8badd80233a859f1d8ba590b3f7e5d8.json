@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I automated the 15 most used user flows as Playwright end-to-end tests and made any failing test block the release. Weekly releases have since run for 5 months without a rollback.",
+    "skills": [
+     "S12",
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "We moved the customer portal from our own servers to Google Cloud with a lift-and-shift approach and completed the switch in 3 months without downtime.",
+    "skills": [
+     "S06"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I added request validation with Pydantic and clear error codes to the partner API, and wrote the integration guide myself. Partner error reports fell from 25 to 6 per month.",
+    "skills": [
+     "S39",
+     "S18"
+    ]
+   }
+  ]
+ }
+}

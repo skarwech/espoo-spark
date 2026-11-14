@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "supported",
+    "unit_id": "J-057~ar.u2",
+    "quote": "وضعتُ عتبة خاصة لكل طراز مستشعر. الإنذارات الكاذبة في الأسبوع نزلت من 140 إلى 45",
+    "reason": "Set per-model thresholds; weekly false alarms fell from 140 to 45."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "supported",
+    "unit_id": "J-057~ar.u3",
+    "quote": "نفّذتُ تحديثات البرامج الثابتة عبر الهواء بـ C",
+    "reason": "Built OTA firmware updates with A/B rollback, deployed to 300 sensors in 5 months."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case work described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "supported",
+    "unit_id": "J-057~ar.u3",
+    "quote": "نفّذتُ تحديثات البرامج الثابتة عبر الهواء بـ C",
+    "reason": "Built OTA firmware updates with A/B rollback, deployed to 300 sensors in 5 months."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "supported",
+    "unit_id": "J-057~ar.u1",
+    "quote": "أصلحتُها، والقراءات المفقودة بقيت تحت 0.5%",
+    "reason": "Built hourly Python check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work described."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "supported",
+    "unit_id": "J-057~ar.u2",
+    "quote": "وضعتُ عتبة خاصة لكل طراز مستشعر. الإنذارات الكاذبة في الأسبوع نزلت من 140 إلى 45",
+    "reason": "Set per-model thresholds; weekly false alarms fell from 140 to 45."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "supported",
+    "unit_id": "J-057~ar.u1",
+    "quote": "أصلحتُها، والقراءات المفقودة بقيت تحت 0.5%",
+    "reason": "Built hourly Python check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support or Finnish language evidence."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "supported",
+    "unit_id": "J-057~ar.u1",
+    "quote": "أصلحتُها، والقراءات المفقودة بقيت تحت 0.5%",
+    "reason": "Built hourly Python check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "supported",
+    "unit_id": "J-057~ar.u2",
+    "quote": "وضعتُ عتبة خاصة لكل طراز مستشعر. الإنذارات الكاذبة في الأسبوع نزلت من 140 إلى 45",
+    "reason": "Set per-model thresholds; weekly false alarms fell from 140 to 45."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "supported",
+    "unit_id": "J-057~ar.u2",
+    "quote": "وضعتُ عتبة خاصة لكل طراز مستشعر. الإنذارات الكاذبة في الأسبوع نزلت من 140 إلى 45",
+    "reason": "Set per-model thresholds; weekly false alarms fell from 140 to 45."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "supported",
+    "unit_id": "J-057~ar.u1",
+    "quote": "أصلحتُها، والقراءات المفقودة بقيت تحت 0.5%",
+    "reason": "Built hourly Python check, fixed gateways; lost readings under 0.5%."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work described."
+   }
+  ]
+ }
+}

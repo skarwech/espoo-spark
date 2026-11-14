@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I transferred the paper care plans of 30 residents into the electronic record system within 8 weeks, using the structured nursing headings for every entry.",
+    "skills": [
+     "S45",
+     "S34"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I contributed to home care visits and supported elderly clients with their daily needs.",
+    "skills": [
+     "S19",
+     "S20"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I occasionally supported my manager with shift planning.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

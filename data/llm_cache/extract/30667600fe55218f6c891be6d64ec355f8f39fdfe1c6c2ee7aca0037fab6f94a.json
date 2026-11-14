@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag skrev Power Query-regler, de matchar kontoutdragets rader mot huvudbokens poster med referensnummer och belopp. Nu kommer dagliga avstämningsrapporten automatiskt och bara 5 % av raderna behöver manuell koll.",
+    "skills": [
+     "S16",
+     "S01",
+     "S03"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag ordnade kontorsflytten för ekonomiavdelningen. Jag bokade flyttarna och planerade nya platserna.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

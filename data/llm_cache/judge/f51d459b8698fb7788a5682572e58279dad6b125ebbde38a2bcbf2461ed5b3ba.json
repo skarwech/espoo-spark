@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-004/o1",
+    "label": "partial",
+    "unit_id": "J-096~polished.u2",
+    "quote": "أُعدّت في نظام ERP قواعد لمطابقة البنك مع دفتر الأستاذ",
+    "reason": "Reconciliation automation with a result, but passive voice; no personal role stated."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence of running budget processes."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or report replacement work described."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "partial",
+    "unit_id": "J-096~polished.u1",
+    "quote": "فتقلّص إقفال نهاية الشهر من 10 إلى 7 أيام عمل",
+    "reason": "Close shortened from 10 to 7 days, but credited to the team."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence of budgeting work."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "partial",
+    "unit_id": "J-096~polished.u2",
+    "quote": "أُعدّت في نظام ERP قواعد لمطابقة البنك مع دفتر الأستاذ",
+    "reason": "Automated reconciliation with a result, but passive voice; no personal role."
+   }
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day, checked by comparing weekly logs.",
+    "skills": [
+     "S30",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I also took care of the data pipeline from the stations: I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%.",
+    "skills": [
+     "S39",
+     "S25",
+     "S21"
+    ]
+   },
+   {
+    "box": "differently",
+    "text": "I changed rules first and explained after, and some of them did not trust the new alerts for weeks.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

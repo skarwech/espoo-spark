@@ -1,0 +1,535 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-001/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Recycling and office move work, unrelated to sales growth."
+   },
+   {
+    "key": "N-001/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No knowledge base or support ticket work."
+   },
+   {
+    "key": "N-001/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-002/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging."
+   },
+   {
+    "key": "N-002/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reporting or dashboard work."
+   },
+   {
+    "key": "N-002/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No forecasting work."
+   },
+   {
+    "key": "N-003/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sensor alert work."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No firmware work."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-004/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reconciliation or automation work."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No budgeting work described."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reporting or dashboard work."
+   },
+   {
+    "key": "N-005/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sales or account work."
+   },
+   {
+    "key": "N-005/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-005/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No knowledge base or support ticket work."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No firmware work."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No data pipeline work."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation."
+   },
+   {
+    "key": "N-007/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API development."
+   },
+   {
+    "key": "N-007/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No test automation."
+   },
+   {
+    "key": "N-007/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move is not a cloud migration."
+   },
+   {
+    "key": "N-008/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation."
+   },
+   {
+    "key": "N-008/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No production line work."
+   },
+   {
+    "key": "N-008/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sensor alert work."
+   },
+   {
+    "key": "N-009/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API development."
+   },
+   {
+    "key": "N-009/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move is not a cloud migration."
+   },
+   {
+    "key": "N-009/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-010/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No care documentation work."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No accounting close work."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No budgeting work described."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reconciliation or automation work."
+   },
+   {
+    "key": "N-012/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No ERP or warehouse data work."
+   },
+   {
+    "key": "N-012/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No route planning work."
+   },
+   {
+    "key": "N-012/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No inventory management work."
+   },
+   {
+    "key": "N-013/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API development."
+   },
+   {
+    "key": "N-013/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move is not a cloud migration."
+   },
+   {
+    "key": "N-013/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No ERP or warehouse data work."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sensor alert work."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No data pipeline work."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No technical support or Finnish language evidence."
+   },
+   {
+    "key": "N-015/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No production line work."
+   },
+   {
+    "key": "N-015/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation."
+   },
+   {
+    "key": "N-015/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-016/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No test automation."
+   },
+   {
+    "key": "N-016/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API development."
+   },
+   {
+    "key": "N-016/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move is not a cloud migration."
+   },
+   {
+    "key": "N-017/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reporting or dashboard work."
+   },
+   {
+    "key": "N-017/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging."
+   },
+   {
+    "key": "N-017/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reconciliation or automation work."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No data pipeline work."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sensor alert work."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No care documentation work."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move planning is not shift or care coordination."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work."
+   },
+   {
+    "key": "N-020/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sales or account work."
+   },
+   {
+    "key": "N-020/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No knowledge base or support ticket work."
+   },
+   {
+    "key": "N-020/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-021/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No route planning work."
+   },
+   {
+    "key": "N-021/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No ERP or warehouse data work."
+   },
+   {
+    "key": "N-021/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No inventory management work."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sensor alert work."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No data pipeline work."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No ERP or warehouse data work."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No care documentation work."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move planning is not shift or care coordination."
+   },
+   {
+    "key": "N-024/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging."
+   },
+   {
+    "key": "N-024/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No forecasting work."
+   },
+   {
+    "key": "N-024/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling."
+   },
+   {
+    "key": "N-025/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No test automation."
+   },
+   {
+    "key": "N-025/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move is not a cloud migration."
+   },
+   {
+    "key": "N-025/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No data pipeline work."
+   }
+  ]
+ }
+}

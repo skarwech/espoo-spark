@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-012/o1",
+    "label": "supported",
+    "unit_id": "J-011~ar.u1",
+    "quote": "بنيتُ تكاملًا عبر REST بين نظام إدارة المستودع ونظام ERP",
+    "reason": "Personally built REST integration; orders update within 3 minutes."
+   },
+   {
+    "key": "N-012/o2",
+    "label": "supported",
+    "unit_id": "J-011~ar.u2",
+    "quote": "فأعدتُ تصميمها في 3 مسارات، مما يوفّر نحو 90 كم من القيادة يوميًا",
+    "reason": "Personally redesigned routes using GPS data, saving 90 km daily."
+   },
+   {
+    "key": "N-012/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing stock-outs."
+   },
+   {
+    "key": "N-021/o1",
+    "label": "supported",
+    "unit_id": "J-011~ar.u2",
+    "quote": "فأعدتُ تصميمها في 3 مسارات، مما يوفّر نحو 90 كم من القيادة يوميًا",
+    "reason": "Personally redesigned routes using GPS data, saving 90 km daily."
+   },
+   {
+    "key": "N-021/o2",
+    "label": "supported",
+    "unit_id": "J-011~ar.u1",
+    "quote": "بنيتُ تكاملًا عبر REST بين نظام إدارة المستودع ونظام ERP",
+    "reason": "Personally built REST integration; orders update within 3 minutes."
+   },
+   {
+    "key": "N-021/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing stock-outs."
+   }
+  ]
+ }
+}

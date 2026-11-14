@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-008/o1",
+    "label": "partial",
+    "unit_id": "J-048~polished.u3",
+    "quote": "Avustin automaatioinsinööriä pakkauslinjan uudistuksessa",
+    "reason": "Assisted on a packing line renewal; supporting role, no PLC method or result."
+   },
+   {
+    "key": "N-008/o2",
+    "label": "supported",
+    "unit_id": "J-048~polished.u1",
+    "quote": "Otin käyttöön värähtelymittaukset 12 kriittisimmässä kuljetinmoottorissa",
+    "reason": "Personally introduced vibration monitoring; unplanned downtime fell 30% in 6 months."
+   },
+   {
+    "key": "N-008/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing false sensor-fault alerts."
+   },
+   {
+    "key": "N-015/o1",
+    "label": "supported",
+    "unit_id": "J-048~polished.u1",
+    "quote": "Otin käyttöön värähtelymittaukset 12 kriittisimmässä kuljetinmoottorissa",
+    "reason": "Personally introduced vibration monitoring; unplanned downtime fell 30% in 6 months."
+   },
+   {
+    "key": "N-015/o2",
+    "label": "partial",
+    "unit_id": "J-048~polished.u3",
+    "quote": "Avustin automaatioinsinööriä pakkauslinjan uudistuksessa",
+    "reason": "Assisted on a packing line renewal; supporting role, no PLC method or result."
+   },
+   {
+    "key": "N-015/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   }
+  ]
+ }
+}

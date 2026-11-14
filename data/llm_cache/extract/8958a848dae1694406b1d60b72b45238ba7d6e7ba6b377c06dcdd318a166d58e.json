@@ -1,0 +1,24 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Rakensin Exceliin yhteisen katkokalenterin, jossa jokaisella tehtävällä on vastuuhenkilö ja määräaika, ja lisäsin avoimien ostolaskujen läpikäynnin ennen katkoa. Kuukausikatko lyheni 3 työpäivällä.",
+    "skills": [
+     "S01"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Hoidin talousosaston toimiston neuvotteluhuonevaraukset ja järjestin tarjoilut asiakasvierailuille.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

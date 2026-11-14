@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I coordinated our office move and labelled all boxes and cables for 30 employees.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I held usage reviews every 3 months with my 20 key accounts based on CRM data and offered add-on services; revenue from these accounts grew by 18% in a year.",
+    "skills": [
+     "S23",
+     "S38"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I added root-cause tags to the ticket form and built a monthly Excel report of repeat issues, which I used to decide which knowledge base articles to update.",
+    "skills": [
+     "S22",
+     "S31"
+    ]
+   }
+  ]
+ }
+}

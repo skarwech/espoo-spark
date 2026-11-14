@@ -1,0 +1,17 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag deltog i kvalitetskontrollerna i slutet av linjen och flaggade avvikelser till teamet när något såg fel ut.",
+    "skills": [
+     "S29"
+    ]
+   }
+  ]
+ }
+}

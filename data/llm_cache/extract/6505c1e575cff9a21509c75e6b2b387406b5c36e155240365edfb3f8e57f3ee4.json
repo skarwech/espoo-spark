@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag organiserade min dagliga rutt till 11 hemvårdsklienter och kontrollerade läkemedelsdispensern vid varje besök; under 6 månader missade jag inga besök.",
+    "skills": [
+     "S20",
+     "S19"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan under själva besöket och granskade deras anteckningar varje vecka; sena anteckningar minskade från 40 % till 10 %.",
+    "skills": [
+     "S44",
+     "S45"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag ledde ett veckomöte på 15 minuter där båda enheterna samordnade sina vårdplaner och delade personal, och jag följde upp lediga skift i ett delat Excelark.",
+    "skills": [
+     "S07",
+     "S34"
+    ]
+   }
+  ]
+ }
+}

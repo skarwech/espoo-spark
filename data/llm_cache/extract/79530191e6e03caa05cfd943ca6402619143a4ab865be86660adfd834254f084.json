@@ -1,0 +1,27 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Controller-tiimi otti käyttöön yhteisen budjettikalenterin, jossa oli kiinteät läpikäyntipäivät kaikille 5 osastolle, ja vuosibudjetti valmistui aikataulussa.",
+    "skills": [
+     "S24"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Kirjoitin Python-skriptin, joka vertaa pankin tapahtumatiedostoa pääkirjan kirjauksiin joka yö ja listaa erot. Se korvasi käsin tehdyn pankkitäsmäytyksen, joka vei 6 tuntia viikossa.",
+    "skills": [
+     "S39",
+     "S16",
+     "S01",
+     "S03"
+    ]
+   }
+  ]
+ }
+}

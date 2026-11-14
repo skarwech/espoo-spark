@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing false sensor-fault alerts."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "supported",
+    "unit_id": "J-007~ar.u1",
+    "quote": "نفّذتُ تحديثات البرامج الثابتة عبر الهواء بـ C لعُقد مستشعرات FreeRTOS",
+    "reason": "Personally built OTA firmware updates with A/B rollback, deployed to 300 sensors in 5 months."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "supported",
+    "unit_id": "J-007~ar.u1",
+    "quote": "نفّذتُ تحديثات البرامج الثابتة عبر الهواء بـ C لعُقد مستشعرات FreeRTOS",
+    "reason": "Personally built OTA firmware updates with A/B rollback, deployed to 300 sensors in 5 months."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "supported",
+    "unit_id": "J-007~ar.u2",
+    "quote": "القراءات المفقودة نزلت من 4% إلى 0.3%",
+    "reason": "Added edge buffering with MQTT resend; lost readings fell to 0.3%."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing false sensor-fault alerts."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "supported",
+    "unit_id": "J-007~ar.u2",
+    "quote": "القراءات المفقودة نزلت من 4% إلى 0.3%",
+    "reason": "Added edge buffering with MQTT resend; lost readings fell to 0.3%."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support or Finnish language evidence."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "supported",
+    "unit_id": "J-007~ar.u2",
+    "quote": "القراءات المفقودة نزلت من 4% إلى 0.3%",
+    "reason": "Added edge buffering with MQTT resend; lost readings fell to 0.3%."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing false sensor-fault alerts."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging work."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing false sensor-fault alerts."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "supported",
+    "unit_id": "J-007~ar.u2",
+    "quote": "القراءات المفقودة نزلت من 4% إلى 0.3%",
+    "reason": "Added edge buffering with MQTT resend; lost readings fell to 0.3%."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No ERP or warehouse integration work."
+   }
+  ]
+ }
+}

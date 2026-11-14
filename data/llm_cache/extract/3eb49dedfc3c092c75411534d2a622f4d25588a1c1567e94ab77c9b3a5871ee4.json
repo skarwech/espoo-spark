@@ -1,0 +1,18 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I took part in a customer data clean-up project and checked records when needed.",
+    "skills": [
+     "S32",
+     "S25"
+    ]
+   }
+  ]
+ }
+}

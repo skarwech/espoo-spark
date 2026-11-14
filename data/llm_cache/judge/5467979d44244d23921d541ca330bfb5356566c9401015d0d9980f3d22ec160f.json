@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-012/o1",
+    "label": "partial",
+    "unit_id": "J-113.u3",
+    "quote": "Tiimi kytki varastojärjestelmän ERP:hen API-välikerroksella",
+    "reason": "Relevant ERP integration with result, but done by the team, no personal role."
+   },
+   {
+    "key": "N-012/o2",
+    "label": "supported",
+    "unit_id": "J-113.u1",
+    "quote": "tein niistä 3 reittiä, se säästää noin 90 km ajoa päivässä",
+    "reason": "Personally merged routes using GPS data analysis, saving about 90 km daily."
+   },
+   {
+    "key": "N-012/o3",
+    "label": "partial",
+    "unit_id": "J-113.u2",
+    "quote": "Me otettiin SAP:ssa käyttöön min-max-täydennysmalli",
+    "reason": "Stock-outs reduced 30%, but described as group work ('we')."
+   },
+   {
+    "key": "N-021/o1",
+    "label": "supported",
+    "unit_id": "J-113.u1",
+    "quote": "tein niistä 3 reittiä, se säästää noin 90 km ajoa päivässä",
+    "reason": "Personally merged routes using GPS data analysis, saving about 90 km daily."
+   },
+   {
+    "key": "N-021/o2",
+    "label": "partial",
+    "unit_id": "J-113.u3",
+    "quote": "Tiimi kytki varastojärjestelmän ERP:hen API-välikerroksella",
+    "reason": "Relevant ERP integration with result, but done by the team, no personal role."
+   },
+   {
+    "key": "N-021/o3",
+    "label": "partial",
+    "unit_id": "J-113.u2",
+    "quote": "Me otettiin SAP:ssa käyttöön min-max-täydennysmalli",
+    "reason": "Stock-outs reduced 30%, but described as group work ('we')."
+   }
+  ]
+ }
+}

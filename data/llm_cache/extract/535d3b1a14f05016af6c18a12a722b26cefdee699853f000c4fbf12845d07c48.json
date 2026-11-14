@@ -1,0 +1,25 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I organised the yearly safety training day for 60 employees. I booked trainers and arranged the lunch for everybody.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I helped to keep data flow from field devices running. When data was missing I looked into it.",
+    "skills": [
+     "S21",
+     "S30"
+    ]
+   }
+  ]
+ }
+}

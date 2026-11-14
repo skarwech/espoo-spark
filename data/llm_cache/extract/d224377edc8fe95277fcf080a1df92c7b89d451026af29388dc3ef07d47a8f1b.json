@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Rakensin REST-integraation varastonhallintajärjestelmän ja ERP:n välille, joten keräillyt ja lähetetyt määrät päivittyvät tilauksille 3 minuutissa yöajon sijaan.",
+    "skills": [
+     "S18",
+     "S28"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Tuin jonkin aikaa ostotiimiä varastotasojen kanssa ja seurasin puutelistoja.",
+    "skills": [
+     "S27"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Piirsin 14 pakettiauton jakelualueet uudelleen reittisuunnitteluohjelmistossa asiakkaiden sijaintien ja aikaikkunoiden perusteella, mikä vähensi päivittäisiä ajokilometrejä 12 % 4 kuukaudessa.",
+    "skills": [
+     "S26",
+     "S35"
+    ]
+   }
+  ]
+ }
+}

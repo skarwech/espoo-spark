@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "supported",
+    "unit_id": "J-071~sv.u2",
+    "quote": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan",
+    "reason": "Personally trained staff in app documentation; late notes dropped 40% to 10%."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "supported",
+    "unit_id": "J-071~sv.u1",
+    "quote": "under 6 månader missade jag inga besök",
+    "reason": "Planned daily route for 11 clients, checked medication, zero missed visits."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case work described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "supported",
+    "unit_id": "J-071~sv.u2",
+    "quote": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan",
+    "reason": "Personally trained staff in app documentation; late notes dropped 40% to 10%."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "supported",
+    "unit_id": "J-071~sv.u3",
+    "quote": "Jag ledde ett veckomöte på 15 minuter där båda enheterna samordnade sina vårdplaner och delade personal",
+    "reason": "Led cross-unit care plan meetings and tracked shifts in shared Excel."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "supported",
+    "unit_id": "J-071~sv.u1",
+    "quote": "under 6 månader missade jag inga besök",
+    "reason": "Planned daily route for 11 clients, checked medication, zero missed visits."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "supported",
+    "unit_id": "J-071~sv.u2",
+    "quote": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan",
+    "reason": "Personally trained staff in app documentation; late notes dropped 40% to 10%."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "supported",
+    "unit_id": "J-071~sv.u1",
+    "quote": "under 6 månader missade jag inga besök",
+    "reason": "Planned daily route for 11 clients, checked medication, zero missed visits."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "supported",
+    "unit_id": "J-071~sv.u3",
+    "quote": "Jag ledde ett veckomöte på 15 minuter där båda enheterna samordnade sina vårdplaner och delade personal",
+    "reason": "Led cross-unit care plan meetings and tracked shifts in shared Excel."
+   }
+  ]
+ }
+}

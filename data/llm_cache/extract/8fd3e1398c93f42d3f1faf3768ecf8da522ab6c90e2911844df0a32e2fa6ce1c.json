@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Autoin huoltomiehiä puristinlinjan ennakkotarkastuksissa jonkun aikaa.",
+    "skills": [
+     "S33"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Autoin automaatioinsinööriä kun pakkauslinjaa uusittiin, ja autoin testauksessa kun pyydettiin.",
+    "skills": [
+     "S03"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Kalanruotoanalyysillä löysin, että toistuvat maalivirheet lopputarkastuksessa tuli kuivauskopin kosteudesta. Lisäsin kosteustarkistuksen käynnistysrutiiniin. Maalihylkäykset väheni 55 %.",
+    "skills": [
+     "S29",
+     "S09"
+    ]
+   }
+  ]
+ }
+}

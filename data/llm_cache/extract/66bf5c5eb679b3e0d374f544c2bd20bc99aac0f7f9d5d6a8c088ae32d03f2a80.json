@@ -1,0 +1,27 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Määritin viivakoodilukijat lähettämään tavaraliikkeet SAP:iin IDoc-rajapinnalla, joten tilauksen tila muuttuu kun tuote skannataan. Testasin 300 oikealla tilauksella.",
+    "skills": [
+     "S18",
+     "S28",
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Tein 14 pakettiautolle uudet jakelualueet reittisuunnitteluohjelmassa, asiakkaiden sijainnit ja aikaikkunat pohjana. Päivän kilometrit väheni 12 % 4 kuukaudessa.",
+    "skills": [
+     "S35",
+     "S26"
+    ]
+   }
+  ]
+ }
+}

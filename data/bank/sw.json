@@ -1,0 +1,556 @@
+{
+  "domain": "sw",
+  "contexts": [
+    {
+      "id": "sw.ctx.1",
+      "text": {
+        "en": {
+          "polished": "At a software company of about 60 people, the main product had grown fast and the release process had not kept up. Every change felt risky, and partners asked for things the system could not easily offer.",
+          "rough": "Software company, about 60 people. Main product grew fast, release process did not keep up. Every change felt risky and partners asked things that the system could not easy offer."
+        },
+        "fi": {
+          "polished": "Noin 60 hengen ohjelmistoyrityksessä päätuote oli kasvanut nopeasti, eikä julkaisuprosessi ollut pysynyt perässä. Jokainen muutos tuntui riskiltä, ja kumppanit pyysivät asioita, joita järjestelmä ei helposti pystynyt tarjoamaan.",
+          "rough": "Ohjelmistofirma, noin 60 ihmistä. Päätuote kasvoi nopeasti, julkaisuprosessi ei pysynyt mukana. Joka muutos tuntui riskiltä ja kumppanit pyysi asioita joita systeemi ei helposti pystynyt tarjoamaan."
+        },
+        "sv": {
+          "polished": "På ett mjukvaruföretag med cirka 60 anställda hade huvudprodukten vuxit snabbt, men releaseprocessen hade inte hängt med. Varje ändring kändes riskabel, och partner bad om saker som systemet inte enkelt kunde erbjuda.",
+          "rough": "Mjukvaruföretag, cirka 60 personer. Huvudprodukten växte snabbt, releaseprocessen hängde inte med. Varje ändring kändes riskabel och partner frågade saker som systemet inte lätt kunde ge."
+        },
+        "ar": {
+          "polished": "في شركة برمجيات تضم نحو 60 موظفًا، نما المنتج الرئيسي بسرعة ولم تواكبه عملية الإصدار. كان كل تغيير يبدو محفوفًا بالمخاطر، وكان الشركاء يطلبون أمورًا لا يستطيع النظام تقديمها بسهولة.",
+          "rough": "شركة برمجيات، حوالي 60 شخصًا. المنتج الرئيسي كبر بسرعة، وعملية الإصدار لم تلحق به. كل تغيير كان يبدو خطرًا، والشركاء طلبوا أشياء لا يستطيع النظام تقديمها بسهولة."
+        }
+      }
+    },
+    {
+      "id": "sw.ctx.2",
+      "text": {
+        "en": {
+          "polished": "In a mid-size retail company, the in-house IT team ran old services on its own servers. Outages came at bad times, knowledge sat with a few people, and nobody had a full picture of how the parts fit together.",
+          "rough": "Mid-size retail company. Internal IT team was running old services on own servers. Outages came in bad times, knowledge was only with few people, nobody had full picture how parts fit together."
+        },
+        "fi": {
+          "polished": "Keskikokoisessa vähittäiskaupan yrityksessä sisäinen IT-tiimi ylläpiti vanhoja palveluita omilla palvelimillaan. Katkot osuivat huonoihin aikoihin, tieto oli muutaman ihmisen varassa, eikä kenelläkään ollut kokonaiskuvaa siitä, miten osat sopivat yhteen.",
+          "rough": "Keskikokoinen kaupan alan firma. Oma IT-tiimi pyöritti vanhoja palveluita omilla servereillä. Katkot tuli huonoihin aikoihin, tieto oli vain muutamalla ihmisellä, kenelläkään ei ollut kokonaiskuvaa miten osat sopii yhteen."
+        },
+        "sv": {
+          "polished": "I ett medelstort detaljhandelsföretag körde det interna IT-teamet gamla tjänster på egna servrar. Avbrotten kom vid dåliga tillfällen, kunskapen fanns hos ett fåtal personer och ingen hade en helhetsbild av hur delarna hängde ihop.",
+          "rough": "Medelstort detaljhandelsföretag. Interna IT-teamet körde gamla tjänster på egna servrar. Avbrott kom vid dåliga tider, kunskapen fanns bara hos några få, ingen hade helhetsbild hur delarna hänger ihop."
+        },
+        "ar": {
+          "polished": "في شركة تجزئة متوسطة الحجم، كان فريق تقنية المعلومات الداخلي يشغّل خدمات قديمة على خوادمه الخاصة. وكانت الأعطال تقع في أوقات سيئة، والمعرفة محصورة لدى قلة من الأشخاص، ولم تكن لدى أحد صورة كاملة عن كيفية ترابط الأجزاء.",
+          "rough": "شركة تجزئة متوسطة. فريق تقنية المعلومات الداخلي كان يشغّل خدمات قديمة على خوادمه. الأعطال جاءت في أوقات سيئة، والمعرفة كانت عند قلة من الناس فقط، ولا أحد كان عنده صورة كاملة كيف تترابط الأجزاء."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "sw_api.supported.1",
+      "archetype": "sw_api",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I designed and built a REST API in Python with FastAPI for partner integrations, with versioned endpoints and an OpenAPI specification. Within 3 months, 4 partners had connected with no breaking changes.",
+          "rough": "I designed and built REST API with Python and FastAPI for partner integrations. Endpoints are versioned and there is OpenAPI specification. In 3 months 4 partners connected, no breaking changes."
+        },
+        "fi": {
+          "polished": "Suunnittelin ja rakensin Pythonilla ja FastAPI:lla REST API:n kumppani-integraatioita varten, versioiduin päätepistein ja OpenAPI-kuvauksella. Rajapintaan liittyi 3 kuukauden aikana 4 kumppania ilman yhteensopivuutta rikkovia muutoksia.",
+          "rough": "Suunnittelin ja rakensin REST API:n Pythonilla ja FastAPI:lla kumppani-integraatioille. Päätepisteet on versioitu ja on OpenAPI-kuvaus. Rajapintaan liittyi 4 kumppania 3 kuukaudessa, ei rikkovia muutoksia."
+        },
+        "sv": {
+          "polished": "Jag designade och byggde ett REST API i Python med FastAPI för partnerintegrationer, med versionerade endpoints och en OpenAPI-specifikation. Inom 3 månader hade 4 partner anslutit sig utan bakåtinkompatibla ändringar.",
+          "rough": "Jag designade och byggde REST API med Python och FastAPI för partnerintegrationer. Endpoints är versionerade och det finns OpenAPI-specifikation. På 3 månader anslöt 4 partner, inga brytande ändringar."
+        },
+        "ar": {
+          "polished": "صمّمتُ وبنيتُ واجهة REST API بلغة Python باستخدام FastAPI لتكاملات الشركاء، مع نقاط نهاية ذات إصدارات ومواصفة OpenAPI. وخلال 3 أشهر اتصل بها 4 شركاء دون أي تغييرات كاسرة للتوافق.",
+          "rough": "صمّمتُ وبنيتُ REST API بـ Python و FastAPI لتكاملات الشركاء. نقاط النهاية لها إصدارات وهناك مواصفة OpenAPI. في 3 أشهر اتصل 4 شركاء، بدون تغييرات كاسرة."
+        }
+      }
+    },
+    {
+      "id": "sw_api.supported.2",
+      "archetype": "sw_api",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I added request validation with Pydantic and clear error codes to the partner API, and wrote the integration guide myself. Partner error reports fell from 25 to 6 per month.",
+          "rough": "I added request validation with Pydantic and clear error codes to partner API. I also wrote the integration guide. Partner error reports fell from 25 to 6 per month."
+        },
+        "fi": {
+          "polished": "Lisäsin kumppani-API:in Pydanticilla toteutetun pyyntöjen validoinnin ja selkeät virhekoodit sekä kirjoitin integraatio-ohjeen itse. Kumppaneiden virheilmoitukset vähenivät 25:stä 6:een kuukaudessa.",
+          "rough": "Lisäsin kumppani-API:in pyyntöjen validoinnin Pydanticilla ja selkeät virhekoodit. Kirjoitin myös integraatio-ohjeen. Kumppaneiden virheilmoitukset laski 25:stä 6:een kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag lade till validering av anrop med Pydantic och tydliga felkoder i partner-API:et och skrev integrationsguiden själv. Partnernas felrapporter minskade från 25 till 6 per månad.",
+          "rough": "Jag lade till validering av anrop med Pydantic och tydliga felkoder i partner-API:et. Jag skrev också integrationsguiden. Partnernas felrapporter sjönk från 25 till 6 per månad."
+        },
+        "ar": {
+          "polished": "أضفتُ إلى واجهة API الخاصة بالشركاء التحقق من صحة الطلبات باستخدام Pydantic ورموز أخطاء واضحة، وكتبتُ دليل التكامل بنفسي. وانخفضت بلاغات الأخطاء من الشركاء من 25 إلى 6 شهريًا.",
+          "rough": "أضفتُ التحقق من الطلبات بـ Pydantic ورموز أخطاء واضحة إلى API الشركاء. وكتبتُ أيضًا دليل التكامل. بلاغات الأخطاء من الشركاء نزلت من 25 إلى 6 في الشهر."
+        }
+      }
+    },
+    {
+      "id": "sw_api.partial.1",
+      "archetype": "sw_api",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We built a REST API for partners with OAuth sign-in and a public changelog, and partner calls ran at 99.8% uptime over 6 months.",
+          "rough": "We built REST API for partners with OAuth login and public changelog. Partner calls had 99.8% uptime in 6 months."
+        },
+        "fi": {
+          "polished": "Rakensimme kumppaneille REST API:n, jossa oli OAuth-kirjautuminen ja julkinen muutosloki, ja kumppaneiden API-kutsujen käytettävyys oli 99,8 % 6 kuukauden ajan.",
+          "rough": "Rakensimme kumppaneille REST API:n jossa on OAuth-kirjautuminen ja julkinen muutosloki. Kumppaneiden API-kutsujen käytettävyys oli 99,8 % 6 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Vi byggde ett REST API för partner med OAuth-inloggning och en offentlig ändringslogg, och partneranropen hade 99,8 % tillgänglighet under 6 månader.",
+          "rough": "Vi byggde REST API för partner med OAuth-inloggning och offentlig ändringslogg. Partneranropen hade 99,8 % upptid på 6 månader."
+        },
+        "ar": {
+          "polished": "بنينا واجهة REST API للشركاء مع تسجيل دخول عبر OAuth وسجل تغييرات علني، وعملت استدعاءات الشركاء بنسبة توفر 99.8% على مدى 6 أشهر.",
+          "rough": "بنينا REST API للشركاء مع تسجيل دخول OAuth وسجل تغييرات علني. استدعاءات الشركاء كان توفرها 99.8% خلال 6 أشهر."
+        }
+      }
+    },
+    {
+      "id": "sw_api.partial.2",
+      "archetype": "sw_api",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I supported the partner interface work for a period and took part in some of the integration meetings.",
+          "rough": "I helped with partner interface work for a while. I went to some integration meetings."
+        },
+        "fi": {
+          "polished": "Tuin kumppanirajapintaan liittyvää työtä jonkin aikaa ja osallistuin osaan integraatiopalavereista.",
+          "rough": "Autoin kumppanirajapinnan työssä jonkin aikaa. Kävin joissain integraatiopalavereissa."
+        },
+        "sv": {
+          "polished": "Jag stöttade arbetet med partnergränssnittet en tid och deltog i några av integrationsmötena.",
+          "rough": "Jag hjälpte till med partnergränssnittet en tid. Jag var på några integrationsmöten."
+        },
+        "ar": {
+          "polished": "دعمتُ العمل على واجهة الشركاء لفترة من الوقت، وشاركتُ في بعض اجتماعات التكامل.",
+          "rough": "ساعدتُ في عمل واجهة الشركاء لفترة. حضرتُ بعض اجتماعات التكامل."
+        }
+      }
+    },
+    {
+      "id": "sw_api.none.1",
+      "archetype": "sw_api",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a forward-thinking developer who believes clean, scalable APIs are the key to digital ecosystems and seamless partnerships.",
+          "rough": "I am forward thinking developer. I believe clean and scalable APIs are key for digital ecosystems and seamless partnerships."
+        },
+        "fi": {
+          "polished": "Olen eteenpäin katsova kehittäjä, joka uskoo, että selkeät ja skaalautuvat API:t ovat avain digitaalisiin ekosysteemeihin ja saumattomiin kumppanuuksiin.",
+          "rough": "Olen eteenpäin katsova kehittäjä. Uskon että selkeät ja skaalautuvat API:t on avain digitaalisiin ekosysteemeihin ja saumattomiin kumppanuuksiin."
+        },
+        "sv": {
+          "polished": "Jag är en framåtblickande utvecklare som tror att rena, skalbara API:er är nyckeln till digitala ekosystem och sömlösa partnerskap.",
+          "rough": "Jag är framåtblickande utvecklare. Jag tror rena och skalbara API:er är nyckeln till digitala ekosystem och sömlösa partnerskap."
+        },
+        "ar": {
+          "polished": "أحمل في التطوير نظرة استشرافية، وأؤمن بأن واجهات API النظيفة والقابلة للتوسع هي مفتاح المنظومات الرقمية والشراكات السلسة.",
+          "rough": "عندي نظرة استشرافية في التطوير. أؤمن أن واجهات API النظيفة والقابلة للتوسع هي مفتاح المنظومات الرقمية والشراكات السلسة."
+        }
+      }
+    },
+    {
+      "id": "sw_api.none.2",
+      "archetype": "sw_api",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised a weekly running club for colleagues and managed the sign-up list for about 20 people.",
+          "rough": "I organised weekly running club for colleagues. I kept the sign-up list, about 20 people."
+        },
+        "fi": {
+          "polished": "Järjestin kollegoille viikoittaisen juoksukerhon ja hoidin noin 20 hengen ilmoittautumislistaa.",
+          "rough": "Järkkäsin kollegoille viikoittaisen juoksukerhon. Pidin ilmoittautumislistaa, noin 20 ihmistä."
+        },
+        "sv": {
+          "polished": "Jag organiserade en löparklubb för kollegor med träffar varje vecka och skötte anmälningslistan för cirka 20 personer.",
+          "rough": "Jag ordnade en löparklubb för kollegor, träff varje vecka. Jag höll anmälningslistan, cirka 20 personer."
+        },
+        "ar": {
+          "polished": "نظّمتُ ناديًا أسبوعيًا للجري للزملاء، وأدرتُ قائمة التسجيل لنحو 20 شخصًا.",
+          "rough": "نظّمتُ نادي جري أسبوعي للزملاء. اهتممتُ بقائمة التسجيل، حوالي 20 شخصًا."
+        }
+      }
+    },
+    {
+      "id": "sw_testing.supported.1",
+      "archetype": "sw_testing",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I wrote about 200 automated regression tests with pytest and ran them in GitLab CI on every merge request. Releases moved from monthly to weekly, with no rollbacks in 4 months.",
+          "rough": "I wrote around 200 automated regression tests with pytest. I run them in GitLab CI on every merge request. Releases went from monthly to weekly and no rollbacks in 4 months."
+        },
+        "fi": {
+          "polished": "Kirjoitin noin 200 automaattista regressiotestiä pytestillä ja ajoin ne GitLab CI:ssä jokaisen merge requestin yhteydessä. Julkaisutahti nopeutui kuukausittaisesta viikoittaiseen, eikä 4 kuukauteen tarvittu yhtään peruutusta.",
+          "rough": "Kirjoitin noin 200 automaattista regressiotestiä pytestillä. Ajoin ne GitLab CI:ssä joka merge requestissa. Julkaisut meni kuukausittaisista viikoittaisiin, eikä peruutuksia 4 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag skrev cirka 200 automatiserade regressionstester med pytest och körde dem i GitLab CI vid varje merge request. Releaserna gick från månadsvis till veckovis, utan återställningar på 4 månader.",
+          "rough": "Jag skrev cirka 200 automatiska regressionstester med pytest. Jag körde dem i GitLab CI vid varje merge request. Releaser gick från varje månad till varje vecka, inga återställningar på 4 månader."
+        },
+        "ar": {
+          "polished": "كتبتُ نحو 200 اختبار انحدار آلي باستخدام pytest، وشغّلتُها في GitLab CI مع كل طلب دمج. فانتقلت الإصدارات من شهرية إلى أسبوعية، دون أي تراجع عن إصدار خلال 4 أشهر.",
+          "rough": "كتبتُ حوالي 200 اختبار انحدار آلي بـ pytest. شغّلتُها في GitLab CI مع كل طلب دمج. الإصدارات صارت أسبوعية بدل شهرية، ولا تراجع عن إصدار في 4 أشهر."
+        }
+      }
+    },
+    {
+      "id": "sw_testing.supported.2",
+      "archetype": "sw_testing",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I automated the 15 most used user flows as Playwright end-to-end tests and made any failing test block the release. Weekly releases have since run for 5 months without a rollback.",
+          "rough": "I automated 15 most used user flows as end-to-end tests in Playwright. I made it so a failing test blocks the release. Weekly releases run 5 months now without rollback."
+        },
+        "fi": {
+          "polished": "Automatisoin 15 eniten käytettyä käyttäjäpolkua päästä päähän -testeiksi Playwrightilla ja määritin, että mikä tahansa epäonnistunut testi estää julkaisun. Viikoittaiset julkaisut ovat sen jälkeen sujuneet 5 kuukautta ilman peruutuksia.",
+          "rough": "Automatisoin 15 käytetyintä käyttäjäpolkua end-to-end-testeiksi Playwrightilla. Tein niin että epäonnistunut testi estää julkaisun. Viikoittaiset julkaisut on menneet nyt 5 kuukautta ilman peruutusta."
+        },
+        "sv": {
+          "polished": "Jag automatiserade de 15 mest använda användarflödena som end-to-end-tester i Playwright och såg till att ett misslyckat test stoppar releasen. Veckoreleaserna har sedan dess gått i 5 månader utan återställning.",
+          "rough": "Jag automatiserade 15 mest använda användarflöden som end-to-end-tester i Playwright. Jag fixade så att misslyckat test stoppar releasen. Veckoreleaser har gått 5 månader nu utan återställning."
+        },
+        "ar": {
+          "polished": "أتمتُّ مسارات المستخدم الـ 15 الأكثر استخدامًا في صورة اختبارات شاملة من البداية إلى النهاية باستخدام Playwright، وجعلتُ أي اختبار فاشل يوقف الإصدار. ومنذ ذلك الحين، استمرت الإصدارات الأسبوعية 5 أشهر دون أي تراجع.",
+          "rough": "أتمتُّ أكثر 15 مسار استخدام شيوعًا كاختبارات end-to-end في Playwright. جعلتُ الاختبار الفاشل يوقف الإصدار. الإصدارات الأسبوعية مستمرة الآن 5 أشهر بدون تراجع."
+        }
+      }
+    },
+    {
+      "id": "sw_testing.partial.1",
+      "archetype": "sw_testing",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The team set up nightly regression runs with Cypress, and release rollbacks dropped from 9 to 3 per quarter.",
+          "rough": "The team made nightly regression runs with Cypress. Release rollbacks went down from 9 to 3 per quarter."
+        },
+        "fi": {
+          "polished": "Tiimi otti käyttöön öiset regressioajot Cypressillä, ja julkaisujen peruutukset vähenivät 9:stä 3:een vuosineljänneksessä.",
+          "rough": "Tiimi teki öiset regressioajot Cypressillä. Julkaisujen peruutukset laski 9:stä 3:een per neljännes."
+        },
+        "sv": {
+          "polished": "Teamet satte upp nattliga regressionskörningar med Cypress, och antalet återställda releaser minskade från 9 till 3 per kvartal.",
+          "rough": "Teamet gjorde nattliga regressionskörningar med Cypress. Återställda releaser gick ner från 9 till 3 per kvartal."
+        },
+        "ar": {
+          "polished": "أعدّ الفريق تشغيلًا ليليًا لاختبارات الانحدار باستخدام Cypress، فانخفض عدد التراجعات عن الإصدارات من 9 إلى 3 فصليًا.",
+          "rough": "الفريق أعدّ تشغيل ليلي لاختبارات الانحدار بـ Cypress. التراجعات عن الإصدارات نزلت من 9 إلى 3 فصليًا."
+        }
+      }
+    },
+    {
+      "id": "sw_testing.partial.2",
+      "archetype": "sw_testing",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I took part in pre-release testing and supported the team whenever issues came up with the tests.",
+          "rough": "I was part of testing before releases. I helped the team when tests had problems."
+        },
+        "fi": {
+          "polished": "Osallistuin julkaisuja edeltävään testaukseen ja tuin tiimiä aina, kun testeissä ilmeni ongelmia.",
+          "rough": "Olin mukana testauksessa ennen julkaisuja. Autoin tiimiä kun testeissä oli ongelmia."
+        },
+        "sv": {
+          "polished": "Jag deltog i testningen före releaser och stöttade teamet när det uppstod problem med testerna.",
+          "rough": "Jag var med i testningen före releaser. Jag hjälpte teamet när testerna hade problem."
+        },
+        "ar": {
+          "polished": "شاركتُ في الاختبارات التي تسبق الإصدارات، ودعمتُ الفريق كلما ظهرت مشكلات في الاختبارات.",
+          "rough": "كنتُ جزءًا من الاختبار قبل الإصدارات. ساعدتُ الفريق عندما كانت مشاكل في الاختبارات."
+        }
+      }
+    },
+    {
+      "id": "sw_testing.none.1",
+      "archetype": "sw_testing",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a quality-minded professional who believes a strong testing culture and continuous improvement are at the heart of great software.",
+          "rough": "I am quality minded professional. I believe strong testing culture and continuous improvement is the heart of great software."
+        },
+        "fi": {
+          "polished": "Olen laatutietoinen ammattilainen ja uskon, että vahva testauskulttuuri ja jatkuva parantaminen ovat loistavan ohjelmiston ytimessä.",
+          "rough": "Olen laatutietoinen ammattilainen. Uskon että vahva testauskulttuuri ja jatkuva parantaminen on loistavan ohjelmiston sydän."
+        },
+        "sv": {
+          "polished": "Jag är en kvalitetsmedveten yrkesperson som tror att en stark testkultur och ständiga förbättringar är kärnan i fantastisk mjukvara.",
+          "rough": "Jag är kvalitetsmedveten yrkesperson. Jag tror stark testkultur och ständig förbättring är hjärtat i fantastisk mjukvara."
+        },
+        "ar": {
+          "polished": "أهتم بالجودة اهتمامًا كبيرًا، وأؤمن بأن ثقافة الاختبار القوية والتحسين المستمر هما جوهر البرمجيات الرائعة.",
+          "rough": "الجودة مهمة جدًا عندي. أؤمن أن ثقافة اختبار قوية والتحسين المستمر هما قلب البرمجيات الرائعة."
+        }
+      }
+    },
+    {
+      "id": "sw_testing.none.2",
+      "archetype": "sw_testing",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I designed the posters and planned the lunch menu for the company's anniversary party with 45 guests.",
+          "rough": "I made the posters and planned lunch menu for company anniversary party, 45 guests."
+        },
+        "fi": {
+          "polished": "Suunnittelin julisteet ja lounasmenun yrityksen vuosijuhlaan, johon osallistui 45 vierasta.",
+          "rough": "Tein julisteet ja suunnittelin lounasmenun firman vuosijuhliin, 45 vierasta."
+        },
+        "sv": {
+          "polished": "Jag designade affischerna och planerade lunchmenyn till företagets jubileumsfest med 45 gäster.",
+          "rough": "Jag gjorde affischerna och planerade lunchmenyn till företagets jubileumsfest, 45 gäster."
+        },
+        "ar": {
+          "polished": "صمّمتُ الملصقات وخطّطتُ قائمة الغداء لحفل الذكرى السنوية للشركة بحضور 45 ضيفًا.",
+          "rough": "صنعتُ الملصقات وخطّطتُ قائمة الغداء لحفل ذكرى الشركة، 45 ضيفًا."
+        }
+      }
+    },
+    {
+      "id": "sw_cloud.supported.1",
+      "archetype": "sw_cloud",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I migrated 8 on-premise services to Azure with Terraform, shifting traffic gradually through blue-green deployments. The whole move took 5 months, and customers experienced no downtime.",
+          "rough": "I migrated 8 on-premise services to Azure with Terraform. Traffic I moved slowly with blue-green deployments. Whole move took 5 months and customers had no downtime."
+        },
+        "fi": {
+          "polished": "Siirsin 8 paikallista palvelua Azureen Terraformilla ja ohjasin liikenteen vähitellen blue-green-julkaisujen avulla. Koko siirto kesti 5 kuukautta, eikä asiakkaille tullut katkoja.",
+          "rough": "Siirsin 8 paikallista palvelua Azureen Terraformilla. Liikenteen siirsin pikkuhiljaa blue-green-julkaisuilla. Koko siirto kesti 5 kuukautta ja asiakkaille ei tullut katkoja."
+        },
+        "sv": {
+          "polished": "Jag migrerade 8 lokala tjänster till Azure med Terraform och flyttade trafiken gradvis med blue-green-driftsättningar. Hela flytten tog 5 månader, och kunderna upplevde inga avbrott.",
+          "rough": "Jag migrerade 8 lokala tjänster till Azure med Terraform. Trafiken flyttade jag sakta med blue-green-driftsättningar. Hela flytten tog 5 månader och kunderna hade inga avbrott."
+        },
+        "ar": {
+          "polished": "نقلتُ 8 خدمات محلية إلى Azure باستخدام Terraform، وحوّلتُ حركة المرور تدريجيًا عبر عمليات نشر blue-green. واستغرق النقل كله 5 أشهر دون أي انقطاع للعملاء.",
+          "rough": "نقلتُ 8 خدمات محلية إلى Azure بـ Terraform. حوّلتُ حركة المرور ببطء مع نشر blue-green. النقل كله أخذ 5 أشهر والعملاء لم يكن عندهم انقطاع."
+        }
+      }
+    },
+    {
+      "id": "sw_cloud.supported.2",
+      "archetype": "sw_cloud",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I containerised 3 legacy services with Docker and moved them to Kubernetes on AWS, replicating the database in advance. The final cut-over took 20 minutes with no customer-facing errors.",
+          "rough": "I put 3 legacy services in Docker containers and moved them to Kubernetes on AWS. Database I replicated before. Cut-over took 20 minutes, customers saw no errors."
+        },
+        "fi": {
+          "polished": "Kontitin 3 vanhaa palvelua Dockerilla ja siirsin ne Kubernetesiin AWS:ään replikoimalla tietokannan etukäteen. Lopullinen vaihto kesti 20 minuuttia ilman asiakkaille näkyviä virheitä.",
+          "rough": "Laitoin 3 vanhaa palvelua Docker-kontteihin ja siirsin ne Kubernetesiin AWS:ään. Tietokannan replikoin etukäteen. Vaihto kesti 20 minuuttia, asiakkaat ei nähneet virheitä."
+        },
+        "sv": {
+          "polished": "Jag containeriserade 3 äldre tjänster med Docker och flyttade dem till Kubernetes på AWS, efter att ha replikerat databasen i förväg. Den slutliga omställningen tog 20 minuter utan fel som kunderna märkte.",
+          "rough": "Jag lade 3 gamla tjänster i Docker-containrar och flyttade dem till Kubernetes på AWS. Databasen replikerade jag innan. Omställningen tog 20 minuter, kunderna såg inga fel."
+        },
+        "ar": {
+          "polished": "وضعتُ 3 خدمات قديمة في حاويات Docker ونقلتُها إلى Kubernetes على AWS، بعد أن أجريتُ نسخًا متماثلًا لقاعدة البيانات مسبقًا. واستغرق التحويل النهائي 20 دقيقة دون أي أخطاء ظاهرة للعملاء.",
+          "rough": "وضعتُ 3 خدمات قديمة في حاويات Docker ونقلتُها إلى Kubernetes على AWS. قاعدة البيانات نسختُها نسخًا متماثلًا قبلها. التحويل أخذ 20 دقيقة، والعملاء لم يروا أخطاء."
+        }
+      }
+    },
+    {
+      "id": "sw_cloud.partial.1",
+      "archetype": "sw_cloud",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We moved the customer portal from our own servers to Google Cloud with a lift-and-shift approach and completed the switch in 3 months without downtime.",
+          "rough": "We moved customer portal from our own servers to Google Cloud, lift-and-shift way. We finished the switch in 3 months without downtime."
+        },
+        "fi": {
+          "polished": "Siirsimme asiakasportaalin omilta palvelimiltamme Google Cloudiin lift-and-shift-menetelmällä ja saimme siirron valmiiksi 3 kuukaudessa ilman katkoja.",
+          "rough": "Siirsimme asiakasportaalin omilta servereiltä Google Cloudiin lift-and-shift-tyylillä. Saimme siirron valmiiksi 3 kuukaudessa ilman katkoja."
+        },
+        "sv": {
+          "polished": "Vi flyttade kundportalen från våra egna servrar till Google Cloud med en lift-and-shift-metod och slutförde bytet på 3 månader utan avbrott.",
+          "rough": "Vi flyttade kundportalen från våra egna servrar till Google Cloud, lift-and-shift. Vi blev klara med bytet på 3 månader utan avbrott."
+        },
+        "ar": {
+          "polished": "نقلنا بوابة العملاء من خوادمنا الخاصة إلى Google Cloud بأسلوب lift-and-shift، وأنجزنا التحويل خلال 3 أشهر دون أي انقطاع.",
+          "rough": "نقلنا بوابة العملاء من خوادمنا إلى Google Cloud بطريقة lift-and-shift. أنهينا التحويل في 3 أشهر بدون انقطاع."
+        }
+      }
+    },
+    {
+      "id": "sw_cloud.partial.2",
+      "archetype": "sw_cloud",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I was part of the cloud migration project and contributed where needed, mainly with smaller tasks.",
+          "rough": "I was in the cloud move project. I helped where needed, mostly small tasks."
+        },
+        "fi": {
+          "polished": "Olin mukana pilvisiirtoprojektissa ja osallistuin tarpeen mukaan, lähinnä pienempiin tehtäviin.",
+          "rough": "Olin pilvisiirtoprojektissa. Autoin missä tarvittiin, enimmäkseen pieniä juttuja."
+        },
+        "sv": {
+          "polished": "Jag var med i molnmigreringsprojektet och bidrog där det behövdes, främst med mindre uppgifter.",
+          "rough": "Jag var med i molnflytten. Jag hjälpte där det behövdes, mest små uppgifter."
+        },
+        "ar": {
+          "polished": "كنتُ ضمن مشروع الانتقال إلى السحابة، وساهمتُ حيثما دعت الحاجة، وبشكل رئيسي في مهام أصغر.",
+          "rough": "كنتُ في مشروع نقل الخدمات إلى السحابة. ساعدتُ حيث احتاجوا، غالبًا مهام صغيرة."
+        }
+      }
+    },
+    {
+      "id": "sw_cloud.none.1",
+      "archetype": "sw_cloud",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a cloud-native thinker who believes digital transformation and modern infrastructure create endless opportunities for innovation.",
+          "rough": "I am cloud native thinker. I believe digital transformation and modern infrastructure gives endless opportunities for innovation."
+        },
+        "fi": {
+          "polished": "Ajattelen pilvinatiivisti ja uskon, että digitaalinen murros ja moderni infrastruktuuri luovat loputtomasti mahdollisuuksia innovointiin.",
+          "rough": "Ajattelen pilvinatiivisti. Uskon että digitaalinen murros ja moderni infra antaa loputtomasti mahdollisuuksia innovaatioille."
+        },
+        "sv": {
+          "polished": "Jag är en molnorienterad tänkare som tror att digital transformation och modern infrastruktur skapar oändliga möjligheter till innovation.",
+          "rough": "Jag är molnorienterad tänkare. Jag tror digital transformation och modern infrastruktur ger oändliga möjligheter för innovation."
+        },
+        "ar": {
+          "polished": "أفكّر بعقلية سحابية أصيلة، وأؤمن بأن التحول الرقمي والبنية التحتية الحديثة يخلقان فرصًا لا حصر لها للابتكار.",
+          "rough": "تفكيري سحابي. أؤمن أن التحول الرقمي والبنية التحتية الحديثة تعطي فرصًا بلا نهاية للابتكار."
+        }
+      }
+    },
+    {
+      "id": "sw_cloud.none.2",
+      "archetype": "sw_cloud",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I set up a lunchtime book club for 12 colleagues and selected the book for each month.",
+          "rough": "I started book club at lunch for 12 colleagues. I chose the book every month."
+        },
+        "fi": {
+          "polished": "Perustin lounastauon lukupiirin 12 kollegalle ja valitsin kunkin kuukauden kirjan.",
+          "rough": "Aloitin lukupiirin lounaalla 12 kollegalle. Valitsin kirjan joka kuukausi."
+        },
+        "sv": {
+          "polished": "Jag startade en bokcirkel på lunchen för 12 kollegor och valde boken för varje månad.",
+          "rough": "Jag startade bokcirkel på lunchen för 12 kollegor. Jag valde boken varje månad."
+        },
+        "ar": {
+          "polished": "أسّستُ ناديًا للقراءة في استراحة الغداء لـ 12 زميلًا، واخترتُ كتاب كل شهر.",
+          "rough": "بدأتُ نادي قراءة وقت الغداء لـ 12 زميلًا. اخترتُ الكتاب كل شهر."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "sw.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would agree on the scope with the product owner at the start, and say no more clearly when new requests arrived in the middle of the work.",
+          "rough": "I would agree the scope with product owner in the start. And say no more clearly when new requests came in middle of the work."
+        },
+        "fi": {
+          "polished": "Sopisin laajuudesta tuoteomistajan kanssa heti alussa ja sanoisin selkeämmin ei, kun uusia toiveita tuli kesken työn.",
+          "rough": "Sopisin laajuuden tuoteomistajan kanssa alussa. Ja sanoisin selvemmin ei, kun uusia toiveita tuli kesken työn."
+        },
+        "sv": {
+          "polished": "Jag skulle komma överens om omfattningen med produktägaren redan från början och säga nej tydligare när nya önskemål kom mitt i arbetet.",
+          "rough": "Jag skulle komma överens om omfattningen med produktägaren i början. Och säga nej tydligare när nya önskemål kom mitt i jobbet."
+        },
+        "ar": {
+          "polished": "كنتُ سأتفق على نطاق العمل مع مالك المنتج منذ البداية، وأرفض بوضوح أكبر عندما تصل طلبات جديدة في منتصف العمل.",
+          "rough": "كنتُ سأتفق على النطاق مع مالك المنتج في البداية. وأقول لا بوضوح أكثر عندما تأتي طلبات جديدة في وسط العمل."
+        }
+      }
+    },
+    {
+      "id": "sw.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would write down the decisions from each meeting and share them the same day, so nobody had to guess later what was agreed.",
+          "rough": "I would write down decisions from meetings and share same day. So nobody need to guess later what was agreed."
+        },
+        "fi": {
+          "polished": "Kirjaisin jokaisen palaverin päätökset ylös ja jakaisin ne samana päivänä, jotta kenenkään ei tarvitsisi myöhemmin arvailla, mitä oli sovittu.",
+          "rough": "Kirjoittaisin palaverien päätökset ylös ja jakaisin samana päivänä. Ettei kenenkään tarvitse myöhemmin arvata mitä sovittiin."
+        },
+        "sv": {
+          "polished": "Jag skulle skriva ner besluten från varje möte och dela dem samma dag, så att ingen behövde gissa i efterhand vad som hade bestämts.",
+          "rough": "Jag skulle skriva ner beslut från möten och dela samma dag. Så ingen behöver gissa sen vad som bestämdes."
+        },
+        "ar": {
+          "polished": "كنتُ سأدوّن القرارات المتخذة في كل اجتماع وأشاركها في اليوم نفسه، حتى لا يضطر أحد لاحقًا إلى تخمين ما تم الاتفاق عليه.",
+          "rough": "كنتُ سأكتب قرارات الاجتماعات وأشاركها نفس اليوم. حتى لا يحتاج أحد أن يخمّن بعدها ما تم الاتفاق عليه."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "sw.next.1",
+      "text": {
+        "en": {
+          "polished": "I want to build software that real people use every day, in a team where I can learn from code reviews and take on more responsibility step by step.",
+          "rough": "I want build software what real people use every day. In a team where I learn from code reviews and get more responsibility step by step."
+        },
+        "fi": {
+          "polished": "Haluan rakentaa ohjelmistoja, joita oikeat ihmiset käyttävät joka päivä, tiimissä, jossa voin oppia koodikatselmoinneista ja ottaa vähitellen enemmän vastuuta.",
+          "rough": "Haluan tehdä softaa jota oikeat ihmiset käyttää joka päivä. Tiimissä jossa opin koodikatselmoinneista ja saan pikkuhiljaa enemmän vastuuta."
+        },
+        "sv": {
+          "polished": "Jag vill bygga mjukvara som riktiga människor använder varje dag, i ett team där jag kan lära mig av kodgranskningar och ta mer ansvar steg för steg.",
+          "rough": "Jag vill bygga mjukvara som riktiga människor använder varje dag. I ett team där jag lär mig av kodgranskningar och får mer ansvar steg för steg."
+        },
+        "ar": {
+          "polished": "أريد أن أبني برمجيات يستخدمها أناس حقيقيون كل يوم، ضمن فريق أتعلم فيه من مراجعات الشيفرة وأتحمل مسؤولية أكبر خطوة بخطوة.",
+          "rough": "أريد أن أبني برمجيات يستخدمها ناس حقيقيون كل يوم. في فريق أتعلم فيه من مراجعات الكود وآخذ مسؤولية أكثر خطوة خطوة."
+        }
+      }
+    },
+    {
+      "id": "sw.next.2",
+      "text": {
+        "en": {
+          "polished": "I would like to work on systems that other companies depend on, and understand how good software is planned, built and kept running.",
+          "rough": "I like to work on systems that other companies depend. I want understand how good software is planned, built and kept running."
+        },
+        "fi": {
+          "polished": "Haluaisin työskennellä järjestelmien parissa, joista muut yritykset ovat riippuvaisia, ja ymmärtää, miten hyvä ohjelmisto suunnitellaan, rakennetaan ja pidetään käynnissä.",
+          "rough": "Haluaisin tehdä töitä järjestelmien kanssa joista muut firmat on riippuvaisia. Haluan ymmärtää miten hyvä softa suunnitellaan, rakennetaan ja pidetään pystyssä."
+        },
+        "sv": {
+          "polished": "Jag skulle vilja arbeta med system som andra företag är beroende av, och förstå hur bra mjukvara planeras, byggs och hålls igång.",
+          "rough": "Jag vill jobba med system som andra företag är beroende av. Jag vill förstå hur bra mjukvara planeras, byggs och hålls igång."
+        },
+        "ar": {
+          "polished": "أودّ العمل على أنظمة تعتمد عليها شركات أخرى، وأن أفهم كيف تُخطَّط البرمجيات الجيدة وتُبنى وتبقى قيد التشغيل.",
+          "rough": "أحب أن أعمل على أنظمة تعتمد عليها شركات أخرى. أريد أن أفهم كيف البرمجيات الجيدة تُخطَّط وتُبنى وتبقى تعمل."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "A previous developer was strong at coding but struggled with our slow review process and unclear priorities.",
+    "They often started large changes without checking them with the team first, which led to painful merges.",
+    "We now agree on small, clear tasks in the first week and pair new people with a senior developer."
+  ]
+}

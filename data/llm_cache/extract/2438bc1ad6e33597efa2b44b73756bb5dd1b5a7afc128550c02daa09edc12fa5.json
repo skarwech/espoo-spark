@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Vårt team ersatte de månatliga PDF-rapporterna med en Power BI-dashboard på 8 veckor, och ad hoc-förfrågningarna om siffror minskade med 40 %.",
+    "skills": [
+     "S04",
+     "S10"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag skrev valideringsregler i SQL för postnummer, FO-nummer och e-postformat, rättade 640 felaktiga kundrader och slog ihop de 3 källsystemen med en gemensam kundnyckel.",
+    "skills": [
+     "S32",
+     "S25"
+    ]
+   }
+  ]
+ }
+}

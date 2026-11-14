@@ -1,0 +1,80 @@
+{
+  "_note": "Hand-authored hero cases (synthetic). Sentences quoted by the spec are verbatim; later features cite them as exact substrings.",
+  "company": {"company_id": "C-014", "name": "NordSense", "industry": "industrial IoT", "capacity": 12},
+  "need": {
+    "need_id": "N-014", "company_id": "C-014", "version": 1, "confirmed": true, "lang": "en",
+    "outcomes": [
+      {"id": "o1", "text": "Cut false sensor-fault alerts by half within 90 days", "priority": "must", "skills_by_label": ["perform data analysis", "Internet of Things", "monitor system performance"]},
+      {"id": "o2", "text": "Maintain data pipelines from edge devices with under 1% lost readings", "priority": "must", "skills_by_label": ["ICT system integration", "manage data", "Internet of Things"]},
+      {"id": "o3", "text": "Support Finnish-speaking customers in technical support cases", "priority": "learnable", "skills_by_label": ["Finnish", "handle customer complaints"]}
+    ],
+    "skills_by_label": [
+      ["perform data analysis", "must"], ["Internet of Things", "must"], ["monitor system performance", "must"],
+      ["ICT system integration", "must"], ["manage data", "must"],
+      ["Finnish", "learnable"], ["handle customer complaints", "learnable"]
+    ],
+    "languages": [{"lang": "en", "required": true}, {"lang": "fi", "required": false}],
+    "constraints": {"onsite": "hybrid", "start": "2027-02", "intl_ok": true, "relocation_support": "partial"},
+    "company_reality_notes": [
+      "The last hire struggled with noisy field data and unclear ownership of the data pipeline.",
+      "Support tickets from Finnish-speaking customers piled up when our only Finnish speaker was on holiday."
+    ],
+    "planted_archetypes": {"o1": "iot_alerts", "o2": "iot_pipeline", "o3": "cs_support"}
+  },
+  "candidates": [
+    {
+      "candidate_id": "J-001",
+      "story": {
+        "lang": "en", "used_ai": true,
+        "problem": "During my studies, our university IoT project aimed to help a property company understand energy use in its buildings, but the sensor data was scattered across several systems.",
+        "did": "I am passionate about leveraging AI to drive impactful IoT solutions. Our team worked with data pipelines that collected readings from building sensors into a cloud dashboard. I thrive in collaborative, fast-paced environments and am eager to create value.",
+        "differently": "Looking back, I would have aligned stakeholder expectations earlier and established clearer communication channels from the outset.",
+        "next": "I am seeking an opportunity to grow as a data professional in an innovative IoT company. I would prefer a hybrid arrangement, with a few days a week on site."
+      },
+      "constraints": {"languages": [{"lang": "fi", "level": "native"}, {"lang": "en", "level": "C1"}, {"lang": "sv", "level": "B1"}], "start": "2027-01", "work_mode": "hybrid", "needs_relocation": false},
+      "experience_industry": "property technology",
+      "identity": {"name": "Aino Korhonen", "nationality": "Finnish", "school": "Aalto University", "birth_year": 2001, "email": "aino.k.001@example.test", "private_context": null},
+      "attributes": {"background": "local_graduate", "education": "university", "career_gap": false, "style": "polished", "origin_domain": "iot", "target_domain": "iot", "planted_tags": ["hero", "generic"]},
+      "planted_claims": [
+        {"claim_id": "hero.aino.1", "archetype": "iot_pipeline", "level": "partial"},
+        {"claim_id": "hero.aino.2", "archetype": "iot_alerts", "level": "none"}
+      ]
+    },
+    {
+      "candidate_id": "J-002",
+      "story": {
+        "lang": "en", "used_ai": false,
+        "problem": "At a water utility we had 300 pump stations sending sensor data. Operators got so many false alerts they started to ignore them, and sometimes data from the stations was just missing.",
+        "did": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day, checked by comparing weekly logs. I also took care of the data pipeline from the stations: I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%.",
+        "differently": "I would talk with the operators earlier. I changed rules first and explained after, and some of them did not trust the new alerts for weeks.",
+        "next": "I want to work with sensor data in a product company and learn Finnish properly. Hybrid is best for me, some days office some days home."
+      },
+      "constraints": {"languages": [{"lang": "ar", "level": "native"}, {"lang": "en", "level": "B2"}, {"lang": "fi", "level": "A1"}], "start": "2027-02", "work_mode": "hybrid", "needs_relocation": false},
+      "experience_industry": "water utility",
+      "identity": {"name": "Karim Haddad", "nationality": "Syrian", "school": "Damascus University", "birth_year": 1990, "email": "karim.h.002@example.test", "private_context": "I have a residence permit for work."},
+      "attributes": {"background": "international_professional", "education": "university", "career_gap": false, "style": "rough", "origin_domain": "iot", "target_domain": "iot", "planted_tags": ["hero"]},
+      "planted_claims": [
+        {"claim_id": "hero.karim.1", "archetype": "iot_alerts", "level": "supported"},
+        {"claim_id": "hero.karim.2", "archetype": "iot_pipeline", "level": "supported"}
+      ]
+    },
+    {
+      "candidate_id": "J-003",
+      "story": {
+        "lang": "en", "used_ai": false,
+        "problem": "In a mid-size logistics company, delivery routes were planned by hand every morning, and drivers often crossed each other's areas while customers waited.",
+        "did": "I led the work of re-planning routes for 120 trucks with a routing tool and historical delivery data, and I compared the new plan with the old one for 4 weeks: driven kilometres fell by 9%. I also connected our warehouse system to the ERP with a nightly integration job, so order data moved automatically and manual re-typing stopped.",
+        "differently": "I would involve the drivers earlier. Their local knowledge would have saved us 2 rounds of corrections.",
+        "next": "I want to move into data analysis, where I can use what I learned from planning and measuring routes. I would prefer a hybrid arrangement, with a few days a week on site."
+      },
+      "constraints": {"languages": [{"lang": "bg", "level": "native"}, {"lang": "en", "level": "C1"}, {"lang": "fi", "level": "A2"}], "start": "2027-02", "work_mode": "hybrid", "needs_relocation": false},
+      "experience_industry": "logistics",
+      "identity": {"name": "Elena Petrova", "nationality": "Bulgarian", "school": "University of National and World Economy", "birth_year": 1986, "email": "elena.p.003@example.test", "private_context": "I am a permanent resident and can start without a new permit."},
+      "attributes": {"background": "career_changer", "education": "university", "career_gap": false, "style": "polished", "origin_domain": "log", "target_domain": "data", "planted_tags": ["hero"]},
+      "planted_claims": [
+        {"claim_id": "hero.elena.1", "archetype": "log_routes", "level": "supported"},
+        {"claim_id": "hero.elena.2", "archetype": "log_erp", "level": "supported"}
+      ]
+    }
+  ]
+}

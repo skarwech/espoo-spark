@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I was part of the cloud migration project and contributed where needed, mainly with smaller tasks.",
+    "skills": [
+     "S06"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I took part in pre-release testing and supported the team whenever issues came up with the tests.",
+    "skills": [
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "We built a REST API for partners with OAuth sign-in and a public changelog, and partner calls ran at 99.8% uptime over 6 months.",
+    "skills": [
+     "S18",
+     "S46"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-008/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Quality inspections only; no PLC or packing automation work mentioned."
+   },
+   {
+    "key": "N-008/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Quality checks and reporting issues do not address line downtime."
+   },
+   {
+    "key": "N-008/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sensor fault alert work mentioned."
+   },
+   {
+    "key": "N-015/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Quality checks and reporting issues do not address line downtime."
+   },
+   {
+    "key": "N-015/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Quality inspections only; no PLC or packing automation work mentioned."
+   },
+   {
+    "key": "N-015/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work mentioned."
+   }
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag började mäta vibrationer på de 12 mest kritiska transportörmotorerna och jag satte gränser när lagren måste bytas. Oplanerade stopp på linjen gick ner 30 % på nästa 6 månader.",
+    "skills": [
+     "S33",
+     "S40"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag hjälpte automationsingenjören när packningslinjen uppgraderades, och jag hjälpte till med tester när de bad.",
+    "skills": [
+     "S03"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Kvalitetsteamet gjorde nya kriterier för slutkontrollen, med foton på OK och inte OK svetsar. Felprocenten i slutkontrollen gick ner 40 % på 6 månader.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

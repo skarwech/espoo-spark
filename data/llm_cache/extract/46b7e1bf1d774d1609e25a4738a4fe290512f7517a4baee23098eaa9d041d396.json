@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag byggde en REST-integration mellan lagerhanteringssystemet och ERP-systemet, så att plockade och skickade kvantiteter uppdaterar orderna inom 3 minuter i stället för i en nattlig batch.",
+    "skills": [
+     "S18",
+     "S28"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag analyserade lastbilarnas GPS-data i Excel, upptäckte att 4 morgonrutter överlappade och ritade om dem till 3, vilket sparar cirka 90 km körning per dag.",
+    "skills": [
+     "S31",
+     "S35"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I matched 3 months of fault alerts against maintenance work orders to see which ones were real.",
+    "skills": [
+     "S31",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I set separate thresholds for each sensor model, and weekly false alerts fell from 140 to 45.",
+    "skills": [
+     "S30",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I set up signed firmware images and a staged rollout plan, starting with 10 test devices and widening to 50 before the full fleet. All 400 sensors were updated remotely without any site visits.",
+    "skills": [
+     "S43",
+     "S21"
+    ]
+   }
+  ]
+ }
+}

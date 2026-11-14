@@ -1,0 +1,25 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jäljitin lopputarkastuksessa toistuvat maalausvirheet kalanruotoanalyysillä kuivauskopin kosteuteen ja lisäsin kosteuden tarkistuksen käynnistysrutiiniin. Maalaushylkäykset vähenivät 55 %.",
+    "skills": [
+     "S29"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Automatisoimme lavojen käärintävaiheen PLC-ohjatulla kääntöpöydällä ja valokennoilla, mikä lyhensi käärintäaikaa lavaa kohden 60 %.",
+    "skills": [
+     "S37",
+     "S03"
+    ]
+   }
+  ]
+ }
+}

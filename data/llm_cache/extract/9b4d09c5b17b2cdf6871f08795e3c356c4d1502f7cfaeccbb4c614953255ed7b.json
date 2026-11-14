@@ -1,0 +1,36 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag containeriserade 3 äldre tjänster med Docker och flyttade dem till Kubernetes på AWS, efter att ha replikerat databasen i förväg. Den slutliga omställningen tog 20 minuter utan fel som kunderna märkte.",
+    "skills": [
+     "S06",
+     "S18"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag skrev cirka 200 automatiserade regressionstester med pytest och körde dem i GitLab CI vid varje merge request. Releaserna gick från månadsvis till veckovis, utan återställningar på 4 månader.",
+    "skills": [
+     "S12",
+     "S14",
+     "S39"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag designade och byggde ett REST API i Python med FastAPI för partnerintegrationer, med versionerade endpoints och en OpenAPI-specifikation. Inom 3 månader hade 4 partner anslutit sig utan bakåtinkompatibla ändringar.",
+    "skills": [
+     "S39",
+     "S46",
+     "S18"
+    ]
+   }
+  ]
+ }
+}

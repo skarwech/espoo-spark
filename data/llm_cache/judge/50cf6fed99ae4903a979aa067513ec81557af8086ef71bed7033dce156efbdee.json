@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-007/o1",
+    "label": "supported",
+    "unit_id": "J-006~rough.u1",
+    "quote": "Jag designade och byggde REST API med Python och FastAPI för partnerintegrationer",
+    "reason": "Personally built versioned partner API; 4 partners, no breaking changes."
+   },
+   {
+    "key": "N-007/o2",
+    "label": "supported",
+    "unit_id": "J-006~rough.u3",
+    "quote": "Jag automatiserade 15 mest använda användarflöden som end-to-end-tester i Playwright",
+    "reason": "Automated Playwright tests gating releases; 5 months weekly releases, no rollbacks."
+   },
+   {
+    "key": "N-007/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-009/o1",
+    "label": "supported",
+    "unit_id": "J-006~rough.u1",
+    "quote": "Jag designade och byggde REST API med Python och FastAPI för partnerintegrationer",
+    "reason": "Personally built versioned partner API; 4 partners, no breaking changes."
+   },
+   {
+    "key": "N-009/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-009/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   },
+   {
+    "key": "N-013/o1",
+    "label": "supported",
+    "unit_id": "J-006~rough.u1",
+    "quote": "Jag designade och byggde REST API med Python och FastAPI för partnerintegrationer",
+    "reason": "Personally built versioned partner API; 4 partners, no breaking changes."
+   },
+   {
+    "key": "N-013/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-013/o3",
+    "label": "partial",
+    "unit_id": "J-006~rough.u1",
+    "quote": "byggde REST API med Python och FastAPI för partnerintegrationer",
+    "reason": "Integration API work, but not warehouse-ERP real-time data."
+   },
+   {
+    "key": "N-016/o1",
+    "label": "supported",
+    "unit_id": "J-006~rough.u3",
+    "quote": "Jag automatiserade 15 mest använda användarflöden som end-to-end-tester i Playwright",
+    "reason": "Automated Playwright tests gating releases; 5 months weekly releases, no rollbacks."
+   },
+   {
+    "key": "N-016/o2",
+    "label": "supported",
+    "unit_id": "J-006~rough.u1",
+    "quote": "Jag designade och byggde REST API med Python och FastAPI för partnerintegrationer",
+    "reason": "Personally built versioned partner API; 4 partners, no breaking changes."
+   },
+   {
+    "key": "N-016/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-025/o1",
+    "label": "supported",
+    "unit_id": "J-006~rough.u3",
+    "quote": "Jag automatiserade 15 mest använda användarflöden som end-to-end-tester i Playwright",
+    "reason": "Automated Playwright tests gating releases; 5 months weekly releases, no rollbacks."
+   },
+   {
+    "key": "N-025/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-025/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No edge device data flow work described."
+   }
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I implemented over-the-air firmware updates with C for FreeRTOS sensor nodes. I used A/B partitions so failed update rolls back automatic.",
+    "skills": [
+     "S43",
+     "S13",
+     "S11"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I rolled it out to 300 field sensors in 5 months.",
+    "skills": [
+     "S43",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I added local buffer on edge gateways, so readings are saved when network is down and sent again over MQTT after. Lost readings went from 4% to 0.3%.",
+    "skills": [
+     "S21",
+     "S18"
+    ]
+   }
+  ]
+ }
+}

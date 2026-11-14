@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Aloitin värähtelymittauksen 12 kriittisimmälle kuljetinmoottorille ja tein rajat, milloin laakerit pitää vaihtaa. Linjan suunnittelemattomat seisokit väheni 30 % seuraavassa 6 kuukaudessa.",
+    "skills": [
+     "S40",
+     "S33"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Autoin automaatioinsinööriä kun pakkauslinjaa uusittiin, ja autoin testauksessa kun pyydettiin.",
+    "skills": [
+     "S03"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Laatutiimi teki uudet lopputarkastuksen kriteerit, joissa on kuvat OK ja ei-OK hitseistä. Virheprosentti lopputarkastuksessa laski 40 % 6 kuukaudessa.",
+    "skills": [
+     "S09",
+     "S29"
+    ]
+   }
+  ]
+ }
+}

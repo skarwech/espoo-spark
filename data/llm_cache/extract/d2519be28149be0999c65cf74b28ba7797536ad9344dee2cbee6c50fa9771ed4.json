@@ -1,0 +1,24 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I organized floorball evenings every week for staff and booked the sport hall for whole season.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I organized summer party of the staff for 60 people. I booked the place and music.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

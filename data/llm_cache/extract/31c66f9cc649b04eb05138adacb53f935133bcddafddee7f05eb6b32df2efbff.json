@@ -1,0 +1,37 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I made a Python check every hour, it compares expected and received readings per device. It showed 3 gateways had wrong clock setting. I fixed them and lost readings stayed under 0.5%.",
+    "skills": [
+     "S39",
+     "S30",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I compared 3 months of fault alerts with maintenance work orders, to see which was real. I set own threshold for each sensor model. Weekly false alerts fell from 140 to 45.",
+    "skills": [
+     "S31",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I implemented over-the-air firmware updates with C for FreeRTOS sensor nodes. I used A/B partitions so failed update rolls back automatic. I rolled it out to 300 field sensors in 5 months.",
+    "skills": [
+     "S43",
+     "S11",
+     "S13",
+     "S21"
+    ]
+   }
+  ]
+ }
+}

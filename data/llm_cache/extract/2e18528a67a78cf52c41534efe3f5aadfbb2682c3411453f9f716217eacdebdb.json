@@ -1,0 +1,26 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag organiserade den årliga rekreationsdagen för 40 anställda, inklusive program, servering och lokalbokning.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Vi byggde en efterfrågeprognos med Prophet för de 200 mest sålda produkterna, och den visade sig vara 15 % träffsäkrare än inköparnas egna uppskattningar.",
+    "skills": [
+     "S02",
+     "S05",
+     "S31"
+    ]
+   }
+  ]
+ }
+}

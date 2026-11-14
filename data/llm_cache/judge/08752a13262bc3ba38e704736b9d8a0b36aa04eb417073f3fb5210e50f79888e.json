@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No work on reducing false sensor alerts described."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No firmware development or update work mentioned."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No firmware development or update work mentioned."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "partial",
+    "unit_id": "J-012~fi.u2",
+    "quote": "Autoin pitämään kenttälaitteiden datavirran pystyssä",
+    "reason": "Helped keep field device data flowing; no method or result given."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work described."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No work on reducing false sensor alerts described."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "partial",
+    "unit_id": "J-012~fi.u2",
+    "quote": "Autoin pitämään kenttälaitteiden datavirran pystyssä",
+    "reason": "Helped keep field device data flowing; no method or result given."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer technical support work described."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "partial",
+    "unit_id": "J-012~fi.u2",
+    "quote": "Autoin pitämään kenttälaitteiden datavirran pystyssä",
+    "reason": "Helped keep field device data flowing; no method or result given."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No work on reducing false sensor alerts described."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No work on reducing false sensor alerts described."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "partial",
+    "unit_id": "J-012~fi.u2",
+    "quote": "Autoin pitämään kenttälaitteiden datavirran pystyssä",
+    "reason": "Helped keep field device data flowing; no method or result given."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No ERP or warehouse integration work described."
+   }
+  ]
+ }
+}

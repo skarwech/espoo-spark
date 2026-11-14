@@ -1,0 +1,24 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag höll användningsgenomgångar var 3:e månad med mina 20 nyckelkunder utifrån CRM-data och erbjöd tilläggstjänster; intäkterna från dessa kunder växte med 18 % på ett år.",
+    "skills": [
+     "S23"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag hjälpte till att hantera kundsupportärenden som en del av kundtjänstteamet.",
+    "skills": [
+     "S38"
+    ]
+   }
+  ]
+ }
+}

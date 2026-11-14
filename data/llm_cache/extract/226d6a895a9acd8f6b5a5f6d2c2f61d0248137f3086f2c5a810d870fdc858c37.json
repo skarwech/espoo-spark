@@ -1,0 +1,19 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Tein 6 manuaalisesta Excel-raportista Power BI -kojelaudan, esihenkilöt suodattaa sitä itse. Kuukausiraportin tekeminen meni 4 päivästä 3 tuntiin.",
+    "skills": [
+     "S04",
+     "S10",
+     "S03"
+    ]
+   }
+  ]
+ }
+}

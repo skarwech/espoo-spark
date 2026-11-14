@@ -1,0 +1,25 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag ordnade den årliga dagen för säkerhetsutbildning för 60 anställda. Jag bokade utbildare och fixade lunchen åt alla.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag hjälpte att hålla dataflödet från fältenheter igång. När data saknades tittade jag på det.",
+    "skills": [
+     "S21",
+     "S30"
+    ]
+   }
+  ]
+ }
+}

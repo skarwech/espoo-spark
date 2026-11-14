@@ -1,0 +1,35 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Rakensimme kumppaneille REST API:n jossa on OAuth-kirjautuminen ja julkinen muutosloki. Kumppaneiden API-kutsujen käytettävyys oli 99,8 % 6 kuukaudessa.",
+    "skills": [
+     "S18",
+     "S46",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Tiimi teki öiset regressioajot Cypressillä. Julkaisujen peruutukset laski 9:stä 3:een per neljännes.",
+    "skills": [
+     "S12",
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Siirsin 8 paikallista palvelua Azureen Terraformilla. Liikenteen siirsin pikkuhiljaa blue-green-julkaisuilla. Koko siirto kesti 5 kuukautta ja asiakkaille ei tullut katkoja.",
+    "skills": [
+     "S06",
+     "S03"
+    ]
+   }
+  ]
+ }
+}

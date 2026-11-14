@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "partial",
+    "unit_id": "J-051~fi.u2",
+    "quote": "väärät anturivikahälytykset väheni 40 %",
+    "reason": "Team work ('we') with method and result; no personal role stated."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "partial",
+    "unit_id": "J-051~fi.u1",
+    "quote": "Rakensimme bootloaderin joka voi ottaa vastaan uuden laiteohjelmiston LoRaWANilla",
+    "reason": "Remote firmware update delivered, but described as team work."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case work described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "partial",
+    "unit_id": "J-051~fi.u1",
+    "quote": "Rakensimme bootloaderin joka voi ottaa vastaan uuden laiteohjelmiston LoRaWANilla",
+    "reason": "Relevant remote firmware update, but 'we' without personal role."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "partial",
+    "unit_id": "J-051~fi.u3",
+    "quote": "Kadonneet mittaukset laski alle 0,8 %:n",
+    "reason": "Pipeline result matches, but passive voice; no personal role."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work mentioned."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "partial",
+    "unit_id": "J-051~fi.u2",
+    "quote": "väärät anturivikahälytykset väheni 40 %",
+    "reason": "Team reduced false alerts with method; personal role not stated."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "partial",
+    "unit_id": "J-051~fi.u3",
+    "quote": "Kadonneet mittaukset laski alle 0,8 %:n",
+    "reason": "Relevant result, but passive voice; no personal role."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described; language alone is not evidence."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "partial",
+    "unit_id": "J-051~fi.u3",
+    "quote": "Kadonneet mittaukset laski alle 0,8 %:n",
+    "reason": "Relevant pipeline result, but passive voice; no personal role."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "partial",
+    "unit_id": "J-051~fi.u2",
+    "quote": "väärät anturivikahälytykset väheni 40 %",
+    "reason": "Team work with method and result; no personal role."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "partial",
+    "unit_id": "J-051~fi.u2",
+    "quote": "väärät anturivikahälytykset väheni 40 %",
+    "reason": "Team reduced false alerts; personal role not stated."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "partial",
+    "unit_id": "J-051~fi.u3",
+    "quote": "Kadonneet mittaukset laski alle 0,8 %:n",
+    "reason": "Relevant pipeline result, but passive voice; no personal role."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work described."
+   }
+  ]
+ }
+}

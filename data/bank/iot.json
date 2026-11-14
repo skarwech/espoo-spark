@@ -1,0 +1,556 @@
+{
+  "domain": "iot",
+  "contexts": [
+    {
+      "id": "iot.ctx.1",
+      "text": {
+        "en": {
+          "polished": "At a water utility, about 400 field sensors reported to a central system. The setup had grown over the years without a clear owner, and the operators no longer trusted what their screens showed.",
+          "rough": "Water utility, around 400 sensors in the field, all reporting to central system. Setup grew over years and nobody really owned it. Operators did not trust anymore what the screens are showing."
+        },
+        "fi": {
+          "polished": "Vesilaitoksella noin 400 kenttäanturia raportoi keskitettyyn järjestelmään. Kokonaisuus oli kasvanut vuosien mittaan ilman selkeää omistajaa, eivätkä operaattorit enää luottaneet siihen, mitä näytöt näyttivät.",
+          "rough": "Vesilaitos, noin 400 anturia kentällä, kaikki raportoi keskusjärjestelmään. Systeemi kasvoi vuosia eikä kukaan oikein omistanut sitä. Operaattorit ei enää luottaneet siihen mitä näytöillä näkyy."
+        },
+        "sv": {
+          "polished": "På ett vattenverk rapporterade cirka 400 fältsensorer till ett centralt system. Helheten hade vuxit under åren utan en tydlig ägare, och operatörerna litade inte längre på det som syntes på skärmarna.",
+          "rough": "Vattenverk, ungefär 400 sensorer ute i fältet, alla rapporterar till centralt system. Det växte i flera år och ingen ägde det riktigt. Operatörerna litade inte mera på vad skärmarna visar."
+        },
+        "ar": {
+          "polished": "في مرفق للمياه، كان نحو 400 مستشعر ميداني يرسل بياناته إلى نظام مركزي. وقد توسّع هذا النظام على مر السنين دون مسؤول واضح، ولم يعد المشغّلون يثقون بما تعرضه شاشاتهم.",
+          "rough": "مرفق مياه، حوالي 400 مستشعر في الميدان، كلها ترسل إلى نظام مركزي. النظام كبر خلال سنوات ولا أحد كان مسؤولًا عنه فعلًا. المشغّلون لم يعودوا يثقون بما تعرضه الشاشات."
+        }
+      }
+    },
+    {
+      "id": "iot.ctx.2",
+      "text": {
+        "en": {
+          "polished": "In a mid-size company selling building automation equipment, about 900 devices at customer sites sent data back to the office. Customers usually noticed problems first, and the small team spent most days reacting rather than planning.",
+          "rough": "Mid-size company, they sell building automation equipment. About 900 devices on customer sites send data back to office. Usually customers noticed problems first, and small team was just reacting most days, not planning."
+        },
+        "fi": {
+          "polished": "Keskikokoisessa rakennusautomaatiolaitteita myyvässä yrityksessä noin 900 asiakaskohteisiin asennettua laitetta lähetti dataa takaisin toimistolle. Asiakkaat huomasivat ongelmat yleensä ensin, ja pieni tiimi käytti useimmat päivät reagointiin suunnittelun sijaan.",
+          "rough": "Keskikokoinen firma, joka myy rakennusautomaatiolaitteita. Noin 900 laitetta asiakkaiden kohteissa lähettää dataa toimistolle. Yleensä asiakkaat huomasi ongelmat ensin, ja pieni tiimi vaan reagoi useimpina päivinä eikä suunnitellut."
+        },
+        "sv": {
+          "polished": "I ett medelstort företag som säljer utrustning för fastighetsautomation skickade cirka 900 enheter hos kunderna data tillbaka till kontoret. Kunderna märkte oftast problemen först, och det lilla teamet ägnade de flesta dagar åt att reagera i stället för att planera.",
+          "rough": "Medelstort företag, de säljer utrustning för fastighetsautomation. Cirka 900 enheter hos kunder skickar data till kontoret. Oftast kunderna märkte problemen först, och lilla teamet bara reagerade de flesta dagar, planerade inte."
+        },
+        "ar": {
+          "polished": "في شركة متوسطة الحجم تبيع معدات أتمتة المباني، كان نحو 900 جهاز في مواقع العملاء يرسل البيانات إلى المكتب. وكان العملاء يلاحظون المشكلات أولًا في الغالب، بينما قضى الفريق الصغير معظم أيامه في ردّ الفعل بدلًا من التخطيط.",
+          "rough": "شركة متوسطة تبيع معدات أتمتة المباني. حوالي 900 جهاز عند العملاء ترسل البيانات إلى المكتب. غالبًا العملاء لاحظوا المشاكل أولًا، والفريق الصغير كان فقط يتفاعل معظم الأيام ولا يخطط."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "iot_alerts.supported.1",
+      "archetype": "iot_alerts",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I analysed 6 months of alarm history in Python and found that short temperature spikes caused most of the false fault alerts. I added a 5-minute persistence rule, which cut false alerts by 60%.",
+          "rough": "I analysed 6 months alarm history with Python. Most false fault alerts was coming from short temperature spikes. I added 5-minute persistence rule and false alerts went down 60%."
+        },
+        "fi": {
+          "polished": "Analysoin Pythonilla 6 kuukauden hälytyshistorian ja havaitsin, että lyhyet lämpötilapiikit aiheuttivat suurimman osan vääristä vikahälytyksistä. Lisäsin 5 minuutin pysyvyysehdon, joka vähensi vääriä hälytyksiä 60 %.",
+          "rough": "Analysoin Pythonilla 6 kuukauden hälytyshistorian. Suurin osa vääristä vikahälytyksistä tuli lyhyistä lämpötilapiikeistä. Lisäsin 5 minuutin pysyvyysehdon ja väärät hälytykset väheni 60 %."
+        },
+        "sv": {
+          "polished": "Jag analyserade 6 månaders larmhistorik i Python och såg att korta temperaturtoppar orsakade de flesta falska fellarmen. Jag lade till en persistensregel på 5 minuter, vilket minskade de falska larmen med 60 %.",
+          "rough": "Jag analyserade 6 månaders larmhistorik med Python. De flesta falska fellarm kom från korta temperaturtoppar. Jag lade till persistensregel på 5 minuter och falska larmen gick ner 60 %."
+        },
+        "ar": {
+          "polished": "حلّلتُ باستخدام Python سجلَّ إنذارات يغطي 6 أشهر، ووجدتُ أن الارتفاعات القصيرة في درجة الحرارة كانت سبب معظم إنذارات الأعطال الكاذبة. وأضفتُ قاعدة استمرارية مدتها 5 دقائق، فانخفضت الإنذارات الكاذبة بنسبة 60%.",
+          "rough": "حلّلتُ سجل إنذارات 6 أشهر بـ Python. معظم إنذارات الأعطال الكاذبة جاءت من ارتفاعات قصيرة في الحرارة. أضفتُ قاعدة استمرارية 5 دقائق، والإنذارات الكاذبة نزلت 60%."
+        }
+      }
+    },
+    {
+      "id": "iot_alerts.supported.2",
+      "archetype": "iot_alerts",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I matched 3 months of fault alerts against maintenance work orders to see which ones were real. I set separate thresholds for each sensor model, and weekly false alerts fell from 140 to 45.",
+          "rough": "I compared 3 months of fault alerts with maintenance work orders, to see which was real. I set own threshold for each sensor model. Weekly false alerts fell from 140 to 45."
+        },
+        "fi": {
+          "polished": "Vertasin 3 kuukauden vikahälytyksiä huollon työtilauksiin nähdäkseni, mitkä niistä olivat aitoja. Asetin jokaiselle anturimallille omat raja-arvot, ja viikoittaiset väärät hälytykset vähenivät 140:stä 45:een.",
+          "rough": "Vertasin 3 kuukauden vikahälytykset huollon työtilauksiin, että näen mitkä oli oikeita. Laitoin jokaiselle anturimallille omat raja-arvot. Väärät hälytykset viikossa laski 140:stä 45:een."
+        },
+        "sv": {
+          "polished": "Jag jämförde 3 månaders fellarm med underhållets arbetsordrar för att se vilka som var äkta. Jag satte separata gränsvärden för varje sensormodell, och de falska larmen per vecka sjönk från 140 till 45.",
+          "rough": "Jag jämförde 3 månader fellarm med arbetsordrar från underhåll, för att se vilka var riktiga. Jag satte egna gränsvärden för varje sensormodell. Falska larm per vecka sjönk från 140 till 45."
+        },
+        "ar": {
+          "polished": "قارنتُ إنذارات الأعطال الصادرة خلال 3 أشهر بأوامر عمل الصيانة لمعرفة الإنذارات الحقيقية منها. وحدّدتُ عتبات منفصلة لكل طراز من المستشعرات، فانخفضت الإنذارات الكاذبة الأسبوعية من 140 إلى 45.",
+          "rough": "قارنتُ إنذارات أعطال 3 أشهر مع أوامر عمل الصيانة، لأعرف أيها حقيقي. وضعتُ عتبة خاصة لكل طراز مستشعر. الإنذارات الكاذبة في الأسبوع نزلت من 140 إلى 45."
+        }
+      }
+    },
+    {
+      "id": "iot_alerts.partial.1",
+      "archetype": "iot_alerts",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We went through the alarm history in Grafana, grouped sensors with similar noise levels and set new thresholds for each group. As a result, false sensor-fault alerts dropped by 40%.",
+          "rough": "We went through alarm history in Grafana and grouped sensors with similar noise level. We set new thresholds for each group. So false sensor fault alerts dropped 40%."
+        },
+        "fi": {
+          "polished": "Kävimme hälytyshistorian läpi Grafanassa, ryhmittelimme anturit samankaltaisen kohinatason mukaan ja asetimme jokaiselle ryhmälle uudet raja-arvot. Tämän ansiosta väärät anturivikahälytykset vähenivät 40 %.",
+          "rough": "Kävimme hälytyshistorian läpi Grafanassa ja ryhmittelimme anturit, joilla oli samanlainen kohina. Asetimme uudet raja-arvot jokaiselle ryhmälle. Niin väärät anturivikahälytykset väheni 40 %."
+        },
+        "sv": {
+          "polished": "Vi gick igenom larmhistoriken i Grafana, grupperade sensorer med liknande brusnivå och satte nya gränsvärden för varje grupp. Det ledde till att de falska sensorfellarmen minskade med 40 %.",
+          "rough": "Vi gick igenom larmhistorik i Grafana och grupperade sensorer med liknande brus. Vi satte nya gränsvärden för varje grupp. Så falska sensorfellarm minskade 40 %."
+        },
+        "ar": {
+          "polished": "راجعنا سجل الإنذارات في Grafana، وجمّعنا المستشعرات ذات مستويات الضوضاء المتشابهة، ووضعنا عتبات جديدة لكل مجموعة. ونتيجة لذلك، انخفضت إنذارات أعطال المستشعرات الكاذبة بنسبة 40%.",
+          "rough": "راجعنا سجل الإنذارات في Grafana وجمّعنا المستشعرات التي لها ضوضاء متشابهة. وضعنا عتبات جديدة لكل مجموعة. لذلك إنذارات أعطال المستشعرات الكاذبة نزلت 40%."
+        }
+      }
+    },
+    {
+      "id": "iot_alerts.partial.2",
+      "archetype": "iot_alerts",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I took part in the effort to reduce false alarms and shared feedback on which alerts felt unnecessary.",
+          "rough": "I was part of the work to reduce false alarms. I gave feedback which alerts felt not needed."
+        },
+        "fi": {
+          "polished": "Osallistuin väärien hälytysten vähentämiseen ja annoin palautetta siitä, mitkä hälytykset tuntuivat tarpeettomilta.",
+          "rough": "Olin mukana väärien hälytysten vähentämisessä. Annoin palautetta mitkä hälytykset tuntui turhilta."
+        },
+        "sv": {
+          "polished": "Jag deltog i arbetet med att minska falsklarmen och gav feedback på vilka larm som kändes onödiga.",
+          "rough": "Jag var med i arbetet att minska falsklarm. Jag gav feedback vilka larm kändes onödiga."
+        },
+        "ar": {
+          "polished": "شاركتُ في الجهود الرامية إلى تقليل الإنذارات الكاذبة، وقدّمتُ ملاحظاتي حول الإنذارات التي بدت غير ضرورية.",
+          "rough": "كنتُ جزءًا من العمل لتقليل الإنذارات الكاذبة. أعطيتُ ملاحظات عن الإنذارات التي بدت غير لازمة."
+        }
+      }
+    },
+    {
+      "id": "iot_alerts.none.1",
+      "archetype": "iot_alerts",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am deeply motivated by smart sensor ecosystems and believe that reliable, data-driven monitoring is the foundation of every modern industrial operation.",
+          "rough": "I am very motivated about smart sensor ecosystems. I believe reliable data-driven monitoring is foundation of every modern industry operation."
+        },
+        "fi": {
+          "polished": "Minua motivoivat syvästi älykkäät anturiekosysteemit, ja uskon, että luotettava, dataan perustuva valvonta on jokaisen modernin teollisen toiminnan perusta.",
+          "rough": "Älykkäät anturiekosysteemit motivoi minua tosi paljon. Uskon että luotettava datapohjainen valvonta on jokaisen modernin teollisuustoiminnan perusta."
+        },
+        "sv": {
+          "polished": "Jag motiveras starkt av smarta sensorekosystem och tror att pålitlig, datadriven övervakning är grunden för varje modern industriell verksamhet.",
+          "rough": "Jag är väldigt motiverad av smarta sensorekosystem. Jag tror pålitlig datadriven övervakning är grunden för varje modern industriverksamhet."
+        },
+        "ar": {
+          "polished": "تحفّزني منظومات المستشعرات الذكية بعمق، وأؤمن بأن المراقبة الموثوقة القائمة على البيانات هي أساس كل عملية صناعية حديثة.",
+          "rough": "منظومات المستشعرات الذكية تحفّزني كثيرًا. أؤمن أن المراقبة الموثوقة المبنية على البيانات هي أساس كل عملية صناعية حديثة."
+        }
+      }
+    },
+    {
+      "id": "iot_alerts.none.2",
+      "archetype": "iot_alerts",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the annual safety training day for 60 employees, booking the trainers and arranging lunch for everyone.",
+          "rough": "I organised the yearly safety training day for 60 employees. I booked trainers and arranged the lunch for everybody."
+        },
+        "fi": {
+          "polished": "Järjestin vuosittaisen turvallisuuskoulutuspäivän 60 työntekijälle, varasin kouluttajat ja hoidin lounaan kaikille.",
+          "rough": "Järkkäsin joka vuotisen turvallisuuskoulutuspäivän 60 työntekijälle. Varasin kouluttajat ja hoidin kaikille lounaan."
+        },
+        "sv": {
+          "polished": "Jag organiserade den årliga säkerhetsutbildningsdagen för 60 anställda, bokade utbildarna och ordnade lunch åt alla.",
+          "rough": "Jag ordnade den årliga dagen för säkerhetsutbildning för 60 anställda. Jag bokade utbildare och fixade lunchen åt alla."
+        },
+        "ar": {
+          "polished": "نظّمتُ يوم التدريب السنوي على السلامة لـ 60 موظفًا، فحجزتُ المدرّبين ورتّبتُ وجبة الغداء للجميع.",
+          "rough": "نظّمتُ يوم تدريب السلامة السنوي لـ 60 موظفًا. حجزتُ المدرّبين ورتّبتُ الغداء للجميع."
+        }
+      }
+    },
+    {
+      "id": "iot_pipeline.supported.1",
+      "archetype": "iot_pipeline",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I added local buffering on the edge gateways so that readings were stored during network outages and resent over MQTT afterwards. Lost readings fell from 4% to 0.3%.",
+          "rough": "I added local buffer on edge gateways, so readings are saved when network is down and sent again over MQTT after. Lost readings went from 4% to 0.3%."
+        },
+        "fi": {
+          "polished": "Lisäsin reunayhdyskäytäviin paikallisen puskuroinnin, jotta mittaukset tallentuivat verkkokatkojen aikana ja lähetettiin jälkikäteen uudelleen MQTT:n kautta. Kadonneiden mittausten osuus laski 4 %:sta 0,3 %:iin.",
+          "rough": "Lisäsin reunayhdyskäytäviin paikallisen puskurin, niin mittaukset tallentuu kun verkko on poikki ja lähtee MQTT:llä uudestaan jälkeenpäin. Kadonneet mittaukset laski 4 %:sta 0,3 %:iin."
+        },
+        "sv": {
+          "polished": "Jag lade till lokal buffring i edge-gatewayerna så att mätvärden sparades under nätverksavbrott och skickades om via MQTT efteråt. Andelen förlorade mätvärden sjönk från 4 % till 0,3 %.",
+          "rough": "Jag lade till lokal buffer i edge-gatewayerna, så mätvärden sparas när nätet är nere och skickas igen med MQTT efteråt. Förlorade mätvärden gick från 4 % till 0,3 %."
+        },
+        "ar": {
+          "polished": "أضفتُ تخزينًا مؤقتًا محليًا على بوابات الحافة، بحيث تُحفظ القراءات أثناء انقطاع الشبكة ثم يُعاد إرسالها عبر MQTT لاحقًا. وانخفضت نسبة القراءات المفقودة من 4% إلى 0.3%.",
+          "rough": "أضفتُ تخزين مؤقت محلي على بوابات الحافة، فالقراءات تُحفظ عندما تنقطع الشبكة وتُرسل من جديد عبر MQTT بعدها. القراءات المفقودة نزلت من 4% إلى 0.3%."
+        }
+      }
+    },
+    {
+      "id": "iot_pipeline.supported.2",
+      "archetype": "iot_pipeline",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I built an hourly Python check that compared expected and received readings for each device. It revealed 3 gateways with wrong clock settings, and after I fixed them, lost readings stayed below 0.5%.",
+          "rough": "I made a Python check every hour, it compares expected and received readings per device. It showed 3 gateways had wrong clock setting. I fixed them and lost readings stayed under 0.5%."
+        },
+        "fi": {
+          "polished": "Rakensin Pythonilla tunnin välein ajettavan tarkistuksen, joka vertasi jokaisen laitteen odotettuja ja vastaanotettuja mittauksia. Se paljasti 3 yhdyskäytävää, joiden kelloasetukset olivat väärin, ja korjattuani ne kadonneiden mittausten osuus pysyi alle 0,5 %:n.",
+          "rough": "Tein Pythonilla tarkistuksen joka ajetaan joka tunti, se vertaa laitteen odotetut ja vastaanotetut mittaukset. Se näytti että 3 yhdyskäytävässä oli väärä kelloasetus. Korjasin ne ja kadonneet mittaukset pysyi alle 0,5 %:n."
+        },
+        "sv": {
+          "polished": "Jag byggde en timvis kontroll i Python som jämförde förväntade och mottagna mätvärden för varje enhet. Den avslöjade 3 gatewayer med fel klockinställningar, och efter att jag rättat dem höll sig de förlorade mätvärdena under 0,5 %.",
+          "rough": "Jag gjorde en kontroll i Python som körs varje timme, den jämför förväntade och mottagna mätvärden per enhet. Den visade att 3 gatewayer hade fel klockinställning. Jag fixade dem och förlorade mätvärden stannade under 0,5 %."
+        },
+        "ar": {
+          "polished": "بنيتُ فحصًا بلغة Python يعمل كل ساعة ويقارن القراءات المتوقعة بالقراءات المستلمة لكل جهاز. وكشف الفحص عن 3 بوابات بإعدادات ساعة خاطئة، وبعد أن أصلحتُها بقيت نسبة القراءات المفقودة أقل من 0.5%.",
+          "rough": "أنشأتُ فحصًا بـ Python يعمل كل ساعة، يقارن القراءات المتوقعة والمستلمة لكل جهاز. الفحص أظهر أن 3 بوابات فيها إعداد ساعة خاطئ. أصلحتُها، والقراءات المفقودة بقيت تحت 0.5%."
+        }
+      }
+    },
+    {
+      "id": "iot_pipeline.partial.1",
+      "archetype": "iot_pipeline",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The sensor data flow was moved from nightly file transfers to MQTT with a message queue, and the share of lost readings dropped below 0.8%.",
+          "rough": "Sensor data flow was changed from nightly file transfers to MQTT with message queue. Lost readings dropped under 0.8%."
+        },
+        "fi": {
+          "polished": "Anturidatan siirto vaihdettiin öisistä tiedostosiirroista viestijonoa käyttävään MQTT-ratkaisuun, ja kadonneiden mittausten osuus laski alle 0,8 %:n.",
+          "rough": "Anturidatan siirto vaihdettiin yön tiedostosiirroista MQTT:hen, jossa on viestijono. Kadonneet mittaukset laski alle 0,8 %:n."
+        },
+        "sv": {
+          "polished": "Sensordataflödet flyttades från nattliga filöverföringar till MQTT med en meddelandekö, och andelen förlorade mätvärden sjönk under 0,8 %.",
+          "rough": "Sensordataflödet byttes från nattliga filöverföringar till MQTT med meddelandekö. Förlorade mätvärden sjönk under 0,8 %."
+        },
+        "ar": {
+          "polished": "تم نقل تدفق بيانات المستشعرات من عمليات نقل الملفات الليلية إلى MQTT مع طابور رسائل، وانخفضت نسبة القراءات المفقودة إلى أقل من 0.8%.",
+          "rough": "تم تغيير تدفق بيانات المستشعرات من نقل الملفات في الليل إلى MQTT مع طابور رسائل. القراءات المفقودة نزلت تحت 0.8%."
+        }
+      }
+    },
+    {
+      "id": "iot_pipeline.partial.2",
+      "archetype": "iot_pipeline",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I helped keep the data flow from the field devices running and looked into things whenever data went missing.",
+          "rough": "I helped to keep data flow from field devices running. When data was missing I looked into it."
+        },
+        "fi": {
+          "polished": "Autoin pitämään kenttälaitteiden datavirran käynnissä ja selvittelin asiaa aina, kun dataa puuttui.",
+          "rough": "Autoin pitämään kenttälaitteiden datavirran pystyssä. Kun dataa puuttui, katsoin asiaa."
+        },
+        "sv": {
+          "polished": "Jag hjälpte till att hålla dataflödet från fältenheterna igång och undersökte saken när data saknades.",
+          "rough": "Jag hjälpte att hålla dataflödet från fältenheter igång. När data saknades tittade jag på det."
+        },
+        "ar": {
+          "polished": "ساعدتُ في الحفاظ على استمرار تدفق البيانات من الأجهزة الميدانية، وكنتُ أتحقق من الأمر كلما فُقدت بيانات.",
+          "rough": "ساعدتُ في إبقاء تدفق البيانات من الأجهزة الميدانية يعمل. عندما كانت البيانات ناقصة، كنتُ أبحث في الأمر."
+        }
+      }
+    },
+    {
+      "id": "iot_pipeline.none.1",
+      "archetype": "iot_pipeline",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I see myself as a connected-data enthusiast who believes that seamless edge-to-cloud integration unlocks real business value.",
+          "rough": "I see myself as connected data enthusiast. I believe seamless edge to cloud integration unlock real business value."
+        },
+        "fi": {
+          "polished": "Näen itseni verkottuneen datan intoilijana ja uskon, että saumaton integraatio reunalta pilveen vapauttaa todellista liiketoiminta-arvoa.",
+          "rough": "Näen itseni verkottuneen datan intoilijana. Uskon että saumaton integraatio reunalta pilveen avaa oikeaa liiketoiminta-arvoa."
+        },
+        "sv": {
+          "polished": "Jag ser mig själv som en entusiast för uppkopplad data och tror att sömlös integration från edge till moln frigör verkligt affärsvärde.",
+          "rough": "Jag ser mig som entusiast för uppkopplad data. Jag tror sömlös integration från edge till moln ger riktigt affärsvärde."
+        },
+        "ar": {
+          "polished": "أرى نفسي من عشّاق البيانات المتصلة، وأؤمن بأن التكامل السلس من الحافة إلى السحابة يُطلق قيمة تجارية حقيقية.",
+          "rough": "أرى نفسي من عشّاق البيانات المتصلة. أؤمن أن التكامل السلس من الحافة إلى السحابة يعطي قيمة تجارية حقيقية."
+        }
+      }
+    },
+    {
+      "id": "iot_pipeline.none.2",
+      "archetype": "iot_pipeline",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the move to a new office floor, planning the seating and the moving day for 35 people.",
+          "rough": "I organised the move to new office floor. I planned the seating and the moving day for 35 people."
+        },
+        "fi": {
+          "polished": "Järjestin muuton uuteen toimistokerrokseen ja suunnittelin istumajärjestyksen sekä muuttopäivän 35 hengelle.",
+          "rough": "Järjestin muuton uuteen toimistokerrokseen. Suunnittelin istumapaikat ja muuttopäivän 35 ihmiselle."
+        },
+        "sv": {
+          "polished": "Jag organiserade flytten till en ny kontorsvåning och planerade placeringen och flyttdagen för 35 personer.",
+          "rough": "Jag ordnade flytten till ny kontorsvåning. Jag planerade platserna och flyttdagen för 35 personer."
+        },
+        "ar": {
+          "polished": "نظّمتُ الانتقال إلى طابق مكاتب جديد، وخطّطتُ لتوزيع المقاعد وليوم الانتقال لـ 35 شخصًا.",
+          "rough": "نظّمتُ الانتقال إلى طابق مكاتب جديد. خطّطتُ أماكن الجلوس ويوم الانتقال لـ 35 شخصًا."
+        }
+      }
+    },
+    {
+      "id": "iot_firmware.supported.1",
+      "archetype": "iot_firmware",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I implemented over-the-air firmware updates in C for FreeRTOS sensor nodes, using A/B partitions so a failed update rolls back automatically. I rolled it out to 300 field sensors in 5 months.",
+          "rough": "I implemented over-the-air firmware updates with C for FreeRTOS sensor nodes. I used A/B partitions so failed update rolls back automatic. I rolled it out to 300 field sensors in 5 months."
+        },
+        "fi": {
+          "polished": "Toteutin C-kielellä OTA-laiteohjelmistopäivitykset FreeRTOS-anturisolmuille ja käytin A/B-osioita, jotta epäonnistunut päivitys palautuu automaattisesti. Otin ratkaisun käyttöön 300 kenttäanturissa 5 kuukaudessa.",
+          "rough": "Tein C:llä OTA-laiteohjelmistopäivitykset FreeRTOS-anturisolmuille. Käytin A/B-osioita, niin epäonnistunut päivitys palautuu automaattisesti. Otin sen käyttöön 300 kenttäanturiin 5 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag implementerade OTA-firmwareuppdateringar i C för FreeRTOS-sensornoder och använde A/B-partitioner så att en misslyckad uppdatering rullas tillbaka automatiskt. Jag rullade ut lösningen till 300 fältsensorer på 5 månader.",
+          "rough": "Jag gjorde OTA-firmwareuppdateringar i C för FreeRTOS-sensornoder. Jag använde A/B-partitioner så misslyckad uppdatering rullas tillbaka automatiskt. Jag rullade ut det till 300 fältsensorer på 5 månader."
+        },
+        "ar": {
+          "polished": "نفّذتُ تحديثات البرامج الثابتة عبر الهواء بلغة C لعُقد مستشعرات تعمل بنظام FreeRTOS، باستخدام أقسام A/B بحيث يُسترجع الإصدار السابق تلقائيًا عند فشل التحديث. ونشرتُ الحل على 300 مستشعر ميداني خلال 5 أشهر.",
+          "rough": "نفّذتُ تحديثات البرامج الثابتة عبر الهواء بـ C لعُقد مستشعرات FreeRTOS. استخدمتُ أقسام A/B، فإذا فشل التحديث يرجع تلقائيًا. نشرتُه على 300 مستشعر ميداني في 5 أشهر."
+        }
+      }
+    },
+    {
+      "id": "iot_firmware.supported.2",
+      "archetype": "iot_firmware",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I set up signed firmware images and a staged rollout plan, starting with 10 test devices and widening to 50 before the full fleet. All 400 sensors were updated remotely without any site visits.",
+          "rough": "I set up signed firmware images and staged rollout plan. First 10 test devices, then 50, then full fleet. All 400 sensors updated remotely, no site visits."
+        },
+        "fi": {
+          "polished": "Otin käyttöön allekirjoitetut laiteohjelmistokuvat ja vaiheittaisen julkaisusuunnitelman, joka alkoi 10 testilaitteesta ja laajeni 50 laitteeseen ennen koko laitekantaa. Kaikki 400 anturia päivitettiin etänä ilman yhtään käyntiä paikan päällä.",
+          "rough": "Otin käyttöön allekirjoitetut laiteohjelmistokuvat ja vaiheittaisen julkaisun suunnitelman. Ensin 10 testilaitetta, sitten 50, sitten koko laitekanta. Kaikki 400 anturia päivittyi etänä, ei käyntejä paikan päällä."
+        },
+        "sv": {
+          "polished": "Jag införde signerade firmwareavbilder och en stegvis utrullningsplan som började med 10 testenheter och utökades till 50 före hela enhetsbeståndet. Alla 400 sensorer uppdaterades på distans utan några platsbesök.",
+          "rough": "Jag satte upp signerade firmwareavbilder och stegvis utrullningsplan. Först 10 testenheter, sedan 50, sedan hela beståndet. Alla 400 sensorer uppdaterades på distans, inga platsbesök."
+        },
+        "ar": {
+          "polished": "أعددتُ صور برامج ثابتة موقّعة وخطة نشر على مراحل، بدأت بـ 10 أجهزة اختبار ثم توسّعت إلى 50 قبل الأسطول الكامل. وحُدّثت جميع المستشعرات البالغ عددها 400 عن بُعد دون أي زيارة ميدانية.",
+          "rough": "أعددتُ صور برامج ثابتة موقّعة وخطة نشر على مراحل. أولًا 10 أجهزة اختبار، بعدها 50، بعدها الأسطول كله. كل الـ 400 مستشعر تم تحديثها عن بُعد، بدون زيارات ميدانية."
+        }
+      }
+    },
+    {
+      "id": "iot_firmware.partial.1",
+      "archetype": "iot_firmware",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We built a bootloader that could receive new firmware over LoRaWAN, and our remote update reached 150 field sensors without anyone visiting the sites.",
+          "rough": "We built bootloader that can receive new firmware over LoRaWAN. Our remote update reached 150 field sensors, nobody had to visit the sites."
+        },
+        "fi": {
+          "polished": "Rakensimme käynnistyslataimen, joka pystyi vastaanottamaan uuden laiteohjelmiston LoRaWANin kautta, ja etäpäivityksemme saavutti 150 kenttäanturia ilman, että kenenkään tarvitsi käydä kohteissa.",
+          "rough": "Rakensimme bootloaderin joka voi ottaa vastaan uuden laiteohjelmiston LoRaWANilla. Meidän etäpäivitys meni 150 kenttäanturiin, kenenkään ei tarvinnut käydä kohteissa."
+        },
+        "sv": {
+          "polished": "Vi byggde en bootloader som kunde ta emot ny firmware via LoRaWAN, och vår fjärruppdatering nådde 150 fältsensorer utan att någon behövde besöka platserna.",
+          "rough": "Vi byggde bootloader som kan ta emot ny firmware via LoRaWAN. Vår fjärruppdatering nådde 150 fältsensorer, ingen behövde åka ut till platserna."
+        },
+        "ar": {
+          "polished": "بنينا محمّل إقلاع قادرًا على استقبال برامج ثابتة جديدة عبر LoRaWAN، ووصل تحديثنا عن بُعد إلى 150 مستشعرًا ميدانيًا دون أن يضطر أحد لزيارة المواقع.",
+          "rough": "بنينا محمّل إقلاع يستقبل برامج ثابتة جديدة عبر LoRaWAN. تحديثنا عن بُعد وصل إلى 150 مستشعر ميداني، ولا أحد احتاج إلى زيارة المواقع."
+        }
+      }
+    },
+    {
+      "id": "iot_firmware.partial.2",
+      "archetype": "iot_firmware",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I contributed to the firmware update project for a few months, supporting the team wherever help was needed.",
+          "rough": "I was in the firmware update project few months. I helped the team where it was needed."
+        },
+        "fi": {
+          "polished": "Osallistuin laiteohjelmiston päivitysprojektiin muutaman kuukauden ajan ja tuin tiimiä siellä, missä apua tarvittiin.",
+          "rough": "Olin laiteohjelmiston päivitysprojektissa muutaman kuukauden. Autoin tiimiä missä tarvittiin."
+        },
+        "sv": {
+          "polished": "Jag bidrog till projektet för firmwareuppdateringar under några månader och stöttade teamet där det behövdes hjälp.",
+          "rough": "Jag var med i projektet för firmwareuppdatering några månader. Jag hjälpte teamet där det behövdes."
+        },
+        "ar": {
+          "polished": "ساهمتُ في مشروع تحديث البرامج الثابتة لبضعة أشهر، ودعمتُ الفريق حيثما احتاج إلى المساعدة.",
+          "rough": "كنتُ في مشروع تحديث البرامج الثابتة بضعة أشهر. ساعدتُ الفريق حيث كانت هناك حاجة."
+        }
+      }
+    },
+    {
+      "id": "iot_firmware.none.1",
+      "archetype": "iot_firmware",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am fascinated by embedded systems and believe that well-designed firmware is the invisible backbone of every smart device.",
+          "rough": "Embedded systems fascinate me a lot. I think good designed firmware is invisible backbone of every smart device."
+        },
+        "fi": {
+          "polished": "Sulautetut järjestelmät kiehtovat minua, ja uskon, että hyvin suunniteltu laiteohjelmisto on jokaisen älylaitteen näkymätön selkäranka.",
+          "rough": "Sulautetut järjestelmät kiehtoo minua tosi paljon. Mun mielestä hyvin suunniteltu laiteohjelmisto on jokaisen älylaitteen näkymätön selkäranka."
+        },
+        "sv": {
+          "polished": "Jag fascineras av inbyggda system och tror att väldesignad firmware är den osynliga ryggraden i varje smart enhet.",
+          "rough": "Inbyggda system fascinerar mig mycket. Jag tycker bra designad firmware är osynliga ryggraden i varje smart enhet."
+        },
+        "ar": {
+          "polished": "تأسرني الأنظمة المدمجة، وأؤمن بأن البرامج الثابتة المصمّمة جيدًا هي العمود الفقري الخفي لكل جهاز ذكي.",
+          "rough": "الأنظمة المدمجة تعجبني كثيرًا. أظن أن البرامج الثابتة المصمّمة جيدًا هي العمود الفقري الخفي لكل جهاز ذكي."
+        }
+      }
+    },
+    {
+      "id": "iot_firmware.none.2",
+      "archetype": "iot_firmware",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I led the company's recycling initiative and set up sorting points in 4 break rooms.",
+          "rough": "I ran the recycling project in the company. I set up sorting points in 4 break rooms."
+        },
+        "fi": {
+          "polished": "Vedin yrityksen kierrätyshanketta ja perustin lajittelupisteet 4 taukotilaan.",
+          "rough": "Vedin firman kierrätysprojektia. Laitoin lajittelupisteet 4 taukotilaan."
+        },
+        "sv": {
+          "polished": "Jag ledde företagets återvinningsinitiativ och inrättade sorteringsstationer i 4 pausrum.",
+          "rough": "Jag drev återvinningsprojektet på företaget. Jag satte upp sorteringsställen i 4 pausrum."
+        },
+        "ar": {
+          "polished": "قُدتُ مبادرة إعادة التدوير في الشركة، وأنشأتُ نقاط فرز في 4 غرف استراحة.",
+          "rough": "أدرتُ مشروع إعادة التدوير في الشركة. وضعتُ نقاط فرز في 4 غرف استراحة."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "iot.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would agree with the operators earlier on what a good result looks like, and document decisions so nobody has to rely on memory.",
+          "rough": "I would agree with operators earlier what is a good result. And write decisions down, so nobody must remember them."
+        },
+        "fi": {
+          "polished": "Sopisin operaattoreiden kanssa jo aikaisemmassa vaiheessa, miltä hyvä lopputulos näyttää, ja kirjaisin päätökset ylös, jotta kenenkään ei tarvitse luottaa muistiin.",
+          "rough": "Sopisin operaattorien kanssa aikaisemmin mikä on hyvä tulos. Ja kirjoittaisin päätökset ylös, ettei kenenkään tarvitse muistaa niitä."
+        },
+        "sv": {
+          "polished": "Jag skulle komma överens med operatörerna tidigare om hur ett bra resultat ser ut och dokumentera besluten så att ingen behöver lita på minnet.",
+          "rough": "Jag skulle komma överens med operatörerna tidigare om vad som är bra resultat. Och skriva ner besluten, så ingen måste komma ihåg dem."
+        },
+        "ar": {
+          "polished": "كنتُ سأتفق مع المشغّلين في وقت أبكر على شكل النتيجة الجيدة، وأوثّق القرارات حتى لا يضطر أحد إلى الاعتماد على الذاكرة.",
+          "rough": "كنتُ سأتفق مع المشغّلين أبكر على ما هي النتيجة الجيدة. وأكتب القرارات، حتى لا يحتاج أحد أن يتذكرها."
+        }
+      }
+    },
+    {
+      "id": "iot.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would spend time on site with the field technicians at the start instead of working only from the office, and ask more questions early.",
+          "rough": "At start I would go on site with field technicians, not only work from office. And ask more questions early."
+        },
+        "fi": {
+          "polished": "Viettäisin alussa aikaa kohteissa kenttäasentajien kanssa sen sijaan, että työskentelisin vain toimistolta käsin, ja esittäisin enemmän kysymyksiä varhain.",
+          "rough": "Alussa menisin kohteisiin kenttäasentajien kanssa, en tekisi töitä vain toimistolta. Ja kysyisin enemmän heti alussa."
+        },
+        "sv": {
+          "polished": "Jag skulle tillbringa tid på plats med fältteknikerna i början i stället för att bara jobba från kontoret, och ställa fler frågor tidigt.",
+          "rough": "I början skulle jag åka ut med fältteknikerna, inte bara jobba från kontoret. Och fråga mer tidigt."
+        },
+        "ar": {
+          "polished": "كنتُ سأقضي وقتًا في المواقع مع الفنيين الميدانيين منذ البداية بدلًا من العمل من المكتب فقط، وأطرح المزيد من الأسئلة مبكرًا.",
+          "rough": "في البداية كنتُ سأذهب إلى المواقع مع الفنيين الميدانيين، وليس فقط أعمل من المكتب. وأسأل أكثر مبكرًا."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "iot.next.1",
+      "text": {
+        "en": {
+          "polished": "I want to work where physical devices and data meet, and learn how field measurements become decisions that people on site can trust.",
+          "rough": "I want to work where physical devices and data meet. I want learn how field measurements become decisions people on site can trust."
+        },
+        "fi": {
+          "polished": "Haluan työskennellä siellä, missä fyysiset laitteet ja data kohtaavat, ja oppia, miten kenttämittauksista syntyy päätöksiä, joihin paikan päällä olevat ihmiset voivat luottaa.",
+          "rough": "Haluan tehdä töitä siellä missä fyysiset laitteet ja data kohtaa. Haluan oppia miten kenttämittauksista tulee päätöksiä, joihin paikan päällä olevat ihmiset voi luottaa."
+        },
+        "sv": {
+          "polished": "Jag vill arbeta där fysiska enheter och data möts, och lära mig hur mätningar i fält blir beslut som människor på plats kan lita på.",
+          "rough": "Jag vill jobba där fysiska enheter och data möts. Jag vill lära mig hur mätningar i fält blir beslut som folk på plats kan lita på."
+        },
+        "ar": {
+          "polished": "أريد أن أعمل حيث تلتقي الأجهزة المادية بالبيانات، وأن أتعلم كيف تتحول القياسات الميدانية إلى قرارات يثق بها العاملون في الموقع.",
+          "rough": "أريد أن أعمل حيث تلتقي الأجهزة المادية والبيانات. أريد أن أتعلم كيف القياسات الميدانية تصبح قرارات يثق بها الناس في الموقع."
+        }
+      }
+    },
+    {
+      "id": "iot.next.2",
+      "text": {
+        "en": {
+          "polished": "I would like to join a team that builds connected equipment, take responsibility for a clear part of the work, and grow into a role with more ownership.",
+          "rough": "I like to join a team who builds connected equipment. I want take responsibility for a clear part of work and grow to a role with more ownership."
+        },
+        "fi": {
+          "polished": "Haluaisin liittyä tiimiin, joka rakentaa verkkoon kytkettyjä laitteita, ottaa vastuun selkeästä osasta työtä ja kasvaa rooliin, jossa minulla on enemmän omistajuutta.",
+          "rough": "Haluaisin tiimiin joka tekee verkkoon kytkettyjä laitteita. Haluan ottaa vastuun selkeästä osasta työtä ja kasvaa rooliin jossa on enemmän omistajuutta."
+        },
+        "sv": {
+          "polished": "Jag vill gärna gå med i ett team som bygger uppkopplad utrustning, ta ansvar för en tydlig del av arbetet och växa in i en roll med mer ägarskap.",
+          "rough": "Jag vill gå med i ett team som bygger uppkopplad utrustning. Jag vill ta ansvar för en tydlig del av jobbet och växa in i en roll med mer ägarskap."
+        },
+        "ar": {
+          "polished": "أودّ الانضمام إلى فريق يبني معدات متصلة، وأن أتحمّل مسؤولية جزء واضح من العمل، وأن أنمو نحو دور يمنحني مسؤولية أكبر.",
+          "rough": "أحب أن أنضم إلى فريق يبني معدات متصلة. أريد أن آخذ مسؤولية جزء واضح من العمل وأتطور نحو دور فيه مسؤولية أكثر."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "Our previous hire knew sensor data well but struggled when field devices behaved differently from the lab setup.",
+    "They spent weeks tuning alert thresholds without talking to the operators who actually received the alarms.",
+    "We now pair new people with a field technician during their first month on the job."
+  ]
+}

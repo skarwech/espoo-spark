@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-004/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move and room bookings, not reconciliation automation."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Administrative office tasks, no budgeting work described."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reporting or dashboard work mentioned."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No month-end close work; only office logistics."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Office move and catering, unrelated to budgeting."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reconciliation or automation work described."
+   }
+  ]
+ }
+}

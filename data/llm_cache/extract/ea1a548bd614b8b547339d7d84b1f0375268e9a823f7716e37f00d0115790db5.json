@@ -1,0 +1,39 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Olin laiteohjelmiston päivitysprojektissa muutaman kuukauden. Autoin tiimiä missä tarvittiin.",
+    "skills": [
+     "S43"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Järjestin muuton uuteen toimistokerrokseen. Suunnittelin istumapaikat ja muuttopäivän 35 ihmiselle.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Analysoin Pythonilla 6 kuukauden hälytyshistorian. Suurin osa vääristä vikahälytyksistä tuli lyhyistä lämpötilapiikeistä.",
+    "skills": [
+     "S39",
+     "S31"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Lisäsin 5 minuutin pysyvyysehdon ja väärät hälytykset väheni 60 %.",
+    "skills": [
+     "S03"
+    ]
+   }
+  ]
+ }
+}

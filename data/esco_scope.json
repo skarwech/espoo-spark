@@ -1,0 +1,189 @@
+{
+ "skills": {
+  "http://data.europa.eu/esco/skill/0e3493f4-0cad-4fbc-8e02-025f169b8114": {
+   "description": "The Finnish language.",
+   "label": "Finnish"
+  },
+  "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c": {
+   "description": "The tools used to transform large amounts of raw data into relevant and helpful business information.",
+   "label": "business intelligence"
+  },
+  "http://data.europa.eu/esco/skill/162c7407-14ec-43ef-a4c2-31ccd1267850": {
+   "description": "Design the appropriate firmware to a specific electronic system.",
+   "label": "design firmware"
+  },
+  "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926": {
+   "description": "Use mobile health technologies and e-health (online applications and services) in order to enhance the provided healthcare.",
+   "label": "use e-health and mobile health technologies"
+  },
+  "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d": {
+   "description": "The computer systems and components with a specialised and autonomous function within a larger system or machine such as embedded systems software architectures, embedded peripherals, design principles and development tools.",
+   "label": "embedded systems"
+  },
+  "http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea": {
+   "description": "Plan, monitor and report on the budget.",
+   "label": "manage budgets"
+  },
+  "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae": {
+   "description": "Build a lasting and meaningful relationship with customers in order to ensure satisfaction and fidelity by providing accurate and friendly advice and support, by delivering quality products and services and …",
+   "label": "maintain relationship with customers"
+  },
+  "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587": {
+   "description": "Administer complaints and negative feedback from customers in order to address concerns and where applicable provide a quick service recovery.",
+   "label": "handle customer complaints"
+  },
+  "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f": {
+   "description": "Collect data and statistics to test and evaluate in order to generate assertions and pattern predictions, with the aim of discovering useful information in a decision-making process.",
+   "label": "perform data analysis"
+  },
+  "http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b": {
+   "description": "Examine sales reports to see what goods and services have and have not sold well.",
+   "label": "carry out sales analysis"
+  },
+  "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c": {
+   "description": "Use models (descriptive or inferential statistics) and techniques (data mining or machine learning) for statistical analysis and ICT tools to analyse data, uncover correlations and forecast trends.",
+   "label": "apply statistical analysis techniques"
+  },
+  "http://data.europa.eu/esco/skill/3edfcb2b-2d0e-4673-87ce-f55c37eb5fca": {
+   "description": "Monitor quality standards in manufacturing and finishing process.",
+   "label": "monitor manufacturing quality standards"
+  },
+  "http://data.europa.eu/esco/skill/46e1b714-94f4-462d-88e6-31f442708812": {
+   "description": "Define and describe the criteria by which data quality is measured for manufacturing purposes, such as international standards and manufacturing regulations.",
+   "label": "define manufacturing quality criteria"
+  },
+  "http://data.europa.eu/esco/skill/4f5ccaad-0e4f-4e9f-8246-47765564387d": {
+   "description": "Update basic or integrated software included in devices, network components and embedded systems.",
+   "label": "upgrade firmware"
+  },
+  "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8": {
+   "description": "Detect and correct corrupt records from data sets, ensure that the data become and remain structured according to guidelines.",
+   "label": "perform data cleansing"
+  },
+  "http://data.europa.eu/esco/skill/516e324b-03fc-4d3b-9986-e46e9834cd43": {
+   "description": "Implement the nursing theoretical and methodological fundamentals and principles, basic nursing interventions on scientific evidence and the resources available.",
+   "label": "implement fundamentals of nursing"
+  },
+  "http://data.europa.eu/esco/skill/60f51172-37c0-4933-a27a-cbf55dcd7580": {
+   "description": "Collect, entry, and prepare the set of financial records disclosing the financial position of a company at the end of a certain period or accounting year.",
+   "label": "prepare financial statements"
+  },
+  "http://data.europa.eu/esco/skill/6468e5fb-f3be-4025-87be-4b6556755c61": {
+   "description": "Programmable logic controllers or PLC's are computer control systems used for the monitoring and control of input and output as well as the automation of electromechanical processes.",
+   "label": "programmable logic controller"
+  },
+  "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28": {
+   "description": "The programming paradigm that is based on combining markup (which adds context and structure to text) and other web programming code, such as AJAX, javascript and PHP, in order to …",
+   "label": "web programming"
+  },
+  "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73": {
+   "description": "Create software test sets in an automated manner, ​using specialised languages or tools, that can be performed by testing tools in order to save resources, gain efficiency and effectiveness in …",
+   "label": "develop automated software tests"
+  },
+  "http://data.europa.eu/esco/skill/6acf652c-33b2-4e28-8f79-1e553f255229": {
+   "description": "Plan care, defining nursing objectives, deciding on nursing measures to be taken, paying attention to health education and preventative measures and ensuring continuity and fullness of care.",
+   "label": "plan nursing care"
+  },
+  "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c": {
+   "description": "The principles of integrating ICT components and products from a number of sources to create an operational ICT system, techniques which ensure interoperability and interfaces between components and the system.",
+   "label": "ICT system integration"
+  },
+  "http://data.europa.eu/esco/skill/71480db1-a706-47f9-952f-bdc5036e3df3": {
+   "description": "Coordinate care for patient groups, being able to manage a number of patients within a given amount of time and provide optimum health services.",
+   "label": "coordinate care"
+  },
+  "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833": {
+   "description": "The study of statistical theory, methods and practices such as collection, organisation, analysis, interpretation and presentation of data.",
+   "label": "statistics"
+  },
+  "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6": {
+   "description": "The techniques of recording and summarising business and financial transactions and analysing, verifying, and reporting the results.",
+   "label": "accounting techniques"
+  },
+  "http://data.europa.eu/esco/skill/8a4e99e0-f259-4931-888f-604cfdc15b31": {
+   "description": "Perform regular maintenance, possibly including corrections and alterations, on a machine or machine tool to ensure it remains in a proper productive state.",
+   "label": "perform machine maintenance"
+  },
+  "http://data.europa.eu/esco/skill/8ee39fb7-8b46-490e-ae21-6e8b32854dd6": {
+   "description": "Manage dispatch software systems to execute tasks such as work order generation, route planning, and other activities.",
+   "label": "manage dispatch software systems"
+  },
+  "http://data.europa.eu/esco/skill/909c2e48-262e-4ebe-be05-5324ab086c1d": {
+   "description": "Compare production plans to actual production reports and generate reconciliation reports.",
+   "label": "generate reconciliation reports"
+  },
+  "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a": {
+   "description": "Perform tests to ensure that a software product will perform flawlessly under the specified customer requirements, using specialised software tools.",
+   "label": "execute software tests"
+  },
+  "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd": {
+   "description": "Measure system reliability and performance before, during and after component integration and during system operation and maintenance.",
+   "label": "monitor system performance"
+  },
+  "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f": {
+   "description": "Administer all types of data resources through their lifecycle by performing data profiling, parsing, standardisation, identity resolution, cleansing, enhancement and auditing.",
+   "label": "manage data"
+  },
+  "http://data.europa.eu/esco/skill/a46743b7-ff8c-49b6-99f7-7fa5bc241771": {
+   "description": "Use electronic health records to document nursing assessment, diagnosis, interventions and outcomes based on comparable nursing classification systems and nursing taxonomy.",
+   "label": "use electronic health records in nursing"
+  },
+  "http://data.europa.eu/esco/skill/a7b9039e-0145-4e3e-bbf8-30151d3e6cc0": {
+   "description": "Schedule and perform regular maintenance, cleaning, and repairs of all equipment.",
+   "label": "schedule regular machine maintenance"
+  },
+  "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b": {
+   "description": "Control product inventory in balance of availability and storage costs.",
+   "label": "manage inventory"
+  },
+  "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0": {
+   "description": "The technologies which enable access to hardware, software, data and services through remote servers and software networks irrespective of their location and architecture.",
+   "label": "cloud technologies"
+  },
+  "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389": {
+   "description": "Create visual representations of data such as charts or diagrams for easier understanding.",
+   "label": "deliver visual presentation of data"
+  },
+  "http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f": {
+   "description": "Investigate customer complaints in order to determine the non-satisfactory elements in food products that lead to complaints from customers.",
+   "label": "investigate customer complaints"
+  },
+  "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d": {
+   "description": "The techniques and principles of software development, such as analysis, algorithms, coding, testing and compiling of programming paradigms in Python.",
+   "label": "Python (computer programming)"
+  },
+  "http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8": {
+   "description": "Plan mobility and transport for different departments in order to obtain the best possible movement of equipment and materials.",
+   "label": "plan transport operations"
+  },
+  "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf": {
+   "description": "Register, follow-up, solve and respond to customer requests, complaints and after-sales services.",
+   "label": "provide customer follow-up services"
+  },
+  "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081": {
+   "description": "Collect, manage and interpret data relevant for companies related to shipping, payment, inventory, resources and manufacturing using specific business management software.",
+   "label": "manage standard enterprise resource planning system"
+  },
+  "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51": {
+   "description": "The general principles, categories, requirements, limitations and vulnerabilities of smart connected devices (most of them with intended internet connectivity).",
+   "label": "Internet of Things"
+  },
+  "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694": {
+   "description": "Set of technologies that make a process, system, or apparatus operate automatically through the use of control systems.",
+   "label": "automation technology"
+  },
+  "http://data.europa.eu/esco/skill/f929c89e-c363-4132-a918-e021d57b307c": {
+   "description": "The flow of goods in the supply chain, movement and storage of raw materials, work-in-process inventory, and finished goods from point of origin to point of consumption.",
+   "label": "supply chain management"
+  },
+  "http://data.europa.eu/esco/skill/f98e06f5-a09a-4356-b6a8-d55a7d3c5356": {
+   "description": "Implement nursing care when treating patients in order to improve professional practice.",
+   "label": "implement nursing care"
+  },
+  "http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779": {
+   "description": "Use specific techniques and methodologies to analyse the data requirements of an organisation's business processes in order to create models for these data, such as conceptual, logical and physical models.",
+   "label": "create data models"
+  }
+ },
+ "source": "ESCO API v1 (ec.europa.eu/esco/api), descriptions fetched 2026-11-14, first sentence, max 30 words"
+}

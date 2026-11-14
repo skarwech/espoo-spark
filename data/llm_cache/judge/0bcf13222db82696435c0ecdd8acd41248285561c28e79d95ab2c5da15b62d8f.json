@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-004/o1",
+    "label": "partial",
+    "unit_id": "J-004~fi.u1",
+    "quote": "Hoidin pankkitäsmäytyksiä jonkin aikaa ja etsin keinoja nopeuttaa niitä.",
+    "reason": "Handled bank reconciliations and sought speedups, but no method or result."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "partial",
+    "unit_id": "J-004~fi.u3",
+    "quote": "Tuin osastopäälliköitä heidän budjettilukujensa kanssa",
+    "reason": "Supported department heads with budgets; no ownership, method or result."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "partial",
+    "unit_id": "J-004~fi.u2",
+    "quote": "laadin useita sen raporteista",
+    "reason": "Prepared month-end reports, but no dashboard or replacement of manual reporting."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "partial",
+    "unit_id": "J-004~fi.u2",
+    "quote": "Osallistuin kuukausikatkoon ja laadin useita sen raporteista.",
+    "reason": "Took part in month-end close; nothing about shortening it."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "partial",
+    "unit_id": "J-004~fi.u3",
+    "quote": "Tuin osastopäälliköitä heidän budjettilukujensa kanssa",
+    "reason": "Supported budgeting, but did not run the process; no result."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "partial",
+    "unit_id": "J-004~fi.u1",
+    "quote": "Hoidin pankkitäsmäytyksiä jonkin aikaa ja etsin keinoja nopeuttaa niitä.",
+    "reason": "Reconciliation work and speedup attempts, without automation method or result."
+   }
+  ]
+ }
+}

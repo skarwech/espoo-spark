@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Automatisoin 15 eniten käytettyä käyttäjäpolkua päästä päähän -testeiksi Playwrightilla ja määritin, että mikä tahansa epäonnistunut testi estää julkaisun. Viikoittaiset julkaisut ovat sen jälkeen sujuneet 5 kuukautta ilman peruutuksia.",
+    "skills": [
+     "S12",
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Lisäsin kumppani-API:in Pydanticilla toteutetun pyyntöjen validoinnin ja selkeät virhekoodit sekä kirjoitin integraatio-ohjeen itse. Kumppaneiden virheilmoitukset vähenivät 25:stä 6:een kuukaudessa.",
+    "skills": [
+     "S39",
+     "S18",
+     "S46"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Olin mukana pilvisiirtoprojektissa ja osallistuin tarpeen mukaan, lähinnä pienempiin tehtäviin.",
+    "skills": [
+     "S06"
+    ]
+   }
+  ]
+ }
+}

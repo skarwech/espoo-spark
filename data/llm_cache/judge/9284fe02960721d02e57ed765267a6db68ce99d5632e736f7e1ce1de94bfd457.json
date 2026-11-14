@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Organizing a summer party is unrelated to care documentation."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Event planning is unrelated to home care delivery."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Party organizing is unrelated to electronic record migration."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Event logistics is not shift or care plan coordination."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work described."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Party organizing is unrelated to care documentation."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work described."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Event logistics is not shift or care plan coordination."
+   }
+  ]
+ }
+}

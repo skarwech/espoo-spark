@@ -1,0 +1,3325 @@
+{
+ "claims": {
+  "J-001": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "hero.aino.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "hero.aino.2",
+    "level": "none"
+   }
+  ],
+  "J-002": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "hero.karim.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "hero.karim.2",
+    "level": "supported"
+   }
+  ],
+  "J-003": [
+   {
+    "archetype": "log_routes",
+    "claim_id": "hero.elena.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_erp",
+    "claim_id": "hero.elena.2",
+    "level": "supported"
+   }
+  ],
+  "J-004": [
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-005": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.2",
+    "level": "none"
+   }
+  ],
+  "J-006": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-007": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-008": [
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.none.2",
+    "level": "none"
+   }
+  ],
+  "J-009": [
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-010": [
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-011": [
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-012": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-013": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.none.1",
+    "level": "none"
+   }
+  ],
+  "J-014": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-015": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-016": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.2",
+    "level": "none"
+   }
+  ],
+  "J-017": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-018": [
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.none.2",
+    "level": "none"
+   }
+  ],
+  "J-019": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.none.2",
+    "level": "none"
+   }
+  ],
+  "J-020": [
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-021": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-022": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-023": [
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.none.2",
+    "level": "none"
+   }
+  ],
+  "J-024": [
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-025": [
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.none.2",
+    "level": "none"
+   }
+  ],
+  "J-026": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.none.1",
+    "level": "none"
+   }
+  ],
+  "J-027": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-028": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-029": [
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-030": [
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-031": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-032": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-033": [
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-034": [
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-035": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-036": [
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-037": [
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.none.2",
+    "level": "none"
+   }
+  ],
+  "J-038": [
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.none.2",
+    "level": "none"
+   }
+  ],
+  "J-039": [
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.none.2",
+    "level": "none"
+   }
+  ],
+  "J-040": [
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-041": [
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-042": [
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-043": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-044": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-045": [
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-046": [
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.none.2",
+    "level": "none"
+   }
+  ],
+  "J-047": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.none.2",
+    "level": "none"
+   }
+  ],
+  "J-048": [
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-049": [
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-050": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-051": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-052": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-053": [
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.none.2",
+    "level": "none"
+   }
+  ],
+  "J-054": [
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-055": [
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-056": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-057": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-058": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-059": [
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-060": [
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.none.1",
+    "level": "none"
+   }
+  ],
+  "J-061": [
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-062": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-063": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-064": [
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-065": [
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.none.1",
+    "level": "none"
+   }
+  ],
+  "J-066": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-067": [
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-068": [
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-069": [
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-070": [
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-071": [
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-072": [
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-073": [
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-074": [
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.none.1",
+    "level": "none"
+   }
+  ],
+  "J-075": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-076": [
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-077": [
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-078": [
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-079": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.none.2",
+    "level": "none"
+   }
+  ],
+  "J-080": [
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.none.2",
+    "level": "none"
+   }
+  ],
+  "J-081": [
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-082": [
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-083": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.2",
+    "level": "none"
+   }
+  ],
+  "J-084": [
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-085": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-086": [
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.none.1",
+    "level": "none"
+   }
+  ],
+  "J-087": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-088": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-089": [
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.none.1",
+    "level": "none"
+   }
+  ],
+  "J-090": [
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-091": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-092": [
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.none.2",
+    "level": "none"
+   }
+  ],
+  "J-093": [
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-094": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-095": [
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-096": [
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-097": [
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.none.2",
+    "level": "none"
+   }
+  ],
+  "J-098": [
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.none.2",
+    "level": "none"
+   }
+  ],
+  "J-099": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.1",
+    "level": "none"
+   }
+  ],
+  "J-100": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-101": [
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-102": [
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.none.2",
+    "level": "none"
+   }
+  ],
+  "J-103": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-104": [
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-105": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-106": [
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-107": [
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-108": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-109": [
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-110": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.2",
+    "level": "none"
+   }
+  ],
+  "J-111": [
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-112": [
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-113": [
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-114": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-115": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-116": [
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-117": [
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-118": [
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-119": [
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.none.2",
+    "level": "none"
+   }
+  ],
+  "J-120": [
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.none.2",
+    "level": "none"
+   }
+  ],
+  "J-121": [
+   {
+    "archetype": "cs_sales",
+    "claim_id": "cs_sales.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-122": [
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-123": [
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.none.2",
+    "level": "none"
+   }
+  ],
+  "J-124": [
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-125": [
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.none.2",
+    "level": "none"
+   }
+  ],
+  "J-126": [
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-127": [
+   {
+    "archetype": "fin_close",
+    "claim_id": "fin_close.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.none.2",
+    "level": "none"
+   }
+  ],
+  "J-128": [
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-129": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-130": [
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-131": [
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.partial.2",
+    "level": "partial"
+   }
+  ],
+  "J-132": [
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-133": [
+   {
+    "archetype": "sw_api",
+    "claim_id": "sw_api.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_cloud",
+    "claim_id": "sw_cloud.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "sw_testing",
+    "claim_id": "sw_testing.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-134": [
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-135": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-136": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.none.2",
+    "level": "none"
+   }
+  ],
+  "J-137": [
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "mfg_quality",
+    "claim_id": "mfg_quality.supported.2",
+    "level": "supported"
+   }
+  ],
+  "J-138": [
+   {
+    "archetype": "cs_process",
+    "claim_id": "cs_process.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "cs_support",
+    "claim_id": "cs_support.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-139": [
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.none.2",
+    "level": "none"
+   }
+  ],
+  "J-140": [
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-141": [
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.none.1",
+    "level": "none"
+   }
+  ],
+  "J-142": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.1",
+    "level": "none"
+   }
+  ],
+  "J-143": [
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.1",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.none.1",
+    "level": "none"
+   }
+  ],
+  "J-144": [
+   {
+    "archetype": "fin_reconciliation",
+    "claim_id": "fin_reconciliation.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "fin_budget",
+    "claim_id": "fin_budget.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-145": [
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-146": [
+   {
+    "archetype": "care_patient",
+    "claim_id": "care_patient.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "care_coordination",
+    "claim_id": "care_coordination.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "care_records",
+    "claim_id": "care_records.supported.1",
+    "level": "supported"
+   }
+  ],
+  "J-147": [
+   {
+    "archetype": "iot_pipeline",
+    "claim_id": "iot_pipeline.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "iot_alerts",
+    "claim_id": "iot_alerts.none.2",
+    "level": "none"
+   },
+   {
+    "archetype": "iot_firmware",
+    "claim_id": "iot_firmware.none.2",
+    "level": "none"
+   }
+  ],
+  "J-148": [
+   {
+    "archetype": "log_routes",
+    "claim_id": "log_routes.supported.2",
+    "level": "supported"
+   },
+   {
+    "archetype": "log_erp",
+    "claim_id": "log_erp.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "log_inventory",
+    "claim_id": "log_inventory.none.2",
+    "level": "none"
+   }
+  ],
+  "J-149": [
+   {
+    "archetype": "mfg_automation",
+    "claim_id": "mfg_automation.supported.1",
+    "level": "supported"
+   },
+   {
+    "archetype": "mfg_maintenance",
+    "claim_id": "mfg_maintenance.partial.1",
+    "level": "partial"
+   }
+  ],
+  "J-150": [
+   {
+    "archetype": "data_reporting",
+    "claim_id": "data_reporting.partial.2",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_quality",
+    "claim_id": "data_quality.partial.1",
+    "level": "partial"
+   },
+   {
+    "archetype": "data_modelling",
+    "claim_id": "data_modelling.supported.2",
+    "level": "supported"
+   }
+  ]
+ },
+ "items": {
+  "J-001": null,
+  "J-002": null,
+  "J-003": null,
+  "J-004": {
+   "differently": "fin.diff.1",
+   "mode": "remote",
+   "next": "fin.next.1",
+   "problem": "fin.ctx.2"
+  },
+  "J-005": {
+   "differently": "iot.diff.2",
+   "mode": "onsite",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-006": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-007": {
+   "differently": "iot.diff.2",
+   "mode": "remote",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-008": {
+   "differently": null,
+   "mode": "hybrid",
+   "next": "care.next.2",
+   "problem": "care.ctx.2"
+  },
+  "J-009": {
+   "differently": "care.diff.2",
+   "mode": "remote",
+   "next": "data.next.2",
+   "problem": "care.ctx.1"
+  },
+  "J-010": {
+   "differently": "log.diff.2",
+   "mode": "onsite",
+   "next": "log.next.1",
+   "problem": "log.ctx.2"
+  },
+  "J-011": {
+   "differently": "log.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "log.ctx.1"
+  },
+  "J-012": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "iot.next.1",
+   "problem": "iot.ctx.1"
+  },
+  "J-013": {
+   "differently": "sw.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.1",
+   "problem": "sw.ctx.2"
+  },
+  "J-014": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "data.ctx.1"
+  },
+  "J-015": {
+   "differently": "iot.diff.1",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-016": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-017": {
+   "differently": "iot.diff.1",
+   "mode": "onsite",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-018": {
+   "differently": "fin.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.1",
+   "problem": "fin.ctx.2"
+  },
+  "J-019": {
+   "differently": "sw.diff.2",
+   "mode": "remote",
+   "next": "sw.next.1",
+   "problem": "sw.ctx.1"
+  },
+  "J-020": {
+   "differently": "cs.diff.2",
+   "mode": "remote",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.1"
+  },
+  "J-021": {
+   "differently": "sw.diff.2",
+   "mode": "hybrid",
+   "next": "iot.next.1",
+   "problem": "sw.ctx.1"
+  },
+  "J-022": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-023": {
+   "differently": "cs.diff.1",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "cs.ctx.2"
+  },
+  "J-024": {
+   "differently": "data.diff.1",
+   "mode": "onsite",
+   "next": "data.next.2",
+   "problem": "data.ctx.1"
+  },
+  "J-025": {
+   "differently": "fin.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "fin.ctx.2"
+  },
+  "J-026": {
+   "differently": "sw.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.1",
+   "problem": "sw.ctx.1"
+  },
+  "J-027": {
+   "differently": "iot.diff.1",
+   "mode": "onsite",
+   "next": "data.next.1",
+   "problem": "iot.ctx.2"
+  },
+  "J-028": {
+   "differently": "iot.diff.1",
+   "mode": "onsite",
+   "next": "iot.next.1",
+   "problem": "iot.ctx.1"
+  },
+  "J-029": {
+   "differently": "cs.diff.2",
+   "mode": "remote",
+   "next": "cs.next.1",
+   "problem": "cs.ctx.1"
+  },
+  "J-030": {
+   "differently": "mfg.diff.2",
+   "mode": "remote",
+   "next": "mfg.next.1",
+   "problem": "mfg.ctx.2"
+  },
+  "J-031": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-032": {
+   "differently": "iot.diff.2",
+   "mode": "onsite",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-033": {
+   "differently": "mfg.diff.1",
+   "mode": "remote",
+   "next": "iot.next.2",
+   "problem": "mfg.ctx.2"
+  },
+  "J-034": {
+   "differently": "mfg.diff.1",
+   "mode": "onsite",
+   "next": "mfg.next.1",
+   "problem": "mfg.ctx.2"
+  },
+  "J-035": {
+   "differently": "iot.diff.1",
+   "mode": "hybrid",
+   "next": "iot.next.1",
+   "problem": "iot.ctx.2"
+  },
+  "J-036": {
+   "differently": "mfg.diff.1",
+   "mode": "onsite",
+   "next": "mfg.next.1",
+   "problem": "mfg.ctx.2"
+  },
+  "J-037": {
+   "differently": "care.diff.2",
+   "mode": "remote",
+   "next": "care.next.1",
+   "problem": "care.ctx.1"
+  },
+  "J-038": {
+   "differently": "care.diff.2",
+   "mode": "hybrid",
+   "next": "care.next.1",
+   "problem": "care.ctx.2"
+  },
+  "J-039": {
+   "differently": "cs.diff.2",
+   "mode": "onsite",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.1"
+  },
+  "J-040": {
+   "differently": "sw.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.1",
+   "problem": "sw.ctx.2"
+  },
+  "J-041": {
+   "differently": "sw.diff.1",
+   "mode": "remote",
+   "next": "iot.next.2",
+   "problem": "sw.ctx.2"
+  },
+  "J-042": {
+   "differently": "fin.diff.1",
+   "mode": "remote",
+   "next": "fin.next.1",
+   "problem": "fin.ctx.2"
+  },
+  "J-043": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-044": {
+   "differently": "iot.diff.1",
+   "mode": "hybrid",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-045": {
+   "differently": "fin.diff.2",
+   "mode": "hybrid",
+   "next": "fin.next.2",
+   "problem": "fin.ctx.1"
+  },
+  "J-046": {
+   "differently": "mfg.diff.2",
+   "mode": "remote",
+   "next": "mfg.next.2",
+   "problem": "mfg.ctx.2"
+  },
+  "J-047": {
+   "differently": "sw.diff.1",
+   "mode": "remote",
+   "next": "data.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-048": {
+   "differently": "mfg.diff.1",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "mfg.ctx.1"
+  },
+  "J-049": {
+   "differently": "log.diff.2",
+   "mode": "hybrid",
+   "next": "log.next.2",
+   "problem": "log.ctx.1"
+  },
+  "J-050": {
+   "differently": "data.diff.2",
+   "mode": "onsite",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-051": {
+   "differently": "iot.diff.1",
+   "mode": "onsite",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-052": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-053": {
+   "differently": null,
+   "mode": "onsite",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.2"
+  },
+  "J-054": {
+   "differently": "cs.diff.1",
+   "mode": "hybrid",
+   "next": "sw.next.1",
+   "problem": "cs.ctx.2"
+  },
+  "J-055": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-056": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.1",
+   "problem": "iot.ctx.1"
+  },
+  "J-057": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-058": {
+   "differently": "data.diff.2",
+   "mode": "onsite",
+   "next": "data.next.1",
+   "problem": "data.ctx.1"
+  },
+  "J-059": {
+   "differently": "cs.diff.2",
+   "mode": "onsite",
+   "next": "data.next.2",
+   "problem": "cs.ctx.1"
+  },
+  "J-060": {
+   "differently": "cs.diff.1",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "cs.ctx.2"
+  },
+  "J-061": {
+   "differently": "log.diff.2",
+   "mode": "hybrid",
+   "next": "log.next.2",
+   "problem": "log.ctx.2"
+  },
+  "J-062": {
+   "differently": "iot.diff.1",
+   "mode": "onsite",
+   "next": "iot.next.1",
+   "problem": "iot.ctx.2"
+  },
+  "J-063": {
+   "differently": "sw.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-064": {
+   "differently": "data.diff.1",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "data.ctx.1"
+  },
+  "J-065": {
+   "differently": null,
+   "mode": "hybrid",
+   "next": "care.next.1",
+   "problem": "care.ctx.1"
+  },
+  "J-066": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "iot.next.1",
+   "problem": "sw.ctx.2"
+  },
+  "J-067": {
+   "differently": "cs.diff.1",
+   "mode": "hybrid",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.2"
+  },
+  "J-068": {
+   "differently": "data.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-069": {
+   "differently": "cs.diff.1",
+   "mode": "onsite",
+   "next": "cs.next.1",
+   "problem": "cs.ctx.2"
+  },
+  "J-070": {
+   "differently": "care.diff.1",
+   "mode": "hybrid",
+   "next": "care.next.1",
+   "problem": "care.ctx.1"
+  },
+  "J-071": {
+   "differently": "care.diff.2",
+   "mode": "hybrid",
+   "next": "care.next.1",
+   "problem": "care.ctx.1"
+  },
+  "J-072": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-073": {
+   "differently": "log.diff.2",
+   "mode": "hybrid",
+   "next": "log.next.2",
+   "problem": "log.ctx.2"
+  },
+  "J-074": {
+   "differently": "cs.diff.2",
+   "mode": "onsite",
+   "next": "cs.next.1",
+   "problem": "cs.ctx.1"
+  },
+  "J-075": {
+   "differently": "iot.diff.1",
+   "mode": "hybrid",
+   "next": "iot.next.1",
+   "problem": "iot.ctx.1"
+  },
+  "J-076": {
+   "differently": "fin.diff.2",
+   "mode": "hybrid",
+   "next": "fin.next.1",
+   "problem": "fin.ctx.1"
+  },
+  "J-077": {
+   "differently": "data.diff.1",
+   "mode": "onsite",
+   "next": "data.next.2",
+   "problem": "data.ctx.2"
+  },
+  "J-078": {
+   "differently": "mfg.diff.1",
+   "mode": "hybrid",
+   "next": "mfg.next.1",
+   "problem": "mfg.ctx.1"
+  },
+  "J-079": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-080": {
+   "differently": "mfg.diff.1",
+   "mode": "onsite",
+   "next": "mfg.next.1",
+   "problem": "mfg.ctx.1"
+  },
+  "J-081": {
+   "differently": "cs.diff.1",
+   "mode": "hybrid",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.1"
+  },
+  "J-082": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-083": {
+   "differently": "iot.diff.2",
+   "mode": "remote",
+   "next": "iot.next.1",
+   "problem": "iot.ctx.2"
+  },
+  "J-084": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-085": {
+   "differently": "iot.diff.2",
+   "mode": "remote",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-086": {
+   "differently": null,
+   "mode": "onsite",
+   "next": "log.next.2",
+   "problem": "log.ctx.2"
+  },
+  "J-087": {
+   "differently": "sw.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.1",
+   "problem": "sw.ctx.1"
+  },
+  "J-088": {
+   "differently": "data.diff.1",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "data.ctx.1"
+  },
+  "J-089": {
+   "differently": "mfg.diff.2",
+   "mode": "hybrid",
+   "next": "mfg.next.2",
+   "problem": "mfg.ctx.1"
+  },
+  "J-090": {
+   "differently": "care.diff.2",
+   "mode": "onsite",
+   "next": "care.next.1",
+   "problem": "care.ctx.1"
+  },
+  "J-091": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-092": {
+   "differently": null,
+   "mode": "onsite",
+   "next": "fin.next.1",
+   "problem": "fin.ctx.1"
+  },
+  "J-093": {
+   "differently": "sw.diff.2",
+   "mode": "remote",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.2"
+  },
+  "J-094": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-095": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "data.ctx.2"
+  },
+  "J-096": {
+   "differently": "fin.diff.2",
+   "mode": "hybrid",
+   "next": "fin.next.2",
+   "problem": "fin.ctx.2"
+  },
+  "J-097": {
+   "differently": "mfg.diff.1",
+   "mode": "remote",
+   "next": "iot.next.2",
+   "problem": "mfg.ctx.1"
+  },
+  "J-098": {
+   "differently": "cs.diff.1",
+   "mode": "hybrid",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.1"
+  },
+  "J-099": {
+   "differently": "iot.diff.2",
+   "mode": "remote",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-100": {
+   "differently": "sw.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-101": {
+   "differently": "log.diff.2",
+   "mode": "remote",
+   "next": "log.next.1",
+   "problem": "log.ctx.1"
+  },
+  "J-102": {
+   "differently": "data.diff.2",
+   "mode": "remote",
+   "next": "data.next.1",
+   "problem": "data.ctx.1"
+  },
+  "J-103": {
+   "differently": "sw.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-104": {
+   "differently": "sw.diff.1",
+   "mode": "remote",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.1"
+  },
+  "J-105": {
+   "differently": "sw.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.2"
+  },
+  "J-106": {
+   "differently": "fin.diff.2",
+   "mode": "onsite",
+   "next": "fin.next.2",
+   "problem": "fin.ctx.2"
+  },
+  "J-107": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "iot.next.2",
+   "problem": "data.ctx.1"
+  },
+  "J-108": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "iot.next.1",
+   "problem": "iot.ctx.2"
+  },
+  "J-109": {
+   "differently": "care.diff.2",
+   "mode": "onsite",
+   "next": "care.next.1",
+   "problem": "care.ctx.2"
+  },
+  "J-110": {
+   "differently": "iot.diff.1",
+   "mode": "onsite",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-111": {
+   "differently": "sw.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.1",
+   "problem": "sw.ctx.1"
+  },
+  "J-112": {
+   "differently": "cs.diff.2",
+   "mode": "hybrid",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.1"
+  },
+  "J-113": {
+   "differently": "log.diff.1",
+   "mode": "hybrid",
+   "next": "log.next.2",
+   "problem": "log.ctx.1"
+  },
+  "J-114": {
+   "differently": "iot.diff.1",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-115": {
+   "differently": "data.diff.1",
+   "mode": "onsite",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-116": {
+   "differently": "care.diff.2",
+   "mode": "remote",
+   "next": "care.next.1",
+   "problem": "care.ctx.1"
+  },
+  "J-117": {
+   "differently": "mfg.diff.1",
+   "mode": "hybrid",
+   "next": "mfg.next.2",
+   "problem": "mfg.ctx.2"
+  },
+  "J-118": {
+   "differently": "data.diff.1",
+   "mode": "hybrid",
+   "next": "data.next.2",
+   "problem": "data.ctx.1"
+  },
+  "J-119": {
+   "differently": "fin.diff.1",
+   "mode": "onsite",
+   "next": "fin.next.1",
+   "problem": "fin.ctx.2"
+  },
+  "J-120": {
+   "differently": "data.diff.2",
+   "mode": "hybrid",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-121": {
+   "differently": "cs.diff.2",
+   "mode": "hybrid",
+   "next": "cs.next.1",
+   "problem": "cs.ctx.2"
+  },
+  "J-122": {
+   "differently": "log.diff.2",
+   "mode": "onsite",
+   "next": "log.next.2",
+   "problem": "log.ctx.2"
+  },
+  "J-123": {
+   "differently": "care.diff.2",
+   "mode": "remote",
+   "next": "care.next.2",
+   "problem": "care.ctx.1"
+  },
+  "J-124": {
+   "differently": "fin.diff.2",
+   "mode": "onsite",
+   "next": "fin.next.2",
+   "problem": "fin.ctx.2"
+  },
+  "J-125": {
+   "differently": "fin.diff.1",
+   "mode": "onsite",
+   "next": "fin.next.2",
+   "problem": "fin.ctx.1"
+  },
+  "J-126": {
+   "differently": "care.diff.2",
+   "mode": "remote",
+   "next": "cs.next.1",
+   "problem": "care.ctx.2"
+  },
+  "J-127": {
+   "differently": "fin.diff.2",
+   "mode": "remote",
+   "next": "fin.next.1",
+   "problem": "fin.ctx.1"
+  },
+  "J-128": {
+   "differently": "mfg.diff.2",
+   "mode": "hybrid",
+   "next": "mfg.next.2",
+   "problem": "mfg.ctx.2"
+  },
+  "J-129": {
+   "differently": "sw.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "sw.ctx.2"
+  },
+  "J-130": {
+   "differently": "data.diff.1",
+   "mode": "remote",
+   "next": "data.next.2",
+   "problem": "data.ctx.1"
+  },
+  "J-131": {
+   "differently": "care.diff.2",
+   "mode": "hybrid",
+   "next": "care.next.2",
+   "problem": "care.ctx.1"
+  },
+  "J-132": {
+   "differently": "log.diff.1",
+   "mode": "remote",
+   "next": "log.next.1",
+   "problem": "log.ctx.2"
+  },
+  "J-133": {
+   "differently": "sw.diff.2",
+   "mode": "onsite",
+   "next": "sw.next.1",
+   "problem": "sw.ctx.1"
+  },
+  "J-134": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-135": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-136": {
+   "differently": "iot.diff.1",
+   "mode": "hybrid",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-137": {
+   "differently": "mfg.diff.1",
+   "mode": "onsite",
+   "next": "mfg.next.1",
+   "problem": "mfg.ctx.1"
+  },
+  "J-138": {
+   "differently": "cs.diff.1",
+   "mode": "onsite",
+   "next": "cs.next.2",
+   "problem": "cs.ctx.2"
+  },
+  "J-139": {
+   "differently": "log.diff.1",
+   "mode": "onsite",
+   "next": "sw.next.1",
+   "problem": "log.ctx.2"
+  },
+  "J-140": {
+   "differently": "data.diff.2",
+   "mode": "onsite",
+   "next": "data.next.2",
+   "problem": "data.ctx.2"
+  },
+  "J-141": {
+   "differently": "data.diff.1",
+   "mode": "remote",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  },
+  "J-142": {
+   "differently": "iot.diff.1",
+   "mode": "onsite",
+   "next": "iot.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-143": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "iot.ctx.2"
+  },
+  "J-144": {
+   "differently": "fin.diff.2",
+   "mode": "remote",
+   "next": "fin.next.2",
+   "problem": "fin.ctx.1"
+  },
+  "J-145": {
+   "differently": "log.diff.1",
+   "mode": "hybrid",
+   "next": "log.next.2",
+   "problem": "log.ctx.1"
+  },
+  "J-146": {
+   "differently": "care.diff.1",
+   "mode": "hybrid",
+   "next": "care.next.2",
+   "problem": "care.ctx.2"
+  },
+  "J-147": {
+   "differently": "iot.diff.2",
+   "mode": "hybrid",
+   "next": "sw.next.2",
+   "problem": "iot.ctx.1"
+  },
+  "J-148": {
+   "differently": "log.diff.2",
+   "mode": "hybrid",
+   "next": "log.next.2",
+   "problem": "log.ctx.1"
+  },
+  "J-149": {
+   "differently": "mfg.diff.2",
+   "mode": "remote",
+   "next": "data.next.1",
+   "problem": "mfg.ctx.2"
+  },
+  "J-150": {
+   "differently": "data.diff.2",
+   "mode": "remote",
+   "next": "data.next.1",
+   "problem": "data.ctx.2"
+  }
+ },
+ "outcomes": {
+  "N-001": {
+   "o1": "cs_sales",
+   "o2": "cs_process",
+   "o3": "cs_support"
+  },
+  "N-002": {
+   "o1": "data_quality",
+   "o2": "data_reporting",
+   "o3": "data_modelling"
+  },
+  "N-003": {
+   "o1": "iot_alerts",
+   "o2": "iot_firmware",
+   "o3": "cs_support"
+  },
+  "N-004": {
+   "o1": "fin_reconciliation",
+   "o2": "fin_budget",
+   "o3": "data_reporting"
+  },
+  "N-005": {
+   "o1": "cs_sales",
+   "o2": "cs_support",
+   "o3": "cs_process"
+  },
+  "N-006": {
+   "o1": "iot_firmware",
+   "o2": "iot_pipeline",
+   "o3": "mfg_automation"
+  },
+  "N-007": {
+   "o1": "sw_api",
+   "o2": "sw_testing",
+   "o3": "sw_cloud"
+  },
+  "N-008": {
+   "o1": "mfg_automation",
+   "o2": "mfg_maintenance",
+   "o3": "iot_alerts"
+  },
+  "N-009": {
+   "o1": "sw_api",
+   "o2": "sw_cloud",
+   "o3": "cs_support"
+  },
+  "N-010": {
+   "o1": "care_records",
+   "o2": "care_patient",
+   "o3": "cs_support"
+  },
+  "N-011": {
+   "o1": "fin_close",
+   "o2": "fin_budget",
+   "o3": "fin_reconciliation"
+  },
+  "N-012": {
+   "o1": "log_erp",
+   "o2": "log_routes",
+   "o3": "log_inventory"
+  },
+  "N-013": {
+   "o1": "sw_api",
+   "o2": "sw_cloud",
+   "o3": "log_erp"
+  },
+  "N-014": {
+   "o1": "iot_alerts",
+   "o2": "iot_pipeline",
+   "o3": "cs_support"
+  },
+  "N-015": {
+   "o1": "mfg_maintenance",
+   "o2": "mfg_automation",
+   "o3": "cs_support"
+  },
+  "N-016": {
+   "o1": "sw_testing",
+   "o2": "sw_api",
+   "o3": "sw_cloud"
+  },
+  "N-017": {
+   "o1": "data_reporting",
+   "o2": "data_quality",
+   "o3": "fin_reconciliation"
+  },
+  "N-018": {
+   "o1": "iot_pipeline",
+   "o2": "iot_alerts",
+   "o3": "data_quality"
+  },
+  "N-019": {
+   "o1": "care_records",
+   "o2": "care_coordination",
+   "o3": "care_patient"
+  },
+  "N-020": {
+   "o1": "cs_sales",
+   "o2": "cs_process",
+   "o3": "cs_support"
+  },
+  "N-021": {
+   "o1": "log_routes",
+   "o2": "log_erp",
+   "o3": "log_inventory"
+  },
+  "N-022": {
+   "o1": "iot_alerts",
+   "o2": "iot_pipeline",
+   "o3": "log_erp"
+  },
+  "N-023": {
+   "o1": "care_records",
+   "o2": "care_patient",
+   "o3": "care_coordination"
+  },
+  "N-024": {
+   "o1": "data_quality",
+   "o2": "data_modelling",
+   "o3": "cs_support"
+  },
+  "N-025": {
+   "o1": "sw_testing",
+   "o2": "sw_cloud",
+   "o3": "iot_pipeline"
+  }
+ },
+ "related": [
+  [
+   "care_coordination",
+   "care_patient"
+  ],
+  [
+   "cs_process",
+   "cs_support"
+  ],
+  [
+   "data_modelling",
+   "iot_alerts"
+  ],
+  [
+   "data_modelling",
+   "log_inventory"
+  ],
+  [
+   "data_quality",
+   "fin_reconciliation"
+  ],
+  [
+   "data_quality",
+   "iot_pipeline"
+  ],
+  [
+   "data_quality",
+   "log_erp"
+  ],
+  [
+   "data_reporting",
+   "fin_reconciliation"
+  ],
+  [
+   "fin_close",
+   "fin_reconciliation"
+  ],
+  [
+   "iot_alerts",
+   "mfg_maintenance"
+  ],
+  [
+   "iot_firmware",
+   "mfg_automation"
+  ],
+  [
+   "iot_pipeline",
+   "log_erp"
+  ],
+  [
+   "iot_pipeline",
+   "sw_api"
+  ],
+  [
+   "iot_pipeline",
+   "sw_cloud"
+  ],
+  [
+   "log_erp",
+   "sw_api"
+  ]
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag byggde en veckovis efterfrågeprognos i Python med gradient boosting på 3 års försäljningshistorik; prognosfelet var 14 %, jämfört med 22 % för den gamla kalkylbladsuppskattningen.",
+    "skills": [
+     "S39",
+     "S02",
+     "S05"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag hjälpte till med den nya rapportdashboarden en tid och deltog i flera möten om den.",
+    "skills": [
+     "S04",
+     "S10"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag deltog i ett projekt för att städa kunddata och kontrollerade poster vid behov.",
+    "skills": [
+     "S32"
+    ]
+   }
+  ]
+ }
+}

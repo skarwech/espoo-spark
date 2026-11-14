@@ -1,0 +1,17 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I took part in end-of-line quality inspections and flagged issues to the team whenever something looked off.",
+    "skills": [
+     "S29"
+    ]
+   }
+  ]
+ }
+}

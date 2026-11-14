@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "På mitt tidigare jobb arbetade jag med prognosfrågor och gjorde en del av analysen åt planeringsteamet.",
+    "skills": [
+     "S31"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag matchade kundposter från CRM-systemet, webbutiken och faktureringssystemet med fuzzy matching i Python, tog bort 870 dubbletter och levererade ett enhetligt kundregister inom 10 veckor.",
+    "skills": [
+     "S32",
+     "S39",
+     "S25"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag organiserade den årliga rekreationsdagen för 40 anställda, inklusive program, servering och lokalbokning.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

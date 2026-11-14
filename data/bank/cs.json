@@ -1,0 +1,556 @@
+{
+  "domain": "cs",
+  "contexts": [
+    {
+      "id": "cs.ctx.1",
+      "text": {
+        "en": {
+          "polished": "In a mid-size software company, the support queue kept growing, the same questions arrived again and again, and account managers had little time left to follow up with existing business customers.",
+          "rough": "In a mid-size software company the support queue grew all the time, same questions came again and again, and account managers had not much time to follow up existing business customers."
+        },
+        "fi": {
+          "polished": "Keskikokoisessa ohjelmistoyrityksessä tukijono kasvoi jatkuvasti, samat kysymykset toistuivat yhä uudelleen, eikä asiakkuuspäälliköille jäänyt juuri aikaa yhteydenpitoon nykyisten yritysasiakkaiden kanssa.",
+          "rough": "Keskikokoisessa ohjelmistofirmassa tukijono kasvoi koko ajan, samat kysymykset tuli aina uudestaan ja asiakkuuspäälliköillä ei ollut paljon aikaa pitää yhteyttä nykyisiin yritysasiakkaisiin."
+        },
+        "sv": {
+          "polished": "På ett medelstort mjukvaruföretag växte supportkön hela tiden, samma frågor kom in om och om igen och kundansvariga hade knappt tid att följa upp befintliga företagskunder.",
+          "rough": "På ett medelstort mjukvaruföretag blev supportkön längre hela tiden, samma frågor kom igen och igen, och kundansvariga hade inte mycket tid att följa upp befintliga företagskunder."
+        },
+        "ar": {
+          "polished": "في شركة برمجيات متوسطة الحجم، كانت قائمة انتظار الدعم تتزايد باستمرار، وكانت الأسئلة نفسها تتكرر كثيرًا، ولم يبقَ لمديري الحسابات وقت كافٍ لمتابعة العملاء الحاليين من الشركات.",
+          "rough": "في شركة برمجيات متوسطة، قائمة الدعم كانت تكبر طول الوقت، ونفس الأسئلة تتكرر كثيرًا، ومديرو الحسابات ليس لديهم وقت كثير لمتابعة العملاء الحاليين من الشركات."
+        }
+      }
+    },
+    {
+      "id": "cs.ctx.2",
+      "text": {
+        "en": {
+          "polished": "At a business services company, customer requests came in by email, phone and chat with no shared view, so cases sat waiting, answers varied between agents and long-standing customers felt forgotten.",
+          "rough": "At a business services company customer requests came by email, phone and chat and nobody saw the whole picture. Cases waited, answers was different between agents and long-time customers felt forgotten."
+        },
+        "fi": {
+          "polished": "Yrityspalveluja tarjoavassa yrityksessä asiakkaiden yhteydenotot tulivat sähköpostilla, puhelimitse ja chatissa ilman yhteistä näkymää, joten tapaukset jäivät odottamaan, vastaukset vaihtelivat asiakaspalvelijasta toiseen ja pitkäaikaiset asiakkaat kokivat tulleensa unohdetuiksi.",
+          "rough": "Yrityspalvelufirmassa asiakkaiden yhteydenotot tuli sähköpostilla, puhelimella ja chatissa, eikä kukaan nähnyt kokonaisuutta. Tapaukset odotti, vastaukset vaihteli eri asiakaspalvelijoilla ja pitkäaikaiset asiakkaat tunsi itsensä unohdetuiksi."
+        },
+        "sv": {
+          "polished": "På ett företag inom företagstjänster kom kundärenden in via e-post, telefon och chatt utan en gemensam översikt, så ärenden blev liggande, svaren varierade mellan handläggare och mångåriga kunder kände sig bortglömda.",
+          "rough": "På ett företag med företagstjänster kom kundärenden via e-post, telefon och chatt och ingen såg helheten. Ärenden fick vänta, svaren var olika mellan handläggare och kunder som varit med länge kände sig glömda."
+        },
+        "ar": {
+          "polished": "في شركة تقدّم خدمات للأعمال، كانت طلبات العملاء تصل عبر البريد الإلكتروني والهاتف والدردشة دون رؤية مشتركة، فبقيت الحالات معلّقة، وتفاوتت الإجابات بين الموظفين، وشعر العملاء القدامى بأنهم منسيّون.",
+          "rough": "في شركة خدمات أعمال، طلبات العملاء كانت تأتي بالبريد والهاتف والدردشة ولم يكن هناك من يرى الصورة كاملة. الحالات تنتظر، والإجابات مختلفة بين الموظفين، والعملاء القدامى شعروا أنهم منسيون."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "cs_support.supported.1",
+      "archetype": "cs_support",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I handled about 25 support cases a day in Zendesk and created macros for the most common requests, cutting my median resolution time from 48 hours to 6 hours.",
+          "rough": "I handled around 25 support cases per day in Zendesk and I made macros for most common requests. My median resolution time went from 48 hours to 6 hours."
+        },
+        "fi": {
+          "polished": "Käsittelin noin 25 tukitapausta päivässä Zendeskissä ja tein makroja yleisimpiin pyyntöihin, mikä lyhensi ratkaisuaikani mediaanin 48 tunnista 6 tuntiin.",
+          "rough": "Hoidin noin 25 tukitapausta päivässä Zendeskissä ja tein makroja yleisimpiin pyyntöihin. Mun ratkaisuajan mediaani lyheni 48 tunnista 6 tuntiin."
+        },
+        "sv": {
+          "polished": "Jag hanterade cirka 25 supportärenden om dagen i Zendesk och skapade makron för de vanligaste förfrågningarna, vilket kortade medianen för min lösningstid från 48 timmar till 6 timmar.",
+          "rough": "Jag tog hand om ungefär 25 supportärenden per dag i Zendesk och gjorde makron för de vanligaste frågorna. Min mediantid för lösning gick från 48 timmar till 6 timmar."
+        },
+        "ar": {
+          "polished": "عالجتُ نحو 25 حالة دعم يوميًا في Zendesk، وأنشأتُ قوالب ردود جاهزة للطلبات الأكثر شيوعًا، فانخفض وسيط زمن الحل لديّ من 48 ساعة إلى 6 ساعات.",
+          "rough": "أنا كنت أعالج حوالي 25 حالة دعم كل يوم في Zendesk وعملت قوالب ردود جاهزة للطلبات الأكثر شيوعًا. وسيط وقت الحل عندي نزل من 48 ساعة إلى 6 ساعات."
+        }
+      }
+    },
+    {
+      "id": "cs_support.supported.2",
+      "archetype": "cs_support",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "Every morning I checked all cases older than 20 hours in the ticket queue and phoned those customers before new cases, so 95% of my cases were solved within a working day.",
+          "rough": "Every morning I checked all cases older than 20 hours in the ticket queue and called these customers before new cases. 95% of my cases was solved in a working day."
+        },
+        "fi": {
+          "polished": "Kävin joka aamu läpi kaikki yli 20 tuntia vanhat tapaukset tikettijonossa ja soitin näille asiakkaille ennen uusia tapauksia, joten 95 % tapauksistani ratkesi työpäivän kuluessa.",
+          "rough": "Joka aamu katsoin kaikki yli 20 tuntia vanhat tiketit jonosta ja soitin niille asiakkaille ennen uusia tapauksia. 95 % mun tapauksista ratkesi työpäivän sisällä."
+        },
+        "sv": {
+          "polished": "Varje morgon gick jag igenom alla ärenden äldre än 20 timmar i ärendekön och ringde de kunderna före nya ärenden, så att 95 % av mina ärenden löstes inom en arbetsdag.",
+          "rough": "Varje morgon kollade jag alla ärenden som var äldre än 20 timmar i kön och ringde de kunderna före nya ärenden. 95 % av mina ärenden blev lösta inom en arbetsdag."
+        },
+        "ar": {
+          "polished": "كنتُ أراجع كل صباح جميع الحالات التي مضى عليها أكثر من 20 ساعة في قائمة التذاكر، وأتصل بأصحابها قبل الحالات الجديدة، فحُلّت 95% من حالاتي خلال يوم عمل.",
+          "rough": "أنا كل صباح كنت أفحص كل الحالات الأقدم من 20 ساعة في قائمة التذاكر وأتصل بأصحابها قبل الحالات الجديدة. 95% من حالاتي تم حلها خلال يوم عمل."
+        }
+      }
+    },
+    {
+      "id": "cs_support.partial.1",
+      "archetype": "cs_support",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The support team introduced priority rules and automatic routing in Freshdesk, and the share of cases solved within 8 hours rose from 60% to 90%.",
+          "rough": "The support team took priority rules and automatic routing in use in Freshdesk. Cases solved within 8 hours went from 60% to 90%."
+        },
+        "fi": {
+          "polished": "Tukitiimi otti Freshdeskissä käyttöön prioriteettisäännöt ja automaattisen ohjauksen, ja 8 tunnin sisällä ratkaistujen tapausten osuus nousi 60 %:sta 90 %:iin.",
+          "rough": "Tukitiimi otti Freshdeskissä käyttöön prioriteettisäännöt ja automaattisen reitityksen. 8 tunnissa ratkaistut tapaukset nousi 60 %:sta 90 %:iin."
+        },
+        "sv": {
+          "polished": "Supportteamet införde prioriteringsregler och automatisk dirigering i Freshdesk, och andelen ärenden som löstes inom 8 timmar steg från 60 % till 90 %.",
+          "rough": "Supportteamet tog i bruk prioriteringsregler och automatisk dirigering i Freshdesk. Ärenden lösta inom 8 timmar gick från 60 % till 90 %."
+        },
+        "ar": {
+          "polished": "أدخل فريق الدعم قواعد للأولوية وتوجيهًا تلقائيًا في Freshdesk، فارتفعت نسبة الحالات المحلولة خلال 8 ساعات من 60% إلى 90%.",
+          "rough": "فريق الدعم بدأ يستخدم قواعد أولوية وتوجيه تلقائي في Freshdesk. الحالات المحلولة خلال 8 ساعات زادت من 60% إلى 90%."
+        }
+      }
+    },
+    {
+      "id": "cs_support.partial.2",
+      "archetype": "cs_support",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I helped handle customer support cases as part of the customer service team.",
+          "rough": "I helped with support cases in the customer service team."
+        },
+        "fi": {
+          "polished": "Autoin asiakastukitapausten käsittelyssä osana asiakaspalvelutiimiä.",
+          "rough": "Autoin tukitapausten kanssa asiakaspalvelutiimissä."
+        },
+        "sv": {
+          "polished": "Jag hjälpte till att hantera kundsupportärenden som en del av kundtjänstteamet.",
+          "rough": "Jag hjälpte till med supportärenden i kundtjänstteamet."
+        },
+        "ar": {
+          "polished": "ساعدتُ في معالجة حالات دعم العملاء ضمن فريق خدمة العملاء.",
+          "rough": "أنا ساعدت في حالات الدعم في فريق خدمة العملاء."
+        }
+      }
+    },
+    {
+      "id": "cs_support.none.1",
+      "archetype": "cs_support",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a customer-obsessed, solution-oriented professional who thrives on creating exceptional experiences and lasting value.",
+          "rough": "I am very customer focused and solution oriented. I like to create great experiences and lasting value."
+        },
+        "fi": {
+          "polished": "Olen asiakaskeskeinen ja ratkaisukeskeinen ammattilainen, joka nauttii poikkeuksellisten kokemusten ja kestävän arvon luomisesta.",
+          "rough": "Oon tosi asiakaslähtöinen ja ratkaisukeskeinen. Tykkään luoda hienoja kokemuksia ja pysyvää arvoa."
+        },
+        "sv": {
+          "polished": "Jag är en kundfokuserad och lösningsorienterad yrkesperson som trivs med att skapa exceptionella upplevelser och bestående värde.",
+          "rough": "Jag är väldigt kundfokuserad och lösningsorienterad. Jag gillar att skapa fina upplevelser och bestående värde."
+        },
+        "ar": {
+          "polished": "أضع العميل في صميم كل ما أفعله، وأركّز على الحلول، وأجد متعتي في صنع تجارب استثنائية وقيمة دائمة.",
+          "rough": "أهتم بالعميل كثيرًا وأركز على الحلول. أحب أن أصنع تجارب ممتازة وقيمة تدوم."
+        }
+      }
+    },
+    {
+      "id": "cs_support.none.2",
+      "archetype": "cs_support",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I coordinated our office move and labelled all boxes and cables for 30 employees.",
+          "rough": "I organised our office move and put labels on all boxes and cables for 30 employees."
+        },
+        "fi": {
+          "polished": "Koordinoin toimistomme muuton ja merkitsin kaikki laatikot ja kaapelit 30 työntekijälle.",
+          "rough": "Hoidin meidän toimiston muuton ja laitoin tarrat kaikkiin laatikoihin ja kaapeleihin 30 työntekijälle."
+        },
+        "sv": {
+          "polished": "Jag samordnade vår kontorsflytt och märkte alla lådor och kablar för 30 anställda.",
+          "rough": "Jag ordnade vår kontorsflytt och satte etiketter på alla lådor och kablar för 30 anställda."
+        },
+        "ar": {
+          "polished": "نسّقتُ انتقال مكتبنا ووضعتُ ملصقات على جميع الصناديق والكابلات لـ 30 موظفًا.",
+          "rough": "أنا نظمت نقل مكتبنا ووضعت ملصقات على كل الصناديق والكابلات لـ 30 موظف."
+        }
+      }
+    },
+    {
+      "id": "cs_process.supported.1",
+      "archetype": "cs_process",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I analysed 300 tickets, identified the 15 most repeated questions and wrote Confluence help articles for them; repeat tickets on those topics fell by 30% in 4 months.",
+          "rough": "I went through 300 tickets and found the 15 most repeated questions. I wrote help articles in Confluence for them and repeat tickets on these topics went down 30% in 4 months."
+        },
+        "fi": {
+          "polished": "Analysoin 300 tikettiä, tunnistin 15 useimmin toistuvaa kysymystä ja kirjoitin niistä ohjeartikkelit Confluenceen; näiden aiheiden toistuvat tiketit vähenivät 30 % 4 kuukaudessa.",
+          "rough": "Kävin läpi 300 tikettiä ja löysin 15 eniten toistuvaa kysymystä. Kirjoitin niistä ohjeet Confluenceen ja niiden aiheiden toistuvat tiketit väheni 30 % 4 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag analyserade 300 ärenden, identifierade de 15 mest återkommande frågorna och skrev hjälpartiklar om dem i Confluence; återkommande ärenden inom de ämnena minskade med 30 % på 4 månader.",
+          "rough": "Jag gick igenom 300 ärenden och hittade de 15 frågor som kom mest. Jag skrev hjälpartiklar i Confluence om dem och återkommande ärenden om de ämnena gick ner 30 % på 4 månader."
+        },
+        "ar": {
+          "polished": "حلّلتُ 300 تذكرة، وحدّدتُ الأسئلة الـ 15 الأكثر تكرارًا، وكتبتُ لها مقالات مساعدة في Confluence؛ وانخفضت التذاكر المتكررة حول هذه المواضيع بنسبة 30% خلال 4 أشهر.",
+          "rough": "أنا راجعت 300 تذكرة ووجدت أكثر 15 سؤال يتكرر. كتبت لها مقالات مساعدة في Confluence والتذاكر المتكررة عن هذه المواضيع نزلت 30% في 4 أشهر."
+        }
+      }
+    },
+    {
+      "id": "cs_process.supported.2",
+      "archetype": "cs_process",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I added root-cause tags to the ticket form and built a monthly Excel report of repeat issues, which I used to decide which knowledge base articles to update.",
+          "rough": "I added root cause tags to the ticket form and made a monthly Excel report of repeat issues. With it I decided which knowledge base articles to update."
+        },
+        "fi": {
+          "polished": "Lisäsin tikettilomakkeeseen juurisyytunnisteet ja rakensin toistuvista ongelmista kuukausittaisen Excel-raportin, jonka avulla päätin, mitä tietopankin artikkeleita päivitetään.",
+          "rough": "Lisäsin tikettilomakkeelle juurisyytagit ja tein kuukausittaisen Excel-raportin toistuvista ongelmista. Sen avulla päätin, mitä tietopankin artikkeleita päivitetään."
+        },
+        "sv": {
+          "polished": "Jag lade till grundorsakstaggar i ärendeformuläret och byggde en månatlig Excelrapport över återkommande problem, som jag använde för att bestämma vilka artiklar i kunskapsbanken som skulle uppdateras.",
+          "rough": "Jag lade till taggar för grundorsak i ärendeformuläret och gjorde en Excelrapport varje månad om återkommande problem. Med den bestämde jag vilka artiklar i kunskapsbanken som skulle uppdateras."
+        },
+        "ar": {
+          "polished": "أضفتُ وسومًا للأسباب الجذرية إلى نموذج التذاكر، وأعددتُ تقريرًا شهريًا في Excel عن المشكلات المتكررة، واستخدمتُه لتحديد مقالات قاعدة المعرفة التي يجب تحديثها.",
+          "rough": "أنا أضفت وسوم السبب الجذري لنموذج التذاكر وعملت تقرير Excel شهري عن المشاكل المتكررة. وبه قررت أي مقالات في قاعدة المعرفة يجب تحديثها."
+        }
+      }
+    },
+    {
+      "id": "cs_process.partial.1",
+      "archetype": "cs_process",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The knowledge base was rewritten around the 20 most common questions, and repeat tickets went down by 25% within 6 months.",
+          "rough": "The knowledge base was written again around the 20 most common questions. Repeat tickets went down 25% in 6 months."
+        },
+        "fi": {
+          "polished": "Tietopankki kirjoitettiin uudelleen 20 yleisimmän kysymyksen ympärille, ja toistuvat tukipyynnöt vähenivät 25 % 6 kuukaudessa.",
+          "rough": "Tietopankki kirjoitettiin uusiksi 20 yleisimmän kysymyksen pohjalta. Toistuvat tukipyynnöt väheni 25 % 6 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Kunskapsbanken skrevs om utifrån de 20 vanligaste frågorna, och återkommande ärenden minskade med 25 % inom 6 månader.",
+          "rough": "Kunskapsbanken skrevs om kring de 20 vanligaste frågorna. Återkommande ärenden gick ner 25 % på 6 månader."
+        },
+        "ar": {
+          "polished": "أُعيدت كتابة قاعدة المعرفة حول الأسئلة الـ 20 الأكثر شيوعًا، فانخفضت التذاكر المتكررة بنسبة 25% خلال 6 أشهر.",
+          "rough": "كُتبت قاعدة المعرفة من جديد حول أكثر 20 سؤال شائع. التذاكر المتكررة نزلت 25% في 6 أشهر."
+        }
+      }
+    },
+    {
+      "id": "cs_process.partial.2",
+      "archetype": "cs_process",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I occasionally updated some instructions in the knowledge base.",
+          "rough": "Sometimes I updated some instructions in the knowledge base."
+        },
+        "fi": {
+          "polished": "Päivitin toisinaan joitakin ohjeita tietopankkiin.",
+          "rough": "Päivittelin joskus joitain ohjeita tietopankkiin."
+        },
+        "sv": {
+          "polished": "Jag uppdaterade ibland några instruktioner i kunskapsbanken.",
+          "rough": "Ibland uppdaterade jag några instruktioner i kunskapsbanken."
+        },
+        "ar": {
+          "polished": "كنتُ أحدّث أحيانًا بعض التعليمات في قاعدة المعرفة.",
+          "rough": "أنا أحيانًا حدّثت بعض التعليمات في قاعدة المعرفة."
+        }
+      }
+    },
+    {
+      "id": "cs_process.none.1",
+      "archetype": "cs_process",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I believe knowledge is power, and I am passionate about empowering customers through seamless self-service experiences.",
+          "rough": "I think knowledge is power and I really like to empower customers with smooth self-service experiences."
+        },
+        "fi": {
+          "polished": "Uskon, että tieto on valtaa, ja haluan intohimoisesti voimaannuttaa asiakkaita saumattomien itsepalvelukokemusten avulla.",
+          "rough": "Musta tieto on valtaa, ja tykkään tosi paljon voimaannuttaa asiakkaita sujuvilla itsepalvelukokemuksilla."
+        },
+        "sv": {
+          "polished": "Jag tror att kunskap är makt, och jag brinner för att stärka kunderna genom sömlösa självbetjäningsupplevelser.",
+          "rough": "Jag tycker kunskap är makt och jag gillar verkligen att stärka kunder med smidiga självbetjäningsupplevelser."
+        },
+        "ar": {
+          "polished": "أؤمن بأن المعرفة قوة، ولديّ شغف بتمكين العملاء من خلال تجارب خدمة ذاتية سلسة.",
+          "rough": "أظن أن المعرفة قوة، وأحب كثيرًا أن أمكّن العملاء بتجارب خدمة ذاتية سهلة."
+        }
+      }
+    },
+    {
+      "id": "cs_process.none.2",
+      "archetype": "cs_process",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I managed parking permits and access cards for new employees at our office.",
+          "rough": "I handled parking permits and access cards for new employees in our office."
+        },
+        "fi": {
+          "polished": "Hoidin toimistollamme uusien työntekijöiden pysäköintiluvat ja kulkukortit.",
+          "rough": "Hoidin meidän toimistolla uusien työntekijöiden parkkiluvat ja kulkukortit."
+        },
+        "sv": {
+          "polished": "Jag skötte parkeringstillstånd och passerkort för nyanställda på vårt kontor.",
+          "rough": "Jag fixade parkeringstillstånd och passerkort åt nya anställda på vårt kontor."
+        },
+        "ar": {
+          "polished": "تولّيتُ تصاريح مواقف السيارات وبطاقات الدخول للموظفين الجدد في مكتبنا.",
+          "rough": "أنا رتبت تصاريح المواقف وبطاقات الدخول للموظفين الجدد في مكتبنا."
+        }
+      }
+    },
+    {
+      "id": "cs_sales.supported.1",
+      "archetype": "cs_sales",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I held usage reviews every 3 months with my 20 key accounts based on CRM data and offered add-on services; revenue from these accounts grew by 18% in a year.",
+          "rough": "Every 3 months I had usage reviews with my 20 key accounts using CRM data, and I offered add-on services. Revenue from these accounts grew 18% in a year."
+        },
+        "fi": {
+          "polished": "Pidin 20 avainasiakkaalleni 3 kuukauden välein käyttökatsaukset CRM-datan pohjalta ja tarjosin lisäpalveluja; näiden asiakkaiden tuottama liikevaihto kasvoi 18 % vuodessa.",
+          "rough": "Pidin 3 kuukauden välein käyttöpalaverit mun 20 avainasiakkaan kanssa CRM-datan pohjalta ja tarjosin lisäpalveluita. Myynti niille asiakkaille kasvoi 18 % vuodessa."
+        },
+        "sv": {
+          "polished": "Jag höll användningsgenomgångar var 3:e månad med mina 20 nyckelkunder utifrån CRM-data och erbjöd tilläggstjänster; intäkterna från dessa kunder växte med 18 % på ett år.",
+          "rough": "Var 3:e månad hade jag genomgångar av användningen med mina 20 nyckelkunder med CRM-data och jag erbjöd tilläggstjänster. Intäkterna från de kunderna växte 18 % på ett år."
+        },
+        "ar": {
+          "polished": "عقدتُ مراجعات للاستخدام كل 3 أشهر مع حساباتي الرئيسية الـ 20 بناءً على بيانات CRM، وعرضتُ خدمات إضافية؛ ونمت الإيرادات من هذه الحسابات بنسبة 18% خلال سنة.",
+          "rough": "أنا كل 3 أشهر كنت أعمل مراجعة استخدام مع 20 حساب رئيسي عندي ببيانات CRM، وعرضت خدمات إضافية. إيرادات هذه الحسابات زادت 18% في سنة."
+        }
+      }
+    },
+    {
+      "id": "cs_sales.supported.2",
+      "archetype": "cs_sales",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I analysed the purchase history of 60 existing customers in Power BI, identified those using only the basic package and contacted them with an upgrade offer; 12 of them upgraded.",
+          "rough": "I analysed purchase history of 60 existing customers in Power BI and found who use only the basic package. I contacted them with upgrade offer and 12 of them upgraded."
+        },
+        "fi": {
+          "polished": "Analysoin 60 nykyisen asiakkaan ostohistorian Power BI:ssä, tunnistin pelkkää peruspakettia käyttävät asiakkaat ja otin heihin yhteyttä laajennustarjouksella; heistä 12 laajensi palveluaan.",
+          "rough": "Analysoin 60 nykyisen asiakkaan ostohistorian Power BI:llä ja löysin ne, joilla oli vain peruspaketti. Otin niihin yhteyttä laajennustarjouksen kanssa ja 12 niistä laajensi palvelua."
+        },
+        "sv": {
+          "polished": "Jag analyserade köphistoriken för 60 befintliga kunder i Power BI, identifierade dem som bara använde baspaketet och kontaktade dem med ett uppgraderingserbjudande; 12 av dem uppgraderade.",
+          "rough": "Jag analyserade köphistoriken för 60 befintliga kunder i Power BI och hittade dem som bara har baspaketet. Jag kontaktade dem med ett uppgraderingserbjudande och 12 av dem uppgraderade."
+        },
+        "ar": {
+          "polished": "حلّلتُ سجل مشتريات 60 عميلًا حاليًا في Power BI، وحدّدتُ من يستخدمون الباقة الأساسية فقط، وتواصلتُ معهم بعرض ترقية؛ وقام 12 منهم بالترقية.",
+          "rough": "أنا حللت سجل الشراء لـ 60 عميل حالي في Power BI ووجدت الذين يستخدمون الباقة الأساسية فقط. تواصلت معهم بعرض ترقية وقام 12 منهم بالترقية."
+        }
+      }
+    },
+    {
+      "id": "cs_sales.partial.1",
+      "archetype": "cs_sales",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We ran a cross-selling campaign for existing business customers with HubSpot email sequences, and revenue from those accounts grew by 16% that year.",
+          "rough": "We did a cross-selling campaign to existing business customers with HubSpot email sequences. Revenue from those accounts grew 16% that year."
+        },
+        "fi": {
+          "polished": "Toteutimme nykyisille yritysasiakkaille ristiinmyyntikampanjan HubSpotin sähköpostisarjoilla, ja näiden asiakkuuksien liikevaihto kasvoi samana vuonna 16 %.",
+          "rough": "Me tehtiin nykyisille yritysasiakkaille ristiinmyyntikampanja HubSpotin sähköpostisarjoilla. Niiden asiakkuuksien liikevaihto kasvoi sinä vuonna 16 %."
+        },
+        "sv": {
+          "polished": "Vi genomförde en korsförsäljningskampanj till befintliga företagskunder med e-postsekvenser i HubSpot, och intäkterna från de kunderna växte med 16 % det året.",
+          "rough": "Vi körde en korsförsäljningskampanj till befintliga företagskunder med mejlsekvenser i HubSpot. Intäkterna från de kunderna växte 16 % det året."
+        },
+        "ar": {
+          "polished": "نفّذنا حملة بيع متقاطع للعملاء الحاليين من الشركات باستخدام سلاسل بريد إلكتروني في HubSpot، فنمت الإيرادات من هذه الحسابات بنسبة 16% في ذلك العام.",
+          "rough": "عملنا حملة بيع متقاطع للعملاء الحاليين من الشركات بسلاسل بريد في HubSpot. إيرادات هذه الحسابات زادت 16% في تلك السنة."
+        }
+      }
+    },
+    {
+      "id": "cs_sales.partial.2",
+      "archetype": "cs_sales",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I stayed in touch with some existing customers and visited them from time to time.",
+          "rough": "I kept contact with some existing customers and visited them sometimes."
+        },
+        "fi": {
+          "polished": "Pidin yhteyttä joihinkin nykyisiin asiakkaisiin ja vierailin heidän luonaan aika ajoin.",
+          "rough": "Pidin yhteyttä joihinkin nykyisiin asiakkaisiin ja kävin joskus niiden luona."
+        },
+        "sv": {
+          "polished": "Jag höll kontakt med några befintliga kunder och besökte dem då och då.",
+          "rough": "Jag höll kontakten med några befintliga kunder och besökte dem ibland."
+        },
+        "ar": {
+          "polished": "حافظتُ على التواصل مع بعض العملاء الحاليين وكنت أزورهم من حين لآخر.",
+          "rough": "أنا كنت أتواصل مع بعض العملاء الحاليين وأزورهم أحيانًا."
+        }
+      }
+    },
+    {
+      "id": "cs_sales.none.1",
+      "archetype": "cs_sales",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a results-driven relationship builder with a growth mindset, passionate about creating win-win partnerships.",
+          "rough": "I am results driven and I like to build relationships. I have growth mindset and I love win-win partnerships."
+        },
+        "fi": {
+          "polished": "Olen tuloshakuinen suhteiden rakentaja, jolla on kasvun asenne ja intohimo win-win-kumppanuuksien luomiseen.",
+          "rough": "Oon tuloshakuinen ja tykkään rakentaa suhteita. Mulla on kasvun asenne ja rakastan win-win-kumppanuuksia."
+        },
+        "sv": {
+          "polished": "Jag är en resultatinriktad relationsbyggare med ett tillväxttänkande och brinner för att skapa win-win-partnerskap.",
+          "rough": "Jag är resultatinriktad och gillar att bygga relationer. Jag har ett tillväxttänk och älskar win-win-partnerskap."
+        },
+        "ar": {
+          "polished": "أركّز على النتائج وأحب بناء العلاقات، وأتبنّى عقلية النمو، ولديّ شغف بإقامة شراكات مربحة للطرفين.",
+          "rough": "أنا أهتم بالنتائج وأحب أن أبني علاقات. عندي عقلية نمو وأحب الشراكات التي يربح فيها الطرفين."
+        }
+      }
+    },
+    {
+      "id": "cs_sales.none.2",
+      "archetype": "cs_sales",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I coordinated the office cleaning schedule and kitchen duty rota for our whole floor.",
+          "rough": "I made the office cleaning schedule and kitchen duty list for our whole floor."
+        },
+        "fi": {
+          "polished": "Koordinoin koko kerroksemme toimiston siivousaikataulun ja keittiövuorolistan.",
+          "rough": "Tein koko meidän kerroksen siivousaikataulun ja keittiövuorolistan."
+        },
+        "sv": {
+          "polished": "Jag samordnade kontorets städschema och köksturlistan för hela vår våning.",
+          "rough": "Jag gjorde städschemat och kökslistan för hela vår våning."
+        },
+        "ar": {
+          "polished": "نسّقتُ جدول تنظيف المكتب وجدول مناوبات المطبخ لطابقنا بالكامل.",
+          "rough": "أنا عملت جدول تنظيف المكتب وجدول المطبخ لكل الطابق عندنا."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "cs.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would ask customers for feedback earlier and share it with the whole team every week, instead of collecting everything and presenting it only at the end.",
+          "rough": "I would ask feedback from customers earlier and share it with whole team every week. Not collect everything and show it only in the end."
+        },
+        "fi": {
+          "polished": "Pyytäisin asiakkailta palautetta aiemmin ja jakaisin sen koko tiimille viikoittain sen sijaan, että keräisin kaiken ja esittelisin sen vasta lopuksi.",
+          "rough": "Kysyisin asiakkailta palautetta aikaisemmin ja jakaisin sen koko tiimille joka viikko. En keräisi kaikkea ja näyttäisi sitä vasta lopussa."
+        },
+        "sv": {
+          "polished": "Jag skulle be kunderna om feedback tidigare och dela den med hela teamet varje vecka, i stället för att samla allt och presentera det först i slutet.",
+          "rough": "Jag skulle fråga kunderna om feedback tidigare och dela den med hela teamet varje vecka. Inte samla allt och visa det bara i slutet."
+        },
+        "ar": {
+          "polished": "كنت سأطلب آراء العملاء في وقت أبكر وأشاركها مع الفريق كله كل أسبوع، بدلًا من جمع كل شيء وعرضه في النهاية فقط.",
+          "rough": "كنت سأسأل العملاء عن رأيهم أبكر وأشاركه مع كل الفريق كل أسبوع. ولا أجمع كل شيء وأعرضه في الآخر فقط."
+        }
+      }
+    },
+    {
+      "id": "cs.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would document my decisions and agreements as I go, so that colleagues covering for me during holidays would not need to call me with questions.",
+          "rough": "I would write down my decisions and agreements during the work, so colleagues who cover me in holidays don't need to call me and ask."
+        },
+        "fi": {
+          "polished": "Kirjaisin päätökseni ja sopimani asiat ylös jo työn edetessä, jotta lomien aikana minua sijaistavien kollegoiden ei tarvitsisi soittaa minulle kysymyksineen.",
+          "rough": "Kirjoittaisin mun päätökset ja sovitut asiat ylös heti, ettei lomalla sijaistavien kollegoiden tarvitse soittaa mulle ja kysyä."
+        },
+        "sv": {
+          "polished": "Jag skulle dokumentera mina beslut och överenskommelser löpande, så att kolleger som vikarierar för mig under semestrar inte behöver ringa mig med frågor.",
+          "rough": "Jag skulle skriva ner mina beslut och överenskommelser medan jag jobbar, så att kolleger som vikarierar på semestern inte måste ringa och fråga mig."
+        },
+        "ar": {
+          "polished": "كنت سأوثّق قراراتي واتفاقاتي أثناء العمل، حتى لا يضطر الزملاء الذين ينوبون عني في الإجازات إلى الاتصال بي لطرح الأسئلة.",
+          "rough": "كنت سأكتب قراراتي واتفاقاتي أثناء العمل، حتى لا يحتاج الزملاء الذين يغطون مكاني في الإجازة أن يتصلوا بي ويسألوا."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "cs.next.1",
+      "text": {
+        "en": {
+          "polished": "I want to work in customer service or account management, where I can solve customers' problems and build long-term relationships with them.",
+          "rough": "I want to work in customer service or account management. I want to solve customers' problems and build long relationships with them."
+        },
+        "fi": {
+          "polished": "Haluan työskennellä asiakaspalvelussa tai asiakkuudenhallinnassa, jossa voin ratkaista asiakkaiden ongelmia ja rakentaa heihin pitkäaikaisia suhteita.",
+          "rough": "Haluan töihin asiakaspalveluun tai asiakkuuksien hoitoon. Haluan ratkoa asiakkaiden ongelmia ja rakentaa pitkiä asiakassuhteita."
+        },
+        "sv": {
+          "polished": "Jag vill arbeta inom kundtjänst eller kundansvar, där jag kan lösa kundernas problem och bygga långsiktiga relationer med dem.",
+          "rough": "Jag vill jobba med kundtjänst eller kundansvar. Jag vill lösa kundernas problem och bygga långa relationer med dem."
+        },
+        "ar": {
+          "polished": "أريد العمل في خدمة العملاء أو إدارة الحسابات، حيث أستطيع حل مشكلات العملاء وبناء علاقات طويلة الأمد معهم.",
+          "rough": "أريد أن أعمل في خدمة العملاء أو إدارة الحسابات. أريد أحل مشاكل العملاء وأبني علاقات طويلة معهم."
+        }
+      }
+    },
+    {
+      "id": "cs.next.2",
+      "text": {
+        "en": {
+          "polished": "Next, I want a role where I can learn how business customers make purchasing decisions and grow into customer success or sales.",
+          "rough": "Next I want a job where I learn how business customers decide what they buy, and grow into customer success or sales."
+        },
+        "fi": {
+          "polished": "Seuraavaksi haluan tehtävän, jossa opin, miten yritysasiakkaat tekevät ostopäätöksiä, ja kasvan asiakasmenestyksen tai myynnin tehtäviin.",
+          "rough": "Seuraavaksi haluan työn, jossa opin miten yritysasiakkaat päättää mitä ne ostaa, ja pääsen asiakasmenestyksen tai myynnin tehtäviin."
+        },
+        "sv": {
+          "polished": "Härnäst vill jag ha en roll där jag lär mig hur företagskunder fattar köpbeslut och kan växa in i kundframgång eller försäljning.",
+          "rough": "Nästa steg är ett jobb där jag lär mig hur företagskunder bestämmer vad de köper, och växer in i kundframgång eller försäljning."
+        },
+        "ar": {
+          "polished": "أريد بعد ذلك دورًا أتعلّم فيه كيف يتخذ العملاء من الشركات قرارات الشراء، وأتطوّر نحو نجاح العملاء أو المبيعات.",
+          "rough": "بعد ذلك أريد وظيفة أتعلم فيها كيف تقرر الشركات العميلة ماذا تشتري، وأتطور إلى نجاح العملاء أو المبيعات."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "A previous hire was friendly on the phone but left cases open for days because they did not ask the right follow-up questions.",
+    "They wrote their own answers instead of using and updating the knowledge base, so customers received conflicting information.",
+    "It got better when the team lead reviewed their open cases with them every morning for 2 weeks."
+  ]
+}

@@ -1,0 +1,2206 @@
+[
+ {
+  "company_id": "C-001",
+  "company_reality_notes": [
+   "A previous hire was friendly on the phone but left cases open for days because they did not ask the right follow-up questions."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "none",
+   "start": "2027-04"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": true
+   }
+  ],
+  "need_id": "N-001",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+     "http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b"
+    ],
+    "text": "Kasvattaa nykyisten yritysasiakkaiden myyntiä 15 % tänä vuonna"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Vähentää toistuvia tukipyyntöjä 20 % paremmalla tietopankilla 6 kuukaudessa"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Ratkaista asiakastukitapaukset yhden työpäivän kuluessa"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+    "label": "maintain relationship with customers",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b",
+    "label": "carry out sales analysis",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f",
+    "label": "investigate customer complaints",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-002",
+  "company_reality_notes": [
+   "Things only improved once they started short weekly check-ins with the business users and shared unfinished versions early."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "remote",
+   "relocation_support": "partial",
+   "start": "2027-02"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-002",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f"
+    ],
+    "text": "Puhdistaa ja yhdistää asiakasdata kolmesta järjestelmästä 90 päivässä"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
+     "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+    ],
+    "text": "Korvata manuaaliset kuukausiraportit itsepalvelukojelaudalla 3 kuukaudessa"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+     "http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779",
+     "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+    ],
+    "text": "Rakentaa kysyntäennuste, joka on nykyistä arviota tarkempi vuosineljänneksessä"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+    "label": "perform data cleansing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
+    "label": "business intelligence",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "label": "deliver visual presentation of data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+    "label": "apply statistical analysis techniques",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779",
+    "label": "create data models",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+    "label": "statistics",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-003",
+  "company_reality_notes": [
+   "Our previous hire knew sensor data well but struggled when field devices behaved differently from the lab setup.",
+   "They spent weeks tuning alert thresholds without talking to the operators who actually received the alarms."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "onsite",
+   "relocation_support": "partial",
+   "start": "2027-01"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": false
+   },
+   {
+    "lang": "fi",
+    "required": true
+   }
+  ],
+  "need_id": "N-003",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+     "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd"
+    ],
+    "text": "Puolittaa väärät anturivikahälytykset 90 päivässä"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d",
+     "http://data.europa.eu/esco/skill/162c7407-14ec-43ef-a4c2-31ccd1267850",
+     "http://data.europa.eu/esco/skill/4f5ccaad-0e4f-4e9f-8246-47765564387d"
+    ],
+    "text": "Toimittaa kenttäantureille etäpäivitettävä laiteohjelmisto 6 kuukaudessa"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Ratkaista asiakastukitapaukset yhden työpäivän kuluessa"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "label": "perform data analysis",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+    "label": "Internet of Things",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd",
+    "label": "monitor system performance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d",
+    "label": "embedded systems",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/162c7407-14ec-43ef-a4c2-31ccd1267850",
+    "label": "design firmware",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/4f5ccaad-0e4f-4e9f-8246-47765564387d",
+    "label": "upgrade firmware",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-004",
+  "company_reality_notes": [
+   "Our last accounting hire knew the theory well but struggled with how many manual steps our month-end close still had, and it took months before the close felt under control.",
+   "A former controller found it hard to push department managers for budget input, and the yearly budget slipped by several weeks."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "partial",
+   "start": "2026-12"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-004",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/909c2e48-262e-4ebe-be05-5324ab086c1d",
+     "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6"
+    ],
+    "text": "Automate bank and ledger reconciliation reports within 3 months"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea"
+    ],
+    "text": "Run the yearly budget process for five departments on schedule"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
+     "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+    ],
+    "text": "Replace manual monthly reports with a self-service dashboard within 3 months"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/909c2e48-262e-4ebe-be05-5324ab086c1d",
+    "label": "generate reconciliation reports",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6",
+    "label": "accounting techniques",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea",
+    "label": "manage budgets",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
+    "label": "business intelligence",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "label": "deliver visual presentation of data",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-005",
+  "company_reality_notes": [
+   "A previous hire was friendly on the phone but left cases open for days because they did not ask the right follow-up questions.",
+   "It got better when the team lead reviewed their open cases with them every morning for 2 weeks."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "onsite",
+   "relocation_support": "full",
+   "start": "2027-01"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-005",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+     "http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b"
+    ],
+    "text": "Grow revenue from existing B2B accounts by 15% this year"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Resolve customer support cases within one working day"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Cut repeat support tickets by 20% with a better knowledge base within 6 months"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+    "label": "maintain relationship with customers",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b",
+    "label": "carry out sales analysis",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f",
+    "label": "investigate customer complaints",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-006",
+  "company_reality_notes": [
+   "We now pair new people with a field technician during their first month on the job.",
+   "Our previous hire knew sensor data well but struggled when field devices behaved differently from the lab setup."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "remote",
+   "relocation_support": "none",
+   "start": "2026-12"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-006",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d",
+     "http://data.europa.eu/esco/skill/162c7407-14ec-43ef-a4c2-31ccd1267850",
+     "http://data.europa.eu/esco/skill/4f5ccaad-0e4f-4e9f-8246-47765564387d"
+    ],
+    "text": "Ship a remote firmware update for field sensors within 6 months"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"
+    ],
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6468e5fb-f3be-4025-87be-4b6556755c61",
+     "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694"
+    ],
+    "text": "Automate a manual packing step with PLC control by year end"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d",
+    "label": "embedded systems",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/162c7407-14ec-43ef-a4c2-31ccd1267850",
+    "label": "design firmware",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/4f5ccaad-0e4f-4e9f-8246-47765564387d",
+    "label": "upgrade firmware",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+    "label": "Internet of Things",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6468e5fb-f3be-4025-87be-4b6556755c61",
+    "label": "programmable logic controller",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694",
+    "label": "automation technology",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-007",
+  "company_reality_notes": [
+   "We now agree on small, clear tasks in the first week and pair new people with a senior developer.",
+   "They often started large changes without checking them with the team first, which led to painful merges."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "full",
+   "start": "2026-12"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-007",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+     "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    ],
+    "text": "Deliver a stable API for partner integrations by the end of Q2"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+     "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+    ],
+    "text": "Automate regression tests so releases ship weekly without rollbacks"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+    "label": "web programming",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+    "label": "Python (computer programming)",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+    "label": "develop automated software tests",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+    "label": "execute software tests",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+    "label": "cloud technologies",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-008",
+  "company_reality_notes": [
+   "An automation technician we hired knew PLC programming well but underestimated how carefully changes must be tested on a running packing line, which caused unplanned stops in the early weeks."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "none",
+   "start": "2027-01"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-008",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6468e5fb-f3be-4025-87be-4b6556755c61",
+     "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694"
+    ],
+    "text": "Automate a manual packing step with PLC control by year end"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/8a4e99e0-f259-4931-888f-604cfdc15b31",
+     "http://data.europa.eu/esco/skill/a7b9039e-0145-4e3e-bbf8-30151d3e6cc0"
+    ],
+    "text": "Reduce unplanned line downtime by 25% within 6 months"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+     "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd"
+    ],
+    "text": "Cut false sensor-fault alerts by half within 90 days"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6468e5fb-f3be-4025-87be-4b6556755c61",
+    "label": "programmable logic controller",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694",
+    "label": "automation technology",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/8a4e99e0-f259-4931-888f-604cfdc15b31",
+    "label": "perform machine maintenance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/a7b9039e-0145-4e3e-bbf8-30151d3e6cc0",
+    "label": "schedule regular machine maintenance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "label": "perform data analysis",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+    "label": "Internet of Things",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd",
+    "label": "monitor system performance",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-009",
+  "company_reality_notes": [
+   "We now agree on small, clear tasks in the first week and pair new people with a senior developer."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "full",
+   "start": "2027-05"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-009",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+     "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    ],
+    "text": "Deliver a stable API for partner integrations by the end of Q2"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Resolve customer support cases within one working day"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+    "label": "web programming",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+    "label": "Python (computer programming)",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+    "label": "cloud technologies",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-010",
+  "company_reality_notes": [
+   "A previous hire was skilled in hands-on care but struggled with the pace of back-to-back home visits and often ran late."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "none",
+   "start": "2026-12"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": true
+   }
+  ],
+  "need_id": "N-010",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/a46743b7-ff8c-49b6-99f7-7fa5bc241771",
+     "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926"
+    ],
+    "text": "Move care documentation to the electronic record system within 3 months"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/f98e06f5-a09a-4356-b6a8-d55a7d3c5356",
+     "http://data.europa.eu/esco/skill/516e324b-03fc-4d3b-9986-e46e9834cd43"
+    ],
+    "text": "Deliver safe daily home care for 12 clients with zero missed visits"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Resolve customer support cases within one working day"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/a46743b7-ff8c-49b6-99f7-7fa5bc241771",
+    "label": "use electronic health records in nursing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926",
+    "label": "use e-health and mobile health technologies",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f98e06f5-a09a-4356-b6a8-d55a7d3c5356",
+    "label": "implement nursing care",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/516e324b-03fc-4d3b-9986-e46e9834cd43",
+    "label": "implement fundamentals of nursing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-011",
+  "company_reality_notes": [
+   "A previous analyst built a clever reconciliation spreadsheet that nobody else understood, so it broke down as soon as they went on holiday.",
+   "Our last accounting hire knew the theory well but struggled with how many manual steps our month-end close still had, and it took months before the close felt under control."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "onsite",
+   "relocation_support": "none",
+   "start": "2027-03"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-011",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/60f51172-37c0-4933-a27a-cbf55dcd7580",
+     "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6"
+    ],
+    "text": "Lyhentää kuukauden tilinpäätös 10 työpäivästä 5 työpäivään"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea"
+    ],
+    "text": "Viedä viiden osaston vuosibudjetointi läpi aikataulussa"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/909c2e48-262e-4ebe-be05-5324ab086c1d",
+     "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6"
+    ],
+    "text": "Automatisoida pankki- ja kirjanpitotäsmäytysraportit 3 kuukaudessa"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/60f51172-37c0-4933-a27a-cbf55dcd7580",
+    "label": "prepare financial statements",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6",
+    "label": "accounting techniques",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea",
+    "label": "manage budgets",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/909c2e48-262e-4ebe-be05-5324ab086c1d",
+    "label": "generate reconciliation reports",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-012",
+  "company_reality_notes": [
+   "A previous planner rolled out a new route plan over a single weekend, and drivers ignored it because nobody had asked them about loading times and customer habits."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": false,
+   "onsite": "hybrid",
+   "relocation_support": "none",
+   "start": "2027-05"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-012",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8",
+     "http://data.europa.eu/esco/skill/8ee39fb7-8b46-490e-ae21-6e8b32854dd6"
+    ],
+    "text": "Re-plan delivery routes to cut driven kilometres by 10% this year"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b",
+     "http://data.europa.eu/esco/skill/f929c89e-c363-4132-a918-e021d57b307c"
+    ],
+    "text": "Reduce stock-outs in the central warehouse by a third within 6 months"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+    "label": "manage standard enterprise resource planning system",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8",
+    "label": "plan transport operations",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/8ee39fb7-8b46-490e-ae21-6e8b32854dd6",
+    "label": "manage dispatch software systems",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b",
+    "label": "manage inventory",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f929c89e-c363-4132-a918-e021d57b307c",
+    "label": "supply chain management",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-013",
+  "company_reality_notes": [
+   "They often started large changes without checking them with the team first, which led to painful merges."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "partial",
+   "start": "2027-04"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-013",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+     "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    ],
+    "text": "Deliver a stable API for partner integrations by the end of Q2"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+    "label": "web programming",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+    "label": "Python (computer programming)",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+    "label": "cloud technologies",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+    "label": "manage standard enterprise resource planning system",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-014",
+  "company_reality_notes": [
+   "The last hire struggled with noisy field data and unclear ownership of the data pipeline.",
+   "Support tickets from Finnish-speaking customers piled up when our only Finnish speaker was on holiday."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "partial",
+   "start": "2027-02"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-014",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+     "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd"
+    ],
+    "text": "Cut false sensor-fault alerts by half within 90 days"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"
+    ],
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/0e3493f4-0cad-4fbc-8e02-025f169b8114",
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587"
+    ],
+    "text": "Support Finnish-speaking customers in technical support cases"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "label": "perform data analysis",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+    "label": "Internet of Things",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd",
+    "label": "monitor system performance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/0e3493f4-0cad-4fbc-8e02-025f169b8114",
+    "label": "Finnish",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-015",
+  "company_reality_notes": [
+   "A quality engineer we hired tightened the inspection criteria without involving production, and the line pushed back until the changes were quietly dropped.",
+   "An automation technician we hired knew PLC programming well but underestimated how carefully changes must be tested on a running packing line, which caused unplanned stops in the early weeks."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "remote",
+   "relocation_support": "full",
+   "start": "2027-02"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-015",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/8a4e99e0-f259-4931-888f-604cfdc15b31",
+     "http://data.europa.eu/esco/skill/a7b9039e-0145-4e3e-bbf8-30151d3e6cc0"
+    ],
+    "text": "Reduce unplanned line downtime by 25% within 6 months"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6468e5fb-f3be-4025-87be-4b6556755c61",
+     "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694"
+    ],
+    "text": "Automate a manual packing step with PLC control by year end"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Resolve customer support cases within one working day"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/8a4e99e0-f259-4931-888f-604cfdc15b31",
+    "label": "perform machine maintenance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/a7b9039e-0145-4e3e-bbf8-30151d3e6cc0",
+    "label": "schedule regular machine maintenance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6468e5fb-f3be-4025-87be-4b6556755c61",
+    "label": "programmable logic controller",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694",
+    "label": "automation technology",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-016",
+  "company_reality_notes": [
+   "We now agree on small, clear tasks in the first week and pair new people with a senior developer."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "partial",
+   "start": "2027-02"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-016",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+     "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+    ],
+    "text": "Automate regression tests so releases ship weekly without rollbacks"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+     "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+    ],
+    "text": "Deliver a stable API for partner integrations by the end of Q2"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Move on-premise services to the cloud within 6 months with no customer downtime"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+    "label": "develop automated software tests",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+    "label": "execute software tests",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+    "label": "web programming",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+    "label": "Python (computer programming)",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+    "label": "cloud technologies",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-017",
+  "company_reality_notes": [
+   "Things only improved once they started short weekly check-ins with the business users and shared unfinished versions early.",
+   "They also underestimated how messy the source data was and spent weeks fixing duplicates without telling anyone that the schedule was slipping."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "full",
+   "start": "2026-12"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-017",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
+     "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+    ],
+    "text": "Replace manual monthly reports with a self-service dashboard within 3 months"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f"
+    ],
+    "text": "Clean and merge customer data from three systems within 90 days"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/909c2e48-262e-4ebe-be05-5324ab086c1d",
+     "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6"
+    ],
+    "text": "Automate bank and ledger reconciliation reports within 3 months"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
+    "label": "business intelligence",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "label": "deliver visual presentation of data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+    "label": "perform data cleansing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/909c2e48-262e-4ebe-be05-5324ab086c1d",
+    "label": "generate reconciliation reports",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6",
+    "label": "accounting techniques",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-018",
+  "company_reality_notes": [
+   "They spent weeks tuning alert thresholds without talking to the operators who actually received the alarms."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "none",
+   "start": "2026-12"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": false
+   },
+   {
+    "lang": "fi",
+    "required": true
+   }
+  ],
+  "need_id": "N-018",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"
+    ],
+    "text": "Ylläpitää reunalaitteiden datavirtoja niin, että alle 1 % mittauksista katoaa"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+     "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd"
+    ],
+    "text": "Puolittaa väärät anturivikahälytykset 90 päivässä"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f"
+    ],
+    "text": "Puhdistaa ja yhdistää asiakasdata kolmesta järjestelmästä 90 päivässä"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+    "label": "Internet of Things",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "label": "perform data analysis",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd",
+    "label": "monitor system performance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+    "label": "perform data cleansing",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-019",
+  "company_reality_notes": [
+   "It improved once a senior nurse shadowed them for 2 weeks and we agreed on a simple visit routine.",
+   "They wrote their notes at the end of the shift instead of during the visit, so colleagues on the next shift lacked current information."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "partial",
+   "start": "2027-04"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": true
+   }
+  ],
+  "need_id": "N-019",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/a46743b7-ff8c-49b6-99f7-7fa5bc241771",
+     "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926"
+    ],
+    "text": "Siirtää hoitokirjaukset sähköiseen potilastietojärjestelmään 3 kuukaudessa"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/71480db1-a706-47f9-952f-bdc5036e3df3",
+     "http://data.europa.eu/esco/skill/6acf652c-33b2-4e28-8f79-1e553f255229"
+    ],
+    "text": "Koordinoida vuorot ja hoitosuunnitelmat kahden yksikön välillä ilman ylityöpiikkejä"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/f98e06f5-a09a-4356-b6a8-d55a7d3c5356",
+     "http://data.europa.eu/esco/skill/516e324b-03fc-4d3b-9986-e46e9834cd43"
+    ],
+    "text": "Antaa turvallista päivittäistä kotihoitoa 12 asiakkaalle ilman väliin jääneitä käyntejä"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/a46743b7-ff8c-49b6-99f7-7fa5bc241771",
+    "label": "use electronic health records in nursing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926",
+    "label": "use e-health and mobile health technologies",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/71480db1-a706-47f9-952f-bdc5036e3df3",
+    "label": "coordinate care",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6acf652c-33b2-4e28-8f79-1e553f255229",
+    "label": "plan nursing care",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f98e06f5-a09a-4356-b6a8-d55a7d3c5356",
+    "label": "implement nursing care",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/516e324b-03fc-4d3b-9986-e46e9834cd43",
+    "label": "implement fundamentals of nursing",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-020",
+  "company_reality_notes": [
+   "A previous hire was friendly on the phone but left cases open for days because they did not ask the right follow-up questions.",
+   "They wrote their own answers instead of using and updating the knowledge base, so customers received conflicting information."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "partial",
+   "start": "2027-03"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": false
+   },
+   {
+    "lang": "fi",
+    "required": true
+   }
+  ],
+  "need_id": "N-020",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+     "http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b"
+    ],
+    "text": "Kasvattaa nykyisten yritysasiakkaiden myyntiä 15 % tänä vuonna"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Vähentää toistuvia tukipyyntöjä 20 % paremmalla tietopankilla 6 kuukaudessa"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Ratkaista asiakastukitapaukset yhden työpäivän kuluessa"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+    "label": "maintain relationship with customers",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b",
+    "label": "carry out sales analysis",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f",
+    "label": "investigate customer complaints",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-021",
+  "company_reality_notes": [
+   "A previous planner rolled out a new route plan over a single weekend, and drivers ignored it because nobody had asked them about loading times and customer habits."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "onsite",
+   "relocation_support": "partial",
+   "start": "2027-03"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-021",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8",
+     "http://data.europa.eu/esco/skill/8ee39fb7-8b46-490e-ae21-6e8b32854dd6"
+    ],
+    "text": "Re-plan delivery routes to cut driven kilometres by 10% this year"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b",
+     "http://data.europa.eu/esco/skill/f929c89e-c363-4132-a918-e021d57b307c"
+    ],
+    "text": "Reduce stock-outs in the central warehouse by a third within 6 months"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8",
+    "label": "plan transport operations",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/8ee39fb7-8b46-490e-ae21-6e8b32854dd6",
+    "label": "manage dispatch software systems",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+    "label": "manage standard enterprise resource planning system",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b",
+    "label": "manage inventory",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f929c89e-c363-4132-a918-e021d57b307c",
+    "label": "supply chain management",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-022",
+  "company_reality_notes": [
+   "They spent weeks tuning alert thresholds without talking to the operators who actually received the alarms."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "onsite",
+   "relocation_support": "none",
+   "start": "2027-01"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-022",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+     "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd"
+    ],
+    "text": "Cut false sensor-fault alerts by half within 90 days"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"
+    ],
+    "text": "Maintain data pipelines from edge devices with under 1% lost readings"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Connect warehouse data to the ERP so orders update in real time by year end"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "label": "perform data analysis",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+    "label": "Internet of Things",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd",
+    "label": "monitor system performance",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+    "label": "manage standard enterprise resource planning system",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-023",
+  "company_reality_notes": [
+   "It improved once a senior nurse shadowed them for 2 weeks and we agreed on a simple visit routine."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "full",
+   "start": "2027-03"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": false
+   },
+   {
+    "lang": "fi",
+    "required": true
+   }
+  ],
+  "need_id": "N-023",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/a46743b7-ff8c-49b6-99f7-7fa5bc241771",
+     "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926"
+    ],
+    "text": "Move care documentation to the electronic record system within 3 months"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/f98e06f5-a09a-4356-b6a8-d55a7d3c5356",
+     "http://data.europa.eu/esco/skill/516e324b-03fc-4d3b-9986-e46e9834cd43"
+    ],
+    "text": "Deliver safe daily home care for 12 clients with zero missed visits"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/71480db1-a706-47f9-952f-bdc5036e3df3",
+     "http://data.europa.eu/esco/skill/6acf652c-33b2-4e28-8f79-1e553f255229"
+    ],
+    "text": "Coordinate shifts and care plans across two units without overtime peaks"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/a46743b7-ff8c-49b6-99f7-7fa5bc241771",
+    "label": "use electronic health records in nursing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926",
+    "label": "use e-health and mobile health technologies",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f98e06f5-a09a-4356-b6a8-d55a7d3c5356",
+    "label": "implement nursing care",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/516e324b-03fc-4d3b-9986-e46e9834cd43",
+    "label": "implement fundamentals of nursing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/71480db1-a706-47f9-952f-bdc5036e3df3",
+    "label": "coordinate care",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6acf652c-33b2-4e28-8f79-1e553f255229",
+    "label": "plan nursing care",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-024",
+  "company_reality_notes": [
+   "Things only improved once they started short weekly check-ins with the business users and shared unfinished versions early."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": false,
+   "onsite": "onsite",
+   "relocation_support": "partial",
+   "start": "2027-02"
+  },
+  "lang": "en",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-024",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f"
+    ],
+    "text": "Clean and merge customer data from three systems within 90 days"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+     "http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779",
+     "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+    ],
+    "text": "Build a demand forecast that beats the current estimate within one quarter"
+   },
+   {
+    "id": "o3",
+    "priority": "learnable",
+    "skills": [
+     "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+     "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf"
+    ],
+    "text": "Resolve customer support cases within one working day"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
+    "label": "perform data cleansing",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+    "label": "apply statistical analysis techniques",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779",
+    "label": "create data models",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+    "label": "statistics",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587",
+    "label": "handle customer complaints",
+    "level": "learnable"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+    "label": "provide customer follow-up services",
+    "level": "learnable"
+   }
+  ],
+  "version": 1
+ },
+ {
+  "company_id": "C-025",
+  "company_reality_notes": [
+   "We now agree on small, clear tasks in the first week and pair new people with a senior developer.",
+   "A previous developer was strong at coding but struggled with our slow review process and unclear priorities."
+  ],
+  "confirmed": true,
+  "constraints": {
+   "intl_ok": true,
+   "onsite": "hybrid",
+   "relocation_support": "none",
+   "start": "2027-02"
+  },
+  "lang": "fi",
+  "languages": [
+   {
+    "lang": "en",
+    "required": true
+   },
+   {
+    "lang": "fi",
+    "required": false
+   }
+  ],
+  "need_id": "N-025",
+  "outcomes": [
+   {
+    "id": "o1",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+     "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+    ],
+    "text": "Automatisoida regressiotestit niin, että julkaisut menevät viikoittain ilman peruutuksia"
+   },
+   {
+    "id": "o2",
+    "priority": "must",
+    "skills": [
+     "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"
+    ],
+    "text": "Siirtää paikalliset palvelut pilveen 6 kuukaudessa ilman asiakaskatkoja"
+   },
+   {
+    "id": "o3",
+    "priority": "nice",
+    "skills": [
+     "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+     "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+     "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"
+    ],
+    "text": "Ylläpitää reunalaitteiden datavirtoja niin, että alle 1 % mittauksista katoaa"
+   }
+  ],
+  "skills": [
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+    "label": "develop automated software tests",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+    "label": "execute software tests",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+    "label": "cloud technologies",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+    "label": "ICT system integration",
+    "level": "must"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "label": "manage data",
+    "level": "nice"
+   },
+   {
+    "esco_uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+    "label": "Internet of Things",
+    "level": "nice"
+   }
+  ],
+  "version": 1
+ }
+]

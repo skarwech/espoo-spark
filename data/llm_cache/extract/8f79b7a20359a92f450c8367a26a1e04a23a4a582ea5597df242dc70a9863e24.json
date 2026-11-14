@@ -1,0 +1,36 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I containerised 3 legacy services with Docker and moved them to Kubernetes on AWS, replicating the database in advance. The final cut-over took 20 minutes with no customer-facing errors.",
+    "skills": [
+     "S06",
+     "S18"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I wrote about 200 automated regression tests with pytest and ran them in GitLab CI on every merge request. Releases moved from monthly to weekly, with no rollbacks in 4 months.",
+    "skills": [
+     "S12",
+     "S14",
+     "S39"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I designed and built a REST API in Python with FastAPI for partner integrations, with versioned endpoints and an OpenAPI specification. Within 3 months, 4 partners had connected with no breaking changes.",
+    "skills": [
+     "S39",
+     "S46",
+     "S18"
+    ]
+   }
+  ]
+ }
+}

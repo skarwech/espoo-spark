@@ -1,0 +1,24 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Tuin kumppanirajapintaan liittyvää työtä jonkin aikaa ja osallistuin osaan integraatiopalavereista.",
+    "skills": [
+     "S18"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Osallistuin julkaisuja edeltävään testaukseen ja tuin tiimiä aina, kun testeissä ilmeni ongelmia.",
+    "skills": [
+     "S14"
+    ]
+   }
+  ]
+ }
+}

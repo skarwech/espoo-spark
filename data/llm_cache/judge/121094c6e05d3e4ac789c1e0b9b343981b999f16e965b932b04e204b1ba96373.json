@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-004/o1",
+    "label": "partial",
+    "unit_id": "J-004~sv.u1",
+    "quote": "letade efter sätt att göra dem snabbare",
+    "reason": "Handled bank reconciliations, sought speedups; no method or result stated."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "partial",
+    "unit_id": "J-004~sv.u3",
+    "quote": "Jag stöttade avdelningscheferna med deras budgetsiffror",
+    "reason": "Supported budget figures, but no method, result, or running the process."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "partial",
+    "unit_id": "J-004~sv.u2",
+    "quote": "tog fram flera av bokslutsrapporterna",
+    "reason": "Produced closing reports; no dashboard or self-service work mentioned."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "partial",
+    "unit_id": "J-004~sv.u2",
+    "quote": "Jag deltog i månadsbokslutet",
+    "reason": "Participated in month-end close; no shortening method or result."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "partial",
+    "unit_id": "J-004~sv.u3",
+    "quote": "Jag stöttade avdelningscheferna med deras budgetsiffror",
+    "reason": "Supported budget figures, but no method, result, or running the process."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "partial",
+    "unit_id": "J-004~sv.u1",
+    "quote": "letade efter sätt att göra dem snabbare",
+    "reason": "Handled bank reconciliations, sought speedups; no automation method or result."
+   }
+  ]
+ }
+}

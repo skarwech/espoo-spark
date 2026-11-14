@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "supported",
+    "unit_id": "J-123.u1",
+    "quote": "I trained 14 colleagues to write visit notes in mobile tablet app",
+    "reason": "Personally trained staff on digital notes; late entries fell from 40% to 10%."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Documentation work, not delivering care or preventing missed visits."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "supported",
+    "unit_id": "J-123.u1",
+    "quote": "I trained 14 colleagues to write visit notes in mobile tablet app",
+    "reason": "Personally trained staff on digital notes; late entries fell from 40% to 10%."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No shift or care plan coordination across units described."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Documentation work, not delivering care or preventing missed visits."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "supported",
+    "unit_id": "J-123.u1",
+    "quote": "I trained 14 colleagues to write visit notes in mobile tablet app",
+    "reason": "Personally trained staff on digital notes; late entries fell from 40% to 10%."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Documentation work, not delivering care or preventing missed visits."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Party organising is unrelated to shift and care plan coordination."
+   }
+  ]
+ }
+}

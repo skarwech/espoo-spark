@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "The controlling team made a shared budget calendar with fixed review dates for all 5 departments. The yearly budget was ready on time.",
+    "skills": [
+     "S24"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I wrote a Python script, it compares the bank transaction file with ledger postings every night and lists the differences. It replaced the manual bank reconciliation which took 6 hours every week.",
+    "skills": [
+     "S39",
+     "S16",
+     "S03",
+     "S01"
+    ]
+   },
+   {
+    "box": "differently",
+    "text": "I explained too much just face to face.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag lade till helgdags- och vädervariabler i en säsongsbaserad ARIMA-modell i R, och under 12 veckors backtestning slog den säljteamets uppskattning 10 av veckorna.",
+    "skills": [
+     "S02",
+     "S41"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag byggde en självbetjäningsdashboard för försäljningen på SQL-vyer och Tableau på 10 veckor, så att teamledarna slutade beställa det månatliga Excel-paketet och nu hämtar sina siffror själva.",
+    "skills": [
+     "S04",
+     "S10",
+     "S05"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag matchade kundposter från CRM-systemet, webbutiken och faktureringssystemet med fuzzy matching i Python, tog bort 870 dubbletter och levererade ett enhetligt kundregister inom 10 veckor.",
+    "skills": [
+     "S32",
+     "S39",
+     "S25"
+    ]
+   }
+  ]
+ }
+}

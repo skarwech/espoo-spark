@@ -1,0 +1,556 @@
+{
+  "domain": "data",
+  "contexts": [
+    {
+      "id": "data.ctx.1",
+      "text": {
+        "en": {
+          "polished": "At a mid-size wholesale company, every department kept its own spreadsheets, and month-end figures from sales, finance and customer service rarely matched, so meetings turned into arguments about whose numbers were right and nobody trusted the plans.",
+          "rough": "In a mid-size wholesale company every department had their own spreadsheets. Month-end numbers from sales, finance and customer service almost never matched, so meetings was arguing whose numbers are right and nobody trusted the plans."
+        },
+        "fi": {
+          "polished": "Keskikokoisessa tukkukaupassa jokaisella osastolla oli omat taulukkonsa, eivätkä myynnin, talouden ja asiakaspalvelun kuukauden lopun luvut juuri koskaan täsmänneet, joten palaverit kuluivat kiistelyyn siitä, kenen luvut olivat oikein, eikä kukaan luottanut suunnitelmiin.",
+          "rough": "Keskikokoisessa tukkukaupassa joka osastolla oli omat taulukot. Myynnin, talouden ja asiakaspalvelun kuun lopun luvut ei melkein ikinä täsmänneet, joten palavereissa riideltiin kenen luvut on oikein, eikä kukaan luottanut suunnitelmiin."
+        },
+        "sv": {
+          "polished": "På ett medelstort grossistföretag hade varje avdelning sina egna kalkylblad, och siffrorna vid månadsskiftet från försäljning, ekonomi och kundtjänst stämde sällan överens, så mötena blev diskussioner om vems siffror som var rätt och ingen litade på planerna.",
+          "rough": "I ett medelstort grossistföretag hade varje avdelning egna kalkylblad. Siffrorna i slutet av månaden från försäljning, ekonomi och kundtjänst stämde nästan aldrig, så på mötena man bråkade om vems siffror är rätt och ingen litade på planerna."
+        },
+        "ar": {
+          "polished": "في شركة بيع بالجملة متوسطة الحجم، كان لكل قسم جداول بياناته الخاصة، ونادرًا ما تطابقت أرقام نهاية الشهر بين المبيعات والمالية وخدمة العملاء، فتحولت الاجتماعات إلى جدال حول أرقام مَن هي الصحيحة، ولم يثق أحد بالخطط.",
+          "rough": "في شركة جملة متوسطة الحجم، كل قسم عنده جداوله الخاصة. أرقام نهاية الشهر من المبيعات والمالية وخدمة العملاء نادرًا ما كانت متطابقة، فكانت الاجتماعات جدالًا حول أرقام مَن الصحيحة، ولا أحد وثق بالخطط."
+        }
+      }
+    },
+    {
+      "id": "data.ctx.2",
+      "text": {
+        "en": {
+          "polished": "At a building-materials supplier, customer and sales data were scattered across an old CRM, the invoicing system and personal Excel files, so preparing any overview or estimate took days of manual copying.",
+          "rough": "At a building materials supplier the customer and sales data was in an old CRM, the invoicing system and people's own Excel files. Making any overview or estimate took days of copying by hand."
+        },
+        "fi": {
+          "polished": "Rakennustarvikkeiden toimittajalla asiakas- ja myyntitiedot olivat hajallaan vanhassa CRM-järjestelmässä, laskutusjärjestelmässä ja henkilökohtaisissa Excel-tiedostoissa, joten minkä tahansa yhteenvedon tai arvion laatiminen vaati päiväkausia käsin kopiointia.",
+          "rough": "Rakennustarviketoimittajalla asiakas- ja myyntidata oli vanhassa CRM:ssä, laskutusjärjestelmässä ja ihmisten omissa Excel-tiedostoissa. Yhteenvedon tai arvion tekeminen vei päiviä käsin kopioimista."
+        },
+        "sv": {
+          "polished": "Hos en leverantör av byggmaterial låg kund- och försäljningsdata utspridda i ett gammalt CRM-system, faktureringssystemet och personliga Excel-filer, så varje översikt eller uppskattning krävde dagar av manuell kopiering.",
+          "rough": "Hos en byggmaterialleverantör fanns kund- och försäljningsdatan i ett gammalt CRM, faktureringssystemet och folks egna Excel-filer. Att göra en översikt eller uppskattning tog dagar av kopiering för hand."
+        },
+        "ar": {
+          "polished": "لدى مورّد لمواد البناء، كانت بيانات العملاء والمبيعات موزعة بين نظام CRM قديم ونظام الفوترة وملفات Excel شخصية، فكان إعداد أي ملخص أو تقدير يستغرق أيامًا من النسخ اليدوي.",
+          "rough": "عند مورّد مواد بناء، بيانات العملاء والمبيعات كانت في نظام CRM قديم ونظام الفواتير وملفات Excel خاصة بالموظفين. عمل أي ملخص أو تقدير كان يأخذ أيامًا من النسخ باليد."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "data_reporting.supported.1",
+      "archetype": "data_reporting",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I consolidated 6 manual Excel reports into a self-service Power BI dashboard that managers filter themselves, reducing monthly reporting work from 4 days to 3 hours.",
+          "rough": "I made 6 manual Excel reports into a Power BI dashboard, managers filter it by themself. The monthly report work went from 4 days to 3 hours."
+        },
+        "fi": {
+          "polished": "Yhdistin 6 manuaalista Excel-raporttia itsepalvelukäyttöiseksi Power BI -kojelaudaksi, jota esihenkilöt suodattavat itse, ja kuukausiraportointiin kuluva työ lyheni 4 päivästä 3 tuntiin.",
+          "rough": "Tein 6 manuaalisesta Excel-raportista Power BI -kojelaudan, esihenkilöt suodattaa sitä itse. Kuukausiraportin tekeminen meni 4 päivästä 3 tuntiin."
+        },
+        "sv": {
+          "polished": "Jag samlade 6 manuella Excel-rapporter i en självbetjäningsdashboard i Power BI som cheferna filtrerar själva, vilket minskade det månatliga rapportarbetet från 4 dagar till 3 timmar.",
+          "rough": "Jag gjorde om 6 manuella Excel-rapporter till en Power BI dashboard, cheferna filtrerar den själv. Arbetet med månadsrapporten gick från 4 dagar till 3 timmar."
+        },
+        "ar": {
+          "polished": "دمجتُ 6 تقارير يدوية في Excel ضمن لوحة معلومات ذاتية الخدمة في Power BI يصفّيها المديرون بأنفسهم، مما خفّض عمل التقارير الشهرية من 4 أيام إلى 3 ساعات.",
+          "rough": "حوّلتُ 6 تقارير Excel يدوية إلى لوحة Power BI، والمديرون يصفّونها بأنفسهم. عمل التقرير الشهري نزل من 4 أيام إلى 3 ساعات."
+        }
+      }
+    },
+    {
+      "id": "data_reporting.supported.2",
+      "archetype": "data_reporting",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I built a self-service sales dashboard on SQL views and Tableau in 10 weeks, so team leads stopped ordering the monthly Excel pack and now pull their own figures.",
+          "rough": "I build a sales dashboard with SQL views and Tableau in 10 weeks. Team leads dont order the monthly Excel pack anymore, they take their numbers themselves."
+        },
+        "fi": {
+          "polished": "Rakensin SQL-näkymien ja Tableaun varaan itsepalvelukäyttöisen myyntikojelaudan 10 viikossa, joten tiiminvetäjät lopettivat kuukausittaisen Excel-paketin tilaamisen ja hakevat nyt lukunsa itse.",
+          "rough": "Rakensin myyntikojelaudan SQL-näkymillä ja Tableaulla 10 viikossa. Tiiminvetäjät ei enää tilaa kuukauden Excel-pakettia, ne hakee luvut itse."
+        },
+        "sv": {
+          "polished": "Jag byggde en självbetjäningsdashboard för försäljningen på SQL-vyer och Tableau på 10 veckor, så att teamledarna slutade beställa det månatliga Excel-paketet och nu hämtar sina siffror själva.",
+          "rough": "Jag bygger en försäljningsdashboard med SQL-vyer och Tableau på 10 veckor. Teamledarna beställer inte månadens Excel-paket mera, de tar sina siffror själv."
+        },
+        "ar": {
+          "polished": "بنيتُ لوحة مبيعات ذاتية الخدمة تعتمد على عروض SQL وبرنامج Tableau خلال 10 أسابيع، فتوقف قادة الفرق عن طلب حزمة Excel الشهرية وأصبحوا يستخرجون أرقامهم بأنفسهم.",
+          "rough": "بنيتُ لوحة مبيعات بعروض SQL و Tableau في 10 أسابيع. قادة الفرق لم يعودوا يطلبون حزمة Excel الشهرية، يأخذون أرقامهم بأنفسهم."
+        }
+      }
+    },
+    {
+      "id": "data_reporting.partial.1",
+      "archetype": "data_reporting",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "Our team replaced the monthly PDF reports with a Power BI dashboard in 8 weeks, and requests for ad hoc figures fell by 40%.",
+          "rough": "Our team changed the monthly PDF reports to a Power BI dashboard in 8 weeks. Requests for extra numbers went down 40%."
+        },
+        "fi": {
+          "polished": "Tiimimme korvasi kuukausittaiset PDF-raportit Power BI -kojelaudalla 8 viikossa, ja erillisten lukupyyntöjen määrä laski 40 %.",
+          "rough": "Meidän tiimi vaihtoi kuukauden PDF-raportit Power BI -kojelautaan 8 viikossa. Ylimääräisiä lukupyyntöjä tuli 40 % vähemmän."
+        },
+        "sv": {
+          "polished": "Vårt team ersatte de månatliga PDF-rapporterna med en Power BI-dashboard på 8 veckor, och ad hoc-förfrågningarna om siffror minskade med 40 %.",
+          "rough": "Vårt team bytte månadens PDF-rapporter till en Power BI dashboard på 8 veckor. Frågor om extra siffror gick ner 40 %."
+        },
+        "ar": {
+          "polished": "استبدل فريقنا تقارير PDF الشهرية بلوحة معلومات في Power BI خلال 8 أسابيع، وانخفضت طلبات الأرقام المخصصة بنسبة 40%.",
+          "rough": "فريقنا غيّر تقارير PDF الشهرية إلى لوحة Power BI في 8 أسابيع. طلبات الأرقام الإضافية نزلت 40%."
+        }
+      }
+    },
+    {
+      "id": "data_reporting.partial.2",
+      "archetype": "data_reporting",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I helped with the new reporting dashboard for a while and took part in several meetings about it.",
+          "rough": "I was helping with the new report dashboard some time, and I was in several meetings about it."
+        },
+        "fi": {
+          "polished": "Autoin jonkin aikaa uuden raportointikojelaudan kanssa ja osallistuin useisiin sitä koskeviin palavereihin.",
+          "rough": "Autoin vähän aikaa uuden raporttikojelaudan kanssa ja olin monessa palaverissa siitä."
+        },
+        "sv": {
+          "polished": "Jag hjälpte till med den nya rapportdashboarden en tid och deltog i flera möten om den.",
+          "rough": "Jag hjälpte med nya rapportdashboarden en tid, och jag var med på flera möten om den."
+        },
+        "ar": {
+          "polished": "ساعدتُ لفترة في لوحة التقارير الجديدة، وشاركتُ في عدة اجتماعات بشأنها.",
+          "rough": "كنتُ أساعد في لوحة التقارير الجديدة بعض الوقت، وحضرتُ عدة اجتماعات عنها."
+        }
+      }
+    },
+    {
+      "id": "data_reporting.none.1",
+      "archetype": "data_reporting",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a data-driven professional who believes great dashboards empower every stakeholder to unlock actionable insights.",
+          "rough": "I am data driven person. I believe good dashboards help every stakeholder to get insights they can act on."
+        },
+        "fi": {
+          "polished": "Olen datalähtöinen ammattilainen, joka uskoo, että erinomaiset kojelaudat antavat jokaiselle sidosryhmälle mahdollisuuden löytää toimintaan johtavia oivalluksia.",
+          "rough": "Olen datalähtöinen ihminen. Uskon että hyvät kojelaudat auttaa jokaista sidosryhmää saamaan oivalluksia, joiden mukaan voi toimia."
+        },
+        "sv": {
+          "polished": "Jag är en datadriven yrkesperson som tror att riktigt bra dashboards ger varje intressent möjlighet att hitta handlingsbara insikter.",
+          "rough": "Jag är datadriven person. Jag tror bra dashboards hjälper varje intressent att få insikter som man kan agera på."
+        },
+        "ar": {
+          "polished": "أنا أعمل بعقلية مهنية قائمة على البيانات، وأؤمن بأن لوحات المعلومات المتميزة تمكّن كل أصحاب المصلحة من استخلاص رؤى قابلة للتنفيذ.",
+          "rough": "عقليتي تعتمد على البيانات. أؤمن أن لوحات المعلومات الجيدة تساعد كل أصحاب المصلحة على الحصول على رؤى يمكنهم العمل بها."
+        }
+      }
+    },
+    {
+      "id": "data_reporting.none.2",
+      "archetype": "data_reporting",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the annual recreation day for 40 employees, including the programme, catering and venue booking.",
+          "rough": "I organized the yearly recreation day for 40 workers. I did the program, the food and booked the place."
+        },
+        "fi": {
+          "polished": "Järjestin 40 työntekijän vuotuisen virkistyspäivän ohjelmineen, tarjoiluineen ja tilavarauksineen.",
+          "rough": "Järjestin vuosittaisen tyhy-päivän 40 työntekijälle. Tein ohjelman, ruoat ja varasin paikan."
+        },
+        "sv": {
+          "polished": "Jag organiserade den årliga rekreationsdagen för 40 anställda, inklusive program, servering och lokalbokning.",
+          "rough": "Jag ordnade den årliga rekreationsdagen för 40 arbetare. Jag gjorde programmet, maten och bokade stället."
+        },
+        "ar": {
+          "polished": "نظّمتُ اليوم الترفيهي السنوي لـ 40 موظفًا، بما في ذلك البرنامج والضيافة وحجز المكان.",
+          "rough": "نظّمتُ يوم الترفيه السنوي لـ 40 موظفًا. جهّزتُ البرنامج والأكل وحجزتُ المكان."
+        }
+      }
+    },
+    {
+      "id": "data_modelling.supported.1",
+      "archetype": "data_modelling",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I built a weekly demand forecast in Python with gradient boosting on 3 years of sales history; its error was 14%, against 22% for the old spreadsheet estimate.",
+          "rough": "I made weekly demand forecast in Python with gradient boosting and 3 years of sales history. Its error was 14%, the old spreadsheet estimate had 22%."
+        },
+        "fi": {
+          "polished": "Rakensin Pythonilla viikkotason kysyntäennusteen gradient boosting -menetelmällä 3 vuoden myyntihistoriasta; sen virhe oli 14 %, kun vanhan taulukkoarvion virhe oli 22 %.",
+          "rough": "Tein viikkotason kysyntäennusteen Pythonilla, gradient boosting ja 3 vuoden myyntihistoria. Virhe oli 14 %, vanhassa taulukkoarviossa 22 %."
+        },
+        "sv": {
+          "polished": "Jag byggde en veckovis efterfrågeprognos i Python med gradient boosting på 3 års försäljningshistorik; prognosfelet var 14 %, jämfört med 22 % för den gamla kalkylbladsuppskattningen.",
+          "rough": "Jag gjorde veckoprognos för efterfrågan i Python med gradient boosting och 3 års försäljningshistorik. Felet var 14 %, gamla kalkylbladsuppskattningen hade 22 %."
+        },
+        "ar": {
+          "polished": "بنيتُ توقعًا أسبوعيًا للطلب في Python باستخدام gradient boosting على بيانات مبيعات 3 سنوات، وبلغ خطؤه 14% مقابل 22% للتقدير القديم في جداول البيانات.",
+          "rough": "عملتُ توقعًا أسبوعيًا للطلب في Python مع gradient boosting و 3 سنوات من تاريخ المبيعات. خطؤه كان 14%، والتقدير القديم في الجداول كان 22%."
+        }
+      }
+    },
+    {
+      "id": "data_modelling.supported.2",
+      "archetype": "data_modelling",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I added holiday and weather variables to a seasonal ARIMA model in R, and in 12 weeks of back-testing it beat the sales team's estimate in 10 of them.",
+          "rough": "I put holiday and weather variables to a seasonal ARIMA model in R. In back-testing of 12 weeks it was better than sales team estimate in 10 of the weeks."
+        },
+        "fi": {
+          "polished": "Lisäsin kausivaihtelun huomioivaan ARIMA-malliin R:llä pyhäpäivä- ja säämuuttujat, ja 12 viikon jälkitestauksessa malli voitti myyntitiimin arvion 10 viikkona.",
+          "rough": "Laitoin pyhäpäivä- ja säämuuttujat kausittaiseen ARIMA-malliin R:llä. 12 viikon jälkitestissä se oli parempi kuin myyntitiimin arvio 10 viikkona."
+        },
+        "sv": {
+          "polished": "Jag lade till helgdags- och vädervariabler i en säsongsbaserad ARIMA-modell i R, och under 12 veckors backtestning slog den säljteamets uppskattning 10 av veckorna.",
+          "rough": "Jag satte helgdags- och vädervariabler i en säsongs ARIMA-modell i R. I backtest på 12 veckor var den bättre än säljteamets uppskattning 10 av veckorna."
+        },
+        "ar": {
+          "polished": "أضفتُ متغيرات العطل الرسمية والطقس إلى نموذج ARIMA موسمي في R، وخلال 12 أسبوعًا من الاختبار الرجعي تفوّق على تقدير فريق المبيعات في 10 منها.",
+          "rough": "أضفتُ متغيرات العطل والطقس لنموذج ARIMA موسمي في R. في اختبار رجعي لمدة 12 أسبوعًا كان أفضل من تقدير فريق المبيعات في 10 منها."
+        }
+      }
+    },
+    {
+      "id": "data_modelling.partial.1",
+      "archetype": "data_modelling",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We built a demand forecast with Prophet for the 200 best-selling products, and it proved 15% more accurate than the buyers' own estimates.",
+          "rough": "We made a demand forecast with Prophet for 200 best selling products. It was 15% more accurate than buyers own estimates."
+        },
+        "fi": {
+          "polished": "Rakensimme Prophetilla kysyntäennusteen 200 myydyimmälle tuotteelle, ja se osoittautui 15 % tarkemmaksi kuin ostajien omat arviot.",
+          "rough": "Teimme kysyntäennusteen Prophetilla 200 myydyimmälle tuotteelle. Se oli 15 % tarkempi kuin ostajien omat arviot."
+        },
+        "sv": {
+          "polished": "Vi byggde en efterfrågeprognos med Prophet för de 200 mest sålda produkterna, och den visade sig vara 15 % träffsäkrare än inköparnas egna uppskattningar.",
+          "rough": "Vi gjorde en efterfrågeprognos med Prophet för 200 mest sålda produkter. Den var 15 % noggrannare än inköparnas egna uppskattningar."
+        },
+        "ar": {
+          "polished": "بنينا توقعًا للطلب باستخدام Prophet لأكثر 200 منتج مبيعًا، وتبيّن أنه أدق بنسبة 15% من تقديرات مسؤولي المشتريات أنفسهم.",
+          "rough": "عملنا توقع طلب باستخدام Prophet لأكثر 200 منتج مبيعًا. كان أدق بـ 15% من تقديرات مسؤولي المشتريات الخاصة."
+        }
+      }
+    },
+    {
+      "id": "data_modelling.partial.2",
+      "archetype": "data_modelling",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "In my previous job I worked on forecasting topics and did part of the analysis for the planning team.",
+          "rough": "In my last job I worked with forecasting things and did part of the analysis for the planning team."
+        },
+        "fi": {
+          "polished": "Edellisessä työssäni työskentelin ennustamiseen liittyvien asioiden parissa ja tein osan suunnittelutiimin analyyseista.",
+          "rough": "Edellisessä työssä tein ennustejuttuja ja osan analyysista suunnittelutiimille."
+        },
+        "sv": {
+          "polished": "På mitt tidigare jobb arbetade jag med prognosfrågor och gjorde en del av analysen åt planeringsteamet.",
+          "rough": "På mitt förra jobb jobbade jag med prognossaker och gjorde en del av analysen för planeringsteamet."
+        },
+        "ar": {
+          "polished": "في وظيفتي السابقة عملتُ على موضوعات تتعلق بالتنبؤ، وأنجزتُ جزءًا من التحليل لفريق التخطيط.",
+          "rough": "في عملي السابق عملتُ على أمور التنبؤ، وقمتُ بجزء من التحليل لفريق التخطيط."
+        }
+      }
+    },
+    {
+      "id": "data_modelling.none.1",
+      "archetype": "data_modelling",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I see myself as a curious, analytical thinker who loves exploring how predictive models can shape the future of business.",
+          "rough": "I think I am curious and analytical thinker. I love to explore how predictive models can shape future of business."
+        },
+        "fi": {
+          "polished": "Näen itseni uteliaana ja analyyttisena ajattelijana, joka rakastaa tutkia, miten ennustemallit voivat muovata liiketoiminnan tulevaisuutta.",
+          "rough": "Mun mielestä olen utelias ja analyyttinen ajattelija. Tykkään tutkia miten ennustemallit voi muokata bisneksen tulevaisuutta."
+        },
+        "sv": {
+          "polished": "Jag ser mig själv som en nyfiken, analytisk tänkare som älskar att utforska hur prediktiva modeller kan forma affärslivets framtid.",
+          "rough": "Jag tycker jag är nyfiken och analytisk tänkare. Jag älskar att utforska hur prediktiva modeller kan forma framtiden för business."
+        },
+        "ar": {
+          "polished": "أرى في نفسي عقلية فضولية وتحليلية تحب استكشاف كيف يمكن للنماذج التنبؤية أن تشكّل مستقبل الأعمال.",
+          "rough": "أظن أن عندي عقلية فضولية وتحليلية. أحب أن أستكشف كيف يمكن أن تشكّل النماذج التنبؤية مستقبل الأعمال."
+        }
+      }
+    },
+    {
+      "id": "data_modelling.none.2",
+      "archetype": "data_modelling",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I updated the staff intranet news page every week and collected photos and stories from different departments.",
+          "rough": "I updated the intranet news page for staff every week. I collected photos and stories from different departments."
+        },
+        "fi": {
+          "polished": "Päivitin henkilöstön intranetin uutissivua viikoittain ja keräsin kuvia ja juttuja eri osastoilta.",
+          "rough": "Päivitin henkilöstön intran uutissivua joka viikko. Keräsin kuvia ja juttuja eri osastoilta."
+        },
+        "sv": {
+          "polished": "Jag uppdaterade personalens nyhetssida på intranätet varje vecka och samlade in bilder och berättelser från olika avdelningar.",
+          "rough": "Jag uppdaterade intranätets nyhetssida för personalen varje vecka. Jag samlade bilder och berättelser från olika avdelningar."
+        },
+        "ar": {
+          "polished": "حدّثتُ صفحة الأخبار على الشبكة الداخلية للموظفين أسبوعيًا، وجمعتُ صورًا وقصصًا من مختلف الأقسام.",
+          "rough": "كنتُ أحدّث صفحة أخبار الإنترانت للموظفين كل أسبوع. جمعتُ صورًا وقصصًا من أقسام مختلفة."
+        }
+      }
+    },
+    {
+      "id": "data_quality.supported.1",
+      "archetype": "data_quality",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I matched customer records from the CRM, the webshop and the invoicing system using fuzzy matching in Python, removing 870 duplicates and delivering a unified customer register within 10 weeks.",
+          "rough": "I matched customer records from CRM, webshop and invoicing system with fuzzy matching in Python. I removed 870 duplicates and made a unified customer register in 10 weeks."
+        },
+        "fi": {
+          "polished": "Täsmäytin CRM:n, verkkokaupan ja laskutusjärjestelmän asiakastietueet Pythonilla sumealla täsmäytyksellä, poistin 870 duplikaattia ja toimitin yhtenäisen asiakasrekisterin 10 viikossa.",
+          "rough": "Täsmäytin asiakastietueet CRM:stä, verkkokaupasta ja laskutusjärjestelmästä sumealla täsmäytyksellä Pythonissa. Poistin 870 duplikaattia ja tein yhtenäisen asiakasrekisterin 10 viikossa."
+        },
+        "sv": {
+          "polished": "Jag matchade kundposter från CRM-systemet, webbutiken och faktureringssystemet med fuzzy matching i Python, tog bort 870 dubbletter och levererade ett enhetligt kundregister inom 10 veckor.",
+          "rough": "Jag matchade kundposter från CRM, webbutik och faktureringssystem med fuzzy matching i Python. Jag tog bort 870 dubbletter och gjorde ett enhetligt kundregister på 10 veckor."
+        },
+        "ar": {
+          "polished": "طابقتُ سجلات العملاء من نظام CRM والمتجر الإلكتروني ونظام الفوترة باستخدام المطابقة التقريبية في Python، فحذفتُ 870 سجلًا مكررًا وسلّمتُ سجل عملاء موحدًا خلال 10 أسابيع.",
+          "rough": "طابقتُ سجلات العملاء من CRM والمتجر الإلكتروني ونظام الفواتير بالمطابقة التقريبية في Python. حذفتُ 870 تكرارًا وعملتُ سجل عملاء موحد في 10 أسابيع."
+        }
+      }
+    },
+    {
+      "id": "data_quality.supported.2",
+      "archetype": "data_quality",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I wrote SQL validation rules for postal codes, business IDs and email formats, fixed 640 faulty customer rows and merged the 3 source systems on a shared customer key.",
+          "rough": "I wrote SQL validation rules for postal codes, business IDs and email formats. I fixed 640 wrong customer rows and merged the 3 source systems with a shared customer key."
+        },
+        "fi": {
+          "polished": "Kirjoitin SQL-validointisäännöt postinumeroille, Y-tunnuksille ja sähköpostimuodoille, korjasin 640 virheellistä asiakasriviä ja yhdistin 3 lähdejärjestelmää yhteisellä asiakasavaimella.",
+          "rough": "Kirjoitin SQL-validointisäännöt postinumeroille, Y-tunnuksille ja sähköpostimuodoille. Korjasin 640 väärää asiakasriviä ja yhdistin 3 lähdejärjestelmää yhteisellä asiakasavaimella."
+        },
+        "sv": {
+          "polished": "Jag skrev valideringsregler i SQL för postnummer, FO-nummer och e-postformat, rättade 640 felaktiga kundrader och slog ihop de 3 källsystemen med en gemensam kundnyckel.",
+          "rough": "Jag skrev SQL-valideringsregler för postnummer, FO-nummer och e-postformat. Jag rättade 640 fel kundrader och slog ihop de 3 källsystemen med en gemensam kundnyckel."
+        },
+        "ar": {
+          "polished": "كتبتُ قواعد تحقق بلغة SQL للرموز البريدية وأرقام تسجيل الشركات وصيغ البريد الإلكتروني، وصحّحتُ 640 صفًا خاطئًا من بيانات العملاء، ودمجتُ أنظمة المصدر الـ 3 عبر مفتاح عملاء مشترك.",
+          "rough": "كتبتُ قواعد تحقق SQL للرموز البريدية وأرقام الشركات وصيغ البريد الإلكتروني. صحّحتُ 640 صف عملاء خاطئ، ودمجتُ أنظمة المصدر الـ 3 بمفتاح عملاء مشترك."
+        }
+      }
+    },
+    {
+      "id": "data_quality.partial.1",
+      "archetype": "data_quality",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "Customer data from the ERP, the CRM and the online shop was cleaned with OpenRefine and merged into a shared register, which cut returned invoices by 30%.",
+          "rough": "Customer data from ERP, CRM and online shop was cleaned with OpenRefine and put together into a shared register. Returned invoices went down 30%."
+        },
+        "fi": {
+          "polished": "ERP:n, CRM:n ja verkkokaupan asiakastiedot puhdistettiin OpenRefinellä ja yhdistettiin yhteiseksi rekisteriksi, mikä vähensi palautuneita laskuja 30 %.",
+          "rough": "Asiakasdata ERP:stä, CRM:stä ja verkkokaupasta puhdistettiin OpenRefinellä ja laitettiin yhteiseen rekisteriin. Palautuneet laskut väheni 30 %."
+        },
+        "sv": {
+          "polished": "Kunddata från ERP-systemet, CRM-systemet och webbutiken rensades med OpenRefine och slogs ihop till ett gemensamt register, vilket minskade antalet returnerade fakturor med 30 %.",
+          "rough": "Kunddata från ERP, CRM och webbutiken rensades med OpenRefine och lades ihop i ett gemensamt register. Returnerade fakturor gick ner 30 %."
+        },
+        "ar": {
+          "polished": "تم تنظيف بيانات العملاء من نظام ERP ونظام CRM والمتجر الإلكتروني باستخدام OpenRefine ودمجها في سجل مشترك، مما خفّض الفواتير المرتجعة بنسبة 30%.",
+          "rough": "تم تنظيف بيانات العملاء من ERP و CRM والمتجر الإلكتروني بـ OpenRefine وجمعها في سجل مشترك. الفواتير المرتجعة نزلت 30%."
+        }
+      }
+    },
+    {
+      "id": "data_quality.partial.2",
+      "archetype": "data_quality",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I took part in a customer data clean-up project and checked records when needed.",
+          "rough": "I was in a customer data cleaning project and I checked records when it was needed."
+        },
+        "fi": {
+          "polished": "Osallistuin asiakastietojen siivousprojektiin ja tarkistin tietueita tarvittaessa.",
+          "rough": "Olin mukana asiakasdatan siivousprojektissa ja tarkistin tietueita kun tarvittiin."
+        },
+        "sv": {
+          "polished": "Jag deltog i ett projekt för att städa kunddata och kontrollerade poster vid behov.",
+          "rough": "Jag var med i ett projekt som städade kunddata och jag kollade poster när det behövdes."
+        },
+        "ar": {
+          "polished": "شاركتُ في مشروع لتنظيف بيانات العملاء، وراجعتُ السجلات عند الحاجة.",
+          "rough": "كنتُ في مشروع تنظيف بيانات العملاء، وكنتُ أراجع السجلات عندما يلزم."
+        }
+      }
+    },
+    {
+      "id": "data_quality.none.1",
+      "archetype": "data_quality",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a detail-oriented team player with a strong passion for data quality and a mindset of continuous improvement.",
+          "rough": "I am detail oriented team player. I have strong passion for data quality and continuous improvement mindset."
+        },
+        "fi": {
+          "polished": "Olen tarkka tiimipelaaja, jolla on vahva intohimo datan laatuun ja jatkuvan parantamisen ajattelutapa.",
+          "rough": "Olen tarkka tiimipelaaja. Mulla on vahva intohimo datan laatuun ja jatkuvan parantamisen asenne."
+        },
+        "sv": {
+          "polished": "Jag är en noggrann lagspelare med en stark passion för datakvalitet och ett tankesätt präglat av ständig förbättring.",
+          "rough": "Jag är noggrann lagspelare. Jag har stark passion för datakvalitet och tankesätt med ständig förbättring."
+        },
+        "ar": {
+          "polished": "أهتم بأدق التفاصيل وأعمل بروح الفريق، ولديّ شغف قوي بجودة البيانات وعقلية التحسين المستمر.",
+          "rough": "أهتم بالتفاصيل وأحب العمل في فريق. عندي شغف قوي بجودة البيانات وعقلية التحسين المستمر."
+        }
+      }
+    },
+    {
+      "id": "data_quality.none.2",
+      "archetype": "data_quality",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I coordinated the office move to new premises and drew up the seating plan for 25 people.",
+          "rough": "I coordinated the office moving to new place and made seating plan for 25 people."
+        },
+        "fi": {
+          "polished": "Koordinoin toimiston muuton uusiin tiloihin ja laadin istumajärjestyksen 25 hengelle.",
+          "rough": "Koordinoin toimiston muuttoa uuteen paikkaan ja tein istumajärjestyksen 25 ihmiselle."
+        },
+        "sv": {
+          "polished": "Jag samordnade kontorets flytt till nya lokaler och gjorde upp placeringsplanen för 25 personer.",
+          "rough": "Jag koordinerade kontorsflytten till nytt ställe och gjorde sittplan för 25 personer."
+        },
+        "ar": {
+          "polished": "نسّقتُ انتقال المكتب إلى مقر جديد، ووضعتُ خطة توزيع المقاعد لـ 25 شخصًا.",
+          "rough": "نسّقتُ نقل المكتب لمكان جديد وعملتُ خطة الجلوس لـ 25 شخص."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "data.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would involve the people who use the results from the start and check in with them often, instead of assuming I already knew what they needed.",
+          "rough": "I would take the users with me from the start and talk with them often. Not just assume I know already what they need."
+        },
+        "fi": {
+          "polished": "Ottaisin tulosten käyttäjät mukaan alusta asti ja kävisin asioita läpi heidän kanssaan usein sen sijaan, että olettaisin jo tietäväni, mitä he tarvitsevat.",
+          "rough": "Ottaisin käyttäjät mukaan heti alusta ja juttelisin niiden kanssa usein. En vaan olettaisi että tiedän jo mitä ne tarvii."
+        },
+        "sv": {
+          "polished": "Jag skulle involvera dem som använder resultaten från början och stämma av med dem ofta, i stället för att anta att jag redan visste vad de behövde.",
+          "rough": "Jag skulle ta med användarna från början och prata med dem ofta. Inte bara tro att jag vet redan vad de behöver."
+        },
+        "ar": {
+          "polished": "كنتُ سأُشرك مستخدمي النتائج منذ البداية وأتواصل معهم باستمرار، بدلًا من افتراض أنني أعرف مسبقًا ما يحتاجون إليه.",
+          "rough": "كنتُ سأُشرك المستخدمين من البداية وأتكلم معهم كثيرًا. لا أفترض فقط أنني أعرف ما يحتاجونه."
+        }
+      }
+    },
+    {
+      "id": "data.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would agree on clear priorities and a realistic schedule with my manager at the start, and raise problems sooner instead of trying to fix everything alone.",
+          "rough": "I would agree clear priorities and realistic schedule with my boss in the beginning. And tell about problems earlier, not try to fix all alone."
+        },
+        "fi": {
+          "polished": "Sopisin esihenkilöni kanssa heti alussa selkeistä prioriteeteista ja realistisesta aikataulusta ja ottaisin ongelmat puheeksi aiemmin sen sijaan, että yrittäisin korjata kaiken omin päin.",
+          "rough": "Sopisin pomon kanssa alussa selkeät prioriteetit ja realistisen aikataulun. Ja kertoisin ongelmista aikaisemmin, enkä yrittäisi korjata kaikkea omin päin."
+        },
+        "sv": {
+          "polished": "Jag skulle komma överens med min chef om tydliga prioriteringar och en realistisk tidsplan redan från början, och lyfta problem tidigare i stället för att försöka lösa allt själv.",
+          "rough": "Jag skulle komma överens om tydliga prioriteringar och realistisk tidsplan med chefen i början. Och berätta om problem tidigare, inte försöka fixa allt ensam."
+        },
+        "ar": {
+          "polished": "كنتُ سأتفق مع مديري منذ البداية على أولويات واضحة وجدول زمني واقعي، وأطرح المشكلات في وقت أبكر بدلًا من محاولة حل كل شيء بمفردي.",
+          "rough": "كنتُ سأتفق مع مديري على أولويات واضحة وجدول واقعي في البداية. وأخبر عن المشاكل أبكر، ولا أحاول أن أصلح كل شيء وحدي."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "data.next.1",
+      "text": {
+        "en": {
+          "polished": "I want to grow into an analyst role where I help teams answer everyday business questions with data, and build my skills in SQL and visualisation.",
+          "rough": "I want to become analyst and help teams to answer their everyday business questions with data. And build my skills in SQL and visualisation."
+        },
+        "fi": {
+          "polished": "Haluan kasvaa analyytikon rooliin, jossa autan tiimejä vastaamaan arjen liiketoimintakysymyksiin datan avulla, ja kehittää osaamistani SQL:ssä ja visualisoinnissa.",
+          "rough": "Haluan analyytikoksi ja auttaa tiimejä vastaamaan niiden arjen bisneskysymyksiin datalla. Ja kehittää osaamista SQL:ssä ja visualisoinnissa."
+        },
+        "sv": {
+          "polished": "Jag vill växa in i en analytikerroll där jag hjälper team att besvara vardagliga affärsfrågor med data, och bygga upp mina färdigheter i SQL och visualisering.",
+          "rough": "Jag vill bli analytiker och hjälpa team att svara på sina vardagliga affärsfrågor med data. Och bygga mina kunskaper i SQL och visualisering."
+        },
+        "ar": {
+          "polished": "أريد أن أتطور نحو دور في تحليل البيانات أساعد فيه الفرق على الإجابة عن أسئلة العمل اليومية بالبيانات، وأن أبني مهاراتي في SQL والتمثيل المرئي للبيانات.",
+          "rough": "أريد العمل في تحليل البيانات وأساعد الفرق في الإجابة على أسئلة عملها اليومية بالبيانات. وأبني مهاراتي في SQL والتمثيل المرئي للبيانات."
+        }
+      }
+    },
+    {
+      "id": "data.next.2",
+      "text": {
+        "en": {
+          "polished": "Next, I would like to join a team that values data quality and good documentation, where I can learn from experienced colleagues and gradually take on more responsibility.",
+          "rough": "Next I like to join a team where data quality and good documentation matter. I want learn from experienced colleagues and get more responsibility little by little."
+        },
+        "fi": {
+          "polished": "Seuraavaksi haluaisin liittyä tiimiin, joka arvostaa datan laatua ja hyvää dokumentointia ja jossa voin oppia kokeneilta kollegoilta ja ottaa vähitellen enemmän vastuuta.",
+          "rough": "Seuraavaksi haluan tiimiin, jossa datan laatu ja hyvä dokumentointi on tärkeitä. Haluan oppia kokeneilta kollegoilta ja saada pikkuhiljaa enemmän vastuuta."
+        },
+        "sv": {
+          "polished": "Härnäst vill jag gå med i ett team som värdesätter datakvalitet och god dokumentation, där jag kan lära mig av erfarna kolleger och gradvis ta mer ansvar.",
+          "rough": "Nästa jag vill gå med i ett team där datakvalitet och bra dokumentation är viktigt. Jag vill lära av erfarna kolleger och få mer ansvar lite i taget."
+        },
+        "ar": {
+          "polished": "أودّ في الخطوة التالية الانضمام إلى فريق يقدّر جودة البيانات والتوثيق الجيد، حيث أتعلم من زملاء ذوي خبرة وأتحمل مسؤولية أكبر تدريجيًا.",
+          "rough": "بعد ذلك أريد أن أنضم لفريق تهمّه جودة البيانات والتوثيق الجيد. أريد أن أتعلم من زملاء عندهم خبرة وآخذ مسؤولية أكثر شيئًا فشيئًا."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "Our previous analyst built a technically strong dashboard, but the sales team never used it because nobody had asked them what they actually needed.",
+    "They also underestimated how messy the source data was and spent weeks fixing duplicates without telling anyone that the schedule was slipping.",
+    "Things only improved once they started short weekly check-ins with the business users and shared unfinished versions early."
+  ]
+}

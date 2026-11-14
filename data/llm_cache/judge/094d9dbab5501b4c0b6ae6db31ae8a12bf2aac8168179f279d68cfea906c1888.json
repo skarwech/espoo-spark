@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-008/o1",
+    "label": "partial",
+    "unit_id": "J-033~ar.u2",
+    "quote": "أتمتنا مرحلة تغليف المنصات بطاولة دوّارة يتحكم فيها PLC",
+    "reason": "Directly relevant PLC packing automation, but stated as 'we', no personal role."
+   },
+   {
+    "key": "N-008/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing unplanned line downtime."
+   },
+   {
+    "key": "N-008/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about false sensor-fault alerts."
+   },
+   {
+    "key": "N-015/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about reducing unplanned line downtime."
+   },
+   {
+    "key": "N-015/o2",
+    "label": "partial",
+    "unit_id": "J-033~ar.u2",
+    "quote": "أتمتنا مرحلة تغليف المنصات بطاولة دوّارة يتحكم فيها PLC",
+    "reason": "Directly relevant PLC packing automation, but stated as 'we', no personal role."
+   },
+   {
+    "key": "N-015/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1352 @@
+[
+ {
+  "birth_year": 2001,
+  "candidate_id": "J-001",
+  "email": "aino.k.001@example.test",
+  "name": "Aino Korhonen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1990,
+  "candidate_id": "J-002",
+  "email": "karim.h.002@example.test",
+  "name": "Karim Haddad",
+  "nationality": "Syrian",
+  "private_context": "I have a residence permit for work.",
+  "school": "Damascus University"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-003",
+  "email": "elena.p.003@example.test",
+  "name": "Elena Petrova",
+  "nationality": "Bulgarian",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "University of National and World Economy"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-004",
+  "email": "johan.g.004@example.test",
+  "name": "Johan Granqvist",
+  "nationality": "Finnish",
+  "private_context": "I am finishing a Finnish course in the spring.",
+  "school": "Arcada University of Applied Sciences"
+ },
+ {
+  "birth_year": 2001,
+  "candidate_id": "J-005",
+  "email": "anton.b.005@example.test",
+  "name": "Anton Björkman",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Novia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1985,
+  "candidate_id": "J-006",
+  "email": "johan.l.006@example.test",
+  "name": "Johan Lindqvist",
+  "nationality": "Finnish",
+  "private_context": "Jag kan börja på deltid först.",
+  "school": "Åbo Akademi University"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-007",
+  "email": "anton.h.007@example.test",
+  "name": "Anton Holmström",
+  "nationality": "Finnish",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-008",
+  "email": "noora.l.008@example.test",
+  "name": "Noora Laine",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1999,
+  "candidate_id": "J-009",
+  "email": "alva.b.009@example.test",
+  "name": "Alva Berg",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "Uppsala University"
+ },
+ {
+  "birth_year": 1978,
+  "candidate_id": "J-010",
+  "email": "ville.k.010@example.test",
+  "name": "Ville Korhonen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-011",
+  "email": "lin.c.011@example.test",
+  "name": "Lin Chen",
+  "nationality": "Chinese",
+  "private_context": null,
+  "school": "Zhejiang University"
+ },
+ {
+  "birth_year": 1998,
+  "candidate_id": "J-012",
+  "email": "tanel.k.012@example.test",
+  "name": "Tanel Kask",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "University of Tartu"
+ },
+ {
+  "birth_year": 1975,
+  "candidate_id": "J-013",
+  "email": "erik.n.013@example.test",
+  "name": "Erik Nilsson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "KTH Royal Institute of Technology"
+ },
+ {
+  "birth_year": 1991,
+  "candidate_id": "J-014",
+  "email": "viktor.n.014@example.test",
+  "name": "Viktor Nilsson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "KTH Royal Institute of Technology"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-015",
+  "email": "sara.s.015@example.test",
+  "name": "Sara Saleh",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1971,
+  "candidate_id": "J-016",
+  "email": "sara.h.016@example.test",
+  "name": "Sara Haddad",
+  "nationality": "Finnish",
+  "private_context": "لدي تصريح إقامة للعمل.",
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1992,
+  "candidate_id": "J-017",
+  "email": "kadri.k.017@example.test",
+  "name": "Kadri Kask",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "University of Tartu"
+ },
+ {
+  "birth_year": 1988,
+  "candidate_id": "J-018",
+  "email": "eero.m.018@example.test",
+  "name": "Eero Mäkinen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1984,
+  "candidate_id": "J-019",
+  "email": "rein.s.019@example.test",
+  "name": "Rein Sepp",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "University of Tartu"
+ },
+ {
+  "birth_year": 1979,
+  "candidate_id": "J-020",
+  "email": "kateryna.s.020@example.test",
+  "name": "Kateryna Shevchenko",
+  "nationality": "Ukrainian",
+  "private_context": "Olen suorittamassa ammattitutkintoa keväällä.",
+  "school": "Lviv Polytechnic National University"
+ },
+ {
+  "birth_year": 1995,
+  "candidate_id": "J-021",
+  "email": "suman.s.021@example.test",
+  "name": "Suman Shrestha",
+  "nationality": "Nepali",
+  "private_context": null,
+  "school": "Tribhuvan University"
+ },
+ {
+  "birth_year": 1994,
+  "candidate_id": "J-022",
+  "email": "elsa.a.022@example.test",
+  "name": "Elsa Andersson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "KTH Royal Institute of Technology"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-023",
+  "email": "emeka.a.023@example.test",
+  "name": "Emeka Adeyemi",
+  "nationality": "Nigerian",
+  "private_context": null,
+  "school": "Obafemi Awolowo University"
+ },
+ {
+  "birth_year": 1982,
+  "candidate_id": "J-024",
+  "email": "mattias.b.024@example.test",
+  "name": "Mattias Björkman",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1974,
+  "candidate_id": "J-025",
+  "email": "viktor.k.025@example.test",
+  "name": "Viktor Karlsson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "Lund University"
+ },
+ {
+  "birth_year": 1978,
+  "candidate_id": "J-026",
+  "email": "adam.k.026@example.test",
+  "name": "Adam Khalil",
+  "nationality": "Finnish",
+  "private_context": "لدي تصريح إقامة للعمل.",
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-027",
+  "email": "mariam.m.027@example.test",
+  "name": "Mariam Mostafa",
+  "nationality": "Egyptian",
+  "private_context": null,
+  "school": "Alexandria University"
+ },
+ {
+  "birth_year": 1998,
+  "candidate_id": "J-028",
+  "email": "sara.r.028@example.test",
+  "name": "Sara Rezaei",
+  "nationality": "Iranian",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "Sharif University of Technology"
+ },
+ {
+  "birth_year": 1973,
+  "candidate_id": "J-029",
+  "email": "ida.n.029@example.test",
+  "name": "Ida Nyberg",
+  "nationality": "Finnish",
+  "private_context": "I am finishing a Finnish course in the spring.",
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1979,
+  "candidate_id": "J-030",
+  "email": "ville.r.030@example.test",
+  "name": "Ville Rantanen",
+  "nationality": "Finnish",
+  "private_context": "Olen suorittamassa ammattitutkintoa keväällä.",
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1972,
+  "candidate_id": "J-031",
+  "email": "zeynep.c.031@example.test",
+  "name": "Zeynep Çelik",
+  "nationality": "Turkish",
+  "private_context": null,
+  "school": "Istanbul Technical University"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-032",
+  "email": "adam.m.032@example.test",
+  "name": "Adam Mansour",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1978,
+  "candidate_id": "J-033",
+  "email": "henrik.l.033@example.test",
+  "name": "Henrik Lindholm",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Novia University of Applied Sciences"
+ },
+ {
+  "birth_year": 2003,
+  "candidate_id": "J-034",
+  "email": "adam.n.034@example.test",
+  "name": "Adam Nasser",
+  "nationality": "Finnish",
+  "private_context": "I have a residence permit for work.",
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1984,
+  "candidate_id": "J-035",
+  "email": "saga.s.035@example.test",
+  "name": "Saga Sundqvist",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Novia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1979,
+  "candidate_id": "J-036",
+  "email": "rami.a.036@example.test",
+  "name": "Rami Aziz",
+  "nationality": "Finnish",
+  "private_context": "Voin aloittaa ensin osa-aikaisena.",
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1968,
+  "candidate_id": "J-037",
+  "email": "kadri.k.037@example.test",
+  "name": "Kadri Kask",
+  "nationality": "Estonian",
+  "private_context": "Voin aloittaa ensin osa-aikaisena.",
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-038",
+  "email": "lina.h.038@example.test",
+  "name": "Lina Haddad",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-039",
+  "email": "dmytro.k.039@example.test",
+  "name": "Dmytro Kovalenko",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Kyiv Polytechnic Institute"
+ },
+ {
+  "birth_year": 1977,
+  "candidate_id": "J-040",
+  "email": "rein.s.040@example.test",
+  "name": "Rein Sepp",
+  "nationality": "Estonian",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1978,
+  "candidate_id": "J-041",
+  "email": "nadia.a.041@example.test",
+  "name": "Nadia Alaoui",
+  "nationality": "Moroccan",
+  "private_context": "لدي تصريح إقامة للعمل.",
+  "school": "Mohammed V University"
+ },
+ {
+  "birth_year": 1984,
+  "candidate_id": "J-042",
+  "email": "sara.k.042@example.test",
+  "name": "Sara Khalil",
+  "nationality": "Finnish",
+  "private_context": "Minulla on oleskelulupa työntekoa varten.",
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-043",
+  "email": "ayse.s.043@example.test",
+  "name": "Ayşe Şahin",
+  "nationality": "Turkish",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "Istanbul Technical University"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-044",
+  "email": "kristiina.s.044@example.test",
+  "name": "Kristiina Saar",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1987,
+  "candidate_id": "J-045",
+  "email": "linh.h.045@example.test",
+  "name": "Linh Hoang",
+  "nationality": "Vietnamese",
+  "private_context": null,
+  "school": "Vietnam National University"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-046",
+  "email": "juha.h.046@example.test",
+  "name": "Juha Hämäläinen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1982,
+  "candidate_id": "J-047",
+  "email": "tarek.f.047@example.test",
+  "name": "Tarek Farouk",
+  "nationality": "Egyptian",
+  "private_context": null,
+  "school": "Cairo University"
+ },
+ {
+  "birth_year": 1988,
+  "candidate_id": "J-048",
+  "email": "oleksii.t.048@example.test",
+  "name": "Oleksii Tkachenko",
+  "nationality": "Ukrainian",
+  "private_context": "Voin aloittaa ensin osa-aikaisena.",
+  "school": "Kyiv Polytechnic Institute"
+ },
+ {
+  "birth_year": 1982,
+  "candidate_id": "J-049",
+  "email": "hossam.f.049@example.test",
+  "name": "Hossam Farouk",
+  "nationality": "Egyptian",
+  "private_context": null,
+  "school": "Cairo University"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-050",
+  "email": "rami.h.050@example.test",
+  "name": "Rami Haddad",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1990,
+  "candidate_id": "J-051",
+  "email": "noora.l.051@example.test",
+  "name": "Noora Laine",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-052",
+  "email": "heidi.n.052@example.test",
+  "name": "Heidi Nieminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Tampere University"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-053",
+  "email": "anton.l.053@example.test",
+  "name": "Anton Lindholm",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1968,
+  "candidate_id": "J-054",
+  "email": "johan.g.054@example.test",
+  "name": "Johan Granqvist",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Novia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1970,
+  "candidate_id": "J-055",
+  "email": "maja.n.055@example.test",
+  "name": "Maja Nilsson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "Uppsala University"
+ },
+ {
+  "birth_year": 1995,
+  "candidate_id": "J-056",
+  "email": "sanna.m.056@example.test",
+  "name": "Sanna Mäkinen",
+  "nationality": "Finnish",
+  "private_context": "I am finishing a Finnish course in the spring.",
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1972,
+  "candidate_id": "J-057",
+  "email": "rami.h.057@example.test",
+  "name": "Rami Haddad",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1995,
+  "candidate_id": "J-058",
+  "email": "linnea.h.058@example.test",
+  "name": "Linnea Holmström",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1972,
+  "candidate_id": "J-059",
+  "email": "youssef.i.059@example.test",
+  "name": "Youssef Idrissi",
+  "nationality": "Moroccan",
+  "private_context": null,
+  "school": "Mohammed V University"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-060",
+  "email": "sara.a.060@example.test",
+  "name": "Sara Aziz",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1975,
+  "candidate_id": "J-061",
+  "email": "tanel.s.061@example.test",
+  "name": "Tanel Sepp",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1990,
+  "candidate_id": "J-062",
+  "email": "sara.m.062@example.test",
+  "name": "Sara Mansour",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1991,
+  "candidate_id": "J-063",
+  "email": "linnea.l.063@example.test",
+  "name": "Linnea Lindqvist",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1979,
+  "candidate_id": "J-064",
+  "email": "ali.h.064@example.test",
+  "name": "Ali Haddad",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1977,
+  "candidate_id": "J-065",
+  "email": "lina.a.065@example.test",
+  "name": "Lina Aziz",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-066",
+  "email": "maja.a.066@example.test",
+  "name": "Maja Andersson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "KTH Royal Institute of Technology"
+ },
+ {
+  "birth_year": 1999,
+  "candidate_id": "J-067",
+  "email": "sanna.l.067@example.test",
+  "name": "Sanna Lehtonen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-068",
+  "email": "antti.h.068@example.test",
+  "name": "Antti Heikkinen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-069",
+  "email": "ebba.n.069@example.test",
+  "name": "Ebba Nyberg",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Åbo Akademi University"
+ },
+ {
+  "birth_year": 1989,
+  "candidate_id": "J-070",
+  "email": "rami.n.070@example.test",
+  "name": "Rami Nasser",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-071",
+  "email": "oskar.n.071@example.test",
+  "name": "Oskar Nyberg",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Åbo Akademi University"
+ },
+ {
+  "birth_year": 1970,
+  "candidate_id": "J-072",
+  "email": "amaka.o.072@example.test",
+  "name": "Amaka Okafor",
+  "nationality": "Nigerian",
+  "private_context": null,
+  "school": "Obafemi Awolowo University"
+ },
+ {
+  "birth_year": 1969,
+  "candidate_id": "J-073",
+  "email": "dmytro.k.073@example.test",
+  "name": "Dmytro Kovalenko",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Lviv Polytechnic National University"
+ },
+ {
+  "birth_year": 1987,
+  "candidate_id": "J-074",
+  "email": "yasmin.n.074@example.test",
+  "name": "Yasmin Nasser",
+  "nationality": "Finnish",
+  "private_context": "I have a residence permit for work.",
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-075",
+  "email": "eero.n.075@example.test",
+  "name": "Eero Nieminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 2001,
+  "candidate_id": "J-076",
+  "email": "adam.h.076@example.test",
+  "name": "Adam Haddad",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 2002,
+  "candidate_id": "J-077",
+  "email": "mattias.b.077@example.test",
+  "name": "Mattias Björkman",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Arcada University of Applied Sciences"
+ },
+ {
+  "birth_year": 1994,
+  "candidate_id": "J-078",
+  "email": "andriy.t.078@example.test",
+  "name": "Andriy Tkachenko",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Lviv Polytechnic National University"
+ },
+ {
+  "birth_year": 1976,
+  "candidate_id": "J-079",
+  "email": "kadri.k.079@example.test",
+  "name": "Kadri Kask",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "University of Tartu"
+ },
+ {
+  "birth_year": 1970,
+  "candidate_id": "J-080",
+  "email": "riikka.j.080@example.test",
+  "name": "Riikka Järvinen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1970,
+  "candidate_id": "J-081",
+  "email": "elina.h.081@example.test",
+  "name": "Elina Hämäläinen",
+  "nationality": "Finnish",
+  "private_context": "I am finishing a Finnish course in the spring.",
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1973,
+  "candidate_id": "J-082",
+  "email": "gustav.k.082@example.test",
+  "name": "Gustav Karlsson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "Uppsala University"
+ },
+ {
+  "birth_year": 1970,
+  "candidate_id": "J-083",
+  "email": "riikka.n.083@example.test",
+  "name": "Riikka Nieminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 2001,
+  "candidate_id": "J-084",
+  "email": "anton.h.084@example.test",
+  "name": "Anton Holmström",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-085",
+  "email": "rami.h.085@example.test",
+  "name": "Rami Haddad",
+  "nationality": "Finnish",
+  "private_context": "I have a residence permit for work.",
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-086",
+  "email": "salma.a.086@example.test",
+  "name": "Salma Abdelrahman",
+  "nationality": "Egyptian",
+  "private_context": "أنا مقيم دائم ويمكنني البدء دون تصريح جديد.",
+  "school": "Alexandria University"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-087",
+  "email": "ali.m.087@example.test",
+  "name": "Ali Mansour",
+  "nationality": "Finnish",
+  "private_context": "أنهي دورة في اللغة الفنلندية في الربيع.",
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1999,
+  "candidate_id": "J-088",
+  "email": "andriy.s.088@example.test",
+  "name": "Andriy Shevchenko",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Kyiv Polytechnic Institute"
+ },
+ {
+  "birth_year": 2003,
+  "candidate_id": "J-089",
+  "email": "mikko.n.089@example.test",
+  "name": "Mikko Nieminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1984,
+  "candidate_id": "J-090",
+  "email": "haider.h.090@example.test",
+  "name": "Haider Hassan",
+  "nationality": "Iraqi",
+  "private_context": "أنهي دورة في اللغة الفنلندية في الربيع.",
+  "school": "University of Technology, Iraq"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-091",
+  "email": "katja.s.091@example.test",
+  "name": "Katja Salminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-092",
+  "email": "rein.t.092@example.test",
+  "name": "Rein Tamm",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1998,
+  "candidate_id": "J-093",
+  "email": "ville.k.093@example.test",
+  "name": "Ville Korhonen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1987,
+  "candidate_id": "J-094",
+  "email": "rein.t.094@example.test",
+  "name": "Rein Tamm",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "University of Tartu"
+ },
+ {
+  "birth_year": 1999,
+  "candidate_id": "J-095",
+  "email": "johan.g.095@example.test",
+  "name": "Johan Granqvist",
+  "nationality": "Finnish",
+  "private_context": "I have a residence permit for work.",
+  "school": "Hanken School of Economics"
+ },
+ {
+  "birth_year": 1985,
+  "candidate_id": "J-096",
+  "email": "yasmin.n.096@example.test",
+  "name": "Yasmin Nasser",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-097",
+  "email": "jerome.b.097@example.test",
+  "name": "Jerome Bautista",
+  "nationality": "Filipino",
+  "private_context": "I am finishing a Finnish course in the spring.",
+  "school": "Ateneo de Manila University"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-098",
+  "email": "ali.h.098@example.test",
+  "name": "Ali Haddad",
+  "nationality": "Finnish",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-099",
+  "email": "adam.h.099@example.test",
+  "name": "Adam Haddad",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-100",
+  "email": "yasmin.n.100@example.test",
+  "name": "Yasmin Nasser",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-101",
+  "email": "mattias.g.101@example.test",
+  "name": "Mattias Granqvist",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Arcada University of Applied Sciences"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-102",
+  "email": "lina.a.102@example.test",
+  "name": "Lina Aziz",
+  "nationality": "Finnish",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1970,
+  "candidate_id": "J-103",
+  "email": "yasmin.h.103@example.test",
+  "name": "Yasmin Haddad",
+  "nationality": "Finnish",
+  "private_context": "Voin aloittaa ensin osa-aikaisena.",
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-104",
+  "email": "rein.m.104@example.test",
+  "name": "Rein Mägi",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1970,
+  "candidate_id": "J-105",
+  "email": "hamza.a.105@example.test",
+  "name": "Hamza Alaoui",
+  "nationality": "Moroccan",
+  "private_context": null,
+  "school": "Mohammed V University"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-106",
+  "email": "ida.g.106@example.test",
+  "name": "Ida Granqvist",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Novia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1982,
+  "candidate_id": "J-107",
+  "email": "kadri.m.107@example.test",
+  "name": "Kadri Mägi",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1980,
+  "candidate_id": "J-108",
+  "email": "arjun.r.108@example.test",
+  "name": "Arjun Reddy",
+  "nationality": "Indian",
+  "private_context": null,
+  "school": "Jadavpur University"
+ },
+ {
+  "birth_year": 1971,
+  "candidate_id": "J-109",
+  "email": "olena.m.109@example.test",
+  "name": "Olena Melnyk",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Kyiv Polytechnic Institute"
+ },
+ {
+  "birth_year": 1999,
+  "candidate_id": "J-110",
+  "email": "heidi.s.110@example.test",
+  "name": "Heidi Salminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1988,
+  "candidate_id": "J-111",
+  "email": "minna.h.111@example.test",
+  "name": "Minna Heikkinen",
+  "nationality": "Finnish",
+  "private_context": "Minulla on oleskelulupa työntekoa varten.",
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1973,
+  "candidate_id": "J-112",
+  "email": "adam.n.112@example.test",
+  "name": "Adam Nasser",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1979,
+  "candidate_id": "J-113",
+  "email": "oleksii.b.113@example.test",
+  "name": "Oleksii Bondarenko",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Lviv Polytechnic National University"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-114",
+  "email": "linnea.l.114@example.test",
+  "name": "Linnea Lindholm",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Arcada University of Applied Sciences"
+ },
+ {
+  "birth_year": 1972,
+  "candidate_id": "J-115",
+  "email": "viktor.j.115@example.test",
+  "name": "Viktor Johansson",
+  "nationality": "Swedish",
+  "private_context": "I have a residence permit for work.",
+  "school": "Uppsala University"
+ },
+ {
+  "birth_year": 2002,
+  "candidate_id": "J-116",
+  "email": "ali.m.116@example.test",
+  "name": "Ali Mansour",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1993,
+  "candidate_id": "J-117",
+  "email": "lina.n.117@example.test",
+  "name": "Lina Nasser",
+  "nationality": "Finnish",
+  "private_context": "I am finishing a Finnish course in the spring.",
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1995,
+  "candidate_id": "J-118",
+  "email": "liis.m.118@example.test",
+  "name": "Liis Mägi",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "University of Tartu"
+ },
+ {
+  "birth_year": 1989,
+  "candidate_id": "J-119",
+  "email": "linnea.n.119@example.test",
+  "name": "Linnea Nyberg",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Åbo Akademi University"
+ },
+ {
+  "birth_year": 1987,
+  "candidate_id": "J-120",
+  "email": "maja.a.120@example.test",
+  "name": "Maja Andersson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "KTH Royal Institute of Technology"
+ },
+ {
+  "birth_year": 2002,
+  "candidate_id": "J-121",
+  "email": "riikka.r.121@example.test",
+  "name": "Riikka Rantanen",
+  "nationality": "Finnish",
+  "private_context": "I am finishing a Finnish course in the spring.",
+  "school": "University of Helsinki"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-122",
+  "email": "kristiina.k.122@example.test",
+  "name": "Kristiina Kask",
+  "nationality": "Estonian",
+  "private_context": "Voin aloittaa ensin osa-aikaisena.",
+  "school": "Tallinn University of Technology"
+ },
+ {
+  "birth_year": 1990,
+  "candidate_id": "J-123",
+  "email": "adam.a.123@example.test",
+  "name": "Adam Aziz",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-124",
+  "email": "erik.k.124@example.test",
+  "name": "Erik Karlsson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "Lund University"
+ },
+ {
+  "birth_year": 1973,
+  "candidate_id": "J-125",
+  "email": "ali.s.125@example.test",
+  "name": "Ali Saleh",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1994,
+  "candidate_id": "J-126",
+  "email": "ali.n.126@example.test",
+  "name": "Ali Nasser",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1971,
+  "candidate_id": "J-127",
+  "email": "rein.s.127@example.test",
+  "name": "Rein Saar",
+  "nationality": "Estonian",
+  "private_context": null,
+  "school": "University of Tartu"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-128",
+  "email": "minna.n.128@example.test",
+  "name": "Minna Nieminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1981,
+  "candidate_id": "J-129",
+  "email": "ebba.e.129@example.test",
+  "name": "Ebba Ekholm",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Arcada University of Applied Sciences"
+ },
+ {
+  "birth_year": 1993,
+  "candidate_id": "J-130",
+  "email": "olena.m.130@example.test",
+  "name": "Olena Melnyk",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Kyiv Polytechnic Institute"
+ },
+ {
+  "birth_year": 1989,
+  "candidate_id": "J-131",
+  "email": "noora.n.131@example.test",
+  "name": "Noora Nieminen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Aalto University"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-132",
+  "email": "adam.n.132@example.test",
+  "name": "Adam Nasser",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1988,
+  "candidate_id": "J-133",
+  "email": "riikka.k.133@example.test",
+  "name": "Riikka Korhonen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1971,
+  "candidate_id": "J-134",
+  "email": "mustafa.h.134@example.test",
+  "name": "Mustafa Hassan",
+  "nationality": "Iraqi",
+  "private_context": null,
+  "school": "University of Baghdad"
+ },
+ {
+  "birth_year": 1977,
+  "candidate_id": "J-135",
+  "email": "huong.p.135@example.test",
+  "name": "Huong Pham",
+  "nationality": "Vietnamese",
+  "private_context": null,
+  "school": "Hanoi University of Science and Technology"
+ },
+ {
+  "birth_year": 1984,
+  "candidate_id": "J-136",
+  "email": "ebba.h.136@example.test",
+  "name": "Ebba Holmström",
+  "nationality": "Finnish",
+  "private_context": "Jag har uppehållstillstånd för arbete.",
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1975,
+  "candidate_id": "J-137",
+  "email": "yasmin.a.137@example.test",
+  "name": "Yasmin Aziz",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 2000,
+  "candidate_id": "J-138",
+  "email": "lina.n.138@example.test",
+  "name": "Lina Nasser",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Metropolia University of Applied Sciences"
+ },
+ {
+  "birth_year": 1979,
+  "candidate_id": "J-139",
+  "email": "angelica.m.139@example.test",
+  "name": "Angelica Mendoza",
+  "nationality": "Filipino",
+  "private_context": null,
+  "school": "University of the Philippines"
+ },
+ {
+  "birth_year": 1992,
+  "candidate_id": "J-140",
+  "email": "olena.s.140@example.test",
+  "name": "Olena Shevchenko",
+  "nationality": "Ukrainian",
+  "private_context": null,
+  "school": "Kyiv Polytechnic Institute"
+ },
+ {
+  "birth_year": 1992,
+  "candidate_id": "J-141",
+  "email": "ida.n.141@example.test",
+  "name": "Ida Nyberg",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Prakticum vocational college"
+ },
+ {
+  "birth_year": 1978,
+  "candidate_id": "J-142",
+  "email": "oskar.h.142@example.test",
+  "name": "Oskar Holmström",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Åbo Akademi University"
+ },
+ {
+  "birth_year": 1978,
+  "candidate_id": "J-143",
+  "email": "minna.l.143@example.test",
+  "name": "Minna Lehtonen",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Omnia vocational college"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-144",
+  "email": "ali.h.144@example.test",
+  "name": "Ali Haddad",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Laurea University of Applied Sciences"
+ },
+ {
+  "birth_year": 1986,
+  "candidate_id": "J-145",
+  "email": "burak.y.145@example.test",
+  "name": "Burak Yılmaz",
+  "nationality": "Turkish",
+  "private_context": "I have a residence permit for work.",
+  "school": "Middle East Technical University"
+ },
+ {
+  "birth_year": 1990,
+  "candidate_id": "J-146",
+  "email": "andriy.t.146@example.test",
+  "name": "Andriy Tkachenko",
+  "nationality": "Ukrainian",
+  "private_context": "I am a permanent resident and can start without a new permit.",
+  "school": "Kyiv Polytechnic Institute"
+ },
+ {
+  "birth_year": 1996,
+  "candidate_id": "J-147",
+  "email": "xiaoyu.c.147@example.test",
+  "name": "Xiaoyu Chen",
+  "nationality": "Chinese",
+  "private_context": null,
+  "school": "Zhejiang University"
+ },
+ {
+  "birth_year": 1998,
+  "candidate_id": "J-148",
+  "email": "ebba.b.148@example.test",
+  "name": "Ebba Björkman",
+  "nationality": "Finnish",
+  "private_context": null,
+  "school": "Åbo Akademi University"
+ },
+ {
+  "birth_year": 1997,
+  "candidate_id": "J-149",
+  "email": "erik.k.149@example.test",
+  "name": "Erik Karlsson",
+  "nationality": "Swedish",
+  "private_context": null,
+  "school": "KTH Royal Institute of Technology"
+ },
+ {
+  "birth_year": 1983,
+  "candidate_id": "J-150",
+  "email": "omar.h.150@example.test",
+  "name": "Omar Haddad",
+  "nationality": "Syrian",
+  "private_context": null,
+  "school": "Damascus University"
+ }
+]

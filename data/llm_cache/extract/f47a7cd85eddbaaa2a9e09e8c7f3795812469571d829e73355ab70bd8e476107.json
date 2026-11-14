@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag deltog i testningen före releaser och stöttade teamet när det uppstod problem med testerna.",
+    "skills": [
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag organiserade en löparklubb för kollegor med träffar varje vecka och skötte anmälningslistan för cirka 20 personer.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag migrerade 8 lokala tjänster till Azure med Terraform och flyttade trafiken gradvis med blue-green-driftsättningar. Hela flytten tog 5 månader, och kunderna upplevde inga avbrott.",
+    "skills": [
+     "S06",
+     "S18"
+    ]
+   }
+  ]
+ }
+}

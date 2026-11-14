@@ -1,0 +1,40 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Vi byggde REST API för partner med OAuth-inloggning och offentlig ändringslogg. Partneranropen hade 99,8 % upptid på 6 månader.",
+    "skills": [
+     "S18",
+     "S46"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Teamet gjorde nattliga regressionskörningar med Cypress. Återställda releaser gick ner från 9 till 3 per kvartal.",
+    "skills": [
+     "S12",
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag migrerade 8 lokala tjänster till Azure med Terraform.",
+    "skills": [
+     "S06"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Trafiken flyttade jag sakta med blue-green-driftsättningar. Hela flytten tog 5 månader och kunderna hade inga avbrott.",
+    "skills": [
+     "S06"
+    ]
+   }
+  ]
+ }
+}

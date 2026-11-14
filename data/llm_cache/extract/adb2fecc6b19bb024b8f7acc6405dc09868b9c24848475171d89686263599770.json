@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I matched customer records from CRM, webshop and invoicing system with fuzzy matching in Python. I removed 870 duplicates and made a unified customer register in 10 weeks.",
+    "skills": [
+     "S39",
+     "S32",
+     "S25"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Our team changed the monthly PDF reports to a Power BI dashboard in 8 weeks. Requests for extra numbers went down 40%.",
+    "skills": [
+     "S04",
+     "S10"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I updated the intranet news page for staff every week. I collected photos and stories from different departments.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

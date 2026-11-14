@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "partial",
+    "unit_id": "J-090~polished.u2",
+    "quote": "دعمتُ زملائي في استخدام نظام السجلات الإلكترونية الجديد",
+    "reason": "Supported colleagues with new electronic records system; no method or result given."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "partial",
+    "unit_id": "J-090~polished.u1",
+    "quote": "شاركتُ في زيارات الرعاية المنزلية",
+    "reason": "Took part in home care visits; no method or result stated."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case work described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "partial",
+    "unit_id": "J-090~polished.u2",
+    "quote": "دعمتُ زملائي في استخدام نظام السجلات الإلكترونية الجديد",
+    "reason": "Supported colleagues with new electronic records system; no method or result given."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "supported",
+    "unit_id": "J-090~polished.u3",
+    "quote": "أعددتُ جدول المناوبات لمدة 6 أسابيع لكلتا الوحدتين في برنامج تخطيط مشترك",
+    "reason": "Personally scheduled shifts for both units; overtime fell 35%."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "partial",
+    "unit_id": "J-090~polished.u1",
+    "quote": "شاركتُ في زيارات الرعاية المنزلية",
+    "reason": "Took part in home care visits; no method or result stated."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "partial",
+    "unit_id": "J-090~polished.u2",
+    "quote": "دعمتُ زملائي في استخدام نظام السجلات الإلكترونية الجديد",
+    "reason": "Supported colleagues with new electronic records system; no method or result given."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "partial",
+    "unit_id": "J-090~polished.u1",
+    "quote": "شاركتُ في زيارات الرعاية المنزلية",
+    "reason": "Took part in home care visits; no method or result stated."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "supported",
+    "unit_id": "J-090~polished.u3",
+    "quote": "أعددتُ جدول المناوبات لمدة 6 أسابيع لكلتا الوحدتين في برنامج تخطيط مشترك",
+    "reason": "Personally scheduled shifts for both units; overtime fell 35%."
+   }
+  ]
+ }
+}

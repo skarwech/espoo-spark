@@ -1,0 +1,27 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I built a REST integration between the warehouse management system and the ERP, so picked and shipped quantities update orders within 3 minutes instead of in a nightly batch.",
+    "skills": [
+     "S18",
+     "S28",
+     "S27"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I analysed truck GPS data in Excel, found that 4 morning routes overlapped and redrew them as 3, saving about 90 km of driving per day.",
+    "skills": [
+     "S35",
+     "S31"
+    ]
+   }
+  ]
+ }
+}

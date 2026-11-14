@@ -1,0 +1,17 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "نسّقتُ انتقال مكتبنا ووضعتُ ملصقات على جميع الصناديق والكابلات لـ 30 موظفًا.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

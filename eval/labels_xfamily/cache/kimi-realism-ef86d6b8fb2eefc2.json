@@ -1,0 +1,122 @@
+{
+ "model": "kimi-k3-1-pro",
+ "task": "realism",
+ "usage": {
+  "prompt_tokens": 7116,
+  "total_tokens": 13544,
+  "completion_tokens": 6428,
+  "prompt_tokens_details": {
+   "cached_tokens": 64
+  },
+  "reasoning_tokens": 5544,
+  "completion_tokens_details": {
+   "reasoning_tokens": 5544
+  }
+ },
+ "usd_estimate": 0.11777,
+ "seconds": 76.1,
+ "output": {
+  "realism": [
+   {
+    "story_id": "R01",
+    "plausible": true,
+    "reason": "Office coordination followed by a move toward customer success or sales is a believable early-career transition."
+   },
+   {
+    "story_id": "R02",
+    "plausible": true,
+    "reason": "A junior developer could contribute to testing and partner meetings while citing improvements achieved by the wider team."
+   },
+   {
+    "story_id": "R03",
+    "plausible": true,
+    "reason": "An office administrator could realistically pursue bookkeeping and financial reporting while learning from experienced finance colleagues."
+   },
+   {
+    "story_id": "R04",
+    "plausible": true,
+    "reason": "Quality and maintenance improvements fit an experienced production technician; hybrid preferences do not undermine the underlying experience."
+   },
+   {
+    "story_id": "R05",
+    "plausible": true,
+    "reason": "The cloud migration and partner API work are technically coherent for an Arabic-speaking developer living in Finland."
+   },
+   {
+    "story_id": "R06",
+    "plausible": true,
+    "reason": "Combining intranet duties with customer-data cleaning is plausible for an administrative worker developing analytics skills."
+   },
+   {
+    "story_id": "R07",
+    "plausible": true,
+    "reason": "A finance assistant could plausibly automate bank reconciliation with Python while supporting departmental budgeting routines."
+   },
+   {
+    "story_id": "R08",
+    "plausible": true,
+    "reason": "Preventive maintenance and inspection improvements are credible factory experience for someone seeking production development work."
+   },
+   {
+    "story_id": "R09",
+    "plausible": true,
+    "reason": "SAP barcode integration and route redesign are credible responsibilities for a logistics worker with systems experience."
+   },
+   {
+    "story_id": "R10",
+    "plausible": true,
+    "reason": "Event support, purchasing assistance, and ERP testing form a believable administrative background before moving into logistics."
+   },
+   {
+    "story_id": "R11",
+    "plausible": true,
+    "reason": "A student IoT project and broad data-career goals are plausible despite limited concrete personal detail."
+   },
+   {
+    "story_id": "R12",
+    "plausible": true,
+    "reason": "A developer could handle cloud and API work while also helping organise a company celebration."
+   },
+   {
+    "story_id": "R13",
+    "plausible": true,
+    "reason": "An experienced home-care worker could train colleagues and coordinate visits before pursuing remote customer-service work."
+   },
+   {
+    "story_id": "R14",
+    "plausible": true,
+    "reason": "Warehouse integration and GPS route analysis credibly support a technical logistics worker’s move toward analytics."
+   },
+   {
+    "story_id": "R15",
+    "plausible": true,
+    "reason": "Python analysis of device alarms fits an early-career IoT worker interested in embedded and connected systems."
+   },
+   {
+    "story_id": "R16",
+    "plausible": true,
+    "reason": "Budget support and monthly-close participation are credible experience for a finance assistant seeking planning work."
+   },
+   {
+    "story_id": "R17",
+    "plausible": true,
+    "reason": "Intranet administration and Python deduplication can coexist in a generalist administrative role leading toward data work."
+   },
+   {
+    "story_id": "R18",
+    "plausible": true,
+    "reason": "The generic self-description is weak evidence, but an AI-assisted customer-service applicant could plausibly submit it."
+   },
+   {
+    "story_id": "R19",
+    "plausible": true,
+    "reason": "Office administration and an unrelated data-focused ambition are believable for an early-career applicant exploring options."
+   },
+   {
+    "story_id": "R20",
+    "plausible": true,
+    "reason": "A finance worker with scripting skills could automate reconciliation and seek broader financial planning responsibilities."
+   }
+  ]
+ }
+}

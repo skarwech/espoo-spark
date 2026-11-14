@@ -1,0 +1,12 @@
+{
+ "frozen": "2026-11-13",
+ "sha256": {
+  "golden_items.json": "49ce7ae478981cc366727735170bef8e926bdb8229ba205c621b6e260ca81d24",
+  "golden_key.json": "e9e1a10666e2db63552ad295fa89e041d0ce06662fdcc15be103956e10947470",
+  "realism_items.json": "3743c83f9c55881f79582d7b277717b7b85ab6104e64ac931c57c442eed2883d",
+  "golden.csv": "7572ad85ebdbb847894293d34ed75a93c5ecfc757b9e6cf7e4e61dee8716f76a",
+  "labels/annotator_a.json": "5c8e5c72b8fa06afdd284c1c61e8b90bfe2349169ebcd1fda0568f738e09e010",
+  "labels/annotator_b.json": "46f0505e4fd429386dae36c00a790573b1606b7114cd00ea4e34dda1e0cc3f64",
+  "labels/adjudicator.json": "6c6be4a1106366608cdf886f2cdc28206cb066c7fe44a52fc5350ceafb77ddb9"
+ }
+}

@@ -1,0 +1,556 @@
+{
+  "domain": "fin",
+  "contexts": [
+    {
+      "id": "fin.ctx.1",
+      "text": {
+        "en": {
+          "polished": "In the finance team of a mid-size service company, month-end work kept piling up. Bank lines were matched by hand in Excel, department budgets arrived late, and closing reports were regularly a week behind schedule.",
+          "rough": "In finance team of a mid-size service company, the month-end work was piling up all the time. Bank lines were matched by hand in Excel, department budgets came late and closing reports were often a week late."
+        },
+        "fi": {
+          "polished": "Keskikokoisen palveluyrityksen taloustiimissä kuukauden vaihteen työt kasautuivat jatkuvasti. Pankkitapahtumat täsmäytettiin käsin Excelissä, osastojen budjetit saapuivat myöhässä ja kuukausikatkon raportit valmistuivat usein viikon myöhässä.",
+          "rough": "Keskikokoisen palvelufirman taloustiimissä kuun vaihteen työt kasaantui koko ajan. Pankkirivit täsmäytettiin käsin Excelissä, osastojen budjetit tuli myöhässä ja katkon raportit oli usein viikon myöhässä."
+        },
+        "sv": {
+          "polished": "I ekonomiteamet på ett medelstort serviceföretag hopade sig arbetet kring månadsskiftet. Banktransaktionerna stämdes av för hand i Excel, avdelningarnas budgetar kom sent och bokslutsrapporterna låg ofta en vecka efter tidsplanen.",
+          "rough": "I ekonomiteamet på ett medelstort serviceföretag blev månadsskiftets jobb hela tiden för mycket. Bankraderna stämdes av för hand i Excel, avdelningarnas budgetar kom sent och bokslutsrapporterna var ofta en vecka sena."
+        },
+        "ar": {
+          "polished": "في الفريق المالي لشركة خدمات متوسطة الحجم، كانت أعمال نهاية الشهر تتراكم باستمرار. كانت الحركات البنكية تُطابَق يدويًا في Excel، وتصل موازنات الأقسام متأخرة، وكثيرًا ما تتأخر تقارير الإقفال أسبوعًا عن موعدها.",
+          "rough": "في الفريق المالي لشركة خدمات متوسطة، عمل نهاية الشهر كان يتراكم دائمًا. الحركات البنكية تُطابَق يدويًا في Excel، وموازنات الأقسام تصل متأخرة، وتقارير الإقفال غالبًا متأخرة أسبوعًا."
+        }
+      }
+    },
+    {
+      "id": "fin.ctx.2",
+      "text": {
+        "en": {
+          "polished": "A growing wholesale company had outgrown its accounting routines. Invoices from 4 subsidiaries were booked in different ways, reconciliation differences were carried forward month after month, the month-end close dragged on, and managers no longer trusted the figures behind their budgets.",
+          "rough": "A growing wholesale company, the accounting routines were not enough anymore. Invoices from 4 subsidiaries were booked in different ways, reconciliation differences moved forward every month, the month-end close took long and managers did not trust the numbers in their budgets anymore."
+        },
+        "fi": {
+          "polished": "Kasvavan tukkukaupan kirjanpitorutiinit eivät enää riittäneet. 4 tytäryhtiön laskut kirjattiin eri tavoin, täsmäytyserot siirtyivät eteenpäin kuukausittain, kuukausikatko venyi, eivätkä esihenkilöt enää luottaneet budjettiensa taustalla oleviin lukuihin.",
+          "rough": "Kasvava tukkuyritys, kirjanpidon rutiinit ei enää riittäneet. 4 tytäryhtiön laskut kirjattiin eri tavalla, täsmäytyserot siirtyi eteenpäin joka kuukausi, kuukausikatko kesti kauan ja esihenkilöt ei enää luottaneet niiden budjettien lukuihin."
+        },
+        "sv": {
+          "polished": "Ett växande grossistföretag hade vuxit ur sina redovisningsrutiner. Fakturor från 4 dotterbolag bokfördes på olika sätt, avstämningsdifferenser fördes vidare månad efter månad, månadsbokslutet drog ut på tiden och cheferna litade inte längre på siffrorna bakom sina budgetar.",
+          "rough": "Ett växande grossistföretag, redovisningsrutinerna räckte inte längre. Fakturor från 4 dotterbolag bokades på olika sätt, avstämningsdifferenser flyttades fram varje månad, månadsbokslutet tog lång tid och cheferna litade inte längre på siffrorna i sina budgetar."
+        },
+        "ar": {
+          "polished": "تجاوزت شركة جملة متنامية قدرة إجراءاتها المحاسبية. فقد كانت فواتير 4 شركات تابعة تُقيَّد بطرق مختلفة، وتُرحَّل فروق التسوية شهرًا بعد شهر، ويطول إقفال نهاية الشهر، ولم يعد المديرون يثقون بالأرقام التي تستند إليها موازناتهم.",
+          "rough": "شركة جملة تكبر، وإجراءات المحاسبة لم تعد تكفي. فواتير 4 شركات تابعة تُقيَّد بطرق مختلفة، وفروق التسوية تنتقل كل شهر، وإقفال نهاية الشهر يأخذ وقتًا طويلًا، والمديرون لم يعودوا يثقون بالأرقام في موازناتهم."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "fin_close.supported.1",
+      "archetype": "fin_close",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I redesigned the month-end close checklist, moved accrual entries to recurring templates in the ERP and started daily bank postings, shortening the close from 9 to 5 working days within 4 months.",
+          "rough": "I made a new month-end close checklist, I moved accruals to recurring templates in the ERP and started posting bank lines every day. The close went from 9 to 5 working days in 4 months."
+        },
+        "fi": {
+          "polished": "Uudistin kuukausikatkon tarkistuslistan, siirsin jaksotuskirjaukset ERP:n toistuviin pohjiin ja aloitin päivittäiset pankkikirjaukset, jolloin kuukausikatko lyheni 9 työpäivästä 5 työpäivään 4 kuukaudessa.",
+          "rough": "Tein uuden kuukausikatkon tarkistuslistan, siirsin jaksotukset ERP:n toistuviin pohjiin ja aloin kirjata pankkirivit joka päivä. Katko meni 9 työpäivästä 5 työpäivään 4 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Jag gjorde om checklistan för månadsbokslutet, flyttade periodiseringsposterna till återkommande mallar i ERP-systemet och införde dagliga bankbokningar, vilket kortade månadsbokslutet från 9 till 5 arbetsdagar inom 4 månader.",
+          "rough": "Jag gjorde en ny checklista för månadsbokslutet, jag flyttade periodiseringar till återkommande mallar i ERP och började bokföra bankrader varje dag. Bokslutet gick från 9 till 5 arbetsdagar på 4 månader."
+        },
+        "ar": {
+          "polished": "أعدتُ تصميم قائمة مهام إقفال نهاية الشهر، ونقلتُ قيود المستحقات إلى قوالب متكررة في نظام ERP، وبدأتُ ترحيل الحركات البنكية يوميًا، فتقلّص الإقفال من 9 إلى 5 أيام عمل خلال 4 أشهر.",
+          "rough": "أعددتُ قائمة جديدة لإقفال نهاية الشهر، ونقلتُ المستحقات إلى قوالب متكررة في ERP، وبدأتُ أرحّل الحركات البنكية كل يوم. الإقفال نزل من 9 إلى 5 أيام عمل في 4 أشهر."
+        }
+      }
+    },
+    {
+      "id": "fin_close.supported.2",
+      "archetype": "fin_close",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I built a shared close calendar in Excel with an owner and cut-off time for every task, and added a pre-close review of open purchase invoices. The close became 3 working days shorter.",
+          "rough": "I made a shared close calendar in Excel where every task has owner and cut-off time. I added a review of open purchase invoices before the close. The close got 3 working days shorter."
+        },
+        "fi": {
+          "polished": "Rakensin Exceliin yhteisen katkokalenterin, jossa jokaisella tehtävällä on vastuuhenkilö ja määräaika, ja lisäsin avoimien ostolaskujen läpikäynnin ennen katkoa. Kuukausikatko lyheni 3 työpäivällä.",
+          "rough": "Tein Exceliin yhteisen katkokalenterin, jossa joka tehtävällä on vastuuhenkilö ja aikaraja. Lisäsin avoimien ostolaskujen tarkistuksen ennen katkoa. Katko lyheni 3 työpäivää."
+        },
+        "sv": {
+          "polished": "Jag byggde en gemensam bokslutskalender i Excel med ansvarig och deadline för varje uppgift och lade till en genomgång av öppna leverantörsfakturor före bokslutet. Bokslutet blev 3 arbetsdagar kortare.",
+          "rough": "Jag gjorde en gemensam bokslutskalender i Excel där varje uppgift har ansvarig och deadline. Jag lade till en koll av öppna leverantörsfakturor före bokslutet. Bokslutet blev 3 arbetsdagar kortare."
+        },
+        "ar": {
+          "polished": "أنشأتُ تقويمًا مشتركًا للإقفال في Excel يحدد لكل مهمة مسؤولًا وموعدًا نهائيًا، وأضفتُ مراجعة لفواتير الشراء المفتوحة قبل الإقفال. فأصبح الإقفال أقصر بـ 3 أيام عمل.",
+          "rough": "أعددتُ تقويم إقفال مشتركًا في Excel، كل مهمة لها مسؤول وموعد نهائي. أضفتُ مراجعة لفواتير الشراء المفتوحة قبل الإقفال. الإقفال صار أقصر بـ 3 أيام عمل."
+        }
+      }
+    },
+    {
+      "id": "fin_close.partial.1",
+      "archetype": "fin_close",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The accounting team introduced a fixed cut-off for purchase invoices and started booking accruals before month-end, and the close was shortened from 10 to 7 working days.",
+          "rough": "The accounting team made a fixed cut-off for purchase invoices and started to book accruals before month-end. The close got shorter, from 10 to 7 working days."
+        },
+        "fi": {
+          "polished": "Kirjanpitotiimi otti käyttöön kiinteän katkopäivän ostolaskuille ja alkoi kirjata jaksotukset jo ennen kuun loppua, ja kuukausikatko lyheni 10 työpäivästä 7 työpäivään.",
+          "rough": "Kirjanpitotiimi teki ostolaskuille kiinteän katkopäivän ja alkoi kirjata jaksotukset ennen kuun loppua. Katko lyheni, 10 työpäivästä 7 työpäivään."
+        },
+        "sv": {
+          "polished": "Redovisningsteamet införde en fast brytpunkt för leverantörsfakturor och började bokföra periodiseringar före månadsskiftet, och månadsbokslutet kortades från 10 till 7 arbetsdagar.",
+          "rough": "Redovisningsteamet gjorde en fast brytpunkt för leverantörsfakturor och började bokföra periodiseringar före månadsskiftet. Bokslutet blev kortare, från 10 till 7 arbetsdagar."
+        },
+        "ar": {
+          "polished": "اعتمد فريق المحاسبة موعدًا ثابتًا لإقفال استلام فواتير الشراء وبدأ تسجيل المستحقات قبل نهاية الشهر، فتقلّص إقفال نهاية الشهر من 10 إلى 7 أيام عمل.",
+          "rough": "فريق المحاسبة وضع موعدًا ثابتًا لفواتير الشراء وبدأ تسجيل المستحقات قبل نهاية الشهر. الإقفال صار أقصر، من 10 إلى 7 أيام عمل."
+        }
+      }
+    },
+    {
+      "id": "fin_close.partial.2",
+      "archetype": "fin_close",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I took part in the month-end close and prepared several of the closing reports.",
+          "rough": "I was part of the month-end close and did some of the closing reports."
+        },
+        "fi": {
+          "polished": "Osallistuin kuukausikatkoon ja laadin useita sen raporteista.",
+          "rough": "Olin mukana kuukausikatkossa ja tein osan raporteista."
+        },
+        "sv": {
+          "polished": "Jag deltog i månadsbokslutet och tog fram flera av bokslutsrapporterna.",
+          "rough": "Jag var med i månadsbokslutet och gjorde några av bokslutsrapporterna."
+        },
+        "ar": {
+          "polished": "شاركتُ في إقفال نهاية الشهر وأعددتُ عددًا من تقارير الإقفال.",
+          "rough": "كنتُ جزءًا من إقفال نهاية الشهر وأعددتُ بعض تقارير الإقفال."
+        }
+      }
+    },
+    {
+      "id": "fin_close.none.1",
+      "archetype": "fin_close",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "As a detail-oriented finance enthusiast, I thrive on delivering value through accuracy, integrity and strategic thinking.",
+          "rough": "I am finance enthusiast and very detail oriented. I like to give value with accuracy, integrity and strategic thinking."
+        },
+        "fi": {
+          "polished": "Yksityiskohtiin keskittyvänä ja talousalasta innostuneena nautin siitä, että tuotan arvoa tarkkuuden, rehellisyyden ja strategisen ajattelun kautta.",
+          "rough": "Olen talousalasta innostunut ja tarkka yksityiskohdista. Tykkään tuottaa arvoa tarkkuudella, rehellisyydellä ja strategisella ajattelulla."
+        },
+        "sv": {
+          "polished": "Som en detaljorienterad ekonomientusiast trivs jag med att skapa värde genom noggrannhet, integritet och strategiskt tänkande.",
+          "rough": "Jag är ekonomientusiast och väldigt detaljorienterad. Jag gillar att ge värde med noggrannhet, integritet och strategiskt tänkande."
+        },
+        "ar": {
+          "polished": "يدفعني شغفي بالمالية واهتمامي بأدق التفاصيل إلى تقديم القيمة من خلال الدقة والنزاهة والتفكير الاستراتيجي.",
+          "rough": "عندي شغف بالمالية واهتمام كبير بالتفاصيل. أحب أن أقدّم قيمة بالدقة والنزاهة والتفكير الاستراتيجي."
+        }
+      }
+    },
+    {
+      "id": "fin_close.none.2",
+      "archetype": "fin_close",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the office move for the finance department, booking the movers and planning the new seating layout.",
+          "rough": "I organised the office move for finance department. I booked the movers and planned the new seating."
+        },
+        "fi": {
+          "polished": "Järjestin talousosaston toimistomuuton, tilasin muuttofirman ja suunnittelin uuden istumajärjestyksen.",
+          "rough": "Järjestin talousosaston toimistomuuton. Tilasin muuttajat ja suunnittelin uudet istumapaikat."
+        },
+        "sv": {
+          "polished": "Jag organiserade ekonomiavdelningens kontorsflytt, bokade flyttfirman och planerade den nya placeringen av arbetsplatserna.",
+          "rough": "Jag ordnade kontorsflytten för ekonomiavdelningen. Jag bokade flyttarna och planerade nya platserna."
+        },
+        "ar": {
+          "polished": "نظّمتُ انتقال مكاتب الإدارة المالية، فحجزتُ شركة النقل وخططتُ لتوزيع المقاعد الجديد.",
+          "rough": "نظّمتُ نقل مكتب القسم المالي. حجزتُ عمال النقل وخططتُ أماكن الجلوس الجديدة."
+        }
+      }
+    },
+    {
+      "id": "fin_reconciliation.supported.1",
+      "archetype": "fin_reconciliation",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I wrote Power Query rules that match bank statement lines to ledger entries by reference number and amount, so the daily reconciliation report now builds itself and only 5% of lines need manual review.",
+          "rough": "I wrote Power Query rules, they match bank statement lines to ledger entries with reference number and amount. Now the daily reconciliation report comes automatically and only 5% of lines need manual check."
+        },
+        "fi": {
+          "polished": "Kirjoitin Power Query -säännöt, jotka kohdistavat tiliotteen rivit pääkirjan vienteihin viitenumeron ja summan perusteella, joten päivittäinen täsmäytysraportti syntyy nyt itsestään ja vain 5 % riveistä vaatii käsin tarkistuksen.",
+          "rough": "Kirjoitin Power Query -säännöt, ne yhdistää tiliotteen rivit pääkirjan vienteihin viitenumerolla ja summalla. Nyt päivän täsmäytysraportti tulee automaattisesti ja vain 5 % riveistä pitää tarkistaa käsin."
+        },
+        "sv": {
+          "polished": "Jag skrev regler i Power Query som matchar kontoutdragets rader mot huvudbokens poster utifrån referensnummer och belopp, så att den dagliga avstämningsrapporten nu skapas automatiskt och bara 5 % av raderna kräver manuell granskning.",
+          "rough": "Jag skrev Power Query-regler, de matchar kontoutdragets rader mot huvudbokens poster med referensnummer och belopp. Nu kommer dagliga avstämningsrapporten automatiskt och bara 5 % av raderna behöver manuell koll."
+        },
+        "ar": {
+          "polished": "كتبتُ قواعد في Power Query تطابق بنود كشف الحساب البنكي مع قيود دفتر الأستاذ حسب الرقم المرجعي والمبلغ، فأصبح تقرير التسوية اليومي يُعَدّ تلقائيًا ولا يحتاج إلى مراجعة يدوية إلا 5% من البنود.",
+          "rough": "كتبتُ قواعد Power Query تطابق بنود كشف البنك مع قيود دفتر الأستاذ بالرقم المرجعي والمبلغ. الآن تقرير التسوية اليومي يصدر تلقائيًا وفقط 5% من البنود تحتاج مراجعة يدوية."
+        }
+      }
+    },
+    {
+      "id": "fin_reconciliation.supported.2",
+      "archetype": "fin_reconciliation",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I wrote a Python script that compares the bank's transaction file with ledger postings every night and lists the differences, replacing a manual bank reconciliation that took 6 hours a week.",
+          "rough": "I wrote a Python script, it compares the bank transaction file with ledger postings every night and lists the differences. It replaced the manual bank reconciliation which took 6 hours every week."
+        },
+        "fi": {
+          "polished": "Kirjoitin Python-skriptin, joka vertaa pankin tapahtumatiedostoa pääkirjan kirjauksiin joka yö ja listaa erot. Se korvasi käsin tehdyn pankkitäsmäytyksen, joka vei 6 tuntia viikossa.",
+          "rough": "Kirjoitin Python-skriptin, se vertaa pankin tapahtumatiedostoa pääkirjan kirjauksiin joka yö ja listaa erot. Se korvasi käsin pankkitäsmäytyksen, joka vei 6 tuntia joka viikko."
+        },
+        "sv": {
+          "polished": "Jag skrev ett Python-skript som varje natt jämför bankens transaktionsfil med huvudbokens bokningar och listar differenserna, vilket ersatte en manuell bankavstämning som tog 6 timmar i veckan.",
+          "rough": "Jag skrev ett Python-skript, det jämför bankens transaktionsfil med huvudbokens bokningar varje natt och listar skillnaderna. Det ersatte manuella bankavstämningen som tog 6 timmar varje vecka."
+        },
+        "ar": {
+          "polished": "كتبتُ برنامجًا نصيًا بلغة Python يقارن كل ليلة ملف الحركات البنكية مع قيود دفتر الأستاذ ويعرض الفروق، فحلّ محل تسوية بنكية يدوية كانت تستغرق 6 ساعات أسبوعيًا.",
+          "rough": "كتبتُ سكربت Python يقارن ملف حركات البنك مع قيود دفتر الأستاذ كل ليلة ويعرض الفروق. حلّ محل التسوية البنكية اليدوية التي كانت تأخذ 6 ساعات كل أسبوع."
+        }
+      }
+    },
+    {
+      "id": "fin_reconciliation.partial.1",
+      "archetype": "fin_reconciliation",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "Bank-to-ledger matching rules were set up in the ERP, which raised the automatic match rate from 40% to 85% within 3 months.",
+          "rough": "Matching rules for bank and ledger were set up in the ERP. Automatic match rate went from 40% to 85% in 3 months."
+        },
+        "fi": {
+          "polished": "ERP-järjestelmään määritettiin pankin ja pääkirjan väliset täsmäytyssäännöt, mikä nosti automaattisen kohdistusasteen 40 %:sta 85 %:iin 3 kuukaudessa.",
+          "rough": "ERP:hen tehtiin täsmäytyssäännöt pankille ja pääkirjalle. Automaattinen kohdistus nousi 40 %:sta 85 %:iin 3 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Matchningsregler mellan bank och huvudbok sattes upp i ERP-systemet, vilket höjde den automatiska matchningsgraden från 40 % till 85 % inom 3 månader.",
+          "rough": "Matchningsregler för bank och huvudbok sattes upp i ERP. Automatisk matchning gick från 40 % till 85 % på 3 månader."
+        },
+        "ar": {
+          "polished": "أُعدّت في نظام ERP قواعد لمطابقة البنك مع دفتر الأستاذ، مما رفع نسبة المطابقة التلقائية من 40% إلى 85% خلال 3 أشهر.",
+          "rough": "تم إعداد قواعد مطابقة للبنك ودفتر الأستاذ في ERP. نسبة المطابقة التلقائية ارتفعت من 40% إلى 85% في 3 أشهر."
+        }
+      }
+    },
+    {
+      "id": "fin_reconciliation.partial.2",
+      "archetype": "fin_reconciliation",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I handled bank reconciliations for some time and looked for ways to make them quicker.",
+          "rough": "I did bank reconciliations for some time and tried to find ways to make them faster."
+        },
+        "fi": {
+          "polished": "Hoidin pankkitäsmäytyksiä jonkin aikaa ja etsin keinoja nopeuttaa niitä.",
+          "rough": "Tein pankkitäsmäytyksiä jonkun aikaa ja yritin keksiä tapoja tehdä niistä nopeampia."
+        },
+        "sv": {
+          "polished": "Jag skötte bankavstämningar under en tid och letade efter sätt att göra dem snabbare.",
+          "rough": "Jag gjorde bankavstämningar ett tag och försökte hitta sätt att göra dem snabbare."
+        },
+        "ar": {
+          "polished": "تولّيتُ التسويات البنكية لفترة من الوقت وبحثتُ عن طرق لتسريعها.",
+          "rough": "قمتُ بالتسويات البنكية لبعض الوقت وحاولتُ أن أجد طرقًا لجعلها أسرع."
+        }
+      }
+    },
+    {
+      "id": "fin_reconciliation.none.1",
+      "archetype": "fin_reconciliation",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am fascinated by automation and believe digital finance will transform how businesses create value.",
+          "rough": "Automation is fascinating for me. I believe digital finance will change how businesses make value."
+        },
+        "fi": {
+          "polished": "Automaatio kiehtoo minua, ja uskon, että digitaalinen taloushallinto mullistaa tavan, jolla yritykset luovat arvoa.",
+          "rough": "Automaatio kiehtoo mua. Uskon että digitaalinen taloushallinto muuttaa miten yritykset tekee arvoa."
+        },
+        "sv": {
+          "polished": "Jag fascineras av automation och tror att digital ekonomiförvaltning kommer att förändra hur företag skapar värde.",
+          "rough": "Automation är fascinerande för mig. Jag tror digital ekonomiförvaltning kommer ändra hur företag gör värde."
+        },
+        "ar": {
+          "polished": "تستهويني الأتمتة، وأؤمن بأن المالية الرقمية ستُحدث تحولًا في طريقة خلق الشركات للقيمة.",
+          "rough": "الأتمتة شيء مدهش بالنسبة لي. أؤمن أن المالية الرقمية ستغيّر كيف تصنع الشركات القيمة."
+        }
+      }
+    },
+    {
+      "id": "fin_reconciliation.none.2",
+      "archetype": "fin_reconciliation",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I managed the meeting room bookings and arranged catering for client visits at the finance office.",
+          "rough": "I took care of the meeting room bookings and ordered catering for client visits in the finance office."
+        },
+        "fi": {
+          "polished": "Hoidin talousosaston toimiston neuvotteluhuonevaraukset ja järjestin tarjoilut asiakasvierailuille.",
+          "rough": "Hoidin neuvotteluhuoneiden varaukset ja tilasin tarjoilut asiakasvierailuille talousosaston toimistossa."
+        },
+        "sv": {
+          "polished": "Jag skötte bokningarna av mötesrum och ordnade catering vid kundbesök på ekonomikontoret.",
+          "rough": "Jag tog hand om bokningar av mötesrum och beställde catering för kundbesök på ekonomikontoret."
+        },
+        "ar": {
+          "polished": "أدرتُ حجوزات قاعات الاجتماعات ونظّمتُ الضيافة لزيارات العملاء في مكتب الإدارة المالية.",
+          "rough": "اهتممتُ بحجز قاعات الاجتماعات وطلبتُ الضيافة لزيارات العملاء في المكتب المالي."
+        }
+      }
+    },
+    {
+      "id": "fin_budget.supported.1",
+      "archetype": "fin_budget",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I ran the annual budget round for 6 departments, sent each manager a pre-filled Excel template with last year's actuals and held review meetings, so every budget was approved before the board deadline.",
+          "rough": "I ran the yearly budget round for 6 departments. I sent every manager a pre-filled Excel template with last year actuals and had review meetings, so all budgets were approved before the board deadline."
+        },
+        "fi": {
+          "polished": "Vedin vuosibudjetoinnin 6 osastolle, lähetin jokaiselle esihenkilölle valmiiksi täytetyn Excel-pohjan edellisen vuoden toteumilla ja pidin läpikäyntipalaverit, joten jokainen budjetti hyväksyttiin ennen hallituksen määräaikaa.",
+          "rough": "Vedin vuoden budjettikierroksen 6 osastolle. Lähetin joka esihenkilölle valmiiksi täytetyn Excel-pohjan, jossa viime vuoden toteumat, ja pidin läpikäyntipalaverit, joten kaikki budjetit hyväksyttiin ennen hallituksen deadlinea."
+        },
+        "sv": {
+          "polished": "Jag ledde den årliga budgetomgången för 6 avdelningar, skickade varje chef en förifylld Excel-mall med fjolårets utfall och höll genomgångsmöten, så att varje budget godkändes före styrelsens deadline.",
+          "rough": "Jag körde den årliga budgetrundan för 6 avdelningar. Jag skickade varje chef en förifylld Excel-mall med fjolårets utfall och hade genomgångsmöten, så alla budgetar godkändes före styrelsens deadline."
+        },
+        "ar": {
+          "polished": "أدرتُ دورة الموازنة السنوية لـ 6 أقسام، وأرسلتُ إلى كل مدير قالب Excel معبأً مسبقًا بالأرقام الفعلية للعام الماضي، وعقدتُ اجتماعات مراجعة، فاعتُمدت كل موازنة قبل الموعد النهائي لمجلس الإدارة.",
+          "rough": "أدرتُ دورة الموازنة السنوية لـ 6 أقسام. أرسلتُ لكل مدير قالب Excel معبأ مسبقًا بأرقام العام الماضي الفعلية وعقدتُ اجتماعات مراجعة، فكل الموازنات اعتُمدت قبل موعد مجلس الإدارة."
+        }
+      }
+    },
+    {
+      "id": "fin_budget.supported.2",
+      "archetype": "fin_budget",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I built a driver-based personnel cost model in Excel for 8 cost centres, linking headcount plans to salary costs, which shortened the budget round from 6 to 3 weeks.",
+          "rough": "I made a driver-based personnel cost model in Excel for 8 cost centres. It links headcount plans to salary costs. The budget round got shorter, from 6 to 3 weeks."
+        },
+        "fi": {
+          "polished": "Rakensin Exceliin ajuripohjaisen henkilöstökustannusmallin 8 kustannuspaikalle ja kytkin henkilöstösuunnitelmat palkkakustannuksiin, mikä lyhensi budjettikierrosta 6 viikosta 3 viikkoon.",
+          "rough": "Tein Exceliin ajuripohjaisen henkilöstökulumallin 8 kustannuspaikalle. Se yhdistää henkilöstösuunnitelmat palkkakuluihin. Budjettikierros lyheni, 6 viikosta 3 viikkoon."
+        },
+        "sv": {
+          "polished": "Jag byggde en drivarbaserad personalkostnadsmodell i Excel för 8 kostnadsställen som kopplar bemanningsplanerna till lönekostnaderna, vilket kortade budgetomgången från 6 till 3 veckor.",
+          "rough": "Jag gjorde en drivarbaserad personalkostnadsmodell i Excel för 8 kostnadsställen. Den kopplar bemanningsplaner till lönekostnader. Budgetrundan blev kortare, från 6 till 3 veckor."
+        },
+        "ar": {
+          "polished": "بنيتُ في Excel نموذجًا لتكاليف الموظفين قائمًا على محرّكات التكلفة لـ 8 مراكز تكلفة، يربط خطط التوظيف بتكاليف الرواتب، مما قلّص دورة الموازنة من 6 إلى 3 أسابيع.",
+          "rough": "صنعتُ نموذج تكاليف موظفين قائمًا على محرّكات التكلفة في Excel لـ 8 مراكز تكلفة. يربط خطط عدد الموظفين بتكاليف الرواتب. دورة الموازنة صارت أقصر، من 6 إلى 3 أسابيع."
+        }
+      }
+    },
+    {
+      "id": "fin_budget.partial.1",
+      "archetype": "fin_budget",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The controlling team introduced a shared budget calendar with fixed review dates for all 5 departments, and the yearly budget was finished on schedule.",
+          "rough": "The controlling team made a shared budget calendar with fixed review dates for all 5 departments. The yearly budget was ready on time."
+        },
+        "fi": {
+          "polished": "Controller-tiimi otti käyttöön yhteisen budjettikalenterin, jossa oli kiinteät läpikäyntipäivät kaikille 5 osastolle, ja vuosibudjetti valmistui aikataulussa.",
+          "rough": "Controller-tiimi teki yhteisen budjettikalenterin, jossa kiinteät läpikäyntipäivät kaikille 5 osastolle. Vuosibudjetti oli valmis ajallaan."
+        },
+        "sv": {
+          "polished": "Controllerteamet införde en gemensam budgetkalender med fasta genomgångsdatum för alla 5 avdelningar, och årsbudgeten blev klar enligt tidsplanen.",
+          "rough": "Controllerteamet gjorde en gemensam budgetkalender med fasta genomgångsdatum för alla 5 avdelningar. Årsbudgeten var klar i tid."
+        },
+        "ar": {
+          "polished": "اعتمد فريق الرقابة المالية تقويمًا مشتركًا للموازنة بمواعيد مراجعة ثابتة لجميع الأقسام الـ 5، فأُنجزت الموازنة السنوية في موعدها.",
+          "rough": "فريق الرقابة المالية أعدّ تقويم موازنة مشتركًا بمواعيد مراجعة ثابتة لكل الأقسام الـ 5. الموازنة السنوية كانت جاهزة في الوقت."
+        }
+      }
+    },
+    {
+      "id": "fin_budget.partial.2",
+      "archetype": "fin_budget",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I supported department heads with their budget figures during the planning season.",
+          "rough": "I helped department heads with their budget numbers in the planning time."
+        },
+        "fi": {
+          "polished": "Tuin osastopäälliköitä heidän budjettilukujensa kanssa suunnittelukauden aikana.",
+          "rough": "Autoin osastopäälliköitä niiden budjettinumeroissa suunnitteluaikana."
+        },
+        "sv": {
+          "polished": "Jag stöttade avdelningscheferna med deras budgetsiffror under planeringsperioden.",
+          "rough": "Jag hjälpte avdelningscheferna med budgetsiffrorna under planeringstiden."
+        },
+        "ar": {
+          "polished": "دعمتُ رؤساء الأقسام فيما يخص أرقام موازناتهم خلال موسم التخطيط.",
+          "rough": "ساعدتُ رؤساء الأقسام في أرقام الموازنة وقت التخطيط."
+        }
+      }
+    },
+    {
+      "id": "fin_budget.none.1",
+      "archetype": "fin_budget",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "To me, budgeting is a strategic journey, and I love empowering stakeholders with meaningful financial insight.",
+          "rough": "For me budgeting is strategic journey. I love to empower stakeholders with meaningful financial insight."
+        },
+        "fi": {
+          "polished": "Minulle budjetointi on strateginen matka, ja rakastan voimaannuttaa sidosryhmiä merkityksellisellä taloudellisella näkemyksellä.",
+          "rough": "Mulle budjetointi on strateginen matka. Tykkään voimaannuttaa sidosryhmiä merkityksellisellä talousnäkemyksellä."
+        },
+        "sv": {
+          "polished": "För mig är budgetering en strategisk resa, och jag älskar att stärka intressenterna med meningsfulla finansiella insikter.",
+          "rough": "För mig budgetering är en strategisk resa. Jag älskar att stärka intressenter med meningsfulla finansiella insikter."
+        },
+        "ar": {
+          "polished": "الموازنة بالنسبة لي رحلة استراتيجية، وأحب تمكين أصحاب المصلحة برؤى مالية ذات معنى.",
+          "rough": "الموازنة عندي رحلة استراتيجية. أحب أن أمكّن أصحاب المصلحة برؤى مالية مفيدة."
+        }
+      }
+    },
+    {
+      "id": "fin_budget.none.2",
+      "archetype": "fin_budget",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the office recycling system and labelled the waste bins on every floor.",
+          "rough": "I organised the recycling in the office and put labels on the waste bins on every floor."
+        },
+        "fi": {
+          "polished": "Järjestin toimiston kierrätyksen ja merkitsin jäteastiat jokaisessa kerroksessa.",
+          "rough": "Järjestin kierrätyksen toimistolle ja laitoin tarrat roskiksiin joka kerroksessa."
+        },
+        "sv": {
+          "polished": "Jag organiserade kontorets återvinningssystem och märkte upp avfallskärlen på varje våning.",
+          "rough": "Jag ordnade återvinningen på kontoret och satte etiketter på soptunnorna på varje våning."
+        },
+        "ar": {
+          "polished": "نظّمتُ نظام إعادة التدوير في المكتب ووضعتُ ملصقات على حاويات النفايات في كل طابق.",
+          "rough": "رتّبتُ إعادة التدوير في المكتب ووضعتُ ملصقات على سلال القمامة في كل طابق."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "fin.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would agree on deadlines with the other departments at the start instead of chasing them at the last minute. Clear expectations up front would have reduced stress for everyone.",
+          "rough": "I would agree deadlines with other departments in the start, not chase them in the last minute. Clear expectations from beginning would make less stress for everybody."
+        },
+        "fi": {
+          "polished": "Sopisin aikatauluista muiden osastojen kanssa heti alussa sen sijaan, että jahtaisin niitä viime hetkellä. Selkeät odotukset alusta asti olisivat vähentäneet kaikkien stressiä.",
+          "rough": "Sopisin deadlinet muiden osastojen kanssa alussa, enkä jahtaisi niitä viime hetkellä. Selvät odotukset alusta asti tekis vähemmän stressiä kaikille."
+        },
+        "sv": {
+          "polished": "Jag skulle komma överens om tidsfrister med de övriga avdelningarna i början i stället för att jaga dem i sista minuten. Tydliga förväntningar från start hade minskat stressen för alla.",
+          "rough": "Jag skulle komma överens om deadlines med övriga avdelningar i början, inte jaga dem i sista minuten. Tydliga förväntningar från början skulle ge mindre stress för alla."
+        },
+        "ar": {
+          "polished": "كنتُ سأتفق على المواعيد النهائية مع الأقسام الأخرى منذ البداية بدلًا من ملاحقتها في اللحظة الأخيرة. فالتوقعات الواضحة من البداية كانت ستخفف الضغط عن الجميع.",
+          "rough": "كنتُ سأتفق على المواعيد مع الأقسام الأخرى في البداية، لا أن ألاحقهم في آخر لحظة. توقعات واضحة من البداية كانت ستجعل الضغط أقل على الجميع."
+        }
+      }
+    },
+    {
+      "id": "fin.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would document each new routine as soon as it is agreed, so colleagues can cover for me during holidays. I relied too much on explaining things in person.",
+          "rough": "I would write down every new routine when it is agreed, so colleagues can cover me in holidays. I explained too much just face to face."
+        },
+        "fi": {
+          "polished": "Dokumentoisin jokaisen uuden rutiinin heti, kun siitä on sovittu, jotta kollegat voivat tuurata minua lomien aikana. Luotin liikaa siihen, että selitän asiat kasvokkain.",
+          "rough": "Kirjoittaisin jokaisen uuden rutiinin ylös kun siitä sovitaan, niin kollegat voi tuurata mua lomilla. Selitin liikaa vaan kasvotusten."
+        },
+        "sv": {
+          "polished": "Jag skulle dokumentera varje ny rutin så snart den är överenskommen, så att kolleger kan täcka upp för mig under semestrar. Jag förlitade mig för mycket på att förklara saker muntligt.",
+          "rough": "Jag skulle skriva ner varje ny rutin när den är överenskommen, så kolleger kan ersätta mig på semestern. Jag förklarade för mycket bara ansikte mot ansikte."
+        },
+        "ar": {
+          "polished": "كنتُ سأوثّق كل إجراء جديد فور الاتفاق عليه، حتى يتمكن الزملاء من تغطية غيابي خلال الإجازات. فقد اعتمدتُ كثيرًا على شرح الأمور شفهيًا.",
+          "rough": "كنتُ سأكتب كل إجراء جديد عندما نتفق عليه، حتى يغطي الزملاء مكاني في الإجازات. شرحتُ كثيرًا وجهًا لوجه فقط."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "fin.next.1",
+      "text": {
+        "en": {
+          "polished": "I want to join a finance team where I can help make routine accounting faster and more reliable, and learn from experienced controllers.",
+          "rough": "I want to work in a finance team where I can help make routine accounting faster and more reliable. I want to learn from experienced controllers."
+        },
+        "fi": {
+          "polished": "Haluan liittyä taloustiimiin, jossa voin auttaa tekemään rutiinikirjanpidosta nopeampaa ja luotettavampaa, ja oppia kokeneilta controllereilta.",
+          "rough": "Haluan tehdä töitä taloustiimissä, jossa voin auttaa tekemään rutiinikirjanpidosta nopeampaa ja luotettavampaa. Haluan oppia kokeneilta controllereilta."
+        },
+        "sv": {
+          "polished": "Jag vill ansluta mig till ett ekonomiteam där jag kan bidra till att göra rutinmässig redovisning snabbare och mer tillförlitlig, och lära mig av erfarna controllers.",
+          "rough": "Jag vill jobba i ett ekonomiteam där jag kan hjälpa till att göra rutinbokföringen snabbare och mer pålitlig. Jag vill lära mig av erfarna controllers."
+        },
+        "ar": {
+          "polished": "أريد الانضمام إلى فريق مالي أستطيع فيه المساعدة على جعل المحاسبة الروتينية أسرع وأكثر موثوقية، وأن أتعلم من مراقبين ماليين ذوي خبرة.",
+          "rough": "أريد أن أعمل في فريق مالي أساعد فيه أن تكون المحاسبة الروتينية أسرع وأكثر موثوقية. أريد أن أتعلم من مراقبين ماليين عندهم خبرة."
+        }
+      }
+    },
+    {
+      "id": "fin.next.2",
+      "text": {
+        "en": {
+          "polished": "Next, I would like to move towards financial planning and reporting, ideally in a role that combines working with numbers and working closely with different departments.",
+          "rough": "Next I want to go towards financial planning and reporting. Best is a role where I work with numbers and also close with different departments."
+        },
+        "fi": {
+          "polished": "Seuraavaksi haluaisin suuntautua taloussuunnitteluun ja raportointiin, mieluiten tehtävässä, jossa yhdistyvät numerotyö ja tiivis yhteistyö eri osastojen kanssa.",
+          "rough": "Seuraavaksi haluan mennä kohti taloussuunnittelua ja raportointia. Paras olisi tehtävä, jossa teen numeroiden kanssa ja myös tiiviisti eri osastojen kanssa."
+        },
+        "sv": {
+          "polished": "Härnäst vill jag gå vidare mot ekonomisk planering och rapportering, helst i en roll som kombinerar arbete med siffror och nära samarbete med olika avdelningar.",
+          "rough": "Nästa steg vill jag gå mot ekonomisk planering och rapportering. Bäst är en roll där jag jobbar med siffror och också nära med olika avdelningar."
+        },
+        "ar": {
+          "polished": "أودّ بعد ذلك أن أتجه نحو التخطيط المالي وإعداد التقارير، ويفضَّل في دور يجمع بين العمل بالأرقام والتعاون الوثيق مع أقسام مختلفة.",
+          "rough": "الخطوة القادمة أريد أن أتجه إلى التخطيط المالي والتقارير. الأفضل دور أعمل فيه بالأرقام وأيضًا قريبًا من أقسام مختلفة."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "Our last accounting hire knew the theory well but struggled with how many manual steps our month-end close still had, and it took months before the close felt under control.",
+    "A previous analyst built a clever reconciliation spreadsheet that nobody else understood, so it broke down as soon as they went on holiday.",
+    "A former controller found it hard to push department managers for budget input, and the yearly budget slipped by several weeks."
+  ]
+}

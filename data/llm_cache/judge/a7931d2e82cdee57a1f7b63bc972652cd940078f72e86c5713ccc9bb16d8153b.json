@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-002/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence of cleaning or merging customer data."
+   },
+   {
+    "key": "N-002/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or reporting work described."
+   },
+   {
+    "key": "N-002/o3",
+    "label": "partial",
+    "unit_id": "J-024~rough.u2",
+    "quote": "Vi gjorde en efterfrågeprognos med Prophet",
+    "reason": "Forecast beat estimates, but team effort, no personal role stated."
+   },
+   {
+    "key": "N-017/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or reporting work described."
+   },
+   {
+    "key": "N-017/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence of cleaning or merging customer data."
+   },
+   {
+    "key": "N-017/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reconciliation or automation work described."
+   },
+   {
+    "key": "N-024/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence of cleaning or merging customer data."
+   },
+   {
+    "key": "N-024/o2",
+    "label": "partial",
+    "unit_id": "J-024~rough.u2",
+    "quote": "Vi gjorde en efterfrågeprognos med Prophet",
+    "reason": "Forecast beat estimates, but team effort, no personal role stated."
+   },
+   {
+    "key": "N-024/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support work described."
+   }
+  ]
+ }
+}

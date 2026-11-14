@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I handled bank reconciliations for some time and looked for ways to make them quicker.",
+    "skills": [
+     "S01"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I took part in the month-end close and prepared several of the closing reports.",
+    "skills": [
+     "S36",
+     "S01"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I supported department heads with their budget figures during the planning season.",
+    "skills": [
+     "S24"
+    ]
+   }
+  ]
+ }
+}

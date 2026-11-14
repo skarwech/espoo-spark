@@ -1,0 +1,24 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I organised the summer event for the plant staff. I arranged programme, food and bus transport for 80 people.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I made the internal newsletter of the plant. I interviewed colleagues and I published 10 issues per year.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

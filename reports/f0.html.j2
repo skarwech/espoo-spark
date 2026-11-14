@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark F0 Proof</title>
+<style>
+{{ css|safe }}</style>
+</head>
+<body>
+<main>
+<h1>Spark · Step 1 · F0 synthetic data and golden set</h1>
+<p class="sub">Every number on this page is computed from <span class="mono">data/out/</span>, <span class="mono">eval/</span> and the pytest JUnit file. Seed 42. Thresholds pre-registered in <span class="mono">docs/method.md</span>.</p>
+
+<h2>Gates</h2>
+<div class="card scroll">
+<table>
+<tr><th>Check</th><th>Kind</th><th>Status</th><th>Detail</th></tr>
+{% for n, s, d in hard %}<tr><td>{{ n }}</td><td class="kind">hard</td><td><span class="pill {{ s }}">{{ s|upper }}</span></td><td class="muted">{{ d }}</td></tr>{% endfor %}
+{% for n, s, d in targets %}<tr><td>{{ n }}</td><td class="kind">target</td><td><span class="pill {{ s }}">{{ 'PROXY · HUMAN PENDING' if s == 'proxy' else s|upper }}</span></td><td class="muted">{{ d }}</td></tr>{% endfor %}
+</table>
+</div>
+
+<h2>The synthetic world</h2>
+<div class="grid">
+  <div class="card"><div class="stat">{{ n_companies }}</div><div class="stat-l">companies, {{ n_needs }} confirmed Need Cards</div></div>
+  <div class="card"><div class="stat">{{ n_people }}</div><div class="stat-l">jobseekers ({{ style.polished }} polished, {{ style.rough }} rough; {{ generic }} generic, {{ thin }} thin planted)</div></div>
+  <div class="card"><div class="stat">{{ n_unique }}</div><div class="stat-l">unique bank texts from {{ n_claims }} claims × 4 languages × 2 styles; {{ n_used }} claims used. Effective sample size is bounded by this, not by 150.</div></div>
+  <div class="card"><div class="stat">{{ pc.capacity_total }}</div><div class="stat-l">company slots (need ≥ 300 for 2 per jobseeker)</div></div>
+</div>
+<div class="grid" style="margin-top:16px">
+  {% for title, rows in [("Story language", lang_bars), ("Background", bg_bars), ("Planted claim level", level_bars), ("Planted tier, all 3,750 pairs (with related rule)", tier_bars), ("Planted tier, direct evidence only", tier_bars_direct), ("Education path (descriptive)", edu_bars), ("Career gap (descriptive)", gap_bars)] %}
+  <div class="card"><h3>{{ title }}</h3>
+    {% for b in rows %}<div class="bar-row" title="{{ b.label }}: {{ b.n }} ({{ '%.1f'|format(b.pct) }}%)"><span>{{ b.label|replace("_", " ") }}</span>
+      <span class="bar-track"><span class="bar" style="width:{{ b.w * 0.7 }}%"></span><span class="bar-v">{{ b.n }} · {{ '%.0f'|format(b.pct) }}%</span></span></div>{% endfor %}
+  </div>{% endfor %}
+</div>
+<div class="grid" style="margin-top:16px">
+  <div class="card"><div class="stat">{{ pc.nordsense_strong_or_worth }} / {{ pc_direct.nordsense_strong_or_worth }}</div><div class="stat-l">jobseekers Strong or Worth for NordSense (with related rule / direct only; before ESCO adjacency). Pool Preview rounds this.</div></div>
+  <div class="card"><div class="stat">{{ pc.jobseekers_with_ge2_viable }} / {{ pc_direct.jobseekers_with_ge2_viable }}</div><div class="stat-l">jobseekers with ≥ 2 viable pairs (with related / direct only). {{ pc_direct.jobseekers_with_0_viable }} have none: they rely on self-add or the organiser.</div></div>
+  <div class="card"><div class="stat">{{ 25 - pc_direct.needs_without_stretch|length }}/25</div><div class="stat-l">needs with at least one Stretch pair, direct evidence only (for the 20% reservation)</div></div>
+</div>
+
+<h2>Hero cases · NordSense (N-014)</h2>
+<div class="card">
+  <h3>Need Card (confirmed)</h3>
+  <table>
+    {% for o in nordsense.outcomes %}<tr><td class="mono">{{ o.id }}</td><td>{{ o.text }}</td><td class="kind">{{ o.priority }}</td></tr>{% endfor %}
+  </table>
+  <p class="muted">{{ nordsense.constraints.onsite }} · start {{ nordsense.constraints.start }} · languages: {% for l in nordsense.languages %}{{ l.lang }}{{ ' (required)' if l.required else ' (optional)' }} {% endfor %}· reality note: “{{ nordsense.company_reality_notes[0] }}”</p>
+</div>
+<div class="grid3" style="margin-top:16px">
+{% for h in heroes %}
+  <div class="card story">
+    <h3>{{ h.cid }} · {{ h.attrs.background|replace('_', ' ') }} · {{ h.attrs.style }}</h3>
+    <p class="muted">Planted tier: <strong>{{ h.tier }}</strong> ·
+      {% for oid, l in h.labels.items() %}{{ oid }} <span class="lbl {{ l }}">{{ l }}</span>{{ ', ' if not loop.last }}{% endfor %}</p>
+    {% for box in ['problem', 'did', 'differently', 'next'] %}<p dir="auto"><span class="box">{{ box }}</span>{{ h.story[box] }}</p>{% endfor %}
+  </div>
+{% endfor %}
+</div>
+<p class="muted">Elena is <em>Stretch</em> here; the spec expects <em>Worth a conversation</em> via an ESCO adjacency path for o1. Checked in the frozen ESCO cache: <em>plan transport operations</em> and <em>perform data analysis</em> share exactly one occupation (<em>ship planner</em>: essential vs optional), no broader skill and no direct skill link. The path exists but is weak; whether it counts as adjacency is a step-2 design decision, not yet verified.</p>
+
+<h2>One claim, four languages, two styles (twin source)</h2>
+<div class="card scroll">
+  <p class="muted mono">{{ twin.id }} · level {{ twin.level }} — same facts, numbers and grammatical person in all 8 versions</p>
+  <table>
+    <tr><th>Lang</th><th>Polished</th><th>Rough</th></tr>
+    {% for l in ['en', 'fi', 'sv', 'ar'] %}<tr><td class="mono">{{ l }}</td><td dir="auto">{{ twin.text[l].polished }}</td><td dir="auto">{{ twin.text[l].rough }}</td></tr>{% endfor %}
+  </table>
+</div>
+
+<h2>Golden set</h2>
+{% if rows %}
+<div class="grid">
+  <div class="card"><div class="stat">{{ rows|map(attribute='pair_id')|unique|list|length }} pairs</div><div class="stat-l">{{ rows|length }} outcome labels</div></div>
+  <div class="card"><div class="stat">κ = {{ '%.2f'|format(kappa) }}</div><div class="stat-l">Cohen's kappa, annotator A vs B (AI proxies, blinded)</div></div>
+  <div class="card"><div class="stat">{{ agree_planted|pct }}</div><div class="stat-l">consensus agrees with the planted label (reported, not forced)</div></div>
+  <div class="card"><h3>Pairs per tier</h3><table>{% for t in tier_names %}<tr><td>{{ tier_names[t] }}</td><td class="mono">planted {{ golden_tiers.planted[t] }}</td><td class="mono">consensus {{ golden_tiers.consensus[t] }}</td></tr>{% endfor %}</table><p class="muted" style="margin:6px 0 0">Selected on planted tiers; consensus tiers are the F7 reference. Thin strata make the F7 tier target underpowered.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>Finding</h3><p class="muted" style="margin:0">{{ diffs|length }} of {{ rows|length }} consensus labels differ from the planted label; {{ diffs_related }} of them come from the planting rule “a supported claim gives <em>partial</em> to a related archetype”. The golden set holds {{ related_n }} labels planted by that rule; annotators kept {{ related_kept }} (Elena's ERP integration → edge pipelines) and read the rest as skill adjacency, not evidence. Step 2 consequence: cross-archetype relatedness belongs to the engine's <em>adjacent</em> path; the consensus, not the planted label, is the reference for F6/F7 targets. κ = 1.00 between two AI proxies with one rubric is not evidence of human label reliability.</p></div>
+<div class="card scroll" style="margin-top:16px">
+<table>
+  <tr><th>Pair</th><th>Need</th><th>Cand.</th><th>Out.</th><th>Prio</th><th>Lang</th><th>Style</th><th>Planted tier</th><th>Planted</th><th>A</th><th>B</th><th>Consensus</th></tr>
+  {% for r in rows %}<tr class="{{ 'disagree' if r.adjudicated == 'True' }} {{ 'diffplanted' if r.consensus != r.planted }}" {% if r.note %}title="Adjudicated: {{ r.note }}"{% endif %}>
+    <td class="mono">{{ r.pair_id }}</td><td class="mono">{{ r.need_id }}</td><td class="mono">{{ r.candidate_id }}</td><td class="mono">{{ r.outcome_id }}</td>
+    <td class="kind">{{ r.priority }}</td><td class="mono">{{ r.story_lang }}</td><td class="kind">{{ r.style }}</td><td class="kind">{{ tier_names[r.planted_tier] }}</td>
+    {% for k in ['planted', 'annotator_a', 'annotator_b', 'consensus'] %}<td><span class="lbl {{ r[k] }}">{{ r[k] }}</span></td>{% endfor %}</tr>{% endfor %}
+</table>
+<p class="muted">Highlighted rows: consensus differs from the planted label (or A and B disagreed; hover for the adjudicator's reason).</p>
+</div>
+{% else %}<div class="card"><span class="pill pending">PENDING</span> Annotation has not run yet.</div>{% endif %}
+
+<h2>Realism sample (20 random stories)</h2>
+<div class="card">
+{% if r_items %}
+{% for it in r_items %}
+<details><summary><span class="mono">{{ it.story_id }}</span> · {{ it.story.lang }} ·
+  {% for who in ['annotator_a', 'annotator_b'] %}{% set r = r_ratings.get(it.story_id, {}).get(who) %}{% if r %}<span class="pill {{ 'pass' if r.plausible else 'fail' }}">{{ who[-1]|upper }}: {{ 'plausible' if r.plausible else 'implausible' }}</span> {% endif %}{% endfor %}</summary>
+  <div class="story" style="padding:8px 0 12px">{% for box in ['problem', 'did', 'differently', 'next'] %}<p dir="auto"><span class="box">{{ box }}</span>{{ it.story[box] }}</p>{% endfor %}
+  {% for who in ['annotator_a', 'annotator_b'] %}{% set r = r_ratings.get(it.story_id, {}).get(who) %}{% if r %}<p class="muted">{{ who }}: {{ r.reason }}</p>{% endif %}{% endfor %}</div>
+</details>
+{% endfor %}
+{% else %}<span class="pill pending">PENDING</span>{% endif %}
+</div>
+
+<h2>pytest -m hard</h2>
+<div class="card">
+{% for t in tests %}<div class="mono"><span class="pill {{ 'pass' if t.ok else 'fail' }}">{{ 'PASS' if t.ok else 'FAIL' }}</span> {{ t.name }}</div>{% else %}<span class="pill pending">NOT RUN</span>{% endfor %}
+</div>
+</main>
+</body>
+</html>

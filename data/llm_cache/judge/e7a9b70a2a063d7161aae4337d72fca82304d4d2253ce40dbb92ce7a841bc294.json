@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-004/o1",
+    "label": "partial",
+    "unit_id": "J-096~polished.u2",
+    "quote": "أُعدّت في نظام ERP قواعد لمطابقة البنك مع دفتر الأستاذ، مما رفع نسبة المطابقة التلقائية من 40% إلى 85% خلال 3 أشهر",
+    "reason": "Relevant reconciliation automation with a result, but passive voice; no personal role."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about running budget processes."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or self-service reporting work described."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "partial",
+    "unit_id": "J-096~polished.u1",
+    "quote": "فتقلّص إقفال نهاية الشهر من 10 إلى 7 أيام عمل",
+    "reason": "Month-end close shortened, but credited to the team, not the writer."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No evidence about departmental budgeting."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "partial",
+    "unit_id": "J-096~polished.u2",
+    "quote": "أُعدّت في نظام ERP قواعد لمطابقة البنك مع دفتر الأستاذ، مما رفع نسبة المطابقة التلقائية من 40% إلى 85% خلال 3 أشهر",
+    "reason": "Reconciliation automation with a result, but passive voice; no personal role."
+   }
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I handled about 25 support cases a day in Zendesk and created macros for the most common requests, cutting my median resolution time from 48 hours to 6 hours.",
+    "skills": [
+     "S38",
+     "S17"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I managed parking permits and access cards for new employees at our office.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "We ran a cross-selling campaign for existing business customers with HubSpot email sequences, and revenue from those accounts grew by 16% that year.",
+    "skills": [
+     "S23"
+    ]
+   }
+  ]
+ }
+}

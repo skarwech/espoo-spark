@@ -1,0 +1,469 @@
+{
+ "annotator": "kimi",
+ "model": "kimi-k3-1-pro",
+ "labels": [
+  {
+   "pair_id": "G01",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "No customer-data cleaning or merging action; only generic data-quality enthusiasm."
+  },
+  {
+   "pair_id": "G01",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Team replaced PDF reports with Power BI, but personal role is unstated."
+  },
+  {
+   "pair_id": "G01",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally improved seasonal ARIMA in R, beating sales estimates in backtesting."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "Three-system cleaning used OpenRefine, but described passively without a personal role."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Helped with reporting dashboard, but gave no concrete contribution or result."
+  },
+  {
+   "pair_id": "G02",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Personally added variables to R ARIMA; backtest beat sales estimates ten weeks."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "Dashboard help and meetings lack a concrete personal contribution or result."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o2",
+   "label": "supported",
+   "reason": "Used Python fuzzy matching to merge three sources, remove duplicates, deliver register."
+  },
+  {
+   "pair_id": "G03",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No bank or ledger reconciliation work is described."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Office-move labelling is unrelated to growing business-customer sales."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No knowledge-base or support-request reduction work is described."
+  },
+  {
+   "pair_id": "G04",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer-case handling or resolution-time evidence is provided."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Budget calendar and reconciliation script do not address self-service reporting dashboards."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No customer-data cleaning or three-system merging is described."
+  },
+  {
+   "pair_id": "G05",
+   "outcome_id": "o3",
+   "label": "supported",
+   "reason": "Wrote nightly Python comparison of bank and ledger, replacing manual reconciliation."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Device monitoring and alert tuning do not address partner API delivery."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No service migration or cloud work is described."
+  },
+  {
+   "pair_id": "G06",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer-support case handling or resolution-time evidence is described."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Added Pydantic validation, error codes and documentation, sharply reducing partner errors."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Cloud migration met timeline and downtime goals, but described only as 'we'."
+  },
+  {
+   "pair_id": "G07",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer-support case resolution work is described."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "No alert analysis or false-alarm reduction action is described."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Team built sensor pipelines, but personal role and loss-rate results are absent."
+  },
+  {
+   "pair_id": "G08",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No Finnish-language technical support work is described."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Compared alerts with work orders and tuned thresholds, cutting false alerts substantially."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Helped maintain field data flow, but gave no concrete method or loss-rate result."
+  },
+  {
+   "pair_id": "G09",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Firmware deployment work does not address warehouse-to-ERP order integration."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "MQTT migration achieved under 0.8% loss, but personal role is unstated."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Gave feedback on unnecessary alerts, without a concrete method or reduction result."
+  },
+  {
+   "pair_id": "G10",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer-data cleaning or merging work is described."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Forecasting, dashboards and customer matching do not address sensor-fault alerts."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No edge-device pipeline or lost-reading reliability work is described."
+  },
+  {
+   "pair_id": "G11",
+   "outcome_id": "o3",
+   "label": "partial",
+   "reason": "Cross-system customer-data integration is relevant, but not real-time warehouse-to-ERP order flows."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Route planning and ERP integration do not address sensor-fault alerts."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Nightly ERP integration is related data movement, but not edge-device pipeline reliability."
+  },
+  {
+   "pair_id": "G12",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No Finnish-language customer support work is described."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Recycling coordination and generic data enthusiasm provide no firmware-update evidence."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No edge-device pipeline or missing-reading work is described."
+  },
+  {
+   "pair_id": "G13",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No packing automation or PLC work is described."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Rebuilt pump alert rules, cutting daily false alerts from forty to twelve."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o2",
+   "label": "supported",
+   "reason": "Added gateway buffering and Python loss checks, reducing lost readings below 1%."
+  },
+  {
+   "pair_id": "G14",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "Learning Finnish is only an aspiration; no customer-support action is described."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Office administration and generic relationship claims do not evidence sales growth."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No knowledge-base improvement or repeated-ticket reduction work is described."
+  },
+  {
+   "pair_id": "G15",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer-case handling or resolution-time evidence is described."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o1",
+   "label": "partial",
+   "reason": "Supported partner-interface work and meetings, without a concrete contribution or result."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "Cloud-native beliefs and regression testing provide no cloud-migration action."
+  },
+  {
+   "pair_id": "G16",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No warehouse-to-ERP or real-time order integration work is described."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Built versioned FastAPI partner API with OpenAPI; four partners integrated compatibly."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "API and test automation work does not describe a cloud migration."
+  },
+  {
+   "pair_id": "G17",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No warehouse-to-ERP or real-time order integration work is described."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Recycling and office moves provide no remote firmware-update evidence."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No edge-device data pipeline or lost-reading work is described."
+  },
+  {
+   "pair_id": "G18",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No packing automation or PLC control work is described."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o1",
+   "label": "none",
+   "reason": "Recycling and office moves provide no edge-pipeline reliability evidence."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o2",
+   "label": "none",
+   "reason": "No sensor-alert analysis or false-alarm reduction action is described."
+  },
+  {
+   "pair_id": "G19",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No customer-data cleaning or three-system merging work is described."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o1",
+   "label": "supported",
+   "reason": "Automated Playwright end-to-end tests with release blocking; weekly releases avoided rollbacks."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o2",
+   "label": "partial",
+   "reason": "Participated in cloud migration through small tasks, without concrete methods or results."
+  },
+  {
+   "pair_id": "G20",
+   "outcome_id": "o3",
+   "label": "none",
+   "reason": "No edge-device data pipeline or lost-reading work is described."
+  }
+ ],
+ "missing": [],
+ "realism": [
+  {
+   "story_id": "R01",
+   "plausible": true,
+   "reason": "Office coordination followed by a move toward customer success or sales is a believable early-career transition."
+  },
+  {
+   "story_id": "R02",
+   "plausible": true,
+   "reason": "A junior developer could contribute to testing and partner meetings while citing improvements achieved by the wider team."
+  },
+  {
+   "story_id": "R03",
+   "plausible": true,
+   "reason": "An office administrator could realistically pursue bookkeeping and financial reporting while learning from experienced finance colleagues."
+  },
+  {
+   "story_id": "R04",
+   "plausible": true,
+   "reason": "Quality and maintenance improvements fit an experienced production technician; hybrid preferences do not undermine the underlying experience."
+  },
+  {
+   "story_id": "R05",
+   "plausible": true,
+   "reason": "The cloud migration and partner API work are technically coherent for an Arabic-speaking developer living in Finland."
+  },
+  {
+   "story_id": "R06",
+   "plausible": true,
+   "reason": "Combining intranet duties with customer-data cleaning is plausible for an administrative worker developing analytics skills."
+  },
+  {
+   "story_id": "R07",
+   "plausible": true,
+   "reason": "A finance assistant could plausibly automate bank reconciliation with Python while supporting departmental budgeting routines."
+  },
+  {
+   "story_id": "R08",
+   "plausible": true,
+   "reason": "Preventive maintenance and inspection improvements are credible factory experience for someone seeking production development work."
+  },
+  {
+   "story_id": "R09",
+   "plausible": true,
+   "reason": "SAP barcode integration and route redesign are credible responsibilities for a logistics worker with systems experience."
+  },
+  {
+   "story_id": "R10",
+   "plausible": true,
+   "reason": "Event support, purchasing assistance, and ERP testing form a believable administrative background before moving into logistics."
+  },
+  {
+   "story_id": "R11",
+   "plausible": true,
+   "reason": "A student IoT project and broad data-career goals are plausible despite limited concrete personal detail."
+  },
+  {
+   "story_id": "R12",
+   "plausible": true,
+   "reason": "A developer could handle cloud and API work while also helping organise a company celebration."
+  },
+  {
+   "story_id": "R13",
+   "plausible": true,
+   "reason": "An experienced home-care worker could train colleagues and coordinate visits before pursuing remote customer-service work."
+  },
+  {
+   "story_id": "R14",
+   "plausible": true,
+   "reason": "Warehouse integration and GPS route analysis credibly support a technical logistics worker’s move toward analytics."
+  },
+  {
+   "story_id": "R15",
+   "plausible": true,
+   "reason": "Python analysis of device alarms fits an early-career IoT worker interested in embedded and connected systems."
+  },
+  {
+   "story_id": "R16",
+   "plausible": true,
+   "reason": "Budget support and monthly-close participation are credible experience for a finance assistant seeking planning work."
+  },
+  {
+   "story_id": "R17",
+   "plausible": true,
+   "reason": "Intranet administration and Python deduplication can coexist in a generalist administrative role leading toward data work."
+  },
+  {
+   "story_id": "R18",
+   "plausible": true,
+   "reason": "The generic self-description is weak evidence, but an AI-assisted customer-service applicant could plausibly submit it."
+  },
+  {
+   "story_id": "R19",
+   "plausible": true,
+   "reason": "Office administration and an unrelated data-focused ambition are believable for an early-career applicant exploring options."
+  },
+  {
+   "story_id": "R20",
+   "plausible": true,
+   "reason": "A finance worker with scripting skills could automate reconciliation and seek broader financial planning responsibilities."
+  }
+ ]
+}

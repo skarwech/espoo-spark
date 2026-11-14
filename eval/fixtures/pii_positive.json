@@ -1,0 +1,106 @@
+{
+  "_purpose": "Positive control for the PII scanner. Every entry must be caught. Values are invented; the ID has a valid checksum but belongs to no one known.",
+  "planted": [
+    {
+      "kind": "email",
+      "text": "You can reach me at matti.virtanen1987@gmail.com any time."
+    },
+    {
+      "kind": "phone",
+      "text": "Call me on +358 40 123 4567 after five."
+    },
+    {
+      "kind": "hetu",
+      "text": "My henkilötunnus is 131052-308T if you need it."
+    },
+    {
+      "kind": "phone",
+      "text": "Soita 0401234567 iltaisin."
+    },
+    {
+      "kind": "phone",
+      "text": "Toimisto: 09 123 4567"
+    },
+    {
+      "kind": "phone",
+      "text": "From abroad call 00358 40 123 4567."
+    },
+    {
+      "kind": "iban",
+      "text": "Pay the deposit to FI21 1234 5600 0007 85 please."
+    }
+  ],
+  "identity_planted": [
+    {
+      "name": "Aino Korhonen",
+      "nationality": "Finnish",
+      "school": "Aalto University",
+      "text": "I studied at Aalto and then joined a utility."
+    },
+    {
+      "name": "Sanna Laine",
+      "nationality": "Finnish",
+      "school": "Omnia vocational college",
+      "text": "Opiskelin Omniassa sähköasentajaksi."
+    },
+    {
+      "name": "Karim Haddad",
+      "nationality": "Syrian",
+      "school": "Damascus University",
+      "text": "As a Syrian engineer I rebuilt the alert rules."
+    },
+    {
+      "name": "Linh Nguyen",
+      "nationality": "Vietnamese",
+      "school": "Vietnam National University",
+      "text": "Linh here: I cleaned the customer data."
+    },
+    {
+      "name": "Omar Haddad",
+      "nationality": "Syrian",
+      "school": "Damascus University",
+      "text": "Hän on syyrialainen insinööri."
+    },
+    {
+      "name": "Ali Hassan",
+      "nationality": "Iraqi",
+      "school": "University of Baghdad",
+      "text": "Han är irakisk och arbetar med logistik."
+    },
+    {
+      "name": "Ali Hassan",
+      "nationality": "Iraqi",
+      "school": "University of Baghdad",
+      "text": "عمل سابقاً بالعراق في مجال الشبكات."
+    },
+    {
+      "name": "Olena Kovalenko",
+      "nationality": "Ukrainian",
+      "school": "Kyiv Polytechnic Institute",
+      "text": "Työskentelin Kovalenkon tiimissä."
+    },
+    {
+      "name": "Karim Haddad",
+      "nationality": "Syrian",
+      "school": "Damascus University",
+      "text": "Karimin projekti valmistui ajallaan."
+    },
+    {
+      "name": "Elena Petrova",
+      "nationality": "Bulgarian",
+      "school": "Sofia University",
+      "text": "Olen bulgarialainen."
+    }
+  ],
+  "clean": [
+    {
+      "text": "False alerts dropped from about 40 to 12 a day, checked by comparing weekly logs."
+    },
+    {
+      "text": "I re-planned routes for 120 trucks and cut 2026-11 overtime by 15%."
+    },
+    {
+      "text": "Contact: aino.k.017@example.test"
+    }
+  ]
+}

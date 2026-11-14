@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "We built REST API for partners with OAuth login and public changelog. Partner calls had 99.8% uptime in 6 months.",
+    "skills": [
+     "S46",
+     "S18"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "The team made nightly regression runs with Cypress. Release rollbacks went down from 9 to 3 per quarter.",
+    "skills": [
+     "S12",
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I migrated 8 on-premise services to Azure with Terraform. Traffic I moved slowly with blue-green deployments. Whole move took 5 months and customers had no downtime.",
+    "skills": [
+     "S06",
+     "S18"
+    ]
+   }
+  ]
+ }
+}

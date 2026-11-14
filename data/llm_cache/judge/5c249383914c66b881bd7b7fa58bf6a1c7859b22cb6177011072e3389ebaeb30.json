@@ -1,0 +1,115 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-003/o1",
+    "label": "supported",
+    "unit_id": "J-032.u3",
+    "quote": "وحدّدتُ عتبات منفصلة لكل طراز من المستشعرات، فانخفضت الإنذارات الكاذبة الأسبوعية من 140 إلى 45",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "supported",
+    "unit_id": "J-032.u4",
+    "quote": "أعددتُ صور برامج ثابتة موقّعة وخطة نشر على مراحل",
+    "reason": "Prepared signed firmware and staged rollout; 400 sensors updated remotely."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case work described."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "supported",
+    "unit_id": "J-032.u4",
+    "quote": "أعددتُ صور برامج ثابتة موقّعة وخطة نشر على مراحل",
+    "reason": "Prepared signed firmware and staged rollout; 400 sensors updated remotely."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "partial",
+    "unit_id": "J-032.u1",
+    "quote": "ساعدتُ في الحفاظ على استمرار تدفق البيانات من الأجهزة الميدانية",
+    "reason": "Helped maintain field data flow; no method or loss-rate result."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work mentioned."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "supported",
+    "unit_id": "J-032.u3",
+    "quote": "وحدّدتُ عتبات منفصلة لكل طراز من المستشعرات، فانخفضت الإنذارات الكاذبة الأسبوعية من 140 إلى 45",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "partial",
+    "unit_id": "J-032.u1",
+    "quote": "ساعدتُ في الحفاظ على استمرار تدفق البيانات من الأجهزة الميدانية",
+    "reason": "Helped maintain field data flow; no method or loss-rate result."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support or Finnish language evidence."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "partial",
+    "unit_id": "J-032.u1",
+    "quote": "ساعدتُ في الحفاظ على استمرار تدفق البيانات من الأجهزة الميدانية",
+    "reason": "Helped maintain field data flow; no method or loss-rate result."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "supported",
+    "unit_id": "J-032.u3",
+    "quote": "وحدّدتُ عتبات منفصلة لكل طراز من المستشعرات، فانخفضت الإنذارات الكاذبة الأسبوعية من 140 إلى 45",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer data cleaning or merging described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "supported",
+    "unit_id": "J-032.u3",
+    "quote": "وحدّدتُ عتبات منفصلة لكل طراز من المستشعرات، فانخفضت الإنذارات الكاذبة الأسبوعية من 140 إلى 45",
+    "reason": "Personally set per-model thresholds; false alerts dropped from 140 to 45 weekly."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "partial",
+    "unit_id": "J-032.u1",
+    "quote": "ساعدتُ في الحفاظ على استمرار تدفق البيانات من الأجهزة الميدانية",
+    "reason": "Helped maintain field data flow; no method or loss-rate result."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work mentioned."
+   }
+  ]
+ }
+}

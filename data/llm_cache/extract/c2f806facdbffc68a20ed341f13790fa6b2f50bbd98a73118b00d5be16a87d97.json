@@ -1,0 +1,36 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Vi byggde bootloader som kan ta emot ny firmware via LoRaWAN. Vår fjärruppdatering nådde 150 fältsensorer, ingen behövde åka ut till platserna.",
+    "skills": [
+     "S43",
+     "S11",
+     "S13",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Vi gick igenom larmhistorik i Grafana och grupperade sensorer med liknande brus. Vi satte nya gränsvärden för varje grupp. Så falska sensorfellarm minskade 40 %.",
+    "skills": [
+     "S31",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Sensordataflödet byttes från nattliga filöverföringar till MQTT med meddelandekö. Förlorade mätvärden sjönk under 0,8 %.",
+    "skills": [
+     "S18",
+     "S21"
+    ]
+   }
+  ]
+ }
+}

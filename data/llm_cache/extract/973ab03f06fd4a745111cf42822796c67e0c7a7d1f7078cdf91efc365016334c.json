@@ -1,0 +1,24 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Hoidin toimistollamme uusien työntekijöiden pysäköintiluvat ja kulkukortit.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Koordinoin toimistomme muuton ja merkitsin kaikki laatikot ja kaapelit 30 työntekijälle.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

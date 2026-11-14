@@ -1,0 +1,34 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag designade och byggde REST API med Python och FastAPI för partnerintegrationer. Endpoints är versionerade och det finns OpenAPI-specifikation. På 3 månader anslöt 4 partner, inga brytande ändringar.",
+    "skills": [
+     "S39",
+     "S18",
+     "S46"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag startade bokcirkel på lunchen för 12 kollegor. Jag valde boken varje månad.",
+    "skills": [
+     "unmapped"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag automatiserade 15 mest använda användarflöden som end-to-end-tester i Playwright. Jag fixade så att misslyckat test stoppar releasen. Veckoreleaser har gått 5 månader nu utan återställning.",
+    "skills": [
+     "S12",
+     "S14"
+    ]
+   }
+  ]
+ }
+}

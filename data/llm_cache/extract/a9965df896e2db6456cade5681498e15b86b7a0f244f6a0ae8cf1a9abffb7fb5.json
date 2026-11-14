@@ -1,0 +1,28 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag hanterade cirka 25 supportärenden om dagen i Zendesk och skapade makron för de vanligaste förfrågningarna, vilket kortade medianen för min lösningstid från 48 timmar till 6 timmar.",
+    "skills": [
+     "S38",
+     "S17"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag analyserade köphistoriken för 60 befintliga kunder i Power BI, identifierade dem som bara använde baspaketet och kontaktade dem med ett uppgraderingserbjudande; 12 av dem uppgraderade.",
+    "skills": [
+     "S04",
+     "S05",
+     "S23",
+     "S31"
+    ]
+   }
+  ]
+ }
+}

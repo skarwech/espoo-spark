@@ -1,0 +1,17 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Järjestin työpaikan kesäjuhlat. Varasin paikan ja hoidin ruoat 40 vieraalle.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

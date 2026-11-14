@@ -1,0 +1,29 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Kävimme hälytyshistorian läpi Grafanassa, ryhmittelimme anturit samankaltaisen kohinatason mukaan ja asetimme jokaiselle ryhmälle uudet raja-arvot. Tämän ansiosta väärät anturivikahälytykset vähenivät 40 %.",
+    "skills": [
+     "S30",
+     "S31",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Rakensimme käynnistyslataimen, joka pystyi vastaanottamaan uuden laiteohjelmiston LoRaWANin kautta, ja etäpäivityksemme saavutti 150 kenttäanturia ilman, että kenenkään tarvitsi käydä kohteissa.",
+    "skills": [
+     "S11",
+     "S43",
+     "S13",
+     "S21"
+    ]
+   }
+  ]
+ }
+}

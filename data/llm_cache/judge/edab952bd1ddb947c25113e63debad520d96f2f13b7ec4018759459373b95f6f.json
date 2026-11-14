@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-010/o1",
+    "label": "partial",
+    "unit_id": "J-071.u2",
+    "quote": "trained 14 colleagues to document visits in a mobile tablet app",
+    "reason": "Digital documentation adoption, but not clearly a migration to an electronic record system."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "supported",
+    "unit_id": "J-071.u1",
+    "quote": "I organised my daily route for 11 home care clients",
+    "reason": "Personally managed 11 home care clients with no missed visits over six months."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "partial",
+    "unit_id": "J-071.u2",
+    "quote": "trained 14 colleagues to document visits in a mobile tablet app",
+    "reason": "Digital documentation adoption, but not clearly a migration to an electronic record system."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "supported",
+    "unit_id": "J-071.u3",
+    "quote": "I led a weekly 15-minute meeting where both units aligned their care plans and shared staff",
+    "reason": "Personally coordinated two units' care plans and staff, tracking shifts in Excel."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "supported",
+    "unit_id": "J-071.u1",
+    "quote": "I organised my daily route for 11 home care clients",
+    "reason": "Personally managed 11 home care clients with no missed visits over six months."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "partial",
+    "unit_id": "J-071.u2",
+    "quote": "trained 14 colleagues to document visits in a mobile tablet app",
+    "reason": "Digital documentation adoption, but not clearly a migration to an electronic record system."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "supported",
+    "unit_id": "J-071.u1",
+    "quote": "I organised my daily route for 11 home care clients",
+    "reason": "Personally managed 11 home care clients with no missed visits over six months."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "supported",
+    "unit_id": "J-071.u3",
+    "quote": "I led a weekly 15-minute meeting where both units aligned their care plans and shared staff",
+    "reason": "Personally coordinated two units' care plans and staff, tracking shifts in Excel."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1543 @@
+[
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-001",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [
+   "hero",
+   "generic"
+  ],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-002",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [
+   "hero"
+  ],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-003",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "log",
+  "planted_tags": [
+   "hero"
+  ],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-004",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "fin"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-005",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-006",
+  "career_gap": true,
+  "education": "self_taught",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-007",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-008",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "care",
+  "planted_tags": [
+   "thin"
+  ],
+  "style": "rough",
+  "target_domain": "care"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-009",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-010",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "log"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-011",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-012",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-013",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-014",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-015",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-016",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-017",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-018",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-019",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-020",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "cs"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-021",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-022",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-023",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-024",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-025",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-026",
+  "career_gap": true,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-027",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-028",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-029",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-030",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-031",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-032",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-033",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-034",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-035",
+  "career_gap": true,
+  "education": "self_taught",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-036",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-037",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "care",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "rough",
+  "target_domain": "care"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-038",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "care",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "polished",
+  "target_domain": "care"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-039",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "cs",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "rough",
+  "target_domain": "cs"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-040",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-041",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-042",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "fin"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-043",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-044",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-045",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "fin"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-046",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-047",
+  "career_gap": true,
+  "education": "self_taught",
+  "origin_domain": "sw",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-048",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-049",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "log"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-050",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-051",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-052",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-053",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "cs",
+  "planted_tags": [
+   "thin"
+  ],
+  "style": "rough",
+  "target_domain": "cs"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-054",
+  "career_gap": true,
+  "education": "self_taught",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-055",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-056",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-057",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-058",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-059",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-060",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-061",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "log"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-062",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-063",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-064",
+  "career_gap": true,
+  "education": "vocational",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-065",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "care",
+  "planted_tags": [
+   "thin"
+  ],
+  "style": "rough",
+  "target_domain": "care"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-066",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-067",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-068",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-069",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "cs"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-070",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "care"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-071",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "care"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-072",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-073",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "log"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-074",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-075",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-076",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "fin"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-077",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-078",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-079",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-080",
+  "career_gap": true,
+  "education": "vocational",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-081",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-082",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-083",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-084",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-085",
+  "career_gap": true,
+  "education": "vocational",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-086",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "log",
+  "planted_tags": [
+   "thin"
+  ],
+  "style": "rough",
+  "target_domain": "log"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-087",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-088",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-089",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "mfg",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "rough",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-090",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "care"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-091",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-092",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "fin",
+  "planted_tags": [
+   "thin"
+  ],
+  "style": "rough",
+  "target_domain": "fin"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-093",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-094",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-095",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-096",
+  "career_gap": true,
+  "education": "vocational",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "fin"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-097",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "mfg",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-098",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "cs",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-099",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-100",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-101",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "log"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-102",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-103",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-104",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-105",
+  "career_gap": true,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-106",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "fin"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-107",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-108",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-109",
+  "career_gap": false,
+  "education": "self_taught",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "care"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-110",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-111",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-112",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-113",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "log"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-114",
+  "career_gap": true,
+  "education": "vocational",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-115",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-116",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "care"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-117",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-118",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-119",
+  "career_gap": true,
+  "education": "self_taught",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "fin"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-120",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-121",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "cs"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-122",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "log"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-123",
+  "career_gap": true,
+  "education": "self_taught",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "care"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-124",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "fin"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-125",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "fin"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-126",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-127",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "fin",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "polished",
+  "target_domain": "fin"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-128",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-129",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-130",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-131",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "care"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-132",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "log"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-133",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "sw",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-134",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-135",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-136",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "iot",
+  "planted_tags": [
+   "generic"
+  ],
+  "style": "rough",
+  "target_domain": "iot"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-137",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "mfg"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-138",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "cs",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "cs"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-139",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-140",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "data"
+ },
+ {
+  "background": "vocational",
+  "candidate_id": "J-141",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "returner",
+  "candidate_id": "J-142",
+  "career_gap": true,
+  "education": "applied_sciences",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "iot"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-143",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-144",
+  "career_gap": false,
+  "education": "applied_sciences",
+  "origin_domain": "fin",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "fin"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-145",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "log"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-146",
+  "career_gap": true,
+  "education": "university",
+  "origin_domain": "care",
+  "planted_tags": [],
+  "style": "polished",
+  "target_domain": "care"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-147",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "iot",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "sw"
+ },
+ {
+  "background": "local_graduate",
+  "candidate_id": "J-148",
+  "career_gap": false,
+  "education": "university",
+  "origin_domain": "log",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "log"
+ },
+ {
+  "background": "career_changer",
+  "candidate_id": "J-149",
+  "career_gap": false,
+  "education": "vocational",
+  "origin_domain": "mfg",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ },
+ {
+  "background": "international_professional",
+  "candidate_id": "J-150",
+  "career_gap": true,
+  "education": "self_taught",
+  "origin_domain": "data",
+  "planted_tags": [],
+  "style": "rough",
+  "target_domain": "data"
+ }
+]

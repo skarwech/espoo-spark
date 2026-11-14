@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-001/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Support work only; nothing about growing sales to existing customers."
+   },
+   {
+    "key": "N-001/o2",
+    "label": "partial",
+    "unit_id": "J-081~sv.u1",
+    "quote": "skapade makron för de vanligaste förfrågningarna",
+    "reason": "Macros speed agent replies but do not show fewer repeat tickets."
+   },
+   {
+    "key": "N-001/o3",
+    "label": "supported",
+    "unit_id": "J-081~sv.u1",
+    "quote": "kortade medianen för min lösningstid från 48 timmar till 6 timmar",
+    "reason": "Personally cut median resolution time to 6 hours using Zendesk macros."
+   },
+   {
+    "key": "N-005/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Support work only; nothing about B2B revenue growth."
+   },
+   {
+    "key": "N-005/o2",
+    "label": "supported",
+    "unit_id": "J-081~sv.u1",
+    "quote": "kortade medianen för min lösningstid från 48 timmar till 6 timmar",
+    "reason": "Personally cut median resolution time to 6 hours using Zendesk macros."
+   },
+   {
+    "key": "N-005/o3",
+    "label": "partial",
+    "unit_id": "J-081~sv.u1",
+    "quote": "skapade makron för de vanligaste förfrågningarna",
+    "reason": "Macros speed agent replies but do not show fewer repeat tickets."
+   },
+   {
+    "key": "N-020/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Support work only; nothing about growing sales to existing customers."
+   },
+   {
+    "key": "N-020/o2",
+    "label": "partial",
+    "unit_id": "J-081~sv.u1",
+    "quote": "skapade makron för de vanligaste förfrågningarna",
+    "reason": "Macros speed agent replies but do not show fewer repeat tickets."
+   },
+   {
+    "key": "N-020/o3",
+    "label": "supported",
+    "unit_id": "J-081~sv.u1",
+    "quote": "kortade medianen för min lösningstid från 48 timmar till 6 timmar",
+    "reason": "Personally cut median resolution time to 6 hours using Zendesk macros."
+   }
+  ]
+ }
+}

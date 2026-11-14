@@ -1,0 +1,36 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Jag gjorde OTA-firmwareuppdateringar i C för FreeRTOS-sensornoder. Jag använde A/B-partitioner så misslyckad uppdatering rullas tillbaka automatiskt.",
+    "skills": [
+     "S43",
+     "S11",
+     "S13"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag rullade ut det till 300 fältsensorer på 5 månader.",
+    "skills": [
+     "S43",
+     "S21"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Jag lade till lokal buffer i edge-gatewayerna, så mätvärden sparas när nätet är nere och skickas igen med MQTT efteråt. Förlorade mätvärden gick från 4 % till 0,3 %.",
+    "skills": [
+     "S21",
+     "S18",
+     "S30"
+    ]
+   }
+  ]
+ }
+}

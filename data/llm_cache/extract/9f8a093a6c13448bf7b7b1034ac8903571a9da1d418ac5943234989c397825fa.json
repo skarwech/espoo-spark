@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Siirsin 8 paikallista palvelua Azureen Terraformilla ja ohjasin liikenteen vähitellen blue-green-julkaisujen avulla. Koko siirto kesti 5 kuukautta, eikä asiakkaille tullut katkoja.",
+    "skills": [
+     "S06"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Rakensimme kumppaneille REST API:n, jossa oli OAuth-kirjautuminen ja julkinen muutosloki, ja kumppaneiden API-kutsujen käytettävyys oli 99,8 % 6 kuukauden ajan.",
+    "skills": [
+     "S18",
+     "S46",
+     "S30"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Suunnittelin julisteet ja lounasmenun yrityksen vuosijuhlaan, johon osallistui 45 vierasta.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

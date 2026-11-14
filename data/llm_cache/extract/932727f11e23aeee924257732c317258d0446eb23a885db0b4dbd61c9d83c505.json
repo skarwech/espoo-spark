@@ -1,0 +1,27 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Rakensin REST-integraation varastonhallintajärjestelmän ja ERP:n välille, joten keräillyt ja lähetetyt määrät päivittyvät tilauksille 3 minuutissa yöajon sijaan.",
+    "skills": [
+     "S18",
+     "S28",
+     "S27"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Analysoin kuorma-autojen GPS-dataa Excelissä, havaitsin 4 aamureitin menevän päällekkäin ja suunnittelin ne uudelleen 3 reitiksi, mikä säästää noin 90 km ajoa päivässä.",
+    "skills": [
+     "S31",
+     "S35"
+    ]
+   }
+  ]
+ }
+}

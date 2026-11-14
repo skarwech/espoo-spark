@@ -1,0 +1,52 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-011/o1",
+    "label": "supported",
+    "unit_id": "J-018.u2",
+    "quote": "Katko lyheni 3 työpäivää.",
+    "reason": "Personally added pre-close invoice check; close shortened by three working days."
+   },
+   {
+    "key": "N-004/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No automation of bank or ledger reconciliation reports described."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No automation of bank or ledger reconciliation reports described."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "partial",
+    "unit_id": "J-018.u1",
+    "quote": "jossa joka tehtävällä on vastuuhenkilö ja aikaraja",
+    "reason": "Built a deadline calendar for the close, not for budgeting."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "partial",
+    "unit_id": "J-018.u1",
+    "quote": "jossa joka tehtävällä on vastuuhenkilö ja aikaraja",
+    "reason": "Built a deadline calendar for the close, not for budgeting."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or replacement of manual reports described."
+   }
+  ]
+ }
+}

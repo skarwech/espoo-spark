@@ -1,0 +1,535 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-001/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sales or account growth work described."
+   },
+   {
+    "key": "N-001/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No knowledge base or support ticket work."
+   },
+   {
+    "key": "N-001/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-002/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Sensor data pipeline, not customer data merging."
+   },
+   {
+    "key": "N-002/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or reporting work described."
+   },
+   {
+    "key": "N-002/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No forecasting work described."
+   },
+   {
+    "key": "N-003/o1",
+    "label": "supported",
+    "unit_id": "J-002.u1",
+    "quote": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day",
+    "reason": "Personally rebuilt alert rules; false alerts cut by over half."
+   },
+   {
+    "key": "N-003/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No firmware update work described."
+   },
+   {
+    "key": "N-003/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-004/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No financial reconciliation work."
+   },
+   {
+    "key": "N-004/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No budgeting work described."
+   },
+   {
+    "key": "N-004/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or reporting work described."
+   },
+   {
+    "key": "N-005/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sales or revenue work described."
+   },
+   {
+    "key": "N-005/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-005/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No knowledge base or support ticket work."
+   },
+   {
+    "key": "N-006/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No firmware update work described."
+   },
+   {
+    "key": "N-006/o2",
+    "label": "supported",
+    "unit_id": "J-002.u2",
+    "quote": "I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%",
+    "reason": "Personally reduced lost edge readings to under 1% with buffering."
+   },
+   {
+    "key": "N-006/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work."
+   },
+   {
+    "key": "N-007/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API work described."
+   },
+   {
+    "key": "N-007/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No regression testing work described."
+   },
+   {
+    "key": "N-007/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-008/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work."
+   },
+   {
+    "key": "N-008/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No production line downtime work described."
+   },
+   {
+    "key": "N-008/o3",
+    "label": "supported",
+    "unit_id": "J-002.u1",
+    "quote": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day",
+    "reason": "Personally rebuilt alert rules; false alerts cut by over half."
+   },
+   {
+    "key": "N-009/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API work described."
+   },
+   {
+    "key": "N-009/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-009/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-010/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No care documentation work."
+   },
+   {
+    "key": "N-010/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work described."
+   },
+   {
+    "key": "N-010/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-011/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No financial closing work described."
+   },
+   {
+    "key": "N-011/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No budgeting work described."
+   },
+   {
+    "key": "N-011/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No financial reconciliation work."
+   },
+   {
+    "key": "N-012/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work."
+   },
+   {
+    "key": "N-012/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No route planning work described."
+   },
+   {
+    "key": "N-012/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No inventory work described."
+   },
+   {
+    "key": "N-013/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API work described."
+   },
+   {
+    "key": "N-013/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-013/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work."
+   },
+   {
+    "key": "N-014/o1",
+    "label": "supported",
+    "unit_id": "J-002.u1",
+    "quote": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day",
+    "reason": "Personally rebuilt alert rules; false alerts cut by over half."
+   },
+   {
+    "key": "N-014/o2",
+    "label": "supported",
+    "unit_id": "J-002.u2",
+    "quote": "I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%",
+    "reason": "Personally reduced lost edge readings to under 1% with buffering."
+   },
+   {
+    "key": "N-014/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support or Finnish language mentioned."
+   },
+   {
+    "key": "N-015/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No production line downtime work described."
+   },
+   {
+    "key": "N-015/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No PLC or packing automation work."
+   },
+   {
+    "key": "N-015/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-016/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No regression testing work described."
+   },
+   {
+    "key": "N-016/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No API work described."
+   },
+   {
+    "key": "N-016/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-017/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No dashboard or reporting work described."
+   },
+   {
+    "key": "N-017/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Sensor data pipeline, not customer data merging."
+   },
+   {
+    "key": "N-017/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No financial reconciliation work."
+   },
+   {
+    "key": "N-018/o1",
+    "label": "supported",
+    "unit_id": "J-002.u2",
+    "quote": "I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%",
+    "reason": "Personally reduced lost edge readings to under 1% with buffering."
+   },
+   {
+    "key": "N-018/o2",
+    "label": "supported",
+    "unit_id": "J-002.u1",
+    "quote": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day",
+    "reason": "Personally rebuilt alert rules; false alerts cut by over half."
+   },
+   {
+    "key": "N-018/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Sensor data pipeline, not customer data merging."
+   },
+   {
+    "key": "N-019/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No care documentation work."
+   },
+   {
+    "key": "N-019/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No shift or care plan coordination."
+   },
+   {
+    "key": "N-019/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work described."
+   },
+   {
+    "key": "N-020/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No sales or account growth work described."
+   },
+   {
+    "key": "N-020/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No knowledge base or support ticket work."
+   },
+   {
+    "key": "N-020/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-021/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No route planning work described."
+   },
+   {
+    "key": "N-021/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work."
+   },
+   {
+    "key": "N-021/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No inventory work described."
+   },
+   {
+    "key": "N-022/o1",
+    "label": "supported",
+    "unit_id": "J-002.u1",
+    "quote": "I rebuilt the alert rules for pump sensors. False alerts dropped from about 40 to 12 a day",
+    "reason": "Personally rebuilt alert rules; false alerts cut by over half."
+   },
+   {
+    "key": "N-022/o2",
+    "label": "supported",
+    "unit_id": "J-002.u2",
+    "quote": "I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%",
+    "reason": "Personally reduced lost edge readings to under 1% with buffering."
+   },
+   {
+    "key": "N-022/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No warehouse or ERP integration work."
+   },
+   {
+    "key": "N-023/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No care documentation work."
+   },
+   {
+    "key": "N-023/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No home care work described."
+   },
+   {
+    "key": "N-023/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No shift or care plan coordination."
+   },
+   {
+    "key": "N-024/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Sensor data pipeline, not customer data merging."
+   },
+   {
+    "key": "N-024/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No forecasting work described."
+   },
+   {
+    "key": "N-024/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   },
+   {
+    "key": "N-025/o1",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No regression testing work described."
+   },
+   {
+    "key": "N-025/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No cloud migration work described."
+   },
+   {
+    "key": "N-025/o3",
+    "label": "supported",
+    "unit_id": "J-002.u2",
+    "quote": "I added buffering on the edge gateways and a daily Python script that counts missing readings, so lost data went from 5% to under 1%",
+    "reason": "Personally reduced lost edge readings to under 1% with buffering."
+   }
+  ]
+ }
+}

@@ -1,0 +1,556 @@
+{
+  "domain": "care",
+  "contexts": [
+    {
+      "id": "care.ctx.1",
+      "text": {
+        "en": {
+          "polished": "In a home care team, visit times kept slipping, care notes were still written on paper, and the roster changed almost daily, so clients sometimes waited and staff ended up working unplanned overtime.",
+          "rough": "In a home care team the visits were often late, care notes were still on paper and the shift list changed almost every day. Sometimes clients waited and staff had to do unplanned overtime."
+        },
+        "fi": {
+          "polished": "Kotihoidon tiimissä käyntiajat venyivät jatkuvasti, hoitokirjaukset tehtiin yhä paperille ja työvuorolista muuttui lähes päivittäin, joten asiakkaat joutuivat toisinaan odottamaan ja henkilöstö teki suunnittelemattomia ylitöitä.",
+          "rough": "Kotihoidon tiimissä käynnit oli usein myöhässä, hoitokirjaukset oli vielä paperilla ja työvuorolista muuttui melkein joka päivä. Asiakkaat joutui joskus odottamaan ja henkilökunta joutui tekemään suunnittelemattomia ylitöitä."
+        },
+        "sv": {
+          "polished": "I ett hemvårdsteam blev besöken ständigt försenade, vårdanteckningarna skrevs fortfarande på papper och arbetsturslistan ändrades nästan dagligen, så klienterna fick ibland vänta och personalen gjorde oplanerad övertid.",
+          "rough": "I ett hemvårdsteam var besöken ofta sena, vårdanteckningarna var ännu på papper och arbetslistan ändrades nästan varje dag. Ibland fick klienterna vänta och personalen fick göra oplanerad övertid."
+        },
+        "ar": {
+          "polished": "في فريق للرعاية المنزلية، كانت مواعيد الزيارات تتأخر باستمرار، وكانت ملاحظات الرعاية لا تزال تُكتب على الورق، وجدول المناوبات يتغير بشكل شبه يومي، فكان العملاء ينتظرون أحيانًا ويضطر الموظفون إلى عمل إضافي غير مخطط له.",
+          "rough": "في فريق رعاية منزلية كانت الزيارات تتأخر كثيرًا، وملاحظات الرعاية ما زالت على الورق، وجدول المناوبات يتغير كل يوم تقريبًا. العملاء ينتظرون أحيانًا والموظفون يعملون ساعات إضافية بدون تخطيط."
+        }
+      }
+    },
+    {
+      "id": "care.ctx.2",
+      "text": {
+        "en": {
+          "polished": "An elderly care service was under constant pressure: staff shortages, last-minute sick leave and care information scattered between paper folders and an electronic system made it hard to keep visits, care plans and shifts on track.",
+          "rough": "Elderly care service was under pressure all the time. Not enough staff, sick leaves at last minute, and care information was in paper folders and in electronic system. It was hard to keep visits, care plans and shifts in control."
+        },
+        "fi": {
+          "polished": "Vanhuspalveluissa oli jatkuva paine: henkilöstöpula, viime hetken sairauspoissaolot ja paperikansioiden ja sähköisen järjestelmän välillä hajallaan oleva hoitotieto vaikeuttivat käyntien, hoitosuunnitelmien ja työvuorojen pitämistä aikataulussa.",
+          "rough": "Vanhuspalveluissa oli koko ajan paineita. Henkilökuntaa oli liian vähän, sairauslomia tuli viime hetkellä ja hoitotiedot oli osittain paperikansioissa ja osittain sähköisessä järjestelmässä. Käyntejä, hoitosuunnitelmia ja vuoroja oli vaikea pitää hallinnassa."
+        },
+        "sv": {
+          "polished": "En äldreomsorgstjänst stod under ständig press: personalbrist, sjukfrånvaro i sista minuten och vårdinformation utspridd mellan pärmar och ett elektroniskt system gjorde det svårt att hålla besök, vårdplaner och arbetsturer på rätt spår.",
+          "rough": "En äldreomsorg var under press hela tiden. Det fanns för lite personal, sjukledigheter kom i sista minuten och vårdinformationen fanns både i pärmar och i ett elektroniskt system. Det var svårt att hålla besök, vårdplaner och skift under kontroll."
+        },
+        "ar": {
+          "polished": "كانت خدمة لرعاية كبار السن تحت ضغط مستمر: نقص في الموظفين، وإجازات مرضية في اللحظة الأخيرة، ومعلومات رعاية موزعة بين ملفات ورقية ونظام إلكتروني، مما صعّب الالتزام بالزيارات وخطط الرعاية والمناوبات.",
+          "rough": "خدمة رعاية كبار السن كانت تحت ضغط طول الوقت. الموظفون قليلون، والإجازات المرضية تأتي في آخر لحظة، ومعلومات الرعاية في ملفات ورقية وفي نظام إلكتروني. كان صعبًا ضبط الزيارات وخطط الرعاية والمناوبات."
+        }
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "care_patient.supported.1",
+      "archetype": "care_patient",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I organised my daily route for 11 home care clients and verified the medication dispenser at every visit; over 6 months, I missed no visits.",
+          "rough": "I planned my daily route for 11 home care clients and checked the medicine dispenser in every visit. In 6 months I didn't miss any visit."
+        },
+        "fi": {
+          "polished": "Suunnittelin päivittäisen reittini 11 kotihoidon asiakkaan luo ja tarkistin lääkeannostelijan jokaisella käynnillä; 6 kuukauden aikana en jättänyt käyntejä väliin.",
+          "rough": "Suunnittelin joka päivä mun reitin 11 kotihoidon asiakkaan luo ja tarkistin lääkeannostelijan joka käynnillä. En jättänyt 6 kuukaudessa käyntejä väliin."
+        },
+        "sv": {
+          "polished": "Jag organiserade min dagliga rutt till 11 hemvårdsklienter och kontrollerade läkemedelsdispensern vid varje besök; under 6 månader missade jag inga besök.",
+          "rough": "Jag planerade min rutt varje dag till 11 hemvårdsklienter och kollade läkemedelsdispensern vid varje besök. På 6 månader missade jag inte något besök."
+        },
+        "ar": {
+          "polished": "نظّمتُ مساري اليومي لزيارة 11 عميلًا في الرعاية المنزلية، وتحققتُ من موزّع الأدوية في كل زيارة؛ وخلال 6 أشهر لم أفوّت أي زيارة.",
+          "rough": "أنا خططت مساري اليومي إلى 11 عميل رعاية منزلية، وفحصت موزع الأدوية في كل زيارة. خلال 6 أشهر لم أفوّت أي زيارة."
+        }
+      }
+    },
+    {
+      "id": "care_patient.supported.2",
+      "archetype": "care_patient",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I introduced a visit checklist for the evening shift and reviewed it at every handover, which reduced missed evening visits from 5 a month to 0.",
+          "rough": "I made a visit checklist for evening shift and I went through it in every handover. Missed evening visits went from 5 per month to 0."
+        },
+        "fi": {
+          "polished": "Otin iltavuorossa käyttöön käyntien tarkistuslistan ja kävin sen läpi jokaisessa vuoronvaihdossa, mikä vähensi väliin jääneitä iltakäyntejä 5:stä kuukaudessa 0:aan.",
+          "rough": "Tein iltavuorolle käyntien tarkistuslistan ja kävin sen läpi joka vuoronvaihdossa. Väliin jääneet iltakäynnit väheni 5:stä kuussa 0:aan."
+        },
+        "sv": {
+          "polished": "Jag införde en checklista för besöken i kvällsskiftet och gick igenom den vid varje skiftbyte, vilket minskade missade kvällsbesök från 5 i månaden till 0.",
+          "rough": "Jag gjorde en checklista för kvällsskiftets besök och gick igenom den vid varje skiftbyte. Missade kvällsbesök gick från 5 per månad till 0."
+        },
+        "ar": {
+          "polished": "أدخلتُ قائمة تحقق للزيارات في المناوبة المسائية وراجعتُها عند كل تسليم للمناوبة، فانخفضت الزيارات المسائية الفائتة من 5 شهريًا إلى 0.",
+          "rough": "أنا جهّزت قائمة تحقق لزيارات المساء وراجعتها في كل تسليم مناوبة. الزيارات المسائية الفائتة نزلت من 5 في الشهر إلى 0."
+        }
+      }
+    },
+    {
+      "id": "care_patient.partial.1",
+      "archetype": "care_patient",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We covered daily visits for 10 home care clients using a shared route plan and medication checks, and the team had no missed visits in 6 months.",
+          "rough": "We did daily visits to 10 home care clients with shared route plan and medicine checks. Team had no missed visits in 6 months."
+        },
+        "fi": {
+          "polished": "Hoidimme päivittäiset käynnit 10 kotihoidon asiakkaalle yhteisen reittisuunnitelman ja lääketarkistusten avulla, eikä tiimiltä jäänyt 6 kuukaudessa käyntejä väliin.",
+          "rough": "Teimme päivittäiset käynnit 10 kotihoidon asiakkaalle yhteisellä reittisuunnitelmalla ja lääketarkistuksilla. Tiimiltä ei jäänyt käyntejä väliin 6 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Vi skötte de dagliga besöken hos 10 hemvårdsklienter med en gemensam ruttplan och läkemedelskontroller, och teamet missade inga besök på 6 månader.",
+          "rough": "Vi gjorde dagliga besök hos 10 hemvårdsklienter med gemensam ruttplan och läkemedelskoll. Teamet missade inga besök på 6 månader."
+        },
+        "ar": {
+          "polished": "غطّينا الزيارات اليومية لـ 10 عملاء في الرعاية المنزلية باستخدام خطة مسارات مشتركة وفحوصات للأدوية، ولم يفوّت الفريق أي زيارة خلال 6 أشهر.",
+          "rough": "قمنا بالزيارات اليومية لـ 10 عملاء رعاية منزلية بخطة مسارات مشتركة وفحص الأدوية. الفريق لم يفوّت أي زيارة في 6 أشهر."
+        }
+      }
+    },
+    {
+      "id": "care_patient.partial.2",
+      "archetype": "care_patient",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I contributed to home care visits and supported elderly clients with their daily needs.",
+          "rough": "I helped with home care visits and helped elderly clients in their daily things."
+        },
+        "fi": {
+          "polished": "Osallistuin kotihoidon käynteihin ja tuin ikääntyneitä asiakkaita heidän päivittäisissä tarpeissaan.",
+          "rough": "Autoin kotihoidon käynneillä ja autoin iäkkäitä asiakkaita arjen asioissa."
+        },
+        "sv": {
+          "polished": "Jag bidrog till hemvårdsbesöken och stödde äldre klienter i deras dagliga behov.",
+          "rough": "Jag hjälpte till med hemvårdsbesök och hjälpte äldre klienter med vardagliga saker."
+        },
+        "ar": {
+          "polished": "شاركتُ في زيارات الرعاية المنزلية ودعمتُ العملاء من كبار السن في احتياجاتهم اليومية.",
+          "rough": "أنا ساعدت في زيارات الرعاية المنزلية وساعدت العملاء كبار السن في أمورهم اليومية."
+        }
+      }
+    },
+    {
+      "id": "care_patient.none.1",
+      "archetype": "care_patient",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am deeply passionate about compassionate, person-centred care and believe every client deserves dignity and a meaningful everyday life.",
+          "rough": "I care a lot about kind, person-centred care. I think every client deserve dignity and meaningful everyday life."
+        },
+        "fi": {
+          "polished": "Myötätuntoinen, asiakaslähtöinen hoito on minulle sydämen asia, ja uskon, että jokainen asiakas ansaitsee arvokkaan ja merkityksellisen arjen.",
+          "rough": "Välitän tosi paljon lämpimästä ja asiakaslähtöisestä hoidosta. Musta jokainen asiakas ansaitsee arvokkaan ja merkityksellisen arjen."
+        },
+        "sv": {
+          "polished": "Jag brinner för medkänslig, personcentrerad vård och anser att varje klient förtjänar värdighet och en meningsfull vardag.",
+          "rough": "Jag bryr mig mycket om varm och personcentrerad vård. Jag tycker varje klient förtjänar värdighet och en meningsfull vardag."
+        },
+        "ar": {
+          "polished": "لديّ شغف عميق بالرعاية الرحيمة التي تتمحور حول الشخص، وأؤمن بأن كل عميل يستحق الكرامة وحياة يومية ذات معنى.",
+          "rough": "أهتم كثيرًا بالرعاية الإنسانية التي تركز على الشخص. أظن كل عميل يستحق الكرامة وحياة يومية لها معنى."
+        }
+      }
+    },
+    {
+      "id": "care_patient.none.2",
+      "archetype": "care_patient",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I organised the summer party for our workplace, including booking the venue and arranging catering for 40 guests.",
+          "rough": "I organised the summer party for our workplace. I booked the place and arranged food for 40 guests."
+        },
+        "fi": {
+          "polished": "Järjestin työpaikkamme kesäjuhlat: varasin juhlapaikan ja hoidin tarjoilun 40 vieraalle.",
+          "rough": "Järjestin työpaikan kesäjuhlat. Varasin paikan ja hoidin ruoat 40 vieraalle."
+        },
+        "sv": {
+          "polished": "Jag organiserade sommarfesten för vår arbetsplats, inklusive bokning av lokal och catering för 40 gäster.",
+          "rough": "Jag ordnade sommarfesten på vår arbetsplats. Jag bokade stället och fixade mat till 40 gäster."
+        },
+        "ar": {
+          "polished": "نظّمتُ حفل الصيف لمكان عملنا، بما في ذلك حجز المكان وترتيب الطعام لـ 40 ضيفًا.",
+          "rough": "أنا نظمت حفلة الصيف في مكان عملنا. حجزت المكان ورتبت الأكل لـ 40 ضيف."
+        }
+      }
+    },
+    {
+      "id": "care_records.supported.1",
+      "archetype": "care_records",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I transferred the paper care plans of 30 residents into the electronic record system within 8 weeks, using the structured nursing headings for every entry.",
+          "rough": "I moved paper care plans of 30 residents to the electronic record system in 8 weeks. I used the structured nursing headings in every entry."
+        },
+        "fi": {
+          "polished": "Siirsin 30 asukkaan paperiset hoitosuunnitelmat sähköiseen potilastietojärjestelmään 8 viikossa ja käytin jokaisessa merkinnässä rakenteisen hoitokertomuksen otsikoita.",
+          "rough": "Siirsin 30 asukkaan paperiset hoitosuunnitelmat sähköiseen potilastietojärjestelmään 8 viikossa. Käytin joka kirjauksessa rakenteisia hoitotyön otsikoita."
+        },
+        "sv": {
+          "polished": "Jag förde över de pappersbaserade vårdplanerna för 30 boende till det elektroniska patientdatasystemet inom 8 veckor och använde de strukturerade vårdrubrikerna i varje anteckning.",
+          "rough": "Jag flyttade vårdplanerna för 30 boende från papper till det elektroniska patientdatasystemet på 8 veckor. Jag använde strukturerade vårdrubriker i varje anteckning."
+        },
+        "ar": {
+          "polished": "نقلتُ خطط الرعاية الورقية لـ 30 مقيمًا إلى نظام السجلات الإلكترونية خلال 8 أسابيع، واستخدمتُ العناوين التمريضية المنظَّمة في كل إدخال.",
+          "rough": "أنا نقلت خطط الرعاية الورقية لـ 30 مقيم إلى نظام السجلات الإلكتروني في 8 أسابيع. واستخدمت العناوين التمريضية المنظمة في كل إدخال."
+        }
+      }
+    },
+    {
+      "id": "care_records.supported.2",
+      "archetype": "care_records",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I trained 14 colleagues to document visits in a mobile tablet app during the visit and reviewed their entries weekly; late entries dropped from 40% to 10%.",
+          "rough": "I trained 14 colleagues to write visit notes in mobile tablet app during the visit, and I checked their entries every week. Late entries went from 40% to 10%."
+        },
+        "fi": {
+          "polished": "Koulutin 14 kollegaa kirjaamaan käynnit tabletin mobiilisovellukseen jo käynnin aikana ja tarkistin heidän kirjauksensa viikoittain; myöhästyneet kirjaukset vähenivät 40 %:sta 10 %:iin.",
+          "rough": "Koulutin 14 kollegaa tekemään käyntikirjaukset tabletin mobiilisovellukseen käynnin aikana ja tarkistin niiden kirjaukset joka viikko. Myöhässä olevat kirjaukset meni 40 %:sta 10 %:iin."
+        },
+        "sv": {
+          "polished": "Jag utbildade 14 kolleger i att dokumentera besöken i en mobilapp på surfplattan under själva besöket och granskade deras anteckningar varje vecka; sena anteckningar minskade från 40 % till 10 %.",
+          "rough": "Jag lärde 14 kolleger att skriva besöksanteckningar i mobilappen på surfplattan under besöket, och jag kollade deras anteckningar varje vecka. Sena anteckningar gick från 40 % till 10 %."
+        },
+        "ar": {
+          "polished": "درّبتُ 14 زميلًا على توثيق الزيارات في تطبيق على الجهاز اللوحي أثناء الزيارة، وراجعتُ إدخالاتهم أسبوعيًا؛ وانخفضت الإدخالات المتأخرة من 40% إلى 10%.",
+          "rough": "أنا درّبت 14 زميل على كتابة ملاحظات الزيارة في تطبيق الجهاز اللوحي أثناء الزيارة، وراجعت إدخالاتهم كل أسبوع. الإدخالات المتأخرة نزلت من 40% إلى 10%."
+        }
+      }
+    },
+    {
+      "id": "care_records.partial.1",
+      "archetype": "care_records",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "The unit's documentation was moved from paper to the electronic record system in 10 weeks, with structured templates introduced for every type of entry.",
+          "rough": "The documentation of the unit was moved from paper to electronic record system in 10 weeks. Structured templates was taken in use for every entry type."
+        },
+        "fi": {
+          "polished": "Yksikön kirjaaminen siirrettiin paperilta sähköiseen potilastietojärjestelmään 10 viikossa, ja jokaiselle kirjaustyypille otettiin käyttöön rakenteiset mallipohjat.",
+          "rough": "Yksikön kirjaukset siirrettiin paperilta sähköiseen potilastietojärjestelmään 10 viikossa. Joka kirjaustyypille otettiin käyttöön rakenteiset pohjat."
+        },
+        "sv": {
+          "polished": "Enhetens dokumentation flyttades från papper till det elektroniska patientdatasystemet på 10 veckor, och strukturerade mallar infördes för varje typ av anteckning.",
+          "rough": "Enhetens dokumentation flyttades från papper till det elektroniska patientdatasystemet på 10 veckor. Strukturerade mallar togs i bruk för alla typer av anteckningar."
+        },
+        "ar": {
+          "polished": "نُقل توثيق الوحدة من الورق إلى نظام السجلات الإلكترونية خلال 10 أسابيع، واعتُمدت قوالب منظَّمة لكل نوع من الإدخالات.",
+          "rough": "توثيق الوحدة انتقل من الورق إلى نظام السجلات الإلكتروني في 10 أسابيع. وبدأ استخدام قوالب منظمة لكل نوع إدخال."
+        }
+      }
+    },
+    {
+      "id": "care_records.partial.2",
+      "archetype": "care_records",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I supported colleagues with the new electronic record system when it was introduced.",
+          "rough": "I helped colleagues with the new electronic record system when it came."
+        },
+        "fi": {
+          "polished": "Tuin kollegoita uuden sähköisen potilastietojärjestelmän käytössä sen käyttöönoton aikana.",
+          "rough": "Autoin työkavereita uuden sähköisen potilastietojärjestelmän kanssa kun se tuli."
+        },
+        "sv": {
+          "polished": "Jag stödde kolleger med det nya elektroniska patientdatasystemet när det infördes.",
+          "rough": "Jag hjälpte kolleger med det nya elektroniska patientdatasystemet när det kom."
+        },
+        "ar": {
+          "polished": "دعمتُ زملائي في استخدام نظام السجلات الإلكترونية الجديد عند إدخاله.",
+          "rough": "أنا ساعدت زملائي في نظام السجلات الإلكتروني الجديد لمّا بدأ."
+        }
+      }
+    },
+    {
+      "id": "care_records.none.1",
+      "archetype": "care_records",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am enthusiastic about digital health and firmly believe that modern technology can make care more human and meaningful for everyone.",
+          "rough": "I am excited about digital health. I believe modern technology can make care more human and meaningful for everyone."
+        },
+        "fi": {
+          "polished": "Olen innostunut digitaalisesta terveydenhuollosta ja uskon vahvasti, että moderni teknologia voi tehdä hoidosta inhimillisempää ja merkityksellisempää kaikille.",
+          "rough": "Digitaalinen terveys innostaa mua. Uskon, että moderni teknologia voi tehdä hoidosta inhimillisempää ja merkityksellisempää kaikille."
+        },
+        "sv": {
+          "polished": "Jag är entusiastisk över digital hälsa och tror starkt på att modern teknik kan göra vården mer mänsklig och meningsfull för alla.",
+          "rough": "Jag tycker digital hälsa är spännande. Jag tror modern teknik kan göra vården mer mänsklig och meningsfull för alla."
+        },
+        "ar": {
+          "polished": "لديّ حماس كبير للصحة الرقمية، وأؤمن بشدة بأن التكنولوجيا الحديثة قادرة على جعل الرعاية أكثر إنسانية ومعنى للجميع.",
+          "rough": "الصحة الرقمية تحمّسني. أعتقد أن التكنولوجيا الحديثة يمكن أن تجعل الرعاية أكثر إنسانية ومعنى للجميع."
+        }
+      }
+    },
+    {
+      "id": "care_records.none.2",
+      "archetype": "care_records",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I managed the ordering of cleaning supplies for our unit and reorganised the storage room so items were easier to find.",
+          "rough": "I ordered the cleaning supplies for our unit and I rearranged the storage room so things are easier to find."
+        },
+        "fi": {
+          "polished": "Vastasin yksikkömme siivoustarvikkeiden tilaamisesta ja järjestin varaston uudelleen, jotta tavarat löytyivät helpommin.",
+          "rough": "Tilasin yksikön siivoustarvikkeet ja järjestin varaston uusiksi, että tavarat löytyy helpommin."
+        },
+        "sv": {
+          "polished": "Jag ansvarade för beställningen av städmaterial till vår enhet och organiserade om förrådet så att saker var lättare att hitta.",
+          "rough": "Jag beställde städgrejer till vår enhet och ordnade om förrådet så att saker är lättare att hitta."
+        },
+        "ar": {
+          "polished": "تولّيتُ طلب مستلزمات التنظيف لوحدتنا وأعدتُ ترتيب المخزن ليسهل العثور على الأغراض.",
+          "rough": "أنا طلبت مواد التنظيف لوحدتنا ورتبت المخزن من جديد حتى يكون إيجاد الأغراض أسهل."
+        }
+      }
+    },
+    {
+      "id": "care_coordination.supported.1",
+      "archetype": "care_coordination",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I built the 6-week shift roster for both units in shared planning software and balanced the weekend shifts, and overtime hours fell by 35% over the next 3 months.",
+          "rough": "I made the 6-week shift list for both units in the shared planning software and balanced the weekend shifts. Overtime hours went down 35% in the next 3 months."
+        },
+        "fi": {
+          "polished": "Laadin molempien yksiköiden 6 viikon työvuorolistan yhteisessä suunnitteluohjelmassa ja tasasin viikonloppuvuorot, ja ylityötunnit vähenivät 35 % seuraavien 3 kuukauden aikana.",
+          "rough": "Tein molempien yksiköiden 6 viikon työvuorolistan yhteiseen suunnitteluohjelmaan ja tasasin viikonloppuvuorot. Ylityötunnit väheni 35 % seuraavan 3 kuukauden aikana."
+        },
+        "sv": {
+          "polished": "Jag byggde upp båda enheternas arbetsturslista för 6 veckor i ett gemensamt planeringsprogram och jämnade ut helgturerna, och övertidstimmarna minskade med 35 % under de följande 3 månaderna.",
+          "rough": "Jag gjorde arbetslistan för 6 veckor för båda enheterna i det gemensamma planeringsprogrammet och fördelade helgskiften jämnt. Övertidstimmarna minskade 35 % under de nästa 3 månaderna."
+        },
+        "ar": {
+          "polished": "أعددتُ جدول المناوبات لمدة 6 أسابيع لكلتا الوحدتين في برنامج تخطيط مشترك، ووازنتُ مناوبات نهاية الأسبوع، وانخفضت ساعات العمل الإضافي بنسبة 35% خلال الأشهر الـ 3 التالية.",
+          "rough": "أنا جهزت جدول المناوبات لـ 6 أسابيع للوحدتين في برنامج التخطيط المشترك ووزعت مناوبات نهاية الأسبوع بالتساوي. ساعات العمل الإضافي نزلت 35% في 3 أشهر بعدها."
+        }
+      }
+    },
+    {
+      "id": "care_coordination.supported.2",
+      "archetype": "care_coordination",
+      "level": "supported",
+      "text": {
+        "en": {
+          "polished": "I led a weekly 15-minute meeting where both units aligned their care plans and shared staff, and I tracked open shifts in a shared Excel sheet.",
+          "rough": "I led a weekly 15-minute meeting where both units agreed the care plans and shared staff. I followed open shifts in a shared Excel sheet."
+        },
+        "fi": {
+          "polished": "Vedin viikoittaisen 15 minuutin palaverin, jossa molemmat yksiköt sovittivat yhteen hoitosuunnitelmansa ja jakoivat henkilöstöä, ja seurasin avoimia vuoroja jaetussa Excel-taulukossa.",
+          "rough": "Vedin joka viikko 15 minuutin palaverin, jossa molemmat yksiköt sopi hoitosuunnitelmista ja jakoi henkilökuntaa. Seurasin avoimia vuoroja yhteisessä Excel-taulukossa."
+        },
+        "sv": {
+          "polished": "Jag ledde ett veckomöte på 15 minuter där båda enheterna samordnade sina vårdplaner och delade personal, och jag följde upp lediga skift i ett delat Excelark.",
+          "rough": "Jag höll ett möte på 15 minuter varje vecka där båda enheterna kom överens om vårdplanerna och delade personal. Jag följde lediga skift i ett gemensamt Excelark."
+        },
+        "ar": {
+          "polished": "أدرتُ اجتماعًا أسبوعيًا مدته 15 دقيقة تنسّق فيه الوحدتان خطط الرعاية وتتقاسمان الموظفين، وتابعتُ المناوبات الشاغرة في جدول Excel مشترك.",
+          "rough": "أنا أدرت اجتماع كل أسبوع لمدة 15 دقيقة، فيه الوحدتين تتفقان على خطط الرعاية وتتقاسمان الموظفين. وتابعت المناوبات الشاغرة في جدول Excel مشترك."
+        }
+      }
+    },
+    {
+      "id": "care_coordination.partial.1",
+      "archetype": "care_coordination",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "We planned the shifts of both units together and set up a shared substitute pool, which ended the overtime peaks within 3 months.",
+          "rough": "We planned shifts of both units together and made a shared pool of substitutes. Overtime peaks ended in 3 months."
+        },
+        "fi": {
+          "polished": "Suunnittelimme molempien yksiköiden työvuorot yhdessä ja perustimme yhteisen sijaispoolin, minkä ansiosta ylityöpiikit loppuivat 3 kuukaudessa.",
+          "rough": "Me suunniteltiin molempien yksiköiden vuorot yhdessä ja tehtiin yhteinen sijaispooli. Ylityöpiikit loppu 3 kuukaudessa."
+        },
+        "sv": {
+          "polished": "Vi planerade båda enheternas arbetsturer tillsammans och inrättade en gemensam vikariepool, vilket gjorde slut på övertidstopparna inom 3 månader.",
+          "rough": "Vi planerade skiften för båda enheterna tillsammans och gjorde en gemensam vikariepool. Övertidstopparna tog slut på 3 månader."
+        },
+        "ar": {
+          "polished": "خطّطنا مناوبات الوحدتين معًا وأنشأنا مجموعة مشتركة من البدلاء، فانتهت ذروات العمل الإضافي خلال 3 أشهر.",
+          "rough": "خططنا مناوبات الوحدتين معًا وكوّنّا مجموعة بدلاء مشتركة. ذروات العمل الإضافي انتهت في 3 أشهر."
+        }
+      }
+    },
+    {
+      "id": "care_coordination.partial.2",
+      "archetype": "care_coordination",
+      "level": "partial",
+      "text": {
+        "en": {
+          "polished": "I occasionally supported my manager with shift planning.",
+          "rough": "Sometimes I helped my manager with the shift planning."
+        },
+        "fi": {
+          "polished": "Avustin toisinaan esihenkilöäni työvuorosuunnittelussa.",
+          "rough": "Autoin joskus esihenkilöä vuorosuunnittelussa."
+        },
+        "sv": {
+          "polished": "Jag bistod ibland min chef med planeringen av arbetsturerna.",
+          "rough": "Ibland hjälpte jag min chef med skiftplaneringen."
+        },
+        "ar": {
+          "polished": "كنتُ أساعد مديري أحيانًا في تخطيط المناوبات.",
+          "rough": "أنا أحيانًا ساعدت مديري في تخطيط المناوبات."
+        }
+      }
+    },
+    {
+      "id": "care_coordination.none.1",
+      "archetype": "care_coordination",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I am a natural team player who thrives in dynamic, multi-professional environments and truly values smooth cooperation.",
+          "rough": "I am natural team player. I like dynamic, multi-professional environments and I really value smooth cooperation."
+        },
+        "fi": {
+          "polished": "Olen luontainen tiimipelaaja, joka viihtyy dynaamisissa moniammatillisissa ympäristöissä ja arvostaa aidosti sujuvaa yhteistyötä.",
+          "rough": "Oon luonnostaan tiimipelaaja. Tykkään dynaamisista moniammatillisista ympäristöistä ja arvostan tosi paljon sujuvaa yhteistyötä."
+        },
+        "sv": {
+          "polished": "Jag är en naturlig lagspelare som trivs i dynamiska, multiprofessionella miljöer och verkligen värdesätter smidigt samarbete.",
+          "rough": "Jag är en lagspelare av naturen. Jag gillar dynamiska, multiprofessionella miljöer och jag värdesätter verkligen smidigt samarbete."
+        },
+        "ar": {
+          "polished": "أحب العمل ضمن فريق بطبيعتي، وأزدهر في البيئات الديناميكية متعددة التخصصات، وأقدّر التعاون السلس حقًّا.",
+          "rough": "أحب العمل في فريق بطبيعتي. أحب البيئات الديناميكية متعددة التخصصات وأقدّر التعاون السلس كثيرًا."
+        }
+      }
+    },
+    {
+      "id": "care_coordination.none.2",
+      "archetype": "care_coordination",
+      "level": "none",
+      "text": {
+        "en": {
+          "polished": "I refreshed the staff break room and chose new furniture together with the cleaning staff.",
+          "rough": "I refreshed the staff break room and picked new furniture with the cleaning staff."
+        },
+        "fi": {
+          "polished": "Uudistin henkilökunnan taukotilan ja valitsin uudet huonekalut yhdessä siivoushenkilöstön kanssa.",
+          "rough": "Laitoin henkilökunnan taukotilan uuteen kuntoon ja valitsin uudet huonekalut siivoojien kanssa."
+        },
+        "sv": {
+          "polished": "Jag förnyade personalens pausrum och valde nya möbler tillsammans med städpersonalen.",
+          "rough": "Jag fixade om personalens pausrum och valde nya möbler med städarna."
+        },
+        "ar": {
+          "polished": "جدّدتُ غرفة استراحة الموظفين واخترتُ أثاثًا جديدًا بالتعاون مع عمّال النظافة.",
+          "rough": "أنا جددت غرفة استراحة الموظفين واخترت أثاث جديد مع عمال النظافة."
+        }
+      }
+    }
+  ],
+  "differently": [
+    {
+      "id": "care.diff.1",
+      "text": {
+        "en": {
+          "polished": "I would talk with the night staff and clients' relatives much earlier, because they often notice problems in everyday routines that the day team does not see.",
+          "rough": "I would talk with night staff and clients' relatives much earlier. They often notice problems in daily routines that day team don't see."
+        },
+        "fi": {
+          "polished": "Keskustelisin yöhoitajien ja asiakkaiden omaisten kanssa paljon aiemmin, koska he huomaavat usein arjen rutiineissa ongelmia, joita päivätiimi ei näe.",
+          "rough": "Juttelisin yöhoitajien ja asiakkaiden omaisten kanssa paljon aikaisemmin. Ne huomaa usein arjessa ongelmia, joita päivätiimi ei nää."
+        },
+        "sv": {
+          "polished": "Jag skulle tala med nattpersonalen och klienternas anhöriga mycket tidigare, eftersom de ofta märker problem i de dagliga rutinerna som dagteamet inte ser.",
+          "rough": "Jag skulle prata med nattpersonalen och klienternas anhöriga mycket tidigare. De märker ofta problem i vardagen som dagteamet inte ser."
+        },
+        "ar": {
+          "polished": "كنت سأتحدث مع فريق المناوبة الليلية وأقارب العملاء في وقت أبكر بكثير، لأنهم كثيرًا ما يلاحظون مشكلات في الروتين اليومي لا يراها فريق النهار.",
+          "rough": "كنت سأتكلم مع موظفي الليل وأقارب العملاء أبكر بكثير. هم غالبًا يلاحظون مشاكل في الروتين اليومي لا يراها فريق النهار."
+        }
+      }
+    },
+    {
+      "id": "care.diff.2",
+      "text": {
+        "en": {
+          "polished": "I would agree on clear priorities with my manager at the start and write down who decides what, instead of trying to solve everything myself during busy weeks.",
+          "rough": "I would agree clear priorities with my manager in the start and write down who decide what. Not try to solve everything myself in busy weeks."
+        },
+        "fi": {
+          "polished": "Sopisin esihenkilöni kanssa selkeät prioriteetit heti alussa ja kirjaisin ylös, kuka päättää mistäkin, sen sijaan että yrittäisin kiireisinä viikkoina ratkaista kaiken itse.",
+          "rough": "Sopisin esihenkilön kanssa selkeät prioriteetit heti alussa ja kirjoittaisin ylös kuka päättää mitäkin. En yrittäisi kiireisillä viikoilla ratkaista kaikkea itse."
+        },
+        "sv": {
+          "polished": "Jag skulle komma överens med min chef om tydliga prioriteringar redan från början och skriva ner vem som beslutar om vad, i stället för att försöka lösa allt själv under hektiska veckor.",
+          "rough": "Jag skulle komma överens med chefen om tydliga prioriteringar i början och skriva ner vem som bestämmer vad. Inte försöka lösa allt själv under stressiga veckor."
+        },
+        "ar": {
+          "polished": "كنت سأتفق مع مديري على أولويات واضحة منذ البداية وأدوّن من يقرر ماذا، بدلًا من محاولة حل كل شيء بنفسي في الأسابيع المزدحمة.",
+          "rough": "كنت سأتفق مع مديري على أولويات واضحة من البداية وأكتب من يقرر ماذا. ولا أحاول أن أحل كل شيء وحدي في الأسابيع المزدحمة."
+        }
+      }
+    }
+  ],
+  "next": [
+    {
+      "id": "care.next.1",
+      "text": {
+        "en": {
+          "polished": "I want a role in home care or elderly care where I can combine hands-on care with improving how the daily work is planned.",
+          "rough": "I want to work in home care or elderly care. I want to do practical care and make the daily work planning better."
+        },
+        "fi": {
+          "polished": "Haluan tehtävän kotihoidossa tai vanhustyössä, jossa voin yhdistää käytännön hoitotyön ja päivittäisen työn suunnittelun kehittämisen.",
+          "rough": "Haluan töihin kotihoitoon tai vanhustyöhön. Haluan tehdä käytännön hoitotyötä ja parantaa päivittäisen työn suunnittelua."
+        },
+        "sv": {
+          "polished": "Jag vill ha en roll inom hemvård eller äldreomsorg där jag kan kombinera praktiskt vårdarbete med att förbättra hur det dagliga arbetet planeras.",
+          "rough": "Jag vill jobba inom hemvård eller äldreomsorg. Jag vill göra praktiskt vårdarbete och göra planeringen av det dagliga arbetet bättre."
+        },
+        "ar": {
+          "polished": "أريد دورًا في الرعاية المنزلية أو رعاية كبار السن أجمع فيه بين الرعاية العملية وتحسين طريقة تخطيط العمل اليومي.",
+          "rough": "أريد أن أعمل في الرعاية المنزلية أو رعاية كبار السن. أريد أن أقدّم رعاية عملية وأحسّن تخطيط العمل اليومي."
+        }
+      }
+    },
+    {
+      "id": "care.next.2",
+      "text": {
+        "en": {
+          "polished": "Next, I want to build my care skills through on-the-job training and grow into a role where I support clients' safety and well-being at home.",
+          "rough": "Next I want to build care skills with training at work, and grow to a role where I support clients' safety and wellbeing at home."
+        },
+        "fi": {
+          "polished": "Seuraavaksi haluan kartuttaa hoitotaitojani työssä oppien ja kasvaa tehtävään, jossa tuen asiakkaiden turvallisuutta ja hyvinvointia heidän kotonaan.",
+          "rough": "Seuraavaksi haluan kerätä hoitotaitoja työssä oppimalla ja päästä tehtävään, jossa tuen asiakkaiden turvallisuutta ja hyvinvointia kotona."
+        },
+        "sv": {
+          "polished": "Härnäst vill jag bygga upp mina vårdfärdigheter genom utbildning på jobbet och växa in i en roll där jag stöder klienternas säkerhet och välbefinnande i hemmet.",
+          "rough": "Nästa steg är att bygga vårdkunskaper genom utbildning på jobbet och komma till en roll där jag stöder klienternas säkerhet och välmående hemma."
+        },
+        "ar": {
+          "polished": "أريد بعد ذلك أن أطوّر مهاراتي في الرعاية من خلال التدريب أثناء العمل، وأن أنتقل إلى دور أدعم فيه سلامة العملاء ورفاههم في بيوتهم.",
+          "rough": "بعد ذلك أريد أن أبني مهارات رعاية بالتدريب في العمل، وأصل إلى دور أدعم فيه سلامة العملاء ورفاههم في البيت."
+        }
+      }
+    }
+  ],
+  "reality_notes": [
+    "A previous hire was skilled in hands-on care but struggled with the pace of back-to-back home visits and often ran late.",
+    "They wrote their notes at the end of the shift instead of during the visit, so colleagues on the next shift lacked current information.",
+    "It improved once a senior nurse shadowed them for 2 weeks and we agreed on a simple visit routine."
+  ]
+}

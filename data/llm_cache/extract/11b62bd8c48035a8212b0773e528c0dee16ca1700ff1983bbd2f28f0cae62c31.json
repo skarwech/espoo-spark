@@ -1,0 +1,32 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "I analysed the GPS data of trucks in Excel. I found 4 morning routes was overlapping and made them to 3 routes, it saves about 90 km driving per day.",
+    "skills": [
+     "S31",
+     "S35"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I was in the ERP project at my last work place and I tested some screens before launch.",
+    "skills": [
+     "S14"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "I made the break room for staff new and set up a recycling corner with clear signs for sorting.",
+    "skills": [
+     "unmapped"
+    ]
+   }
+  ]
+ }
+}

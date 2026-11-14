@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-002/o1",
+    "label": "partial",
+    "unit_id": "J-077~sv.u3",
+    "quote": "Jag deltog i ett projekt för att städa kunddata",
+    "reason": "Took part in customer data cleaning; no method or result given."
+   },
+   {
+    "key": "N-002/o2",
+    "label": "partial",
+    "unit_id": "J-077~sv.u2",
+    "quote": "Jag hjälpte till med den nya rapportdashboarden",
+    "reason": "Helped with a dashboard; no concrete method or result."
+   },
+   {
+    "key": "N-002/o3",
+    "label": "supported",
+    "unit_id": "J-077~sv.u1",
+    "quote": "Jag byggde en veckovis efterfrågeprognos i Python med gradient boosting",
+    "reason": "Built forecast personally; error 14% versus 22% for old estimate."
+   },
+   {
+    "key": "N-017/o1",
+    "label": "partial",
+    "unit_id": "J-077~sv.u2",
+    "quote": "Jag hjälpte till med den nya rapportdashboarden",
+    "reason": "Helped with a dashboard; no concrete method or result."
+   },
+   {
+    "key": "N-017/o2",
+    "label": "partial",
+    "unit_id": "J-077~sv.u3",
+    "quote": "Jag deltog i ett projekt för att städa kunddata",
+    "reason": "Took part in customer data cleaning; no method or result given."
+   },
+   {
+    "key": "N-017/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No reconciliation or automation work described."
+   },
+   {
+    "key": "N-024/o1",
+    "label": "partial",
+    "unit_id": "J-077~sv.u3",
+    "quote": "Jag deltog i ett projekt för att städa kunddata",
+    "reason": "Took part in customer data cleaning; no method or result given."
+   },
+   {
+    "key": "N-024/o2",
+    "label": "supported",
+    "unit_id": "J-077~sv.u1",
+    "quote": "Jag byggde en veckovis efterfrågeprognos i Python med gradient boosting",
+    "reason": "Built forecast personally; error 14% versus 22% for old estimate."
+   },
+   {
+    "key": "N-024/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No customer support case handling described."
+   }
+  ]
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "task": "judge",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "judgments": [
+   {
+    "key": "N-002/o1",
+    "label": "partial",
+    "unit_id": "J-130~polished.u1",
+    "quote": "Yhdistin 6 manuaalista Excel-raporttia",
+    "reason": "Merged reports, not customer data from three systems; related work."
+   },
+   {
+    "key": "N-002/o2",
+    "label": "supported",
+    "unit_id": "J-130~polished.u1",
+    "quote": "Yhdistin 6 manuaalista Excel-raporttia itsepalvelukäyttöiseksi Power BI -kojelaudaksi",
+    "reason": "Personally replaced manual reports with Power BI dashboard; 4 days to 3 hours."
+   },
+   {
+    "key": "N-002/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No demand forecasting evidence."
+   },
+   {
+    "key": "N-017/o1",
+    "label": "supported",
+    "unit_id": "J-130~polished.u1",
+    "quote": "Yhdistin 6 manuaalista Excel-raporttia itsepalvelukäyttöiseksi Power BI -kojelaudaksi",
+    "reason": "Personally built self-service Power BI dashboard replacing manual reports, with result."
+   },
+   {
+    "key": "N-017/o2",
+    "label": "partial",
+    "unit_id": "J-130~polished.u1",
+    "quote": "Yhdistin 6 manuaalista Excel-raporttia",
+    "reason": "Merged reports, not customer data from three systems; related work."
+   },
+   {
+    "key": "N-017/o3",
+    "label": "partial",
+    "unit_id": "J-130~polished.u1",
+    "quote": "kuukausiraportointiin kuluva työ lyheni 4 päivästä 3 tuntiin",
+    "reason": "Report automation in different context, not bank reconciliation."
+   },
+   {
+    "key": "N-024/o1",
+    "label": "partial",
+    "unit_id": "J-130~polished.u1",
+    "quote": "Yhdistin 6 manuaalista Excel-raporttia",
+    "reason": "Merged reports, not customer data from three systems; related work."
+   },
+   {
+    "key": "N-024/o2",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "No demand forecasting evidence."
+   },
+   {
+    "key": "N-024/o3",
+    "label": "none",
+    "unit_id": "",
+    "quote": "",
+    "reason": "Unrelated to customer support cases."
+   }
+  ]
+ }
+}

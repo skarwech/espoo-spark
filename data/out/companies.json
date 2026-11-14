@@ -1,0 +1,152 @@
+[
+ {
+  "capacity": 15,
+  "company_id": "C-001",
+  "industry": "B2B services",
+  "name": "Pilvi Cloud Works"
+ },
+ {
+  "capacity": 11,
+  "company_id": "C-002",
+  "industry": "analytics services",
+  "name": "Kaski Commerce"
+ },
+ {
+  "capacity": 14,
+  "company_id": "C-003",
+  "industry": "industrial IoT",
+  "name": "Halla Manufacturing"
+ },
+ {
+  "capacity": 11,
+  "company_id": "C-004",
+  "industry": "financial services",
+  "name": "Merta Freight"
+ },
+ {
+  "capacity": 11,
+  "company_id": "C-005",
+  "industry": "B2B services",
+  "name": "Hiili Software"
+ },
+ {
+  "capacity": 10,
+  "company_id": "C-006",
+  "industry": "industrial IoT",
+  "name": "Vesiraja Systems"
+ },
+ {
+  "capacity": 14,
+  "company_id": "C-007",
+  "industry": "software",
+  "name": "Koivu Customer Care"
+ },
+ {
+  "capacity": 12,
+  "company_id": "C-008",
+  "industry": "manufacturing",
+  "name": "Kivi Analytics"
+ },
+ {
+  "capacity": 13,
+  "company_id": "C-009",
+  "industry": "software",
+  "name": "Valo Sensors"
+ },
+ {
+  "capacity": 15,
+  "company_id": "C-010",
+  "industry": "health care",
+  "name": "Kuura Components"
+ },
+ {
+  "capacity": 13,
+  "company_id": "C-011",
+  "industry": "financial services",
+  "name": "Tahko Industrial"
+ },
+ {
+  "capacity": 12,
+  "company_id": "C-012",
+  "industry": "logistics",
+  "name": "Routa Robotics"
+ },
+ {
+  "capacity": 15,
+  "company_id": "C-013",
+  "industry": "software",
+  "name": "Virta Energy Data"
+ },
+ {
+  "capacity": 12,
+  "company_id": "C-014",
+  "industry": "industrial IoT",
+  "name": "NordSense"
+ },
+ {
+  "capacity": 11,
+  "company_id": "C-015",
+  "industry": "manufacturing",
+  "name": "Raita Telecom"
+ },
+ {
+  "capacity": 12,
+  "company_id": "C-016",
+  "industry": "software",
+  "name": "Kide Accounting"
+ },
+ {
+  "capacity": 10,
+  "company_id": "C-017",
+  "industry": "analytics services",
+  "name": "Saari Data"
+ },
+ {
+  "capacity": 13,
+  "company_id": "C-018",
+  "industry": "industrial IoT",
+  "name": "Lähde Home Care"
+ },
+ {
+  "capacity": 15,
+  "company_id": "C-019",
+  "industry": "health care",
+  "name": "Lumo Logistics"
+ },
+ {
+  "capacity": 11,
+  "company_id": "C-020",
+  "industry": "B2B services",
+  "name": "Aalto Edge Labs"
+ },
+ {
+  "capacity": 11,
+  "company_id": "C-021",
+  "industry": "logistics",
+  "name": "Sisu Care Services"
+ },
+ {
+  "capacity": 14,
+  "company_id": "C-022",
+  "industry": "industrial IoT",
+  "name": "Usva Insights"
+ },
+ {
+  "capacity": 13,
+  "company_id": "C-023",
+  "industry": "health care",
+  "name": "Tuuli Retail Tech"
+ },
+ {
+  "capacity": 13,
+  "company_id": "C-024",
+  "industry": "analytics services",
+  "name": "Revontuli Finance"
+ },
+ {
+  "capacity": 10,
+  "company_id": "C-025",
+  "industry": "software",
+  "name": "Kajo Health"
+ }
+]

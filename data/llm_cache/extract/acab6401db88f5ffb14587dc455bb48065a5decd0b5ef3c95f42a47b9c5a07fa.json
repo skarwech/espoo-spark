@@ -1,0 +1,33 @@
+{
+ "task": "extract",
+ "model": "claude-opus-5-5",
+ "served_by": "claude-opus-5-5",
+ "effort": "medium",
+ "output": {
+  "units": [
+   {
+    "box": "did",
+    "text": "Aloitin SPC-kortit koneistussolussa 4 kriittiselle mitalle. Koulutin operaattorit pysäyttää linjan, kun kortti näyttää että prosessi ei ole hallinnassa. Hylkäykset lopputarkastuksessa meni 6 %:sta 2,5 %:iin.",
+    "skills": [
+     "S29",
+     "S02"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Me vaihdettiin pakkauslinja kiinteän välin huollosta kunnon mukaan tehtäviin tarkastuksiin, öljyanalyysillä. Suunnittelemattomat seisokit väheni 18 % 6 kuukaudessa.",
+    "skills": [
+     "S40",
+     "S33"
+    ]
+   },
+   {
+    "box": "did",
+    "text": "Autoin automaatioinsinööriä kun pakkauslinjaa uusittiin, ja autoin testauksessa kun pyydettiin.",
+    "skills": [
+     "S03"
+    ]
+   }
+  ]
+ }
+}
