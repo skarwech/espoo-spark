@@ -134,16 +134,25 @@ export SPARK_ORGANIZER_TOKEN='choose-a-private-local-token'
 make serve-app
 ```
 
-For a one-command local demo, use `make serve-streamlit`. Streamlit starts the same FastAPI app on loopback port 8778 and
-shows its existing pages in an embedded frame at `http://localhost:8501`; the offline pass service worker and all current
-workflows remain available. Set `SPARK_STREAMLIT_API_PORT` to change the local API port. For hosted Streamlit, deploy the FastAPI
-service separately and set `SPARK_STREAMLIT_API_URL` to its publicly reachable base URL.
+For a one-command demo, use `make serve-streamlit`. The Streamlit UI renders each workflow directly and calls the project's
+Python modules in-process. It does not depend on a browser reaching a `127.0.0.1` API, so the same entry point works on
+Streamlit Community Cloud without deploying a second web service.
 
-Open `/blind-view` for redacted evidence and optional conversation prompts. The organizer opens `/event-console`, drafts and
-reviews an agenda, approves it, then issues private passes. Each link is labelled with an organizer-only attendee reference for
-manual delivery; the reference is not in the pass or URL. Pass URLs contain random capability tokens and no attendee identity.
-Deliver each private link through a separate verified channel; this prototype does not send email or notifications. Each attendee can
-cache their pass page and agenda for offline use; pulse feedback queues locally and syncs idempotently when the API returns.
+For hosted use, add secrets in the app settings. `SPARK_ORGANIZER_TOKEN` enables the Event Console. `VERDA_INFERENCE_API_KEY_KIMI`
+enables live Need Studio answers; the saved Match Lens, blind cards, Skill Story form, event pass flow and release report can
+be explored without an LLM key. This prototype uses local SQLite storage and synthetic
+data; hosted storage may reset when the service restarts, so do not use real participant data.
+
+```toml
+SPARK_ORGANIZER_TOKEN = "your-private-organizer-token"
+VERDA_INFERENCE_API_KEY_KIMI = "your-Verda-key"
+```
+
+Open the Blind View for redacted evidence and optional conversation prompts. The organizer drafts and reviews an agenda, approves
+it, then issues private passes. In Streamlit, the organizer gets a private code per attendee and the attendee enters that code on
+the Event Pass page. In the FastAPI web app, the pass is opened at `/event-pass/{token}`. Each code is a random capability token
+with no attendee identity; deliver it through a separate verified channel because this prototype does not send messages. The
+FastAPI pass page supports offline caching and queued pulse feedback; the Streamlit pass page needs an internet connection.
 The organizer dashboard, slot trace and compliance snapshot are available through authenticated API routes documented in
 `api/main.py`. Rebuilding an agenda revokes old passes and clears that event's pulse data.
 
