@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark F9–F16 · Release Report</title>
+<style>:root {
+  color-scheme: light;
+  --bg: #f6f5f2; --surface: #fcfcfb; --line: #e4e2dc; --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #6f6d68;
+  --series-1: #1f66bd; --good: #0f7b3e; --good-bg: #e3f3e8; --bad: #b42318; --bad-bg: #fde7e4;
+  --proxy: #7a5b00; --proxy-bg: #fbf1d0; --mark: #fff3bf;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+    --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+    --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+  --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+  --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 12px; }
+h3 { font-size: 15px; margin: 0 0 8px; }
+.sub { color: var(--ink-2); margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid3 { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.pass { color: var(--good); background: var(--good-bg); }
+.fail { color: var(--bad); background: var(--bad-bg); }
+.proxy, .pending { color: var(--proxy); background: var(--proxy-bg); }
+.kind { color: var(--ink-3); font-size: 12px; }
+.stat { font-size: 28px; font-weight: 650; line-height: 1.1; }
+.stat-l { color: var(--ink-2); font-size: 13px; }
+.bar-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; }
+.bar-track { display: flex; align-items: center; gap: 8px; }
+.bar { height: 14px; background: var(--series-1); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bar-v { color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.story p { margin: 0 0 8px; }
+.story .box { color: var(--ink-3); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; display: block; }
+.lbl { font-size: 12px; font-weight: 600; }
+.lbl.supported { color: var(--good); } .lbl.partial { color: var(--proxy); } .lbl.none { color: var(--ink-3); }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+tr.disagree td, tr.diffplanted td { background: var(--mark); }
+.muted { color: var(--ink-2); font-size: 13px; }
+.scroll { overflow-x: auto; }
+details summary { cursor: pointer; color: var(--ink-2); }
+ .note { color: var(--ink-3); font-size: 12px; }</style>
+</head>
+<body><main>
+<h1>Spark · F9–F16 · Release Report</h1>
+<p class="sub">Conversation prompts, agenda scheduling, offline event passes, pulse feedback, organiser oversight and release controls.
+This is a synthetic-data prototype report. Code availability does not count as a passed gate; results are shown only when an evaluation artifact exists.</p>
+
+<div class="card"><h2>Release status</h2>
+<p class="pill pending">Release gates are not all green</p>
+<p class="muted">Evaluation data is pending; no F9–F16 gates are claimed as passed.</p></div>
+
+<h2>Hard gates</h2>
+<div class="card scroll"><table><tr><th>ID</th><th>Gate</th><th>Threshold</th><th>Result</th><th>Evidence</th></tr>
+<tr><td>F9-IDs</td><td>Conversation prompts cite existing Need and evidence IDs</td><td>100% of 200 cards</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F9-SAFETY</td><td>Conversation prompts contain no protected-attribute questions</td><td>0 violations</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F10-CONSTRAINTS</td><td>Agenda constraints across seeded pool sizes</td><td>0 violations</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F10-APPROVAL</td><td>Unapproved agendas cannot issue passes</td><td>blocked</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-OFFLINE</td><td>Pass shell and agenda open from isolated browser profiles</td><td>2 profiles</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-OFFLINE-DEVICE</td><td>Pass opens offline on physical devices</td><td>2 devices</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-HASH</td><td>Pass content matches its approved agenda</td><td>100%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-DELIVERY</td><td>Organizer can map each private link to its attendee reference</td><td>150 of 150</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-EXPIRED</td><td>Expired pass is rejected by the pass API</td><td>blocked</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-EXPIRED-UI</td><td>Expired pass displays its expired state in a browser</td><td>visible</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-URL</td><td>Pass URL has no attendee identity and uses a high-entropy token</td><td>0 identity values; ≥128 bits</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-THIRD-PARTY-STATIC</td><td>Pass source contains no external resource references</td><td>0 references</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-THIRD-PARTY</td><td>Browser pass flow makes no third-party requests</td><td>0 requests</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F12-IDEMPOTENCY</td><td>Offline pulse retries are deduplicated</td><td>20 unique records</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F12-PRIVACY</td><td>Pulse records contain no identity fields</td><td>0 identity fields</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F12-RECONCILE</td><td>Dashboard pulse total reconciles to raw records</td><td>100%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F12-SUPPRESSION</td><td>Pulse groups smaller than five are hidden</td><td>0 small groups shown</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F13-SUPPRESSION</td><td>Dashboard hides groups smaller than five</td><td>0 small cells shown</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F13-AUTH</td><td>Non-organiser dashboard access is denied</td><td>denied</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F13-RECONCILE</td><td>Dashboard conversation totals reconcile to the agenda</td><td>100%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F14-IDENTITY</td><td>Identity counterfactual leaves text and tiers unchanged</td><td>0 differences or flips</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F14-POSITIVE</td><td>Planted discriminatory controls are flagged</td><td>5 of 5</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F14-LIMITS</td><td>Registered limits section is present</td><td>present</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F15-TRACE</td><td>Sampled agenda slots have a complete evidence path</td><td>20 slots, at most 3 steps</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F15-WHY</td><td>Every agenda slot has a plain-language reason</td><td>100%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F15-DELETE</td><td>Participant deletion removes stored and cached records</td><td>0 residuals</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F15-BYPASS</td><td>Release gates reject bypass attempts</td><td>all blocked</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F15-LOGS</td><td>Oversight logs contain no identity fields</td><td>0 identity fields</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F15-SCHEMA</td><td>Stored fields match the declared schema</td><td>0 undeclared fields</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F15-NO-INFERENCE</td><td>No AI-text detector or emotion inference is present</td><td>0 occurrences</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F16-RUNS</td><td>Consecutive clean release runs</td><td>3 runs</td><td><span class="pill pending">PENDING</span></td><td></td></tr>
+</table></div>
+
+<h2>Targets and human reviews</h2>
+<div class="card scroll"><table><tr><th>ID</th><th>Target</th><th>Threshold</th><th>Result</th><th>Evidence</th></tr>
+<tr><td>F9-SPECIFICITY</td><td>Specificity on generic stories</td><td>at least 9 of 10</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F9-CONFLICTS</td><td>Planted conflict detection / clean false flags</td><td>at least 9/10 / at most 1/10</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F9-YESNO</td><td>Yes/no conversation prompts</td><td>at most 5%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F9-USEFUL</td><td>Useful and answerable prompts</td><td>at least 85% of 30 cards; human review</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F10-OPTIMUM</td><td>Greedy objective vs exact integer optimizer on tiny instances</td><td>at least 95%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F10-STRETCH</td><td>Stretch share per company where available</td><td>20% ± 2 points</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F10-TWO-SLOTS</td><td>Eligible attendees receiving two slots</td><td>at least 95%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F10-UNSCHEDULED</td><td>Unscheduled viable pairs</td><td>at most 5%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F10-RUNTIME</td><td>Agenda runtime for 150 × 25</td><td>under 5 seconds</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-LOAD</td><td>Concurrent pass requests (1,000 users)</td><td>p95 under 1 second</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F11-SIZE</td><td>Maximum pass payload</td><td>300 KB</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F12-TAPS</td><td>Feedback interactions per attendee</td><td>at most 2 taps</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F13-CLUSTERS</td><td>Coherent dashboard clusters</td><td>4 of 5; mentor review</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F13-ACTIONS</td><td>Mentors naming a concrete next action</td><td>2 of 3; human review</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F14-PERTURBATION</td><td>Cleanliness across translation and style twins</td><td>at least 95%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F14-TRANSLATION</td><td>Translation tier flip rate</td><td>at most 5%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F14-STYLE</td><td>Style tier flip rate</td><td>at most 5%</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F14-BASELINE-CI</td><td>Naive text-overlap baseline contrast interval</td><td>95% cluster-bootstrap CI; descriptive</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F16-DEMO</td><td>End-to-end demo duration</td><td>at most 4 minutes</td><td><span class="pill pending">PENDING</span></td><td></td></tr><tr><td>F16-CACHE</td><td>Cached outputs replay identically across release runs</td><td>identical</td><td><span class="pill pending">PENDING</span></td><td></td></tr>
+</table></div>
+
+<h2>Open issues</h2>
+<div class="card"><ul><li>No F9–F16 evaluation artifact has been generated yet.</li><li>Human recruiter, participant, accessibility and responsible-AI mentor reviews remain outstanding.</li><li>Exact-objective comparison, agenda seed sweeps, offline-device checks and 1,000-request load test are pending.</li></ul></div>
+
+<h2>Consecutive release runs</h2>
+<div class="card"><p class="muted">F16 requires three consecutive clean runs without manual fixes. This page will report them when the evaluation artifact records them.</p>
+<p class="pill pending">No release runs recorded</p></div>
+
+<p class="note">Limits: synthetic data only; offline caching is browser-dependent; no human usability or fairness review is implied by the automated checks.</p>
+</main></body></html>

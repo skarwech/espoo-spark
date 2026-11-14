@@ -1,7 +1,9 @@
-"""F4-F7 targets as pre-registered in docs/method.md §6. Usage: python eval/run_eval.py -> eval/results/targets_f4_f7.json"""
+"""F4-F7 targets as pre-registered in docs/method.md §6. Usage: python eval/run_eval.py -> eval/results/targets_f4_f7.json
+With SPARK_ENGINE=d1 or k1 the same definitions run on that engine (method.md §7) -> eval/results/targets_f4_f7_<profile>.json"""
 import csv
 import json
 import math
+import os
 import random
 import sys
 from collections import Counter
@@ -16,6 +18,8 @@ from truth import related_map  # noqa: E402
 
 RANK = {"none": 0, "stretch": 1, "worth": 2, "strong": 3}
 NOTE = "added 2026-11-14 after results; context only, not a registered measure"
+PROFILE = os.environ.get("SPARK_ENGINE", "v1")
+EDIR = "data/engine" if PROFILE == "v1" else f"data/engine_{PROFILE}"
 # Hero claims are hand-written (not in the bank); their evidence spans for Recall@3:
 HERO_SPANS = {("J-001", "iot_pipeline"): "Our team worked with data pipelines", ("J-002", "iot_alerts"): "I rebuilt the alert rules",
               ("J-002", "iot_pipeline"): "buffering on the edge gateways", ("J-003", "log_erp"): "connected our warehouse system to the ERP",
@@ -58,7 +62,7 @@ def random3(n_units: int, n_gold: int) -> float:
 
 
 def main():
-    units, judg, retr = j("data/engine/units.json"), j("data/engine/judgments.json"), j("data/engine/retrieval.json")["runs"]
+    units, judg, retr = j(f"{EDIR}/units.json"), j(f"{EDIR}/judgments.json"), j(f"{EDIR}/retrieval.json")["runs"]
     planted, bank = j("data/out/planted.json"), {c["id"]: c for d in j("data/archetypes.json")["domains"]
                                                  for c in j(f"data/bank/{d}.json")["claims"]}
     arch_skills = {a["id"]: a["skills"] for a in j("data/archetypes.json")["archetypes"]}
@@ -163,7 +167,7 @@ def main():
                   for t in twins if t["kind"] == kind for k in judg[f"{t['id']}@own"]]
         same = [a == b for a, b in pairs_]
         res[name] = target(share(same), 0.90, len(pairs_), note=non_none_agreement(pairs_), ci=boot_ci(same))
-    stab_p = ROOT / "data" / "engine" / "stability.json"
+    stab_p = ROOT / EDIR / "stability.json"
     if stab_p.exists():
         stab = json.loads(stab_p.read_text(encoding="utf-8"))
         pairs_ = [(judg[run][k]["label"], v["label"]) for run, js_ in stab.items() for k, v in js_.items()]
@@ -171,7 +175,7 @@ def main():
         res["F6 stability (uncached re-run)"] = target(share(same), 0.95, len(pairs_), note=non_none_agreement(pairs_), ci=boot_ci(same))
 
     # F7 tier agreement with consensus tiers
-    lens_pairs = {(p["need_id"], p["candidate_id"]): p for p in j("data/engine/lens.json")}
+    lens_pairs = {(p["need_id"], p["candidate_id"]): p for p in j(f"{EDIR}/lens.json")}
     pairs = {}
     for r in rows:
         pairs.setdefault((r["need_id"], r["candidate_id"]), []).append((r["priority"], r["consensus"]))
@@ -198,7 +202,7 @@ def main():
                    "re-run. Threshold unchanged.")
     res["F7 tier agreement within one (with adjacency, registered)"] = target(share(within(eng)), 0.95, len(pairs), kind="proxy",
                                                                               ci=boot_ci(within(eng)))
-    hubs = lens.hub_skills(units, js) if (ROOT / "data" / "engine" / "hubs.json").exists() else frozenset()  # A1.3 applies to the amended run
+    hubs = lens.hub_skills(units, js) if (ROOT / EDIR / "hubs.json").exists() else frozenset()  # A1.3 applies to the amended run
     occupation = {k: lens.pair(needs[k[0]], k[1], units[k[1]]["units"], judg[f"{k[1]}@all"], occupation=True, hubs=hubs)["tier"] for k in pairs}
     for label_, e, why in (("direct labels only", direct, "registered as also reported without adjacency (method.md §6); no threshold"),
                            ("adjacency incl. shared occupation", occupation,
@@ -209,15 +213,17 @@ def main():
 
     lp = ROOT / "data" / "llm_cache" / "_ledger.jsonl"
     ledger = [json.loads(l) for l in lp.read_text(encoding="utf-8").splitlines() if l] if lp.exists() else []
+    model = {"v1": "claude-opus-5-5", "d1": "deepseek-4-1-flash-1017", "k1": "kimi-k3-1-pro"}[PROFILE]
+    ledger = [x for x in ledger if x["served_by"] == model and x["task"] in ("extract", "judge")]  # this engine's calls only
     meta = {"llm_calls": len(ledger), "llm_usd": round(sum(x["usd"] for x in ledger), 2),
             "served_by": sorted({x["served_by"] for x in ledger}), "refusals": sum(x["stop"] == "refusal" for x in ledger),
             "units_invalid_dropped": sum(u["invalid_dropped"] for u in units.values()),
             "judge_rejected": sum(bool(v.get("rejected")) for r in judg.values() for v in r.values()),
-            "embedding": j("data/engine/retrieval.json")["version"],
+            "embedding": j(f"{EDIR}/retrieval.json")["version"], "engine": model,
             "hubs": sorted(lens.esco_label(s) for s in hubs),
             "tokens": {k: sum(x["usage"].get(k) or 0 for x in ledger) for k in
                        ("input_tokens", "output_tokens", "cache_read_input_tokens", "cache_creation_input_tokens")}}
-    out_p = ROOT / "eval" / "results" / "targets_f4_f7.json"
+    out_p = ROOT / "eval" / "results" / ("targets_f4_f7.json" if PROFILE == "v1" else f"targets_f4_f7_{PROFILE}.json")
     out_p.parent.mkdir(parents=True, exist_ok=True)
     out_p.write_text(json.dumps({"targets": res, "meta": meta}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     for k, v in res.items():

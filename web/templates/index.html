@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block main %}
+<h1>Spark</h1>
+<p class="sub">Needs-first, human-in-the-loop matchmaking for City of Espoo recruitment events. Every output is a suggestion; people decide.</p>
+<div class="grid">
+  <a class="card tile" href="/need-studio"><h2>Need Studio</h2><p class="muted">Companies describe what the hire should deliver; the result is a Need Card they confirm, then an anonymous preview of the registered pool.</p></a>
+  <a class="card tile" href="/skill-story"><h2>Skill Story</h2><p class="muted">Jobseekers describe work they did, in their own words and language. No CV, no photo, no score.</p></a>
+  <a class="card tile" href="/blind-view"><h2>Blind View</h2><p class="muted">After a Need Card is confirmed, review redacted evidence cards. Contact details are revealed only when both sides opt in.</p></a>
+  <a class="card tile" href="/event-console"><h2>Event Console</h2><p class="muted">Draft and approve a constrained meeting agenda, then issue private passes and review threshold-suppressed feedback.</p></a>
+  <a class="card tile" href="/reports/f16.html"><h2>F9–F16 Release Report</h2><p class="muted">See which workflow gates have evidence and which still need evaluation or human review.</p></a>
+</div>
+<p class="muted">Matching engine for this prototype: {{ engine }} (see <a href="/reports/f7.html">step 2 proof</a>).</p>
+{% endblock %}

@@ -68,7 +68,8 @@ def extract(cid: str, story: dict) -> dict:
     user = json.dumps({"lang": story["lang"], **{b: story.get(b, "") for b in EVIDENCE_BOXES}}, ensure_ascii=False, indent=1)
     ok, bad = [], []
     for attempt in (0, 1):
-        raw = llm.call("extract", system_prompt(), user, schema(), attempt=attempt)["units"]
+        raw = llm.call("extract", system_prompt(), user, schema(), attempt=attempt,
+                       subject_id=cid if cid.startswith("S-") else None)["units"]
         ok, bad = _validate(story, raw)
         if not bad:
             break

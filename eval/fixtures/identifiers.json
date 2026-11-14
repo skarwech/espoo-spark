@@ -1,0 +1,282 @@
+[
+ {
+  "id": "X01",
+  "lang": "fi",
+  "category": "name",
+  "text": "Olen Tuomas Hakala ja ratkaisin varaston inventaarioerot rakentamalla Excel-makron, joka vertasi viivakoodilukijan tietoja kirjanpitoon joka ilta.",
+  "identifier": "Tuomas Hakala"
+ },
+ {
+  "id": "X02",
+  "lang": "fi",
+  "category": "name",
+  "text": "Kävin esihenkilöni Sanna Korhosen kanssa läpi jokaisen asiakasvalituksen ja kirjoitin niistä vastauspohjat, jotka lyhensivät käsittelyaikaa noin kolmanneksella.",
+  "identifier": "Sanna Korhosen"
+ },
+ {
+  "id": "X03",
+  "lang": "fi",
+  "category": "name",
+  "text": "Testaajamme Jannen ehdotuksesta lisäsin tilauslomakkeeseen automaattiset tarkistukset, ja virheellisten tilausten määrä putosi kuukaudessa alle puoleen.",
+  "identifier": "Jannen"
+ },
+ {
+  "id": "X04",
+  "lang": "fi",
+  "category": "name",
+  "text": "nimeni on aleksi nurmi, ja korjasin kuljetusreittien suunnittelun siirtämällä paperilistat jaettuun taulukkoon, mikä vähensi myöhästymisiä selvästi.",
+  "identifier": "aleksi nurmi"
+ },
+ {
+  "id": "X05",
+  "lang": "fi",
+  "category": "email",
+  "text": "Rakensin yhdistykselle jäsenrekisterin Google Sheetsiin, ohjasin kaikki kyselyt osoitteeseeni laura.kivistomaki@example.com ja vastasin niihin viikoittain.",
+  "identifier": "laura.kivistomaki@example.com"
+ },
+ {
+  "id": "X06",
+  "lang": "fi",
+  "category": "email",
+  "text": "Ohjelmoin pienelle tukkuliikkeelle varastosovelluksen Pythonilla; jos haluatte nähdä sen, kysykää lisää: jsalmela.koodaa@example.net.",
+  "identifier": "jsalmela.koodaa@example.net"
+ },
+ {
+  "id": "X07",
+  "lang": "fi",
+  "category": "email",
+  "text": "Kirjoitin taloyhtiön huoltopyynnöille uuden ohjeen ja annoin yhteysosoitteeksi Minna.Rautavirta@example.org, jolloin pyynnöt tulivat yhteen paikkaan eivätkä hukkuneet.",
+  "identifier": "Minna.Rautavirta@example.org"
+ },
+ {
+  "id": "X08",
+  "lang": "fi",
+  "category": "phone",
+  "text": "Vastasin asiakaspalvelussa kiireellisiin vikailmoituksiin omasta numerostani 040 718 2296 ja laadin samalla tarkistuslistan, joka nopeutti vianmääritystä.",
+  "identifier": "040 718 2296"
+ },
+ {
+  "id": "X09",
+  "lang": "fi",
+  "category": "phone",
+  "text": "Automatisoin tilitoimistossa laskujen kierrätyksen, ja kun kollegat tarvitsivat apua, he soittivat suoraan minulle numeroon +358451237789 eivätkä IT-tukeen.",
+  "identifier": "+358451237789"
+ },
+ {
+  "id": "X10",
+  "lang": "fi",
+  "category": "phone",
+  "text": "Seuraavalla kerralla jakaisin päivystysvuorot reilummin, koska nyt kaikki hälytykset tulivat minun numerooni 050-3349812 myös viikonloppuisin.",
+  "identifier": "050-3349812"
+ },
+ {
+  "id": "X11",
+  "lang": "fi",
+  "category": "birthdate",
+  "text": "Olen syntynyt 4.11.1986 ja teen rakennusalalla mittauksia; viimeisimmällä siltatyömaalla otin käyttöön takymetrin, joka puolitti mittausvirheet.",
+  "identifier": "4.11.1986"
+ },
+ {
+  "id": "X12",
+  "lang": "fi",
+  "category": "birthdate",
+  "text": "Olen syntynyt 9. helmikuuta 1971; opettelin vuorostamme ensimmäisenä käyttämään toiminnanohjausjärjestelmää ja koulutin sen jälkeen koko vuoron uusiin keräilyrutiineihin, mikä vähensi virhekeräilyjä.",
+  "identifier": "9. helmikuuta 1971"
+ },
+ {
+  "id": "X13",
+  "lang": "fi",
+  "category": "birthdate",
+  "text": "Muistan vuonna 1979 syntyneenä vielä käsin täytetyt rahtikirjat, joten osasin selittää kokeneille kuljettajille, miksi siirryimme mobiilisovellukseen.",
+  "identifier": "1979"
+ },
+ {
+  "id": "X14",
+  "lang": "fi",
+  "category": "nationality",
+  "text": "Olen kotoisin Ukrainasta, jossa johdin pienen hitsaamon laatutarkastuksia, ja täällä otin saman tarkistuslistan käyttöön metallialan kesätyössäni.",
+  "identifier": "Ukrainasta"
+ },
+ {
+  "id": "X15",
+  "lang": "fi",
+  "category": "nationality",
+  "text": "Syyrialaisena sähköinsinöörinä jouduin opettelemaan paikalliset standardit alusta, joten tein itselleni vertailutaulukon, josta tuli myöhemmin koko tiimin työkalu.",
+  "identifier": "Syyrialaisena"
+ },
+ {
+  "id": "X16",
+  "lang": "fi",
+  "category": "nationality",
+  "text": "Olen virolainen kokki, ja ravintolassa pienensin hävikkiä punnitsemalla jokaisen poisheitetyn erän ja muuttamalla annoskokoja tulosten perusteella.",
+  "identifier": "virolainen"
+ },
+ {
+  "id": "X17",
+  "lang": "fi",
+  "category": "nationality",
+  "text": "Kotimaassani Kolumbiassa vastasin kahvipaahtimon toimitusketjusta ja lyhensin toimitusaikoja yhdistämällä pienten tilojen kuljetukset samaan reittiin.",
+  "identifier": "Kolumbiassa"
+ },
+ {
+  "id": "X18",
+  "lang": "fi",
+  "category": "school",
+  "text": "Laurea-ammattikorkeakoulun harjoittelussa kartoitin pienyrityksen asiakaspolun ja ehdotin verkkokauppaan kolme muutosta, joista kaksi otettiin heti käyttöön.",
+  "identifier": "Laurea-ammattikorkeakoulun"
+ },
+ {
+  "id": "X19",
+  "lang": "fi",
+  "category": "school",
+  "text": "Valmistuin sähköasentajaksi omniasta, ja ensimmäisessä työpaikassani paikansin pitkään etsityn vian mittaamalla jokaisen ryhmäkeskuksen järjestelmällisesti.",
+  "identifier": "omniasta"
+ },
+ {
+  "id": "X20",
+  "lang": "fi",
+  "category": "school",
+  "text": "Helsingin yliopistossa työskentelin tutkimusavustajana ja siivosin 20 000 rivin kyselyaineiston R:llä niin, että analyysi valmistui viikon etuajassa.",
+  "identifier": "Helsingin yliopistossa"
+ },
+ {
+  "id": "X21",
+  "lang": "en",
+  "category": "name",
+  "text": "My name is Daniel Okafor and I cut picking errors in our warehouse by redesigning the shelf labels with colour codes and larger location numbers.",
+  "identifier": "Daniel Okafor"
+ },
+ {
+  "id": "X22",
+  "lang": "en",
+  "category": "name",
+  "text": "My manager Helena Sjöberg asked me to fix our slow onboarding, so I wrote a two-page checklist and recorded short screen videos for each system.",
+  "identifier": "Helena Sjöberg"
+ },
+ {
+  "id": "X23",
+  "lang": "en",
+  "category": "name",
+  "text": "When the client threatened to cancel, I sat down with our account lead Priya, mapped every missed deadline and proposed a short weekly status call.",
+  "identifier": "Priya"
+ },
+ {
+  "id": "X24",
+  "lang": "en",
+  "category": "name",
+  "text": "Looking back, I'd involve the night shift earlier; the scanner rollout only worked because my colleague tom reyes kept explaining it to them.",
+  "identifier": "tom reyes"
+ },
+ {
+  "id": "X25",
+  "lang": "en",
+  "category": "email",
+  "text": "After the website crashed, I set up a simple status page and asked customers to report problems directly to me at amira.haddad.ops@example.com.",
+  "identifier": "amira.haddad.ops@example.com"
+ },
+ {
+  "id": "X26",
+  "lang": "en",
+  "category": "email",
+  "text": "I built the volunteer rota in Airtable, and all shift swap requests went to kwame.osei.works@example.net, which I checked every morning before opening.",
+  "identifier": "kwame.osei.works@example.net"
+ },
+ {
+  "id": "X27",
+  "lang": "en",
+  "category": "email",
+  "text": "To reduce no-shows, I wrote reminder emails that went out from my own address, Sofia.Lindvik@example.org, two days before each appointment.",
+  "identifier": "Sofia.Lindvik@example.org"
+ },
+ {
+  "id": "X28",
+  "lang": "en",
+  "category": "phone",
+  "text": "Our clinic kept losing callbacks, so I created a shared call log and gave patients my direct line +358 44 902 6613 for urgent rebooking.",
+  "identifier": "+358 44 902 6613"
+ },
+ {
+  "id": "X29",
+  "lang": "en",
+  "category": "phone",
+  "text": "If the delivery app fails again, drivers know to text me on 0415560271, because I wrote the fallback procedure and trained everyone on it.",
+  "identifier": "0415560271"
+ },
+ {
+  "id": "X30",
+  "lang": "en",
+  "category": "phone",
+  "text": "In my previous role I handled supplier escalations personally, and my number +44 7700 900481 is still printed on the escalation sheet I designed.",
+  "identifier": "+44 7700 900481"
+ },
+ {
+  "id": "X31",
+  "lang": "en",
+  "category": "birthdate",
+  "text": "Born in 1987, I have worked with three generations of till systems and led our shop's switch to the cloud version without losing a single sale.",
+  "identifier": "1987"
+ },
+ {
+  "id": "X32",
+  "lang": "en",
+  "category": "birthdate",
+  "text": "My date of birth is 14/07/1968, and as a career changer I learned SQL from scratch and now build the weekly sales report that used to take the finance team two days.",
+  "identifier": "14/07/1968"
+ },
+ {
+  "id": "X33",
+  "lang": "en",
+  "category": "birthdate",
+  "text": "I was born on 22 May 1995, and in my first summer job I reorganised the café stock room so deliveries could be checked in half the time.",
+  "identifier": "22 May 1995"
+ },
+ {
+  "id": "X34",
+  "lang": "en",
+  "category": "nationality",
+  "text": "As a Nigerian civil engineer, I turned our site safety briefings into picture cards so the whole crew understood them whatever language they spoke.",
+  "identifier": "Nigerian"
+ },
+ {
+  "id": "X35",
+  "lang": "en",
+  "category": "nationality",
+  "text": "I'm Brazilian, and at my previous job I cut the bakery's ingredient costs by negotiating fixed monthly contracts with two flour suppliers.",
+  "identifier": "Brazilian"
+ },
+ {
+  "id": "X36",
+  "lang": "en",
+  "category": "nationality",
+  "text": "as an eritrean pharmacist i noticed our stock alerts were being ignored, so i rebuilt them as a short daily list that staff actually read.",
+  "identifier": "eritrean"
+ },
+ {
+  "id": "X37",
+  "lang": "en",
+  "category": "nationality",
+  "text": "I'm originally from Vietnam, where I managed quality checks at a garment factory and lowered the defect rate by retraining line supervisors.",
+  "identifier": "Vietnam"
+ },
+ {
+  "id": "X38",
+  "lang": "en",
+  "category": "school",
+  "text": "During my studies at Metropolia I built a prototype booking app for a local gym, and the owner still uses its waiting-list feature.",
+  "identifier": "Metropolia"
+ },
+ {
+  "id": "X39",
+  "lang": "en",
+  "category": "school",
+  "text": "My final project at the University of Nairobi was a water-meter dashboard that helped the local utility spot leaking pipes within days instead of weeks.",
+  "identifier": "University of Nairobi"
+ },
+ {
+  "id": "X40",
+  "lang": "en",
+  "category": "school",
+  "text": "For my thesis at haaga-helia I interviewed twelve small hotel owners and turned their complaints into a faster check-in process that one hotel adopted.",
+  "identifier": "haaga-helia"
+ }
+]

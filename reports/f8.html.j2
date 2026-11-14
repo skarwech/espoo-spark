@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark F8 · Blind View and Reveal</title>
+<style>{{ css|safe }} .note { color: var(--ink-3); font-size: 12px; }</style>
+</head>
+<body><main>
+<h1>Spark · F8 · Blind View and Reveal</h1>
+<p class="sub">Offline verification of redacted evidence cards and the two-sided contact reveal. The feature reads cached d1 Match Lens
+grids only; no model call runs while a blind card is built. It is synthetic-data prototype evidence, not a claim of production readiness.</p>
+
+<h2>Hard gates</h2>
+<div class="card scroll"><table><tr><th>Check</th><th>Status</th></tr>
+{% for label, passed in gates %}<tr><td>{{ label }}</td><td>{% if passed is none %}<span class="pill pending">PENDING</span>{% elif passed %}<span class="pill pass">PASS</span>{% else %}<span class="pill fail">FAIL</span>{% endif %}</td></tr>{% endfor %}
+</table></div>
+
+<div class="grid"><section class="card"><h2>Blind payload</h2><p class="big">{{ result.blind_cards }} cards</p>
+<p class="muted">One for each registered synthetic jobseeker, including people with no evidence yet. Identity values leaked: {{ result.identity_leaks|length }}.</p></section>
+<section class="card"><h2>Two-sided release</h2><p class="muted">One recruiter opt-in returns only an awaiting state. Once the candidate independently opts in, the audit record stores recruiter consent time, candidate consent time and release time; it stores no identity fields.</p>
+{% if result.reveal_log %}<p class="mono">log: recruiter {{ result.reveal_log.recruiter_consented_at }}, candidate {{ result.reveal_log.candidate_consented_at }}, released {{ result.reveal_log.revealed_at }}</p>{% endif %}</section></div>
+
+<h2>Redaction target</h2>
+<div class="card"><p class="big">{% if target %}{{ '%.0f'|format(100 * target.value) }}% of {{ target.n }} planted mentions removed (target ≥ {{ '%.0f'|format(100 * target.threshold) }}%){% else %}Pending evaluation{% endif %}</p>
+<table><tr><th>Planted mention type</th><th>Removed</th><th>Total</th></tr>
+{% for kind, total, redacted in kinds %}<tr><td>{{ kind }}</td><td>{{ redacted }}</td><td>{{ total }}</td></tr>{% endfor %}</table>
+<p class="note">The fixture checks email, phone, self-introduced name, birth or age, nationality and school phrasing. It measures recall on those planted forms only; human usability testing remains pending.</p></div>
+
+<h2>Release boundary</h2>
+<div class="card"><p>Blind cards expose an opaque match handle, evidence category, redacted excerpt, reason, start month and work mode. They never expose candidate id, name, email, nationality, school, birth year or private context. After both opt-ins, the recruiter sees only name and email; the candidate sees only the company name and industry.</p></div>
+</main></body></html>

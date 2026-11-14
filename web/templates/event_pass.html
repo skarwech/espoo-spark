@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Event Pass · Spark{% endblock %}
+{% block main %}
+<h1>My Event Pass</h1>
+<p id="pass-state" class="sub" role="status">Opening your private agenda…</p>
+<section id="pass-content" class="grid"></section>
+<p id="pulse-state" class="muted" role="status"></p>
+<button id="sync-pulse" class="ghost">Sync feedback</button>
+<div id="expired" class="notice" hidden>This event pass has expired.</div>
+{% endblock %}
+{% block script %}<script>window.SPARK_PASS_TOKEN={{ token|tojson }};</script><script src="/static/event_pass.js"></script>{% endblock %}

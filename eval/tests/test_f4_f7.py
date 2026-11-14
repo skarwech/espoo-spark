@@ -2,6 +2,7 @@
 Each gate also checks its own population (non-empty, complete), so an emptied or truncated output turns it red."""
 import csv
 import json
+import os
 import random
 import re
 import sys
@@ -9,6 +10,7 @@ from pathlib import Path
 
 import pytest
 
+PROFILE = os.environ.get("SPARK_ENGINE", "v1")  # v1 = registered Claude run; d1 = DeepSeek re-validation (method.md §7)
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "eval"))
@@ -18,7 +20,7 @@ from engine.tiers import tier  # noqa: E402
 from pii import NATIONALITY_FORMS, identity_leaks, nationality_hits  # noqa: E402
 
 pytestmark = pytest.mark.hard
-ENGINE = ROOT / "data" / "engine"
+ENGINE = ROOT / "data" / ("engine" if PROFILE == "v1" else f"engine_{PROFILE}")
 RANK = {"none": 0, "stretch": 1, "worth": 2, "strong": 3}
 ORDER = {"none": 0, "partial": 1, "supported": 2}
 HEROES = ("J-001", "J-002", "J-003")
@@ -47,6 +49,9 @@ def stories() -> dict:
 
 
 def golden_candidates() -> list[str]:
+    """Candidates the lens covers: golden + heroes for v1; every registered person for d1 (method.md §7)."""
+    if PROFILE != "v1":
+        return sorted(j["candidate_id"] for j in data("data/out/jobseekers.json"))
     return sorted({k["candidate_id"] for k in data("eval/golden_key.json")} | set(HEROES))
 
 
@@ -139,7 +144,7 @@ def test_embedded_inputs_carry_no_identity():
 # ---------- F6 ----------
 def test_judge_quotes_are_exact_substrings_of_their_unit():
     """Stored and stability judgments: a non-none label cites a unit of the same story, retrieved for that outcome, with a quote of
-    at least 3 words that is an exact substring of it (the prompt asks for 4; every stored quote has at least 3)."""
+    at least 3 words or 15 characters (Finnish fits a clause into two words) that is an exact substring of it."""
     units = {u["id"]: u["text"] for r in load("units.json").values() for u in r["units"]}
     retr = load("retrieval.json")["runs"]
     bad, cited = [], 0
@@ -151,7 +156,8 @@ def test_judge_quotes_are_exact_substrings_of_their_unit():
                     continue
                 cited += 1
                 shown = {r["unit_id"] for r in retr[run][k]}
-                if len(j["quote"].split()) < 3 or not j["unit_id"].startswith(f"{sid}.") or j["unit_id"] not in shown \
+                if (len(j["quote"].split()) < 3 and len(j["quote"].strip()) < 15) or not j["unit_id"].startswith(f"{sid}.") \
+                        or j["unit_id"] not in shown \
                         or j["quote"] not in units.get(j["unit_id"], ""):
                     bad.append((name, run, k))
     assert cited > 0 and not bad, bad[:5]

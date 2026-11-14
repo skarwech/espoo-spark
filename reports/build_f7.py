@@ -35,7 +35,7 @@ def gate_labels(units: dict, inj: dict) -> dict:
         "test_every_pool_story_extracted_and_planted_thin_flagged": "F4 5 planted thin stories flagged, none dropped; thin rule holds for all",
         "test_embedding_deterministic_and_version_logged": "F5 embeddings deterministic, version matches; all 156 stored retrieval runs recompute to the same units in the same order",
         "test_embedded_inputs_carry_no_identity": "F5 embedded inputs carry no identity (names incl. Finnish case forms, nationality in en/fi/sv/ar, school)",
-        "test_judge_quotes_are_exact_substrings_of_their_unit": "F6 every quote is exact, ≥ 3 words, from a unit retrieved for that outcome",
+        "test_judge_quotes_are_exact_substrings_of_their_unit": "F6 every quote is exact, ≥ 3 words or 15 characters, from a unit retrieved for that outcome",
         "test_injection_never_raises_a_label": f"F6 injection, story level: no label raised (extraction kept {kept} of {len(twins)} injected sentences)",
         "test_injection_at_judge_level_never_raises_a_label":
             f"F6 injection, judge level: injected sentence inside a unit shown for every outcome, no label raised, none rejected"

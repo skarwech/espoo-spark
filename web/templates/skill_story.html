@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Skill Story · Spark{% endblock %}
+{% block main %}
+<h1>Skill Story</h1>
+<p class="sub">Four short answers about work you did, in your own words and in any language. We store exactly what you write.
+You will never see a score or a ranking, because there is none.</p>
+<div class="notice" role="note"><b>AI disclosure.</b> An AI assistant (Kimi K3.1 Pro) can ask you up to two clarifying questions per box. It never rewrites your text. Please leave out your name, contact details, birth date, nationality and school names; the check below helps.</div>
+
+<form id="story" class="card" novalidate>
+  <label>Language of your story
+    <select id="lang"><option value="en">English</option><option value="fi">Suomi</option><option value="sv">Svenska</option><option value="ar">العربية</option><option value="other">Other</option></select>
+  </label>
+  <label id="lang-other-wrap" hidden>Language code (e.g. et, uk) <input id="lang-other" maxlength="3" pattern="[a-z]{2,3}"></label>
+  {% for box, title, hint in [("problem", "1. A problem you solved", "What was the situation and what was at stake?"),
+                               ("did", "2. What you did personally", "Your own actions: how, with what tool or method, with what result."),
+                               ("differently", "3. What you would do differently now", "Looking back, what would you change?"),
+                               ("next", "4. What you want next, and your constraints", "The work you want; when you can start.")] %}
+  <div class="box">
+    <label for="{{ box }}"><b>{{ title }}</b> <span class="muted">{{ hint }}</span></label>
+    <textarea id="{{ box }}" rows="5" dir="auto" data-box="{{ box }}"></textarea>
+    <div class="actions"><span class="muted count" id="{{ box }}-count" aria-live="polite">0 / {{ max_words }} words</span>
+      {% if box != "next" %}<button type="button" class="ghost clarify" data-box="{{ box }}">Ask me a clarifying question</button>{% endif %}</div>
+    <ul class="questions" id="{{ box }}-q" aria-live="polite"></ul>
+  </div>
+  {% endfor %}
+
+  <fieldset><legend>Practical details</legend>
+    <div class="row">
+      <label>Work mode <select id="work_mode"><option value="hybrid">Hybrid</option><option value="onsite">Onsite</option><option value="remote">Remote</option></select></label>
+      <label>Earliest start <input id="start" type="month" value="2027-01"></label>
+      <label class="check"><input type="checkbox" id="needs_relocation"> I would need relocation support</label>
+    </div>
+    <div class="row" id="langs">
+      {% for code, name in [("en", "English"), ("fi", "Finnish"), ("sv", "Swedish")] %}
+      <label>{{ name }} <select data-lang="{{ code }}"><option value="">—</option>{% for l in levels %}<option>{{ l }}</option>{% endfor %}</select></label>
+      {% endfor %}
+    </div>
+  </fieldset>
+  <label class="check"><input type="checkbox" id="ai_used"> I used AI to help me write this (no penalty: it is never used for matching)</label>
+  <details><summary>Optional: 3-minute mini case (seen only by a recruiter, never scored)</summary>
+    <label for="mini_case" class="muted">A company's real situation: “Field sensors send many false alerts, and nobody clearly owns the data pipeline.” How would you start?</label>
+    <textarea id="mini_case" rows="4" dir="auto"></textarea></details>
+  <details><summary>Optional: context I'd like recruiters to know (shown only if I opt in to reveal)</summary>
+    <label for="private_context" class="muted">For example visa status or language plans. Stored separately, never used for matching.</label>
+    <textarea id="private_context" rows="3" dir="auto"></textarea></details>
+
+  <div class="actions wrap">
+    <button type="button" id="check" class="ghost">Check for personal details</button>
+    <button type="button" id="preview-btn" class="ghost">Preview what recruiters will see</button>
+  </div>
+  <ul id="id-warnings" class="warnings" aria-live="polite"></ul>
+  <div id="recruiter-preview" class="card inset" hidden></div>
+  <label class="check"><input type="checkbox" id="consent"> I agree that Spark stores this story to suggest conversations at the event. I can delete it at any time.</label>
+  <div class="actions"><span id="submit-status" role="status" class="muted"></span><button id="submit" class="primary">Submit my Skill Story</button></div>
+</form>
+<section id="delete-story" class="card" hidden>
+  <h2>Delete my submitted story</h2>
+  <p class="muted">Your one-time deletion code is kept in this browser. Deletion removes the stored story, private context, and its story-specific extraction cache.</p>
+  <button id="delete-story-button" class="ghost">Delete my story</button>
+</section>
+{% endblock %}
+{% block script %}<script src="/static/skill_story.js"></script>{% endblock %}

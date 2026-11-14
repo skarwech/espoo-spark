@@ -14,7 +14,10 @@ match score, and never rejects anyone. People decide.
 ```bash
 make setup          # virtual environment + pinned packages
 make demo           # Match Lens for NordSense × Karim, Elena, Aino, replayed from stored results
-make serve          # then open http://127.0.0.1:8777/reports/f7.html and /reports/f0.html
+make serve-streamlit # full Spark workflows in Streamlit at http://localhost:8501
+make serve          # then open http://127.0.0.1:8777/reports/f7.html, /reports/f3.html and /reports/f8.html
+make serve-app      # open http://127.0.0.1:8778 for Need Studio, Skill Story, Blind View and Event Console
+make step5          # offline F9–F16 audit; unmeasurable human/device targets stay pending
 ```
 
 The demo is an **oracle replay**: every model answer was recorded when the engine ran (`data/llm_cache/`), so the demo needs
@@ -25,7 +28,7 @@ pinned revision).
 To re-check everything the way a reviewer would:
 
 ```bash
-make verify         # 30 hard gates (pytest), targets, proof pages rebuilt from stored results
+make verify         # existing hard gates, F9–F16 offline audit, and proof pages
 ```
 
 ## 2. The problem and the idea
@@ -99,7 +102,9 @@ Thresholds never move after results; every later change is a dated note, and eve
 - **Amendment A1** (hub-skill rule, stricter tagging) was attempted after the first results and **not completed** (API credit
   ran out); its partial results did not help, and the registered run stays the result. The code is opt-in (`SPARK_AMENDMENT=A1`).
 
-Proof pages: `reports/f0.html` (synthetic world, golden set) and `reports/f7.html` (engine, gates, targets, Match Lens grids).
+Proof pages: `reports/f0.html` (synthetic world, golden set), `reports/f7.html` (engine, gates, targets, Match Lens grids),
+`reports/f3.html` (Need Studio, Pool Preview, Skill Story), `reports/f8.html` (blind cards and two-sided reveal), and
+`reports/f16.html` (F9–F16 release gates; unmeasured gates remain pending).
 
 ## 5. Responsible-AI design choices
 
@@ -115,10 +120,68 @@ Proof pages: `reports/f0.html` (synthetic world, golden set) and `reports/f7.htm
 - Synthetic data and AI proxy annotators: human labels, human timing tests and mentor reviews are still needed.
 - Two registered targets are missed (above), and the polished-generic hero lands one tier too high.
 - The registered engine uses Claude (`claude-opus-5-5`); results replay from cache, but re-running live needs an API key.
-- Steps after the Match Lens in the challenge (Need Studio interview, Pool Preview, Conversation Cards, agenda, Event Pass,
-  dashboard, bias audit) are **not part of this repository**.
+- F1–F16 prototype workflows now exist on synthetic data: conversation cards, deterministic agenda drafting, organizer approval,
+  hashed event passes, offline pulse feedback, a threshold-suppressed dashboard, counterfactual audit and compliance routes.
+  This does not mean the registered acceptance targets have passed. Human reviews, device and load checks, the exact-optimizer
+  measurement, seeded agenda sweeps and three consecutive clean release runs remain pending until recorded in the F16 report.
 
-## 7. Repository map
+## 7. Event workflow
+
+Run the app with the d1 profile and configure an organizer token in the server environment:
+
+```sh
+export SPARK_ORGANIZER_TOKEN='choose-a-private-local-token'
+make serve-app
+```
+
+For a one-command local demo, use `make serve-streamlit`. Streamlit starts the same FastAPI app on loopback port 8778 and
+shows its existing pages in an embedded frame at `http://localhost:8501`; the offline pass service worker and all current
+workflows remain available. Set `SPARK_STREAMLIT_API_PORT` to change the local API port. For hosted Streamlit, deploy the FastAPI
+service separately and set `SPARK_STREAMLIT_API_URL` to its publicly reachable base URL.
+
+Open `/blind-view` for redacted evidence and optional conversation prompts. The organizer opens `/event-console`, drafts and
+reviews an agenda, approves it, then issues private passes. Each link is labelled with an organizer-only attendee reference for
+manual delivery; the reference is not in the pass or URL. Pass URLs contain random capability tokens and no attendee identity.
+Deliver each private link through a separate verified channel; this prototype does not send email or notifications. Each attendee can
+cache their pass page and agenda for offline use; pulse feedback queues locally and syncs idempotently when the API returns.
+The organizer dashboard, slot trace and compliance snapshot are available through authenticated API routes documented in
+`api/main.py`. Rebuilding an agenda revokes old passes and clears that event's pulse data.
+
+`make report` regenerates the F16 page. It reads `eval/results/step5/f9_f16.json` when evaluation data is available and reports
+unmeasured gates as pending. The event scheduler uses a deterministic greedy assignment; F10 compares it with an exact
+dynamic-programming solver on small instances. The comparison and human-involved targets remain unverified until recorded.
+
+### F9–F16 review and release evidence
+
+Run the offline synthetic audit to create `eval/results/step5/review_pack.json` and `f9_f16.json`:
+
+```sh
+make step5
+make step5-review
+```
+
+Open `review_pack.json` alongside `human_reviews.json` and follow its rating guide. Complete the sheet without adding names or other personal details. Rate all ten generic-story
+questions, all 30 prompt cards, and all five dashboard summaries; record one concrete action from each of three mentor
+sessions; attest the offline pass check on two physical devices; and enter the end-to-end demo time in seconds. Run
+`make step5` again to score the completed sheet. The packet hash prevents old ratings from being applied after the examples
+change.
+
+For browser and load evidence, keep the app running with the same `SPARK_DB` and organizer token configuration:
+
+```sh
+make setup
+.venv/bin/python -m pip install -r requirements-browser.txt
+.venv/bin/python -m playwright install chromium
+make serve-app
+```
+
+In another terminal, export the same `SPARK_ORGANIZER_TOKEN` used by the app, then run `make browser-step5` and `make load-step5`.
+Each script creates a uniquely named synthetic event with passes and keeps its records in the app's configured database. The
+browser audit exercises isolated browser storage profiles; those checks do not replace the two-device
+attestation in the review sheet. The load script measures 1,000 concurrent pass fetches. Then rerun `make step5` to refresh
+the report from those evidence files.
+
+## 8. Repository map
 
 | Path | What |
 |---|---|
@@ -129,6 +192,9 @@ Proof pages: `reports/f0.html` (synthetic world, golden set) and `reports/f7.htm
 | `data/heroes.json` | NordSense, Aino, Karim, Elena (hand-authored running example) |
 | `data/esco_cache.json` | frozen ESCO skills and relations |
 | `engine/` | extraction, embeddings, judge, adjacency, tiers, cached LLM client |
+| `api/blind.py` | F8 redacted blind evidence cards and the two-sided contact reveal |
+| `api/event_ops.py`, `api/compliance.py` | F9–F15 conversation cards, agenda/pass/pulse, audit, trace and deletion workflows |
+| `eval/tests/test_f8.py`, `reports/f8.html`, `reports/f16.html` | F8 hard gates and F9–F16 release status page |
 | `data/engine/` | stored step-2 outputs (units, retrieval, judgments, Match Lens) |
 | `data/engine_v1/`, `data/engine_a1_partial/` | frozen registered run; the uncompleted amendment's partial outputs |
 | `data/llm_cache/` | every model response by request hash, plus a cost ledger (about $17 of API calls in total) |

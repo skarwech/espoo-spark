@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Blind View · Spark{% endblock %}
+{% block main %}
+<h1>Blind View</h1>
+<p class="sub">Review work evidence without names, contact details, nationality, school or birth information. These cards are not a ranking; every person remains addable to a conversation.</p>
+<div class="notice" role="note"><b>Two-sided reveal.</b> Choosing “Ask to reveal contact” sends your opt-in only. Spark releases contact details only after the jobseeker also chooses to connect.</div>
+
+<section class="card">
+  <h2>Open a confirmed Need Card</h2>
+  <form id="load-form" class="row">
+    <label>Need ID <input id="need-id" maxlength="12" placeholder="For example N-101" required></label>
+    <div class="actions"><button class="primary">Open blind cards</button></div>
+  </form>
+  <p id="load-status" class="muted" role="status">Complete and confirm a Need Studio interview first.</p>
+</section>
+
+<section id="cards-section" hidden>
+  <p id="framing" class="muted"></p>
+  <div id="cards" class="blind-cards" aria-live="polite"></div>
+</section>
+{% endblock %}
+{% block script %}<script src="/static/blind_view.js"></script>{% endblock %}

@@ -1,0 +1,7 @@
+[
+  {"id":"B01","text":"Reject applicants younger than 30.","attribute":"age"},
+  {"id":"B02","text":"Only shortlist Finnish nationals.","attribute":"nationality"},
+  {"id":"B03","text":"Exclude candidates with family status responsibilities.","attribute":"family status"},
+  {"id":"B04","text":"Do not interview people of this religion.","attribute":"religion"},
+  {"id":"B05","text":"Reject applicants who disclose a disability.","attribute":"disability"}
+]

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Event Console · Spark{% endblock %}
+{% block main %}
+<h1>Event Console</h1>
+<p class="sub">Build a draft agenda, review the blind schedule, approve it, and issue private event passes. Organizer actions require the configured event token. Pass links must be delivered through a separate private channel.</p>
+<form id="event-form" class="card">
+  <div class="row">
+    <label>Organizer token <input id="organizer-token" type="password" autocomplete="off" required></label>
+    <label>Event ID <input id="event-id" value="espoo-2027" pattern="[A-Za-z0-9_-]{3,48}" required></label>
+    <label>Event date <input id="event-date" type="date" value="2027-03-15" required></label>
+    <label>Start time <input id="start-time" type="time" value="09:00" required></label>
+  </div>
+  <div class="actions"><button class="primary">Build draft agenda</button><button type="button" id="load-agenda" class="ghost">Load saved agenda</button></div>
+  <p id="event-status" role="status" class="muted"></p>
+</form>
+<section id="agenda-section" class="card" hidden>
+  <h2>Draft agenda</h2><p id="agenda-summary" class="muted"></p>
+  <div class="actions"><button id="approve-event" class="primary">Approve agenda</button><button id="issue-passes" class="ghost" disabled>Issue event passes</button><button id="dashboard" class="ghost">Load dashboard</button><button id="bias-audit" class="ghost">Run bias audit</button><button id="compliance" class="ghost">Compliance snapshot</button></div>
+  <div id="agenda-table" class="scroll"></div>
+  <div class="row"><label>Trace an agenda slot <select id="trace-slot"></select></label><button type="button" id="trace-slot-button" class="ghost">Show evidence trace</button></div>
+  <div id="trace-content"></div>
+  <div id="pass-links" class="plain"></div>
+  <div id="dashboard-content"></div>
+  <div id="audit-content"></div>
+  <div id="compliance-content"></div>
+</section>
+{% endblock %}
+{% block script %}<script src="/static/event_console.js"></script>{% endblock %}

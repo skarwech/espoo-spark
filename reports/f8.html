@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark F8 · Blind View and Reveal</title>
+<style>:root {
+  color-scheme: light;
+  --bg: #f6f5f2; --surface: #fcfcfb; --line: #e4e2dc; --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #6f6d68;
+  --series-1: #1f66bd; --good: #0f7b3e; --good-bg: #e3f3e8; --bad: #b42318; --bad-bg: #fde7e4;
+  --proxy: #7a5b00; --proxy-bg: #fbf1d0; --mark: #fff3bf;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+    --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+    --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --surface: #1a1a19; --line: #2e2d2b; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #bcbab2;
+  --series-1: #3987e5; --good: #6fd39a; --good-bg: #173524; --bad: #ff8a7a; --bad-bg: #3d1a16;
+  --proxy: #f0c75e; --proxy-bg: #3a2f0e; --mark: #4a3f10;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 12px; }
+h3 { font-size: 15px; margin: 0 0 8px; }
+.sub { color: var(--ink-2); margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid3 { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.pass { color: var(--good); background: var(--good-bg); }
+.fail { color: var(--bad); background: var(--bad-bg); }
+.proxy, .pending { color: var(--proxy); background: var(--proxy-bg); }
+.kind { color: var(--ink-3); font-size: 12px; }
+.stat { font-size: 28px; font-weight: 650; line-height: 1.1; }
+.stat-l { color: var(--ink-2); font-size: 13px; }
+.bar-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; }
+.bar-track { display: flex; align-items: center; gap: 8px; }
+.bar { height: 14px; background: var(--series-1); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bar-v { color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.story p { margin: 0 0 8px; }
+.story .box { color: var(--ink-3); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; display: block; }
+.lbl { font-size: 12px; font-weight: 600; }
+.lbl.supported { color: var(--good); } .lbl.partial { color: var(--proxy); } .lbl.none { color: var(--ink-3); }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+tr.disagree td, tr.diffplanted td { background: var(--mark); }
+.muted { color: var(--ink-2); font-size: 13px; }
+.scroll { overflow-x: auto; }
+details summary { cursor: pointer; color: var(--ink-2); }
+ .note { color: var(--ink-3); font-size: 12px; }</style>
+</head>
+<body><main>
+<h1>Spark · F8 · Blind View and Reveal</h1>
+<p class="sub">Offline verification of redacted evidence cards and the two-sided contact reveal. The feature reads cached d1 Match Lens
+grids only; no model call runs while a blind card is built. It is synthetic-data prototype evidence, not a claim of production readiness.</p>
+
+<h2>Hard gates</h2>
+<div class="card scroll"><table><tr><th>Check</th><th>Status</th></tr>
+<tr><td>F8 blind payloads for all 150 candidates contain no identity field or value</td><td><span class="pill pass">PASS</span></td></tr><tr><td>F8 one-sided opt-in reveals nothing; released log has both timestamps</td><td><span class="pill pass">PASS</span></td></tr>
+</table></div>
+
+<div class="grid"><section class="card"><h2>Blind payload</h2><p class="big">150 cards</p>
+<p class="muted">One for each registered synthetic jobseeker, including people with no evidence yet. Identity values leaked: 0.</p></section>
+<section class="card"><h2>Two-sided release</h2><p class="muted">One recruiter opt-in returns only an awaiting state. Once the candidate independently opts in, the audit record stores recruiter consent time, candidate consent time and release time; it stores no identity fields.</p>
+<p class="mono">log: recruiter 1794688072.509485, candidate 1794688072.5101829, released 1794688072.5102441</p></section></div>
+
+<h2>Redaction target</h2>
+<div class="card"><p class="big">100% of 60 planted mentions removed (target ≥ 95%)</p>
+<table><tr><th>Planted mention type</th><th>Removed</th><th>Total</th></tr>
+<tr><td>birth</td><td>10</td><td>10</td></tr><tr><td>email</td><td>10</td><td>10</td></tr><tr><td>name</td><td>10</td><td>10</td></tr><tr><td>nationality</td><td>10</td><td>10</td></tr><tr><td>phone</td><td>10</td><td>10</td></tr><tr><td>school</td><td>10</td><td>10</td></tr></table>
+<p class="note">The fixture checks email, phone, self-introduced name, birth or age, nationality and school phrasing. It measures recall on those planted forms only; human usability testing remains pending.</p></div>
+
+<h2>Release boundary</h2>
+<div class="card"><p>Blind cards expose an opaque match handle, evidence category, redacted excerpt, reason, start month and work mode. They never expose candidate id, name, email, nationality, school, birth year or private context. After both opt-ins, the recruiter sees only name and email; the candidate sees only the company name and industry.</p></div>
+</main></body></html>

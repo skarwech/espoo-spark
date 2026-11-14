@@ -1,0 +1,757 @@
+[
+ {
+  "id": "P01",
+  "style": "precise",
+  "lang": "en",
+  "company": {
+   "name": "Lumora Payments Oy",
+   "industry": "fintech"
+  },
+  "answers": {
+   "context": "We are a payments company in Keilaniemi processing about 40,000 card and bank transactions a day for Nordic web shops. Our finance team still reconciles settlements against bank statements largely by hand in spreadsheets. That takes two people most of every morning and makes our month-end close slow. In the next six months this person should automate settlement reconciliation, shorten the month-end close, and give finance a clear view of what is still unmatched. They will sit between the finance team and our two data engineers.",
+   "outcomes": "After 90 days I expect three things. First, and this is a must: daily settlement reconciliation automated so that at least 95% of transactions match without anyone touching them, by the end of April 2027. Second, also a must: the reconciliation part of the month-end close cut from six working days to three within those 90 days. Third, nice to have but not critical: a self-service dashboard of unmatched transactions that the finance team uses instead of the spreadsheet, live by the end of April 2027.",
+   "skills": "Must-have: generating reconciliation reports, so they have built bank or ledger reconciliations before. Also must-have: Python, because all our tooling is written in Python. Can learn: accounting techniques, since we can teach our chart of accounts and the basics of the close. Also can learn: business intelligence, we use a standard BI platform they will pick up quickly. Nice to have: presenting data visually, for example clear charts for the finance team.",
+   "constraints": "English is required; it is our working language. Finnish is not required. The office is in Keilaniemi, Espoo, and we work hybrid, three days a week in the office. Start date: February 2027. International hires are welcome. We offer partial relocation support: we cover the flight and the first month of temporary housing, but not a full relocation package.",
+   "reality": "Our previous analyst was technically strong and wrote reconciliation scripts quickly, but he worked alone and never documented anything. When our bank changed its statement file format, the scripts broke while he was on holiday. Nobody else could fix them, so the team went back to manual matching for three weeks."
+  },
+  "follow_up_answers": [
+   "For the reconciliation: we read the match rate from the daily reconciliation report. By the end of April 2027 it should show at least 95% of transactions matched automatically, every working day for two weeks in a row.",
+   "For the month-end close: the April 2027 close is the test. The reconciliation part should take three working days instead of six, measured in our close checklist.",
+   "For the dashboard: by the end of April 2027 the finance team opens the unmatched-transactions dashboard every morning and the old spreadsheet is archived.",
+   "To sum up: 95% automatic matches, close reconciliation in three working days instead of six, and the dashboard in daily use, all by the end of April 2027."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Automate daily settlement reconciliation so at least 95% of transactions match without manual work by the end of April 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Cut the reconciliation part of the month-end close from six working days to three within 90 days",
+     "priority": "must"
+    },
+    {
+     "text": "Launch a self-service dashboard of unmatched transactions that replaces the finance spreadsheet by the end of April 2027",
+     "priority": "nice"
+    }
+   ],
+   "skills": [
+    {
+     "label": "generate reconciliation reports",
+     "priority": "must"
+    },
+    {
+     "label": "Python (computer programming)",
+     "priority": "must"
+    },
+    {
+     "label": "accounting techniques",
+     "priority": "learnable"
+    },
+    {
+     "label": "business intelligence",
+     "priority": "learnable"
+    },
+    {
+     "label": "deliver visual presentation of data",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "en",
+     "required": true
+    },
+    {
+     "lang": "fi",
+     "required": false
+    }
+   ],
+   "onsite": "hybrid",
+   "start": "2027-02",
+   "intl_ok": true,
+   "relocation_support": "partial",
+   "reality_note": "A previous analyst wrote undocumented reconciliation scripts alone; when the bank changed its file format during his holiday nobody could fix them and the team went back to manual matching for three weeks."
+  }
+ },
+ {
+  "id": "P02",
+  "style": "vague",
+  "lang": "en",
+  "company": {
+   "name": "Reittiketju Oy",
+   "industry": "logistics"
+  },
+  "answers": {
+   "context": "Well, we are a delivery company out in Juvanmalmi, Espoo, mostly taking parcels and pallets to shops around the capital region. Things have kind of grown faster than our way of working. The routes are a bit all over the place, the warehouse and the office systems do not really talk to each other, and stuff runs out when it should not. So I guess we need someone to sort of get a grip on all that and make the whole thing smoother.",
+   "outcomes": "Hmm, what they should get done... well, the routes should just be better somehow, that is the main thing, that is a must. And the warehouse and the system should be more connected, somehow, that is a must too, I think. And maybe someone could also look at the stock side of things, it is a bit of a headache, but that is something they could learn along the way, they do not need to be experts in it from day one.",
+   "skills": "Must have... someone who really knows route planning, planning transport, that sort of thing. And they have to be able to use dispatch software, the system we use to send jobs to the drivers, that is a must as well. Can learn: our ERP system, it is a standard one, they can learn it here. Nice to have: knowing about inventory, keeping track of stock, and maybe a bit of supply chain thinking in general.",
+   "constraints": "Finnish is required, the drivers and the warehouse people speak Finnish. English is required as well, a lot of our systems and some customers are in English. The job is onsite at our depot in Juvanmalmi, no remote work, sorry. Start in March 2027, that would be good. International hires, honestly, not this time, we are not set up for that, so no relocation support either.",
+   "reality": "There was this planner we had before, he made a whole new route plan and just rolled it out over one weekend. The drivers basically ignored it because nobody had asked them about loading times or which customers want their deliveries early. So it was kind of a mess for a while, and we went back to the old routes."
+  },
+  "follow_up_answers": [
+   "Okay, for the routes: by the end of June 2027, driven kilometres should be at least 10% lower than in the same months last year. We can see that in the fleet report.",
+   "For the warehouse and the system: by the end of June 2027, orders should update in the ERP within 5 minutes of being picked in the warehouse, instead of the overnight batch we have now.",
+   "For the stock side: by the end of September 2027, stock-outs in the central warehouse should be down by a third compared to now. We count them in the weekly stock report.",
+   "So, by the end of June 2027: route kilometres down at least 10% and orders in the ERP within 5 minutes. And by the end of September 2027: a third fewer stock-outs in the central warehouse."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Re-plan delivery routes to cut driven kilometres by 10% compared with the same months last year by the end of June 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Connect the warehouse to the ERP so orders update within 5 minutes instead of overnight by the end of June 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Reduce stock-outs in the central warehouse by a third by the end of September 2027",
+     "priority": "learnable"
+    }
+   ],
+   "skills": [
+    {
+     "label": "plan transport operations",
+     "priority": "must"
+    },
+    {
+     "label": "manage dispatch software systems",
+     "priority": "must"
+    },
+    {
+     "label": "manage standard enterprise resource planning system",
+     "priority": "learnable"
+    },
+    {
+     "label": "manage inventory",
+     "priority": "nice"
+    },
+    {
+     "label": "supply chain management",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "fi",
+     "required": true
+    },
+    {
+     "lang": "en",
+     "required": true
+    }
+   ],
+   "onsite": "onsite",
+   "start": "2027-03",
+   "intl_ok": false,
+   "relocation_support": "none",
+   "reality_note": "A previous planner rolled out a new route plan over one weekend without asking drivers about loading times or customer habits, so the drivers ignored it."
+  }
+ },
+ {
+  "id": "P03",
+  "style": "jargon-heavy",
+  "lang": "en",
+  "company": {
+   "name": "Kaarnio Health Oy",
+   "industry": "healthtech"
+  },
+  "answers": {
+   "context": "We are a Series A healthtech scale-up out of Otaniemi building a B2B SaaS platform for remote patient monitoring. The pain point is our integration layer: a monolithic Node service glued to hospital EHRs via point-to-point HL7v2 interfaces, zero observability, and a change failure rate that kills our velocity. In H1 we need someone to own the interop domain end to end, re-architect it toward a FHIR-first API facade, shift testing left in our CI/CD, and get us onboarded to Kanta so we can scale to the wellbeing services counties.",
+   "outcomes": "At T+90, hard requirements. One, a must: the FHIR R4 facade is in prod and handles all new hospital integrations, with p95 latency under 300 ms, by end of Q1 2027. Two, also a must: our DORA numbers need to look way healthier, the current state is not sustainable. Three, they should own the Kanta onboarding workstream, but that one is learn-on-the-job, we do not expect prior Kanta exposure.",
+   "skills": "Must-haves: serious systems-integration chops, meaning interface engines, message queues, gluing heterogeneous systems together. Backend web dev for our REST APIs, also a must. Test automation is a must too: they write the automated test suites themselves and wire them into the pipeline. FHIR R4 is a must as well, we are FHIR-first. Can learn: the e-health and mHealth domain, patient apps, clinical workflows; we will onboard them. Nice-to-have: cloud-native experience, K8s, IaC.",
+   "constraints": "English is required, it is our lingua franca. Finnish is not required, nice-to-have at most. We are remote-first and async by default; HQ in Otaniemi, Espoo is only for quarterly offsites, so the role is fully remote. Start January 2027, ASAP really. International hires: absolutely yes. Relocation: full package, visa, flights, two months of housing, the works.",
+   "reality": "Our last senior hire was a strong IC but went full cowboy: shipped a big refactor of the HL7 adapters straight to main without an RFC or code review, and broke two hospital feeds in prod over a weekend. Root cause in the postmortem was basically zero alignment with the team plus no feature flags. Trust took months to rebuild."
+  },
+  "follow_up_answers": [
+   "For DORA: by end of Q1 2027 we deploy to prod at least daily and change failure rate is under 15%, measured over the trailing 30 days on our CI/CD dashboard.",
+   "For Kanta: done means we pass the Kanta test-environment acceptance by end of April 2027, so we are cleared for production onboarding.",
+   "TL;DR: daily prod deploys and change failure rate under 15% by end of Q1 2027, and Kanta test-environment acceptance passed by end of April 2027."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Put the FHIR R4 API facade into production for all new hospital integrations with p95 latency under 300 ms by the end of Q1 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Reach at least daily production deploys and a change failure rate under 15% by the end of Q1 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Pass the Kanta test-environment acceptance by the end of April 2027",
+     "priority": "learnable"
+    }
+   ],
+   "skills": [
+    {
+     "label": "ICT system integration",
+     "priority": "must"
+    },
+    {
+     "label": "web programming",
+     "priority": "must"
+    },
+    {
+     "label": "develop automated software tests",
+     "priority": "must"
+    },
+    {
+     "label": "unmapped:HL7 FHIR standard",
+     "priority": "must"
+    },
+    {
+     "label": "use e-health and mobile health technologies",
+     "priority": "learnable"
+    },
+    {
+     "label": "cloud technologies",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "en",
+     "required": true
+    },
+    {
+     "lang": "fi",
+     "required": false
+    }
+   ],
+   "onsite": "remote",
+   "start": "2027-01",
+   "intl_ok": true,
+   "relocation_support": "full",
+   "reality_note": "A previous senior hire pushed a large refactor of the hospital interfaces without review or team alignment and broke two hospital feeds in production."
+  }
+ },
+ {
+  "id": "P04",
+  "style": "non-native English",
+  "lang": "en",
+  "company": {
+   "name": "Harjupohja Rakennus Oy",
+   "industry": "construction"
+  },
+  "answers": {
+   "context": "We are construction company, we build apartment buildings in Espoo, now we have four sites running in Suurpelto and Espoonlahti. Problem is our machines. Cranes, lifts, excavators, they break too often and nobody is really responsible for the maintenance. Workers wait, schedule is late. We need person who take care of machine maintenance for all sites, make plan, and also keep the spare parts in order. Next six month this is most important thing for us.",
+   "outcomes": "After 90 days, first thing, this is must: every machine, we have 40 machines, have maintenance plan in our system, latest end of June 2027. Second also must: less machine breakdown on sites, workers are waiting too much now. Third, the spare parts storage need to be more in order, but this they can learn with us, is not problem if they don't know it before.",
+   "skills": "Must have: they know to repair machines themself, hydraulic, engines, this kind. Also must: planning the regular maintenance, so service is on schedule, not only when something broken. And must is the site safety, they need know safety rules and have the safety card. Can learn: the spare parts stock, how to manage inventory, we teach our system. Nice to have: if they can manage budget for maintenance, because cost is big and somebody need follow it.",
+   "constraints": "English is required, many of our workers are from Estonia and other countries, so we speak English and Finnish mixed. Finnish is not required, but good if they know little. Work is onsite, on our sites in Espoo, office is in Kilo. Start in April 2027. International people is welcome. Relocation we give partial help: we pay first month apartment, not more than this.",
+   "reality": "Last year we hire one mechanic, very good with engines. But he didn't make any plan, he only fix when something is broken, always running between sites. After three month he was tired and the machines still breaking same as before. Also he don't tell site managers when machine is going to be out, so they get surprise."
+  },
+  "follow_up_answers": [
+   "For the breakdowns: we count from our machine log. Now is about 20 breakdown in month. End of June 2027 it should be maximum 15, so 25% less.",
+   "For spare parts: when storage is in order, we make maximum 2 emergency orders in month, now is maybe 8. This should be like this from end of June 2027.",
+   "So, end of June 2027: maintenance plan for all 40 machines, breakdowns 25% less, from 20 to 15 in month, and maximum 2 emergency spare part orders in month."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Create a maintenance plan in the system for all 40 machines by the end of June 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Reduce machine breakdowns on sites by 25%, from about 20 to at most 15 per month, by the end of June 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Organise the spare parts storage so there are at most 2 emergency part orders per month by the end of June 2027",
+     "priority": "learnable"
+    }
+   ],
+   "skills": [
+    {
+     "label": "perform machine maintenance",
+     "priority": "must"
+    },
+    {
+     "label": "schedule regular machine maintenance",
+     "priority": "must"
+    },
+    {
+     "label": "unmapped:construction site safety",
+     "priority": "must"
+    },
+    {
+     "label": "manage inventory",
+     "priority": "learnable"
+    },
+    {
+     "label": "manage budgets",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "en",
+     "required": true
+    },
+    {
+     "lang": "fi",
+     "required": false
+    }
+   ],
+   "onsite": "onsite",
+   "start": "2027-04",
+   "intl_ok": true,
+   "relocation_support": "partial",
+   "reality_note": "A previous mechanic was good at repairs but only fixed breakdowns without planning maintenance or warning site managers, so breakdowns continued and he was exhausted after three months."
+  }
+ },
+ {
+  "id": "P05",
+  "style": "Finnish",
+  "lang": "fi",
+  "company": {
+   "name": "Torikori Oy",
+   "industry": "retail"
+  },
+  "answers": {
+   "context": "Olemme espoolainen ruokakauppaketju, ja meillä on kymmenen myymälää Leppävaarasta Espoonlahteen. Suurin ongelma on tuoretuotteiden hävikki: leipää, hedelmiä ja maitotuotteita menee roskiin aivan liikaa, koska tilaukset tehdään vähän mutulla. Myymäläpäälliköt eivät myöskään saa selkeää kuvaa siitä, mikä myy ja mikä ei. Seuraavan puolen vuoden aikana tämän henkilön pitäisi saada hävikki kuriin ja tuoda myyntitiedot osaksi myymälöiden arkea.",
+   "outcomes": "90 päivän jälkeen ehdottomasti tärkein, eli pakollinen: tuoretuotteiden hävikki on pienentynyt 15 % kaikissa kymmenessä myymälässä toukokuun 2027 loppuun mennessä. Sen näemme suoraan kassajärjestelmän hävikkiraportista. Toinen, myös pakollinen: myymäläpäälliköt saisivat paremmin tietoa myynnistä. Kolmas olisi kiva lisä, mutta ei välttämätön: tilausennusteet paranisivat.",
+   "skills": "Pakollisia: myynnin analysointi, eli pitää osata purkaa myyntiluvut tuoteryhmittäin ja myymälöittäin. Varastonhallinta, koska hävikki syntyy juuri varastossa ja hyllyssä. Ja yleisesti data-analyysi, esimerkiksi Excelillä tai vastaavalla työkalulla. Opittavissa: toimitusketjun hallinta, eli miten tukkurit ja toimitusajat toimivat, sen me opetamme. Kiva lisä: datan visualisointi, selkeät kaaviot myymäläpäälliköille.",
+   "constraints": "Suomen kieli on pakollinen, koska työ tehdään myymälöiden kanssa suomeksi. Englantia ei vaadita. Toimisto on Espoon Leppävaarassa, ja työ on hybridiä: kaksi päivää viikossa toimistolla tai myymälöissä, loput etänä. Aloitus maaliskuussa 2027. Ulkomailta palkkaaminen ei ole meille tällä kertaa ajankohtaista, joten muuttotukeakaan emme tarjoa.",
+   "reality": "Edellinen analyytikkomme teki todella hienon tilausmallin Excelissä, mutta kukaan muu ei ymmärtänyt sitä. Hän ei käynyt myymälöissä eikä kysynyt myymäläpäälliköiltä, miksi jotain tilataan, joten päälliköt jatkoivat vanhaan tapaan. Kun hän lähti, malli jäi kokonaan käyttämättä. Nyt haluamme, että uusi ihminen viettää ensimmäiset viikot myymälöissä."
+  },
+  "follow_up_answers": [
+   "Myyntitiedon osalta: kaikki kymmenen myymäläpäällikköä saavat joka maanantai viikkoraportin myynnistä tuoteryhmittäin toukokuun 2027 loppuun mennessä, ja he käyvät sen läpi viikkopalaverissa.",
+   "Ennusteiden osalta: tuoretuotteiden tilausennusteen virhe on alle 10 % elokuun 2027 loppuun mennessä. Nyt se on noin 20 %.",
+   "Eli yhteenvetona: viikkoraportti kaikille kymmenelle myymäläpäällikölle toukokuun 2027 loppuun mennessä, ja tilausennusteen virhe alle 10 % elokuun 2027 loppuun mennessä."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Pienentää tuoretuotteiden hävikkiä 15 % kaikissa kymmenessä myymälässä toukokuun 2027 loppuun mennessä",
+     "priority": "must"
+    },
+    {
+     "text": "Toimittaa kaikille kymmenelle myymäläpäällikölle viikoittainen myyntiraportti tuoteryhmittäin toukokuun 2027 loppuun mennessä",
+     "priority": "must"
+    },
+    {
+     "text": "Laskea tuoretuotteiden tilausennusteen virhe alle 10 %:iin elokuun 2027 loppuun mennessä",
+     "priority": "nice"
+    }
+   ],
+   "skills": [
+    {
+     "label": "carry out sales analysis",
+     "priority": "must"
+    },
+    {
+     "label": "manage inventory",
+     "priority": "must"
+    },
+    {
+     "label": "perform data analysis",
+     "priority": "must"
+    },
+    {
+     "label": "supply chain management",
+     "priority": "learnable"
+    },
+    {
+     "label": "deliver visual presentation of data",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "fi",
+     "required": true
+    },
+    {
+     "lang": "en",
+     "required": false
+    }
+   ],
+   "onsite": "hybrid",
+   "start": "2027-03",
+   "intl_ok": false,
+   "relocation_support": "none",
+   "reality_note": "Edellinen analyytikko teki tilausmallin, jota kukaan muu ei ymmärtänyt; hän ei käynyt myymälöissä eikä kysynyt myymäläpäälliköiltä, joten malli jäi käyttämättä."
+  }
+ },
+ {
+  "id": "P06",
+  "style": "Swedish",
+  "lang": "sv",
+  "company": {
+   "name": "Glimtvik Cleantech Ab",
+   "industry": "cleantech"
+  },
+  "answers": {
+   "context": "Vi är ett cleantechbolag i Esbo som återvinner litiumjonbatterier. Vår pilotanläggning i Kera har vuxit snabbt, men mycket av processen sköts fortfarande manuellt, och linjen stannar oftare än den borde. Under de närmaste sex månaderna behöver den här personen automatisera de manuella stegen, minska driftstoppen och hjälpa oss att förstå hur mycket energi linjen faktiskt drar. Det är en nyckelroll nu när vi förbereder en större anläggning.",
+   "outcomes": "Efter 90 dagar vill vi se tre saker. Det första är ett måste: doseringssteget i sorteringslinjen ska vara automatiserat med PLC-styrning före slutet av juni 2027. Det andra är också ett måste: färre oplanerade stopp på linjen. Det tredje är något personen kan lära sig på jobbet: en instrumentpanel för energiförbrukningen.",
+   "skills": "Måste: PLC-programmering, alltså programmerbara logiska styrsystem, och automationsteknik i allmänhet. Dessutom måste personen kunna övervaka systemets prestanda, till exempel följa upp larm och driftdata från linjen. Kan läras på jobbet: dataanalys, att gå igenom mätdata och hitta mönster. Trevligt att ha: programmering i Python.",
+   "constraints": "Svenska är ett krav, vi är ett svenskspråkigt team. Engelska är också ett krav, eftersom all teknisk dokumentation är på engelska. Finska krävs inte. Arbetet sker på plats i vår anläggning i Kera, Esbo, eftersom man måste vara vid linjen. Start i april 2027. Internationella sökande är välkomna, och vi erbjuder fullt flyttstöd: flytt, tillfälligt boende och hjälp med myndigheterna.",
+   "reality": "Vår förra automationsingenjör var duktig på PLC, men han ändrade programmet direkt på den körande linjen utan att testa först. Två gånger stod hela linjen still en förmiddag. Han pratade inte heller med operatörerna, så de visste inte varför maskinerna plötsligt betedde sig annorlunda."
+  },
+  "follow_up_answers": [
+   "För driftstoppen: vi läser av dem i produktionsloggen. I dag har vi ungefär tolv oplanerade stopp i månaden. I slutet av september 2027 ska det vara högst nio, alltså 25 procent färre.",
+   "För energipanelen: före slutet av augusti 2027 ska det finnas en panel som visar energiförbrukningen per linje timme för timme, och skiftledarna ska använda den varje dag.",
+   "Så sammanfattningsvis: högst nio oplanerade stopp i månaden i slutet av september 2027, och energipanelen i daglig användning hos skiftledarna före slutet av augusti 2027."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Automatisera doseringssteget i sorteringslinjen med PLC-styrning före slutet av juni 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Minska oplanerade stopp med 25 procent, från cirka tolv till högst nio i månaden, före slutet av september 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Ta fram en instrumentpanel som visar energiförbrukningen per linje timme för timme och som skiftledarna använder dagligen, före slutet av augusti 2027",
+     "priority": "learnable"
+    }
+   ],
+   "skills": [
+    {
+     "label": "programmable logic controller",
+     "priority": "must"
+    },
+    {
+     "label": "automation technology",
+     "priority": "must"
+    },
+    {
+     "label": "monitor system performance",
+     "priority": "must"
+    },
+    {
+     "label": "perform data analysis",
+     "priority": "learnable"
+    },
+    {
+     "label": "Python (computer programming)",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "sv",
+     "required": true
+    },
+    {
+     "lang": "en",
+     "required": true
+    },
+    {
+     "lang": "fi",
+     "required": false
+    }
+   ],
+   "onsite": "onsite",
+   "start": "2027-04",
+   "intl_ok": true,
+   "relocation_support": "full",
+   "reality_note": "Den förra automationsingenjören ändrade PLC-programmet direkt på den körande linjen utan test och utan att prata med operatörerna, vilket stoppade linjen två gånger."
+  }
+ },
+ {
+  "id": "P07",
+  "style": "terse",
+  "lang": "en",
+  "company": {
+   "name": "Hollowpine Games Oy",
+   "industry": "games"
+  },
+  "answers": {
+   "context": "Mobile game studio, Otaniemi. Too many crashes after releases. Need QA automation.",
+   "outcomes": "Automated tests, must. Fewer crashes, must. Perf dashboard, nice to have.",
+   "skills": "Must: writing automated tests, Python. Can learn: performance monitoring. Nice: data visualisation.",
+   "constraints": "English required. Finnish not needed. Hybrid, Otaniemi, two office days. Start January 2027. International: yes. Relocation: full support.",
+   "reality": "Last QA hire wrote flaky tests. Team stopped trusting them, ignored failures."
+  },
+  "follow_up_answers": [
+   "Tests: smoke suite runs on every build by end of March 2027, under 30 minutes.",
+   "Crashes: under 1% of sessions by end of March 2027.",
+   "Dashboard: frame time per device, live by end of April 2027.",
+   "Recap: smoke suite on every build under 30 min and crashes under 1% of sessions by end of March 2027; dashboard by end of April 2027."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Run an automated smoke test suite on every build in under 30 minutes by the end of March 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Reduce the crash rate to under 1% of sessions by the end of March 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Launch a per-device frame-time performance dashboard by the end of April 2027",
+     "priority": "nice"
+    }
+   ],
+   "skills": [
+    {
+     "label": "develop automated software tests",
+     "priority": "must"
+    },
+    {
+     "label": "Python (computer programming)",
+     "priority": "must"
+    },
+    {
+     "label": "monitor system performance",
+     "priority": "learnable"
+    },
+    {
+     "label": "deliver visual presentation of data",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "en",
+     "required": true
+    },
+    {
+     "lang": "fi",
+     "required": false
+    }
+   ],
+   "onsite": "hybrid",
+   "start": "2027-01",
+   "intl_ok": true,
+   "relocation_support": "full",
+   "reality_note": "A previous QA hire wrote flaky tests, so the team stopped trusting them and ignored failures."
+  }
+ },
+ {
+  "id": "P08",
+  "style": "verbose",
+  "lang": "en",
+  "company": {
+   "name": "Kuntavirta Systems Oy",
+   "industry": "public sector supplier"
+  },
+  "answers": {
+   "context": "Oh, where to start. So, we are a software company in Tapiola, about sixty people, and we have been supplying financial management systems to Finnish municipalities for, gosh, almost twenty years now. Back when I started we were installing things from CDs, can you imagine. Anyway, these days our customers are municipalities and a couple of joint municipal authorities, and they all run our ERP for their finances, but each of them has its own patchwork of other systems around it: payroll from one vendor, procurement from another, sometimes an ancient spreadsheet macro that exactly one person in the finance office understands. The problem we need solved in the next six months is really the integrations between our ERP and all those other systems, and getting the budget data out into reporting that their finance people can actually use. Right now it is a lot of nightly file transfers that break, and my team spends half its time firefighting. I will be honest, it has been a bit of a sore point at our customer meetings lately, and I have had more than one awkward coffee about it.",
+   "outcomes": "Right, 90 days. Let me think out loud for a second. The big one, and I would call it an absolute must, is the pilot: we have twelve municipalities in our reporting pilot, and by the end of August 2027 their budget data should be flowing automatically into the new reporting every night, all twelve of them, without anyone pushing files around by hand. That is the thing my CEO asks me about every Monday, so, yes. The second one is also a must, and it is that the integrations should just be less of a headache overall, you know, fewer of those late-evening calls. I remember one Midsummer Eve I spent on the phone with a finance secretary in a small town because a payroll file had the wrong decimal separator, and that sort of thing really should not happen any more. And the third one, which honestly would be a nice bonus but is not critical, is that our customers' finance people actually start liking the dashboards rather than exporting everything back into a spreadsheet the minute they log in.",
+   "skills": "Okay, sorting skills, I like this. Must-haves: first, they need to know how to manage a standard ERP system; ours is our own product, but if they have worked with any of the big standard ERPs, configuring it, user roles, that kind of thing, they will be fine. Second must: system integration, really connecting systems, interfaces, file transfers, APIs, all of that plumbing, because that is where the fires are. Then the can-learn bucket: business intelligence. We have a BI platform and I would love them to get good at it, but I am happy to send them on a course; we did that before and it worked out well for one of our juniors, who is now basically our reporting guru. Nice to have: understanding budgets, how budgets are managed in a municipality, the cycle, the approvals, the council meetings, because then they would understand why the finance people panic every October. And also nice to have: presenting data visually, making charts that a council member can read without a magnifying glass. My eyesight is not what it used to be either, so I appreciate a good chart.",
+   "constraints": "Languages first. Finnish is required, no way around it, because our customers are municipalities, the finance offices work in Finnish, and a lot of the material, council decisions and so on, is in Finnish. English is required too, because our development team works in English; we have developers from four or five countries now, which is lovely, we have a very international lunch table. Swedish is not required, although we do have a few bilingual municipalities as customers, so it would not hurt, but no, not required. Location: our office is in Tapiola, Espoo, right by the metro, and we work hybrid, which for us means two days a week in the office, usually Tuesdays and Thursdays, when we have the cinnamon buns. Start date would be May 2027; we are in the middle of a big release in spring and I do not want to throw someone into that chaos. International hires are welcome, as long as the Finnish is there, and we offer partial relocation support: we pay moving costs up to a fixed amount and help with the paperwork, but we do not provide housing.",
+   "reality": "Oh, I have a story for this one. A couple of years ago we hired an integration developer, very talented, really, he could write code faster than anyone I have seen. But he never really engaged with the customers. He would fix an interface on his own laptop and push it out without telling the municipality's finance office that anything had changed, so then they would call us in a panic because their reports looked different on Monday morning. And when things broke he would just quietly patch them at night, so nobody, including me, knew how fragile some of those integrations actually were until he left and everything fell on us at once. He was a lovely guy, brought homemade rye bread to the office every Friday, but the communication part just was not there, and that is what this role really needs."
+  },
+  "follow_up_answers": [
+   "Ah, for the integrations being less of a headache, let me be concrete: right now we log about twenty integration incidents a month in our ticketing system, and by the end of August 2027 I would want that under eight a month. That is the number I would look at, and honestly my team would throw a small party.",
+   "For the dashboards, I would know it worked if by the end of October 2027 at least five of the twelve pilot municipalities have finance staff logging into the budget dashboards every month, which we can see in the login statistics, instead of exporting everything to a spreadsheet.",
+   "Let me just summarise so I do not ramble: integration incidents down from about twenty to under eight a month by the end of August 2027, and at least five of the twelve pilot municipalities using the dashboards monthly by the end of October 2027. Plus, of course, the nightly data flow for all twelve pilot municipalities by the end of August 2027."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Automate the nightly budget data flow from all 12 pilot municipalities into the new reporting by the end of August 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Cut integration incidents from about 20 to under 8 per month by the end of August 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Get finance staff in at least 5 of the 12 pilot municipalities using the budget dashboards monthly by the end of October 2027",
+     "priority": "nice"
+    }
+   ],
+   "skills": [
+    {
+     "label": "manage standard enterprise resource planning system",
+     "priority": "must"
+    },
+    {
+     "label": "ICT system integration",
+     "priority": "must"
+    },
+    {
+     "label": "business intelligence",
+     "priority": "learnable"
+    },
+    {
+     "label": "manage budgets",
+     "priority": "nice"
+    },
+    {
+     "label": "deliver visual presentation of data",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "fi",
+     "required": true
+    },
+    {
+     "lang": "en",
+     "required": true
+    },
+    {
+     "lang": "sv",
+     "required": false
+    }
+   ],
+   "onsite": "hybrid",
+   "start": "2027-05",
+   "intl_ok": true,
+   "relocation_support": "partial",
+   "reality_note": "A previous integration developer changed interfaces without telling customers and quietly patched failures at night, so nobody knew how fragile the integrations were until he left."
+  }
+ },
+ {
+  "id": "P09",
+  "style": "contradictory",
+  "lang": "en",
+  "company": {
+   "name": "Hoivakaari Oy",
+   "industry": "home care services"
+  },
+  "answers": {
+   "context": "We are a private home care company based in Matinkylä, Espoo, with about 60 elderly clients across the southern part of the city. We are growing, and at the same time we are moving from paper notes to an electronic record system. In the next six months we need a registered nurse who can do home visits, get our documentation into the new system, and help coordinate our two care teams so visits do not clash. Honestly, the documentation part is what keeps me up at night.",
+   "outcomes": "After 90 days, the must: all care documentation for our 60 clients moved into the electronic record system by the end of March 2027. Also a must: the home visits should run smoother. And the third one is something they can learn with us: coordinating the two teams better.",
+   "skills": "Must-have: using electronic health records in nursing, they need to be confident with patient record software. Also must: hands-on nursing care during home visits, medication, wound care and so on. Can learn: coordinating care between our two teams, and planning nursing care, so writing the care plans. Nice to have: e-health and mobile health tools, we use a mobile app for visit check-ins. Oh, and nice to have: experience using electronic health records in nursing, that would be a bonus.",
+   "constraints": "International hires are very welcome, we would love nurses from abroad! Fluent Finnish is required from day one, though, because our clients are elderly Finns. English is not required. The work is onsite, home visits in southern Espoo, from our base in Matinkylä. Start in January 2027. And we do not offer any relocation support, there is no budget for that, so they would need to arrange the move themselves.",
+   "reality": "A nurse we hired last year was excellent with clients, but she wrote all her notes at the end of the day instead of during the visit. So the evening team did not know about medication changes, and once a client nearly got a double dose before a colleague caught it. Nobody was hurt, but it shook all of us."
+  },
+  "follow_up_answers": [
+   "For the visits: from the end of March 2027, zero missed visits and fewer than 10% of visits more than 15 minutes late. We can see that in the visit app.",
+   "For the coordination: by the end of April 2027 both teams work from one shared shift plan, and nobody goes over 10 hours of overtime a month.",
+   "So: zero missed visits and under 10% late visits from the end of March 2027, and one shared shift plan with under 10 hours of overtime per person a month by the end of April 2027."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Move all care documentation for 60 clients into the electronic record system by the end of March 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Run home visits with zero missed visits and fewer than 10% more than 15 minutes late from the end of March 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Coordinate the two care teams on one shared shift plan with under 10 hours of overtime per person per month by the end of April 2027",
+     "priority": "learnable"
+    }
+   ],
+   "skills": [
+    {
+     "label": "use electronic health records in nursing",
+     "priority": "must"
+    },
+    {
+     "label": "implement nursing care",
+     "priority": "must"
+    },
+    {
+     "label": "coordinate care",
+     "priority": "learnable"
+    },
+    {
+     "label": "plan nursing care",
+     "priority": "learnable"
+    },
+    {
+     "label": "use e-health and mobile health technologies",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "fi",
+     "required": true
+    },
+    {
+     "lang": "en",
+     "required": false
+    }
+   ],
+   "onsite": "onsite",
+   "start": "2027-01",
+   "intl_ok": true,
+   "relocation_support": "none",
+   "reality_note": "A previous nurse wrote her notes at the end of the day instead of during visits, so the evening team missed medication changes."
+  }
+ },
+ {
+  "id": "P10",
+  "style": "NordSense",
+  "lang": "en",
+  "company": {
+   "name": "NordSense Oy",
+   "industry": "industrial IoT"
+  },
+  "answers": {
+   "context": "NordSense makes wireless vibration and temperature sensors for industrial customers: paper mills, pumping stations, a few mines. We are based in Karamalmi, Espoo, and have about 9,000 sensors in the field sending data through edge gateways to our cloud. The problem is twofold. Our fault-detection alerts fire far too often on noise, so customers have started ignoring them, and the data pipeline from the edge devices is fragile and nobody really owns it. In the next six months this person should make our alerts trustworthy and take ownership of the pipeline.",
+   "outcomes": "After 90 days: first, a must: cut the false sensor-fault alerts by half, within those 90 days. We track false alerts in our alert review log. Second, also a must: maintain the data pipelines from our edge devices. Third, and this one they can learn on the job: support our Finnish-speaking customers.",
+   "skills": "Must-have: Internet of Things, they should understand connected devices and gateways. Embedded systems, because a lot of the filtering will happen on the device itself. Data analysis, to find out which alerts are noise. And managing data, keeping the data flows and storage in order. Can learn: Finnish; they do not need it now, but over time it helps with our customers. Nice to have: Python, it is what our analytics stack is written in.",
+   "constraints": "English is required; it is our working language. Finnish is not required. We work hybrid: the office is in Karamalmi, Espoo, and we expect people there about two days a week. Start date is February 2027. International hires are very welcome, and we offer partial relocation support: we cover moving costs and the first month of housing, but not more than that.",
+   "reality": "The last person in this kind of role was a good data scientist, but the field data was much noisier than anything she had worked with: sensors on vibrating machinery, gateways dropping offline, timestamps jumping. And it was never clear who owned the pipeline, her team, the firmware team or cloud operations, so problems fell between the chairs and she spent weeks waiting for answers."
+  },
+  "follow_up_answers": [
+   "For the pipelines: under 1% of readings lost per month by the end of April 2027, so at the end of the 90 days. We see that in our ingestion dashboard.",
+   "For the Finnish-speaking customers: by the end of August 2027 they handle simple support tickets in Finnish on their own, around ten a month, with a colleague checking the trickier ones.",
+   "To recap: data pipelines with under 1% lost readings per month by the end of April 2027, and about ten simple Finnish support tickets a month handled on their own by the end of August 2027."
+  ],
+  "intended": {
+   "outcomes": [
+    {
+     "text": "Cut false sensor-fault alerts by half within 90 days",
+     "priority": "must"
+    },
+    {
+     "text": "Maintain data pipelines from edge devices with under 1% lost readings per month by the end of April 2027",
+     "priority": "must"
+    },
+    {
+     "text": "Support Finnish-speaking customers by handling about ten simple Finnish support tickets a month independently by the end of August 2027",
+     "priority": "learnable"
+    }
+   ],
+   "skills": [
+    {
+     "label": "Internet of Things",
+     "priority": "must"
+    },
+    {
+     "label": "embedded systems",
+     "priority": "must"
+    },
+    {
+     "label": "perform data analysis",
+     "priority": "must"
+    },
+    {
+     "label": "manage data",
+     "priority": "must"
+    },
+    {
+     "label": "Finnish",
+     "priority": "learnable"
+    },
+    {
+     "label": "Python (computer programming)",
+     "priority": "nice"
+    }
+   ],
+   "languages": [
+    {
+     "lang": "en",
+     "required": true
+    },
+    {
+     "lang": "fi",
+     "required": false
+    }
+   ],
+   "onsite": "hybrid",
+   "start": "2027-02",
+   "intl_ok": true,
+   "relocation_support": "partial",
+   "reality_note": "The last hire struggled with noisy field data and unclear ownership of the data pipeline."
+  }
+ }
+]

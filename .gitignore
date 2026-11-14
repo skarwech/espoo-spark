@@ -6,3 +6,4 @@ eval/results/
 .pytest_cache/
 .DS_Store
 data/spark.db
+data/llm_cache/

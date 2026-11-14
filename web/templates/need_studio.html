@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Need Studio · Spark{% endblock %}
+{% block main %}
+<h1>Need Studio</h1>
+<p class="sub">Describe what the person you hire should deliver. About 5–7 minutes.</p>
+<div class="notice" role="note"><b>AI disclosure.</b> {{ disclosure }}</div>
+
+<section id="setup" class="card">
+  <h2>Your company</h2>
+  <div class="row">
+    <label>Company name <input id="company" autocomplete="organization" maxlength="120"></label>
+    <label>Industry <input id="industry" maxlength="120"></label>
+  </div>
+  <button id="start" class="primary">Start the interview</button>
+</section>
+
+<section id="chat" class="card" hidden>
+  <h2>Interview</h2>
+  <ol id="log" class="log" aria-live="polite" aria-label="Interview messages"></ol>
+  <form id="answer-form" class="answer">
+    <label for="answer" class="sr">Your answer</label>
+    <textarea id="answer" rows="4" placeholder="Type your answer (any language). Ctrl+Enter sends."></textarea>
+    <div class="actions"><span id="status" class="muted" role="status"></span><button class="primary" id="send">Send</button></div>
+  </form>
+</section>
+
+<section id="review" class="card" hidden>
+  <h2>Your draft Need Card</h2>
+  <p class="muted">Nothing is used until you confirm. Check every line.</p>
+  <div id="card-summary" class="summary"></div>
+  <ul id="warnings" class="warnings"></ul>
+  <details><summary>Structured card (JSON)</summary><pre id="card-json" class="mono"></pre></details>
+  <div class="actions"><button id="confirm" class="primary">Confirm Need Card</button></div>
+</section>
+
+<section id="preview" class="card" hidden>
+  <h2>Pool Preview</h2>
+  <p id="preview-status" class="muted" role="status">Computing over the registered pool…</p>
+  <p id="preview-sentence" class="big"></p>
+  <ul id="preview-groups" class="plain"></ul>
+  <p id="preview-narrow" class="muted"></p>
+  <p id="preview-frame" class="muted"></p>
+</section>
+{% endblock %}
+{% block script %}<script src="/static/need_studio.js"></script>{% endblock %}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark F9–F16 · Release Report</title>
+<style>{{ css|safe }} .note { color: var(--ink-3); font-size: 12px; }</style>
+</head>
+<body><main>
+<h1>Spark · F9–F16 · Release Report</h1>
+<p class="sub">Conversation prompts, agenda scheduling, offline event passes, pulse feedback, organiser oversight and release controls.
+This is a synthetic-data prototype report. Code availability does not count as a passed gate; results are shown only when an evaluation artifact exists.</p>
+
+<div class="card"><h2>Release status</h2>
+{% if all_hard_green %}<p class="pill pass">All recorded F9–F16 hard gates pass</p>
+{% else %}<p class="pill pending">Release gates are not all green</p>{% endif %}
+<p class="muted">{% if generated %}Machine-readable evaluation data was loaded.{% else %}Evaluation data is pending; no F9–F16 gates are claimed as passed.{% endif %}</p></div>
+
+<h2>Hard gates</h2>
+<div class="card scroll"><table><tr><th>ID</th><th>Gate</th><th>Threshold</th><th>Result</th><th>Evidence</th></tr>
+{% for row in rows %}<tr><td>{{ row.id }}</td><td>{{ row.label }}</td><td>{{ row.threshold }}</td><td><span class="pill {{ 'pass' if row.status == 'PASS' else 'fail' if row.status == 'FAIL' else 'pending' }}">{{ row.status }}</span>{% if row.value is not none %}<br>{{ row.value }}{% endif %}</td><td>{{ row.evidence }}</td></tr>{% endfor %}
+</table></div>
+
+<h2>Targets and human reviews</h2>
+<div class="card scroll"><table><tr><th>ID</th><th>Target</th><th>Threshold</th><th>Result</th><th>Evidence</th></tr>
+{% for row in targets %}<tr><td>{{ row.id }}</td><td>{{ row.label }}</td><td>{{ row.threshold }}</td><td><span class="pill {{ 'pass' if row.status == 'PASS' else 'fail' if row.status == 'FAIL' else 'pending' }}">{{ row.status }}</span>{% if row.value is not none %}<br>{{ row.value }}{% endif %}</td><td>{{ row.evidence }}</td></tr>{% endfor %}
+</table></div>
+
+<h2>Open issues</h2>
+<div class="card"><ul>{% for issue in open_issues %}<li>{{ issue }}</li>{% endfor %}</ul></div>
+
+<h2>Consecutive release runs</h2>
+<div class="card"><p class="muted">F16 requires three consecutive clean runs without manual fixes. This page will report them when the evaluation artifact records them.</p>
+{% if runs %}<table><tr><th>Run</th><th>Status</th><th>Duration</th></tr>{% for run in runs %}<tr><td>{{ run.id }}</td><td>{{ run.status }}</td><td>{{ run.duration_seconds if run.duration_seconds is defined else '—' }}</td></tr>{% endfor %}</table>{% else %}<p class="pill pending">No release runs recorded</p>{% endif %}</div>
+
+<p class="note">Limits: synthetic data only; offline caching is browser-dependent; no human usability or fairness review is implied by the automated checks.</p>
+</main></body></html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark Step 3</title>
+<style>
+{{ css|safe }}
+.note { display: block; color: var(--ink-3); font-size: 12px; margin-top: 2px; }
+.flag { font-weight: 650; color: var(--bad); } .okt { color: var(--good); font-weight: 600; }
+.qa { list-style: none; padding: 0; margin: 0; font-size: 14px; } .qa li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+.qa .who { font-weight: 600; color: var(--ink-2); margin-right: 6px; } .big { font-size: 18px; font-weight: 600; margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Spark · Step 3 · Need Studio, Pool Preview, Skill Story (F1–F3)</h1>
+<p class="sub">Companies describe outcomes and confirm a Need Card; an anonymous Pool Preview shows how much of it the registered pool covers;
+jobseekers write a Skill Story in their own words. Method pre-registered in <span class="mono">docs/method.md §7</span>. Conversations: Kimi K3.1 Pro;
+matching engine d1: DeepSeek V4.1 Flash (both on Verda). Claude's step-2 run stays the registered engine result.</p>
+
+{% if engine_failed %}<div class="card" style="margin-bottom:12px;border-color:var(--bad)">
+<h3><span class="flag">Engine d1 is not fully validated.</span> Pool Preview counts below run on it.</h3>
+<p class="muted" style="margin:0">d1 fails {{ engine_failed|length }} of {{ engine_gates|length }} registered F4–F7 hard gates
+({{ engine_failed|map(attribute=0)|join('; ') }}) and misses more targets than the Claude run (table below). Per method.md §7 the Pool Preview's own
+gates are measured, but its counts are not treated as validated until the engine passes or the owner decides otherwise.</p></div>{% endif %}
+
+<h2>Hard gates (F1–F3)</h2>
+<div class="card scroll"><table><tr><th>Check</th><th>Status</th></tr>
+{% for label, s in gates %}<tr><td>{{ label }}</td><td><span class="pill {{ s }}">{{ s|upper }}</span></td></tr>{% endfor %}
+</table></div>
+
+<h2>Targets (F1–F3)</h2>
+<div class="card scroll"><table><tr><th>Target</th><th>Kind</th><th>Status</th><th>Value</th></tr>
+{% for name, t in targets.items() %}<tr><td>{{ name }}</td><td class="kind">{{ t.kind }}</td>
+<td>{% if t.kind in ('pending',) %}<span class="pill pending">NEEDS PEOPLE</span>{% elif t.kind == 'sensitivity' or t.pass is none %}<span class="kind">no threshold</span>
+{% elif not t.pass %}<span class="pill fail">MISSED</span>{% elif t.kind == 'proxy' %}<span class="pill proxy">PROXY · HUMAN PENDING</span>{% else %}<span class="pill pass">MET</span>{% endif %}</td>
+<td class="muted">{% if t.value is not none %}{{ '%.0f'|format(100 * t.value) }}%{% else %}—{% endif %}{% if t.threshold is not none and t.kind != 'pending' %} (≥ {{ '%.0f'|format(100 * t.threshold) if t.threshold <= 1 else t.threshold }}{{ '%' if t.threshold <= 1 }}){% endif %}, n = {{ t.n }}
+{% if t.note %}<span class="note">{{ t.note }}</span>{% endif %}</td></tr>{% endfor %}
+</table>
+<p class="muted">Verda spend in step 3: ${{ meta.verda_usd_step3 }} over {{ meta.verda_calls }} calls{% if meta.by_model %} ({% for m, u in meta.by_model.items() %}{{ m }} ${{ u }}{{ ', ' if not loop.last }}{% endfor %}){% endif %}; cap $20.</p></div>
+
+<h2>F1 · NordSense interview (persona P10) → Need Card → Pool Preview</h2>
+{% if hero and hero.record %}<div class="grid">
+<div class="card"><h3>Interview ({{ hero.questions_asked }} questions)</h3><ol class="qa">
+{% for t in hero.transcript if t.stage != 'review' %}<li dir="auto"><span class="who">{{ 'AI' if t.role == 'assistant' else 'Company' }}</span>{{ t.text }}</li>{% endfor %}</ol></div>
+<div class="card"><h3>Need Card {{ hero.record.card.need_id }} v{{ hero.record.card.version }} (draft, then confirmed)</h3>
+<p style="white-space:pre-wrap;font-size:14px">{{ hero.record.summary }}</p>
+<p class="muted">Reality notes: {{ hero.record.card.company_reality_notes|join(' · ') }}</p>
+<p class="muted">Warnings: {{ hero.record.warnings|join(' · ') if hero.record.warnings else 'none' }}</p>
+{% if hero_preview %}<h3>Pool Preview</h3><p class="big">{{ hero_preview.sentence }}</p>
+<p class="muted">Registered so far: {{ hero_preview.registered_so_far }} · and fit your work mode: {{ hero_preview.counts.and_work_mode }} · {{ hero_preview.framing }}</p>{% endif %}
+</div></div>{% else %}<div class="card"><span class="pill pending">PENDING</span></div>{% endif %}
+
+<h2>F1 · All 10 personas</h2>
+<div class="card scroll"><table><tr><th>Persona</th><th>Style</th><th>Lang</th><th>Questions</th><th>Card</th><th>Outcomes</th><th>Unmapped skills</th><th>Warnings</th></tr>
+{% for p in personas %}<tr><td class="mono">{{ p.id }}</td><td>{{ p.style }}</td><td class="mono">{{ p.lang }}</td><td>{{ p.q }}</td>
+<td>{% if p.done %}<span class="okt">{{ p.need_id }}</span>{% else %}<span class="flag">not finished</span>{% endif %}</td><td>{{ p.outcomes }}</td><td>{{ p.unmapped }}</td><td>{{ p.warnings }}</td></tr>{% endfor %}
+</table></div>
+
+<h2>F1 · Injection answers</h2>
+<div class="card scroll"><table><tr><th>Id</th><th>Persona · stage</th><th>Lang</th><th>Attack</th><th>Result</th></tr>
+{% for r in inj %}<tr><td class="mono">{{ r.id }}</td><td>{{ r.persona }} · {{ r.stage }}</td><td class="mono">{{ r.lang }}</td><td>{{ r.kind }}<span class="note">{{ r.detail }}</span></td>
+<td>{% if r.why %}<span class="flag">success: {{ r.why|join('; ') }}</span>{% else %}<span class="okt">no effect</span>{% endif %}</td></tr>{% endfor %}
+</table></div>
+
+<h2>F2 · Pool Preview over {{ n_previews }} needs</h2>
+<div class="card"><p class="muted" style="margin:0 0 6px">25 synthetic needs, 25 variants (one priority and one constraint change each) and the persona Need Cards.
+Main count “fewer than 5”: {{ dist.get('fewer than 5', 0) }}; 5 or more: {{ dist.get('5 or more', 0) }}.</p>
+{% if narrow %}<p><b>Narrow need example ({{ narrow.card.need_id }} v{{ narrow.card.version }}):</b> {{ narrow.preview.sentence }} These requirements narrow the pool most: {{ narrow.preview.narrowing|join('; ') }}.</p>{% endif %}</div>
+
+<h2>F3 · Skill Story</h2>
+<div class="grid">
+<div class="card"><h3>Own words</h3><p class="big">{{ n_identical }} / {{ st.submissions|length }} identical</p>
+<p class="muted">Stored text equals submitted text byte for byte, including right-to-left text, emoji, combining characters and line breaks;
+{{ n_nfc }} submissions would have changed under Unicode normalisation, which Spark does not apply.</p></div>
+<div class="card"><h3>Clarifying questions</h3><p class="big">{{ st.questions|length }} questions</p>
+<ul class="plain">{% for q in st.questions[:4] %}<li dir="auto" class="muted">“{{ q.shown }}” <span class="note">{{ q.lang }} · {{ q.box }}</span></li>{% endfor %}</ul></div>
+<div class="card"><h3>Languages through the full flow</h3><table><tr><th>Lang</th><th>Units</th><th>Needs with a tier</th></tr>
+{% for c in st.coverage %}<tr><td class="mono">{{ c.lang }}</td><td>{{ c.units }}</td><td>{{ c.tiers|length }}</td></tr>{% endfor %}</table></div>
+</div>
+<div class="card scroll" style="margin-top:16px"><h3>Identifier warnings on 40 planted identifiers (fixture written before measuring)</h3>
+<table><tr><th>Category</th><th>Lang</th><th>Planted</th><th>Flagged</th></tr>
+{% for r in idrows %}<tr><td>{{ r.category }}</td><td class="mono">{{ r.lang }}</td><td>{{ r.n }}</td><td>{% if r.flagged == r.n %}<span class="okt">{{ r.flagged }}</span>{% else %}<span class="flag">{{ r.flagged }}</span>{% endif %}</td></tr>{% endfor %}
+</table><p class="muted">False warnings on the 150 clean pool stories: {{ st.pool_false_warnings }}.</p></div>
+
+<h2>Engine d1 re-validation against the step-2 registration</h2>
+<div class="card scroll"><table><tr><th>Target (method.md §6)</th><th>v1 Claude (registered)</th><th>d1 DeepSeek</th></tr>
+{% for r in engine_rows %}<tr><td>{{ r.name }}</td>
+<td class="muted">{% if r.v1 and r.v1.value is not none %}{{ '%.0f'|format(100 * r.v1.value) }}%{% if r.v1.pass is false %} <span class="flag">missed</span>{% endif %}{% else %}—{% endif %}</td>
+<td class="muted">{% if r.d1.value is not none %}{{ '%.0f'|format(100 * r.d1.value) }}%{% if r.d1.pass is false %} <span class="flag">missed</span>{% endif %}{% else %}—{% endif %}</td></tr>{% endfor %}
+</table>
+<p class="muted">d1 hard gates: {% for g, s in engine_gates %}{{ g }} <span class="pill {{ s }}">{{ s|upper }}</span>{{ ' · ' if not loop.last }}{% endfor %}</p>
+<p class="muted">d1: {{ d1meta.llm_calls }} calls, ${{ d1meta.llm_usd }}, served by {{ d1meta.served_by|join(', ') if d1meta.served_by }}.</p></div>
+</main>
+</body>
+</html>

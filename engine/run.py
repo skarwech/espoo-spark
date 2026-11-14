@@ -14,7 +14,7 @@ from pathlib import Path
 from engine import embed, extract, judge, lens, llm
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data" / "engine"
+OUT = ROOT / "data" / ("engine" if llm.ENGINE == "v1" else f"engine_{llm.ENGINE}")  # d1, k1 -> data/engine_d1, data/engine_k1 (§7)
 WORKERS = int(__import__("os").environ.get("SPARK_WORKERS", "6"))
 HEROES = ("J-001", "J-002", "J-003")
 
@@ -40,6 +40,11 @@ def world() -> dict:
             "origin": {a["candidate_id"]: a["origin_domain"] for a in load("data/out/attributes.json")},
             "pool": sorted(j["candidate_id"] for j in js),
             "golden": sorted({k["candidate_id"] for k in load("eval/golden_key.json")} | set(HEROES))}
+
+
+def matched(w: dict) -> list[str]:
+    """Candidates judged against all needs: golden + heroes for v1; every registered person for d1 and k1 (Pool Preview, §7)."""
+    return w["golden"] if llm.ENGINE == "v1" else w["pool"]
 
 
 def outcomes(needs: list[dict]) -> list[dict]:
@@ -80,7 +85,7 @@ def own_needs(w: dict, source: str) -> list[dict]:
 
 def jobs(w: dict) -> list[tuple[str, str, list[dict]]]:
     """(run_id, story_id, needs). run_id = '<story>@all' or '<story>@own'."""
-    out = [(f"{c}@all", c, w["needs"]) for c in w["golden"]]
+    out = [(f"{c}@all", c, w["needs"]) for c in matched(w)]
     for t in w["twins"]:
         own = own_needs(w, t["source"])
         out += [(f"{t['id']}@own", t["id"], own), (f"{t['source']}@own", t["source"], own)]
@@ -89,7 +94,7 @@ def jobs(w: dict) -> list[tuple[str, str, list[dict]]]:
 
 def step_judge(w: dict, *, stability: bool = False) -> None:
     units = read("units.json", {})
-    todo = [j for j in jobs(w) if j[0].endswith("@all")] if stability else jobs(w)
+    todo = [j for j in jobs(w) if j[0].endswith("@all") and j[1] in w["golden"]] if stability else jobs(w)
     retrieval = read("retrieval.json", {"version": embed.version(), "runs": {}})
     for run_id, sid, needs in todo:  # embedding is sequential (CPU model, deterministic)
         if run_id not in retrieval["runs"]:
@@ -118,7 +123,7 @@ def step_lens(w: dict) -> None:
     if llm.A1:
         write("hubs.json", {"rule": "tagged on more than 1/8 of the pool stories' evidence units (method.md A1.3)",
                             "hubs": sorted(lens.esco_label(s) for s in hubs)})
-    out = [lens.pair(n, c, units[c]["units"], judgments[f"{c}@all"], hubs=hubs) for c in w["golden"] for n in w["needs"]]
+    out = [lens.pair(n, c, units[c]["units"], judgments[f"{c}@all"], hubs=hubs) for c in matched(w) for n in w["needs"]]
     write("lens.json", out)
     print(f"lens: {len(out)} pairs; hub skills: {', '.join(sorted(lens.esco_label(s) for s in hubs)) or 'none'}")
 
