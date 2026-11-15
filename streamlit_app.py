@@ -41,14 +41,26 @@ st.set_page_config(page_title="Spark", page_icon="🌱", layout="wide")
 
 from streamlit_ui import render  # noqa: E402
 
+
+def _reset_demo_session() -> None:
+    """Clear this browser session's UI state without deleting persisted app records."""
+    prefixes = ("spark_", "blind_", "home_", "story_")
+    for key in list(st.session_state):
+        if key != "spark_nav" and key.startswith(prefixes):
+            del st.session_state[key]
+    st.session_state["spark_nav"] = "Home"
+
+
 st.title("Spark")
 st.caption("Work evidence and event-planning prototype · synthetic data · human decisions only")
 
 pages = ("Home", "Need Studio", "Skill Story", "Blind View", "Event Console", "Event Pass", "Release Report")
 with st.sidebar:
     st.header("Navigate")
-    selected = st.radio("Spark page", pages, label_visibility="collapsed")
+    selected = st.radio("Spark page", pages, label_visibility="collapsed", key="spark_nav")
     st.divider()
     st.caption("This demo uses synthetic data. People make every hiring decision.")
+    st.button("Reset demo session", on_click=_reset_demo_session)
+    st.caption("Resets this browser's workflow state. Saved stories and event records remain.")
 
 render(selected)

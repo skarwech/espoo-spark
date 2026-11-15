@@ -30,6 +30,33 @@ def _need_label(need_id: str) -> str:
     return f"{need_id} · {companies.get(need['company_id'], 'Company')}"
 
 
+def _open_blind_walkthrough() -> None:
+    st.session_state["spark_nav"] = "Blind View"
+    sample = "N-014"
+    if any(row["need_id"] == sample for row in _registered_needs()):
+        st.session_state["blind_need"] = sample
+
+
+def _open_release_report() -> None:
+    st.session_state["spark_nav"] = "Release Report"
+
+
+def _sample_need_card() -> None:
+    needs = _registered_needs()
+    card = next((row for row in needs if row["need_id"] == "N-014"), needs[0])
+    st.caption(f"Saved synthetic example · {_need_label(card['need_id'])} · no model call or database changes")
+    st.write("**First 90 day outcomes**")
+    for outcome in card["outcomes"]:
+        st.write(f"• {outcome['priority'].title()}: {outcome['text']}")
+    st.write("**Practical constraints**")
+    constraints = card["constraints"]
+    st.write(f"{constraints['onsite']} · starts {constraints['start']} · international hires {'welcome' if constraints['intl_ok'] else 'not considered'}")
+    if card.get("company_reality_notes"):
+        st.write("**Reality note**")
+        for note in card["company_reality_notes"]:
+            st.write(note)
+
+
 def render(page: str) -> None:
     routes = {
         "Home": _home,
@@ -55,11 +82,21 @@ def _home() -> None:
     second.metric("Synthetic jobseekers", len(people))
     third.metric("Evidence comparisons", len(pairs))
 
+    with st.container(border=True):
+        st.subheader("A 3-minute walkthrough")
+        st.markdown("1. Start with the saved **NordSense need and Karim's work evidence** below.\n2. Follow the exact quotes behind the discussion tier.\n3. Open Blind View to see how the same evidence appears without names.")
+        walk, report = st.columns(2)
+        walk.button("Continue to Blind View", type="primary", on_click=_open_blind_walkthrough)
+        report.button("Check release status", on_click=_open_release_report)
+    st.info("Release status: some human review and device checks are still pending. See the Release Report before presenting results as validated.")
+
     st.subheader("Explore a saved Match Lens")
     need_ids = sorted(row["need_id"] for row in needs)
-    selected_need = st.selectbox("Need", need_ids, format_func=_need_label, key="home_need")
+    sample_need = "N-014" if "N-014" in need_ids else need_ids[0]
+    selected_need = st.selectbox("Need", need_ids, index=need_ids.index(sample_need), format_func=_need_label, key="home_need")
     candidate_ids = sorted({row["candidate_id"] for row in pairs if row["need_id"] == selected_need})
-    candidate_id = st.selectbox("Anonymous jobseeker ID", candidate_ids, key="home_candidate")
+    sample_candidate = "J-002" if selected_need == sample_need and "J-002" in candidate_ids else candidate_ids[0]
+    candidate_id = st.selectbox("Anonymous jobseeker ID", candidate_ids, index=candidate_ids.index(sample_candidate), key="home_candidate")
     pair = next(row for row in pairs if row["need_id"] == selected_need and row["candidate_id"] == candidate_id)
     st.markdown(f"**Discussion tier:** {pair['tier_label']}")
     st.write(pair["why"])
@@ -98,6 +135,8 @@ def _need_studio() -> None:
             st.session_state[session_key] = view["session_id"]
             st.rerun()
         st.caption("A configured Verda Kimi API key is required for new interview answers. Set `VERDA_INFERENCE_API_KEY_KIMI` in Streamlit secrets.")
+        with st.expander("Explore a sample Need Card without an API key"):
+            _sample_need_card()
         return
 
     state = store.get_interview(session_id)
@@ -275,6 +314,24 @@ def _event_console() -> None:
 
     st.header("Event Console")
     st.write("Draft and approve a synthetic meeting agenda, issue private event passes, and review event evidence.")
+    st.caption("Sample agenda preview uses only saved synthetic data; it needs no organizer token and is not saved or approved.")
+    if st.button("Preview a sample agenda"):
+        try:
+            st.session_state["spark_sample_agenda"] = event_ops.create_agenda(
+                "sample-preview", "2027-03-15", persist=False
+            )
+        except Exception as error:
+            st.error(f"Sample agenda could not be prepared: {error}")
+    sample_agenda = st.session_state.get("spark_sample_agenda")
+    if sample_agenda:
+        with st.expander(f"Sample agenda · {len(sample_agenda['slots'])} draft slots", expanded=True):
+            st.dataframe([
+                {key: slot[key] for key in ("time", "company", "industry", "need_id", "tier")}
+                for slot in sample_agenda["slots"][:15]
+            ], width="stretch", hide_index=True)
+            if len(sample_agenda["slots"]) > 15:
+                st.caption(f"Showing the first 15 of {len(sample_agenda['slots'])} synthetic slots.")
+
     expected = os.environ.get("SPARK_ORGANIZER_TOKEN", "")
     if not expected:
         st.warning("Organizer actions are disabled until `SPARK_ORGANIZER_TOKEN` is configured in Streamlit secrets.")

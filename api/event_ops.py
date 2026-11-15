@@ -127,8 +127,8 @@ def _time_at(start_time: str, index: int, interval: int) -> str:
 
 
 def create_agenda(event_id: str, event_date: str, start_time: str = "09:00", interval_minutes: int = 15,
-                  slots_per_company: int = 15, seed: str = "spark-event-1") -> dict:
-    """Deterministic greedy b-matching: each slot has one candidate/company and no person overlaps."""
+                  slots_per_company: int = 15, seed: str = "spark-event-1", *, persist: bool = True) -> dict:
+    """Build a deterministic greedy agenda; persist blind links and the draft unless this is a read-only preview."""
     if not re.fullmatch(r"[A-Za-z0-9_-]{3,48}", event_id):
         raise ValueError("event_id must be 3–48 letters, digits, '_' or '-'")
     datetime.strptime(event_date, "%Y-%m-%d")
@@ -206,8 +206,9 @@ def create_agenda(event_id: str, event_date: str, start_time: str = "09:00", int
                      "Each attendee receives at most two distinct company meetings; capacity may leave some eligible people unscheduled."}
     if any(len({s["time"] for s in by_person}) != len(by_person) for by_person in per_candidate_slots.values()):
         raise ValueError("agenda contains an attendee time overlap")
-    store.put_blind_matches(blind_links)
-    store.save_agenda(event_id, output)
+    if persist:
+        store.put_blind_matches(blind_links)
+        store.save_agenda(event_id, output)
     return output
 
 

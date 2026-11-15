@@ -148,6 +148,10 @@ SPARK_ORGANIZER_TOKEN = "your-private-organizer-token"
 VERDA_INFERENCE_API_KEY_KIMI = "your-Verda-key"
 ```
 
+The Streamlit Home page opens on a guided NordSense × Karim example. Need Studio includes a saved sample card when no model key
+is configured, and Event Console can preview a synthetic agenda without an organizer token or database writes. “Reset demo
+session” clears the current browser's UI state; saved stories and event records remain.
+
 Open the Blind View for redacted evidence and optional conversation prompts. The organizer drafts and reviews an agenda, approves
 it, then issues private passes. In Streamlit, the organizer gets a private code per attendee and the attendee enters that code on
 the Event Pass page. In the FastAPI web app, the pass is opened at `/event-pass/{token}`. Each code is a random capability token
