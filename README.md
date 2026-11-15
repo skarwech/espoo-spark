@@ -88,8 +88,9 @@ Thresholds never move after results; every later change is a dated note, and eve
 - **Hard gates** (must pass 100%, `pytest -m hard`): 16 for step 1, 14 for step 2, all passing. Examples: every quote is an
   exact substring of its unit; units carry no identity strings in English, Finnish, Swedish or Arabic; 10 stories with planted
   instructions to the evaluator never raise a label; tiers are deterministic over 100 rebuilds; no numeric score anywhere in the
-  payload; no Strong where the annotators said Stretch or none. The gates themselves were mutation-tested (100 deliberate data
-  tamperings, each caught).
+  payload; no Strong where the annotators said Stretch or none. The gates themselves were mutation-tested: 100 deliberate data
+  tamperings were replayed against them, and all but a few documented blind spots turn a gate red (names in Arabic script,
+  translated city and school names, and how many units a non-thin story yields; see the notes in `docs/method.md`).
 - **Targets** (statistical, with 95% bootstrap intervals). Met: judge accuracy 95% vs consensus, 0 false "supported", language
   invariance 98%, style invariance 96%, stability on re-run 99%, retrieval 100%. **Missed and disclosed:** ESCO tag precision 76%
   (target 80%) and exact tier agreement 65% (target 80%; within one tier 95%) — the misses come from adjacency, which the
